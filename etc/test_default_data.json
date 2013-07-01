@@ -1,0 +1,48 @@
+{
+    "users": [
+        {
+            "launchpad_id": "foo",
+            "user_name": "Pupkin",
+            "emails": ["a@a"],
+            "companies": [
+                {
+                    "company_name": "Uno",
+                    "end_date": "2013-01-01"
+                },
+                {
+                    "company_name": "Duo",
+                    "end_date": null
+                }
+            ]
+        }
+    ],
+
+    "domains": [
+        {
+            "domain": "mirantis.com",
+            "company_name": "Mirantis"
+        },
+        {
+            "domain": "",
+            "company_name": "*independent"
+        },
+        {
+            "domain": "hp.com",
+            "company_name": "Hewlett-Packard"
+        },
+        {
+            "domain": "intel.com",
+            "company_name": "Intel"
+        }
+    ],
+
+    "repos": [
+        {
+            "branches": ["master"],
+            "name": "Quantum Client",
+            "type": "core",
+            "uri": "git://github.com/openstack/python-quantumclient.git"
+        }
+    ]
+
+}
