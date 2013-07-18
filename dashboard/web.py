@@ -288,7 +288,7 @@ def exception_handler():
     return decorator
 
 
-def templated(template=None):
+def templated(template=None, return_code=200):
     def decorator(f):
         @functools.wraps(f)
         def templated_decorated_function(*args, **kwargs):
@@ -326,7 +326,7 @@ def templated(template=None):
 
             ctx['project_type_options'] = get_project_type_options()
 
-            return flask.render_template(template_name, **ctx)
+            return flask.render_template(template_name, **ctx), return_code
 
         return templated_decorated_function
 
@@ -342,8 +342,9 @@ def overview():
 
 
 @app.errorhandler(404)
+@templated('404.html', 404)
 def page_not_found(e):
-    return flask.render_template('404.html'), 404
+    pass
 
 
 def contribution_details(records, limit=DEFAULT_RECORDS_LIMIT):

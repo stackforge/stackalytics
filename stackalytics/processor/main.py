@@ -12,17 +12,19 @@
 # implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
 import json
+import urllib2
 
 from oslo.config import cfg
 import psutil
 from psutil import _error
-import urllib2
 
 from stackalytics.openstack.common import log as logging
-from stackalytics.processor import commit_processor
 from stackalytics.processor import config
 from stackalytics.processor import persistent_storage
+from stackalytics.processor import rcs
+from stackalytics.processor import record_processor
 from stackalytics.processor import runtime_storage
 from stackalytics.processor import vcs
 
@@ -57,7 +59,16 @@ def update_pids(runtime_storage):
     runtime_storage.active_pids(pids)
 
 
-def process_repo(repo, runtime_storage, processor):
+def _merge_commits(original, new):
+    if new['branches'] < original['branches']:
+        return False
+    else:
+        original['branches'] |= new['branches']
+        return True
+
+
+def process_repo(repo, runtime_storage, commit_processor,
+                 rcs_inst, review_processor):
     uri = repo['uri']
     LOG.debug('Processing repo uri %s' % uri)
 
@@ -65,33 +76,47 @@ def process_repo(repo, runtime_storage, processor):
     vcs_inst.fetch()
 
     for branch in repo['branches']:
-        LOG.debug('Processing repo %s, branch %s' % (uri, branch))
+        LOG.debug('Processing repo %s, branch %s', uri, branch)
 
         head_commit_id = runtime_storage.get_head_commit_id(uri, branch)
 
         commit_iterator = vcs_inst.log(branch, head_commit_id)
-        processed_commit_iterator = processor.process(commit_iterator)
-        runtime_storage.set_records(processed_commit_iterator)
+        processed_commit_iterator = commit_processor.process(commit_iterator)
+        runtime_storage.set_records(processed_commit_iterator, _merge_commits)
 
         head_commit_id = vcs_inst.get_head_commit_id(branch)
         runtime_storage.set_head_commit_id(uri, branch, head_commit_id)
 
+        LOG.debug('Processing reviews for repo %s, branch %s', uri, branch)
+
+        reviews_iterator = rcs_inst.log(repo, branch, 0)
+        processed_review_iterator = review_processor.process(reviews_iterator)
+        runtime_storage.set_records(processed_review_iterator)
+
 
 def update_repos(runtime_storage, persistent_storage):
     repos = persistent_storage.get_repos()
-    processor = commit_processor.CommitProcessorFactory.get_processor(
-        commit_processor.COMMIT_PROCESSOR_CACHED,
-        persistent_storage)
+    commit_processor = record_processor.get_record_processor(
+        record_processor.COMMIT_PROCESSOR, persistent_storage)
+    review_processor = record_processor.get_record_processor(
+        record_processor.REVIEW_PROCESSOR, persistent_storage)
+    rcs_inst = rcs.get_rcs(cfg.CONF.review_uri)
+    rcs_inst.setup(key_filename=cfg.CONF.ssh_key_filename,
+                   username=cfg.CONF.ssh_username)
 
     for repo in repos:
-        process_repo(repo, runtime_storage, processor)
+        process_repo(repo, runtime_storage, commit_processor,
+                     rcs_inst, review_processor)
 
 
 def apply_corrections(uri, runtime_storage_inst):
     corrections_fd = urllib2.urlopen(uri)
     raw = corrections_fd.read()
     corrections_fd.close()
-    runtime_storage_inst.apply_corrections(json.loads(raw)['corrections'])
+    corrections = json.loads(raw)['corrections']
+    for c in corrections:
+        c['primary_key'] = c['commit_id']
+    runtime_storage_inst.apply_corrections(corrections)
 
 
 def main():
