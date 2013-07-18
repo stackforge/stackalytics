@@ -13,12 +13,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import logging
 
 import os
 import re
 
 import sh
+
+from stackalytics.openstack.common import log as logging
 
 
 LOG = logging.getLogger(__name__)
