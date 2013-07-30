@@ -65,9 +65,10 @@ GIT_LOG_PATTERN = re.compile(''.join([(r[0] + ':(.*?)\n')
                              re.DOTALL)
 
 MESSAGE_PATTERNS = {
-    'bug_id': re.compile('bug\s+#?([\d]{5,7})', re.IGNORECASE),
-    'blueprint_id': re.compile('blueprint\s+([\w-]{6,})', re.IGNORECASE),
-    'change_id': re.compile('Change-Id: (I[0-9a-f]{40})', re.IGNORECASE),
+    'bug_id': re.compile(r'([Bb]ug|[Ll][Pp])[\s#:]*(\d+)', re.IGNORECASE),
+    'blueprint_id': re.compile(r'([Bb]ug|[Ll][Pp])[\s#:]*(\d+)',
+                               re.IGNORECASE),
+    'change_id': re.compile('(Change-Id): (I[0-9a-f]{40})', re.IGNORECASE),
 }
 
 
@@ -152,7 +153,7 @@ class Git(Vcs):
             for key in MESSAGE_PATTERNS:
                 match = re.search(MESSAGE_PATTERNS[key], commit['message'])
                 if match:
-                    commit[key] = match.group(1)
+                    commit[key] = match.group(2)
                 else:
                     commit[key] = None
 
