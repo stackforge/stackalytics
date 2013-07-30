@@ -65,7 +65,7 @@ GIT_LOG_PATTERN = re.compile(''.join([(r[0] + ':(.*?)\n')
                              re.DOTALL)
 
 MESSAGE_PATTERNS = {
-    'bug_id': re.compile('bug\s+#?([\d]{5,7})', re.IGNORECASE),
+    'bug_id': re.compile('bug\s*:?\s+#?([\d]{5,7})', re.IGNORECASE),
     'blueprint_id': re.compile('blueprint\s+([\w-]{6,})', re.IGNORECASE),
     'change_id': re.compile('Change-Id: (I[0-9a-f]{40})', re.IGNORECASE),
 }
