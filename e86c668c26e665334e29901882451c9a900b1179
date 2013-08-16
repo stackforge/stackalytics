@@ -1,0 +1,10 @@
+Verified+2: Jenkins
+Approved+1: Ilya Shakhat <ishakhat@mirantis.com>
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Code-Review+1: Seif Lotfy <s.lotfy@telekom.de>
+Code-Review+1: Marc Koderer <m.koderer@telekom.de>
+Submitted-by: Jenkins
+Submitted-at: Fri, 16 Aug 2013 14:36:43 +0000
+Reviewed-on: https://review.openstack.org/42161
+Project: stackforge/stackalytics
+Branch: refs/heads/master
