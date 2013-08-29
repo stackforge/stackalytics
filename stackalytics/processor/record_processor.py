@@ -34,6 +34,8 @@ class RecordProcessor(object):
         self.releases = runtime_storage_inst.get_by_key('releases')
         self.releases_dates = [r['end_date'] for r in self.releases]
 
+        self.updated_users = set()
+
     def _get_release(self, timestamp):
         release_index = bisect.bisect(self.releases_dates, timestamp)
         return self.releases[release_index]['release_name']
@@ -71,9 +73,6 @@ class RecordProcessor(object):
         LOG.debug('Create new user: %s', user)
         return user
 
-    def _store_user(self, user):
-        self.runtime_storage_inst.set_by_key('user:%s' % user['user_id'], user)
-
     def _get_lp_info(self, email):
         lp_profile = None
         if not re.match(r'[\w\d_\.-]+@([\w\d_\.-]+\.)+[\w]+', email):
@@ -93,6 +92,15 @@ class RecordProcessor(object):
     def _get_independent(self):
         return self.domains_index['']
 
+    def _update_user(self, user, email):
+        user['emails'].append(email)
+        company_name = self._get_company_by_email(email)
+        if ((company_name) and (len(user['companies']) == 1) and
+                (user['companies'][0]['company_name'] != company_name)):
+            LOG.debug('Updating user affiliation to: %s', company_name)
+            user['companies'][0]['company_name'] = company_name
+            self.updated_users.add(user['user_id'])
+
     def _update_record_and_user(self, record):
         email = record['author_email'].lower()
         record['author_email'] = email
@@ -111,14 +119,14 @@ class RecordProcessor(object):
                 if (launchpad_id) and (launchpad_id in self.users_index):
                     # merge emails
                     user = self.users_index[launchpad_id]
-                    user['emails'].append(email)
+                    self._update_user(user, email)
                 else:
                     # create new
                     if not user_name:
                         user_name = record['author_name']
                     user = self._create_user(launchpad_id, email, user_name)
 
-            self._store_user(user)
+            utils.store_user(self.runtime_storage_inst, user)
             self.users_index[email] = user
             if user['launchpad_id']:
                 self.users_index[user['launchpad_id']] = user
@@ -257,3 +265,17 @@ class RecordProcessor(object):
                 yield record
 
         self.runtime_storage_inst.set_by_key('users', self.users_index)
+
+    def _get_records_for_users_to_update(self):
+        for record in self.runtime_storage_inst.get_all_records():
+            user_id = record['user_id']
+            if user_id in self.updated_users:
+                user = self.users_index[user_id]
+                user_company_name = user['companies'][0]['company_name']
+                if record['company_name'] != user_company_name:
+                    record['company_name'] = user_company_name
+                    yield record
+
+    def finalize(self):
+        self.runtime_storage_inst.set_records(
+            self._get_records_for_users_to_update())
