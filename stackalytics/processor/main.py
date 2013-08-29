@@ -122,6 +122,8 @@ def update_repos(runtime_storage_inst):
     for repo in repos:
         process_repo(repo, runtime_storage_inst, record_processor_inst)
 
+    record_processor_inst.finalize()
+
 
 def apply_corrections(uri, runtime_storage_inst):
     LOG.info('Applying corrections from uri %s', uri)
