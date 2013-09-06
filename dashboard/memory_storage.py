@@ -44,6 +44,8 @@ class CachedMemoryStorage(MemoryStorage):
         }
 
     def _save_record(self, record):
+        if 'company_name' in record and record['company_name'] == '*robots':
+            return
         self.records[record['record_id']] = record
         for key, index in self.indexes.iteritems():
             self._add_to_index(index, record, key)
