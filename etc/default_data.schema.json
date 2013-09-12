@@ -162,6 +162,12 @@
                 "required": ["module_group_name", "modules"],
                 "additionalProperties": false
             }
+        },
+        "mail_lists": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
         }
     }
 }
