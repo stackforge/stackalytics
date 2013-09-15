@@ -264,6 +264,16 @@ class RecordProcessor(object):
 
         yield record
 
+    def _process_blueprint(self, record):
+        record['primary_key'] = record['self_link']
+        record['author_email'] = record['assignee_launchpad_id']
+        record['launchpad_id'] = record['assignee_launchpad_id']
+
+        if record['author_email']:
+            self._update_record_and_user(record)
+
+        yield record
+
     def _apply_type_based_processing(self, record):
         if record['record_type'] == 'commit':
             for r in self._process_commit(record):
@@ -274,6 +284,10 @@ class RecordProcessor(object):
         elif record['record_type'] == 'email':
             for r in self._process_email(record):
                 yield r
+        elif record['record_type'] == 'bp':
+            for r in self._process_blueprint(record):
+                yield r
+
 
     def process(self, record_iterator):
         for record in record_iterator:

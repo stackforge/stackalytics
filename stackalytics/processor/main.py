@@ -20,7 +20,7 @@ import psutil
 from psutil import _error
 
 from stackalytics.openstack.common import log as logging
-from stackalytics.processor import config
+from stackalytics.processor import config, lp
 from stackalytics.processor import default_data_processor
 from stackalytics.processor import mls
 from stackalytics.processor import rcs
@@ -77,6 +77,12 @@ def _record_typer(record_iterator, record_type):
 def process_repo(repo, runtime_storage_inst, record_processor_inst):
     uri = repo['uri']
     LOG.debug('Processing repo uri %s' % uri)
+
+    blueprint_iterator = lp.log(repo)
+    mail_iterator_typed = _record_typer(blueprint_iterator, 'bp')
+    processed_mail_iterator = record_processor_inst.process(
+        mail_iterator_typed)
+    runtime_storage_inst.set_records(processed_mail_iterator)
 
     vcs_inst = vcs.get_vcs(repo, cfg.CONF.sources_root)
     vcs_inst.fetch()
