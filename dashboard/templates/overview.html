@@ -6,7 +6,7 @@
 {% set show_user_activity = (user_id) %}
 {% set show_module_activity = (module) and (not user_id) %}
 {% set show_activity = (show_user_activity) or (show_module_activity) %}
-{% set show_user_contribution = (user_id) %}
+{% set show_user_contribution = (user_id) or (company) %}
 {% set show_module_contribution = (module) and (not user_id) %}
 {% set show_contribution = (show_user_contribution) or (show_module_contribution) %}
 {% set show_user_profile = (user_id) %}
@@ -117,10 +117,15 @@
         </a>
         {%/if%}
         </div>
-        {%elif ((record_type == "bp_draft") || (record_type == "bp_implementation")) %}
+        {%elif ((record_type == "bpd") || (record_type == "bpc")) %}
         <div style='font-weight: bold;'>${title} (<a href='${web_link}'>${name}</a>)</div>
         <div style='white-space: pre-wrap;'>${summary}</div>
 
+        <div>Priority: <span class="specpriority${priority}">${priority}</span></div>
+        <div>Status: ${lifecycle_status} (${definition_status}, ${implementation_status})</div>
+        {%if mention_count %}
+        <div><b>Mention count: ${mention_count}, last mention on ${mention_date_str}</b></div>
+        {%/if%}
         {%/if%}
     </div>
     </div>
@@ -144,37 +149,13 @@
 
 <script id="contribution_template" type="text/x-jquery-tmpl">
     {% raw %}
-<h3>Contribution overview</h3>
-{%if blueprints.length > 0 %}
-    <div>Blueprints:
-        <ol>
-            {%each(i,rec) blueprints %}
-                <li>
-                    <a href="https://blueprints.launchpad.net/${rec.module}/+spec/${rec.id}">${rec.id}</a>
-                    <small>${rec.module}</small>
-                </li>
-            {%/each%}
-        </ol>
-    </div>
-{%/if%}
-
-{%if bugs.length > 0 %}
-    <div>Bugs:
-        <ol>
-            {%each(i,rec) bugs %}
-                <li>
-                    <a href="https://bugs.launchpad.net/bugs/${rec.id}">${rec.id}</a>
-                    <small>${rec.module}</small>
-                </li>
-            {%/each%}
-        </ol>
-    </div>
-{%/if%}
-
+<h2>Contribution Summary</h2>
 <div>Total commits: <b>${commit_count}</b></div>
 <div>Total LOC: <b>${loc}</b></div>
 <div>Review stat (-2, -1, +1, +2): <b>${marks["-2"]}, ${marks["-1"]}, ${marks["1"]}, ${marks["2"]}</b></div>
     {% endraw %}
+<div>Draft Blueprints: <b>${new_blueprint_count}</b></div>
+<div>Completed Blueprints: <b>${competed_blueprint_count}</b></div>
 </script>
 
 {% endblock %}
@@ -230,7 +211,7 @@
         <div id="user_profile_container" style="margin-bottom: 2em;"></div>
     {% endif %}
     {% if show_user_activity %}
-        <h3 id="activity_header">Activity log</h3>
+        <h2 id="activity_header">Activity log</h2>
         <div id="activity_container"></div>
 
         <div style="height: 44px;">
@@ -274,7 +255,7 @@
     {% endif %}
 
     {% if show_module_activity %}
-        <h3 id="activity_header">Activity log</h3>
+        <h2 id="activity_header">Activity log</h2>
         <div id="activity_container"></div>
 
         <div style="height: 44px;">

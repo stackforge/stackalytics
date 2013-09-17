@@ -216,3 +216,94 @@ a[href^="https://launchpad"]:after {
 .review_mark {
     font-weight: bold;
 }
+
+.specstatusApproved, .specstatusApproved a {
+    color: #008000;
+}
+.specstatusPENDINGAPPROVAL, .specstatusPENDINGAPPROVAL a, .specstatusPENDINGREVIEW, .specstatusPENDINGREVIEW a {
+    color: #FF0099;
+}
+.specstatusDRAFT, .specstatusDRAFT a, .specstatusDISCUSSION, .specstatusDISCUSSION a {
+    color: #993300;
+}
+.specstatusNew, .specstatusNew a {
+    color: #FF0000;
+}
+.specstatusSUPERSEDED, .specstatusSUPERSEDED a, .specstatusOBSOLETE, .specstatusOBSOLETE a, .specpriorityNOTFORUS, .specpriorityNOTFORUS a, .specpriorityUNDEFINED, .specpriorityUNDEFINED a {
+    color: #808080;
+}
+.specpriorityLow, .specpriorityLow a {
+    color: #000000;
+}
+.specpriorityMedium, .specpriorityMedium a {
+    color: #FF6600;
+}
+.specpriorityHigh, .specpriorityHigh a, .specpriorityEssential, .specpriorityEssential a {
+    color: #FF0000;
+}
+.specdeliveryUNKNOWN, .specdeliveryUNKNOWN a, .specdeliveryNOTSTARTED, .specdeliveryNOTSTARTED a {
+    color: #808080;
+}
+.specdeliveryDEFERRED, .specdeliveryDEFERRED a, .specdeliveryNEEDSINFRASTUCTURE, .specdeliveryNEEDSINFRASTUCTURE a, .specdeliveryBLOCKED, .specdeliveryBLOCKED a {
+    color: #FF0000;
+}
+.specdeliverySTARTED, .specdeliverySTARTED a, .specdeliveryGOOD, .specdeliveryGOOD a {
+    color: #0000FF;
+}
+.specdeliverySlow, .specdeliverySlow a {
+    color: #FF0000;
+}
+.specdeliveryBeta, .specdeliveryBeta a {
+    color: #FF6600;
+}
+.specdeliveryNEEDSREVIEW, .specdeliveryNEEDSREVIEW a {
+    color: #800080;
+}
+.specdeliveryAWAITINGDEPLOYMENT, .specdeliveryAWAITINGDEPLOYMENT a {
+    color: #FF0000;
+}
+.specdeliveryImplemented, .specdeliveryImplemented a, .specdeliveryINFORMATIONAL, .specdeliveryINFORMATIONAL a {
+    color: #008000;
+}
+.bug-activity {
+    color: #555555;
+}
+.statusNew, .statusNew a {
+    color: #993300;
+}
+.statusIncomplete, .statusIncomplete a, .statusConfirmed, .statusConfirmed a {
+    color: #FF0000;
+}
+.statusTriaged, .statusTriaged a {
+    color: #FF6600;
+}
+.statusINPROGRESS, .statusINPROGRESS a {
+    color: #000000;
+}
+.statusFIXCOMMITTED, .statusFIXCOMMITTED a {
+    color: #005500;
+}
+.statusFIXRELEASED, .statusFIXRELEASED a {
+    color: #008000;
+}
+.statusINVALID, .statusINVALID a, .statusWONTFIX, .statusWONTFIX a {
+    color: #555555;
+}
+.importanceCRITICAL, .importanceCRITICAL a {
+    color: #FF0000;
+}
+.importanceHIGH, .importanceHIGH a {
+    color: #FF6600;
+}
+.importanceMEDIUM, .importanceMEDIUM a {
+    color: #008000;
+}
+.importanceLOW, .importanceLOW a {
+    color: #000000;
+}
+.importanceWISHLIST, .importanceWISHLIST a {
+    color: #0000FF;
+}
+.importanceUNDECIDED, .importanceUNDECIDED a {
+    color: #999999;
+}
