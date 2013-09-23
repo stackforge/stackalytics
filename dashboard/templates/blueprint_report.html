@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+</head>
+<body>
+
+<h1>Blueprint &ldquo;{{ title }}&rdquo;</h1>
+
+<h2>Activity Log</h2>
+
+{% for item in activity %}
+    <div style="margin-bottom: 1em;">
+        <div style='float: left; '><img src="{{ item.gravatar }}"
+                                        style="width: 32px; height: 32px;">
+        </div>
+        <div style="margin-left: 40px;">
+            <div style="font-weight: bold;">{{ item.author_name }}
+                ({{ item.company_name }})
+            </div>
+            <div style="font-weight: bold;">{{ item.date_str}} in <a
+                    href="https://launchpad.net/${module}">{{ item.module }}</a></div>
+        </div>
+        <div style="margin-left: 40px;">
+            {% if item.record_type == "commit" %}
+            <div>Commit</div>
+            {% if item.correction_comment %}
+                <div style='font-weight: bold; color: red;'>Commit corrected:
+                    <span>{{ item.correction_comment }}</span></div>
+            {% endif %}
+            <div style='font-weight: bold;'>{{ item.subject }}</div>
+            <div style='white-space: pre-wrap; '>{{ item.message }}</div>
+            <div><span style="color: green">+<span>{{ item.lines_added }}</span></span>
+                <span style="color: blue">- <span>{{ item.lines_deleted }}</span></span>
+            </div>
+            {% elif item.record_type == "mark" %}
+            <div>Review</div>
+            <div>Patch submitted by {{ parent_author_link }}</div>
+            <div style='font-weight: bold;'>{{item.subject}}</div>
+            <div>Change Id: <a href="{{item.url}}">{{item.review_id}}</a></div>
+            <div style="color: {% if value > 0 %} green {% else %} blue {% endif %}">
+                ${description}: <span class="review_mark">{{item.value}}</span></div>
+            {% elif item.record_type == "email" %}
+            <div>Email</div>
+            <div style='font-weight: bold;'>
+                {% if email_link != "" %}
+                    <a href='{{item.email_link}}'>
+                {% endif %}
+                {{item.subject}}
+                {% if email_link != "" %}
+                </a>
+                {% endif %}
+            </div>
+            {% elif ((item.record_type == "bpd") or (item.record_type == "bpc")) %}
+            <div>Blueprint</div>
+            <div style='font-weight: bold;'>{{ item.title }} (<a href='{{ item.web_link }}'>{{ item.name }}</a>)
+            </div>
+            <div style='white-space: pre-wrap;'>{{ item.summary }}</div>
+
+            <div>Priority: <span
+                    class="specpriority{{item.priority}}">{{item.priority}}</span></div>
+            <div>Status: <span class="status{{item.lifecycle_status}}">{{item.lifecycle_status}}</span>
+                (<span class="specstatus{{item.definition_status}}">{{item.definition_status}}</span>,
+                <span class="specdelivery{{item.implementation_status}}">{{item.implementation_status}}</span>)
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+{% endfor %}
+</body>
+</html>
