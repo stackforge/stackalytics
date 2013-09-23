@@ -87,6 +87,15 @@ Implements Blueprint ''' + (
 
         self.assertEqual(expected, web.unwrap_text(original))
 
+    def test_unwrap_split_long_link(self):
+        original = ('https://blueprints.launchpad.net/stackalytics/+spec/'
+                    'stackalytics-core')
+        expected = ('https://&#8203;blueprints.launchpad.net/&#8203;'
+                    'stackalytics/&#8203;+spec/&#8203;stackalytics-core')
+
+        self.assertEqual(expected, web.make_commit_message(
+            {'message': original, 'module': 'none'}))
+
     @mock.patch('dashboard.web.get_vault')
     @mock.patch('dashboard.web.get_user_from_runtime_storage')
     def test_make_page_title(self, user_patch, vault_patch):

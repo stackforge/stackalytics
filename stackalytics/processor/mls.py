@@ -81,6 +81,9 @@ def _link_content_changed(link, runtime_storage_inst):
 def _retrieve_mails(uri):
     LOG.debug('Retrieving mail archive from uri: %s', uri)
     content = utils.read_uri(uri)
+    if not content:
+        LOG.error('Error reading mail archive from uri: %s', uri)
+        return
     gzip_fd = gzip.GzipFile(fileobj=StringIO.StringIO(content))
     content = gzip_fd.read()
     LOG.debug('Mail archive is loaded, start processing')
@@ -105,15 +108,18 @@ def _retrieve_mails(uri):
             'author_email': author_email,
             'subject': subject,
             'date': date,
+            'body': body,
         }
 
         for pattern_name, pattern in MESSAGE_PATTERNS.iteritems():
             collection = set()
             for item in re.finditer(pattern, body):
                 groups = item.groupdict()
-                collection.add(groups['id'])
+                item_id = groups['id']
                 if 'module' in groups:
+                    item_id = groups['module'] + ':' + item_id
                     email['module'] = groups['module']
+                collection.add(item_id)
             email[pattern_name] = list(collection)
 
         yield email
@@ -125,5 +131,5 @@ def log(uri, runtime_storage_inst):
     for link in links:
         if _link_content_changed(link, runtime_storage_inst):
             for mail in _retrieve_mails(link):
-                LOG.debug('New mail: %s', mail)
+                LOG.debug('New mail: %s', mail['message_id'])
                 yield mail

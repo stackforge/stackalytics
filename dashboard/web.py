@@ -49,7 +49,7 @@ METRIC_LABELS = {
     'commits': 'Commits',
     'marks': 'Reviews',
     'emails': 'Emails',
-    'bpd': 'New Blueprints',
+    'bpd': 'Drafted Blueprints',
     'bpc': 'Completed Blueprints',
 }
 
@@ -904,6 +904,46 @@ def get_commit_report(records):
     return response
 
 
+@app.route('/report/blueprint/<module>/<blueprint_name>')
+@templated()
+@exception_handler()
+def blueprint_report(module, blueprint_name):
+    memory_storage_inst = get_vault()['memory_storage']
+
+    blueprint_id = module + ':' + blueprint_name
+
+    for bpd in memory_storage_inst.get_records(
+            memory_storage_inst.get_record_ids_by_type('bpd')):
+        if bpd['id'] == blueprint_id:
+            _extend_record(bpd)
+            break
+    else:
+        flask.abort(404)
+        return
+
+    for bpi in memory_storage_inst.get_records(
+            memory_storage_inst.get_record_ids_by_type('bpi')):
+        if bpi['id'] == blueprint_id:
+            _extend_record(bpi)
+            break
+    else:
+        bpi = None
+
+    record_ids = memory_storage_inst.get_record_ids_by_blueprint_ids(
+        [blueprint_id])
+
+    activity = [bpd]
+    if bpi:
+        activity.append(bpi)
+    for record in memory_storage_inst.get_records(record_ids):
+        _extend_record(record)
+        activity.append(record)
+
+    activity.sort(key=lambda x: x['date'])
+
+    return {'title': bpd['title'], 'activity': activity}
+
+
 # Jinja Filters ---------
 
 @app.template_filter('datetimeformat')
@@ -960,12 +1000,13 @@ def make_commit_message(record):
 
     # clear text
     s = cgi.escape(re.sub(re.compile('\n{2,}', flags=re.MULTILINE), '\n', s))
+    s = re.sub(r'([/\/]+)', r'\1&#8203;', s)
 
     # insert links
     s = re.sub(re.compile('(blueprint\s+)([\w-]+)', flags=re.IGNORECASE),
                r'\1<a href="https://blueprints.launchpad.net/' +
                module + r'/+spec/\2">\2</a>', s)
-    s = re.sub(re.compile('(bug\s+)#?([\d]{5,7})', flags=re.IGNORECASE),
+    s = re.sub(re.compile('(bug[\s#:]*)([\d]{5,7})', flags=re.IGNORECASE),
                r'\1<a href="https://bugs.launchpad.net/bugs/\2">\2</a>', s)
     s = re.sub(r'\s+(I[0-9a-f]{40})',
                r' <a href="https://review.openstack.org/#q,\1,n,z">\1</a>', s)
