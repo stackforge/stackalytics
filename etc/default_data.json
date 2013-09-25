@@ -517,6 +517,17 @@
             "emails": ["clint@fewbar.com", "clint.byrum@hp.com", "clint@ubuntu.com"]
         },
         {
+            "launchpad_id": "cmsj",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Chris Jones",
+            "emails": ["cmsj@tenshu.net", "cmsj@hp.com"]
+        },
+        {
             "launchpad_id": "corvus",
             "companies": [
                 {
