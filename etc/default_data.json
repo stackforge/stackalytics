@@ -1821,6 +1821,17 @@
             "emails": ["joshua.hesketh@rackspace.com", "joshua.hesketh@RACKSPACE.COM", "josh@nitrotech.org"]
         },
         {
+            "launchpad_id": "loquacity",
+            "companies": [
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Lana Brindley",
+            "emails": ["lana.brindley@rackspace.com", "lana.brindley@RACKSPACE.COM", "openstack@lanabrindley.com"]
+        },
+        {
             "launchpad_id": "jpichon",
             "companies": [
                 {
