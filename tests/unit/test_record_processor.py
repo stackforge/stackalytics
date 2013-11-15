@@ -343,6 +343,7 @@ class TestRecordProcessor(testtools.TestCase):
         user = utils.load_user(
             record_processor_inst.runtime_storage_inst, 'john_doe')
         self.assertEquals({
+            'seq': 1,
             'user_id': 'john_doe',
             'launchpad_id': 'john_doe',
             'user_name': 'john_doe',
@@ -377,6 +378,7 @@ class TestRecordProcessor(testtools.TestCase):
         user = utils.load_user(
             record_processor_inst.runtime_storage_inst, 'john_doe')
         self.assertEquals({
+            'seq': 1,
             'user_id': 'john_doe',
             'launchpad_id': 'john_doe',
             'user_name': 'John Doe',
@@ -420,7 +422,8 @@ class TestRecordProcessor(testtools.TestCase):
              'company_name': '*independent'},
             processed_records[1])
 
-        user = {'user_id': 'john_doe',
+        user = {'seq': 1,
+                'user_id': 'john_doe',
                 'launchpad_id': 'john_doe',
                 'user_name': 'John Doe',
                 'emails': ['john_doe@gmail.com'],
@@ -468,7 +471,8 @@ class TestRecordProcessor(testtools.TestCase):
              'company_name': '*independent'},
             processed_records[1])
 
-        user = {'user_id': 'john_doe',
+        user = {'seq': 1,
+                'user_id': 'john_doe',
                 'launchpad_id': 'john_doe',
                 'user_name': 'John Doe',
                 'emails': ['john_doe@gmail.com'],
@@ -514,7 +518,8 @@ class TestRecordProcessor(testtools.TestCase):
              'company_name': '*independent'},
             processed_records[1])
 
-        user = {'user_id': 'john_doe',
+        user = {'seq': 1,
+                'user_id': 'john_doe',
                 'launchpad_id': 'john_doe',
                 'user_name': 'John Doe',
                 'emails': ['john_doe@gmail.com'],
@@ -523,6 +528,80 @@ class TestRecordProcessor(testtools.TestCase):
             record_processor_inst.runtime_storage_inst, 'john_doe'))
         self.assertEquals(user, utils.load_user(
             record_processor_inst.runtime_storage_inst, 'john_doe@gmail.com'))
+
+    def test_process_email_then_review(self):
+        # it is expected that the user profile will contain both email and
+        # LP id
+        record_processor_inst = self.make_record_processor()
+
+        list(record_processor_inst.process([
+            {'record_type': 'email',
+             'message_id': '<message-id>',
+             'author_email': 'john_doe@gmail.com',
+             'subject': 'hello, world!',
+             'body': 'lorem ipsum',
+             'date': 1234567890},
+            {'record_type': 'review',
+             'id': 'I1045730e47e9e6ad31fcdfbaefdad77e2f3b2c3e',
+             'subject': 'Fix AttributeError in Keypair._add_details()',
+             'owner': {'name': 'John Doe',
+                       'email': 'john_doe@gmail.com',
+                       'username': 'john_doe'},
+             'createdOn': 1379404951,
+             'module': 'nova'}
+        ]))
+
+        user = {'seq': 1,
+                'user_id': 'john_doe',
+                'launchpad_id': 'john_doe',
+                'user_name': 'John Doe',
+                'emails': ['john_doe@gmail.com'],
+                'companies': [{'company_name': '*independent', 'end_date': 0}]}
+        self.assertEquals(user, utils.load_user(
+            record_processor_inst.runtime_storage_inst, 'john_doe@gmail.com'))
+        self.assertEquals(user, utils.load_user(
+            record_processor_inst.runtime_storage_inst, 'john_doe'))
+
+    def test_merge_users(self):
+        record_processor_inst = self.make_record_processor(
+            lp_user_name={
+                'john_doe': {'name': 'john_doe', 'display_name': 'John Doe'}},
+        )
+
+        list(record_processor_inst.process([
+            {'record_type': 'bp',
+             'id': 'mod:blueprint',
+             'self_link': 'http://launchpad.net/blueprint',
+             'owner': 'john_doe',
+             'date_created': 1234567890},
+            {'record_type': 'email',
+             'message_id': '<message-id>',
+             'author_email': 'john_doe@gmail.com',
+             'subject': 'hello, world!',
+             'body': 'lorem ipsum',
+             'date': 1234567890},
+            {'record_type': 'review',
+             'id': 'I1045730e47e9e6ad31fcdfbaefdad77e2f3b2c3e',
+             'subject': 'Fix AttributeError in Keypair._add_details()',
+             'owner': {'name': 'John Doe',
+                       'email': 'john_doe@gmail.com',
+                       'username': 'john_doe'},
+             'createdOn': 1379404951,
+             'module': 'nova'}
+        ]))
+
+        user = {'seq': 2,
+                'user_id': 'john_doe',
+                'launchpad_id': 'john_doe',
+                'user_name': 'John Doe',
+                'emails': ['john_doe@gmail.com'],
+                'companies': [{'company_name': '*independent', 'end_date': 0}]}
+        rsi = record_processor_inst.runtime_storage_inst
+        self.assertEquals(2, rsi.get_by_key('user:count'))
+        self.assertEquals(None, utils.load_user(rsi, 1))
+        self.assertEquals(user, utils.load_user(rsi, 2))
+        self.assertEquals(user, utils.load_user(rsi, 'john_doe'))
+        self.assertEquals(user, utils.load_user(rsi, 'john_doe@gmail.com'))
 
     # update records
 
@@ -815,9 +894,20 @@ def make_runtime_storage(users=None, companies=None, releases=None,
     def set_by_key(key, value):
         runtime_storage_cache[key] = value
 
+    def delete_by_key(key):
+        del runtime_storage_cache[key]
+
+    def inc_user_count():
+        count = runtime_storage_cache.get('user:count') or 0
+        count += 1
+        runtime_storage_cache['user:count'] = count
+        return count
+
     rs = mock.Mock(runtime_storage.RuntimeStorage)
     rs.get_by_key = mock.Mock(side_effect=get_by_key)
     rs.set_by_key = mock.Mock(side_effect=set_by_key)
+    rs.delete_by_key = mock.Mock(side_effect=delete_by_key)
+    rs.inc_user_count = mock.Mock(side_effect=inc_user_count)
 
     if users:
         for user in users:
