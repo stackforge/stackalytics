@@ -3836,6 +3836,17 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "olkonami",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Olga Kopylova",
+            "emails": ["olkonami@gmail.com", "okopylova@mirantis.com"]
         }
     ],
     "companies": [
