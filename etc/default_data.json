@@ -2310,6 +2310,17 @@
             "emails": ["marun@redhat.com", "mnewby@internap.com"]
         },
         {
+            "launchpad_id": "mjblack",
+            "companies": [
+                {
+                    "company_name": "Comcast",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Matthew J. Black",
+            "emails": ["mjblack@gmail.com", "matthew_black@cable.comcast.com"]
+        },
+        {
             "launchpad_id": "masumotok",
             "companies": [
                 {
@@ -3050,6 +3061,17 @@
             ],
             "user_name": "Sean M. Collins",
             "emails": ["sean@coreitpro.com"]
+        },
+        {
+            "launchpad_id": "shilla-saebi",
+            "companies": [
+                {
+                    "company_name": "Comcast",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Shilla Saebi",
+            "emails": ["shilla.saebi@gmail.com","shilla_saebi@cable.comcast.com"]
         },
         {
             "launchpad_id": "sdague",
