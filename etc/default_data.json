@@ -2380,6 +2380,28 @@
             "emails": ["nathanael.i.burton@gmail.com", "nathanael.i.burton.work@gmail.com"]
         },
         {
+            "launchpad_id": "matt-0",
+            "companies": [
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Matthew Oliver",
+            "emails": ["matt@oliver.net.au", "matthew.oliver@rackspace.com"]
+        },
+        {
+            "launchpad_id": "matt-nycresistor",
+            "companies": [
+                {
+                    "company_name": "Cloudscaling",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Matt Joyce",
+            "emails": ["matt.joyce@cloudscaling.com"]
+        },
+        {
             "launchpad_id": "matt-nycresistor",
             "companies": [
                 {
