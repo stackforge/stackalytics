@@ -3648,6 +3648,17 @@
             "emails": ["victor.r.howard@gmail.com"]
         },
         {
+            "launchpad_id": "adkinss",
+            "companies": [
+                {
+                    "company_name": "Comcast",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Scott Adkins",
+            "emails": ["Scott_Adkins@cable.comcast.com"]
+        },
+        {
             "launchpad_id": "vipuls",
             "companies": [
                 {
