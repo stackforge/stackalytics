@@ -3,7 +3,7 @@
 <script type="text/javascript">
     var page_size = 10;
     var start_record = 0;
-    var uri_options = {project_type: "all", release: "all", metric: "all"};
+    var uri_options = {release: "all", metric: "all"};
     {% if user_id %}
         uri_options["user_id"] = "{{ user_id }}";
     {% endif %}
