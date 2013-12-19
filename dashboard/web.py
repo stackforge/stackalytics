@@ -241,7 +241,7 @@ def get_companies_json(records):
             continue
         if name.lower().find(query.lower()) >= 0:
             options.add(name)
-    result = [{'id': helpers.safe_encode(c.lower()), 'text': c}
+    result = [{'id': utils.safe_encode(c.lower()), 'text': c}
               for c in sorted(options)]
     return result
 
@@ -398,28 +398,6 @@ def get_metric_json(metric):
     if metric not in parameters.METRIC_LABELS:
         metric = parameters.get_default('metric')
     return {'id': metric, 'text': parameters.METRIC_LABELS[metric]}
-
-
-@app.route('/api/1.0/project_types')
-@decorators.jsonify('project_types')
-@decorators.exception_handler()
-def get_project_types_json():
-    return [{'id': m, 'text': m, 'items': list(t)}
-            for m, t in vault.get_project_type_options().iteritems()]
-
-
-@app.route('/api/1.0/project_types/<project_type>')
-@decorators.jsonify('project_type')
-@decorators.exception_handler()
-def get_project_type_json(project_type):
-    if project_type != 'all':
-        for pt, groups in vault.get_project_type_options().iteritems():
-            if (project_type == pt) or (project_type in groups):
-                break
-        else:
-            project_type = parameters.get_default('project_type')
-
-    return {'id': project_type, 'text': project_type}
 
 
 def _get_date(kwargs, param_name):

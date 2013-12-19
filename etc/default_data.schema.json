@@ -74,12 +74,6 @@
                     "uri": {
                         "type": "string"
                     },
-                    "project_type": {
-                        "type": "string"
-                    },
-                    "project_group": {
-                        "type": "string"
-                    },
                     "organization": {
                         "type": "string"
                     },
@@ -108,7 +102,7 @@
                         }
                     }
                 },
-                "required": ["uri", "project_type", "module", "organization"],
+                "required": ["uri", "module", "organization"],
                 "additionalProperties": false
             }
         },
@@ -140,11 +134,8 @@
                     "organization": {
                         "type": "string"
                     },
-                    "project_type": {
+                    "module_group_name": {
                         "type": "string"
-                    },
-                    "project_group": {
-                        "type": ["string", "null"]
                     },
                     "exclude": {
                         "type": "array",
@@ -153,7 +144,7 @@
                         }
                     }
                 },
-                "required": ["organization", "project_type"],
+                "required": ["organization"],
                 "additionalProperties": false
             }
         },
