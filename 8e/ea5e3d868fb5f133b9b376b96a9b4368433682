@@ -1,0 +1,8 @@
+Verified+2: Jenkins
+Approved+1: Ilya Shakhat <ishakhat@mirantis.com>
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Submitted-by: Jenkins
+Submitted-at: Tue, 24 Dec 2013 13:50:42 +0000
+Reviewed-on: https://review.openstack.org/63924
+Project: stackforge/stackalytics
+Branch: refs/heads/master
