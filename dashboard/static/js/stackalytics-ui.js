@@ -247,7 +247,7 @@ function render_punch_card(chart_id, chart_data) {
 function getUrlVars() {
     var vars = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
-        vars[key] = value;
+        vars[key] = decodeURIComponent(value);
     });
     return vars;
 }
