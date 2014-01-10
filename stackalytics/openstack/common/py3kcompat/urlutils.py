@@ -30,10 +30,7 @@ if six.PY3:
     urlencode = urllib.parse.urlencode
     urljoin = urllib.parse.urljoin
     quote = urllib.parse.quote
-<<<<<<< HEAD
     quote_plus = urllib.parse.quote_plus
-=======
->>>>>>> 7a7d43f... Use Oslo module py3kcompat
     parse_qsl = urllib.parse.parse_qsl
     unquote = urllib.parse.unquote
     unquote_plus = urllib.parse.unquote_plus
@@ -53,10 +50,7 @@ else:
 
     urlencode = urllib.urlencode
     quote = urllib.quote
-<<<<<<< HEAD
     quote_plus = urllib.quote_plus
-=======
->>>>>>> 7a7d43f... Use Oslo module py3kcompat
     unquote = urllib.unquote
     unquote_plus = urllib.unquote_plus
 
