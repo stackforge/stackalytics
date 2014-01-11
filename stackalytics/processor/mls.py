@@ -19,9 +19,9 @@ import StringIO
 
 from email import utils as email_utils
 import re
-import urlparse
 
 from stackalytics.openstack.common import log as logging
+from stackalytics.openstack.common.py3kcompat import urlutils
 from stackalytics.processor import utils
 
 
@@ -58,12 +58,12 @@ def _get_mail_archive_links(uri):
     content = utils.read_uri(uri)
     links = set(re.findall(r'\shref\s*=\s*[\'"]([^\'"]*\.txt\.gz)', content,
                            flags=re.IGNORECASE))
-    return [urlparse.urljoin(uri, link) for link in links]
+    return [urlutils.urljoin(uri, link) for link in links]
 
 
 def _link_content_changed(link, runtime_storage_inst):
     LOG.debug('Check changes for mail archive located at uri: %s', link)
-    parsed_uri = urlparse.urlparse(link)
+    parsed_uri = urlutils.urlparse(link)
     conn = httplib.HTTPConnection(parsed_uri.netloc)
     conn.request('HEAD', parsed_uri.path)
     res = conn.getresponse()
