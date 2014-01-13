@@ -1,0 +1,297 @@
+{
+    "users": [
+        {
+            "launchpad_id": "foo",
+            "user_name": "Pupkin",
+            "emails": ["user@test.org"],
+            "companies": [
+                {
+                    "company_name": "Uno",
+                    "end_date": "2013-Jan-01"
+                },
+                {
+                    "company_name": "Duo",
+                    "end_date": null
+                }
+            ]
+        },
+        {
+            "launchpad_id": "jenkins",
+            "companies": [
+                {
+                    "company_name": "*robots",
+                    "end_date": null
+                }
+            ],
+            "user_name": "OpenStack Robot",
+            "emails": ["review@openstack.org", "jenkins@review.openstack.org",
+                "jenkins@openstack.org", "hudson@openstack.org",
+                "openstack-infra@lists.openstack.org", "elastic-hadoop-ci@mirantis.com"]
+        }
+    ],
+
+    "companies": [
+        {
+            "company_name": "*independent",
+            "domains": [""]
+        },
+        {
+            "company_name": "Cisco",
+            "domains": ["cisco.com"]
+        },
+        {
+            "company_name": "ConteXtream",
+            "domains": ["contextream.com"]
+        },
+        {
+            "company_name": "Ericsson",
+            "domains": ["ericsson.com"]
+        },
+        {
+            "company_name": "Hewlett-Packard",
+            "domains": ["hp.com"]
+        },
+        {
+            "company_name": "IBM",
+            "domains": ["ibm.com"]
+        },
+        {
+            "company_name": "ITRI",
+            "domains": ["itri.org.tw"]
+        },
+        {
+            "company_name": "NEC",
+            "domains": ["nec.com"]
+        },
+        {
+            "company_name": "Pantheon",
+            "domains": ["pantheon.sk"]
+        },
+        {
+            "company_name": "Radware",
+            "domains": ["radware.com"]
+        },
+        {
+            "company_name": "RedHat",
+            "domains": ["redhat.com"]
+        },
+        {
+            "company_name": "Plexxi",
+            "domains": ["plexxi.com"]
+        },
+        {
+            "domains": ["robots"],
+            "company_name": "*robots"
+        }
+    ],
+
+    "repos": [
+        {
+            "project_group": "bootstrap",
+	    "releases": [
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Hydrogen"
+                }
+            ],
+            "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/affinity.git",
+            "module": "affinity",
+            "organization": "opendaylight",
+            "project_type": "opendaylight"
+        },
+        {
+            "project_group": "incubation",
+	    "releases": [
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Hydrogen"
+                }
+            ],
+            "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/bgpcep.git",
+            "module": "bgpcep",
+            "organization": "opendaylight",
+            "project_type": "opendaylight"
+        },
+        {
+            "project_group": "bootstrap",
+	    "releases": [
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Hydrogen"
+                }
+            ],
+            "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/controller.git",
+            "module": "controller",
+            "organization": "opendaylight",
+            "project_type": "opendaylight"
+        },
+        {
+            "project_group": "incubation",
+	    "releases": [
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Hydrogen"
+                }
+            ],
+            "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/defense4all.git",
+            "module": "defense4all",
+            "organization": "opendaylight",
+            "project_type": "opendaylight"
+        },
+        {
+            "project_group": "integration",
+	    "releases": [
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Hydrogen"
+                }
+            ],
+            "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/integration.git",
+            "module": "integration",
+            "organization": "opendaylight",
+            "project_type": "opendaylight"
+        },
+        {
+            "project_group": "incubation",
+	    "releases": [
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Hydrogen"
+                }
+            ],
+            "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/lispflowmapping.git",
+            "module": "lispflowmapping",
+            "organization": "opendaylight",
+            "project_type": "opendaylight"
+        },
+        {
+            "project_group": "bootstrap",
+	    "releases": [
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Hydrogen"
+                }
+            ],
+            "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/opendove.git",
+            "module": "opendove",
+            "organization": "opendaylight",
+            "project_type": "opendaylight"
+        },
+        {
+            "project_group": "incubation",
+	    "releases": [
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Hydrogen"
+                }
+            ],
+            "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/openflowjava.git",
+            "module": "openflowjava",
+            "organization": "opendaylight",
+            "project_type": "opendaylight"
+        },
+        {
+            "project_group": "bootstrap",
+	    "releases": [
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Hydrogen"
+                }
+            ],
+            "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/openflowplugin.git",
+            "module": "openflowplugin",
+            "organization": "opendaylight",
+            "project_type": "opendaylight"
+        },
+        {
+            "project_group": "incubation",
+	    "releases": [
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Hydrogen"
+                }
+            ],
+            "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/ovsdb.git",
+            "module": "ovsdb",
+            "organization": "opendaylight",
+            "project_type": "opendaylight"
+        },
+        {
+            "project_group": "incubation",
+	    "releases": [
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Hydrogen"
+                }
+            ],
+            "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/snmp4sdn.git",
+            "module": "snmp4sdn",
+            "organization": "opendaylight",
+            "project_type": "opendaylight"
+        },
+        {
+            "project_group": "bootstrap",
+	    "releases": [
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Hydrogen"
+                }
+            ],
+            "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/vtn.git",
+            "module": "vtn",
+            "organization": "opendaylight",
+            "project_type": "opendaylight"
+        },
+        {
+            "project_group": "incubation",
+	    "releases": [
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Hydrogen"
+                }
+            ],
+            "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/yangtools.git",
+            "module": "yangtools",
+            "organization": "opendaylight",
+            "project_type": "opendaylight"
+        },
+        {
+	    "module": "dlux",
+	    "project_group": "incubation",
+            "organization": "opendaylight",
+            "project_type": "opendaylight",
+	    "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/dlux.git"
+	}
+    ],
+
+    "module_groups": [
+        {
+            "module_group_name": "glance-group",
+            "modules": ["glance", "python-glanceclient"]
+        }
+    ],
+
+    "releases": [
+        {
+            "release_name": "Hydrogen",
+            "end_date": "2014-Feb-03"
+        }
+    ],
+
+    "mail_lists": ["http://lists.opendaylight.org/pipermail/affinity-dev/",
+		   "http://lists.opendaylight.org/pipermail/bgpcep-dev/",
+		   "http://lists.opendaylight.org/pipermail/controller-dev/",
+		   "http://lists.opendaylight.org/pipermail/defense4all-dev/",
+		   "http://lists.opendaylight.org/pipermail/dlux-dev/",
+		   "http://lists.opendaylight.org/pipermail/integration-dev/",
+		   "http://lists.opendaylight.org/pipermail/lispflowmapping-dev/",
+		   "http://lists.opendaylight.org/pipermail/opendove-dev/",
+		   "http://lists.opendaylight.org/pipermail/openflowjava-dev/",
+		   "http://lists.opendaylight.org/pipermail/openflowplugin-dev/",
+		   "http://lists.opendaylight.org/pipermail/ovsdb-dev/",
+		   "http://lists.opendaylight.org/pipermail/snmp4sdn-dev/",
+		   "http://lists.opendaylight.org/pipermail/vtn-dev/",
+		   "http://lists.opendaylight.org/pipermail/yangtools-dev/"
+		  ]
+
+}
