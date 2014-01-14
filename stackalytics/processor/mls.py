@@ -56,9 +56,10 @@ TRAILING_RECORD = ('From ishakhat at mirantis.com  Tue Sep 17 07:30:43 2013'
 
 def _get_mail_archive_links(uri):
     content = utils.read_uri(uri)
-    links = set(re.findall(r'\shref\s*=\s*[\'"]([^\'"]*\.txt\.gz)', content,
+    links = set(re.findall(r'\shref\s*=\s*[\'"]([^\'"]*\.txt(\.gz)?)', content,
                            flags=re.IGNORECASE))
-    return [urlparse.urljoin(uri, link) for link in links]
+    # each link is a tuple due to having multiple groups in the re -- get the first one
+    return [urlparse.urljoin(uri, link[0]) for link in links]
 
 
 def _link_content_changed(link, runtime_storage_inst):
@@ -116,6 +117,7 @@ def _retrieve_mails(uri):
 def log(uri, runtime_storage_inst):
 
     links = _get_mail_archive_links(uri)
+    LOG.debug ('Mail archive links: %s', str(links))
     for link in links:
         if _link_content_changed(link, runtime_storage_inst):
             for mail in _retrieve_mails(link):
