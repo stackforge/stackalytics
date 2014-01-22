@@ -275,6 +275,7 @@ function make_uri(uri, options) {
 function make_std_options() {
     var options = {};
     options['release'] = $('#release').val();
+    options['project_type'] = $('#project_type').val();
     options['metric'] = $('#metric').val();
     options['module'] = $('#module').val() || '';
     options['company'] = $('#company').val() || '';
@@ -356,11 +357,21 @@ function init_selectors(base_url) {
 
     var project_type = getUrlVars()["project_type"];
     if (!project_type) {
-        project_type = "_default";
+        project_type = "openstack-all";
     }
+    const visibleProjectTypes = [
+                    {id: 'all', text: 'All', level: 0},
+                    {id: 'openstack-all', text: 'OpenStack', level: 1},
+                    {id: 'openstack-integrated', text: 'Integrated', level: 2},
+                    {id: 'openstack-incubated', text: 'Incubated', level: 2},
+                    {id: 'documentation', text: 'Documentation', level: 2},
+                    {id: 'infrastructure', text: 'Infrastructure', level: 2},
+                    {id: 'openstack-other', text: 'Other', level: 2},
+                    {id: 'stackforge', text: 'Stackforge', level: 1}];
+
     $("#project_type").val(project_type).select2({
         ajax: {
-            url: make_uri(base_url + "/api/1.0/project_types"),
+            url: make_uri(base_url + "/api/1.0/modules", {tags: "project_type,program,organization", project_type: "all"}),
             dataType: 'jsonp',
             data: function (term, page) {
                 return {
@@ -368,13 +379,14 @@ function init_selectors(base_url) {
                 };
             },
             results: function (data, page) {
-                const project_types = data["project_types"];
+                const modules = data["modules"];
                 var result = [];
-                result.push({id: "all", text: "all", group: true});
-                for (var key in project_types) {
-                    result.push({id: project_types[key].id, text: project_types[key].text, group: true});
-                    for (var i in project_types[key].items) {
-                        result.push({id: project_types[key].items[i], text: project_types[key].items[i]});
+                for (var i = 0; i < visibleProjectTypes.length; i++) {
+                    var item = visibleProjectTypes[i];
+                    for (var key in modules) {
+                        if (modules[key].id == item.id) {
+                            result.push(item);
+                        }
                     }
                 }
                 return {results: result};
@@ -382,19 +394,16 @@ function init_selectors(base_url) {
         },
         initSelection: function (element, callback) {
             var id = $(element).val();
-            $.ajax(make_uri(base_url + "/api/1.0/project_types/" + id), {
-                dataType: "jsonp"
-            }).done(function (data) {
-                    callback(data["project_type"]);
-                    $("#project_type").val(data["project_type"].id);
-                });
+            if (!id) { id = "openstack"}
+            for (var i = 0; i < visibleProjectTypes.length; i++) {
+                if (visibleProjectTypes[i].id == id) {
+                    callback(visibleProjectTypes[i]);
+                    $("#project_type").val(visibleProjectTypes[i].id);
+                }
+            }
         },
         formatResultCssClass: function (item) {
-            if (item.group) {
-                return "project_group"
-            } else {
-                return "project_group_item";
-            }
+            return "select_project_group_" + item.level
         }
     });
     $('#project_type')
@@ -435,13 +444,13 @@ function init_selectors(base_url) {
         });
 
     $("#module").select2({
-        allowClear: false,
+        allowClear: true,
         ajax: {
-            url: make_uri(base_url + "/api/1.0/modules"),
+            url: make_uri(base_url + "/api/1.0/modules", {tags: "module,program,group"}),
             dataType: 'jsonp',
             data: function (term, page) {
                 return {
-                    module_name: term
+                    query: term
                 };
             },
             results: function (data, page) {
@@ -459,8 +468,8 @@ function init_selectors(base_url) {
             }
         },
         formatResultCssClass: function (item) {
-            if (item.group) {
-                return "select_group"
+            if (item.tag) {
+                return "select_module_" + item.tag;
             }
             return "";
         }

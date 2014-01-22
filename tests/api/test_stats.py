@@ -26,9 +26,9 @@ class TestAPIStats(test_api.TestAPI):
                             'uri': 'git://github.com/openstack/nova.git'},
                            {'module': 'glance', 'organization': 'openstack',
                             'uri': 'git://github.com/openstack/glance.git'}],
-                 'module_groups': [
-                     {'module_group_name': 'openstack',
-                      'modules': ['nova', 'glance']}]},
+                 'module_groups': {'openstack': {
+                     'module_group_name': 'openstack',
+                     'modules': ['nova', 'glance']}}},
                 test_api.make_records(record_type=['commit'],
                                       loc=[10, 20, 30],
                                       module=['nova']),
@@ -51,9 +51,9 @@ class TestAPIStats(test_api.TestAPI):
                            {'module': 'glance', 'project_type': 'openstack',
                             'organization': 'openstack',
                             'uri': 'git://github.com/openstack/glance.git'}],
-                 'module_groups': [
-                     {'module_group_name': 'openstack',
-                      'modules': ['nova', 'glance']}],
+                 'module_groups': {'openstack': {
+                     'module_group_name': 'openstack',
+                     'modules': ['nova', 'glance']}},
                  'user:john_doe': {
                      'seq': 1, 'user_id': 'john_doe', 'user_name': 'John Doe',
                      'companies': [{'company_name': 'NEC', 'end_date': 0}],
@@ -90,9 +90,9 @@ class TestAPIStats(test_api.TestAPI):
                            {'module': 'glance', 'project_type': 'openstack',
                             'organization': 'openstack',
                             'uri': 'git://github.com/openstack/glance.git'}],
-                 'module_groups': [
-                     {'module_group_name': 'openstack',
-                      'modules': ['nova', 'glance']}],
+                 'module_groups': {'openstack': {
+                     'module_group_name': 'openstack',
+                     'modules': ['nova', 'glance']}},
                  'user:john_doe': {
                      'seq': 1, 'user_id': 'john_doe', 'user_name': 'John Doe',
                      'companies': [{'company_name': 'NEC', 'end_date': 0}],
