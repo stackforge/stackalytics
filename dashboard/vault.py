@@ -12,6 +12,7 @@
 # implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+import collections
 
 import os
 
@@ -81,45 +82,40 @@ def init_releases(vault):
     vault['releases'] = releases_map
 
 
+def _make_module(module_id, text, modules, tag):
+    return {'id': module_id, 'text': text,
+            'modules': modules, 'tag': tag}
+
+
 def init_module_groups(vault):
     runtime_storage_inst = vault['runtime_storage']
     memory_storage_inst = vault['memory_storage']
 
-    module_index = {}
+    module_group_index = collections.defaultdict(set)
     module_id_index = {}
-    module_groups = runtime_storage_inst.get_by_key('module_groups') or []
+    module_groups = runtime_storage_inst.get_by_key('module_groups') or {}
 
-    module_groups.append({'module_group_name': 'All',
-                          'modules': set(memory_storage_inst.get_modules())})
-
-    for module_group in module_groups:
+    for module_group in module_groups.values():
         module_group_name = module_group['module_group_name']
-        module_group_id = module_group_name.lower()
+        module_group_id = module_group.get('id') or module_group_name.lower()
 
-        module_id_index[module_group_id] = {
-            'group': True,
-            'id': module_group_id,
-            'text': module_group_name,
-            'modules': [m.lower() for m in module_group['modules']],
-        }
+        module_id_index[module_group_id] = _make_module(
+            module_group_id, module_group_name, module_group['modules'],
+            module_group.get('tag') or 'group')
 
-        modules = module_group['modules']
-        for module in modules:
-            if module in module_index:
-                module_index[module].add(module_group_id)
-            else:
-                module_index[module] = set([module_group_id])
+        for module in module_group['modules']:
+            module_group_index[module].add(module_group_id)
 
     for module in memory_storage_inst.get_modules():
-        module_id_index[module] = {
-            'id': module.lower(),
-            'text': module,
-            'modules': [module.lower()],
-        }
+        module_id_index[module] = _make_module(module.lower(), module,
+                                               [module.lower()], 'module')
 
-    vault['module_group_index'] = module_index
+    module_id_index['all'] = _make_module('all', 'All',
+                                          memory_storage_inst.get_modules(),
+                                          'project_type')
+
+    vault['module_group_index'] = module_group_index
     vault['module_id_index'] = module_id_index
-    vault['module_groups'] = module_groups
 
 
 def get_release_options():

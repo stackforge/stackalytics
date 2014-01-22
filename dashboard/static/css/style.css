@@ -228,17 +228,27 @@ a[href^="https://launchpad"]:after {
     font-size: 9pt;
 }
 
-.select_group {
+.select_module_group {
     font-weight: bold;
     color: #4bb2c5;
 }
 
-.project_group {
+.select_module_program {
+    font-weight: bold;
+    color: #ab64c5;
+}
+
+.select_project_group_0 {
     font-weight: bold;
 }
 
-.project_group_item {
+.select_project_group_1 {
+    font-weight: bold;
     padding-left: 0.5em;
+}
+
+.select_project_group_2 {
+    padding-left: 1em;
 }
 
 .review_mark {

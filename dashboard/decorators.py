@@ -61,13 +61,19 @@ def record_filter(ignore=None, use_default=True):
             memory_storage_inst = vault.get_memory_storage()
             record_ids = set(memory_storage_inst.get_record_ids())  # a copy
 
+            modules_param = None
             if 'module' not in ignore:
-                param = parameters.get_parameter(kwargs, 'module', 'modules',
-                                                 use_default)
-                if param:
+                modules_param = parameters.get_parameter(
+                    kwargs, 'module', 'modules', use_default)
+
+            if ('project_type' not in ignore) and not modules_param:
+                modules_param = parameters.get_parameter(
+                    kwargs, 'project_type', 'project_types', use_default)
+
+            if modules_param:
                     record_ids &= (
                         memory_storage_inst.get_record_ids_by_modules(
-                            vault.resolve_modules(param)))
+                            vault.resolve_modules(modules_param)))
 
             if 'user_id' not in ignore:
                 param = parameters.get_parameter(kwargs, 'user_id', 'user_ids')
@@ -251,6 +257,9 @@ def templated(template=None, return_code=200):
             ctx['metric'] = metric or parameters.get_default('metric')
             ctx['metric_label'] = parameters.METRIC_LABELS[ctx['metric']]
 
+            project_type = flask.request.args.get('project_type')
+            ctx['project_type'] = project_type
+
             release = flask.request.args.get('release')
             releases = vault_inst['releases']
             if release:
@@ -276,7 +285,8 @@ def templated(template=None, return_code=200):
 
             module = parameters.get_single_parameter(kwargs, 'module')
             ctx['module'] = module
-            ctx['module_inst'] = vault_inst['module_id_index'][module]
+            if module:
+                ctx['module_inst'] = vault_inst['module_id_index'][module]
 
             ctx['user_id'] = parameters.get_single_parameter(kwargs, 'user_id')
             ctx['page_title'] = helpers.make_page_title(
