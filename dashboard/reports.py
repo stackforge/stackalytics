@@ -210,7 +210,7 @@ def get_commit_report(records):
 @blueprint.route('/single_plus_two_reviews')
 @decorators.jsonify()
 @decorators.exception_handler()
-@decorators.record_filter(ignore='metric')
+@decorators.record_filter(ignore=['metric', 'project_type'])
 def get_single_plus_two_reviews_report(records):
     memory_storage_inst = vault.get_memory_storage()
     plus_twos = collections.defaultdict(list)
