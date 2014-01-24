@@ -3662,6 +3662,17 @@
             "emails": ["nstarodubtsev@mirantis.com", "starodubcevna@gmail.com"]
         },
         {
+            "launchpad_id": "stevenk",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Steve Kowalik",
+            "emails": ["steven@wedontsleep.org"]
+        },
+        {
             "launchpad_id": "steve-stevebaker",
             "companies": [
                 {
