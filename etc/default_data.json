@@ -190,6 +190,20 @@
             "emails": ["abogott@wikimedia.org"]
         },
         {
+            "launchpad_id": "andrew-mccrae",
+            "companies": [
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Andy McCrae",
+            "emails": [
+                "andy.mccrae@gmail.com",
+                "andrew.mccrae@rackspace.co.uk"
+            ]
+        },
+        {
             "launchpad_id": "andy-edmonds",
             "companies": [
                 {
@@ -497,6 +511,18 @@
             ],
             "user_name": "Brent Roskos",
             "emails": ["broskos@internap.com"]
+        },
+        {
+
+            "launchpad_id": "invsblduck",
+            "companies": [
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Brett Campbell",
+            "emails": ["invsblduck@gmail.com"]
         },
         {
             "launchpad_id": "bruno-semperlotti",
@@ -1428,6 +1454,17 @@
             ],
             "user_name": "gholt",
             "emails": ["z-launchpad@brim.net", "gholt@rackspace.com"]
+        },
+        {
+            "launchpad_id": "git-harry",
+            "companies": [
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Harry",
+            "emails": ["git-harry@live.co.uk"]
         },
         {
             "launchpad_id": "gmb",
