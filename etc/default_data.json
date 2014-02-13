@@ -4436,6 +4436,17 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "yongiman",
+            "companies": [
+                {
+                    "company_name": "Samsung",
+                    "end_date": null
+                }
+            ],
+            "user_name": "John Haan",
+            "emails": ["seungjin77.han@samsung.com", "yongiman@gmail.com"]
         }
     ],
     "companies": [
