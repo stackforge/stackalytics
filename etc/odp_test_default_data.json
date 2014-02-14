@@ -28,11 +28,11 @@
 
     "repos": [
         {
-            "module": "dlux",
+            "module": "ovsdb",
             "project_group": "incubation",
             "project_type": "opendaylight",
             "organization": "",
-            "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/dlux.git"
+            "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/ovsdb.git"
         },
         {
             "module": "affinity",
@@ -51,7 +51,7 @@
     ],
 
     "mail_lists": [
-    	"https://lists.opendaylight.org/pipermail/dlux-dev/",
+    	"https://lists.opendaylight.org/pipermail/ovsdb-dev/",
     	"https://lists.opendaylight.org/pipermail/affinity-dev/"
     ]
 

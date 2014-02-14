@@ -1,20 +1,90 @@
 {
     "users": [
-        {
-            "launchpad_id": "foo",
-            "user_name": "Pupkin",
-            "emails": ["user@test.org"],
-            "companies": [
-                {
-                    "company_name": "Uno",
-                    "end_date": "2013-Jan-01"
-                },
-                {
-                    "company_name": "Duo",
-                    "end_date": null
-                }
-            ]
-        },
+	{
+	    "launchpad_id": "mavenugo",
+	    "user_name": "Madhu Venugopal",
+	    "companies": [
+		{
+		    "company_name": "Cisco",
+		    "end_date": "2013-Oct-15"
+		},
+		{
+		    "company_name": "RedHat",
+		    "end_date": null
+		}
+	    ],
+	    "emails": ["mavenugo@gmail.com", "vmadhu@cisco.com",
+		       "vmadhu@redhat.com"]
+	},
+	{
+	    "launchpad_id": "chrisw-x",
+	    "user_name": "Chris Wright",
+	    "companies": [
+		{
+		    "company_name": "RedHat",
+		    "end_date": null
+		}
+	    ],
+	    "emails": ["chrisw@redhat.com", "chrisw@sous-sol.org"]
+	},
+	{
+	    "launchpad_id": "yangbaohua",
+	    "gerrit_id": "yangbaohua",
+	    "user_name": "Baohua Yang",
+	    "companies": [
+		{
+		    "company_name": "IBM",
+		    "end_date": null
+		}
+	    ],
+	    "emails": ["yangbaohua@gmail.com"]
+	},
+	{
+	    "launchpad_id": "huangdenghui",
+	    "user_name": "denghui huang",
+	    "companies": [
+		{
+		    "company_name": "IBM",
+		    "end_date": null
+		}
+	    ],
+	    "emails": ["huangdenghui@gmail.com"]
+	},
+	{
+	    "launchpad_id": "",
+	    "user_name": "Tushar Goyal",
+	    "companies": [
+		{
+		    "company_name": "Ericsson",
+		    "end_date": null
+		}
+	    ],
+	    "emails": ["goyaltushar7@gmail.com"]
+	},
+	{
+	    "user_name": "Dave Tucker",
+	    "launchpad_id": "davetucker",
+	    "companies": [
+		{
+		    "company_name": "Hewlett-Packard",
+		    "end_date": null
+		}
+	    ],
+	    "emails": ["dave@dtucker.co.uk", "dave.j.tucker@hp.com"]
+	},
+	{
+	    "launchpad_id": "dmm",
+	    "gerrit_id": "dmm",
+	    "user_name": "David Meyer",
+	    "companies": [
+		{
+		    "company_name": "Brocade",
+		    "end_date": null
+		}
+	    ],
+	    "emails": ["dmm@1-4-5.net", "dmm@brocade.com"]
+	},
+	
         {
             "launchpad_id": "jenkins",
             "companies": [
@@ -23,10 +93,8 @@
                     "end_date": null
                 }
             ],
-            "user_name": "OpenStack Robot",
-            "emails": ["review@openstack.org", "jenkins@review.openstack.org",
-                "jenkins@openstack.org", "hudson@openstack.org",
-                "openstack-infra@lists.openstack.org", "elastic-hadoop-ci@mirantis.com"]
+            "user_name": "Jenkins jobs",
+            "emails": ["jenkins-ovsdb@opendaylight.org", "jenkins-controller@opendaylight.org", "jenkins-opendove@opendaylight.org", "jenkins-vtn@opendaylight.org", "jenkins-snmp4sdn@opendaylight.org", "jenkins-integration@opendaylight.org", "jenkins-bgpcep@opendaylight.org","jenkins-openflowjava@opendaylight.org","jenkins-openflowplugin@opendaylight.org","jenkins-ovsdb@opendaylight.org"]
         }
     ],
 
@@ -36,36 +104,116 @@
             "domains": [""]
         },
         {
+            "company_name": "A10 Networks",
+            "domains": ["a10networks.com"]
+        },
+        {
+            "company_name": "Adva Optical",
+            "domains": ["advaoptical.com"]
+        },
+        {
+            "company_name": "Alactel-Lucent",
+            "domains": ["alcatel-lucent.com"]
+        },
+        {
+            "company_name": "Arista",
+            "domains": ["aristanetworks.com"]
+        },
+        {
+            "company_name": "Big Switch",
+            "domains": ["bigswitch.com"]
+        },
+        {
+            "company_name": "Brocade",
+            "domains": ["brocade.com"]
+        },
+        {
+            "company_name": "Ciena",
+            "domains": ["ciena.com"]
+        },
+        {
             "company_name": "Cisco",
             "domains": ["cisco.com"]
+        },
+        {
+            "company_name": "Citrix",
+            "domains": ["citrix.com"]
         },
         {
             "company_name": "ConteXtream",
             "domains": ["contextream.com"]
         },
         {
+            "company_name": "Coriant",
+            "domains": ["coriant.com"]
+        },
+        {
+            "company_name": "Cyan",
+            "domains": ["cyaninc.com"]
+        },
+        {
+            "company_name": "Dell",
+            "domains": ["dell.com"]
+        },
+        {
             "company_name": "Ericsson",
             "domains": ["ericsson.com"]
+        },
+        {
+            "company_name": "Fujitsu",
+            "domains": ["fujitsu.com"]
+        },
+        {
+            "company_name": "Guavus",
+            "domains": ["guavus.com"]
         },
         {
             "company_name": "Hewlett-Packard",
             "domains": ["hp.com"]
         },
         {
+            "company_name": "Huawei",
+            "domains": ["huawei.com"]
+        },
+        {
             "company_name": "IBM",
             "domains": ["ibm.com"]
+        },
+        {
+            "company_name": "Inocybe",
+            "domains": ["inocybe.com"]
+        },
+        {
+            "company_name": "Intel",
+            "domains": ["intel.com"]
         },
         {
             "company_name": "ITRI",
             "domains": ["itri.org.tw"]
         },
         {
+            "company_name": "Juniper",
+            "domains": ["juniper.net"]
+        },
+        {
+            "company_name": "Midokura",
+            "domains": ["midokura.com"]
+        },
+        {
             "company_name": "NEC",
-            "domains": ["nec.com"]
+            "domains": ["nec.com", "nec.co.jp"]
         },
         {
             "company_name": "Pantheon",
             "domains": ["pantheon.sk"]
+        },
+        {
+            "company_name": "Plexxi",
+            "domains": ["plexxi.com"]
+        },
+        {
+            "company_name": "Plumgrid",
+            "domains": ["plumgrid.com"]
         },
         {
             "company_name": "Radware",
@@ -76,8 +224,16 @@
             "domains": ["redhat.com"]
         },
         {
-            "company_name": "Plexxi",
-            "domains": ["plexxi.com"]
+            "company_name": "Versa",
+            "domains": ["versa-networks.com"]
+        },
+        {
+            "company_name": "VMWare",
+            "domains": ["vmware.com"]
+        },
+        {
+            "company_name": "ZTE",
+            "domains": ["zte.com.cn"]
         },
         {
             "domains": ["robots"],
@@ -88,12 +244,6 @@
     "repos": [
         {
             "project_group": "bootstrap",
-	    "releases": [
-                {
-                    "tag_to": "HEAD",
-                    "release_name": "Hydrogen"
-                }
-            ],
             "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/affinity.git",
             "module": "affinity",
             "organization": "opendaylight",
@@ -101,12 +251,6 @@
         },
         {
             "project_group": "incubation",
-	    "releases": [
-                {
-                    "tag_to": "HEAD",
-                    "release_name": "Hydrogen"
-                }
-            ],
             "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/bgpcep.git",
             "module": "bgpcep",
             "organization": "opendaylight",
@@ -114,12 +258,6 @@
         },
         {
             "project_group": "bootstrap",
-	    "releases": [
-                {
-                    "tag_to": "HEAD",
-                    "release_name": "Hydrogen"
-                }
-            ],
             "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/controller.git",
             "module": "controller",
             "organization": "opendaylight",
@@ -127,12 +265,6 @@
         },
         {
             "project_group": "incubation",
-	    "releases": [
-                {
-                    "tag_to": "HEAD",
-                    "release_name": "Hydrogen"
-                }
-            ],
             "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/defense4all.git",
             "module": "defense4all",
             "organization": "opendaylight",
@@ -140,12 +272,6 @@
         },
         {
             "project_group": "integration",
-	    "releases": [
-                {
-                    "tag_to": "HEAD",
-                    "release_name": "Hydrogen"
-                }
-            ],
             "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/integration.git",
             "module": "integration",
             "organization": "opendaylight",
@@ -153,12 +279,6 @@
         },
         {
             "project_group": "incubation",
-	    "releases": [
-                {
-                    "tag_to": "HEAD",
-                    "release_name": "Hydrogen"
-                }
-            ],
             "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/lispflowmapping.git",
             "module": "lispflowmapping",
             "organization": "opendaylight",
@@ -166,12 +286,6 @@
         },
         {
             "project_group": "bootstrap",
-	    "releases": [
-                {
-                    "tag_to": "HEAD",
-                    "release_name": "Hydrogen"
-                }
-            ],
             "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/opendove.git",
             "module": "opendove",
             "organization": "opendaylight",
@@ -179,12 +293,6 @@
         },
         {
             "project_group": "incubation",
-	    "releases": [
-                {
-                    "tag_to": "HEAD",
-                    "release_name": "Hydrogen"
-                }
-            ],
             "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/openflowjava.git",
             "module": "openflowjava",
             "organization": "opendaylight",
@@ -192,12 +300,6 @@
         },
         {
             "project_group": "bootstrap",
-	    "releases": [
-                {
-                    "tag_to": "HEAD",
-                    "release_name": "Hydrogen"
-                }
-            ],
             "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/openflowplugin.git",
             "module": "openflowplugin",
             "organization": "opendaylight",
@@ -205,12 +307,6 @@
         },
         {
             "project_group": "incubation",
-	    "releases": [
-                {
-                    "tag_to": "HEAD",
-                    "release_name": "Hydrogen"
-                }
-            ],
             "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/ovsdb.git",
             "module": "ovsdb",
             "organization": "opendaylight",
@@ -218,12 +314,6 @@
         },
         {
             "project_group": "incubation",
-	    "releases": [
-                {
-                    "tag_to": "HEAD",
-                    "release_name": "Hydrogen"
-                }
-            ],
             "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/snmp4sdn.git",
             "module": "snmp4sdn",
             "organization": "opendaylight",
@@ -231,12 +321,6 @@
         },
         {
             "project_group": "bootstrap",
-	    "releases": [
-                {
-                    "tag_to": "HEAD",
-                    "release_name": "Hydrogen"
-                }
-            ],
             "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/vtn.git",
             "module": "vtn",
             "organization": "opendaylight",
@@ -244,12 +328,6 @@
         },
         {
             "project_group": "incubation",
-	    "releases": [
-                {
-                    "tag_to": "HEAD",
-                    "release_name": "Hydrogen"
-                }
-            ],
             "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/yangtools.git",
             "module": "yangtools",
             "organization": "opendaylight",
@@ -264,18 +342,52 @@
 	}
     ],
 
-    "module_groups": [
-        {
-            "module_group_name": "glance-group",
-            "modules": ["glance", "python-glanceclient"]
-        }
-    ],
-
     "releases": [
-        {
-            "release_name": "Hydrogen",
-            "end_date": "2014-Feb-03"
+	{
+            "release_name": "april 2013",
+            "end_date": "2013-Apr-30"
+        },
+	{
+            "release_name": "may 2013",
+            "end_date": "2013-May-31"
+        },
+	{
+            "release_name": "june 2013",
+            "end_date": "2013-Jun-30"
+        },
+	{
+            "release_name": "july 2013",
+            "end_date": "2013-Jul-31"
+        },
+	{
+            "release_name": "august 2013",
+            "end_date": "2013-Aug-31"
+        },
+	{
+            "release_name": "september 2013",
+            "end_date": "2013-Sep-30"
+        },
+	{
+            "release_name": "october 2013",
+            "end_date": "2013-Oct-31"
+        },
+	{
+            "release_name": "november 2013",
+            "end_date": "2013-Nov-30"
+        },
+	{
+            "release_name": "december 2013",
+            "end_date": "2013-Dec-31"
+        },
+	{
+            "release_name": "january 2014",
+            "end_date": "2014-Jan-31"
+        },
+	{
+            "release_name": "hydrogen",
+            "end_date": "2014-Feb-04"
         }
+
     ],
 
     "mail_lists": ["http://lists.opendaylight.org/pipermail/affinity-dev/",
@@ -291,7 +403,8 @@
 		   "http://lists.opendaylight.org/pipermail/ovsdb-dev/",
 		   "http://lists.opendaylight.org/pipermail/snmp4sdn-dev/",
 		   "http://lists.opendaylight.org/pipermail/vtn-dev/",
-		   "http://lists.opendaylight.org/pipermail/yangtools-dev/"
+		   "http://lists.opendaylight.org/pipermail/yangtools-dev/",
+		   "http://lists.opendaylight.org/pipermail/discuss/"
 		  ]
 
 }
