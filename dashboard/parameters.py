@@ -23,7 +23,7 @@ LOG = logging.getLogger(__name__)
 
 DEFAULTS = {
     'metric': 'commits',
-    'release': 'hydrogen',
+    'release': 'all',
     'project_type': 'opendaylight',
     'review_nth': 5,
 }
@@ -32,20 +32,14 @@ METRIC_LABELS = {
     'loc': 'Lines of code',
     'commits': 'Commits',
     'marks': 'Reviews',
-    'tm_marks': 'Top Mentors',
     'emails': 'Emails',
-    'bpd': 'Drafted Blueprints',
-    'bpc': 'Completed Blueprints',
 }
 
 METRIC_TO_RECORD_TYPE = {
     'loc': 'commit',
     'commits': 'commit',
     'marks': 'mark',
-    'tm_marks': 'mark',
     'emails': 'email',
-    'bpd': 'bpd',
-    'bpc': 'bpc',
 }
 
 DEFAULT_RECORDS_LIMIT = 10
