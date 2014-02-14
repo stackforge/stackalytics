@@ -68,17 +68,18 @@ GIT_LOG_PATTERN = re.compile(''.join([(r[0] + ':(.*?)\n')
                              'diff_stat:' + DIFF_STAT_PATTERN,
                              re.DOTALL)
 
+CO_AUTHOR_PATTERN_RAW = '(?P<author_name>.+?)\s*<(?P<author_email>.+)>'
+CO_AUTHOR_PATTERN = re.compile(CO_AUTHOR_PATTERN_RAW, re.IGNORECASE)
+
 MESSAGE_PATTERNS = {
     'bug_id': re.compile(r'bug[\s#:]*(?P<id>\d+)', re.IGNORECASE),
     'blueprint_id': re.compile(r'\b(?:blueprint|bp)\b[ \t]*[#:]?[ \t]*'
                                r'(?P<id>[a-z0-9-]+)', re.IGNORECASE),
     'change_id': re.compile('Change-Id: (?P<id>I[0-9a-f]{40})', re.IGNORECASE),
     'coauthor': re.compile(r'(?:Co-Authored|Also)-By:'
-                           r'\s*(?P<id>.*)\s', re.IGNORECASE)
+                           r'\s*(?P<id>%s)\s' % CO_AUTHOR_PATTERN_RAW,
+                           re.IGNORECASE)
 }
-
-CO_AUTHOR_PATTERN = re.compile(
-    r'(?P<author_name>.+?)\s*<(?P<author_email>.+)>', re.IGNORECASE)
 
 
 class Git(Vcs):
@@ -231,7 +232,7 @@ class Git(Vcs):
             coauthors = []
             for coauthor in commit.get('coauthor') or []:
                 m = re.match(CO_AUTHOR_PATTERN, coauthor)
-                if utils.check_email_validity(m.group("author_email")):
+                if m and utils.check_email_validity(m.group("author_email")):
                     coauthors.append(m.groupdict())
 
             if coauthors:

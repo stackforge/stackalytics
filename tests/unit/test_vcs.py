@@ -95,6 +95,7 @@ author_name:Doug Hoffner
 author_email:mark.mcclain@dreamhost.com
 subject:add readme for 2.2.2
 message:Change-Id: Id32a4a72ec1d13992b306c4a38e73605758e26c7
+Co-Authored-By: some friend of mine
 
 diff_stat:
 
