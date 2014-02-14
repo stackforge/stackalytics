@@ -3684,7 +3684,7 @@
             "emails": ["sean@dague.net", "sdague@linux.vnet.ibm.com", "sean.dague@samsung.com", "sdague@gmail.com"]
         },
         {
-            "launchpad_id: "sean-gossard",
+            "launchpad_id": "sean-gossard",
             "companies": [ 
                 {
                     "company_name": "Tesora Corp",
