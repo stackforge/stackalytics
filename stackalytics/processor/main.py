@@ -78,12 +78,14 @@ def process_repo(repo, runtime_storage_inst, record_processor_inst):
     uri = repo['uri']
     LOG.debug('Processing repo uri %s' % uri)
 
-    bp_iterator = lp.log(repo)
-    bp_iterator_typed = _record_typer(bp_iterator, 'bp')
-    processed_bp_iterator = record_processor_inst.process(
-        bp_iterator_typed)
-    runtime_storage_inst.set_records(processed_bp_iterator,
-                                     utils.merge_records)
+    # OpenDaylight is not using launchpad at this time -- ignore
+
+    # bp_iterator = lp.log(repo)
+    # bp_iterator_typed = _record_typer(bp_iterator, 'bp')
+    # processed_bp_iterator = record_processor_inst.process(
+    #    bp_iterator_typed)
+    #runtime_storage_inst.set_records(processed_bp_iterator,
+    #                                 utils.merge_records)
 
     vcs_inst = vcs.get_vcs(repo, cfg.CONF.sources_root)
     vcs_inst.fetch()

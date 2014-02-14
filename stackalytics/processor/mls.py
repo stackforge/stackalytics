@@ -76,7 +76,8 @@ def _link_content_changed(link, runtime_storage_inst):
         runtime_storage_inst.set_by_key('mail_link:' + link, last_modified)
         return True
 
-    return False
+    # return true every time for now
+    return True
 
 
 def _retrieve_mails(uri):
@@ -85,8 +86,16 @@ def _retrieve_mails(uri):
     if not content:
         LOG.error('Error reading mail archive from uri: %s', uri)
         return
-    gzip_fd = gzip.GzipFile(fileobj=StringIO.StringIO(content))
-    content = gzip_fd.read()
+
+    # only gunzip if the uri has a .gz suffix
+    matchgz = re.compile ('\.txt\.gz')
+    if matchgz.search(uri):
+        LOG.debug ('%s is a gzipped file', uri)
+        gzip_fd = gzip.GzipFile(fileobj=StringIO.StringIO(content))
+        content = gzip_fd.read()
+    else:
+        LOG.debug ('%s is not a gzipped file', uri)
+        
     LOG.debug('Mail archive is loaded, start processing')
 
     content += TRAILING_RECORD
