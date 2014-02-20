@@ -2720,6 +2720,17 @@
             "emails": ["lyz@princessleia.com", "lyz@ubuntu.com"]
         },
         {
+            "launchpad_id": "zhikunliu",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Zhi Kun Liu",
+            "emails": ["liuzhikun@gmail.com", "zhikunli@cn.ibm.com"]
+        },
+        {
             "launchpad_id": "lzy-dev",
             "companies": [
                 {
