@@ -4917,6 +4917,10 @@
             "company_name": "Freescale"
         },
         {
+             "domains": ["jp.fujitsu.com"],
+             "company_name": "Fujitsu"
+        },
+        {
             "domains": ["getchef.com", "opscode.com"],
             "company_name": "Chef"
         },
