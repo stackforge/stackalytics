@@ -1280,6 +1280,17 @@
             "user_name": "Evgeniy Afonichev",
             "emails": ["eafonichev@mirantis.com", "evgeniy@afonichev.com"]
         },
+	{
+            "launchpad_id": "eaglezpf",
+            "companies": [
+                {
+                    "company_name": "Cisco Systems",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Pengfei Zhang",
+            "emails": ["penfzhan@cisco.com", "lalasjtu@gmail.com"]
+        },
         {
             "launchpad_id": "edward-hope-morley",
             "companies": [
