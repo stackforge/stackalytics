@@ -704,6 +704,17 @@
             "emails": ["changbin.liu@gmail.com", "changbl@research.att.com"]
         },
         {
+            "launchpad_id": "chandankumar-093047",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Chandan Kumar",
+            "emails": ["chandankumar.093047@gmail.com", "chkumar@redhat.com"]
+        },
+        {
             "launchpad_id": "chemikadze",
             "companies": [
                 {
