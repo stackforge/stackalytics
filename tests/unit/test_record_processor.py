@@ -670,6 +670,7 @@ class TestRecordProcessor(testtools.TestCase):
             self.assertEqual('IBM', record['company_name'],
                              message='Record %s' % record['primary_key'])
 
+    @testtools.skip('Skip this until bug 1286032 is fixed.')
     def test_core_user_guess(self):
         record_processor_inst = self.make_record_processor(
             lp_user_name={
@@ -848,6 +849,7 @@ class TestRecordProcessor(testtools.TestCase):
         review2 = runtime_storage_inst.get_by_primary_key('I222')
         self.assertEqual(1, review2['review_number'])
 
+    @testtools.skip('Skip this until bug 1286032 is fixed.')
     def test_mark_disagreement(self):
         record_processor_inst = self.make_record_processor(
             users=[
