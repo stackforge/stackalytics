@@ -238,6 +238,9 @@ class RecordProcessor(object):
             for coauthor in coauthors:
                 new_record = copy.deepcopy(record)
                 new_record.update(coauthor)
+                new_record['loc'] = 0
+                new_record['lines_added'] = 0
+                new_record['lines_deleted'] = 0
                 new_record['primary_key'] += coauthor['author_email']
 
                 yield new_record
