@@ -145,17 +145,6 @@
             "emails": ["ikharin@mirantis.com", "akscram@gmail.com"]
         },
         {
-            "launchpad_id": "alexandra-settle",
-            "companies": [
-                {
-                    "company_name": "Rackspace",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Alexandra Settle",
-            "emails": ["alexandra.settle@rackspace.com"]
-        },
-        {
             "launchpad_id": "alex-gaynor",
             "companies": [
                 {
@@ -180,6 +169,17 @@
             ],
             "user_name": "Alex Meade",
             "emails": ["alex.meade@rackspace.com", "hatboy112@yahoo.com", "mr.alex.meade@gmail.com"]
+        },
+        {
+            "launchpad_id": "alexandra-settle",
+            "companies": [
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Alexandra Settle",
+            "emails": ["alexandra.settle@rackspace.com"]
         },
         {
             "launchpad_id": "alexei-kornienko",
