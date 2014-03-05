@@ -1,0 +1,10 @@
+Verified+2: Jenkins
+Approved+1: Ilya Shakhat <ishakhat@mirantis.com>
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Code-Review+1: Joshua Hesketh <joshua.hesketh@rackspace.com>
+Code-Review+1: Steven Deaton <sdeaton2@gmail.com>
+Submitted-by: Jenkins
+Submitted-at: Wed, 05 Mar 2014 08:12:39 +0000
+Reviewed-on: https://review.openstack.org/78053
+Project: stackforge/stackalytics
+Branch: refs/heads/master
