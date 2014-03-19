@@ -4904,6 +4904,17 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "kevinbenton",
+            "user_name": "Kevin Benton",
+            "companies": [
+                {
+                    "company_name": "Big Switch Networks",
+                    "end_date": null
+                }
+            ],
+            "emails": ["blak111@gmail.com", "kevin.benton@bigswitch.com"]
         }
     ],
     "companies": [
