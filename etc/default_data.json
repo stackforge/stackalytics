@@ -3113,6 +3113,21 @@
             "emails": ["maty.grosz@alcatel-lucent.com", "imdg24@gmail.com"]
         },
         {
+            "launchpad_id": "michaeltchapman",
+            "companies": [
+                {
+                    "company_name": "Cisco Systems",
+                    "end_date": 2014-Jan-25 
+                },
+                {
+                    "company_name": "Aptira",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Michael Chapman",
+            "emails": ["woppin@gmail.com","michchap@cisco.com"]
+        },
+        {
             "launchpad_id": "michael-ogorman",
             "companies": [
                 {
