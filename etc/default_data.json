@@ -2891,6 +2891,17 @@
             "emails": ["iamljj@gmail.com", "jiajun@unitedstack.com"]
         },
         {
+            "launchpad_id": "liyingjun",
+            "companies": [
+                {
+                    "company_name": "Kylin Cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Li Yingjun",
+            "emails": ["liyingjun1988@gmail.com", "yingjun.li@kylin-cloud.com"]
+        },
+        {
             "launchpad_id": "lmichaels",
             "companies": [
                 {
