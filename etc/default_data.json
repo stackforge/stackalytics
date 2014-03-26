@@ -2389,6 +2389,17 @@
             "emails": ["jordan.pittier-ext@cloudwatt.com", "jordan.pittier@gmail.com"]
         },
         {
+            "launchpad_id": "joshnang",
+            "companies": [
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Josh Gachnang",
+            "emails": ["josh.gachnang@rackspace.com", "josh@pcsforeducation.com"]
+        },
+        {
             "launchpad_id": "joshua-mckenty",
             "companies": [
                 {
