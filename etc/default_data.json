@@ -2388,6 +2388,17 @@
             "user_name": "Jordan Pittier",
             "emails": ["jordan.pittier-ext@cloudwatt.com", "jordan.pittier@gmail.com"]
         },
+ 	{
+            "launchpad_id": "joseph-r-email",
+            "companies": [
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Joseph Robinson",
+            "emails": ["Joseph.Roninson@rackspace.com", "joseph.r.email@gmail.com"]
+        },
         {
             "launchpad_id": "joshua-mckenty",
             "companies": [
