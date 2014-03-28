@@ -4172,6 +4172,17 @@
             "emails": ["skanddh@gmail.com", "seungkyu.ahn@samsung.com"]
         },
         {
+            "launchpad_id": "sjmc7",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Steve McLellan",
+            "emails": ["steve.mclellan@hp.com", "steven.j.mclellan@gmail.com"]
+        },
+        {
             "launchpad_id": "sleepsonthefloor",
             "companies": [
                 {
