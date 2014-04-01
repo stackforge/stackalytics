@@ -37,6 +37,7 @@ METRIC_LABELS = {
     'emails': 'Emails',
     'bpd': 'Drafted Blueprints',
     'bpc': 'Completed Blueprints',
+    'members': 'Members'
 }
 
 METRIC_TO_RECORD_TYPE = {
@@ -47,6 +48,7 @@ METRIC_TO_RECORD_TYPE = {
     'emails': 'email',
     'bpd': 'bpd',
     'bpc': 'bpc',
+    'members': 'member'
 }
 
 DEFAULT_RECORDS_LIMIT = 10

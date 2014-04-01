@@ -126,6 +126,17 @@ def contribution(module, days):
     }
 
 
+@blueprint.route('/registrants')
+@decorators.exception_handler()
+@decorators.templated()
+def registrants():
+    days = int(flask.request.args.get('days') or 7)
+    return {
+        'voting_date': vault.get_voting_date(),
+        'days': days
+    }
+
+
 def _get_punch_card_data(records):
     punch_card_raw = []  # matrix days x hours
     for wday in xrange(0, 7):
