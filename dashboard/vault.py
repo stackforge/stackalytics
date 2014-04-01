@@ -193,3 +193,9 @@ def resolve_project_types(project_types):
             modules |= resolve_modules(
                 get_vault()['project_types_index'][pt]['modules'])
     return modules
+
+
+def get_voting_date():
+    runtime_storage_inst = get_vault()['runtime_storage']
+    voting_date = runtime_storage_inst.get_by_key('voting_date') or []
+    return utils.date_to_timestamp(voting_date)
