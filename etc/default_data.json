@@ -4605,6 +4605,17 @@
             "emails": ["thierry@openstack.org", "thierry.carrez@ubuntu.com"]
         },
         {
+            "launchpad_id": "tangmeiyan77",
+            "companies": [
+                {
+                    "company_name": "Kylin Cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "tinytmy",
+            "emails": ["tangmeiyan77@gmail.com", "xichao.liu@kylin-cloud.com"]
+        },
+        {
             "launchpad_id": "u-matt-h",
             "companies": [
                 {
