@@ -13,11 +13,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import re
-import six
 import time
-import urllib
+
+import six
 
 from stackalytics.openstack.common import log as logging
+from stackalytics.processor import utils
 
 
 LOG = logging.getLogger(__name__)
@@ -41,9 +42,10 @@ def _convert_str_fields_to_unicode(result):
 
 
 def _retrieve_member(uri, member_id):
-    try:
-        content = urllib.urlopen(uri).read()
-    except Exception:
+
+    content = utils.read_uri(uri)
+
+    if not content:
         return {}
 
     member = {}
@@ -67,6 +69,7 @@ def _retrieve_member(uri, member_id):
 
 
 def log(uri, runtime_storage_inst, days_to_update_members):
+    LOG.debug('Retrieving new openstack.org members')
 
     last_update_members_date = runtime_storage_inst.get_by_key(
         'last_update_members_date') or 0
@@ -103,4 +106,5 @@ def log(uri, runtime_storage_inst, days_to_update_members):
         LOG.debug('New member: %s', member['member_id'])
         yield member
 
+    LOG.debug('Last_member_index: %s', last_member_index)
     runtime_storage_inst.set_by_key('last_member_index', last_member_index)

@@ -394,17 +394,16 @@ class RecordProcessor(object):
 
     def _process_member(self, record):
         record['primary_key'] = "member_id:" + record['member_id']
-        record['date'] = utils.member_date_to_timestamp_ext(
-            record['date_joined'])
+        record['date'] = utils.member_date_to_timestamp(record['date_joined'])
         record['author_name'] = record['member_name']
-        record['launchpad_id'] = utils.safe_encode(record['primary_key'] +
-                                                   ":" + record['author_name'])
+        record['author_email'] = record['member_uri']
         record['module'] = 'unknown'
         company_draft = record['company_draft']
 
         company_name = self.domains_index.get(company_draft) or company_draft
 
         record['company_name'] = company_name
+        # _update_record_and_user function will create new user if needed
         self._update_record_and_user(record)
         record['company_name'] = company_name
         user = utils.load_user(self.runtime_storage_inst, record['user_id'])

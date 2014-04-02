@@ -49,17 +49,8 @@ def date_to_timestamp_ext(d):
 def member_date_to_timestamp(d):
     if not d:
         return 0
-    if d == 'now':
-        return int(time.time())
     return int(time.mktime(
         datetime.datetime.strptime(d, '%B %d, %Y ').timetuple()))
-
-
-def member_date_to_timestamp_ext(d):
-    try:
-        return member_date_to_timestamp(d)
-    except ValueError:
-        return int(d)
 
 
 def iso8601_to_timestamp(s):

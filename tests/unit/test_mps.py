@@ -52,9 +52,9 @@ class TestMps(testtools.TestCase):
 
         match = re.search(mps.NAME_AND_DATE_PATTERN, content)
         self.assertTrue(match)
-        self.assertEqual('Jim Battenberg', match.group(1))
-        self.assertEqual('June 25, 2013 ', match.group(2))
+        self.assertEqual('Jim Battenberg', match.group('member_name'))
+        self.assertEqual('June 25, 2013 ', match.group('date_joined'))
 
         match = re.search(mps.COMPANY_PATTERN, content)
         self.assertTrue(match)
-        self.assertEqual('Rackspace', match.group(1))
+        self.assertEqual('Rackspace', match.group('company_draft'))
