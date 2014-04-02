@@ -3969,6 +3969,17 @@
             "emails": ["russell.sim@gmail.com", "russell.sim@unimelb.edu.au"]
         },
         {
+            "launchpad_id": "russell_h",
+            "companies": [
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Russell Haering",
+            "emails": ["russellhaering@gmail.com", "russell.haering@rackspace.com"]
+        },
+        {
             "launchpad_id": "russellb",
             "companies": [
                 {
