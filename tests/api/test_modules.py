@@ -34,7 +34,7 @@ class TestAPIModules(test_api.TestAPI):
                       'modules': ['nova', 'glance', 'nova-cli']},
                      {'id': 'integrated', 'title': 'Integrated',
                       'modules': ['nova', 'glance']}]},
-                test_api.make_records(record_type=['commit'],
+                test_api.make_records(record_type=['mark'],
                                       module=['glance', 'nova', 'nova-cli'])):
 
             response = self.app.get('/api/1.0/modules?project_type=all')

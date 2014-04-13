@@ -32,7 +32,7 @@ class TestAPIUsers(test_api.TestAPI):
                  'project_types': [
                      {'id': 'openstack', 'title': 'openstack',
                       'modules': ['nova', 'glance']}]},
-                test_api.make_records(record_type=['commit'], module=['nova'],
+                test_api.make_records(record_type=['mark'], module=['nova'],
                                       user_id=['john_doe', 'bill_smith'])):
             response = self.app.get('/api/1.0/users?module=nova')
             users = json.loads(response.data)['users']
@@ -47,7 +47,7 @@ class TestAPIUsers(test_api.TestAPI):
                  'project_types': [
                      {'id': 'openstack', 'title': 'openstack',
                       'modules': ['nova', 'glance']}]},
-                test_api.make_records(record_type=['commit'], module=['nova'],
+                test_api.make_records(record_type=['mark'], module=['nova'],
                                       user_name=['John Doe', 'Bill Smith'])):
             response = self.app.get('/api/1.0/users?module=nova&query=doe')
             users = json.loads(response.data)['users']
@@ -60,7 +60,7 @@ class TestAPIUsers(test_api.TestAPI):
                     'seq': 1, 'user_id': 'john_doe', 'user_name': 'John Doe',
                     'companies': [{'company_name': 'NEC', 'end_date': 0}],
                     'emails': 'john_doe@gmail.com'}},
-                test_api.make_records(record_type=['commit'], module=['nova'],
+                test_api.make_records(record_type=['mark'], module=['nova'],
                                       user_name=['John Doe', 'Bill Smith'])):
             response = self.app.get('/api/1.0/users/john_doe')
             user = json.loads(response.data)['user']
@@ -77,7 +77,7 @@ class TestAPIUsers(test_api.TestAPI):
                  'module_groups': {'openstack': {
                      'module_group_name': 'openstack',
                      'modules': ['nova']}}},
-                test_api.make_records(record_type=['commit'], module=['nova'],
+                test_api.make_records(record_type=['mark'], module=['nova'],
                                       user_name=['John Doe', 'Bill Smith'])):
             response = self.app.get('/api/1.0/users/nonexistent')
             self.assertEqual(404, response.status_code)
