@@ -88,8 +88,8 @@ def _get_aggregated_stats(records, metric_filter, keys, param_id,
         result[record[param_id]]['name'] = record[param_title]
 
     response = [r for r in result.values() if r['metric']]
-    response.sort(key=lambda x: x['metric'], reverse=True)
     response = [item for item in map(finalize_handler, response) if item]
+    response.sort(key=lambda x: x['metric'], reverse=True)
     utils.add_index(response, item_filter=lambda x: x['id'] != '*independent')
     return response
 
@@ -102,7 +102,8 @@ def _get_aggregated_stats(records, metric_filter, keys, param_id,
 def get_companies(records, metric_filter, finalize_handler):
     return _get_aggregated_stats(records, metric_filter,
                                  vault.get_memory_storage().get_companies(),
-                                 'company_name')
+                                 'company_name',
+                                 finalize_handler=finalize_handler)
 
 
 @app.route('/api/1.0/stats/modules')
@@ -113,12 +114,12 @@ def get_companies(records, metric_filter, finalize_handler):
 def get_modules(records, metric_filter, finalize_handler):
     return _get_aggregated_stats(records, metric_filter,
                                  vault.get_memory_storage().get_modules(),
-                                 'module')
+                                 'module', finalize_handler=finalize_handler)
 
 
 def is_engineer_core_in_modules(user, modules):
     is_core = False
-    for (module, branch) in user['core']:
+    for (module, branch) in (user.get('core') or []):
         if module in modules:
             is_core = branch
             if branch == 'master':  # we need master, but stables are ok

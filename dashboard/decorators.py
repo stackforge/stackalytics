@@ -13,10 +13,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import collections
 import functools
 import json
 
 import flask
+import six
 from werkzeug import exceptions
 
 from dashboard import helpers
@@ -105,9 +107,10 @@ def record_filter(ignore=None, use_default=True):
                 metrics = parameters.get_parameter(kwargs, 'metric')
                 if 'all' not in metrics:
                     for metric in metrics:
-                        record_ids &= (
-                            memory_storage_inst.get_record_ids_by_type(
-                                parameters.METRIC_TO_RECORD_TYPE[metric]))
+                        if metric in parameters.METRIC_TO_RECORD_TYPE:
+                            record_ids &= (
+                                memory_storage_inst.get_record_ids_by_type(
+                                    parameters.METRIC_TO_RECORD_TYPE[metric]))
 
                 if 'tm_marks' in metrics:
                     filtered_ids = []
@@ -194,6 +197,26 @@ def mark_finalize(record):
     return new_record
 
 
+def man_days_filter(result, record, param_id):
+    day = record['date'] // (24 * 3600)
+
+    result_by_param = result[record[param_id]]
+    if 'days' not in result_by_param:
+        #todo replace user_id with user sequence number
+        result_by_param['days'] = collections.defaultdict(set)
+    result_by_param['days'][day] |= set([record['user_id']])
+    result_by_param['metric'] = 1
+
+
+def man_days_finalize(result_item):
+    metric = 0
+    for day_set in six.itervalues(result_item['days']):
+        metric += len(day_set)
+    del result_item['days']
+    result_item['metric'] = metric
+    return result_item
+
+
 def aggregate_filter():
     def decorator(f):
         @functools.wraps(f)
@@ -211,6 +234,7 @@ def aggregate_filter():
                 'emails': (incremental_filter, None),
                 'bpd': (incremental_filter, None),
                 'bpc': (incremental_filter, None),
+                'man-days': (man_days_filter, man_days_finalize),
             }
             if metric not in metric_to_filters_map:
                 metric = parameters.get_default('metric')
