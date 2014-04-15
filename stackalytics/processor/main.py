@@ -261,14 +261,12 @@ def main():
 
     record_processor_inst = record_processor.RecordProcessor(
         runtime_storage_inst)
-
     update_records(runtime_storage_inst, record_processor_inst)
 
     apply_corrections(cfg.CONF.corrections_uri, runtime_storage_inst)
 
     # long operation should be the last
     update_members(runtime_storage_inst, record_processor_inst)
-
 
 if __name__ == '__main__':
     main()
