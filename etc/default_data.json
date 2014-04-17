@@ -434,6 +434,17 @@
             "emails": ["arnaudleg@gmail.com"]
         },
         {
+            "launchpad_id": "rajdeepd",
+            "companies": [
+                {
+                    "company_name": "VMware",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Rajdeep Dua",
+            "emails": ["dua_rajdeep@yahoo.com", "rajdeepd@vmware.com"]
+        },
+        {
             "launchpad_id": "asalkeld",
             "companies": [
                 {
