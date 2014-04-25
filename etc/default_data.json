@@ -1,6 +1,17 @@
 {
     "users": [
         {
+           "launchpad_id": "idegtiarov",
+           "companies": [
+               {
+                   "company_name": "Mirantis",
+                   "end_date": null
+               }
+           ],
+           "user_name": "Igor Degtiarov",
+           "emails": ["idegtiarov@mirantis.com"]
+        },
+        {
             "launchpad_id": "0-doug",
             "companies": [
                 {
@@ -7336,10 +7347,6 @@
         {
             "module_group_name": "fuel-group",
             "modules": ["fuel-main", "fuel-web", "fuel-astute", "fuel-ostf", "fuel-library", "fuel-docs", "fuel-devops"]
-        },
-        {
-            "module_group_name": "mistral-group",
-            "modules": ["python-mistralclient", "mistral", "mistral-extra"]
         },
         {
             "module_group_name": "murano-group",
