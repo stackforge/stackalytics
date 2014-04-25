@@ -5551,6 +5551,17 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "rodrigodsousa",
+            "companies": [
+                {
+                    "company_name": "Universidade Federal de Campina Grande",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Rodrigo Duarte",
+            "emails": ["rodrigodsousa@gmail.com", "rodrigods@lsd.ufcg.edu.br"]
         }
     ],
     "companies": [
