@@ -6389,6 +6389,10 @@
             "aliases": ["Ubisoft Entertainment"]
         },
         {
+            "domains": ["lsd.ufcg.edu.br"],
+            "company_name": "Universidade Federal de Campina Grande"
+        },
+        {
             "domains": ["umd.edu"],
             "company_name": "University of Maryland"
         },
