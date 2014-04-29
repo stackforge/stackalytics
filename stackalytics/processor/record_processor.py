@@ -27,6 +27,8 @@ from stackalytics.processor import utils
 
 LOG = logging.getLogger(__name__)
 
+FIXED_BUGS = ['Fix Committed', 'Fix Released']
+
 
 class RecordProcessor(object):
     def __init__(self, runtime_storage_inst):
@@ -417,6 +419,29 @@ class RecordProcessor(object):
 
             yield bpc
 
+    def _process_bug(self, record):
+
+        bug_created = dict([(k, v) for k, v in six.iteritems(record)])
+        bug_created['primary_key'] = 'bugc:' + record['id']
+        bug_created['record_type'] = 'bugc'
+        bug_created['launchpad_id'] = record.get('owner')
+        bug_created['date'] = record['date_created']
+
+        self._update_record_and_user(bug_created)
+
+        yield bug_created
+
+        if 'date_fix_committed' in record and record['status'] in FIXED_BUGS:
+            bug_fixed = dict([(k, v) for k, v in six.iteritems(record)])
+            bug_fixed['primary_key'] = 'bugf:' + record['id']
+            bug_fixed['record_type'] = 'bugf'
+            bug_fixed['launchpad_id'] = record.get('assignee') or 'unassigned'
+            bug_fixed['date'] = record['date_fix_committed']
+
+            self._update_record_and_user(bug_fixed)
+
+            yield bug_fixed
+
     def _process_member(self, record):
         user_id = "member:" + record['member_id']
         record['primary_key'] = user_id
@@ -448,6 +473,22 @@ class RecordProcessor(object):
 
         yield record
 
+    def _prepare_unassigned_user(self):
+        unassigned_user = utils.load_user(self.runtime_storage_inst,
+                                          'unassigned')
+        if not unassigned_user:
+            unassigned_user = {}
+            unassigned_user['user_name'] = '*unassigned'
+            unassigned_user['launchpad_id'] = 'unassigned'
+            unassigned_user['companies'] = [{
+                'company_name': '*independent',
+                'end_date': 0,
+            }]
+            unassigned_user['company_name'] = '*independent'
+            unassigned_user['date'] = 0
+
+            utils.store_user(self.runtime_storage_inst, unassigned_user)
+
     def _apply_type_based_processing(self, record):
         if record['record_type'] == 'commit':
             for r in self._process_commit(record):
@@ -463,6 +504,10 @@ class RecordProcessor(object):
                 yield r
         elif record['record_type'] == 'member':
             for r in self._process_member(record):
+                yield r
+        elif record['record_type'] == 'bug':
+            self._prepare_unassigned_user()
+            for r in self._process_bug(record):
                 yield r
 
     def _renew_record_date(self, record):

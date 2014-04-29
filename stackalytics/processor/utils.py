@@ -68,6 +68,11 @@ def week_to_date(week):
             strftime('%Y-%m-%d %H:%M:%S'))
 
 
+def timestamp_to_utc_date(timestamp):
+    return (datetime.datetime.fromtimestamp(timestamp).
+            strftime('%Y-%m-%d'))
+
+
 def check_email_validity(email):
     if email:
         return re.match(r'[\w\d_\.-]+@([\w\d_\.-]+\.)+[\w]+', email)
@@ -165,6 +170,10 @@ def get_blueprint_id(module, name):
     return module + ':' + name
 
 
+def get_bug_id(module, bug_id):
+    return module + '/' + bug_id
+
+
 def get_patch_id(review_id, patch_number):
     return review_id + ':' + patch_number
 
@@ -182,3 +191,7 @@ def add_index(sequence, start=1, item_filter=lambda x: True):
 
 def safe_encode(s):
     return parse.quote_plus(s.encode('utf-8'))
+
+
+def _link_to_launchpad_id(link):
+    return link[link.find('~') + 1:]

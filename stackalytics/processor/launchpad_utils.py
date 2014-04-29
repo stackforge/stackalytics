@@ -13,6 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import urllib
+
 from six.moves import http_client
 from six.moves.urllib import parse
 
@@ -22,7 +24,11 @@ from stackalytics.processor import utils
 
 LOG = logging.getLogger(__name__)
 
-
+BUG_STATUSES = ['New', 'Incomplete', 'Opinion', 'Invalid', 'Won\'t Fix',
+                'Expired', 'Confirmed', 'Triaged', 'In Progress',
+                'Fix Committed', 'Fix Released',
+                'Incomplete (with response)',
+                'Incomplete (without response)']
 LP_URI_V1 = 'https://api.launchpad.net/1.0/%s'
 LP_URI_DEVEL = 'https://api.launchpad.net/devel/%s'
 
@@ -53,6 +59,26 @@ def lp_module_exists(module):
 
 def lp_blueprint_generator(module):
     uri = LP_URI_DEVEL % (module + '/all_specifications')
+    while uri:
+        LOG.debug('Reading chunk from uri %s', uri)
+        chunk = utils.read_json_from_uri(uri)
+
+        if not chunk:
+            LOG.warn('No data was read from uri %s', uri)
+            break
+
+        for record in chunk['entries']:
+            yield record
+
+        uri = chunk.get('next_collection_link')
+
+
+def lp_bug_generator(module, last_bug_date):
+    uri = LP_URI_DEVEL % (module + '?ws.op=searchTasks')
+    for status in BUG_STATUSES:
+        uri += '&status=' + urllib.quote_plus(status)
+    uri += '&modified_since=' + last_bug_date
+
     while uri:
         LOG.debug('Reading chunk from uri %s', uri)
         chunk = utils.read_json_from_uri(uri)

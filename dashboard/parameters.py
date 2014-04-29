@@ -35,6 +35,8 @@ METRIC_LABELS = {
     'emails': 'Emails',
     'bpd': 'Drafted Blueprints',
     'bpc': 'Completed Blueprints',
+    'bugc': 'Created Bugs',
+    'bugf': 'Fixed Bugs',
     'man-days': "Man-days effort"
 }
 
@@ -45,6 +47,8 @@ METRIC_TO_RECORD_TYPE = {
     'emails': 'email',
     'bpd': 'bpd',
     'bpc': 'bpc',
+    'bugc': 'bugc',
+    'bugf': 'bugf',
     'members': 'member',
 }
 
