@@ -252,6 +252,8 @@ def aggregate_filter():
                 'emails': (incremental_filter, None),
                 'bpd': (incremental_filter, None),
                 'bpc': (incremental_filter, None),
+                'bugc': (incremental_filter, None),
+                'bugf': (incremental_filter, None),
                 'members': (incremental_filter, None),
                 'man-days': (man_days_filter, man_days_finalize),
             }

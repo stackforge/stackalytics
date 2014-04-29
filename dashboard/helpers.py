@@ -144,6 +144,8 @@ def get_contribution_summary(records):
     drafted_blueprint_count = 0
     completed_blueprint_count = 0
     email_count = 0
+    created_bug_count = 0
+    fixed_bug_count = 0
 
     for record in records:
         record_type = record['record_type']
@@ -161,6 +163,10 @@ def get_contribution_summary(records):
             drafted_blueprint_count += 1
         elif record['record_type'] == 'bpc':
             completed_blueprint_count += 1
+        elif record['record_type'] == 'bugc':
+            created_bug_count += 1
+        elif record['record_type'] == 'bugf':
+            fixed_bug_count += 1
 
     result = {
         'drafted_blueprint_count': drafted_blueprint_count,
@@ -169,6 +175,8 @@ def get_contribution_summary(records):
         'email_count': email_count,
         'loc': loc,
         'marks': marks,
+        'created_bug_count': created_bug_count,
+        'fixed_bug_count': fixed_bug_count,
     }
     return result
 
