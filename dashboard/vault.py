@@ -46,8 +46,7 @@ def compact_records(records):
 
 def extend_record(record):
     runtime_storage_inst = get_vault()['runtime_storage']
-    return runtime_storage_inst.get_by_key(
-        runtime_storage_inst._get_record_name(record['record_id']))
+    return runtime_storage_inst.read_record(record['record_id'])
 
 
 def get_vault():
