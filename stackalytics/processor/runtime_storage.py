@@ -65,6 +65,7 @@ class MemcachedStorage(RuntimeStorage):
         if stripped:
             storage_uri = stripped.split(',')
             self.memcached = memcache.Client(storage_uri)
+            self._init_vocabulary()
             self._build_index()
             self._init_user_count()
         else:
@@ -83,25 +84,47 @@ class MemcachedStorage(RuntimeStorage):
                 if not merge_handler:
                     record['record_id'] = record_id
                     LOG.debug('Update record %s', record)
-                    self.memcached.set(self._get_record_name(record_id),
-                                       record)
+                    self._write_record(record)
                 else:
-                    original = self.memcached.get(self._get_record_name(
-                        record_id))
+                    original = self.read_record(record_id)
                     if merge_handler(original, record):
                         LOG.debug('Update record with merge %s', record)
-                        self.memcached.set(self._get_record_name(record_id),
-                                           original)
+                        self._write_record(original)
             else:
                 # insert record
                 record_id = self._get_record_count()
                 record['record_id'] = record_id
                 self.record_index[record['primary_key']] = record_id
                 LOG.debug('Insert new record %s', record)
-                self.memcached.set(self._get_record_name(record_id), record)
+                self._write_record(record)
                 self._set_record_count(record_id + 1)
 
-            self._commit_update(record_id)
+    def _encode_record(self, record):
+        translated = {}
+        for key, value in six.iteritems(record):
+            if key not in self.vocabulary_encode:
+                self._expand_vocabulary(key)
+            translated[self.vocabulary_encode[key]] = value
+        return translated
+
+    def _decode_record(self, record):
+        translated = {}
+        for key, value in six.iteritems(record):
+            if key in self.vocabulary_decode:
+                translated[self.vocabulary_decode[key]] = value
+            else:
+                translated[key] = value
+        return translated
+
+    def _write_record(self, record):
+        record_id = record['record_id']
+        self.memcached.set(self._get_record_name(record_id),
+                           self._encode_record(record))
+        self._commit_update(record_id)
+
+    def read_record(self, record_id):
+        return self._decode_record(
+            self.memcached.get(self._get_record_name(record_id)))
 
     def apply_corrections(self, corrections_iterator):
         for correction in corrections_iterator:
@@ -147,7 +170,7 @@ class MemcachedStorage(RuntimeStorage):
         self._set_pids(pid)
 
         if not last_update:
-            for i in self.get_all_records():
+            for i in self.get_all_records():  # already decoded
                 yield i
         else:
             for update_id_set in utils.make_range(last_update, update_count,
@@ -156,7 +179,7 @@ class MemcachedStorage(RuntimeStorage):
                     update_id_set, UPDATE_ID_PREFIX).values()
                 for i in self.memcached.get_multi(
                         update_set, RECORD_ID_PREFIX).values():
-                    yield i
+                    yield self._decode_record(i)
 
     def active_pids(self, pids):
         stored_pids = self.memcached.get('pids') or set()
@@ -206,7 +229,7 @@ class MemcachedStorage(RuntimeStorage):
                                               BULK_READ_SIZE):
             for i in self.memcached.get_multi(
                     record_id_set, RECORD_ID_PREFIX).values():
-                yield i
+                yield self._decode_record(i)
 
     def _commit_update(self, record_id):
         count = self._get_update_count()
@@ -216,6 +239,30 @@ class MemcachedStorage(RuntimeStorage):
     def _init_user_count(self):
         if not self.memcached.get('user:count'):
             self.memcached.set('user:count', 1)
+
+    def _init_vocabulary(self):
+        self._read_vocabulary()
+        if not self.vocabulary_count:
+            self.vocabulary_count = 1
+            self.vocabulary_encode = {}
+            self.vocabulary_decode = {}
+            self._write_vocabulary()
+
+    def _read_vocabulary(self):
+        self.vocabulary_count = self.memcached.get('vocabulary:count')
+        self.vocabulary_encode = self.memcached.get('vocabulary:encode')
+        self.vocabulary_decode = self.memcached.get('vocabulary:decode')
+
+    def _write_vocabulary(self):
+        self.memcached.set('vocabulary:count', self.vocabulary_count)
+        self.memcached.set('vocabulary:encode', self.vocabulary_encode)
+        self.memcached.set('vocabulary:decode', self.vocabulary_decode)
+
+    def _expand_vocabulary(self, word):
+        self.vocabulary_count += 1
+        self.vocabulary_encode[word] = self.vocabulary_count
+        self.vocabulary_decode[self.vocabulary_count] = word
+        self._write_vocabulary()
 
 
 def get_runtime_storage(uri):
