@@ -35,6 +35,8 @@ from stackalytics.processor import config
 from stackalytics.processor import utils
 
 
+DEFAULT_DAYS_COUNT = 7
+
 # Application objects ---------
 
 app = flask.Flask(__name__)
@@ -91,6 +93,34 @@ def _get_aggregated_stats(records, metric_filter, keys, param_id,
     response = [item for item in map(finalize_handler, response) if item]
     response.sort(key=lambda x: x['metric'], reverse=True)
     utils.add_index(response, item_filter=lambda x: x['id'] != '*independent')
+    return response
+
+
+@app.route('/api/1.0/new_companies')
+@decorators.jsonify('stats')
+@decorators.exception_handler()
+@decorators.record_filter(ignore='start_date')
+def get_new_companies(records):
+
+    days = int(flask.request.args.get('days') or DEFAULT_DAYS_COUNT)
+    start_date = int(time.time()) - days * 24 * 60 * 60
+
+    result = {}
+    for record in records:
+        company_name = record['company_name']
+        date = record['date']
+
+        if company_name not in result or result[company_name] > date:
+            result[company_name] = date
+
+    response = list(({'name': company_name,
+                      'date': helpers.format_date(result[company_name])})
+                    for company_name in result
+                    if result[company_name] >= start_date)
+
+    response.sort(key=lambda x: x['date'], reverse=True)
+    utils.add_index(response)
+
     return response
 
 
@@ -320,6 +350,7 @@ def get_module(module):
 def get_members(records):
     response = []
     for record in records:
+        record = vault.extend_record(record)
         nr = dict([(k, record[k]) for k in
                    ['author_name', 'date', 'company_name', 'member_uri']])
         nr['date_str'] = helpers.format_date(nr['date'])
