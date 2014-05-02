@@ -149,6 +149,17 @@
             "emails": ["ailzhang@cisco.com", "zhangal1992@gmail.com"]
         },
         {
+            "launchpad_id": "vnaboychenko",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Vlad Naboichenko",
+            "emails": ["vnaboichenko@mirantis.com", "spitekh@gmail.com"]
+        },
+        {
             "launchpad_id": "akscram",
             "companies": [
                 {
