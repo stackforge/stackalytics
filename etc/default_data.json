@@ -5443,6 +5443,17 @@
             "emails": ["yugsuo@gmail.com", "guangyu@unitedstack.com"]
         },
         {
+            "launchpad_id": "vnaboychenko",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Vlad Naboychenko",
+            "emails": ["vnaboychenko@mirantis.com", "spitekh@gmail.com"]
+        },
+        {
             "launchpad_id": "yunshen",
             "companies": [
                 {
