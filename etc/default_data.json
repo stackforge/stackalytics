@@ -57,6 +57,18 @@
             "emails": ["a.gorodnev@gmail.com", "agorodnev@mirantis.com"]
         },
         {
+            "launchpad_id": "vnaboychenko",
+            "gerrit_id": "vnaboichenko",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Vlad Naboichenko",
+            "emails": ["vnaboychenko@mirantis.com", "spitekh@gmail.com"]
+        },
+        {
             "launchpad_id": "aababilov",
             "companies": [
                 {
