@@ -83,22 +83,21 @@ class MemcachedStorage(RuntimeStorage):
                 if not merge_handler:
                     record['record_id'] = record_id
                     LOG.debug('Update record %s', record)
-                    self.memcached.set(self._get_record_name(record_id),
-                                       record)
+                    self.set_by_key(self._get_record_name(record_id), record)
                 else:
                     original = self.memcached.get(self._get_record_name(
                         record_id))
                     if merge_handler(original, record):
                         LOG.debug('Update record with merge %s', record)
-                        self.memcached.set(self._get_record_name(record_id),
-                                           original)
+                        self.set_by_key(self._get_record_name(record_id),
+                                        original)
             else:
                 # insert record
                 record_id = self._get_record_count()
                 record['record_id'] = record_id
                 self.record_index[record['primary_key']] = record_id
                 LOG.debug('Insert new record %s', record)
-                self.memcached.set(self._get_record_name(record_id), record)
+                self.set_by_key(self._get_record_name(record_id), record)
                 self._set_record_count(record_id + 1)
 
             self._commit_update(record_id)
@@ -118,7 +117,7 @@ class MemcachedStorage(RuntimeStorage):
                     original[field] = value
 
             if need_update:
-                self.memcached.set(self._get_record_name(record_id), original)
+                self.set_by_key(self._get_record_name(record_id), original)
                 self._commit_update(record_id)
 
     def inc_user_count(self):
@@ -134,16 +133,21 @@ class MemcachedStorage(RuntimeStorage):
         return self.memcached.get(key.encode('utf8'))
 
     def set_by_key(self, key, value):
-        self.memcached.set(key.encode('utf8'), value)
+        if not self.memcached.set(key.encode('utf8'), value):
+            LOG.critical('Memcached set failed: key %s, value %s'
+                         % (key, value))
+            raise Exception('Memcached set failed')
 
     def delete_by_key(self, key):
-        self.memcached.delete(key.encode('utf8'))
+        if not self.memcached.delete(key.encode('utf8')):
+            LOG.critical('Memcached delete failed: key %s' % key)
+            raise Exception('Memcached delete failed')
 
     def get_update(self, pid):
         last_update = self.memcached.get('pid:%s' % pid)
         update_count = self._get_update_count()
 
-        self.memcached.set('pid:%s' % pid, update_count)
+        self.set_by_key('pid:%s' % pid, update_count)
         self._set_pids(pid)
 
         if not last_update:
@@ -162,9 +166,9 @@ class MemcachedStorage(RuntimeStorage):
         stored_pids = self.memcached.get('pids') or set()
         for pid in stored_pids:
             if pid not in pids:
-                self.memcached.delete('pid:%s' % pid)
+                self.delete_by_key('pid:%s' % pid)
 
-        self.memcached.set('pids', pids)
+        self.set_by_key('pids', pids)
 
         # remove unneeded updates
         min_update = self._get_update_count()
@@ -179,8 +183,9 @@ class MemcachedStorage(RuntimeStorage):
                                               BULK_DELETE_SIZE):
             if not self.memcached.delete_multi(delete_id_set,
                                                key_prefix=UPDATE_ID_PREFIX):
-                raise Exception('Failed to delete from memcache')
-        self.memcached.set('first_valid_update', min_update)
+                LOG.critical('Failed to delete_multi from memcached')
+                raise Exception('Failed to delete_multi from memcached')
+        self.set_by_key('first_valid_update', min_update)
 
     def _get_update_count(self):
         return self.memcached.get('update:count') or 0
@@ -190,7 +195,7 @@ class MemcachedStorage(RuntimeStorage):
         if pid in pids:
             return
         pids.add(pid)
-        self.memcached.set('pids', pids)
+        self.set_by_key('pids', pids)
 
     def _get_record_name(self, record_id):
         return RECORD_ID_PREFIX + str(record_id)
@@ -199,7 +204,7 @@ class MemcachedStorage(RuntimeStorage):
         return self.memcached.get('record:count') or 0
 
     def _set_record_count(self, count):
-        self.memcached.set('record:count', count)
+        self.set_by_key('record:count', count)
 
     def get_all_records(self):
         for record_id_set in utils.make_range(0, self._get_record_count(),
@@ -210,12 +215,12 @@ class MemcachedStorage(RuntimeStorage):
 
     def _commit_update(self, record_id):
         count = self._get_update_count()
-        self.memcached.set(UPDATE_ID_PREFIX + str(count), record_id)
-        self.memcached.set('update:count', count + 1)
+        self.set_by_key(UPDATE_ID_PREFIX + str(count), record_id)
+        self.set_by_key('update:count', count + 1)
 
     def _init_user_count(self):
         if not self.memcached.get('user:count'):
-            self.memcached.set('user:count', 1)
+            self.set_by_key('user:count', 1)
 
 
 def get_runtime_storage(uri):
