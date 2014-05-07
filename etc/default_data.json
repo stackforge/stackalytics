@@ -1,6 +1,17 @@
 {
     "users": [
         {
+            "launchpad_id": "cweidenkeller",
+            "companies": [
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Conrad Weidenkeller",
+            "emails": ["conrad@weidenkeller.com"]
+        },
+        {
             "launchpad_id": "0-doug",
             "companies": [
                 {
