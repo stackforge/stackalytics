@@ -32,7 +32,7 @@ from stackalytics import version as stackalytics_version
 LOG = logging.getLogger(__name__)
 
 
-def _get_time_filter(kwargs, ignore):
+def _filter_records_by_days(kwargs, ignore, memory_storage_inst):
     start_date = parameters.get_single_parameter(kwargs, 'start_date')
     if start_date and 'start_date' not in ignore:
         start_date = utils.date_to_timestamp_ext(start_date)
@@ -44,12 +44,10 @@ def _get_time_filter(kwargs, ignore):
     else:
         end_date = utils.date_to_timestamp_ext('now')
 
-    def time_filter(records):
-        for record in records:
-            if start_date <= record['date'] <= end_date:
-                yield record
-
-    return time_filter
+    start_day = utils.timestamp_to_day(start_date)
+    end_day = utils.timestamp_to_day(end_date)
+    return memory_storage_inst.get_record_ids_by_days(
+        six.moves.range(start_day, end_day + 1))
 
 
 def record_filter(ignore=None, use_default=True):
@@ -144,11 +142,11 @@ def record_filter(ignore=None, use_default=True):
                         memory_storage_inst.get_record_ids_by_blueprint_ids(
                             param))
 
-            time_filter = _get_time_filter(kwargs, ignore)
+            record_ids &= _filter_records_by_days(kwargs, ignore,
+                                                  memory_storage_inst)
 
             kwargs['record_ids'] = record_ids
-            kwargs['records'] = time_filter(
-                memory_storage_inst.get_records(record_ids))
+            kwargs['records'] = memory_storage_inst.get_records(record_ids)
             return f(*args, **kwargs)
 
         return record_filter_decorated_function
@@ -217,7 +215,7 @@ def man_days_filter(result, record, param_id):
         # effort of the author (author's effort is represented in patches)
         return
 
-    day = record['date'] // (24 * 3600)
+    day = utils.timestamp_to_day(record['date'])
 
     result_by_param = result[record[param_id]]
     if 'days' not in result_by_param:
