@@ -14,6 +14,7 @@
 # limitations under the License.
 
 import six
+from stackalytics.processor import utils
 
 
 MEMORY_STORAGE_CACHED = 0
@@ -38,6 +39,7 @@ class CachedMemoryStorage(MemoryStorage):
         self.release_index = {}
         self.blueprint_id_index = {}
         self.company_name_mapping = {}
+        self.day_index = {}
 
         self.indexes = {
             'primary_key': self.primary_key_index,
@@ -60,6 +62,12 @@ class CachedMemoryStorage(MemoryStorage):
             else:
                 self.blueprint_id_index[bp_id] = set([record['record_id']])
 
+        record_day = utils.timestamp_to_day(record['date'])
+        if record_day in self.day_index:
+            self.day_index[record_day].add(record['record_id'])
+        else:
+            self.day_index[record_day] = set([record['record_id']])
+
     def update(self, records):
         have_updates = False
 
@@ -80,6 +88,9 @@ class CachedMemoryStorage(MemoryStorage):
     def _remove_record_from_index(self, record):
         for key, index in six.iteritems(self.indexes):
             index[record[key]].remove(record['record_id'])
+
+        record_day = utils.timestamp_to_day(record['date'])
+        self.day_index[record_day].remove(record['record_id'])
 
     def _add_to_index(self, record_index, record, key):
         record_key = record[key]
@@ -113,6 +124,9 @@ class CachedMemoryStorage(MemoryStorage):
     def get_record_ids_by_blueprint_ids(self, blueprint_ids):
         return self._get_record_ids_from_index(blueprint_ids,
                                                self.blueprint_id_index)
+
+    def get_record_ids_by_days(self, days):
+        return self._get_record_ids_from_index(days, self.day_index)
 
     def get_index_keys_by_record_ids(self, index_name, record_ids):
         return set([key
