@@ -124,7 +124,8 @@ def _store_companies(runtime_storage_inst, companies):
 
         if 'aliases' in company:
             for alias in company['aliases']:
-                domains_index[alias] = company['company_name']
+                domains_index[utils.normalize_company_name(alias)] = \
+                    company['company_name']
 
     runtime_storage_inst.set_by_key('companies', domains_index)
 
