@@ -5693,7 +5693,7 @@
         {
             "domains": [""],
             "company_name": "*independent",
-            "aliases": ["None", "Non", "l-", ".", "****", "1", "aaa", "-", "dsadsadsadsad", "I dont have one", "company", "n/a", "Self", "Student", "home", "Home Based", "Independent", "Independen", "Independant", "MyHome", "HomeOffice", "Self Employeed", "Self Employed", "myself", "Self-employeed", "individual", "Individual Contributor", "Unaffiliated", "没有"]
+            "aliases": ["None", "Non", "l-", ".", "****", "1", "aaa", "-", "dsadsadsadsad", "I dont have one", "company", "n/a", "Self", "Student", "home", "Home Based", "Independent", "Independen", "Independant", "MyHome", "HomeOffice", "Self Employeed", "Self Employed", "myself", "Self-employeed", "individual", "Individual Contributor", "Unaffiliated", "没有", "Null", "Univerisity", "fsfsf", "xxx"]
         },
         {
             "domains": ["360.cn"],
@@ -5733,7 +5733,8 @@
         },
         {
             "domains": ["apple.com"],
-            "company_name": "Apple, Inc."
+            "company_name": "Apple, Inc.",
+            "aliases": ["Apple Inc."]
         },
         {
             "domains": ["aptira.com"],
@@ -5787,7 +5788,8 @@
         },
         {
             "domains": ["bigswitch.com"],
-            "company_name": "Big Switch Networks"
+            "company_name": "Big Switch Networks",
+            "aliases": ["Big Switch"]
         },
         {
             "domains": ["bitergia.com"],
@@ -5833,7 +5835,7 @@
         {
             "domains": ["canonical.com"],
             "company_name": "Canonical",
-            "aliases": ["Canonical Ltd"]
+            "aliases": ["Canonical Ltd", "Canoncail, Ltd."]
         },
         {
             "domains": ["centraldesktop.com"],
@@ -5921,7 +5923,7 @@
         {
             "domains": ["dell.com", "software.dell.com"],
             "company_name": "Dell",
-            "aliases": ["Dell  &amp; Ganette Publishing", "Dell Inc", "Dell, Inc., Cabarrus County Schools"]
+            "aliases": ["Dell  &amp; Ganette Publishing", "Dell Inc", "Dell, Inc., Cabarrus County Schools", "Dell, Inc.", "Dell & Ganette Publishing"]
         },
         {
             "domains": ["denali-systems.com"],
@@ -5974,7 +5976,7 @@
         {
             "domains": ["ericsson.com"],
             "company_name": "Ericsson",
-            "aliases": ["Ericsson AB", "Ericsson Research"]
+            "aliases": ["Ericsson AB", "Ericsson Research", "Ericcson AB"]
         },
         {
             "domains": ["fathomdb.com"],
@@ -6057,7 +6059,7 @@
         {
             "domains": ["hp.com"],
             "company_name": "HP",
-            "aliases": ["HP Cloud", "HP ES GD China", "HP, IBM", "HP Software", "HP Storage Division", "Hewlett Packard", "Hewlett-Packard Company", "Hewlett-Packard", "Hewllet-Packard"]
+            "aliases": ["HP Cloud", "HP ES GD China", "HP, IBM", "HP Software", "HP Storage Division", "Hewlett Packard", "Hewlett-Packard Company", "Hewlett-Packard", "Hewllet-Packard", "HP R and D", "HP Cloud OS", "HP Networking", "hewelett-packard company", "HewlettPackard", "Hewlett-Pack"]
         },
         {
             "domains": ["huawei.com"],
@@ -6067,7 +6069,7 @@
         {
             "domains": ["ibm.com", "linux.vnet.ibm.com"],
             "company_name": "IBM",
-            "aliases": ["IBM Australia", "IBM Canada", "IBM Canada Ltd", "IBM China", "IBM Corporation", "IBM India Pvt Ltd", "IBM India Pvt. Ltd.", "IBM Japan, Ltd.", "IBM Research", "IBM Research - China", "IBM Research Lab, India"]
+            "aliases": ["IBM Australia", "IBM Canada", "IBM Canada Ltd", "IBM China", "IBM Corporation", "IBM India Pvt Ltd", "IBM India Pvt. Ltd.", "IBM Japan, Ltd.", "IBM Research", "IBM Research - China", "IBM Research Lab, India", "IBM Deutschland Research & Development GmbH", "International Business Machines Corporation"]
         },
         {
             "domains": ["ifca.unican.es"],
@@ -6091,7 +6093,7 @@
         {
             "domains": ["intel.com"],
             "company_name": "Intel",
-            "aliases": ["Intel Corp.", "Intel Corporation", "Intel Media", "Intel OTC", "Intern at intel"]
+            "aliases": ["Intel Corp.", "Intel Corporation", "Intel Media", "Intel OTC", "Intern at intel", "Intel Security"]
         },
         {
             "domains": ["interhost.no"],
@@ -6244,17 +6246,17 @@
         {
             "domains": ["nebula.com", "ansolabs.com"],
             "company_name": "Nebula",
-            "aliases": ["Nebula Inc.", "Nebula, Inc. ; CFO Tools"]
+            "aliases": ["Nebula Inc.", "Nebula, Inc. ; CFO Tools", "Nebulaworks"]
         },
         {
             "domains": ["nec.com", "nec.co.jp", "nectechnologies.in"],
             "company_name": "NEC",
-            "aliases": ["NEC Europe Ltd.", "NEC Soft, Ltd.", "NEC Technologies India Ltd."]
+            "aliases": ["NEC Europe Ltd.", "NEC Soft, Ltd.", "NEC Technologies India Ltd.", "NEC Technlogies India Ltd"]
         },
         {
             "domains": ["netapp.com"],
             "company_name": "NetApp",
-            "aliases": ["NetApp Inc", "NetApp, Inc."]
+            "aliases": ["NetApp Inc", "NetApp, Inc.", "NetApp Inc."]
         },
         {
             "domains": ["netease.com"],
@@ -6320,12 +6322,12 @@
         {
             "domains": ["persistent.co.in"],
             "company_name": "Persistent Systems",
-            "aliases": ["Persistent Systems Limited"]
+            "aliases": ["Persistent Systems Limited", "Persistent System Limited", "persistent sys limited", "Persistent Ltd"]
         },
         {
             "domains": ["pistoncloud.com"],
             "company_name": "Piston Cloud",
-            "aliases": ["Piston Cloud Computing, Inc."]
+            "aliases": ["Piston Cloud Computing, Inc.", "Piston"]
         },
         {
             "domains": ["playhaven.com"],
@@ -6358,6 +6360,11 @@
             "aliases": ["Rackspace, Cloudscaling, Korea Telcom, friends with lots of people", "Rackspace.com", "Rackspace Hosting"]
         },
         {
+            "domains": ["rackwareinc.com"],
+            "company_name": "Rackware",
+            "aliases": ["Rackware Inc."]
+        },
+        {
             "domains": ["radisys.com"],
             "company_name": "Radisys"
         },
@@ -6373,7 +6380,7 @@
         {
             "domains": ["redhat.com", "gluster.com"],
             "company_name": "Red Hat",
-            "aliases": ["Red Hat Canada, Inc", "Red Hat Czech, s.r.o.", "Red Hat Inc.", "Red Hat, Inc., Bloomberg L.P.", "Red Hat India Pvt. Ltd.", "Red Hat Software", "RedHat"]
+            "aliases": ["Red Hat Canada, Inc", "Red Hat Czech, s.r.o.", "Red Hat Inc.", "Red Hat, Inc., Bloomberg L.P.", "Red Hat India Pvt. Ltd.", "Red Hat Software", "RedHat", "Red Hat, Inc."]
         },
         {
             "domains": ["reduxio.com"],
@@ -6494,7 +6501,7 @@
         {
             "domains": ["tesora.com", "parelastic.com"],
             "company_name": "Tesora Corp",
-            "aliases": ["ParElastic Corp", "ParElastic"]
+            "aliases": ["ParElastic Corp", "ParElastic", "Tesora.com"]
         },
         {
             "domains": ["thalesgroup.com", "mythalesgroup.com"],
