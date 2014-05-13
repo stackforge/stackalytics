@@ -189,3 +189,7 @@ def make_module_group(module_group_id, name=None, modules=None, tag='module'):
             'module_group_name': name or module_group_id,
             'modules': modules or [module_group_id],
             'tag': tag}
+
+
+def normalize_company_name(name):
+    return ''.join([c.lower() for c in name if c.isalnum()])
