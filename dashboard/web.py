@@ -79,6 +79,20 @@ def page_not_found(e):
 
 # AJAX Handlers ---------
 
+def get_records_by_metric(kwargs, record_ids, records):
+    metric = parameters.get_single_parameter(kwargs, 'metric')
+
+    def _generate_records(record_ids):
+        memory_storage_inst = vault.get_memory_storage()
+        for values in memory_storage_inst.day_index.values():
+            for record in memory_storage_inst.get_records(record_ids & values):
+                yield record
+
+    if metric == 'man-days':
+        records = _generate_records(record_ids)
+    return records
+
+
 def _get_aggregated_stats(records, metric_filter, keys, param_id,
                           param_title=None, finalize_handler=None):
     param_title = param_title or param_id
@@ -128,7 +142,9 @@ def get_new_companies(records, **kwargs):
 @decorators.exception_handler()
 @decorators.record_filter()
 @decorators.aggregate_filter()
-def get_companies(records, metric_filter, finalize_handler, **kwargs):
+def get_companies(records, record_ids, metric_filter, finalize_handler,
+                  **kwargs):
+    records = get_records_by_metric(kwargs, record_ids, records)
     return _get_aggregated_stats(records, metric_filter,
                                  vault.get_memory_storage().get_companies(),
                                  'company_name',
@@ -140,7 +156,9 @@ def get_companies(records, metric_filter, finalize_handler, **kwargs):
 @decorators.exception_handler()
 @decorators.record_filter()
 @decorators.aggregate_filter()
-def get_modules(records, metric_filter, finalize_handler, **kwargs):
+def get_modules(records, record_ids, metric_filter, finalize_handler,
+                **kwargs):
+    records = get_records_by_metric(kwargs, record_ids, records)
     return _get_aggregated_stats(records, metric_filter,
                                  vault.get_memory_storage().get_modules(),
                                  'module', finalize_handler=finalize_handler)
@@ -161,8 +179,9 @@ def get_core_engineer_branch(user, modules):
 @decorators.exception_handler()
 @decorators.record_filter()
 @decorators.aggregate_filter()
-def get_engineers(records, metric_filter, finalize_handler, **kwargs):
-
+def get_engineers(records, record_ids, metric_filter, finalize_handler,
+                  **kwargs):
+    records = get_records_by_metric(kwargs, record_ids, records)
     modules_names = parameters.get_parameter({}, 'module', 'modules')
     modules = set([m for m, r in vault.resolve_modules(modules_names, [''])])
 

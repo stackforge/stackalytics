@@ -13,7 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import collections
 import functools
 import json
 
@@ -213,6 +212,10 @@ def mark_finalize(record):
 
     return new_record
 
+last_param_id = ['']
+last_processed_day = [-1]
+used_user_ids = set()
+
 
 def man_days_filter(result, record, param_id):
     if record['record_type'] == 'commit':
@@ -221,22 +224,22 @@ def man_days_filter(result, record, param_id):
         return
 
     day = utils.timestamp_to_day(record['date'])
+    # fact that record-days are grouped by days in some order is used
+    if param_id not in last_param_id:
+        last_param_id[0] = param_id
+        last_processed_day[0] = -1
+        used_user_ids.clear()
+    if day not in last_processed_day:
+        last_processed_day[0] = day
+        used_user_ids.clear()
 
-    result_by_param = result[record[param_id]]
-    if 'days' not in result_by_param:
-        result_by_param['days'] = collections.defaultdict(set)
     user = vault.get_user_from_runtime_storage(record['user_id'])
-    result_by_param['days'][day] |= set([user['seq']])
-    result_by_param['metric'] = 1
+    user_id = user['seq']
 
-
-def man_days_finalize(result_item):
-    metric = 0
-    for day_set in six.itervalues(result_item['days']):
-        metric += len(day_set)
-    del result_item['days']
-    result_item['metric'] = metric
-    return result_item
+    value = record[param_id]
+    if user_id not in used_user_ids:
+        used_user_ids.add(user_id)
+        result[value]['metric'] += 1
 
 
 def aggregate_filter():
@@ -257,7 +260,7 @@ def aggregate_filter():
                 'bpd': (incremental_filter, None),
                 'bpc': (incremental_filter, None),
                 'members': (incremental_filter, None),
-                'man-days': (man_days_filter, man_days_finalize),
+                'man-days': (man_days_filter, None),
             }
             if metric not in metric_to_filters_map:
                 metric = parameters.get_default('metric')
