@@ -4847,6 +4847,17 @@
             "emails": ["sumitnaiksatam@gmail.com", "snaiksat@cisco.com"]
         },
         {
+            "launchpad_id": "susanne-balle",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Susanne Balle ",
+            "emails": ["sleipnir012@gmail.com", "susanne.balle@hp.com"]
+	},
+        {
             "launchpad_id": "somikbehera",
             "companies": [
                 {
