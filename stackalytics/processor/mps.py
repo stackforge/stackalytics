@@ -12,6 +12,7 @@
 # implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
 import re
 import time
 
@@ -63,7 +64,8 @@ def _retrieve_member(uri, member_id):
     for rec in re.finditer(COMPANY_PATTERN, content):
         result = rec.groupdict()
 
-        member['company_draft'] = result['company_draft']
+        member['company_draft'] = six.moves.html_parser.HTMLParser().unescape(
+            result['company_draft'])
 
     return member
 
