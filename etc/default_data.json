@@ -7533,6 +7533,11 @@
             ],
             "uri": "git://github.com/stackforge/fuel-main.git",
             "organization": "stackforge"
+        },
+        {
+            "module": "nova-docker",
+            "uri": "git://github.com/stackforge/nova-docker.git",
+            "organization": "stackforge"
         }
     ],
     "project_sources": [
