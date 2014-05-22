@@ -246,7 +246,7 @@ function render_punch_card(chart_id, chart_data) {
 
 function getUrlVars() {
     var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+    window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
         vars[key] = decodeURIComponent(value);
     });
     return vars;
@@ -273,233 +273,71 @@ function make_uri(uri, options) {
 }
 
 function make_std_options() {
-    var options = {};
-    options['release'] = $('#release').val();
-    options['metric'] = $('#metric').val();
-    options['project_type'] = $('#project_type').val();
-    options['module'] = $('#module').val() || '';
-    options['company'] = $('#company').val() || '';
-    options['user_id'] = $('#user').val() || '';
-
-    return options;
+    return {
+        release: $('#release').val(),
+        project_type: $('#project_type').val(),
+        module: $('#module').val(),
+        company: $('#company').val(),
+        user_id: $('#user').val(),
+        metric: $('#metric').val()
+    };
 }
 
-function reload() {
-    window.location.search = $.map(make_std_options(),function (val, index) {
-        return index + "=" + encodeURIComponent(val);
+function reload(extra) {
+    window.location.search = $.map($.extend(make_std_options(), extra), function (val, index) {
+        return val? (index + "=" + encodeURIComponent(val)) : null;
     }).join("&")
 }
 
 function init_selectors(base_url) {
-    var release = getUrlVars()["release"];
-    if (!release) {
-        release = "_default";
-    }
-    $("#release").val(release).select2({
-        ajax: {
-            url: make_uri(base_url + "/api/1.0/releases"),
-            dataType: 'jsonp',
-            data: function (term, page) {
-                return {
-                    query: term
-                };
-            },
-            results: function (data, page) {
-                return {results: data["releases"]};
-            }
-        },
-        initSelection: function (element, callback) {
-            var id = $(element).val();
-            $.ajax(make_uri(base_url + "/api/1.0/releases/" + id), {
-                dataType: "jsonp"
-            }).done(function (data) {
-                    callback(data["release"]);
-                    $("#release").val(data["release"].id)
-                });
-        }
-    });
-    $('#release')
-        .on("change", function (e) {
-            reload();
-        });
 
-    var metric = getUrlVars()["metric"];
-    if (!metric) {
-        metric = "_default";
-    }
-    $("#metric").val(metric).select2({
-        ajax: {
-            url: make_uri(base_url + "/api/1.0/metrics"),
-            dataType: 'jsonp',
-            data: function (term, page) {
-                return {
-                    query: term
-                };
-            },
-            results: function (data, page) {
-                return {results: data["metrics"]};
-            }
-        },
-        initSelection: function (element, callback) {
-            var id = $(element).val();
-            $.ajax(make_uri(base_url + "/api/1.0/metrics/" + id), {
-                dataType: "jsonp"
-            }).done(function (data) {
-                    callback(data["metric"]);
-                    $("#metric").val(data["metric"].id);
-                });
-        }
-    });
-    $('#metric')
-        .on("change", function (e) {
-            reload();
-        });
+    function init_one_selector(name, api_url, extra) {
+        $("#" + name).val(0).select2({
+            data: [{id: 0, text: "Loading..." }],
+            formatSelection: function(item) { return "<div class=\"select2-loading\">" + item.text + "</div>"}
+        }).select2("enable", false);
 
-    var project_type = getUrlVars()["project_type"];
-    if (!project_type) {
-        project_type = "_default";
-    }
-    $("#project_type").val(project_type).select2({
-        ajax: {
-            url: make_uri(base_url + "/api/1.0/project_types"),
-            dataType: 'jsonp',
-            data: function (term, page) {
-                return {
-                    query: term
-                };
-            },
-            results: function (data, page) {
-                const project_types = data["project_types"];
-                var result = [];
-                for (var key in project_types) {
-                    result.push({id: project_types[key].id, text: project_types[key].text, group: true});
-                    for (var i in project_types[key].items) {
-                        var item = project_types[key].items[i];
-                        result.push({id: item.id, text: item.text});
-                    }
+        $.ajax({
+            url: api_url,
+            dataType: "jsonp",
+            success: function (data) {
+                var initial_value = getUrlVars()[name];
+                if (!initial_value && data["default"]) {
+                    initial_value = data["default"];
                 }
-                return {results: result};
+                $("#" + name).
+                    val(initial_value).
+                    select2($.extend({
+                        data: data["data"]
+                    }, extra)).
+                    on("select2-selecting",function (e) { /* don't use 'change' event, because it changes value and then refreshes the page */
+                        var options = {};
+                        options[name] = e.val;
+                        reload(options);
+                    }).
+                    on("select2-removed",function (e) {
+                        var options = {};
+                        options[name] = '';
+                        reload(options);
+                    }).
+                    select2("enable", true);
             }
-        },
-        initSelection: function (element, callback) {
-            var id = $(element).val();
-            $.ajax(make_uri(base_url + "/api/1.0/project_types/" + id), {
-                dataType: "jsonp"
-            }).done(function (data) {
-                    callback(data["project_type"]);
-                    $("#project_type").val(data["project_type"].id);
-                });
-        },
+        });
+    }
+
+    init_one_selector("release", make_uri(base_url + "/api/1.0/releases"));
+    init_one_selector("project_type", make_uri(base_url + "/api/1.0/project_types"), {
         formatResultCssClass: function (item) {
-            if (item.group) {
-                return "project_group"
-            } else {
-                return "project_group_item";
-            }
+            return (item.child)? "project_group_item": "project_group";
         }
     });
-    $('#project_type')
-        .on("change", function (e) {
-            $('#module').val('');
-            reload();
-        });
-
-    $("#company").select2({
-        allowClear: true,
-        ajax: {
-            url: make_uri(base_url + "/api/1.0/companies"),
-            dataType: 'jsonp',
-            data: function (term, page) {
-                return {
-                    company_name: term
-                };
-            },
-            results: function (data, page) {
-                return {results: data["companies"]};
-            }
-        },
-        initSelection: function (element, callback) {
-            var id = $(element).val();
-            if (id !== "") {
-                $.ajax(make_uri(base_url + "/api/1.0/companies/" + id), {
-                    dataType: "jsonp"
-                }).done(function (data) {
-                        callback(data["company"]);
-                    });
-            }
-        }
-    });
-
-    $('#company')
-        .on("change", function (e) {
-            reload();
-        });
-
-    $("#module").select2({
-        allowClear: true,
-        ajax: {
-            url: make_uri(base_url + "/api/1.0/modules", {tags: "module,program,group"}),
-            dataType: 'jsonp',
-            data: function (term, page) {
-                return {
-                    query: term
-                };
-            },
-            results: function (data, page) {
-                return {results: data["modules"]};
-            }
-        },
-        initSelection: function (element, callback) {
-            var id = $(element).val();
-            if (id !== "") {
-                $.ajax(make_uri(base_url + "/api/1.0/modules/" + id), {
-                    dataType: "jsonp"
-                }).done(function (data) {
-                        callback(data["module"]);
-                    });
-            }
-        },
+    init_one_selector("module", make_uri(base_url + "/api/1.0/modules", {tags: "module,program,group"}), {
         formatResultCssClass: function (item) {
-            if (item.tag) {
-                return "select_module_" + item.tag;
-            }
-            return "";
-        }
-    });
-
-    $('#module')
-        .on("change", function (e) {
-            reload();
-        });
-
-    $("#user").select2({
-        allowClear: true,
-        ajax: {
-            url: make_uri(base_url + "/api/1.0/users"),
-            dataType: 'jsonp',
-            data: function (term, page) {
-                return {
-                    user_name: term
-                };
-            },
-            results: function (data, page) {
-                return {results: data["users"]};
-            }
+            return (item.tag)? ("select_module_" + item.tag): "";
         },
-        initSelection: function (element, callback) {
-            var id = $(element).val();
-            if (id !== "") {
-                $.ajax(make_uri(base_url + "/api/1.0/users/" + id), {
-                    dataType: "json"
-                }).done(function (data) {
-                        callback(data["user"]);
-                    });
-            }
-        }
+        allowClear: true
     });
-
-    $('#user')
-        .on("change", function (e) {
-            reload();
-        });
+    init_one_selector("company", make_uri(base_url + "/api/1.0/companies"), {allowClear: true});
+    init_one_selector("user_id", make_uri(base_url + "/api/1.0/users"), {allowClear: true});
+    init_one_selector("metric", make_uri(base_url + "/api/1.0/metrics"));
 }
