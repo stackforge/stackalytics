@@ -48,7 +48,7 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-        init_selectors("");
+        initSelectors("");
     });
     $(function () {
         $(document).tooltip();
@@ -69,7 +69,7 @@
         </div>
         <div id="analytics_header">
             <div style="float: left;">
-                <span id="logo"><a href="/?metric={{ metric }}&release={{ release }}&project_type={{ project_type }}">Stackalytics</a></span>
+                <span id="logo"><a href="{{ url_for('overview') }}">Stackalytics</a></span>
             </div>
             <div class="stackamenu">
                 <ul id="menu-stackamenu">
@@ -94,17 +94,17 @@
 
             <div class="drop">
                 <label for="module" title="Module represents a repo (black), official program (violet) or pre-configured group of modules (cyan)">Module</label>
-                <input type="hidden" id="module" style="width: 140px" data-placeholder="Any module" value="{{ module }}"/>
+                <input type="hidden" id="module" style="width: 140px" data-placeholder="Any module"/>
             </div>
 
             <div class="drop">
                 <label for="company" title="Company name">Company</label>
-                <input type="hidden" id="company" style="width: 140px" data-placeholder="Any company" value="{{ company }}"/>
+                <input type="hidden" id="company" style="width: 140px" data-placeholder="Any company"/>
             </div>
 
             <div class="drop">
-                <label for="user" title="Name of engineer as configured in Launchpad or default_data.json">Engineer</label>
-                <input type="hidden" id="user" style="width: 140px" data-placeholder="Any engineer" value="{{ user_id }}"/>
+                <label for="user_id" title="Name of engineer as configured in Launchpad or default_data.json">Engineer</label>
+                <input type="hidden" id="user_id" style="width: 140px" data-placeholder="Any engineer"/>
             </div>
 
             <div class="drop">
