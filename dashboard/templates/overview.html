@@ -15,6 +15,7 @@
 {% set show_user_profile = (user_id) %}
 {% set show_top_mentors_options = (metric == 'tm_marks') %}
 {% set show_review_ratio = (metric in ['marks', 'tm_marks']) %}
+{% set show_patch_sets = (metric == 'patch-set-time') %}
 
 {% macro show_report_links(module=None, company=None, user_id=None) -%}
     {% if module %}
@@ -36,12 +37,20 @@
     renderTimeline();
 
     {% if show_company_breakdown %}
-    renderTableAndChart("/api/1.0/stats/companies", "company_container", "company_table", "company_chart", "company");
-    {% endif %}
+        {% if show_patch_sets %}
+        render_bar_chart("/api/1.0/stats/companies", "company_container", "company_table", "company_chart", "company",
+            ["index", "link", "patch_sets_count", "patch-set-time"]);
+        {% else %}
+        renderTableAndChart("/api/1.0/stats/companies", "company_container", "company_table", "company_chart", "company");
+        {% endif %}
+   {% endif %}
     {% if show_engineer_breakdown %}
         {% if show_review_ratio %}
         renderTableAndChart("/api/1.0/stats/engineers", "engineer_container", "engineer_table", "engineer_chart", "user_id",
                 ["index", "link", "mark_ratio", "metric"]);
+        {% elif show_patch_sets %}
+            render_bar_chart("/api/1.0/stats/engineers", "engineer_container", "engineer_table", "engineer_chart", "user_id",
+                ["index", "link", "patch_sets_count", "patch-set-time"]);
         {% else %}
         renderTableAndChart("/api/1.0/stats/engineers", "engineer_container", "engineer_table", "engineer_chart", "user_id");
         {% endif %}
@@ -51,7 +60,12 @@
             ["index", "link", "status", "date", "metric"]);
     {% endif %}
     {% if show_module_breakdown %}
-    renderTableAndChart("/api/1.0/stats/modules", "module_container", "module_table", "module_chart", "module");
+        {% if show_patch_sets %}
+        render_bar_chart("/api/1.0/stats/modules", "module_container", "module_table", "module_chart", "module",
+            ["index", "link", "patch_sets_count", "patch-set-time"]);
+        {% else %}
+        renderTableAndChart("/api/1.0/stats/modules", "module_container", "module_table", "module_chart", "module");
+        {% endif %}
     {% endif %}
 
 </script>
@@ -110,6 +124,9 @@
             <tr>
                 <th>#</th>
                 <th>Company</th>
+                {% if show_patch_sets %}
+                    <th>Patch Sets Count</th>
+                {% endif %}
                 <th>{{ metric_label }}</th>
             </tr>
         </thead>
@@ -133,6 +150,8 @@
                 <th>Engineer</th>
                 {% if show_review_ratio %}
                     <th>-2|-1|+1|+2|A (+/- ratio)</th>
+                {% elif show_patch_sets %}
+                    <th>Patch Sets Count</th>
                 {% endif %}
                 <th>{{ metric_label }}</th>
             </tr>
@@ -171,6 +190,9 @@
             <tr>
                 <th>#</th>
                 <th>Module</th>
+                {% if show_patch_sets %}
+                    <th>Patch Sets Count</th>
+                {% endif %}
                 <th>{{ metric_label }}</th>
             </tr>
         </thead>

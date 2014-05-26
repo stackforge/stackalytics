@@ -214,6 +214,44 @@ def mark_finalize(record):
     return new_record
 
 
+def patch_set_filter(result, record, param_id):
+    if (record.get('status') != 'MERGED'):
+        return
+
+    record = vault.extend_record(record)
+    result_by_param = result[record[param_id]]
+    patch_set_seconds = record['lastUpdated'] - record['date']
+
+    result_by_param['metric'] += patch_set_seconds
+
+    if 'patch_sets_count' in result_by_param:
+        result_by_param['patch_sets_count'] += record['patchSetsCount']
+    else:
+        result_by_param['patch_sets_count'] = record['patchSetsCount']
+
+    if 'reviews_count' in result_by_param:
+        result_by_param['reviews_count'] += 1
+    else:
+        result_by_param['reviews_count'] = 1
+
+
+def patch_set_finalize(record):
+    patch_set_seconds = record['metric'] // record['reviews_count']
+    patch_set_days = patch_set_seconds // (24 * 60 * 60)
+    patch_set_hours = (patch_set_seconds // (60 * 60)) % 24
+    patch_set_minutes = (patch_set_seconds // 60) % 60
+
+    record['metric'] = (record['metric'] * 100
+                        // (record['reviews_count'] * 24 * 60 * 60)) / 100.0
+
+    record['patch_sets_count'] = (record['patch_sets_count'] * 100
+                                  // record['reviews_count']) / 100.0
+
+    record['patch-set-time'] = str(patch_set_days) + 'd ' + str(
+        patch_set_hours) + 'h ' + str(patch_set_minutes) + 'm'
+    return record
+
+
 def man_days_filter(result, record, param_id):
     if record['record_type'] == 'commit':
         # commit is attributed with the date of the merge which is not an
@@ -258,6 +296,7 @@ def aggregate_filter():
                 'bpc': (incremental_filter, None),
                 'members': (incremental_filter, None),
                 'man-days': (man_days_filter, man_days_finalize),
+                'patch-set-time': (patch_set_filter, patch_set_finalize)
             }
             if metric not in metric_to_filters_map:
                 metric = parameters.get_default('metric')

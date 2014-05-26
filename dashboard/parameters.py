@@ -35,7 +35,8 @@ METRIC_LABELS = {
     'emails': 'Emails',
     'bpd': 'Drafted Blueprints',
     'bpc': 'Completed Blueprints',
-    'man-days': "Man-days effort"
+    'man-days': 'Man-days effort',
+    'patch-set-time': 'Patch Sets Time'
 }
 
 METRIC_TO_RECORD_TYPE = {
@@ -46,6 +47,7 @@ METRIC_TO_RECORD_TYPE = {
     'bpd': 'bpd',
     'bpc': 'bpc',
     'members': 'member',
+    'patch-set-time': 'review'
 }
 
 DEFAULT_RECORDS_LIMIT = 10

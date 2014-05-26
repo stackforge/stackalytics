@@ -83,7 +83,7 @@ function renderTimeline(options) {
     });
 }
 
-function renderTableAndChart(url, container_id, table_id, chart_id, link_param, table_column_names) {
+function renderTable(url, container_id, table_id, chart_id, link_param, table_column_names) {
 
     $(document).ready(function () {
 
@@ -93,7 +93,6 @@ function renderTableAndChart(url, container_id, table_id, chart_id, link_param, 
             success: function (data) {
 
                 var tableData = [];
-                var chartData = [];
 
                 const limit = 10;
                 var aggregate = 0;
@@ -107,11 +106,7 @@ function renderTableAndChart(url, container_id, table_id, chart_id, link_param, 
                 }
 
                 for (i = 0; i < data.length; i++) {
-                    if (i < limit - 1) {
-                        chartData.push([data[i].name, data[i].metric]);
-                    } else {
-                        aggregate += data[i].metric;
-                    }
+                    aggregate += data[i].metric;
 
                     if (!data[i].link) {
                         if (data[i].id) {
@@ -130,12 +125,6 @@ function renderTableAndChart(url, container_id, table_id, chart_id, link_param, 
                     tableData.push(data[i]);
                 }
 
-                if (i == limit) {
-                    chartData.push([data[i - 1].name, data[i - 1].metric]);
-                } else if (i > limit) {
-                    chartData.push(["others", aggregate]);
-                }
-
                 if (!table_column_names) {
                     table_column_names = ["index", "link", "metric"];
                 }
@@ -148,6 +137,11 @@ function renderTableAndChart(url, container_id, table_id, chart_id, link_param, 
                     }
                 }
 
+                var metric = getUrlVars()["metric"];
+                var cmp = "desc";
+                if (metric == "patch-set-time")
+                    cmp = "asc";
+
                 if (table_id) {
                     $("#" + table_id).dataTable({
                         "aLengthMenu": [
@@ -155,13 +149,50 @@ function renderTableAndChart(url, container_id, table_id, chart_id, link_param, 
                             [10, 25, 50, "All"]
                         ],
                         "aaSorting": [
-                            [ sort_by_column, "desc" ]
+                            [ sort_by_column, cmp ]
                         ],
                         "sPaginationType": "full_numbers",
                         "iDisplayLength": 10,
                         "aaData": tableData,
                         "aoColumns": tableColumns
                     });
+                }
+            }
+        });
+    });
+}
+
+function renderTableAndChart(url, container_id, table_id, chart_id, link_param, table_column_names) {
+
+    $(document).ready(function () {
+
+        $.ajax({
+            url: make_uri(url),
+            dataType: "jsonp",
+            success: function (data) {
+
+                renderTable(url, container_id, table_id, chart_id, link_param, table_column_names);
+
+                var chartData = [];
+
+                const limit = 10;
+                var aggregate = 0;
+                var i;
+
+                data = data["stats"];
+
+                for (i = 0; i < data.length; i++) {
+                    if (i < limit - 1) {
+                        chartData.push([data[i].name, data[i].metric]);
+                    } else {
+                        aggregate += data[i].metric;
+                    }
+                }
+
+                if (i == limit) {
+                    chartData.push([data[i - 1].name, data[i - 1].metric]);
+                } else if (i > limit) {
+                    chartData.push(["others", aggregate]);
                 }
 
                 if (chart_id) {
@@ -180,26 +211,67 @@ function renderTableAndChart(url, container_id, table_id, chart_id, link_param, 
     });
 }
 
-function render_bar_chart(chart_id, chart_data) {
-    $.jqplot(chart_id, chart_data, {
-        seriesDefaults: {
-            renderer: $.jqplot.BarRenderer,
-            rendererOptions: {
-                barMargin: 1
-            },
-            pointLabels: {show: true}
-        },
-        axes: {
-            xaxis: {
-                renderer: $.jqplot.CategoryAxisRenderer,
-                label: "Age"
-            },
-            yaxis: {
-                label: "Count",
-                labelRenderer: $.jqplot.CanvasAxisLabelRenderer
-            }
-        }
-    });
+function render_bar_chart(url, container_id, table_id, chart_id, link_param, table_column_names) {
+
+    $.ajax({
+       url: make_uri(url),
+       dataType: "jsonp",
+       success: function (data) {
+
+           renderTable(url, container_id, table_id, chart_id, link_param, table_column_names);
+
+           var chartDataValues = [];
+           var chartDataNames = [];
+
+           const limit = 10;
+           var aggregateSum = 0;
+           var aggregateCnt = 0;
+           var i;
+
+           data = data["stats"];
+
+           for (i = 0; i < data.length; i++) {
+               if (i < limit - 1) {
+                   chartDataNames.push({"label": data[i].name});
+                   chartDataValues.push([data[i].metric]);
+               } else {
+                   aggregateSum += data[i].metric;
+                   aggregateCnt += 1;
+               }
+           }
+
+           if (i == limit) {
+               chartDataNames.push({"label": data[i - 1].name});
+               chartDataValues.push([data[i - 1].metric]);
+           } else if (i > limit) {
+               chartDataNames.push({"label": "others"});
+               chartDataValues.push([aggregateSum / aggregateCnt]);
+           }
+
+           if (chart_id) {
+               var plot = $.jqplot(chart_id, chartDataValues, {
+                   animate: !$.jqplot.use_excanvas,
+                   seriesDefaults: {
+                       renderer: $.jqplot.BarRenderer,
+                       rendererOptions: {
+                       },
+                       pointLabels: {show: true, formatString:'%.2f'}
+                   },
+                   legend: {
+                       show: true,
+                       placement: 'outsideGrid'
+                   },
+                   series: chartDataNames,
+                   axes: {
+                       xaxis: {
+                           renderer: $.jqplot.CategoryAxisRenderer,
+                           ticks: ['contribution in days']
+                       }
+                   }
+               });
+           }
+       }
+   });
 }
 
 function render_punch_card(chart_id, chart_data) {
