@@ -83,7 +83,7 @@ function renderTimeline(options) {
     });
 }
 
-function renderTableAndChart(url, container_id, table_id, chart_id, link_param, table_column_names) {
+function renderTableAndChart(url, container_id, table_id, chart_id, chart_type, link_param, table_column_names) {
 
     $(document).ready(function () {
 
@@ -94,9 +94,13 @@ function renderTableAndChart(url, container_id, table_id, chart_id, link_param, 
 
                 var tableData = [];
                 var chartData = [];
+                var chartDataValues = [];
+                var chartDataNames = [];
 
                 const limit = 10;
                 var aggregate = 0;
+                var aggregateSum = 0;
+                var aggregateCnt = 0;
                 var i;
 
                 data = data["stats"];
@@ -109,8 +113,12 @@ function renderTableAndChart(url, container_id, table_id, chart_id, link_param, 
                 for (i = 0; i < data.length; i++) {
                     if (i < limit - 1) {
                         chartData.push([data[i].name, data[i].metric]);
+                        chartDataNames.push({"label": data[i].name});
+                        chartDataValues.push([data[i].metric]);
                     } else {
                         aggregate += data[i].metric;
+                        aggregateSum += data[i].metric;
+                        aggregateCnt += 1;
                     }
 
                     if (!data[i].link) {
@@ -132,8 +140,12 @@ function renderTableAndChart(url, container_id, table_id, chart_id, link_param, 
 
                 if (i == limit) {
                     chartData.push([data[i - 1].name, data[i - 1].metric]);
+                    chartDataNames.push({"label": data[i - 1].name});
+                    chartDataValues.push([data[i - 1].metric]);
                 } else if (i > limit) {
                     chartData.push(["others", aggregate]);
+                    chartDataNames.push({"label": "others"});
+                    chartDataValues.push([aggregateSum / aggregateCnt]);
                 }
 
                 if (!table_column_names) {
@@ -165,15 +177,38 @@ function renderTableAndChart(url, container_id, table_id, chart_id, link_param, 
                 }
 
                 if (chart_id) {
-                    var plot = $.jqplot(chart_id, [chartData], {
-                        seriesDefaults: {
-                            renderer: jQuery.jqplot.PieRenderer,
-                            rendererOptions: {
-                                showDataLabels: true
-                            }
-                        },
-                        legend: { show: true, location: 'e' }
-                    });
+                    if (chart_type == "pie") {
+                        $.jqplot(chart_id, [chartData], {
+                            seriesDefaults: {
+                                renderer: jQuery.jqplot.PieRenderer,
+                                rendererOptions: {
+                                    showDataLabels: true
+                                }
+                            },
+                            legend: { show: true, location: 'e' }
+                        });
+                    } else if (chart_type == "bar") {
+                       $.jqplot(chart_id, chartDataValues, {
+                           animate: !$.jqplot.use_excanvas,
+                           seriesDefaults: {
+                               renderer: $.jqplot.BarRenderer,
+                               rendererOptions: {
+                               },
+                               pointLabels: {show: true, formatString:'%.2f'}
+                           },
+                           legend: {
+                               show: true,
+                               placement: 'outsideGrid'
+                           },
+                           series: chartDataNames,
+                           axes: {
+                               xaxis: {
+                                   renderer: $.jqplot.CategoryAxisRenderer,
+                                   ticks: ['duration, days']
+                               }
+                           }
+                       });
+                    }
                 }
             }
         });
