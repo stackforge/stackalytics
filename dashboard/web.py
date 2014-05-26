@@ -77,7 +77,7 @@ def page_not_found(e):
 
 # AJAX Handlers ---------
 
-def _get_aggregated_stats(records, metric_filter, keys, param_id,
+def _get_aggregated_stats(records, metric_filter, keys, param_id, kwargs,
                           param_title=None, finalize_handler=None):
     param_title = param_title or param_id
     result = dict((c, {'metric': 0, 'id': c}) for c in keys)
@@ -88,7 +88,11 @@ def _get_aggregated_stats(records, metric_filter, keys, param_id,
 
     response = [r for r in result.values() if r['metric']]
     response = [item for item in map(finalize_handler, response) if item]
-    response.sort(key=lambda x: x['metric'], reverse=True)
+
+    metric = parameters.get_single_parameter(kwargs, 'metric')
+    reverse = (metric != 'patch-set-time')
+    response.sort(key=lambda x: x['metric'], reverse=reverse)
+
     utils.add_index(response, item_filter=lambda x: x['id'] != '*independent')
     return response
 
@@ -133,7 +137,7 @@ def get_new_companies(records, **kwargs):
 def get_companies(records, metric_filter, finalize_handler, **kwargs):
     return _get_aggregated_stats(records, metric_filter,
                                  vault.get_memory_storage().get_companies(),
-                                 'company_name',
+                                 'company_name', kwargs,
                                  finalize_handler=finalize_handler)
 
 
@@ -147,7 +151,8 @@ def get_companies(records, metric_filter, finalize_handler, **kwargs):
 def get_modules(records, metric_filter, finalize_handler, **kwargs):
     return _get_aggregated_stats(records, metric_filter,
                                  vault.get_memory_storage().get_modules(),
-                                 'module', finalize_handler=finalize_handler)
+                                 'module', kwargs,
+                                 finalize_handler=finalize_handler)
 
 
 def get_core_engineer_branch(user, modules):
@@ -180,7 +185,7 @@ def get_engineers(records, metric_filter, finalize_handler, **kwargs):
 
     return _get_aggregated_stats(records, metric_filter,
                                  vault.get_memory_storage().get_user_ids(),
-                                 'user_id', 'author_name',
+                                 'user_id', kwargs, 'author_name',
                                  finalize_handler=postprocessing)
 
 

@@ -248,6 +248,34 @@ def mark_finalize(record):
     return new_record
 
 
+def patch_set_filter(result, record, param_id, context):
+    if record.get('status') != 'MERGED':
+        return
+
+    result_by_param = result[record[param_id]]
+
+    result_by_param['metric'] += record['lastUpdated'] - record['date']
+    result_by_param['patch_sets'] = (result_by_param.get('patch_sets', 0) +
+                                     record['patch_set_count'])
+    result_by_param['reviews'] = result_by_param.get('reviews', 0) + 1
+
+
+def patch_set_finalize(record):
+    avg_review_duration = record['metric'] // record['reviews']
+
+    record['metric'] = record['avg_review_duration'] = round(
+        float(avg_review_duration) / (24 * 60 * 60), 2)
+    record['avg_patch_sets_per_review'] = round(float(record['patch_sets']) /
+                                                record['reviews'], 2)
+
+    patch_set_days = avg_review_duration // (24 * 60 * 60)
+    patch_set_hours = (avg_review_duration // (60 * 60)) % 24
+    patch_set_minutes = (avg_review_duration // 60) % 60
+    record['avg_review_duration_str'] = str(patch_set_days) + 'd ' + str(
+        patch_set_hours) + 'h ' + str(patch_set_minutes) + 'm'
+    return record
+
+
 def person_day_filter(result, record, param_id, context):
     if record['record_type'] == 'commit' or record['record_type'] == 'member':
         # 1. commit is attributed with the date of the merge which is not an
@@ -296,6 +324,7 @@ def aggregate_filter():
                 'bpc': (incremental_filter, None),
                 'members': (incremental_filter, None),
                 'person-day': (person_day_filter, None),
+                'patch-set-time': (patch_set_filter, patch_set_finalize),
             }
             if metric not in metric_to_filters_map:
                 metric = parameters.get_default('metric')

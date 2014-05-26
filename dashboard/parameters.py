@@ -35,7 +35,8 @@ METRIC_LABELS = {
     'emails': 'Emails',
     'bpd': 'Drafted Blueprints',
     'bpc': 'Completed Blueprints',
-    'person-day': "Person-day effort"
+    'person-day': 'Person-day effort',
+    'patch-set-time': 'CR speed',
 }
 
 METRIC_TO_RECORD_TYPE = {
@@ -46,6 +47,7 @@ METRIC_TO_RECORD_TYPE = {
     'bpd': 'bpd',
     'bpc': 'bpc',
     'members': 'member',
+    'patch-set-time': 'review',
 }
 
 FILTER_PARAMETERS = ['release', 'project_type', 'module', 'company', 'user_id',
