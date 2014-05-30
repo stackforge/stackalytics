@@ -33,9 +33,6 @@ METRIC_LABELS = {
     'commits': 'Commits',
     'marks': 'Reviews',
     'emails': 'Emails',
-    'bpd': 'Drafted Blueprints',
-    'bpc': 'Completed Blueprints',
-    'man-days': "Man-days effort"
 }
 
 METRIC_TO_RECORD_TYPE = {
@@ -43,9 +40,6 @@ METRIC_TO_RECORD_TYPE = {
     'commits': 'commit',
     'marks': 'mark',
     'emails': 'email',
-    'bpd': 'bpd',
-    'bpc': 'bpc',
-    'members': 'member',
 }
 
 FILTER_PARAMETERS = ['release', 'project_type', 'module', 'company', 'user_id',

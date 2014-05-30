@@ -85,8 +85,15 @@ class Gerrit(Rcs):
 
     def _get_cmd(self, project_organization, module, branch, sort_key=None,
                  is_open=False, limit=PAGE_LIMIT):
-        cmd = ('gerrit query --all-approvals --patch-sets --format JSON '
+        if project_organization:
+            cmd = ('gerrit query --all-approvals --patch-sets --format JSON '
                'project:\'%(ogn)s/%(module)s\' branch:%(branch)s '
+               'limit:%(limit)s' %
+               {'ogn': project_organization, 'module': module,
+                'branch': branch, 'limit': limit})
+        else:
+            cmd = ('gerrit query --all-approvals --patch-sets --format JSON '
+               'project:%(module)s\' branch:%(branch)s '
                'limit:%(limit)s' %
                {'ogn': project_organization, 'module': module,
                 'branch': branch, 'limit': limit})

@@ -57,10 +57,10 @@ TRAILING_RECORD = ('From ishakhat at mirantis.com  Tue Sep 17 07:30:43 2013'
 
 def _get_mail_archive_links(uri):
     content = utils.read_uri(uri)
-    links = set(re.findall(r'\shref\s*=\s*[\'"]([^\'"]*\.txt\.gz)', content,
+    links = set(re.findall(r'\shref\s*=\s*[\'"]([^\'"]*\.txt(\.gz)?)', content,
                            flags=re.IGNORECASE))
-    return [parse.urljoin(uri, link) for link in links]
-
+    # each link is a tuple due to having multiple groups in the re -- get the first one
+    return [urlparse.urljoin(uri, link[0]) for link in links]
 
 def _link_content_changed(link, runtime_storage_inst):
     LOG.debug('Check changes for mail archive located at uri: %s', link)
@@ -76,7 +76,8 @@ def _link_content_changed(link, runtime_storage_inst):
         runtime_storage_inst.set_by_key('mail_link:' + link, last_modified)
         return True
 
-    return False
+    # return true every time for now
+    return True
 
 
 def _retrieve_mails(uri):
@@ -85,8 +86,16 @@ def _retrieve_mails(uri):
     if not content:
         LOG.error('Error reading mail archive from uri: %s', uri)
         return
-    gzip_fd = gzip.GzipFile(fileobj=StringIO.StringIO(content))
-    content = gzip_fd.read()
+
+    # only gunzip if the uri has a .gz suffix
+    matchgz = re.compile ('\.txt\.gz')
+    if matchgz.search(uri):
+        LOG.debug ('%s is a gzipped file', uri)
+        gzip_fd = gzip.GzipFile(fileobj=StringIO.StringIO(content))
+        content = gzip_fd.read()
+    else:
+        LOG.debug ('%s is not a gzipped file', uri)
+
     LOG.debug('Mail archive is loaded, start processing')
 
     content += TRAILING_RECORD
@@ -117,6 +126,7 @@ def _retrieve_mails(uri):
 def log(uri, runtime_storage_inst):
 
     links = _get_mail_archive_links(uri)
+    LOG.debug ('Mail archive links: %s', str(links))
     for link in links:
         if _link_content_changed(link, runtime_storage_inst):
             for mail in _retrieve_mails(link):
