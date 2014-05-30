@@ -1,204 +1,146 @@
 {
-    "users": [
+  "users": [
+    {
+      "launchpad_id": "foo",
+      "user_name": "Pupkin",
+      "emails": [
+        "user@test.org"
+      ],
+      "companies": [
         {
-            "launchpad_id": "foo",
-            "user_name": "Pupkin",
-            "emails": ["user@test.org"],
-            "companies": [
-                {
-                    "company_name": "Uno",
-                    "end_date": "2013-Jan-01"
-                },
-                {
-                    "company_name": "Duo",
-                    "end_date": null
-                }
-            ]
+          "company_name": "Uno",
+          "end_date": "2013-Jan-01"
         },
         {
-            "launchpad_id": "jenkins",
-            "companies": [
-                {
-                    "company_name": "*robots",
-                    "end_date": null
-                }
-            ],
-            "user_name": "OpenStack Robot",
-            "emails": ["review@openstack.org", "jenkins@review.openstack.org",
-                "jenkins@openstack.org", "hudson@openstack.org",
-                "openstack-infra@lists.openstack.org", "elastic-hadoop-ci@mirantis.com"]
+          "company_name": "Duo",
+          "end_date": null
         }
-    ],
-
-    "companies": [
+      ]
+    },
+    {
+      "launchpad_id": "jenkins",
+      "companies": [
         {
-            "company_name": "*independent",
-            "domains": [""]
-        },
-        {
-            "company_name": "Hewlett-Packard",
-            "domains": ["hp.com"]
-        },
-        {
-            "company_name": "Intel",
-            "domains": ["intel.com"]
-        },
-        {
-            "company_name": "Mirantis",
-            "domains": ["mirantis.com"],
-            "aliases": ["Mirantis Inc", "Mirantis Inc.", "Mirantis, Inc", "Mirantis, Inc.", "Mirantis IT"]
+          "company_name": "*robots",
+          "end_date": null
         }
-    ],
-
-    "repos": [
-        {
-            "releases": [
-                {
-                    "tag_to": "2012.1",
-                    "release_name": "Essex",
-                    "tag_from": "2011.3"
-                },
-                {
-                    "tag_to": "folsom-eol",
-                    "release_name": "Folsom",
-                    "tag_from": "2012.1"
-                },
-                {
-                    "tag_to": "grizzly-eol",
-                    "release_name": "Grizzly",
-                    "tag_from": "2012.2"
-                },
-                {
-                    "branch": "stable/havana",
-                    "tag_to": "HEAD",
-                    "release_name": "Havana",
-                    "tag_from": "2013.1"
-                },
-                {
-                    "branch": "stable/icehouse",
-                    "tag_to": "HEAD",
-                    "release_name": "Icehouse",
-                    "tag_from": "2013.2"
-                },
-                {
-                    "tag_to": "HEAD",
-                    "release_name": "Juno",
-                    "tag_from": "2014.1"
-                }
-            ],
-            "uri": "git://github.com/openstack/glance.git",
-            "module": "glance",
-            "organization": "openstack"
-        },
-        {
-            "module": "python-glanceclient",
-            "organization": "openstack",
-            "uri": "git://github.com/openstack/python-glanceclient.git"
-        },
-        {
-            "module": "stackalytics",
-            "organization": "stackforge",
-            "uri": "git://github.com/stackforge/stackalytics.git"
-        }
-    ],
-
-    "project_sources": [
-        {
-            "organization": "openstack-ops",
-            "module_group_name": "OpenStack-Ops"
-        }
-    ],
-
-    "module_groups": [
-        {
-            "module_group_name": "manual-glance-group",
-            "modules": ["glance", "python-glanceclient"]
-        }
-    ],
-
-    "releases": [
-        {
-            "release_name": "prehistory",
-            "end_date": "2010-Jan-01"
-        },
-        {
-            "release_name": "Austin",
-            "end_date": "2010-Oct-21"
-        },
-        {
-            "release_name": "Bexar",
-            "end_date": "2011-Feb-03"
-        },
-        {
-            "release_name": "Cactus",
-            "end_date": "2011-Apr-15"
-        },
-        {
-            "release_name": "Diablo",
-            "end_date": "2011-Sep-22"
-        },
-        {
-            "release_name": "Essex",
-            "end_date": "2012-Apr-05"
-        },
-        {
-            "release_name": "Folsom",
-            "end_date": "2012-Oct-04"
-        },
-        {
-            "release_name": "Grizzly",
-            "end_date": "2013-Apr-04"
-        },
-        {
-            "release_name": "Havana",
-            "end_date": "2013-Oct-17"
-        },
-        {
-            "release_name": "Icehouse",
-            "end_date": "2014-Apr-17"
-        },
-        {
-            "release_name": "Juno",
-            "end_date": "2014-Oct-17"
-        }
-    ],
-
-    "mail_lists": ["http://lists.openstack.org/pipermail/openstack-dev/"],
-    "member_lists": ["http://www.openstack.org/community/members/profile/"],
-
-    "project_types": [
-        {
-            "id": "all",
-            "title": "All",
-            "modules": ["openstack", "openstack-infra", "openstack-dev", "stackforge", "unknown"]
-        },
-        {
-            "id": "openstack",
-            "title": "OpenStack",
-            "modules": ["openstack", "openstack-infra", "openstack-dev"]
-        },
-        {
-            "id": "integrated",
-            "title": "integrated",
-            "child": true,
-            "modules": ["official-integrated"]
-        },
-        {
-            "id": "incubated",
-            "title": "incubated",
-            "child": true,
-            "modules": ["official-incubated"]
-        },
-        {
-            "id": "other",
-            "title": "other",
-            "child": true,
-            "modules": ["official-other"]
-        },
-        {
-            "id": "stackforge",
-            "title": "Stackforge",
-            "modules": ["stackforge"]
-        }
-    ]
+      ],
+      "user_name": "Jenkins jobs",
+      "emails": [
+        "jenkins-ovsdb@opendaylight.org",
+        "jenkins-controller@opendaylight.org",
+        "jenkins-opendove@opendaylight.org",
+        "jenkins-vtn@opendaylight.org",
+        "jenkins-snmp4sdn@opendaylight.org",
+        "jenkins-integration@opendaylight.org",
+        "jenkins-bgpcep@opendaylight.org",
+        "jenkins-openflowjava@opendaylight.org",
+        "jenkins-openflowplugin@opendaylight.org",
+        "jenkins-ovsdb@opendaylight.org"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "company_name": "*independent",
+      "domains": [
+        ""
+      ]
+    },
+    {
+      "company_name": "Cisco",
+      "domains": [
+        "cisco.com"
+      ]
+    },
+    {
+      "company_name": "IBM",
+      "domains": [
+        "ibm.com"
+      ]
+    },
+    {
+      "company_name": "Plexxi",
+      "domains": [
+        "plexxi.com"
+      ]
+    },
+    {
+      "company_name": "RedHat",
+      "domains": [
+        "redhat.com"
+      ]
+    },
+    {
+      "company_name": "*robots",
+      "domains": [
+        "robots"
+      ]
+    }
+  ],
+  "repos": [
+    {
+      "module": "ovsdb",
+      "organization": "opendaylight",
+      "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/ovsdb.git"
+    },
+    {
+      "module": "affinity",
+      "organization": "opendaylight",
+      "uri": "ssh://aasdevaddr@git.opendaylight.org:29418/affinity.git"
+    }
+  ],
+  "releases": [
+    {
+      "release_name": "Hydrogen",
+      "end_date": "2014-Feb-03"
+    }
+  ],
+  "mail_lists": [
+    "https://lists.opendaylight.org/pipermail/ovsdb-dev/",
+    "https://lists.opendaylight.org/pipermail/affinity-dev/"
+  ],
+  "project_types": [
+    {
+      "id": "all",
+      "title": "All",
+      "modules": [
+        "opendaylight",
+        "bootstrap",
+        "incubation",
+        "integration",
+        "unknown"
+      ]
+    },
+    {
+      "id": "opendaylight",
+      "title": "OpenDaylight",
+      "modules": [
+        "opendaylight"
+      ]
+    },
+    {
+      "id": "bootstrap",
+      "title": "bootstrap",
+      "child": true,
+      "modules": [
+        "bootstrap"
+      ]
+    },
+    {
+      "id": "incubation",
+      "title": "incubation",
+      "child": true,
+      "modules": [
+        "incubation"
+      ]
+    },
+    {
+      "id": "integration",
+      "title": "integration",
+      "modules": [
+        "integration"
+      ]
+    }
+  ]
 }
