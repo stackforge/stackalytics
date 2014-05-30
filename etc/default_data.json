@@ -317,7 +317,7 @@
     ],
     "project_sources": [
         {
-            "organization": "opendaylight",
+            "organization": "opendaylight"
         }
     ],
     "releases": [
@@ -332,7 +332,7 @@
     ],
     "mail_lists": [
         "http://lists.opendaylight.org/pipermail/discuss/",
-        "http://lists.opendaylight.org/pipermail/dev/",
+        "http://lists.opendaylight.org/pipermail/dev/"
     ],
     "member_lists": ["http://www.openstack.org/community/members/profile/"],
     "project_types": [
@@ -345,6 +345,6 @@
             "id": "opendaylight",
             "title": "OpenDaylight",
             "modules": ["opendaylight"]
-        },
+        }
     ]
 }
