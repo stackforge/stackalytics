@@ -1,0 +1,96 @@
+#!/bin/sh
+#
+# uwsgi - Use uwsgi to run python and wsgi web apps.
+#
+# chkconfig: - 85 15
+# description: Use uwsgi to run python and wsgi web apps.
+# processname: uwsgi
+# config: /opt/uwsgi/uwsgi.ini
+# pidfile: /var/run/uwsgi.pid
+
+# Source function library.
+. /etc/init.d/functions
+
+prog="/opt/uwsgi/uwsgi"
+desc="uWSGI"
+config="/opt/uwsgi/uwsgi.ini"
+lockfile="/var/lock/subsys/uwsgi"
+pidfile="/var/run/uwsgi.pid"
+
+start () {
+  echo -n "Starting $desc: "
+  daemon $prog $config
+  retval=$?
+  echo
+  [ $retval -eq 0 ] && touch $lockfile
+  return $retval
+}
+
+
+stop () {
+  echo -n "Stopping $desc: "
+  killproc $prog
+  retval=$?
+  echo
+  [ $retval -eq 0 ] && rm -f $lockfile
+  return $retval
+}
+
+
+reload () {
+echo "Reloading $desc"
+  killproc $prog -HUP
+  retval=$?
+  echo
+}
+
+
+restart () {
+    stop
+    start
+}
+
+
+rh_status () {
+  status $prog
+}
+
+
+rh_status_q() {
+  rh_status >/dev/null 2>&1
+}
+
+
+case "$1" in
+  start)
+    if ! pidof $prog >/dev/null; then
+        rh_status_q && exit 0
+        $1
+    else
+        echo -e "\n$desc is already started...\n"
+    fi
+ ;;
+  stop)
+    if pidof $prog >/dev/null; then
+        rh_status_q || exit 0
+        $1
+    else
+        echo -e "\n$desc can not be stoped because its not running...\n"
+    fi
+    ;;
+  restart|force-reload)
+    $1
+    ;;
+  reload)
+    rh_status_q || exit 7
+    $1
+    ;;
+  status)
+    rh_status
+    ;;
+  *)
+    echo "Usage: $0 {start|stop|restart|reload|force-reload|status}" >&2
+    exit 2
+    ;;
+esac
+exit 0
