@@ -59,8 +59,10 @@ def _get_mail_archive_links(uri):
     content = utils.read_uri(uri)
     links = set(re.findall(r'\shref\s*=\s*[\'"]([^\'"]*\.txt(\.gz)?)', content,
                            flags=re.IGNORECASE))
-    # each link is a tuple due to having multiple groups in the re -- get the first one
-    return [urlparse.urljoin(uri, link[0]) for link in links]
+    # each link is a tuple due to having multiple groups in the re
+    # we are only interested in the first one
+    return [parse.urlparse.urljoin(uri, link[0]) for link in links]
+
 
 def _link_content_changed(link, runtime_storage_inst):
     LOG.debug('Check changes for mail archive located at uri: %s', link)
@@ -88,13 +90,13 @@ def _retrieve_mails(uri):
         return
 
     # only gunzip if the uri has a .gz suffix
-    matchgz = re.compile ('\.txt\.gz')
+    matchgz = re.compile('\.txt\.gz')
     if matchgz.search(uri):
-        LOG.debug ('%s is a gzipped file', uri)
+        LOG.debug('%s is a gzipped file', uri)
         gzip_fd = gzip.GzipFile(fileobj=StringIO.StringIO(content))
         content = gzip_fd.read()
     else:
-        LOG.debug ('%s is not a gzipped file', uri)
+        LOG.debug('%s is not a gzipped file', uri)
 
     LOG.debug('Mail archive is loaded, start processing')
 
@@ -126,7 +128,7 @@ def _retrieve_mails(uri):
 def log(uri, runtime_storage_inst):
 
     links = _get_mail_archive_links(uri)
-    LOG.debug ('Mail archive links: %s', str(links))
+    LOG.debug('Mail archive links: %s', str(links))
     for link in links:
         if _link_content_changed(link, runtime_storage_inst):
             for mail in _retrieve_mails(link):

@@ -24,7 +24,6 @@ import yaml
 from stackalytics.openstack.common import log as logging
 from stackalytics.processor import config
 from stackalytics.processor import default_data_processor
-from stackalytics.processor import lp
 from stackalytics.processor import mls
 from stackalytics.processor import mps
 from stackalytics.processor import rcs
