@@ -18,8 +18,8 @@ from oslo.config import cfg
 
 OPTS = [
     cfg.StrOpt('default-data-uri',
-               default='https://raw.github.com/stackforge/stackalytics/'
-                       'master/etc/default_data.json',
+               default='https://raw.githubusercontent.com/dave-tucker/'
+                       'spectrometer/master/etc/default_data.json',
                help='URI for default data'),
     cfg.StrOpt('sources-root', default='/var/local/stackalytics',
                help='The folder that holds all project sources to analyze'),
@@ -32,10 +32,10 @@ OPTS = [
     cfg.IntOpt('days_to_update_members', default=7,
                help='Number of days to update members'),
     cfg.StrOpt('corrections-uri',
-               default=('https://raw.github.com/stackforge/stackalytics/'
-                        'master/etc/corrections.json'),
+               default=('https://raw.githubusercontent.com/dave-tucker/'
+                        'spectrometer/master/etc/corrections.json'),
                help='The address of file with corrections data'),
-    cfg.StrOpt('review-uri', default='gerrit://review.openstack.org',
+    cfg.StrOpt('review-uri', default='gerrit://git.opendaylight.org/gerrit/',
                help='URI of review system'),
     cfg.StrOpt('ssh-key-filename', default='/home/user/.ssh/id_rsa',
                help='SSH key for gerrit review system access'),
@@ -51,7 +51,7 @@ OPTS = [
                help='Default metric'),
     cfg.StrOpt('default-release',
                help='Default release, the most recent if not set'),
-    cfg.StrOpt('default-project-type', default='openstack',
+    cfg.StrOpt('default-project-type', default='opendaylight',
                help='Default project type'),
     cfg.IntOpt('dashboard-update-interval', default=3600,
                help='The interval specifies how frequently dashboard should '
