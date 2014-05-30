@@ -81,314 +81,92 @@
     {
       "uri": "git://github.com/opendaylight/controller.git",
       "module": "controller",
-      "organization": "opendaylight",
-      "releases": [
-        {
-          "branch": "stable/hydrogen",
-          "tag_to": "HEAD",
-          "release_name": "Hydrogen",
-          "tag_from": "2013.9"
-        },
-        {
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "2013.10"
-        }
-      ]
+      "organization": "opendaylight"
     },
     {
       "uri": "git://github.com/opendaylight/openflowplugin.git",
       "module": "openflowplugin",
-      "organization": "opendaylight",
-      "releases": [
-        {
-          "branch": "stable/hydrogen",
-          "tag_to": "HEAD",
-          "release_name": "Hydrogen",
-          "tag_from": "2013.9"
-        },
-        {
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "2013.10"
-        }
-      ]
+      "organization": "opendaylight"
     },
     {
       "uri": "git://github.com/opendaylight/openflowjava.git",
       "module": "openflowjava",
-      "organization": "opendaylight",
-      "releases": [
-        {
-          "branch": "stable/hydrogen",
-          "tag_to": "HEAD",
-          "release_name": "Hydrogen",
-          "tag_from": "2013.9"
-        },
-        {
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "2013.10"
-        }
-      ]
+      "organization": "opendaylight"
     },
     {
       "uri": "git://github.com/opendaylight/yangtools.git",
       "module": "yangtools",
-      "organization": "opendaylight",
-      "releases": [
-        {
-          "branch": "stable/hydrogen",
-          "tag_to": "HEAD",
-          "release_name": "Hydrogen",
-          "tag_from": "2013.9"
-        },
-        {
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "2013.10"
-        }
-      ]
+      "organization": "opendaylight"
     },
     {
       "uri": "git://github.com/opendaylight/ovsdb.git",
       "module": "ovsdb",
-      "organization": "opendaylight",
-      "releases": [
-        {
-          "branch": "stable/hydrogen",
-          "tag_to": "HEAD",
-          "release_name": "Hydrogen",
-          "tag_from": "2013.9"
-        },
-        {
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "2013.10"
-        }
-      ]
+      "organization": "opendaylight"
     },
     {
       "uri": "git://github.com/opendaylight/toolkit.git",
       "module": "toolkit",
-      "organization": "opendaylight",
-      "releases": [
-        {
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "2013.10"
-        }
-      ]
+      "organization": "opendaylight"
     },
     {
       "uri": "git://github.com/opendaylight/bgpcep.git",
       "module": "bgpcep",
-      "organization": "opendaylight",
-      "releases": [
-        {
-          "branch": "stable/hydrogen",
-          "tag_to": "HEAD",
-          "release_name": "Hydrogen",
-          "tag_from": "2013.9"
-        },
-        {
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "2013.10"
-        }
-      ]
+      "organization": "opendaylight"
     },
     {
       "uri": "git://github.com/opendaylight/lispflowmapping.git",
       "module": "lispflowmapping",
-      "organization": "opendaylight",
-      "releases": [
-        {
-          "branch": "stable/hydrogen",
-          "tag_to": "HEAD",
-          "release_name": "Hydrogen",
-          "tag_from": "2013.9"
-        },
-        {
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "2013.10"
-        }
-      ]
+      "organization": "opendaylight"
     },
     {
       "uri": "git://github.com/opendaylight/vtn.git",
       "module": "vtn",
-      "organization": "opendaylight",
-      "releases": [
-        {
-          "branch": "stable/hydrogen",
-          "tag_to": "HEAD",
-          "release_name": "Hydrogen",
-          "tag_from": "2013.9"
-        },
-        {
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "2013.10"
-        }
-      ]
+      "organization": "opendaylight"
     },
     {
       "uri": "git://github.com/opendaylight/snmp4sdn.git",
       "module": "snmp4sdn",
-      "organization": "opendaylight",
-      "releases": [
-        {
-          "branch": "stable/hydrogen",
-          "tag_to": "HEAD",
-          "release_name": "Hydrogen",
-          "tag_from": "2013.9"
-        },
-        {
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "2013.10"
-        }
-      ]
+      "organization": "opendaylight"
     },
     {
       "uri": "git://github.com/opendaylight/dlux.git",
       "module": "dlux",
-      "organization": "opendaylight",
-      "releases": [
-        {
-          "branch": "stable/hydrogen",
-          "tag_to": "HEAD",
-          "release_name": "Hydrogen",
-          "tag_from": "2013.9"
-        },
-        {
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "2013.10"
-        }
-      ]
+      "organization": "opendaylight"
     },
     {
       "uri": "git://github.com/opendaylight/integration.git",
       "module": "integration",
-      "organization": "opendaylight",
-      "releases": [
-        {
-          "branch": "stable/hydrogen",
-          "tag_to": "HEAD",
-          "release_name": "Hydrogen",
-          "tag_from": "2013.9"
-        },
-        {
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "2013.10"
-        }
-      ]
+      "organization": "opendaylight"
     },
     {
       "uri": "git://github.com/opendaylight/opendove.git",
       "module": "opendove",
-      "organization": "opendaylight",
-      "releases": [
-        {
-          "branch": "stable/hydrogen",
-          "tag_to": "HEAD",
-          "release_name": "Hydrogen",
-          "tag_from": "2013.9"
-        },
-        {
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "2013.10"
-        }
-      ]
+      "organization": "opendaylight"
     },
     {
       "uri": "git://github.com/opendaylight/groupbasedpolicy.git",
       "module": "groupbasedpolicy",
-      "organization": "opendaylight",
-      "releases": [
-        {
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "2013.10"
-        }
-      ]
+      "organization": "opendaylight"
     },
     {
       "uri": "git://github.com/opendaylight/affinity.git",
       "module": "affinity",
-      "organization": "opendaylight",
-      "releases": [
-        {
-          "branch": "stable/hydrogen",
-          "tag_to": "HEAD",
-          "release_name": "Hydrogen",
-          "tag_from": "2013.9"
-        },
-        {
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "2013.10"
-        }
-      ]
+      "organization": "opendaylight"
     },
     {
       "uri": "git://github.com/opendaylight/net-virt-platform.git",
       "module": "net-virt-platform",
-      "organization": "opendaylight",
-      "releases": [
-        {
-          "branch": "stable/hydrogen",
-          "tag_to": "HEAD",
-          "release_name": "Hydrogen",
-          "tag_from": "2013.9"
-        },
-        {
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "2013.10"
-        }
-      ]
+      "organization": "opendaylight"
     },
     {
       "uri": "git://github.com/opendaylight/defense4all.git",
       "module": "defense4all",
-      "organization": "opendaylight",
-      "releases": [
-        {
-          "branch": "stable/hydrogen",
-          "tag_to": "HEAD",
-          "release_name": "Hydrogen",
-          "tag_from": "2013.9"
-        },
-        {
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "2013.10"
-        }
-      ]
+      "organization": "opendaylight"
     },
     {
       "uri": "git://github.com/opendaylight/defense4all.git",
       "module": "defense4all",
-      "organization": "opendaylight",
-      "releases": [
-        {
-          "branch": "stable/hydrogen",
-          "tag_to": "HEAD",
-          "release_name": "Hydrogen",
-          "tag_from": "2013.9"
-        },
-        {
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "2013.10"
-        }
-      ]
+      "organization": "opendaylight"
     }
   ],
   "project_sources": [
@@ -415,9 +193,13 @@
   ],
   "module_groups": [
     {
-            "module_group_name": "virtualization-group",
-            "modules": ["ovsdb", "opendove", "vtn"]
-    },
+      "module_group_name": "virtualization-group",
+      "modules": [
+        "ovsdb",
+        "opendove",
+        "vtn"
+      ]
+    }
   ],
   "project_types": [
     {

@@ -61,7 +61,7 @@ def _get_mail_archive_links(uri):
                            flags=re.IGNORECASE))
     # each link is a tuple due to having multiple groups in the re
     # we are only interested in the first one
-    return [parse.urlparse.urljoin(uri, link[0]) for link in links]
+    return [parse.urljoin(uri, link[0]) for link in links]
 
 
 def _link_content_changed(link, runtime_storage_inst):

@@ -85,7 +85,7 @@ def process_repo(repo, runtime_storage_inst, record_processor_inst):
     # bp_iterator_typed = _record_typer(bp_iterator, 'bp')
     # processed_bp_iterator = record_processor_inst.process(
     #    bp_iterator_typed)
-    #runtime_storage_inst.set_records(processed_bp_iterator,
+    # runtime_storage_inst.set_records(processed_bp_iterator,
     #                                 utils.merge_records)
 
     vcs_inst = vcs.get_vcs(repo, cfg.CONF.sources_root)
@@ -293,7 +293,8 @@ def main():
     apply_corrections(cfg.CONF.corrections_uri, runtime_storage_inst)
 
     # long operation should be the last
-    update_members(runtime_storage_inst, record_processor_inst)
+    # ignore: we don't have a nice member repo in ODL yet
+    # update_members(runtime_storage_inst, record_processor_inst)
 
     runtime_storage_inst.set_by_key('runtime_storage_update_time',
                                     utils.date_to_timestamp('now'))

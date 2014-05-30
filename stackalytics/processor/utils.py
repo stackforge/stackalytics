@@ -94,6 +94,7 @@ def read_uri(uri):
 
 def read_json_from_uri(uri):
     try:
+        LOG.debug("Reading JSON from URI: %s" % uri)
         return json.loads(read_uri(uri))
     except Exception as e:
         LOG.warn('Error parsing json: %s' % e)

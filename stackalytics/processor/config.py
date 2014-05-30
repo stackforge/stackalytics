@@ -35,7 +35,7 @@ OPTS = [
                default=('https://raw.githubusercontent.com/dave-tucker/'
                         'spectrometer/master/etc/corrections.json'),
                help='The address of file with corrections data'),
-    cfg.StrOpt('review-uri', default='gerrit://git.opendaylight.org/gerrit/',
+    cfg.StrOpt('review-uri', default='gerrit://git.opendaylight.org',
                help='URI of review system'),
     cfg.StrOpt('ssh-key-filename', default='/home/user/.ssh/id_rsa',
                help='SSH key for gerrit review system access'),
