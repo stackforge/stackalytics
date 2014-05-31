@@ -37,6 +37,75 @@
         "vmadhu@cisco.com",
         "vmadhu@redhat.com"
       ]
+    },
+    {
+      "launchpad_id": "chrisw-x",
+      "user_name": "Chris Wright",
+      "companies": [
+        {
+          "company_name": "RedHat",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "chrisw@redhat.com",
+        "chrisw@sous-sol.org"
+      ]
+    },
+    {
+      "launchpad_id": "yangbaohua",
+      "gerrit_id": "yangbaohua",
+      "user_name": "Baohua Yang",
+      "companies": [
+        {
+          "company_name": "IBM",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "yangbaohua@gmail.com"
+      ]
+    },
+    {
+      "launchpad_id": "huangdenghui",
+      "user_name": "denghui huang",
+      "companies": [
+        {
+          "company_name": "IBM",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "huangdenghui@gmail.com"
+      ]
+    },
+    {
+      "launchpad_id": "",
+      "user_name": "Tushar Goyal",
+      "companies": [
+        {
+          "company_name": "Ericsson",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "goyaltushar7@gmail.com"
+      ]
+    },
+    {
+      "launchpad_id": "dmm",
+      "gerrit_id": "dmm",
+      "user_name": "David Meyer",
+      "companies": [
+        {
+          "company_name": "Brocade",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "dmm@1-4-5.net",
+        "dmm@brocade.com"
+      ]
     }
   ],
   "companies": [
@@ -47,9 +116,111 @@
       ]
     },
     {
+      "company_name": "A10 Networks",
+      "domains": [
+        "a10networks.com"
+      ]
+    },
+    {
+      "company_name": "Adva Optical",
+      "domains": [
+        "advaoptical.com"
+      ]
+    },
+    {
+      "company_name": "Alactel-Lucent",
+      "domains": [
+        "alcatel-lucent.com"
+      ]
+    },
+    {
+      "company_name": "Arista",
+      "domains": [
+        "aristanetworks.com"
+      ]
+    },
+    {
+      "company_name": "Big Switch",
+      "domains": [
+        "bigswitch.com"
+      ]
+    },
+    {
+      "company_name": "Brocade",
+      "domains": [
+        "brocade.com"
+      ]
+    },
+    {
+      "company_name": "Ciena",
+      "domains": [
+        "ciena.com"
+      ]
+    },
+    {
       "company_name": "Cisco",
       "domains": [
         "cisco.com"
+      ]
+    },
+    {
+      "company_name": "Citrix",
+      "domains": [
+        "citrix.com"
+      ]
+    },
+    {
+      "company_name": "ConteXtream",
+      "domains": [
+        "contextream.com"
+      ]
+    },
+    {
+      "company_name": "Coriant",
+      "domains": [
+        "coriant.com"
+      ]
+    },
+    {
+      "company_name": "Cyan",
+      "domains": [
+        "cyaninc.com"
+      ]
+    },
+    {
+      "company_name": "Dell",
+      "domains": [
+        "dell.com"
+      ]
+    },
+    {
+      "company_name": "Ericsson",
+      "domains": [
+        "ericsson.com"
+      ]
+    },
+    {
+      "company_name": "Fujitsu",
+      "domains": [
+        "fujitsu.com"
+      ]
+    },
+    {
+      "company_name": "Guavus",
+      "domains": [
+        "guavus.com"
+      ]
+    },
+    {
+      "company_name": "Hewlett-Packard",
+      "domains": [
+        "hp.com"
+      ]
+    },
+    {
+      "company_name": "Huawei",
+      "domains": [
+        "huawei.com"
       ]
     },
     {
@@ -59,9 +230,64 @@
       ]
     },
     {
+      "company_name": "Inocybe",
+      "domains": [
+        "inocybe.com"
+      ]
+    },
+    {
+      "company_name": "Intel",
+      "domains": [
+        "intel.com"
+      ]
+    },
+    {
+      "company_name": "ITRI",
+      "domains": [
+        "itri.org.tw"
+      ]
+    },
+    {
+      "company_name": "Juniper",
+      "domains": [
+        "juniper.net"
+      ]
+    },
+    {
+      "company_name": "Midokura",
+      "domains": [
+        "midokura.com"
+      ]
+    },
+    {
+      "company_name": "NEC",
+      "domains": [
+        "nec.com",
+        "nec.co.jp"
+      ]
+    },
+    {
+      "company_name": "Pantheon",
+      "domains": [
+        "pantheon.sk"
+      ]
+    },
+    {
       "company_name": "Plexxi",
       "domains": [
         "plexxi.com"
+      ]
+    },
+    {
+      "company_name": "Plumgrid",
+      "domains": [
+        "plumgrid.com"
+      ]
+    },
+    {
+      "company_name": "Radware",
+      "domains": [
+        "radware.com"
       ]
     },
     {
@@ -71,10 +297,28 @@
       ]
     },
     {
-      "company_name": "*robots",
+      "company_name": "Versa",
+      "domains": [
+        "versa-networks.com"
+      ]
+    },
+    {
+      "company_name": "VMWare",
+      "domains": [
+        "vmware.com"
+      ]
+    },
+    {
+      "company_name": "ZTE",
+      "domains": [
+        "zte.com.cn"
+      ]
+    },
+    {
       "domains": [
         "robots"
-      ]
+      ],
+      "company_name": "*robots"
     }
   ],
   "repos": [
@@ -185,11 +429,22 @@
     }
   ],
   "mail_lists": [
+    "http://lists.opendaylight.org/pipermail/affinity-dev/",
+    "http://lists.opendaylight.org/pipermail/bgpcep-dev/",
+    "http://lists.opendaylight.org/pipermail/controller-dev/",
+    "http://lists.opendaylight.org/pipermail/defense4all-dev/",
+    "http://lists.opendaylight.org/pipermail/dlux-dev/",
+    "http://lists.opendaylight.org/pipermail/integration-dev/",
+    "http://lists.opendaylight.org/pipermail/lispflowmapping-dev/",
+    "http://lists.opendaylight.org/pipermail/opendove-dev/",
+    "http://lists.opendaylight.org/pipermail/openflowjava-dev/",
+    "http://lists.opendaylight.org/pipermail/openflowplugin-dev/",
+    "http://lists.opendaylight.org/pipermail/ovsdb-dev/",
+    "http://lists.opendaylight.org/pipermail/snmp4sdn-dev/",
+    "http://lists.opendaylight.org/pipermail/vtn-dev/",
+    "http://lists.opendaylight.org/pipermail/yangtools-dev/",
     "http://lists.opendaylight.org/pipermail/discuss/",
     "http://lists.opendaylight.org/pipermail/dev/"
-  ],
-  "member_lists": [
-    "http://www.openstack.org/community/members/profile/"
   ],
   "module_groups": [
     {
