@@ -39,6 +39,63 @@
       ]
     },
     {
+      "user_name": "Brent Salisbury",
+      "launchpad_id": "brent-salisbury",
+      "companies": [
+        {
+          "company_name": "*independent",
+          "end_date": "2014-Jan-01"
+        },
+        {
+          "company_name": "RedHat",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "brent.salisbury@gmail.com"
+      ]
+    },
+    {
+      "launchpad_id": "",
+      "user_name": "Anees Shaikh",
+      "companies": [
+        {
+          "company_name": "IBM",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "aasdevaddr@gmail.com"
+      ]
+    },
+    {
+      "user_name": "Colin McNamara",
+      "launchpad_id": "colinmcnamara",
+      "companies": [
+        {
+          "company_name": "Nexus",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "colin@2cups.com"
+      ]
+    },
+    {
+      "launchpad_id": "",
+      "user_name": "Andrew Kim",
+      "companies": [
+        {
+          "company_name": "Cisco",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "andrekim@cisco.com",
+        "h.andrew.kim@gmail.com"
+      ]
+    },
+    {
       "launchpad_id": "chrisw-x",
       "user_name": "Chris Wright",
       "companies": [
@@ -105,6 +162,30 @@
       "emails": [
         "dmm@1-4-5.net",
         "dmm@brocade.com"
+      ]
+    },
+    {
+      "launchpad_id": "jenkins",
+      "companies": [
+        {
+          "company_name": "*robots",
+          "end_date": null
+        }
+      ],
+      "user_name": "Jenkins jobs",
+      "emails": [
+        "jenkins-affinty@opendaylight.org",
+        "jenkins-bgpcep@opendaylight.org",
+        "jenkins-controller@opendaylight.org",
+        "jenkins-vtn@opendaylight.org",
+        "jenkins-integration@opendaylight.org",
+        "jenkins-lispflowmapping@opendaylight.org",
+        "jenkins-opendove@opendaylight.org",
+        "jenkins-openflowjava@opendaylight.org",
+        "jenkins-openflowplugin@opendaylight.org",
+        "jenkins-ovsdb@opendaylight.org",
+        "jenkins-snmp4sdn@opendaylight.org",
+        "jenkins-yangtools@opendaylight.org"
       ]
     }
   ],
@@ -215,6 +296,12 @@
       "company_name": "Hewlett-Packard",
       "domains": [
         "hp.com"
+      ]
+    },
+    {
+      "company_name": "HCL",
+      "domains": [
+        "hcl.com"
       ]
     },
     {
@@ -415,7 +502,8 @@
   ],
   "project_sources": [
     {
-      "organization": "opendaylight"
+      "organization": "opendaylight",
+      "module_group_name": "all"
     }
   ],
   "releases": [
@@ -461,34 +549,62 @@
       "id": "all",
       "title": "All",
       "modules": [
-        "opendaylight",
-        "bootstrap",
-        "incubation",
-        "integration",
-        "unknown"
-      ]
-    },
-    {
-      "id": "opendaylight",
-      "title": "OpenDaylight",
-      "modules": [
-        "opendaylight"
+        "affinity",
+        "bgpcep",
+        "controller",
+        "dlux",
+        "documentation",
+        "defense4all",
+        "groupbasedpolicy",
+        "lispflowmapping",
+        "opendove",
+        "openflowjava",
+        "openflowplugin",
+        "opflex",
+        "ovsdb",
+        "packetcable",
+        "reservation",
+        "snbi",
+        "sfc",
+        "snmp4sdn",
+        "ttp",
+        "toolkit",
+        "yangtools",
+        "vtn"
       ]
     },
     {
       "id": "bootstrap",
       "title": "bootstrap",
-      "child": true,
       "modules": [
-        "bootstrap"
+        "affinity",
+        "controller",
+        "opendove",
+        "openflowplugin",
+        "vtn"
       ]
     },
     {
       "id": "incubation",
       "title": "incubation",
-      "child": true,
       "modules": [
-        "incubation"
+        "bgpcep",
+        "dlux",
+        "documentation",
+        "defense4all",
+        "groupbasedpolicy",
+        "lispflowmapping",
+        "openflowjava",
+        "opflex",
+        "ovsdb",
+        "packetcable",
+        "reservation",
+        "snbi",
+        "sfc",
+        "snmp4sdn",
+        "ttp",
+        "toolkit",
+        "yangtools"
       ]
     },
     {
