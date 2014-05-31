@@ -52,6 +52,12 @@ package { "uwsgi":
      require => File["uwsgi-2.0.4-1.x86_64.rpm"]
 }
 
+user { "vagrant":
+        ensure => present,
+        groups => ['vagrant', 'stackalytics'],
+        require => User["stackalytics"]
+}
+
 user { "stackalytics":
         ensure => present,
         groups => ['vagrant'],
@@ -61,9 +67,10 @@ user { "stackalytics":
 }
 
 file { "/var/local/stackalytics":
-     ensure => present,
+     ensure => directory,
      owner => stackalytics,
      group => stackalytics,
+     mode => 775,
      require => User["stackalytics"]
 }
 
@@ -113,7 +120,8 @@ file { "stackalytics.conf":
 
 file { "/etc/nginx/conf.d/default.conf":
      ensure => absent,
-     require => Package["nginx"]
+     require => Package["nginx"],
+     before => Service["nginx"]
 }
 
 file { "memcached":
