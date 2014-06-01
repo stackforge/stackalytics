@@ -87,12 +87,12 @@ class Gerrit(Rcs):
                  is_open=False, limit=PAGE_LIMIT):
         if project_organization:
             if project_organization == "opendaylight":
-                cmd = ('gerrit query --all-approvals --patch-sets --format'
-                       'JSON project:\'%(module)s\' branch:%(branch)s '
+                cmd = ('gerrit query --all-approvals --patch-sets --format '
+                       ' JSON project:\'%(module)s\' branch:%(branch)s '
                        'limit:%(limit)s' %
                        {'module': module, 'branch': branch, 'limit': limit})
             else:
-                cmd = ('gerrit query --all-approvals --patch-sets --format'
+                cmd = ('gerrit query --all-approvals --patch-sets --format '
                        'JSON project:\'%(ogn)s/%(module)s\' branch:%(branch)s '
                        'limit:%(limit)s' %
                        {'ogn': project_organization, 'module': module,
