@@ -175,6 +175,7 @@ def get_engineers(records, metric_filter, finalize_handler, **kwargs):
         if finalize_handler:
             record = finalize_handler(record)
         user = vault.get_user_from_runtime_storage(record['id'])
+        LOG.debug('%s %s', record['id'], user)
         record['core'] = get_core_engineer_branch(user, modules)
         return record
 
