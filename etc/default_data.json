@@ -549,69 +549,35 @@
       "id": "all",
       "title": "All",
       "modules": [
-        "affinity",
-        "bgpcep",
-        "controller",
-        "dlux",
-        "documentation",
-        "defense4all",
-        "groupbasedpolicy",
-        "lispflowmapping",
-        "opendove",
-        "openflowjava",
-        "openflowplugin",
-        "opflex",
-        "ovsdb",
-        "packetcable",
-        "reservation",
-        "snbi",
-        "sfc",
-        "snmp4sdn",
-        "ttp",
-        "toolkit",
-        "yangtools",
-        "vtn"
+        "opendaylight"
       ]
     },
     {
       "id": "bootstrap",
-      "title": "bootstrap",
+      "title": "Bootstrap",
       "modules": [
-        "affinity",
-        "controller",
-        "opendove",
-        "openflowplugin",
-        "vtn"
+        "bootstrap"
       ]
     },
     {
       "id": "incubation",
-      "title": "incubation",
+      "title": "Incubation",
       "modules": [
-        "bgpcep",
-        "dlux",
-        "documentation",
-        "defense4all",
-        "groupbasedpolicy",
-        "lispflowmapping",
-        "openflowjava",
-        "opflex",
-        "ovsdb",
-        "packetcable",
-        "reservation",
-        "snbi",
-        "sfc",
-        "snmp4sdn",
-        "ttp",
-        "toolkit",
-        "yangtools"
+        "incubation"
       ]
     },
     {
-      "id": "integration",
-      "title": "integration",
+      "id": "mature",
+      "title": "Mature",
       "modules": [
-        "integration"
+        "mature"
+      ]
+    },
+    {
+      "id": "core",
+      "title": "Core",
+      "modules": [
+        "core"
       ]
     }
   ]
