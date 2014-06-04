@@ -144,7 +144,7 @@ Toolkit Project:
   url: https://wiki.opendaylight.org/view/OpenDaylight_Toolkit:Main
   projects:
     - repo: opendaylight/toolkit
-    incubated-since: helium
+      incubated-since: helium
 
 Virtual Tenant Network:
   codename: vtn
