@@ -21,7 +21,7 @@ OPTS = [
                default='https://raw.githubusercontent.com/dave-tucker/'
                        'spectrometer/master/etc/default_data.json',
                help='URI for default data'),
-    cfg.StrOpt('sources-root', default='/var/local/stackalytics',
+    cfg.StrOpt('sources-root', default='/var/local/spectrometer',
                help='The folder that holds all project sources to analyze'),
     cfg.StrOpt('runtime-storage-uri', default='memcached://127.0.0.1:11211',
                help='Storage URI'),

@@ -1,0 +1,121 @@
+Affinity Metadata Service:
+  codename: affinity
+  status: bootstrap
+  url: https://wiki.opendaylight.org/view/Affinity_Metadata_Service:Main
+  projects:
+    - repo: opendaylight/affinity
+
+BGP LS PCEP:
+  codename: bgpcep
+  status: incubation
+  url: https://wiki.opendaylight.org/view/BGP_LS_PCEP:Main
+  projects:
+    - repo: opendaylight/bgpcep
+
+Controller:
+  codename: Controller
+  url: https://wiki.opendaylight.org/view/OpenDaylight_Controller:Main
+  projects:
+    - repo: opendaylight/controller
+
+OpenDaylight User eXperience:
+  codename: dlux
+  status: incubation
+  url: https://wiki.opendaylight.org/view/OpenDaylight_dlux:Main
+  projects:
+    - repo: opendaylight/dlux
+
+Documentation:
+  codename: docs
+  status: incubation
+  url: https://wiki.opendaylight.org/view/CrossProject:Documentation_Group
+
+Defense4All:
+  codename: defense4all
+  status: incubation
+  url: https://wiki.opendaylight.org/view/Defense4All:Main
+
+Dynamic Resource Reservation:
+  codename: reservation
+  status: incubation
+  url: https://wiki.opendaylight.org/view/Reservation:Main
+
+Group Policy:
+  codename: groupbasedpolicy
+  status: incubation
+  url: https://wiki.opendaylight.org/view/Group_Policy:Main
+
+Integration Group:
+  codename: integration
+  status: incubation
+  url: https://wiki.opendaylight.org/view/CrossProject:Integration_Group
+
+LISP Flow Mapping:
+  codename: lisp
+  status: integration
+  url: https://wiki.opendaylight.org/view/OpenDaylight_Lisp_Flow_Mapping:Main
+
+Open DOVE:
+  codename: opendove
+  status: bootstrap
+  url: https://wiki.opendaylight.org/view/Open_DOVE:Main
+
+OpenFlow Plugin:
+  codename: openflowplugin
+  status: bootstrap
+  url: https://wiki.opendaylight.org/view/OpenDaylight_OpenFlow_Plugin:Main
+
+OpenFlow Protocol Library:
+  codename: openflowjava
+  status: integration
+  url: https://wiki.opendaylight.org/view/Openflow_Protocol_Library:Main
+
+OpFlex Implementation Project:
+  codename: opflex
+  status: integration
+  url: https://wiki.opendaylight.org/view/OpFlex:Main
+
+OVSDB Open vSwitch Database Integration Project:
+  codename: ovsdb
+  status: integration
+  url: https://wiki.opendaylight.org/view/OVSDB_Integration:Main
+
+OSCP Project:
+  codename: ocsp
+  status: integration
+  url: https://wiki.opendaylight.org/view/OpenDaylight_SDN_Controller_Platform_%28OSCP%29:Main
+
+Packet Cable PCMM Project:
+  codename: packetcable
+  status: integration
+  url: https://wiki.opendaylight.org/view/PacketCablePCMM:Main
+
+Secure Network Bootstrapping Infrastructure Project:
+  codename: snbi
+  status: integration
+  url: https://wiki.opendaylight.org/view/SecureNetworkBootstrapping:Main
+
+Service Function Chaining:
+  codename: sfc
+  status: integration
+  url: https://wiki.opendaylight.org/view/Service_Function_Chaining:Main
+
+SNMP4SDN:
+  codename: snmp4sdn
+  status: integration
+  urL: https://wiki.opendaylight.org/view/Service_Function_Chaining:Main
+
+Toolkit Project:
+  codename: toolkit
+  status: integration
+  url: https://wiki.opendaylight.org/view/OpenDaylight_Toolkit:Main
+
+Virtual Tenant Network:
+  codename: vtn
+  status: bootstrap
+  url: https://wiki.opendaylight.org/view/OpenDaylight_Virtual_Tenant_Network_(VTN):Main
+
+YANG Tools:
+  codename: yangtools
+  status: integration
+  url: https://wiki.opendaylight.org/view/YANG_Tools:Main
