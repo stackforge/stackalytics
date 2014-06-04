@@ -1,6 +1,6 @@
 class {'spectrometer':
     clone_repo          => false,
-    processor_hour      => *
+    processor_hour      => '*',
     processor_minute    => '*/20',
     gerrit_username     => dave-tucker
 }
@@ -29,4 +29,3 @@ file {'pub':
     group   => 'spectrometer',
     require => File['ssh']
 }
-#ToDo: Provision SSH Key for spectrometer user

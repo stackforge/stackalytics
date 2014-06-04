@@ -192,15 +192,21 @@ def _read_official_programs_yaml(program_list_uri, release_names):
     module_groups = collections.defaultdict(
         lambda: {'modules': [], 'releases': collections.defaultdict(list)})
 
-    official_integrated = module_groups['official-integrated']
-    official_integrated['tag'] = 'project_type'
-    official_integrated['module_group_name'] = 'official-integrated'
-    official_incubated = module_groups['official-incubated']
-    official_incubated['tag'] = 'project_type'
-    official_incubated['module_group_name'] = 'official-incubated'
-    official_other = module_groups['official-other']
-    official_other['tag'] = 'project_type'
-    official_other['module_group_name'] = 'official-other'
+    bootstrap = module_groups['bootstrap']
+    bootstrap['tag'] = 'project_type'
+    bootstrap['module_group_name'] = 'bootstrap'
+    incubation = module_groups['incubation']
+    incubation['tag'] = 'project_type'
+    incubation['module_group_name'] = 'incubation'
+    mature = module_groups['mature']
+    mature['tag'] = 'project_type'
+    mature['module_group_name'] = 'mature'
+    core = module_groups['core']
+    core['tag'] = 'project_type'
+    core['module_group_name'] = 'core'
+
+    RELEASE_TAGS = ['bootstrapped-since', 'incubated-since',
+                    'mature-since', 'core-since']
 
     for name, info in six.iteritems(content):
         # for one program
@@ -216,19 +222,23 @@ def _read_official_programs_yaml(program_list_uri, release_names):
             module_name = module['repo'].split('/')[1]
 
             module_groups[group_id]['modules'].append(module_name)
-
-            if ('integrated-since' in module) or ('incubated-since' in module):
-                project_type = 'official-other'
+            project_type = 'other'
+            if (any(key in module for key in RELEASE_TAGS)):
                 for release_name in release_names:
-                    if release_name == module.get('incubated-since'):
-                        project_type = 'official-incubated'
-                    elif release_name == module.get('integrated-since'):
-                        project_type = 'official-integrated'
+
+                    if release_name == module.get('bootstrapped-since'):
+                        project_type = 'bootstrap'
+                    elif release_name == module.get('incubated-since'):
+                        project_type = 'incubation'
+                    elif release_name == module.get('mature-since'):
+                        project_type = 'mature'
+                    elif release_name == module.get('core-since'):
+                        project_type = 'core'
 
                     module_groups[project_type]['releases'][
                         release_name].append(module_name)
             else:
-                module_groups['official-other']['modules'].append(module_name)
+                module_groups['other']['modules'].append(module_name)
 
     # set ids for module groups
     for group_id, group in six.iteritems(module_groups):

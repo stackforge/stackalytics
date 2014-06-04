@@ -1,152 +1,161 @@
 Affinity Metadata Service:
   codename: affinity
-  status: bootstrap
   url: https://wiki.opendaylight.org/view/Affinity_Metadata_Service:Main
   projects:
     - repo: opendaylight/affinity
-
+      bootstrapped-since: hydrogen
 
 BGP LS PCEP:
   codename: bgpcep
-  status: incubation
   url: https://wiki.opendaylight.org/view/BGP_LS_PCEP:Main
   projects:
     - repo: opendaylight/bgpcep
+      incubated-since: hydrogen
 
 Controller:
   codename: Controller
   url: https://wiki.opendaylight.org/view/OpenDaylight_Controller:Main
   projects:
     - repo: opendaylight/controller
+      bootstrapped-since: hydrogen
 
 OpenDaylight User eXperience:
   codename: dlux
-  status: incubation
   url: https://wiki.opendaylight.org/view/OpenDaylight_dlux:Main
   projects:
     - repo: opendaylight/dlux
-  repo:
-    - opendaylight/dlux
+      incubated-since: hydrogen
 
 Documentation:
   codename: docs
-  status: incubation
   url: https://wiki.opendaylight.org/view/CrossProject:Documentation_Group
-  repo:
-    - opendaylight/docs
+  projects:
+    - repo: opendaylight/docs
+      incubated-since: helium
 
 Defense4All:
   codename: defense4all
-  status: incubation
   url: https://wiki.opendaylight.org/view/Defense4All:Main
-  repo:
-    - opendaylight/defense4all
+  projects:
+    - repo: opendaylight/defense4all
+      incubated-since: hydrogen
 
 Dynamic Resource Reservation:
   codename: reservation
-  status: incubation
   url: https://wiki.opendaylight.org/view/Reservation:Main
+  projects:
+    - repo: opendaylight/reservation
+      incubated-since: helium
 
 Group Policy:
   codename: groupbasedpolicy
-  status: incubation
   url: https://wiki.opendaylight.org/view/Group_Policy:Main
-  repo:
-    - opendaylight/groupbasedpolicy
+  projects:
+    - repo: opendaylight/groupbasedpolicy
+      incubated-since: helium
 
 Integration Group:
   codename: integration
-  status: incubation
   url: https://wiki.opendaylight.org/view/CrossProject:Integration_Group
-  repo:
-    - opendaylight/integration
+  projects:
+    - repo: opendaylight/integration
+      incubated-since: hydrogen
 
 LISP Flow Mapping:
   codename: lisp
-  status: integration
   url: https://wiki.opendaylight.org/view/OpenDaylight_Lisp_Flow_Mapping:Main
-  repo:
-    - opendaylight/lispflowmapping
+  projects:
+    - repo: opendaylight/lispflowmapping
+      incubated-since: hydrogen
 
 Open DOVE:
   codename: opendove
-  status: bootstrap
   url: https://wiki.opendaylight.org/view/Open_DOVE:Main
-  repo:
-    - opendaylight/opendove
+  projects:
+    - repo: opendaylight/opendove
+      bootstrapped-since: hydrogen
 
 OpenFlow Plugin:
   codename: openflowplugin
-  status: bootstrap
   url: https://wiki.opendaylight.org/view/OpenDaylight_OpenFlow_Plugin:Main
-  repo:
-    - opendaylight/openflowplugin
+  projects:
+    - repo: opendaylight/openflowplugin
+      bootstrapped-since: hydrogen
 
 OpenFlow Protocol Library:
   codename: openflowjava
-  status: integration
   url: https://wiki.opendaylight.org/view/Openflow_Protocol_Library:Main
-  repo:
-    - opendaylight/openflowjava
+  projects:
+    - repo: opendaylight/openflowjava
+      incubated-since: hydrogen
+
 
 OpFlex Implementation Project:
   codename: opflex
-  status: integration
   url: https://wiki.opendaylight.org/view/OpFlex:Main
+  projects:
+    - repo: opendaylight/opflex
+      incubated-since: helium
 
 OVSDB Open vSwitch Database Integration Project:
   codename: ovsdb
-  status: integration
   url: https://wiki.opendaylight.org/view/OVSDB_Integration:Main
-  repo:
-    - opendaylight/ovsdb
+  projects:
+    - repo: opendaylight/ovsdb
+      incubated-since: hydrogen
 
 OSCP Project:
   codename: net-virt-platform
-  status: integration
   url: https://wiki.opendaylight.org/view/OpenDaylight_SDN_Controller_Platform_%28OSCP%29:Main
-  repo:
-    - opendaylight/net-virt-platform
+  projects:
+    - repo: opendaylight/net-virt-platform
+      bootstrapped-since: hydrogen
 
 Packet Cable PCMM Project:
   codename: packetcable
-  status: integration
   url: https://wiki.opendaylight.org/view/PacketCablePCMM:Main
+  projects:
+    - repo: opendaylight/packetcable
+      incubated-since: helium
 
 Secure Network Bootstrapping Infrastructure Project:
   codename: snbi
-  status: integration
   url: https://wiki.opendaylight.org/view/SecureNetworkBootstrapping:Main
+  projects:
+    - repo: opendaylight/snbi
+      incubated-since: helium
 
 Service Function Chaining:
   codename: sfc
-  status: integration
   url: https://wiki.opendaylight.org/view/Service_Function_Chaining:Main
+  projects:
+    - repo: opendaylight/sfc
+      incubated-since: helium
 
 SNMP4SDN:
   codename: snmp4sdn
-  status: integration
   urL: https://wiki.opendaylight.org/view/Service_Function_Chaining:Main
-  repo:
-    - opendaylight/snmp4sdn
+  projects:
+    - repo: opendaylight/snmp4sdn
+      incubated-since: hydrogen
 
 Toolkit Project:
   codename: toolkit
-  status: integration
   url: https://wiki.opendaylight.org/view/OpenDaylight_Toolkit:Main
-  repo:
-    - opendaylight/toolkit
+  projects:
+    - repo: opendaylight/toolkit
+    incubated-since: helium
 
 Virtual Tenant Network:
   codename: vtn
-  status: bootstrap
   url: https://wiki.opendaylight.org/view/OpenDaylight_Virtual_Tenant_Network_(VTN):Main
-  repo:
-    - opendaylight/vtn
+  projects:
+    - repo: opendaylight/vtn
+      bootstrapped-since: hydrogen
 
 YANG Tools:
   codename: yangtools
-  status: integration
   url: https://wiki.opendaylight.org/view/YANG_Tools:Main
-  repo:
-    - opendaylight/yangtools
+  projects:
+    - repo: opendaylight/yangtools
+      bootstrapped-since: hydrogen
