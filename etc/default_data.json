@@ -552,9 +552,15 @@
         "opendaylight"
       ]
     },
+       {
+            "id": "opendaylight",
+            "title": "OpenDaylight",
+            "modules": ["opendaylight"]
+        },
     {
       "id": "bootstrap",
       "title": "Bootstrap",
+      "child": true,
       "modules": [
         "official-bootstrap"
       ]
@@ -562,6 +568,7 @@
     {
       "id": "incubation",
       "title": "Incubation",
+      "child": true,
       "modules": [
         "official-incubation"
       ]
@@ -569,6 +576,7 @@
     {
       "id": "mature",
       "title": "Mature",
+      "child": true,
       "modules": [
         "official-mature"
       ]
@@ -576,6 +584,7 @@
     {
       "id": "core",
       "title": "Core",
+      "child": true,
       "modules": [
         "official-core"
       ]
@@ -583,6 +592,7 @@
     {
       "id": "other",
       "title": "Other",
+      "child": true,
       "modules": [
         "official-other"
       ]
