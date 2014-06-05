@@ -192,18 +192,18 @@ def _read_official_programs_yaml(program_list_uri, release_names):
     module_groups = collections.defaultdict(
         lambda: {'modules': [], 'releases': collections.defaultdict(list)})
 
-    bootstrap = module_groups['bootstrap']
+    bootstrap = module_groups['official-bootstrap']
     bootstrap['tag'] = 'project_type'
-    bootstrap['module_group_name'] = 'bootstrap'
-    incubation = module_groups['incubation']
+    bootstrap['module_group_name'] = 'official-bootstrap'
+    incubation = module_groups['official-incubation']
     incubation['tag'] = 'project_type'
-    incubation['module_group_name'] = 'incubation'
-    mature = module_groups['mature']
+    incubation['module_group_name'] = 'official-incubation'
+    mature = module_groups['official-mature']
     mature['tag'] = 'project_type'
-    mature['module_group_name'] = 'mature'
-    core = module_groups['core']
+    mature['module_group_name'] = 'official-mature'
+    core = module_groups['official-core']
     core['tag'] = 'project_type'
-    core['module_group_name'] = 'core'
+    core['module_group_name'] = 'official-core'
 
     RELEASE_TAGS = ['bootstrapped-since', 'incubated-since',
                     'mature-since', 'core-since']
@@ -222,18 +222,18 @@ def _read_official_programs_yaml(program_list_uri, release_names):
             module_name = module['repo'].split('/')[1]
 
             module_groups[group_id]['modules'].append(module_name)
-            project_type = 'other'
+            project_type = 'official-other'
             if (any(key in module for key in RELEASE_TAGS)):
                 for release_name in release_names:
 
                     if release_name == module.get('bootstrapped-since'):
-                        project_type = 'bootstrap'
+                        project_type = 'official-bootstrap'
                     elif release_name == module.get('incubated-since'):
-                        project_type = 'incubation'
+                        project_type = 'official-incubation'
                     elif release_name == module.get('mature-since'):
-                        project_type = 'mature'
+                        project_type = 'official-mature'
                     elif release_name == module.get('core-since'):
-                        project_type = 'core'
+                        project_type = 'official-core'
 
                     module_groups[project_type]['releases'][
                         release_name].append(module_name)

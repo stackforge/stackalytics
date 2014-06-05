@@ -1,9 +1,7 @@
-Image Service:
-  codename: Glance
-  ptl: Mark Washenberger (markwash)
-  url: https://wiki.openstack.org/wiki/Glance
+Controller:
+  codename: Controller
+  url: https://wiki.opendaylight.org/view/OpenDaylight_Controller:Main
   projects:
-    - repo: openstack/glance
-      integrated-since: havana
-      incubated-since: grizzly
-    - repo: openstack/python-glanceclient
+    - repo: opendaylight/controller
+      bootstrapped-since: hydrogen
+      core-since: helium

@@ -556,28 +556,35 @@
       "id": "bootstrap",
       "title": "Bootstrap",
       "modules": [
-        "bootstrap"
+        "official-bootstrap"
       ]
     },
     {
       "id": "incubation",
       "title": "Incubation",
       "modules": [
-        "incubation"
+        "official-incubation"
       ]
     },
     {
       "id": "mature",
       "title": "Mature",
       "modules": [
-        "mature"
+        "official-mature"
       ]
     },
     {
       "id": "core",
       "title": "Core",
       "modules": [
-        "core"
+        "official-core"
+      ]
+    },
+    {
+      "id": "other",
+      "title": "Other",
+      "modules": [
+        "official-other"
       ]
     }
   ]
