@@ -552,11 +552,13 @@
         "opendaylight"
       ]
     },
-       {
-            "id": "opendaylight",
-            "title": "OpenDaylight",
-            "modules": ["opendaylight"]
-        },
+    {
+      "id": "opendaylight",
+      "title": "OpenDaylight",
+      "modules": [
+        "opendaylight"
+      ]
+    },
     {
       "id": "bootstrap",
       "title": "Bootstrap",
