@@ -47,7 +47,7 @@ update the block_device_mapping with the potentially new connection_info \
 returned.
 Fixes bug <a href="https://bugs.launchpad.net/bugs/1076801" class="ext_link">\
 1076801</a>
-''' + ('Change-Id: <a href="https://review.openstack.org/#q,'
+''' + ('Change-Id: <a href="https://git.opendaylight.org/gerrit/#q,'
        'Ie49ccd2138905e178843b375a9b16c3fe572d1db,n,z" class="ext_link">'
        'Ie49ccd2138905e178843b375a9b16c3fe572d1db</a>')
 
@@ -74,7 +74,7 @@ Implemented new driver for Cinder &lt;:
 Implements Blueprint ''' + (
             '<a href="https://blueprints.launchpad.net/cinder/+spec/'
             'super-driver" class="ext_link">super-driver</a>' + '\n' +
-            'Change-Id: <a href="https://review.openstack.org/#q,'
+            'Change-Id: <a href="https://git.opendaylight.org/gerrit/#q,'
             'Ie49ccd2138905e178843b375a9b16c3fe572d1db,n,z" class="ext_link">'
             'Ie49ccd2138905e178843b375a9b16c3fe572d1db</a>')
 
@@ -93,9 +93,10 @@ Implements Blueprint ''' + (
         vault_patch.return_value = {'memory_storage': memory_storage_mock}
         user_patch.return_value = {'user_name': 'John Doe'}
 
-        self.assertEqual('OpenStack community contribution in all releases',
+        self.assertEqual('OpenDaylight community contribution in all releases',
                          helpers.make_page_title('', '', '', 'all'))
-        self.assertEqual('OpenStack community contribution in Havana release',
+        self.assertEqual('OpenDaylight community contribution in Havana '
+                         'release',
                          helpers.make_page_title('', '', '', 'Havana'))
         self.assertEqual('Mirantis contribution in Havana release',
                          helpers.make_page_title('Mirantis', '', '', 'Havana'))

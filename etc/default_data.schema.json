@@ -9,7 +9,7 @@
                 "type": "object",
                 "properties": {
                     "launchpad_id": {
-                        "type": "string",
+                        "type": ["string","null"],
                         "pattern": "^[a-z\\d\\.-]+$"
                     },
                     "gerrit_id": {

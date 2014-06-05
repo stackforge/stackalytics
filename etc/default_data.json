@@ -1,41 +1,43 @@
 {
   "users": [
     {
-      "user_name": "Dave Tucker",
-      "launchpad_id": "davetucker",
-      "companies": [
-        {
-          "company_name": "Hewlett-Packard",
-          "end_date": "2014-Apr-21"
-        },
-        {
-          "company_name": "RedHat",
-          "end_date": null
-        }
-      ],
-      "emails": [
-        "dave@dtucker.co.uk",
-        "dave.j.tucker@hp.com",
-        "djt@redhat.com"
-      ]
-    },
-    {
-      "launchpad_id": "mavenugo",
-      "user_name": "Madhu Venugopal",
+      "launchpad_id": null,
+      "user_name": "Andrew Kim",
       "companies": [
         {
           "company_name": "Cisco",
-          "end_date": "2013-Oct-15"
-        },
-        {
-          "company_name": "RedHat",
           "end_date": null
         }
       ],
       "emails": [
-        "mavenugo@gmail.com",
-        "vmadhu@cisco.com",
-        "vmadhu@redhat.com"
+        "andrekim@cisco.com",
+        "h.andrew.kim@gmail.com"
+      ]
+    },
+    {
+      "launchpad_id": null,
+      "user_name": "Tushar Goyal",
+      "companies": [
+        {
+          "company_name": "Ericsson",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "goyaltushar7@gmail.com"
+      ]
+    },
+    {
+      "launchpad_id": "aashaikh-d",
+      "user_name": "Anees Shaikh",
+      "companies": [
+        {
+          "company_name": "IBM",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "aasdevaddr@gmail.com"
       ]
     },
     {
@@ -56,16 +58,17 @@
       ]
     },
     {
-      "launchpad_id": "",
-      "user_name": "Anees Shaikh",
+      "launchpad_id": "chrisw-x",
+      "user_name": "Chris Wright",
       "companies": [
         {
-          "company_name": "IBM",
+          "company_name": "RedHat",
           "end_date": null
         }
       ],
       "emails": [
-        "aasdevaddr@gmail.com"
+        "chrisw@redhat.com",
+        "chrisw@sous-sol.org"
       ]
     },
     {
@@ -82,71 +85,22 @@
       ]
     },
     {
-      "launchpad_id": "",
-      "user_name": "Andrew Kim",
+      "user_name": "Dave Tucker",
+      "launchpad_id": "davetucker",
       "companies": [
         {
-          "company_name": "Cisco",
-          "end_date": null
-        }
-      ],
-      "emails": [
-        "andrekim@cisco.com",
-        "h.andrew.kim@gmail.com"
-      ]
-    },
-    {
-      "launchpad_id": "chrisw-x",
-      "user_name": "Chris Wright",
-      "companies": [
+          "company_name": "Hewlett-Packard",
+          "end_date": "2014-Apr-21"
+        },
         {
           "company_name": "RedHat",
           "end_date": null
         }
       ],
       "emails": [
-        "chrisw@redhat.com",
-        "chrisw@sous-sol.org"
-      ]
-    },
-    {
-      "launchpad_id": "yangbaohua",
-      "gerrit_id": "yangbaohua",
-      "user_name": "Baohua Yang",
-      "companies": [
-        {
-          "company_name": "IBM",
-          "end_date": null
-        }
-      ],
-      "emails": [
-        "yangbaohua@gmail.com"
-      ]
-    },
-    {
-      "launchpad_id": "huangdenghui",
-      "user_name": "denghui huang",
-      "companies": [
-        {
-          "company_name": "IBM",
-          "end_date": null
-        }
-      ],
-      "emails": [
-        "huangdenghui@gmail.com"
-      ]
-    },
-    {
-      "launchpad_id": "",
-      "user_name": "Tushar Goyal",
-      "companies": [
-        {
-          "company_name": "Ericsson",
-          "end_date": null
-        }
-      ],
-      "emails": [
-        "goyaltushar7@gmail.com"
+        "dave@dtucker.co.uk",
+        "dave.j.tucker@hp.com",
+        "djt@redhat.com"
       ]
     },
     {
@@ -162,6 +116,19 @@
       "emails": [
         "dmm@1-4-5.net",
         "dmm@brocade.com"
+      ]
+    },
+    {
+      "launchpad_id": "huangdenghui",
+      "user_name": "Denghui Huang",
+      "companies": [
+        {
+          "company_name": "IBM",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "huangdenghui@gmail.com"
       ]
     },
     {
@@ -186,6 +153,39 @@
         "jenkins-ovsdb@opendaylight.org",
         "jenkins-snmp4sdn@opendaylight.org",
         "jenkins-yangtools@opendaylight.org"
+      ]
+    },
+    {
+      "launchpad_id": "mavenugo",
+      "user_name": "Madhu Venugopal",
+      "companies": [
+        {
+          "company_name": "Cisco",
+          "end_date": "2013-Oct-15"
+        },
+        {
+          "company_name": "RedHat",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "mavenugo@gmail.com",
+        "vmadhu@cisco.com",
+        "vmadhu@redhat.com"
+      ]
+    },
+    {
+      "launchpad_id": "yangbaohua",
+      "gerrit_id": "yangbaohua",
+      "user_name": "Baohua Yang",
+      "companies": [
+        {
+          "company_name": "IBM",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "yangbaohua@gmail.com"
       ]
     }
   ],
@@ -293,15 +293,15 @@
       ]
     },
     {
-      "company_name": "Hewlett-Packard",
-      "domains": [
-        "hp.com"
-      ]
-    },
-    {
       "company_name": "HCL",
       "domains": [
         "hcl.com"
+      ]
+    },
+    {
+      "company_name": "Hewlett-Packard",
+      "domains": [
+        "hp.com"
       ]
     },
     {
@@ -384,6 +384,12 @@
       ]
     },
     {
+      "domains": [
+        "robots"
+      ],
+      "company_name": "*robots"
+    },
+    {
       "company_name": "Versa",
       "domains": [
         "versa-networks.com"
@@ -400,12 +406,6 @@
       "domains": [
         "zte.com.cn"
       ]
-    },
-    {
-      "domains": [
-        "robots"
-      ],
-      "company_name": "*robots"
     }
   ],
   "repos": [
