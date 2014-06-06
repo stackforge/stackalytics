@@ -1,10 +1,10 @@
 server {
     listen   80;
     location / {
-            uwsgi_pass  127.0.0.1:<%= @uwsgi_port %>;
+            uwsgi_pass  127.0.0.1:<%= @_uwsgi_port %>;
             include     uwsgi_params;
     }
     location  /static/ {
-            alias  <%= @install_dir %>/dashboard/static/;
+            alias  <%= @_install_dir %>/dashboard/static/;
     }
 }

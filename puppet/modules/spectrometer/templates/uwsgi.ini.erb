@@ -1,13 +1,13 @@
 [uwsgi]
-socket = :<%= @uwsgi_port %>
-pythonpath = <%= @install_dir %>/dashboard/
+socket = :<%= @_uwsgi_port %>
+pythonpath = <%= @_install_dir %>/dashboard/
 module = web:app
-env = STACKALYTICS_CONF=<%= @config_dir %>/<%= @config_file %>
+env = STACKALYTICS_CONF=<%= @_config_dir %>/<%= @_config_file %>
 master = true
 workers = 4
 sharedarea = 4
 harakiri = 30
-daemonize = <%= @log_dir %>/<%= @log_file %>
-pidfile = <%= @uwsgi_pid_file %>
-uid = <%= @user %>
-gid = <%= @group %>
+daemonize = <%= @_log_dir %>/<%= @_log_file %>
+pidfile = <%= @_uwsgi_pid_file %>
+uid = <%= @_user %>
+gid = <%= @_group %>

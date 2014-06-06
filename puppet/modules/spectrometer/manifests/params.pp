@@ -7,7 +7,7 @@ class spectrometer::params {
     $config_dir                 = '/etc/spectrometer'
     $config_file                = 'spectrometer.conf'
     $uwsgi_config_file          = 'spectrometer.ini'
-    $log_dir                    = '/var/log'
+    $log_dir                    = '/var/log/spectrometer'
     $log_file                   = 'spectrometer.log'
     $install_dir                = '/opt/spectrometer'
     $sources_root               = '/var/local/spectrometer'

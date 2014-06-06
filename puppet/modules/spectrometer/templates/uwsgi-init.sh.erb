@@ -5,17 +5,17 @@
 # chkconfig: - 85 15
 # description: Use uwsgi to run python and wsgi web apps.
 # processname: uwsgi
-# config: <%= @config_dir %>/<%= @uwsgi_config_file %>
-# pidfile: <%= @uwsgi_pid_file %>
+# config: <%= @_config_dir %>/<%= @_uwsgi_config_file %>
+# pidfile: <%= @_uwsgi_pid_file %>
 
 # Source function library.
 . /etc/init.d/functions
 
 prog="/usr/bin/uwsgi"
 desc="uWSGI"
-config="<%= @config_dir %>/<%= @uwsgi_config_file %>"
+config="<%= @_config_dir %>/<%= @_uwsgi_config_file %>"
 lockfile="/var/lock/subsys/uwsgi"
-pidfile="<%= @uwsgi_pid_file %>"
+pidfile="<%= @_uwsgi_pid_file %>"
 
 start () {
   echo -n "Starting $desc: "
