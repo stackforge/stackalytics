@@ -15,7 +15,7 @@ class spectrometer::params {
     $processor_minute           = 0
     $processor_log_file         = 'spectrometer-processor.log'
     $ssh_username               = 'spectrometer'
-    $ssh_key_file               = "/home/${user}/.ssh/spectrometer"
+    $ssh_key_filename           = "/home/${user}/.ssh/id_rsa"
     $uwsgi_port                 = 9090
     $uwsgi_pid_file             = '/var/run/uwsgi.pid'
     $default_data_uri           = 'https://raw.githubusercontent.com/dave-tucker/spectrometer/master/etc/default_data.json'
@@ -26,6 +26,7 @@ class spectrometer::params {
     $review_uri                 = 'gerrit://git.opendaylight.org'
     $force_update               = false
     $programs_uri               = 'https://raw.githubusercontent.com/dave-tucker/spectrometer/master/etc/programs.yaml'
+    $default_metric             = 'marks'
     $default_release            = ''
     $default_project_type       = 'opendaylight'
     $dashboard_update_interval  = 3600

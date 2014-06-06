@@ -2,7 +2,7 @@ class {'spectrometer':
     clone_repo          => false,
     processor_hour      => '*',
     processor_minute    => '*/20',
-    gerrit_username     => dave-tucker
+    ssh_username        => dave-tucker
 }
 
 file {'ssh':
@@ -14,7 +14,7 @@ file {'ssh':
 
 file {'priv':
     ensure  => present,
-    source  => 'puppet:///files/spectrometer',
+    source  => 'puppet:///files/spectrometer_rsa',
     path    => '/home/spectrometer/.ssh/id_rsa',
     owner   => 'spectrometer',
     group   => 'spectrometer',
@@ -23,7 +23,7 @@ file {'priv':
 
 file {'pub':
     ensure  => present,
-    source  => 'puppet:///files/spectrometer.pub',
+    source  => 'puppet:///files/spectrometer_rsa.pub',
     path    => '/home/spectrometer/.ssh/id_rsa.pub',
     owner   => 'spectrometer',
     group   => 'spectrometer',
