@@ -224,7 +224,8 @@ def _read_official_programs_yaml(program_list_uri, release_names):
             module_groups[group_id]['modules'].append(module_name)
             project_type = 'official-other'
             if (any(key in module for key in RELEASE_TAGS)):
-                for release_name in release_names:
+                releases = [r.lower() for r in release_names]
+                for release_name in releases:
 
                     if release_name == module.get('bootstrapped-since'):
                         project_type = 'official-bootstrap'

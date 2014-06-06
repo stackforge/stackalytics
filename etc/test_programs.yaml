@@ -5,3 +5,10 @@ Controller:
     - repo: opendaylight/controller
       bootstrapped-since: hydrogen
       core-since: helium
+
+Foo:
+  codename: Foo
+  url: https://wiki.opendaylight.org/view/OpenDaylight_Foo:Main
+  projects:
+    - repo: opendaylight/foo
+      incubated-since: helium
