@@ -19,7 +19,7 @@ import flask
 from oslo.config import cfg
 import six
 
-from dashboard import memory_storage
+from stackalytics.dashboard import memory_storage
 from stackalytics.openstack.common import log as logging
 from stackalytics.processor import runtime_storage
 from stackalytics.processor import utils
