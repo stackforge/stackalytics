@@ -47,13 +47,7 @@ LOG = logging.getLogger(__name__)
 conf = cfg.CONF
 conf.register_opts(config.OPTS)
 
-conf_file = os.getenv('STACKALYTICS_CONF')
-if conf_file and os.path.isfile(conf_file):
-    conf(default_config_files=[conf_file])
-    app.config['DEBUG'] = cfg.CONF.debug
-
 logging.setup('dashboard')
-LOG.info('Stackalytics.dashboard is configured via "%s"', conf_file)
 
 
 # Handlers ---------
@@ -602,6 +596,14 @@ def remove_ctrl_chars(text):
 
 
 def main():
+    conf_file = os.getenv('STACKALYTICS_CONF')
+    if conf_file and os.path.isfile(conf_file):
+        conf(default_config_files=[conf_file])
+        app.config['DEBUG'] = cfg.CONF.debug
+        LOG.info('Stackalytics.dashboard is configured via "%s"', conf_file)
+    else:
+        conf(project='stackalytics')
+
     app.run(cfg.CONF.listen_host, cfg.CONF.listen_port)
 
 if __name__ == '__main__':
