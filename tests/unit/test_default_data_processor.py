@@ -54,7 +54,7 @@ class TestDefaultDataProcessor(testtools.TestCase):
 
     def test_update_project_list(self):
         with mock.patch('stackalytics.processor.default_data_processor.'
-                        '_retrieve_project_list_from_github') as retriever:
+                        '_retrieve_project_list_from_gerrit') as retriever:
             retriever.return_value = [
                 {'module': 'nova',
                  'uri': 'git://git.openstack.org/openstack/nova',
