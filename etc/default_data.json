@@ -6889,6 +6889,11 @@
             "organization": "openstack"
         },
         {
+            "uri": "git://git.openstack.org/openstack/nova-specs.git",
+            "module": "nova-specs",
+            "organization": "openstack"
+        },
+        {
             "releases": [
                 {
                     "tag_to": "2012.1",
@@ -7747,6 +7752,10 @@
         {
             "module_group_name": "murano-group",
             "modules": ["murano-agent", "python-muranoclient", "murano", "murano-dashboard", "murano-deployment", "murano-docs"]
+        },
+        {
+            "module_group_name": "nova-group",
+            "modules": ["python-novaclient", "nova", "nova-specs"]
         },
         {
             "module_group_name": "solum-group",
