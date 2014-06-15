@@ -5,6 +5,7 @@ fixtures>=0.3.14
 hacking>=0.8.0,<0.9
 jsonschema>=2.0.0,<3.0.0
 mock>=1.0
+mockldap>=0.2.0
 python-subunit
 sphinx>=1.1.2,<1.2
 sphinxcontrib-httpdomain

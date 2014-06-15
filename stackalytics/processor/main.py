@@ -141,8 +141,9 @@ def process_mail_list(uri, runtime_storage_inst, record_processor_inst):
 
 
 def process_member_list(uri, runtime_storage_inst, record_processor_inst):
-    member_iterator = mps.log(uri, runtime_storage_inst,
-                              cfg.CONF.days_to_update_members)
+    mps_inst = mps.get_mps(uri)
+    member_iterator = mps_inst.log(uri, runtime_storage_inst,
+                                   cfg.CONF.days_to_update_members)
     member_iterator_typed = _record_typer(member_iterator, 'member')
     processed_member_iterator = record_processor_inst.process(
         member_iterator_typed)
@@ -158,6 +159,9 @@ def update_members(runtime_storage_inst, record_processor_inst):
 
 def update_records(runtime_storage_inst, record_processor_inst):
     repos = utils.load_repos(runtime_storage_inst)
+
+    #Update member list
+
 
     for repo in repos:
         process_repo(repo, runtime_storage_inst, record_processor_inst)

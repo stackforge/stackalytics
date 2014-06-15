@@ -200,7 +200,8 @@ class spectrometer (
       path    => $::path
     }
 
-    $deps = [ 'python',
+    $deps = [ 'openldap-devel',
+              'python',
               'python-devel',
               'python-setuptools',
               'git',
@@ -236,7 +237,8 @@ class spectrometer (
         command     => 'pip install -r requirements.txt; python setup.py install',
         cwd         => $_install_dir,
         path        => $::path,
-        require     => [Package['python'],
+        require     => [Package['openldap-devel'],
+                        Package['python'],
                         Package['python-devel'],
                         Exec['Install pip'],
                         Exec['Install Development Tools']

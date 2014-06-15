@@ -16,13 +16,37 @@
 import re
 
 import testtools
+from mockldap import MockLdap
 
 from stackalytics.processor import mps
 
 
 class TestMps(testtools.TestCase):
+    top = ('dc=opendaylight,dc=org', {"objectClass": ["identityPerson"]})
+    users = ('ou=Users,dc=opendaylight,dc=org', {'ou': 'Users'})
+    dave = ('cn=Dave Tucker,ou=Users,dc=opendaylight,dc=org',
+            {'cn': 'Dave Tucker',
+             'country': 'Great Britain',
+             'mail': 'dave@dtucker.co.uk',
+             'o': 'Red Hat',
+             'objectclass': 'identityPerson',
+             'uid': 'dave-tucker'})
+    foo = ('cn=Mr Foo,ou=Users,dc=opendaylight,dc=org',
+           {'cn': 'Mr Foo',
+            'country': 'United States of America',
+            'uid': 'foo',
+            'mail': 'foo@foo.org',
+            'objectclass': 'identityPerson'})
+    directory = dict([top, users, dave, foo])
+
+    @classmethod
+    def setUpClass(cls):
+        cls.mockldap = MockLdap(cls.directory)
+
     def setUp(self):
         super(TestMps, self).setUp()
+        self.mockldap.start()
+        self.ldapobj = self.mockldap['ldap://localhost/']
 
     def test_member_parse_regex(self):
 
@@ -58,3 +82,34 @@ class TestMps(testtools.TestCase):
         match = re.search(mps.COMPANY_PATTERN, content)
         self.assertTrue(match)
         self.assertEqual('Rackspace', match.group('company_draft'))
+
+    def test_get_mps(self):
+        ldap_uri = 'ldap://localhost/'
+        http_uri = 'http://members.openstack.com'
+        self.assertTrue(isinstance(mps.get_mps(ldap_uri), mps.Ldap))
+        self.assertTrue(isinstance(mps.get_mps(http_uri), mps.Web))
+
+    def test_ldap_mps(self):
+        mps_inst = mps.Ldap(base_dn="ou=Users,dc=opendaylight,dc=org",
+                            uri='ldap://localhost/')
+        mps_inst.setup()
+        member_iterator = mps_inst.log()
+        result = list(member_iterator)
+
+        self.assertEquals(result[0]["member_id"], "foo")
+        self.assertEquals(result[1]["member_id"], "dave-tucker")
+
+        self.assertEquals(result[0]["member_name"], "Mr Foo")
+        self.assertEquals(result[1]["member_name"], "Dave Tucker")
+
+        self.assertEquals(result[0]["date_joined"], None)
+        self.assertEquals(result[1]["date_joined"], None)
+
+        self.assertEquals(result[0]["country"], "United States of America")
+        self.assertEquals(result[1]["country"], "Great Britain")
+
+        self.assertEquals(result[0]["company_draft"], "*independent")
+        self.assertEquals(result[1]["company_draft"], "Red Hat")
+
+        self.assertEquals(result[0]["email"], "foo@foo.org")
+        self.assertEquals(result[1]["email"], "dave@dtucker.co.uk")
