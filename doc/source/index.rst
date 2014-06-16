@@ -31,4 +31,4 @@ Developer Guide
    devref/launchpad
    devref/gerrit
    devref/jenkins
-
+   devref/pypy-benchmark
