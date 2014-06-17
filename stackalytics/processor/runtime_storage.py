@@ -70,6 +70,8 @@ class MemcachedStorage(RuntimeStorage):
         else:
             raise Exception('Invalid storage uri %s' % uri)
 
+        self.last_update = None
+
     def _build_index_lazily(self):
         if self.record_index:
             return
@@ -154,10 +156,11 @@ class MemcachedStorage(RuntimeStorage):
             raise Exception('Memcached delete failed')
 
     def get_update(self, pid):
-        last_update = self.get_by_key('pid:%s' % pid)
+        last_update = self.last_update
         update_count = self._get_update_count()
 
         self.set_by_key('pid:%s' % pid, update_count)
+        self.last_update = update_count
         self._set_pids(pid)
 
         if not last_update:
