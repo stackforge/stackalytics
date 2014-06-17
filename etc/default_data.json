@@ -2717,17 +2717,6 @@
             "emails": ["jim.rollenhagen@rackspace.com", "jim@jimrollenhagen.com"]
         },
         {
-            "launchpad_id": "jing",
-            "companies": [
-                {
-                    "company_name": "Stackinsider",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Lawrance",
-            "emails": ["lawrancejing@gmail.com", "lawrence.jing@stackinsider.com"]
-        },
-        {
             "launchpad_id": "jk0",
             "companies": [
                 {
