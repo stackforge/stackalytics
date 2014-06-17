@@ -91,6 +91,7 @@ def get_vault():
                 _init_project_types(vault)
                 _init_repos(vault)
                 _init_user_index(vault)
+                _warm_cache(flask.current_app)
 
     return vault
 
@@ -141,6 +142,26 @@ def _init_repos(vault):
 
 def _init_user_index(vault):
     vault['user_index'] = {}
+
+
+def _warm_cache(app):
+    lists = [
+        'companies',
+        'metrics',
+        'modules',
+        'project_types',
+        'releases',
+        'users',
+    ]
+    stats = [
+        'companies',
+        'engineers',
+        'modules',
+    ]
+    reqs = ['/api/1.0/' + s for s in (lists + ['stats/' + s1 for s1 in stats])]
+    with app.test_client() as c:
+        for req in reqs:
+            c.get(req)
 
 
 def get_project_types():
