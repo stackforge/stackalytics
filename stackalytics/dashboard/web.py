@@ -27,6 +27,9 @@ from stackalytics.dashboard import decorators
 from stackalytics.dashboard import helpers
 from stackalytics.dashboard import kpi
 from stackalytics.dashboard import parameters
+
+breaking_pep8
+
 from stackalytics.dashboard import reports
 from stackalytics.dashboard import vault
 from stackalytics.openstack.common import log as logging
