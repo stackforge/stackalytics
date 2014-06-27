@@ -26,16 +26,15 @@ def _normalize_user(user):
     for c in user['companies']:
         c['end_date'] = utils.date_to_timestamp(c['end_date'])
 
-    # sort companies by end_date
     def end_date_comparator(x, y):
         if x["end_date"] == 0:
             return 1
         elif y["end_date"] == 0:
             return -1
         else:
-            return cmp(x["end_date"], y["end_date"])
+            return x["end_date"] - y["end_date"]
 
-    user['companies'].sort(cmp=end_date_comparator)
+    user['companies'].sort(key=utils.cmp_to_key(end_date_comparator))
     user['user_id'] = user['launchpad_id']
 
 
