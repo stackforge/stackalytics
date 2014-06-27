@@ -13,6 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import operator
+
 import six
 
 from stackalytics.openstack.common import log as logging
@@ -26,16 +28,12 @@ def _normalize_user(user):
     for c in user['companies']:
         c['end_date'] = utils.date_to_timestamp(c['end_date'])
 
-    # sort companies by end_date
-    def end_date_comparator(x, y):
-        if x["end_date"] == 0:
-            return 1
-        elif y["end_date"] == 0:
-            return -1
-        else:
-            return cmp(x["end_date"], y["end_date"])
+    user['companies'].sort(key=operator.itemgetter('end_date'))
+    if len(user['companies']) > 1:  # move first (end_data==0) to the end
+        last_company = user['companies'][0]
+        del user['companies'][0]
+        user['companies'].append(last_company)
 
-    user['companies'].sort(cmp=end_date_comparator)
     user['user_id'] = user['launchpad_id']
 
 

@@ -15,6 +15,7 @@
 
 import cgi
 import datetime
+import gzip
 import json
 import re
 import time
@@ -104,6 +105,14 @@ def read_json_from_uri(uri):
     except Exception as e:
         LOG.warn('Error "%(error)s" parsing json from uri %(uri)s',
                  {'error': e, 'uri': uri})
+
+
+def gzip_decompress(content):
+    if six.PY3:
+        return gzip.decompress(content)
+    else:
+        gzip_fd = gzip.GzipFile(fileobj=six.moves.StringIO.StringIO(content))
+        return gzip_fd.read()
 
 
 def make_range(start, stop, step):
