@@ -1536,6 +1536,17 @@
             "emails": ["david@pistoncloud.com", "dlenwell@gmail.com"]
         },
         {
+            "launchpad_id": "dlundquist",
+            "companies": [
+                {
+                    "company_name": "Blue Box",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Dustin Lundquist",
+            "emails": ["dlunqduist@bluebox.net", "dlundquist@gmail.com", "dustin@null-ptr.net"]
+        },
+        {
             "launchpad_id": "dmllr",
             "companies": [
                 {
