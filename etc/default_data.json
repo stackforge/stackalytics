@@ -2973,6 +2973,17 @@
             "emails": ["joshua.hesketh@rackspace.com", "josh@nitrotech.org"]
         },
         {
+            "launchpad_id": "juliaashleykreger",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Julia Kreger",
+            "emails": ["juliaashleykreger@gmail.com", "julia.ash.kreger@hp.com"]
+        },
+        {
             "launchpad_id": "jpichon",
             "companies": [
                 {
