@@ -33,7 +33,7 @@ class TestAPIStats(test_api.TestAPI):
                                    'tag': 'group'},
                      'nova': test_api.make_module('nova'),
                      'glance': test_api.make_module('glance'),
-                 },
+                     },
                  'project_types': [
                      {'id': 'all', 'title': 'All',
                       'modules': ['nova', 'glance']}]},
@@ -67,7 +67,7 @@ class TestAPIStats(test_api.TestAPI):
                                    'tag': 'group'},
                      'nova': test_api.make_module('nova'),
                      'glance': test_api.make_module('glance'),
-                 },
+                     },
                  'project_types': [
                      {'id': 'all', 'title': 'All',
                       'modules': ['nova', 'glance']}],
@@ -115,7 +115,7 @@ class TestAPIStats(test_api.TestAPI):
                                    'tag': 'group'},
                      'nova': test_api.make_module('nova'),
                      'glance': test_api.make_module('glance'),
-                 },
+                     },
                  'project_types': [
                      {'id': 'all', 'title': 'All',
                       'modules': ['nova', 'glance']}],
