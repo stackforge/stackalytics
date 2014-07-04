@@ -21,7 +21,6 @@ import time
 import six
 
 from spectrometer.openstack.common import log as logging
-from spectrometer.processor import launchpad_utils
 from spectrometer.processor import utils
 
 
@@ -94,12 +93,12 @@ class RecordProcessor(object):
                     return self.domains_index[m]
         return None
 
-    def _create_user(self, launchpad_id, email, user_name):
+    def _create_user(self, ldap_id, email, user_name):
         company = (self._get_company_by_email(email) or
                    self._get_independent())
         user = {
-            'user_id': launchpad_id or email,
-            'launchpad_id': launchpad_id,
+            'user_id': ldap_id or email,
+            'ldap_id': ldap_id,
             'user_name': user_name or '',
             'companies': [{
                 'company_name': company,
@@ -111,33 +110,6 @@ class RecordProcessor(object):
         else:
             user['emails'] = []
         return user
-
-    def _get_lp_info(self, email):
-        lp_profile = None
-        if not utils.check_email_validity(email):
-            LOG.debug('User email is not valid %s', email)
-        else:
-            lp_profile = launchpad_utils.lp_profile_by_email(email)
-
-        if not lp_profile:
-            LOG.debug('User with email %s not found', email)
-            return None, None
-
-        LOG.debug('Email %(email)s is mapped to launchpad user %(lp)s',
-                  {'email': email, 'lp': lp_profile['name']})
-        return lp_profile['name'], lp_profile['display_name']
-
-    def _get_lp_user_name(self, launchpad_id):
-        if not launchpad_id:
-            return None
-
-        lp_profile = launchpad_utils.lp_profile_by_launchpad_id(launchpad_id)
-
-        if not lp_profile:
-            LOG.debug('User with id %s not found', launchpad_id)
-            return launchpad_id
-
-        return lp_profile['display_name']
 
     def _get_independent(self):
         return '*independent'
@@ -161,11 +133,11 @@ class RecordProcessor(object):
     def _merge_user_profiles(self, user_a, user_b, user_c):
         user = {}
         for key in ['seq', 'user_name', 'user_id',
-                    'launchpad_id', 'companies']:
+                    'ldap_id', 'companies']:
             user[key] = user_a.get(key) or user_b.get(key) or user_c.get(key)
 
-        if user['launchpad_id'] and user['user_id'] != user['launchpad_id']:
-            user['user_id'] = user['launchpad_id']
+        if user['ldap_id'] and user['user_id'] != user['ldap_id']:
+            user['user_id'] = user['ldap_id']
 
         emails = set([])
         core_in = set([])
@@ -187,16 +159,11 @@ class RecordProcessor(object):
         user_e = utils.load_user(self.runtime_storage_inst, email) or {}
 
         user_name = record.get('author_name')
-        launchpad_id = record.get('launchpad_id')
-        if email and (not user_e) and (not launchpad_id):
-            # query LP
-            launchpad_id, lp_user_name = self._get_lp_info(email)
-            if lp_user_name:
-                user_name = lp_user_name
 
-        user_l = utils.load_user(self.runtime_storage_inst, launchpad_id) or {}
+        ldap_id = record.get('ldap_id')
+        user_l = utils.load_user(self.runtime_storage_inst, ldap_id) or {}
 
-        user = self._create_user(launchpad_id, email, user_name)
+        user = self._create_user(ldap_id, email, user_name)
 
         if (user_e.get('seq') == user_l.get('seq')) and user_e.get('seq'):
             # sequence numbers are set and the same, merge is not needed
@@ -205,11 +172,7 @@ class RecordProcessor(object):
             if user_e or user_l:
                 user = self._merge_user_profiles(user_e, user_l, user)
             else:
-                # create new
-                if not user_name:
-                    user_name = self._get_lp_user_name(launchpad_id)
-                    if user_name:
-                        user['user_name'] = user_name
+                # Create New
                 LOG.debug('Created new user: %s', user)
 
             utils.store_user(self.runtime_storage_inst, user)
@@ -220,7 +183,7 @@ class RecordProcessor(object):
         user = self.update_user(record)
 
         record['user_id'] = user['user_id']
-        record['launchpad_id'] = user['launchpad_id']
+        record['ldap_id'] = user['ldap_id']
 
         if user.get('user_name'):
             record['author_name'] = user['user_name']
@@ -264,7 +227,7 @@ class RecordProcessor(object):
         owner = record['owner']
 
         review['primary_key'] = review['id']
-        review['launchpad_id'] = owner['username']
+        review['ldap_id'] = owner['username']
         review['author_name'] = owner['name']
         review['author_email'] = owner['email'].lower()
         review['date'] = record['createdOn']
@@ -294,7 +257,7 @@ class RecordProcessor(object):
         patch_record['number'] = patch['number']
         patch_record['date'] = patch['createdOn']
         uploader = patch['uploader']
-        patch_record['launchpad_id'] = uploader['username']
+        patch_record['ldap_id'] = uploader['username']
         patch_record['author_name'] = uploader['name']
         patch_record['author_email'] = uploader['email'].lower()
         patch_record['module'] = review['module']
@@ -314,7 +277,7 @@ class RecordProcessor(object):
         mark['value'] = int(approval['value'])
         mark['date'] = approval['grantedOn']
         mark['primary_key'] = (review['id'] + str(mark['date']) + mark['type'])
-        mark['launchpad_id'] = reviewer['username']
+        mark['ldap_id'] = reviewer['username']
         mark['author_name'] = reviewer['name']
         mark['author_email'] = reviewer['email'].lower()
         mark['module'] = review['module']
@@ -422,6 +385,8 @@ class RecordProcessor(object):
         record['primary_key'] = user_id
         record['date'] = utils.member_date_to_timestamp(record['date_joined'])
         record['author_name'] = record['member_name']
+        record['country'] = record.get("country")
+        record['email'] = record.get("email")
         record['module'] = 'unknown'
         company_draft = record['company_draft']
 
@@ -429,13 +394,13 @@ class RecordProcessor(object):
             company_draft)) or company_draft
 
         # author_email is a key to create new user
-        record['author_email'] = user_id
+        record['author_email'] = record["email"] or user_id
         record['company_name'] = company_name
         # _update_record_and_user function will create new user if needed
         self._update_record_and_user(record)
         record['company_name'] = company_name
-        user = utils.load_user(self.runtime_storage_inst, user_id)
-
+        user = utils.load_user(self.runtime_storage_inst,
+                               record['user_id'] or user_id)
         user['user_name'] = record['author_name']
         user['companies'] = [{
             'company_name': company_name,
@@ -599,15 +564,15 @@ class RecordProcessor(object):
         users_reviews = {}
         for record in self.runtime_storage_inst.get_all_records():
             if record['record_type'] == 'review':
-                launchpad_id = record['launchpad_id']
+                ldap_id = record['ldap_id']
                 review = {'date': record['date'], 'id': record['id']}
-                if launchpad_id in users_reviews:
-                    users_reviews[launchpad_id].append(review)
+                if ldap_id in users_reviews:
+                    users_reviews[ldap_id].append(review)
                 else:
-                    users_reviews[launchpad_id] = [review]
+                    users_reviews[ldap_id] = [review]
 
         reviews_index = {}
-        for launchpad_id, reviews in six.iteritems(users_reviews):
+        for ldap_id, reviews in six.iteritems(users_reviews):
             reviews.sort(key=lambda x: x['date'])
             review_number = 0
             for review in reviews:

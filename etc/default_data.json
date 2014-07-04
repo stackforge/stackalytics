@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "launchpad_id": null,
+      "ldap_id": null,
       "user_name": "Andrew Kim",
       "companies": [
         {
@@ -15,7 +15,7 @@
       ]
     },
     {
-      "launchpad_id": null,
+      "ldap_id": null,
       "user_name": "Tushar Goyal",
       "companies": [
         {
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "launchpad_id": "aashaikh-d",
+      "ldap_id": "aashaikh-d",
       "user_name": "Anees Shaikh",
       "companies": [
         {
@@ -42,7 +42,7 @@
     },
     {
       "user_name": "Brent Salisbury",
-      "launchpad_id": "brent-salisbury",
+      "ldap_id": "brent-salisbury",
       "companies": [
         {
           "company_name": "*independent",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "launchpad_id": "chrisw-x",
+      "ldap_id": "chrisw-x",
       "user_name": "Chris Wright",
       "companies": [
         {
@@ -73,7 +73,7 @@
     },
     {
       "user_name": "Colin McNamara",
-      "launchpad_id": "colinmcnamara",
+      "ldap_id": "colinmcnamara",
       "companies": [
         {
           "company_name": "Nexus",
@@ -86,7 +86,7 @@
     },
     {
       "user_name": "Dave Tucker",
-      "launchpad_id": "davetucker",
+      "ldap_id": "davetucker",
       "companies": [
         {
           "company_name": "Hewlett-Packard",
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "launchpad_id": "dmm",
+      "ldap_id": "dmm",
       "gerrit_id": "dmm",
       "user_name": "David Meyer",
       "companies": [
@@ -119,7 +119,7 @@
       ]
     },
     {
-      "launchpad_id": "huangdenghui",
+      "ldap_id": "huangdenghui",
       "user_name": "Denghui Huang",
       "companies": [
         {
@@ -132,7 +132,7 @@
       ]
     },
     {
-      "launchpad_id": "jenkins",
+      "ldap_id": "jenkins",
       "companies": [
         {
           "company_name": "*robots",
@@ -156,7 +156,7 @@
       ]
     },
     {
-      "launchpad_id": "mavenugo",
+      "ldap_id": "mavenugo",
       "user_name": "Madhu Venugopal",
       "companies": [
         {
@@ -175,7 +175,7 @@
       ]
     },
     {
-      "launchpad_id": "yangbaohua",
+      "ldap_id": "yangbaohua",
       "gerrit_id": "yangbaohua",
       "user_name": "Baohua Yang",
       "companies": [

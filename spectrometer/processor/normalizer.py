@@ -36,7 +36,7 @@ def _normalize_user(user):
             return cmp(x["end_date"], y["end_date"])
 
     user['companies'].sort(cmp=end_date_comparator)
-    user['user_id'] = user['launchpad_id']
+    user['user_id'] = user.get('ldap_id')
 
 
 def _normalize_users(users):

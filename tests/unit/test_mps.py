@@ -48,6 +48,11 @@ class TestMps(testtools.TestCase):
         self.mockldap.start()
         self.ldapobj = self.mockldap['ldap://localhost/']
 
+    def tearDown(self):
+        super(TestMps, self).tearDown()
+        self.mockldap.stop()
+        self.ldapobj = None
+
     def test_member_parse_regex(self):
 
         content = '''<h1>Individual Member Profile</h1>

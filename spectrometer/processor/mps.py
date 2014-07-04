@@ -166,6 +166,7 @@ class Ldap(Mps):
             data = user[1]
             member = {}
             member['member_id'] = data.get('uid', None)
+            member['ldap_id'] = data.get('uid', None)
             member['member_name'] = data.get('cn', None)
             member['date_joined'] = None
             member['country'] = data.get("country", None)

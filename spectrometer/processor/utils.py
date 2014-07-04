@@ -114,8 +114,8 @@ def store_user(runtime_storage_inst, user):
     runtime_storage_inst.set_by_key('user:%s' % user['seq'], user)
     if user.get('user_id'):
         runtime_storage_inst.set_by_key('user:%s' % user['user_id'], user)
-    if user.get('launchpad_id'):
-        runtime_storage_inst.set_by_key('user:%s' % user['launchpad_id'], user)
+    if user.get('ldap_id'):
+        runtime_storage_inst.set_by_key('user:%s' % user['ldap_id'], user)
     for email in user.get('emails') or []:
         runtime_storage_inst.set_by_key('user:%s' % email, user)
 

@@ -8,7 +8,7 @@
             "items": {
                 "type": "object",
                 "properties": {
-                    "launchpad_id": {
+                    "ldap_id": {
                         "type": ["string","null"],
                         "pattern": "^[a-z\\d\\.-]+$"
                     },
@@ -45,7 +45,7 @@
                         "minItems": 1
                     }
                 },
-                "required": ["launchpad_id", "user_name", "emails"],
+                "required": ["ldap_id", "user_name", "emails"],
                 "additionalProperties": false
             }
         },

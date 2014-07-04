@@ -53,29 +53,11 @@ REPOS = [
 class TestRecordProcessor(testtools.TestCase):
     def setUp(self):
         super(TestRecordProcessor, self).setUp()
-        self.read_json_from_uri_patch = mock.patch(
-            'spectrometer.processor.utils.read_json_from_uri')
-        self.read_launchpad = self.read_json_from_uri_patch.start()
-        self.lp_profile_by_launchpad_id_patch = mock.patch(
-            'spectrometer.processor.launchpad_utils.'
-            'lp_profile_by_launchpad_id')
-        self.lp_profile_by_launchpad_id = (
-            self.lp_profile_by_launchpad_id_patch.start())
-        self.lp_profile_by_launchpad_id.return_value = None
-        self.lp_profile_by_email_patch = mock.patch(
-            'spectrometer.processor.launchpad_utils.lp_profile_by_email')
-        self.lp_profile_by_email = (
-            self.lp_profile_by_email_patch.start())
-        self.lp_profile_by_email.return_value = None
 
     def tearDown(self):
         super(TestRecordProcessor, self).tearDown()
-        self.read_json_from_uri_patch.stop()
-        self.lp_profile_by_launchpad_id_patch.stop()
-        self.lp_profile_by_email_patch.stop()
 
     # get_company_by_email
-
     def test_get_company_by_email_mapped(self):
         record_processor_inst = self.make_record_processor(
             companies=[{'company_name': 'IBM', 'domains': ['ibm.com']}]
@@ -107,22 +89,13 @@ class TestRecordProcessor(testtools.TestCase):
         res = record_processor_inst._get_company_by_email(email)
         self.assertEqual(None, res)
 
-    # get_lp_info
-
-    def test_get_lp_info_invalid_email(self):
-        self.read_launchpad.return_value = None
-        record_processor_inst = self.make_record_processor(users=[])
-        self.assertEqual((None, None),
-                         record_processor_inst._get_lp_info('error.root'))
-
     # commit processing
-
     def test_process_commit_existing_user(self):
         record_processor_inst = self.make_record_processor(
             users=[
                 {
                     'user_id': 'john_doe',
-                    'launchpad_id': 'john_doe',
+                    'ldap_id': 'john_doe',
                     'user_name': 'John Doe',
                     'emails': ['johndoe@gmail.com', 'johndoe@nec.co.jp'],
                     'companies': [
@@ -139,7 +112,7 @@ class TestRecordProcessor(testtools.TestCase):
                              author_name='John Doe')))[0]
 
         expected_commit = {
-            'launchpad_id': 'john_doe',
+            'ldap_id': 'john_doe',
             'author_email': 'johndoe@gmail.com',
             'author_name': 'John Doe',
             'company_name': 'NEC',
@@ -152,7 +125,7 @@ class TestRecordProcessor(testtools.TestCase):
             users=[
                 {
                     'user_id': 'john_doe',
-                    'launchpad_id': 'john_doe',
+                    'ldap_id': 'john_doe',
                     'user_name': 'John Doe',
                     'emails': ['johndoe@gmail.com', 'johndoe@nec.co.jp'],
                     'companies': [
@@ -170,7 +143,7 @@ class TestRecordProcessor(testtools.TestCase):
                              date=1000000000)))[0]
 
         expected_commit = {
-            'launchpad_id': 'john_doe',
+            'ldap_id': 'john_doe',
             'author_email': 'johndoe@gmail.com',
             'author_name': 'John Doe',
             'company_name': '*independent',
@@ -179,27 +152,24 @@ class TestRecordProcessor(testtools.TestCase):
         self.assertRecordsMatch(expected_commit, processed_commit)
 
     def test_process_commit_existing_user_new_email_known_company(self):
-        # User is known to LP, his email is new to us, and maps to other
-        # company. Should return other company instead of those mentioned
-        # in user profile
+        # User is known but his email is new to us, and maps to other
+        # company. Will create a new user with no ldap_id
         record_processor_inst = self.make_record_processor(
             users=[
                 {'user_id': 'john_doe',
-                 'launchpad_id': 'john_doe',
+                 'ldap_id': 'john_doe',
                  'user_name': 'John Doe',
                  'emails': ['johndoe@nec.co.jp'],
                  'companies': [{'company_name': 'NEC', 'end_date': 0}]}
             ],
-            companies=[{'company_name': 'IBM', 'domains': ['ibm.com']}],
-            lp_info={'johndoe@ibm.com':
-                     {'name': 'john_doe', 'display_name': 'John Doe'}})
+            companies=[{'company_name': 'IBM', 'domains': ['ibm.com']}])
 
         processed_commit = list(record_processor_inst.process(
             generate_commits(author_email='johndoe@ibm.com',
                              author_name='John Doe')))[0]
 
         expected_commit = {
-            'launchpad_id': 'john_doe',
+            'ldap_id': None,
             'author_email': 'johndoe@ibm.com',
             'author_name': 'John Doe',
             'company_name': 'IBM',
@@ -207,98 +177,12 @@ class TestRecordProcessor(testtools.TestCase):
 
         self.assertRecordsMatch(expected_commit, processed_commit)
         self.assertIn('johndoe@ibm.com', utils.load_user(
-            record_processor_inst.runtime_storage_inst, 'john_doe')['emails'])
-
-    def test_process_commit_existing_user_new_email_unknown_company(self):
-        # User is known to LP, but his email is new to us. Should match
-        # the user and return company from user profile
-        record_processor_inst = self.make_record_processor(
-            users=[
-                {'user_id': 'john_doe',
-                 'launchpad_id': 'john_doe',
-                 'user_name': 'John Doe',
-                 'emails': ['johndoe@nec.co.jp'],
-                 'companies': [{'company_name': 'NEC', 'end_date': 0}]}
-            ],
-            companies=[{'company_name': 'IBM', 'domains': ['ibm.com']}],
-            lp_info={'johndoe@gmail.com':
-                     {'name': 'john_doe', 'display_name': 'John Doe'}})
-
-        processed_commit = list(record_processor_inst.process(
-            generate_commits(author_email='johndoe@gmail.com',
-                             author_name='John Doe')))[0]
-
-        expected_commit = {
-            'launchpad_id': 'john_doe',
-            'author_email': 'johndoe@gmail.com',
-            'author_name': 'John Doe',
-            'company_name': 'NEC',
-        }
-
-        self.assertRecordsMatch(expected_commit, processed_commit)
-        self.assertIn('johndoe@gmail.com', utils.load_user(
-            record_processor_inst.runtime_storage_inst, 'john_doe')['emails'])
-
-    def test_process_commit_existing_user_new_email_known_company_update(self):
-        record_processor_inst = self.make_record_processor(
-            users=[
-                {'user_id': 'john_doe',
-                 'launchpad_id': 'john_doe',
-                 'user_name': 'John Doe',
-                 'emails': ['johndoe@gmail.com'],
-                 'companies': [{'company_name': '*independent',
-                                'end_date': 0}]}
-            ],
-            companies=[{'company_name': 'IBM', 'domains': ['ibm.com']}],
-            lp_info={'johndoe@ibm.com':
-                     {'name': 'john_doe', 'display_name': 'John Doe'}})
-
-        processed_commit = list(record_processor_inst.process(
-            generate_commits(author_email='johndoe@ibm.com',
-                             author_name='John Doe')))[0]
-
-        expected_commit = {
-            'launchpad_id': 'john_doe',
-            'author_email': 'johndoe@ibm.com',
-            'author_name': 'John Doe',
-            'company_name': 'IBM',
-        }
-
-        self.assertRecordsMatch(expected_commit, processed_commit)
-        user = utils.load_user(
-            record_processor_inst.runtime_storage_inst, 'john_doe')
-        self.assertIn('johndoe@gmail.com', user['emails'])
-        self.assertEqual('IBM', user['companies'][0]['company_name'],
-                         message='User affiliation should be updated')
+            record_processor_inst.runtime_storage_inst,
+            'johndoe@ibm.com')['emails']
+        )
 
     def test_process_commit_new_user(self):
-        # User is known to LP, but new to us
-        # Should add new user and set company depending on email
-        record_processor_inst = self.make_record_processor(
-            companies=[{'company_name': 'IBM', 'domains': ['ibm.com']}],
-            lp_info={'johndoe@ibm.com':
-                     {'name': 'john_doe', 'display_name': 'John Doe'}})
-
-        processed_commit = list(record_processor_inst.process(
-            generate_commits(author_email='johndoe@ibm.com',
-                             author_name='John Doe')))[0]
-
-        expected_commit = {
-            'launchpad_id': 'john_doe',
-            'author_email': 'johndoe@ibm.com',
-            'author_name': 'John Doe',
-            'company_name': 'IBM',
-        }
-
-        self.assertRecordsMatch(expected_commit, processed_commit)
-        user = utils.load_user(
-            record_processor_inst.runtime_storage_inst, 'john_doe')
-        self.assertIn('johndoe@ibm.com', user['emails'])
-        self.assertEqual('IBM', user['companies'][0]['company_name'])
-
-    def test_process_commit_new_user_unknown_to_lb(self):
-        # User is new to us and not known to LP
-        # Should set user name and empty LPid
+        # User is new to us. Should set user name and empty ldap_id
         record_processor_inst = self.make_record_processor(
             companies=[{'company_name': 'IBM', 'domains': ['ibm.com']}])
 
@@ -307,7 +191,7 @@ class TestRecordProcessor(testtools.TestCase):
                              author_name='John Doe')))[0]
 
         expected_commit = {
-            'launchpad_id': None,
+            'ldap_id': None,
             'author_email': 'johndoe@ibm.com',
             'author_name': 'John Doe',
             'company_name': 'IBM',
@@ -318,224 +202,9 @@ class TestRecordProcessor(testtools.TestCase):
             record_processor_inst.runtime_storage_inst, 'johndoe@ibm.com')
         self.assertIn('johndoe@ibm.com', user['emails'])
         self.assertEqual('IBM', user['companies'][0]['company_name'])
-        self.assertEqual(None, user['launchpad_id'])
+        self.assertEqual(None, user['ldap_id'])
 
     # process records complex scenarios
-
-    def test_process_blueprint_one_draft_spawned_lp_doesnt_know_user(self):
-        # In: blueprint record
-        #     LP doesn't know user
-        # Out: blueprint-draft record
-        #      new user profile created
-        record_processor_inst = self.make_record_processor()
-
-        processed_records = list(record_processor_inst.process([
-            {'record_type': 'bp',
-             'id': 'mod:blueprint',
-             'self_link': 'http://launchpad.net/blueprint',
-             'owner': 'john_doe',
-             'date_created': 1234567890}
-        ]))
-
-        self.assertRecordsMatch(
-            {'record_type': 'bpd',
-             'launchpad_id': 'john_doe',
-             'author_name': 'john_doe',
-             'company_name': '*independent'},
-            processed_records[0])
-
-        user = utils.load_user(
-            record_processor_inst.runtime_storage_inst, 'john_doe')
-        self.assertEqual({
-            'seq': 1,
-            'user_id': 'john_doe',
-            'launchpad_id': 'john_doe',
-            'user_name': 'john_doe',
-            'emails': [],
-            'companies': [{'company_name': '*independent', 'end_date': 0}]
-        }, user)
-
-    def test_process_blueprint_one_draft_spawned_lp_knows_user(self):
-        # In: blueprint record
-        #     LP knows user
-        # Out: blueprint-draft record
-        #      new user profile created, name is taken from LP profile
-        record_processor_inst = self.make_record_processor(
-            lp_user_name={
-                'john_doe': {'name': 'john_doe', 'display_name': 'John Doe'}})
-
-        processed_records = list(record_processor_inst.process([
-            {'record_type': 'bp',
-             'id': 'mod:blueprint',
-             'self_link': 'http://launchpad.net/blueprint',
-             'owner': 'john_doe',
-             'date_created': 1234567890}
-        ]))
-
-        self.assertRecordsMatch(
-            {'record_type': 'bpd',
-             'launchpad_id': 'john_doe',
-             'author_name': 'John Doe',
-             'company_name': '*independent'},
-            processed_records[0])
-
-        user = utils.load_user(
-            record_processor_inst.runtime_storage_inst, 'john_doe')
-        self.assertEqual({
-            'seq': 1,
-            'user_id': 'john_doe',
-            'launchpad_id': 'john_doe',
-            'user_name': 'John Doe',
-            'emails': [],
-            'companies': [{'company_name': '*independent', 'end_date': 0}]
-        }, user)
-
-    def test_process_blueprint_then_review(self):
-        record_processor_inst = self.make_record_processor(
-            lp_user_name={
-                'john_doe': {'name': 'john_doe', 'display_name': 'John Doe'}})
-
-        processed_records = list(record_processor_inst.process([
-            {'record_type': 'bp',
-             'id': 'mod:blueprint',
-             'self_link': 'http://launchpad.net/blueprint',
-             'owner': 'john_doe',
-             'date_created': 1234567890},
-            {'record_type': 'review',
-             'id': 'I1045730e47e9e6ad31fcdfbaefdad77e2f3b2c3e',
-             'subject': 'Fix AttributeError in Keypair._add_details()',
-             'owner': {'name': 'John Doe',
-                       'email': 'john_doe@gmail.com',
-                       'username': 'john_doe'},
-             'createdOn': 1379404951,
-             'module': 'nova', 'branch': 'master'}
-        ]))
-
-        self.assertRecordsMatch(
-            {'record_type': 'bpd',
-             'launchpad_id': 'john_doe',
-             'author_name': 'John Doe',
-             'company_name': '*independent'},
-            processed_records[0])
-
-        self.assertRecordsMatch(
-            {'record_type': 'review',
-             'launchpad_id': 'john_doe',
-             'author_name': 'John Doe',
-             'author_email': 'john_doe@gmail.com',
-             'company_name': '*independent'},
-            processed_records[1])
-
-        user = {'seq': 1,
-                'core': [],
-                'user_id': 'john_doe',
-                'launchpad_id': 'john_doe',
-                'user_name': 'John Doe',
-                'emails': ['john_doe@gmail.com'],
-                'companies': [{'company_name': '*independent', 'end_date': 0}]}
-        self.assertEqual(user, utils.load_user(
-            record_processor_inst.runtime_storage_inst, 'john_doe'))
-        self.assertEqual(user, utils.load_user(
-            record_processor_inst.runtime_storage_inst, 'john_doe@gmail.com'))
-
-    def test_process_blueprint_then_commit(self):
-        record_processor_inst = self.make_record_processor(
-            lp_user_name={
-                'john_doe': {'name': 'john_doe', 'display_name': 'John Doe'}},
-            lp_info={'john_doe@gmail.com':
-                     {'name': 'john_doe', 'display_name': 'John Doe'}})
-
-        processed_records = list(record_processor_inst.process([
-            {'record_type': 'bp',
-             'id': 'mod:blueprint',
-             'self_link': 'http://launchpad.net/blueprint',
-             'owner': 'john_doe',
-             'date_created': 1234567890},
-            {'record_type': 'commit',
-             'commit_id': 'de7e8f297c193fb310f22815334a54b9c76a0be1',
-             'author_name': 'John Doe',
-             'author_email': 'john_doe@gmail.com',
-             'date': 1234567890,
-             'lines_added': 25,
-             'lines_deleted': 9,
-             'release_name': 'havana'}
-        ]))
-
-        self.assertRecordsMatch(
-            {'record_type': 'bpd',
-             'launchpad_id': 'john_doe',
-             'author_name': 'John Doe',
-             'company_name': '*independent'},
-            processed_records[0])
-
-        self.assertRecordsMatch(
-            {'record_type': 'commit',
-             'launchpad_id': 'john_doe',
-             'author_name': 'John Doe',
-             'author_email': 'john_doe@gmail.com',
-             'company_name': '*independent'},
-            processed_records[1])
-
-        user = {'seq': 1,
-                'core': [],
-                'user_id': 'john_doe',
-                'launchpad_id': 'john_doe',
-                'user_name': 'John Doe',
-                'emails': ['john_doe@gmail.com'],
-                'companies': [{'company_name': '*independent', 'end_date': 0}]}
-        self.assertEqual(user, utils.load_user(
-            record_processor_inst.runtime_storage_inst, 'john_doe'))
-        self.assertEqual(user, utils.load_user(
-            record_processor_inst.runtime_storage_inst, 'john_doe@gmail.com'))
-
-    def test_process_review_then_blueprint(self):
-        record_processor_inst = self.make_record_processor(
-            lp_user_name={
-                'john_doe': {'name': 'john_doe', 'display_name': 'John Doe'}})
-
-        processed_records = list(record_processor_inst.process([
-            {'record_type': 'review',
-             'id': 'I1045730e47e9e6ad31fcdfbaefdad77e2f3b2c3e',
-             'subject': 'Fix AttributeError in Keypair._add_details()',
-             'owner': {'name': 'John Doe',
-                       'email': 'john_doe@gmail.com',
-                       'username': 'john_doe'},
-             'createdOn': 1379404951,
-             'module': 'nova', 'branch': 'master'},
-            {'record_type': 'bp',
-             'id': 'mod:blueprint',
-             'self_link': 'http://launchpad.net/blueprint',
-             'owner': 'john_doe',
-             'date_created': 1234567890}
-        ]))
-
-        self.assertRecordsMatch(
-            {'record_type': 'review',
-             'launchpad_id': 'john_doe',
-             'author_name': 'John Doe',
-             'author_email': 'john_doe@gmail.com',
-             'company_name': '*independent'},
-            processed_records[0])
-
-        self.assertRecordsMatch(
-            {'record_type': 'bpd',
-             'launchpad_id': 'john_doe',
-             'author_name': 'John Doe',
-             'company_name': '*independent'},
-            processed_records[1])
-
-        user = {'seq': 1,
-                'core': [],
-                'user_id': 'john_doe',
-                'launchpad_id': 'john_doe',
-                'user_name': 'John Doe',
-                'emails': ['john_doe@gmail.com'],
-                'companies': [{'company_name': '*independent', 'end_date': 0}]}
-        self.assertEqual(user, utils.load_user(
-            record_processor_inst.runtime_storage_inst, 'john_doe'))
-        self.assertEqual(user, utils.load_user(
-            record_processor_inst.runtime_storage_inst, 'john_doe@gmail.com'))
-
     def test_create_member(self):
         member_record = {'member_id': '123456789',
                          'member_name': 'John Doe',
@@ -561,6 +230,32 @@ class TestRecordProcessor(testtools.TestCase):
         self.assertEqual(result_user['company_name'], 'Mirantis')
         self.assertEqual(result_user['companies'],
                          [{'company_name': 'Mirantis', 'end_date': 0}])
+
+    def test_create_member_ldap(self):
+        member_record = {'member_id': 'dave-tucker',
+                         'ldap_id': 'dave-tucker',
+                         'member_name': 'Dave Tucker',
+                         'date_joined': None,
+                         'country': 'Great Britain',
+                         'company_draft': 'Red Hat',
+                         'email': 'dave@dtucker.co.uk'}
+
+        record_processor_inst = self.make_record_processor()
+        result_member = record_processor_inst._process_member(
+            member_record).next()
+
+        self.assertEqual(result_member['primary_key'], 'member:dave-tucker')
+        self.assertEqual(result_member['date'], 0)
+        self.assertEqual(result_member['author_name'], 'Dave Tucker')
+        self.assertEqual(result_member['company_name'], 'Red Hat')
+
+        result_user = utils.load_user(
+            record_processor_inst.runtime_storage_inst, 'dave-tucker')
+
+        self.assertEqual(result_user['user_name'], 'Dave Tucker')
+        self.assertEqual(result_user['company_name'], 'Red Hat')
+        self.assertEqual(result_user['companies'],
+                         [{'company_name': 'Red Hat', 'end_date': 0}])
 
     def test_update_member(self):
         member_record = {'member_id': '123456789',
@@ -588,9 +283,36 @@ class TestRecordProcessor(testtools.TestCase):
         self.assertEqual(result_user['companies'],
                          [{'company_name': 'Rackspace', 'end_date': 0}])
 
+    def test_update_member_ldap(self):
+        member_record = {'member_id': 'dave-tucker',
+                         'ldap_id': 'dave-tucker',
+                         'member_name': 'Dave Tucker',
+                         'date_joined': None,
+                         'country': 'Great Britain',
+                         'company_draft': 'Red Hat',
+                         'email': 'dave@dtucker.co.uk'}
+
+        record_processor_inst = self.make_record_processor()
+
+        updated_member_record = member_record
+        updated_member_record['member_name'] = 'Baldrick'
+        updated_member_record['company_draft'] = 'HP'
+
+        result_member = record_processor_inst._process_member(
+            updated_member_record).next()
+        self.assertEqual(result_member['author_name'], 'Baldrick')
+        self.assertEqual(result_member['company_name'], 'HP')
+
+        result_user = utils.load_user(
+            record_processor_inst.runtime_storage_inst, 'dave-tucker')
+
+        self.assertEqual(result_user['user_name'], 'Baldrick')
+        self.assertEqual(result_user['companies'],
+                         [{'company_name': 'HP', 'end_date': 0}])
+
     def test_process_email_then_review(self):
         # it is expected that the user profile will contain both email and
-        # LP id
+        # ldap-id
         record_processor_inst = self.make_record_processor()
 
         list(record_processor_inst.process([
@@ -613,7 +335,7 @@ class TestRecordProcessor(testtools.TestCase):
         user = {'seq': 1,
                 'core': [],
                 'user_id': 'john_doe',
-                'launchpad_id': 'john_doe',
+                'ldap_id': 'john_doe',
                 'user_name': 'John Doe',
                 'emails': ['john_doe@gmail.com'],
                 'companies': [{'company_name': '*independent', 'end_date': 0}]}
@@ -623,9 +345,9 @@ class TestRecordProcessor(testtools.TestCase):
             record_processor_inst.runtime_storage_inst, 'john_doe'))
 
     def test_process_commit_then_review_with_different_email(self):
+        # In this case, we don't know how to associate the email from the commit with the LDAP ID so two users are created.
+
         record_processor_inst = self.make_record_processor(
-            lp_info={'john_doe@gmail.com':
-                     {'name': 'john_doe', 'display_name': 'John Doe'}},
             companies=[{'company_name': 'IBM', 'domains': ['ibm.com']}])
 
         list(record_processor_inst.process([
@@ -653,35 +375,33 @@ class TestRecordProcessor(testtools.TestCase):
                        'by': {'name': 'John Doe', 'email': 'john_doe@ibm.com',
                               'username': 'john_doe'}}]}]}
         ]))
-        user = {'seq': 1,
-                'core': [],
-                'user_id': 'john_doe',
-                'launchpad_id': 'john_doe',
-                'user_name': 'John Doe',
-                'emails': ['john_doe@ibm.com', 'john_doe@gmail.com'],
-                'companies': [{'company_name': 'IBM', 'end_date': 0}]}
-        self.assertEqual(user, utils.load_user(
+        userA = {'seq': 3,
+                 'user_id': 'john_doe',
+                 'ldap_id': 'john_doe',
+                 'user_name': 'John Doe',
+                 'emails': ['john_doe@ibm.com'],
+                 'companies': [{'company_name': 'IBM', 'end_date': 0}]}
+        userB = {'seq': 1,
+                 'user_id': 'john_doe@gmail.com',
+                 'ldap_id': None,
+                 'user_name': 'John Doe',
+                 'emails': ['john_doe@gmail.com'],
+                 'companies': [{'company_name': '*independent',
+                                'end_date': 0}]}
+        self.assertEqual(userA, utils.load_user(
             record_processor_inst.runtime_storage_inst, 'john_doe'))
-        self.assertEqual(user, utils.load_user(
+        self.assertEqual(userB, utils.load_user(
             record_processor_inst.runtime_storage_inst, 'john_doe@gmail.com'))
-        self.assertEqual(user, utils.load_user(
+        self.assertEqual(userA, utils.load_user(
             record_processor_inst.runtime_storage_inst, 'john_doe@ibm.com'))
 
     def test_merge_users(self):
         record_processor_inst = self.make_record_processor(
-            lp_user_name={
-                'john_doe': {'name': 'john_doe', 'display_name': 'John Doe'}
-            },
             companies=[{'company_name': 'IBM', 'domains': ['ibm.com']}],
         )
         runtime_storage_inst = record_processor_inst.runtime_storage_inst
 
         runtime_storage_inst.set_records(record_processor_inst.process([
-            {'record_type': 'bp',
-             'id': 'mod:blueprint',
-             'self_link': 'http://launchpad.net/blueprint',
-             'owner': 'john_doe',
-             'date_created': 1234567890},
             {'record_type': 'email',
              'message_id': '<message-id>',
              'author_email': 'john_doe@ibm.com', 'author_name': 'John Doe',
@@ -700,17 +420,16 @@ class TestRecordProcessor(testtools.TestCase):
 
         record_processor_inst.update()
 
-        user = {'seq': 2,
+        user = {'seq': 1,
                 'core': [],
                 'user_id': 'john_doe',
-                'launchpad_id': 'john_doe',
+                'ldap_id': 'john_doe',
                 'user_name': 'John Doe',
                 'emails': ['john_doe@ibm.com'],
                 'companies': [{'company_name': 'IBM', 'end_date': 0}]}
         runtime_storage_inst = record_processor_inst.runtime_storage_inst
-        self.assertEqual(2, runtime_storage_inst.get_by_key('user:count'))
-        self.assertEqual(None, utils.load_user(runtime_storage_inst, 1))
-        self.assertEqual(user, utils.load_user(runtime_storage_inst, 2))
+        self.assertEqual(1, runtime_storage_inst.get_by_key('user:count'))
+        self.assertEqual(user, utils.load_user(runtime_storage_inst, 1))
         self.assertEqual(user, utils.load_user(runtime_storage_inst,
                                                'john_doe'))
         self.assertEqual(user, utils.load_user(runtime_storage_inst,
@@ -725,9 +444,6 @@ class TestRecordProcessor(testtools.TestCase):
 
     def test_core_user_guess(self):
         record_processor_inst = self.make_record_processor(
-            lp_user_name={
-                'john_doe': {'name': 'john_doe', 'display_name': 'John Doe'}
-            },
             companies=[{'company_name': 'IBM', 'domains': ['ibm.com']}],
         )
         runtime_storage_inst = record_processor_inst.runtime_storage_inst
@@ -772,12 +488,12 @@ class TestRecordProcessor(testtools.TestCase):
         record_processor_inst.update()
 
         user_1 = {'seq': 1, 'user_id': 'john_doe',
-                  'launchpad_id': 'john_doe', 'user_name': 'John Doe',
+                  'ldap_id': 'john_doe', 'user_name': 'John Doe',
                   'emails': ['john_doe@ibm.com'],
                   'core': [('nova', 'master')],
                   'companies': [{'company_name': 'IBM', 'end_date': 0}]}
         user_2 = {'seq': 3, 'user_id': 'homer',
-                  'launchpad_id': 'homer', 'user_name': 'Homer Simpson',
+                  'ldap_id': 'homer', 'user_name': 'Homer Simpson',
                   'emails': ['hsimpson@gmail.com'],
                   'core': [],
                   'companies': [{'company_name': '*independent',
@@ -789,13 +505,7 @@ class TestRecordProcessor(testtools.TestCase):
                                                  'homer'))
 
     def test_process_commit_with_coauthors(self):
-        record_processor_inst = self.make_record_processor(
-            lp_info={'jimi.hendrix@openstack.com':
-                     {'name': 'jimi', 'display_name': 'Jimi Hendrix'},
-                     'tupac.shakur@openstack.com':
-                     {'name': 'tupac', 'display_name': 'Tupac Shakur'},
-                     'bob.dylan@openstack.com':
-                     {'name': 'bob', 'display_name': 'Bob Dylan'}})
+        record_processor_inst = self.make_record_processor()
         processed_commits = list(record_processor_inst.process([
             {'record_type': 'commit',
              'commit_id': 'de7e8f297c193fb310f22815334a54b9c76a0be1',
@@ -810,68 +520,23 @@ class TestRecordProcessor(testtools.TestCase):
         self.assertEqual(3, len(processed_commits))
 
         self.assertRecordsMatch({
-            'launchpad_id': 'tupac',
+            'ldap_id': None,
             'author_email': 'tupac.shakur@openstack.com',
             'author_name': 'Tupac Shakur',
         }, processed_commits[0])
         self.assertRecordsMatch({
-            'launchpad_id': 'jimi',
+            'ldap_id': None,
             'author_email': 'jimi.hendrix@openstack.com',
             'author_name': 'Jimi Hendrix',
         }, processed_commits[2])
-        self.assertEqual('tupac',
+        self.assertEqual('tupac.shakur@openstack.com',
                          processed_commits[0]['coauthor'][0]['user_id'])
-        self.assertEqual('bob',
+        self.assertEqual('bob.dylan@openstack.com',
                          processed_commits[0]['coauthor'][1]['user_id'])
-        self.assertEqual('jimi',
+        self.assertEqual('jimi.hendrix@openstack.com',
                          processed_commits[0]['coauthor'][2]['user_id'])
 
     # record post-processing
-
-    def test_blueprint_mention_count(self):
-        record_processor_inst = self.make_record_processor()
-        runtime_storage_inst = record_processor_inst.runtime_storage_inst
-
-        runtime_storage_inst.set_records(record_processor_inst.process([
-            {'record_type': 'bp',
-             'id': 'mod:blueprint',
-             'self_link': 'http://launchpad.net/blueprint',
-             'owner': 'john_doe',
-             'date_created': 1234567890},
-            {'record_type': 'bp',
-             'id': 'mod:ignored',
-             'self_link': 'http://launchpad.net/ignored',
-             'owner': 'john_doe',
-             'date_created': 1234567890},
-            {'record_type': 'email',
-             'message_id': '<message-id>',
-             'author_email': 'john_doe@gmail.com', 'author_name': 'John Doe',
-             'subject': 'hello, world!',
-             'body': 'lorem ipsum',
-             'date': 1234567890,
-             'blueprint_id': ['mod:blueprint']},
-            {'record_type': 'email',
-             'message_id': '<another-message-id>',
-             'author_email': 'john_doe@gmail.com', 'author_name': 'John Doe',
-             'subject': 'hello, world!',
-             'body': 'lorem ipsum',
-             'date': 1234567895,
-             'blueprint_id': ['mod:blueprint', 'mod:invalid']},
-        ]))
-        record_processor_inst.update()
-
-        bp1 = runtime_storage_inst.get_by_primary_key('bpd:mod:blueprint')
-        self.assertEqual(2, bp1['mention_count'])
-        self.assertEqual(1234567895, bp1['mention_date'])
-
-        bp2 = runtime_storage_inst.get_by_primary_key('bpd:mod:ignored')
-        self.assertEqual(0, bp2['mention_count'])
-        self.assertEqual(0, bp2['mention_date'])
-
-        email = runtime_storage_inst.get_by_primary_key('<another-message-id>')
-        self.assertTrue('mod:blueprint' in email['blueprint_id'])
-        self.assertFalse('mod:invalid' in email['blueprint_id'])
-
     def test_review_number(self):
         record_processor_inst = self.make_record_processor()
         runtime_storage_inst = record_processor_inst.runtime_storage_inst
@@ -906,7 +571,7 @@ class TestRecordProcessor(testtools.TestCase):
         record_processor_inst = self.make_record_processor(
             users=[
                 {'user_id': 'john_doe',
-                 'launchpad_id': 'john_doe',
+                 'ldap_id': 'john_doe',
                  'user_name': 'John Doe',
                  'emails': ['john_doe@ibm.com'],
                  'core': [('nova', 'master')],
@@ -1054,7 +719,7 @@ class TestRecordProcessor(testtools.TestCase):
                'files_changed': 1,
                'author_name': u'John Doe',
                'date': 1376737923,
-               'launchpad_id': u'john_doe',
+               'ldap_id': u'john_doe',
                'branches': set([u'master']),
                'change_id': u'I33f0f37b6460dc494abf2520dc109c9893ace9e6',
                'release': u'havana'}
@@ -1066,7 +731,7 @@ class TestRecordProcessor(testtools.TestCase):
             users=[
                 {
                     'user_id': 'john_doe',
-                    'launchpad_id': 'john_doe',
+                    'ldap_id': 'john_doe',
                     'user_name': 'John Doe',
                     'emails': ['johndoe@gmail.com', 'johndoe@nec.co.jp'],
                     'companies': [
@@ -1085,7 +750,7 @@ class TestRecordProcessor(testtools.TestCase):
         ))[0]
 
         expected_commit = {
-            'launchpad_id': 'john_doe',
+            'ldap_id': 'john_doe',
             'author_email': 'johndoe@gmail.com',
             'author_name': 'John Doe',
             'company_name': 'NEC',
@@ -1099,7 +764,7 @@ class TestRecordProcessor(testtools.TestCase):
             users=[
                 {
                     'user_id': 'john_doe',
-                    'launchpad_id': 'john_doe',
+                    'ldap_id': 'john_doe',
                     'user_name': 'John Doe',
                     'emails': ['johndoe@gmail.com', 'johndoe@nec.co.jp'],
                     'companies': [
@@ -1118,7 +783,7 @@ class TestRecordProcessor(testtools.TestCase):
         ))[0]
 
         expected_commit = {
-            'launchpad_id': 'john_doe',
+            'ldap_id': 'john_doe',
             'author_email': 'johndoe@gmail.com',
             'author_name': 'John Doe',
             'company_name': 'NEC',
@@ -1132,7 +797,7 @@ class TestRecordProcessor(testtools.TestCase):
             users=[
                 {
                     'user_id': 'john_doe',
-                    'launchpad_id': 'john_doe',
+                    'ldap_id': 'john_doe',
                     'user_name': 'John Doe',
                     'emails': ['johndoe@gmail.com', 'johndoe@nec.co.jp'],
                     'companies': [
@@ -1152,7 +817,7 @@ class TestRecordProcessor(testtools.TestCase):
         ))[0]
 
         expected_commit = {
-            'launchpad_id': 'john_doe',
+            'ldap_id': 'john_doe',
             'author_email': 'johndoe@gmail.com',
             'author_name': 'John Doe',
             'company_name': 'NEC',
@@ -1166,7 +831,7 @@ class TestRecordProcessor(testtools.TestCase):
             users=[
                 {
                     'user_id': 'john_doe',
-                    'launchpad_id': 'john_doe',
+                    'ldap_id': 'john_doe',
                     'user_name': 'John Doe',
                     'emails': ['johndoe@gmail.com', 'johndoe@nec.co.jp'],
                     'companies': [
@@ -1186,7 +851,7 @@ class TestRecordProcessor(testtools.TestCase):
         ))[0]
 
         expected_commit = {
-            'launchpad_id': 'john_doe',
+            'ldap_id': 'john_doe',
             'author_email': 'johndoe@gmail.com',
             'author_name': 'John Doe',
             'company_name': 'NEC',
@@ -1200,7 +865,7 @@ class TestRecordProcessor(testtools.TestCase):
             users=[
                 {
                     'user_id': 'john_doe',
-                    'launchpad_id': 'john_doe',
+                    'ldap_id': 'john_doe',
                     'user_name': 'John Doe',
                     'emails': ['johndoe@gmail.com', 'johndoe@nec.co.jp'],
                     'companies': [
@@ -1219,7 +884,7 @@ class TestRecordProcessor(testtools.TestCase):
         ))[0]
 
         expected_commit = {
-            'launchpad_id': 'john_doe',
+            'ldap_id': 'john_doe',
             'author_email': 'johndoe@gmail.com',
             'author_name': 'John Doe',
             'company_name': 'NEC',
@@ -1257,17 +922,9 @@ class TestRecordProcessor(testtools.TestCase):
     # Helpers
 
     def make_record_processor(self, users=None, companies=None, releases=None,
-                              repos=None, lp_info=None, lp_user_name=None):
+                              repos=None):
         rp = record_processor.RecordProcessor(make_runtime_storage(
             users=users, companies=companies, releases=releases, repos=repos))
-
-        if lp_info is not None:
-            self.lp_profile_by_email.side_effect = (
-                lambda x: lp_info.get(x))
-
-        if lp_user_name is not None:
-            self.lp_profile_by_launchpad_id.side_effect = (
-                lambda x: lp_user_name.get(x))
 
         return rp
 
@@ -1362,8 +1019,8 @@ def make_runtime_storage(users=None, companies=None, releases=None,
     if users:
         for user in users:
             set_by_key('user:%s' % user['user_id'], user)
-            if user.get('launchpad_id'):
-                set_by_key('user:%s' % user['launchpad_id'], user)
+            if user.get('ldap_id'):
+                set_by_key('user:%s' % user['ldap_id'], user)
             for email in user.get('emails') or []:
                 set_by_key('user:%s' % email, user)
 
@@ -1375,8 +1032,8 @@ def _make_users(users):
     for user in users:
         if 'user_id' in user:
             users_index[user['user_id']] = user
-        if 'launchpad_id' in user:
-            users_index[user['launchpad_id']] = user
+        if 'ldap_id' in user:
+            users_index[user['ldap_id']] = user
         for email in user['emails']:
             users_index[email] = user
     return users_index

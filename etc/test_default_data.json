@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "launchpad_id": "foo",
+      "ldap_id": "foo",
       "user_name": "Pupkin",
       "emails": [
         "user@test.org"
@@ -18,7 +18,7 @@
       ]
     },
     {
-      "launchpad_id": "jenkins",
+      "ldap_id": "jenkins",
       "companies": [
         {
           "company_name": "*robots",

@@ -350,7 +350,7 @@ def templated(template=None, return_code=200):
             ctx['project_type'] = project_type
 
             release = flask.request.args.get('release')
-            releases = vault_inst['releases']
+            releases = vault_inst.get('releases')
             if release:
                 release = release.lower()
                 if release != 'all':

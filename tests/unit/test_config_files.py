@@ -70,7 +70,7 @@ class TestConfigFiles(testtools.TestCase):
     def _verify_users_in_alphabetical_order(self, file_name):
         users = self._read_file(file_name)['users']
         self._verify_ordering(
-            users, key=lambda x: x['launchpad_id'],
+            users, key=lambda x: x['ldap_id'],
             msg='List of users should be ordered by launchpad id')
 
     def test_users_in_alphabetical_order(self):
