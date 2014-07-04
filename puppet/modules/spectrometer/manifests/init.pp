@@ -1,5 +1,6 @@
 # Spectrometer
 class spectrometer (
+    $debug                      = 'UNSET',
     $clone_repo                 = 'UNSET',
     $git_repo_uri               = 'UNSET',
     $user                       = 'UNSET',
@@ -33,6 +34,11 @@ class spectrometer (
 ) {
 
     include spectrometer::params
+
+    $_debug = $debug ? {
+        'UNSET' => $::spectrometer::params::debug,
+        default => $debug
+    }
 
     $_clone_repo = $clone_repo ? {
         'UNSET' => $::spectrometer::params::clone_repo,

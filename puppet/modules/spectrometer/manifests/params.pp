@@ -1,6 +1,7 @@
 # Parameters used for setting up spectrometer
 class spectrometer::params {
-    $clone_repo             = true
+    $debug                      = false
+    $clone_repo                 = true
     $git_repo_uri               = 'git://github.com/dave-tucker/spectrometer.git'
     $user                       = 'spectrometer'
     $group                      = 'spectrometer'
