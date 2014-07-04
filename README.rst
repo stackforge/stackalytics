@@ -1,25 +1,25 @@
-Stackalytics
+Spectrometer
 ============
 
-Application Features
---------------------
-Stackalytics is a service that automatically analyzes OpenStack
+Spectrometer is a fork of Stackalytics that is customized to work with the OpenDaylight project tools and processes
+
+# Application Features
+
+Spectrometer is a service that automatically analyzes OpenDaylight
 development activities and displays statistics on contribution. The features are:
  * Extraction of author information from git log, store it in the database;
  * Calculate metrics on number of lines changed (LOC) and commits;
- * Mapping authors to companies and launchpad ids;
+ * Mapping authors to companies and their ID in the ODL LDAP;
  * Filter statistics by time, modules, companies, authors;
- * Extract blueprint and bug ids from commit messages;
  * Auto-update of database.
 
-Project Info
--------------
+# Hacking
 
- * Web-site: http://stackalytics.com/
- * Source Code: http://github.com/stackforge/stackalytics
- * Wiki: https://wiki.openstack.org/wiki/Stackalytics
- * Launchpad: https://launchpad.net/stackalytics
- * Blueprints: https://blueprints.launchpad.net/stackalytics
- * Bugs: https://bugs.launchpad.net/stackalytics
- * Code Reviews: https://review.openstack.org/#q,status:open+stackalytics,n,z
- * IRC: #openstack-stackalytics at freenode
+* Fork the repo
+* Write code
+* Send a pull request
+
+# Links
+
+ * Source Code: http://github.com/davetucker/spectrometer
+ * Wiki: https://wiki.opendaylight.org/view/Spectrometer
