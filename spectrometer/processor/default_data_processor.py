@@ -20,11 +20,11 @@ import json
 from github import MainClass
 import six
 
-from stackalytics.openstack.common import log as logging
-from stackalytics.processor import normalizer
-from stackalytics.processor import record_processor
-from stackalytics.processor import utils
-from stackalytics.processor import vcs
+from spectrometer.openstack.common import log as logging
+from spectrometer.processor import normalizer
+from spectrometer.processor import record_processor
+from spectrometer.processor import utils
+from spectrometer.processor import vcs
 
 LOG = logging.getLogger(__name__)
 

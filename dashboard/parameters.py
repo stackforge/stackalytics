@@ -18,7 +18,7 @@ from oslo.config import cfg
 from six.moves.urllib import parse
 
 from dashboard import vault
-from stackalytics.openstack.common import log as logging
+from spectrometer.openstack.common import log as logging
 
 
 LOG = logging.getLogger(__name__)

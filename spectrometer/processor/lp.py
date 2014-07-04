@@ -13,9 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from stackalytics.openstack.common import log as logging
-from stackalytics.processor import launchpad_utils
-from stackalytics.processor import utils
+from spectrometer.openstack.common import log as logging
+from spectrometer.processor import launchpad_utils
+from spectrometer.processor import utils
 
 
 LOG = logging.getLogger(__name__)

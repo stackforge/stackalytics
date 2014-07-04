@@ -17,7 +17,7 @@ import os
 
 import testtools
 
-from stackalytics.processor import main
+from spectrometer.processor import main
 
 
 class TestMain(testtools.TestCase):

@@ -42,7 +42,7 @@ import xmlrpclib
 
 import six
 
-from stackalytics.openstack.common import timeutils
+from spectrometer.openstack.common import timeutils
 
 
 _nasty_type_tests = [inspect.ismodule, inspect.isclass, inspect.ismethod,

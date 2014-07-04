@@ -15,7 +15,7 @@
 
 import testtools
 
-from stackalytics.processor import utils
+from spectrometer.processor import utils
 
 
 class TestUtils(testtools.TestCase):

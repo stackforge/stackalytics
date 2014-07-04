@@ -29,9 +29,9 @@ from dashboard import kpi
 from dashboard import parameters
 from dashboard import reports
 from dashboard import vault
-from stackalytics.openstack.common import log as logging
-from stackalytics.processor import config
-from stackalytics.processor import utils
+from spectrometer.openstack.common import log as logging
+from spectrometer.processor import config
+from spectrometer.processor import utils
 
 
 # Application objects ---------
@@ -47,13 +47,13 @@ LOG = logging.getLogger(__name__)
 conf = cfg.CONF
 conf.register_opts(config.OPTS)
 
-conf_file = os.getenv('STACKALYTICS_CONF')
+conf_file = os.getenv('SPECTROMETER_CONF')
 if conf_file and os.path.isfile(conf_file):
     conf(default_config_files=[conf_file])
     app.config['DEBUG'] = cfg.CONF.debug
 
 logging.setup('dashboard')
-LOG.info('Stackalytics.dashboard is configured via "%s"', conf_file)
+LOG.info('Spectrometer.dashboard is configured via "%s"', conf_file)
 
 
 # Handlers ---------

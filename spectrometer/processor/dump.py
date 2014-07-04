@@ -18,9 +18,9 @@ import sys
 
 from oslo.config import cfg
 
-from stackalytics.openstack.common import log as logging
-from stackalytics.processor import config
-from stackalytics.processor import runtime_storage
+from spectrometer.openstack.common import log as logging
+from spectrometer.processor import config
+from spectrometer.processor import runtime_storage
 
 
 LOG = logging.getLogger(__name__)
@@ -80,7 +80,7 @@ def main():
     conf.register_opts(OPTS)
     conf()
 
-    logging.setup('stackalytics')
+    logging.setup('spectrometer')
     LOG.info('Logging enabled')
 
     runtime_storage_inst = runtime_storage.get_runtime_storage(

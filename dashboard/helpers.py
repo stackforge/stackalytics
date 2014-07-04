@@ -20,7 +20,7 @@ import six
 
 from dashboard import parameters
 from dashboard import vault
-from stackalytics.processor import utils
+from spectrometer.processor import utils
 
 
 INFINITY_HTML = '&#x221E;'

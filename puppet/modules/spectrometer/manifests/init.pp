@@ -233,7 +233,7 @@ class spectrometer (
     }
 
     exec { 'Install Spectrometer':
-        unless      => 'pip list | grep stackalytics',
+        unless      => 'pip list | grep spectrometer',
         command     => 'pip install -r requirements.txt; python setup.py install',
         cwd         => $_install_dir,
         path        => $::path,
@@ -315,7 +315,7 @@ class spectrometer (
 
     file { 'nginx.conf':
         ensure  => present,
-        path    => '/etc/nginx/conf.d/stackalytics.conf',
+        path    => '/etc/nginx/conf.d/spectrometer.conf',
         content => template('spectrometer/nginx.conf.erb'),
         owner   => nginx,
         group   => nginx,
@@ -364,12 +364,12 @@ class spectrometer (
         ]
     }
 
-    cron { 'stackalytics-processor':
-        command     => "stackalytics-processor --log-file ${_log_dir}/${_processor_log_file} --config-file ${_config_dir}/${_config_file}",
+    cron { 'spectrometer-processor':
+        command     => "spectrometer-processor --log-file ${_log_dir}/${_processor_log_file} --config-file ${_config_dir}/${_config_file}",
         user        => $_user,
         hour        => $_processor_hour,
         minute      => $_processor_minute,
-        environment => "STACKALYTICS_CONF=${_config_dir}/${_config_file}",
+        environment => "SPECTROMETER_CONF=${_config_dir}/${_config_file}",
         require     => Exec['Install Spectrometer']
     }
 

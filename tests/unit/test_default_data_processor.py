@@ -18,8 +18,8 @@ import copy
 import mock
 import testtools
 
-from stackalytics.processor import default_data_processor
-from stackalytics.processor import normalizer
+from spectrometer.processor import default_data_processor
+from spectrometer.processor import normalizer
 from tests.unit import test_data
 
 
@@ -53,7 +53,7 @@ class TestDefaultDataProcessor(testtools.TestCase):
                          message='User id should be set')
 
     def test_update_project_list(self):
-        with mock.patch('stackalytics.processor.default_data_processor.'
+        with mock.patch('spectrometer.processor.default_data_processor.'
                         '_retrieve_project_list_from_github') as retriever:
             retriever.return_value = [
                 {'module': 'nova', 'uri': 'git://github.com/openstack/nova',

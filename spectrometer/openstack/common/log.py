@@ -43,8 +43,8 @@ import traceback
 from oslo.config import cfg
 
 # from quantum.openstack.common.gettextutils import _
-from stackalytics.openstack.common import importutils
-from stackalytics.openstack.common import jsonutils
+from spectrometer.openstack.common import importutils
+from spectrometer.openstack.common import jsonutils
 # from quantum.openstack.common import local
 
 

@@ -15,4 +15,4 @@
 
 from pbr import version
 
-version_info = version.VersionInfo('stackalytics')
+version_info = version.VersionInfo('spectrometer')

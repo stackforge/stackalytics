@@ -17,7 +17,7 @@ import re
 
 import testtools
 
-from stackalytics.processor import mls
+from spectrometer.processor import mls
 
 
 class TestMls(testtools.TestCase):

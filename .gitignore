@@ -18,3 +18,4 @@ doc/source/api/
 .testrepository/
 .tox/
 .vagrant/
+.DS_Store

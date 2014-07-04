@@ -20,9 +20,9 @@ import mock
 import six
 import testtools
 
-from stackalytics.processor import record_processor
-from stackalytics.processor import runtime_storage
-from stackalytics.processor import utils
+from spectrometer.processor import record_processor
+from spectrometer.processor import runtime_storage
+from spectrometer.processor import utils
 
 
 RELEASES = [
@@ -54,16 +54,16 @@ class TestRecordProcessor(testtools.TestCase):
     def setUp(self):
         super(TestRecordProcessor, self).setUp()
         self.read_json_from_uri_patch = mock.patch(
-            'stackalytics.processor.utils.read_json_from_uri')
+            'spectrometer.processor.utils.read_json_from_uri')
         self.read_launchpad = self.read_json_from_uri_patch.start()
         self.lp_profile_by_launchpad_id_patch = mock.patch(
-            'stackalytics.processor.launchpad_utils.'
+            'spectrometer.processor.launchpad_utils.'
             'lp_profile_by_launchpad_id')
         self.lp_profile_by_launchpad_id = (
             self.lp_profile_by_launchpad_id_patch.start())
         self.lp_profile_by_launchpad_id.return_value = None
         self.lp_profile_by_email_patch = mock.patch(
-            'stackalytics.processor.launchpad_utils.lp_profile_by_email')
+            'spectrometer.processor.launchpad_utils.lp_profile_by_email')
         self.lp_profile_by_email = (
             self.lp_profile_by_email_patch.start())
         self.lp_profile_by_email.return_value = None
@@ -1230,7 +1230,7 @@ class TestRecordProcessor(testtools.TestCase):
 
     def test_get_modules(self):
         record_processor_inst = self.make_record_processor()
-        with mock.patch('stackalytics.processor.utils.load_repos') as patch:
+        with mock.patch('spectrometer.processor.utils.load_repos') as patch:
             patch.return_value = [{'module': 'nova'},
                                   {'module': 'python-novaclient'},
                                   {'module': 'neutron'},
@@ -1242,7 +1242,7 @@ class TestRecordProcessor(testtools.TestCase):
 
     def test_guess_module(self):
         record_processor_inst = self.make_record_processor()
-        with mock.patch('stackalytics.processor.utils.load_repos') as patch:
+        with mock.patch('spectrometer.processor.utils.load_repos') as patch:
             patch.return_value = [{'module': 'sahara', 'aliases': ['savanna']}]
             record = {'subject': '[savanna] T'}
             record_processor_inst._guess_module(record)

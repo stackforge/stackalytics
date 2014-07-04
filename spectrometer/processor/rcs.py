@@ -18,7 +18,7 @@ import re
 
 import paramiko
 
-from stackalytics.openstack.common import log as logging
+from spectrometer.openstack.common import log as logging
 
 
 LOG = logging.getLogger(__name__)

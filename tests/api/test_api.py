@@ -22,7 +22,7 @@ import six
 import testtools
 
 from dashboard import web
-from stackalytics.processor import runtime_storage
+from spectrometer.processor import runtime_storage
 
 
 class TestAPI(testtools.TestCase):
@@ -37,9 +37,9 @@ def make_runtime_storage(data, *generators):
     _add_generated_records(data, *generators)
 
     runtime_storage_inst = TestStorage(data)
-    setattr(web.app, 'stackalytics_vault', None)
+    setattr(web.app, 'spectrometer_vault', None)
 
-    with mock.patch('stackalytics.processor.runtime_storage.'
+    with mock.patch('spectrometer.processor.runtime_storage.'
                     'get_runtime_storage') as get_runtime_storage_mock:
         get_runtime_storage_mock.return_value = runtime_storage_inst
         try:

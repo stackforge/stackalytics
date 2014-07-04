@@ -16,7 +16,7 @@
 import mock
 import testtools
 
-from stackalytics.processor import vcs
+from spectrometer.processor import vcs
 
 
 class TestVcsProcessor(testtools.TestCase):

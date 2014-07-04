@@ -15,10 +15,10 @@
 
 import re
 
+import mockldap
 import testtools
-from mockldap import MockLdap
 
-from stackalytics.processor import mps
+from spectrometer.processor import mps
 
 
 class TestMps(testtools.TestCase):
@@ -41,7 +41,7 @@ class TestMps(testtools.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.mockldap = MockLdap(cls.directory)
+        cls.mockldap = mockldap.MockLdap(cls.directory)
 
     def setUp(self):
         super(TestMps, self).setUp()
@@ -96,20 +96,20 @@ class TestMps(testtools.TestCase):
         member_iterator = mps_inst.log()
         result = list(member_iterator)
 
-        self.assertEquals(result[0]["member_id"], "foo")
-        self.assertEquals(result[1]["member_id"], "dave-tucker")
+        self.assertEqual(result[0]["member_id"], "foo")
+        self.assertEqual(result[1]["member_id"], "dave-tucker")
 
-        self.assertEquals(result[0]["member_name"], "Mr Foo")
-        self.assertEquals(result[1]["member_name"], "Dave Tucker")
+        self.assertEqual(result[0]["member_name"], "Mr Foo")
+        self.assertEqual(result[1]["member_name"], "Dave Tucker")
 
-        self.assertEquals(result[0]["date_joined"], None)
-        self.assertEquals(result[1]["date_joined"], None)
+        self.assertEqual(result[0]["date_joined"], None)
+        self.assertEqual(result[1]["date_joined"], None)
 
-        self.assertEquals(result[0]["country"], "United States of America")
-        self.assertEquals(result[1]["country"], "Great Britain")
+        self.assertEqual(result[0]["country"], "United States of America")
+        self.assertEqual(result[1]["country"], "Great Britain")
 
-        self.assertEquals(result[0]["company_draft"], "*independent")
-        self.assertEquals(result[1]["company_draft"], "Red Hat")
+        self.assertEqual(result[0]["company_draft"], "*independent")
+        self.assertEqual(result[1]["company_draft"], "Red Hat")
 
-        self.assertEquals(result[0]["email"], "foo@foo.org")
-        self.assertEquals(result[1]["email"], "dave@dtucker.co.uk")
+        self.assertEqual(result[0]["email"], "foo@foo.org")
+        self.assertEqual(result[1]["email"], "dave@dtucker.co.uk")

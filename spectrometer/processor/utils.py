@@ -24,7 +24,7 @@ import six
 from six.moves.urllib import parse
 from six.moves.urllib import request
 
-from stackalytics.openstack.common import log as logging
+from spectrometer.openstack.common import log as logging
 
 
 LOG = logging.getLogger(__name__)

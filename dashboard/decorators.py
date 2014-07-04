@@ -24,9 +24,9 @@ from werkzeug import exceptions
 from dashboard import helpers
 from dashboard import parameters
 from dashboard import vault
-from stackalytics.openstack.common import log as logging
-from stackalytics.processor import utils
-from stackalytics import version as stackalytics_version
+from spectrometer.openstack.common import log as logging
+from spectrometer.processor import utils
+from spectrometer import version as spectrometer_version
 
 
 LOG = logging.getLogger(__name__)
@@ -381,10 +381,10 @@ def templated(template=None, return_code=200):
             ctx['user_id'] = parameters.get_single_parameter(kwargs, 'user_id')
             ctx['page_title'] = helpers.make_page_title(
                 ctx['company'], ctx['user_id'], ctx['module'], ctx['release'])
-            ctx['stackalytics_version'] = (
-                stackalytics_version.version_info.version_string())
-            ctx['stackalytics_release'] = (
-                stackalytics_version.version_info.release_string())
+            ctx['spectrometer_version'] = (
+                spectrometer_version.version_info.version_string())
+            ctx['spectrometer_release'] = (
+                spectrometer_version.version_info.release_string())
             ctx['runtime_storage_update_time'] = (
                 vault_inst['runtime_storage_update_time'])
 

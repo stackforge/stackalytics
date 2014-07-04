@@ -24,7 +24,7 @@ import flask
 from dashboard import decorators
 from dashboard import helpers
 from dashboard import vault
-from stackalytics.processor import utils
+from spectrometer.processor import utils
 
 
 DEFAULT_DAYS_COUNT = 7

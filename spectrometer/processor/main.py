@@ -21,16 +21,16 @@ import six
 from six.moves.urllib import parse
 import yaml
 
-from stackalytics.openstack.common import log as logging
-from stackalytics.processor import config
-from stackalytics.processor import default_data_processor
-from stackalytics.processor import mls
-from stackalytics.processor import mps
-from stackalytics.processor import rcs
-from stackalytics.processor import record_processor
-from stackalytics.processor import runtime_storage
-from stackalytics.processor import utils
-from stackalytics.processor import vcs
+from spectrometer.openstack.common import log as logging
+from spectrometer.processor import config
+from spectrometer.processor import default_data_processor
+from spectrometer.processor import mls
+from spectrometer.processor import mps
+from spectrometer.processor import rcs
+from spectrometer.processor import record_processor
+from spectrometer.processor import runtime_storage
+from spectrometer.processor import utils
+from spectrometer.processor import vcs
 
 
 LOG = logging.getLogger(__name__)
@@ -161,8 +161,6 @@ def update_records(runtime_storage_inst, record_processor_inst):
     repos = utils.load_repos(runtime_storage_inst)
 
     #Update member list
-
-
     for repo in repos:
         process_repo(repo, runtime_storage_inst, record_processor_inst)
 
@@ -281,7 +279,7 @@ def main():
     conf.register_opts(config.OPTS)
     conf()
 
-    logging.setup('stackalytics')
+    logging.setup('spectrometer')
     LOG.info('Logging enabled')
 
     runtime_storage_inst = runtime_storage.get_runtime_storage(

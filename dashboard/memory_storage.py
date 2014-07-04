@@ -15,7 +15,7 @@
 
 import six
 
-from stackalytics.processor import utils
+from spectrometer.processor import utils
 
 
 MEMORY_STORAGE_CACHED = 0

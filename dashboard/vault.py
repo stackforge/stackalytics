@@ -20,9 +20,9 @@ from oslo.config import cfg
 import six
 
 from dashboard import memory_storage
-from stackalytics.openstack.common import log as logging
-from stackalytics.processor import runtime_storage
-from stackalytics.processor import utils
+from spectrometer.openstack.common import log as logging
+from spectrometer.processor import runtime_storage
+from spectrometer.processor import utils
 
 
 LOG = logging.getLogger(__name__)
@@ -52,7 +52,7 @@ def extend_record(record):
 
 
 def get_vault():
-    vault = getattr(flask.current_app, 'stackalytics_vault', None)
+    vault = getattr(flask.current_app, 'spectrometer_vault', None)
     if not vault:
         try:
             vault = {}
@@ -62,7 +62,7 @@ def get_vault():
             vault['memory_storage'] = memory_storage.get_memory_storage(
                 memory_storage.MEMORY_STORAGE_CACHED)
 
-            flask.current_app.stackalytics_vault = vault
+            flask.current_app.spectrometer_vault = vault
         except Exception as e:
             LOG.critical('Failed to initialize application: %s', e)
             LOG.exception(e)
@@ -72,8 +72,8 @@ def get_vault():
     may_update_by_time = (time_now > vault.get('vault_update_time', 0) +
                           cfg.CONF.dashboard_update_interval)
     if (may_update_by_time and
-            not getattr(flask.request, 'stackalytics_updated', None)):
-        flask.request.stackalytics_updated = True
+            not getattr(flask.request, 'spectrometer_updated', None)):
+        flask.request.spectrometer_updated = True
         vault['vault_update_time'] = time_now
         memory_storage_inst = vault['memory_storage']
         have_updates = memory_storage_inst.update(
