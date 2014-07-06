@@ -1,33 +1,6 @@
 {
   "users": [
     {
-      "ldap_id": null,
-      "user_name": "Andrew Kim",
-      "companies": [
-        {
-          "company_name": "Cisco",
-          "end_date": null
-        }
-      ],
-      "emails": [
-        "andrekim@cisco.com",
-        "h.andrew.kim@gmail.com"
-      ]
-    },
-    {
-      "ldap_id": null,
-      "user_name": "Tushar Goyal",
-      "companies": [
-        {
-          "company_name": "Ericsson",
-          "end_date": null
-        }
-      ],
-      "emails": [
-        "goyaltushar7@gmail.com"
-      ]
-    },
-    {
       "ldap_id": "aashaikh-d",
       "user_name": "Anees Shaikh",
       "companies": [
@@ -41,8 +14,22 @@
       ]
     },
     {
+      "ldap_id": "andrekim",
+      "user_name": "Andrew Kim",
+      "companies": [
+        {
+          "company_name": "Cisco",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "andrekim@cisco.com",
+        "h.andrew.kim@gmail.com"
+      ]
+    },
+    {
       "user_name": "Brent Salisbury",
-      "ldap_id": "brent-salisbury",
+      "ldap_id": "brentsalisbury",
       "companies": [
         {
           "company_name": "*independent",
@@ -58,17 +45,17 @@
       ]
     },
     {
-      "ldap_id": "chrisw-x",
-      "user_name": "Chris Wright",
+      "ldap_id": "ckd",
+      "user_name": "Colin Dixon",
       "companies": [
         {
-          "company_name": "RedHat",
+          "company_name": "IBM",
           "end_date": null
         }
       ],
       "emails": [
-        "chrisw@redhat.com",
-        "chrisw@sous-sol.org"
+        "colin@colindixon.com",
+        "ckd@us.ibm.com"
       ]
     },
     {
@@ -86,7 +73,7 @@
     },
     {
       "user_name": "Dave Tucker",
-      "ldap_id": "davetucker",
+      "ldap_id": "dave-tucker",
       "companies": [
         {
           "company_name": "Hewlett-Packard",
@@ -104,8 +91,21 @@
       ]
     },
     {
+      "ldap_id": "dfarrell07",
+      "user_name": "Daniel Farrell",
+      "companies": [
+        {
+          "company_name": "RedHat",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "dfarrell07@gmail.com",
+        "dfarrell@redhat.com"
+      ]
+    },
+    {
       "ldap_id": "dmm",
-      "gerrit_id": "dmm",
       "user_name": "David Meyer",
       "companies": [
         {
@@ -119,7 +119,123 @@
       ]
     },
     {
-      "ldap_id": "huangdenghui",
+      "ldap_id": "ecelgp",
+      "user_name": "Luis Gomez",
+      "companies": [
+        {
+          "company_name": "Ericsson",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "luis.gomez@ericsson.com",
+        "ecelgp@gmail.com"
+      ]
+    },
+    {
+      "ldap_id": "ffernandes",
+      "user_name": "Flavio Fernandes",
+      "companies": [
+        {
+          "company_name": "RedHat",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "ff@member.org",
+        "ffernand@redhat.com"
+      ]
+    },
+    {
+      "ldap_id": "hugo",
+      "user_name": "Hugo Trippaers",
+      "companies": [
+        {
+          "company_name": "*independent",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "trippie@gmail.com",
+        "hugo@trippaers.nl"
+      ]
+    },
+    {
+      "ldap_id": "mbobak",
+      "user_name": "Martin Bobak",
+      "companies": [
+        {
+          "company_name": "Cisco",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "mbobak@cisco.com",
+        "martin.bobak@pantheon.sk"
+      ]
+    },
+    {
+      "ldap_id": "rob.adams",
+      "user_name": "Rob Adams",
+      "companies": [
+        {
+          "company_name": "Big Switch",
+          "end_date": "2013-Oct-31"
+        },
+        {
+          "company_name": "Noiro",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "adams@noironetworks.com",
+        "rob.adams@bigswitch.com",
+        "readams@readams.net"
+      ]
+    },
+    {
+      "ldap_id": "rovarga",
+      "user_name": "Robert Varga",
+      "companies": [
+        {
+          "company_name": "Cisco",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "rovarga@cisco.com",
+        "robert.varga@pantheon.sk"
+      ]
+    },
+    {
+      "ldap_id": null,
+      "user_name": "Tushar Goyal",
+      "companies": [
+        {
+          "company_name": "Ericsson",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "goyaltushar7@gmail.com"
+      ]
+    },
+    {
+      "ldap_id": null,
+      "user_name": "Chris Wright",
+      "companies": [
+        {
+          "company_name": "RedHat",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "chrisw@redhat.com",
+        "chrisw@sous-sol.org"
+      ]
+    },
+    {
+      "ldap_id": null,
       "user_name": "Denghui Huang",
       "companies": [
         {
@@ -132,7 +248,7 @@
       ]
     },
     {
-      "ldap_id": "jenkins",
+      "ldap_id": null,
       "companies": [
         {
           "company_name": "*robots",
@@ -141,22 +257,30 @@
       ],
       "user_name": "Jenkins jobs",
       "emails": [
+        "jenkins-affinity@daylight6.linux-foundation.org",
         "jenkins-affinty@opendaylight.org",
         "jenkins-bgpcep@opendaylight.org",
         "jenkins-controller@opendaylight.org",
         "jenkins-vtn@opendaylight.org",
+        "jekins-integration@opendaylight.org",
         "jenkins-integration@opendaylight.org",
         "jenkins-lispflowmapping@opendaylight.org",
+        "jenkins-lispflowmapping@daylight6.linux-foundation.org",
         "jenkins-opendove@opendaylight.org",
+        "jenkins-opendove@daylight7.linux-foundation.org",
         "jenkins-openflowjava@opendaylight.org",
         "jenkins-openflowplugin@opendaylight.org",
         "jenkins-ovsdb@opendaylight.org",
+        "jenkins-ovsdb@daylight7.linux-foundation.org",
+        "jenkins-ovsdb@jenkins002.cvo.opendaylight.org",
+        "jekins-snmp4sdn@opendaylight.org",
         "jenkins-snmp4sdn@opendaylight.org",
-        "jenkins-yangtools@opendaylight.org"
+        "jenkins-yangtools@opendaylight.org",
+        "jenkins-yangtools@daylight6.linux-foundation.org"
       ]
     },
     {
-      "ldap_id": "mavenugo",
+      "ldap_id": "vmadhu",
       "user_name": "Madhu Venugopal",
       "companies": [
         {
@@ -176,7 +300,6 @@
     },
     {
       "ldap_id": "yangbaohua",
-      "gerrit_id": "yangbaohua",
       "user_name": "Baohua Yang",
       "companies": [
         {
@@ -319,6 +442,7 @@
     {
       "company_name": "Inocybe",
       "domains": [
+        "inocybe.ca",
         "inocybe.com"
       ]
     },
@@ -344,6 +468,12 @@
       "company_name": "Midokura",
       "domains": [
         "midokura.com"
+      ]
+    },
+    {
+      "company_name": "Noiro",
+      "domains": [
+        "noironetworks.com"
       ]
     },
     {
@@ -408,98 +538,7 @@
       ]
     }
   ],
-  "repos": [
-    {
-      "uri": "git://github.com/opendaylight/controller.git",
-      "module": "controller",
-      "organization": "opendaylight"
-    },
-    {
-      "uri": "git://github.com/opendaylight/openflowplugin.git",
-      "module": "openflowplugin",
-      "organization": "opendaylight"
-    },
-    {
-      "uri": "git://github.com/opendaylight/openflowjava.git",
-      "module": "openflowjava",
-      "organization": "opendaylight"
-    },
-    {
-      "uri": "git://github.com/opendaylight/yangtools.git",
-      "module": "yangtools",
-      "organization": "opendaylight"
-    },
-    {
-      "uri": "git://github.com/opendaylight/ovsdb.git",
-      "module": "ovsdb",
-      "organization": "opendaylight"
-    },
-    {
-      "uri": "git://github.com/opendaylight/toolkit.git",
-      "module": "toolkit",
-      "organization": "opendaylight"
-    },
-    {
-      "uri": "git://github.com/opendaylight/bgpcep.git",
-      "module": "bgpcep",
-      "organization": "opendaylight"
-    },
-    {
-      "uri": "git://github.com/opendaylight/lispflowmapping.git",
-      "module": "lispflowmapping",
-      "organization": "opendaylight"
-    },
-    {
-      "uri": "git://github.com/opendaylight/vtn.git",
-      "module": "vtn",
-      "organization": "opendaylight"
-    },
-    {
-      "uri": "git://github.com/opendaylight/snmp4sdn.git",
-      "module": "snmp4sdn",
-      "organization": "opendaylight"
-    },
-    {
-      "uri": "git://github.com/opendaylight/dlux.git",
-      "module": "dlux",
-      "organization": "opendaylight"
-    },
-    {
-      "uri": "git://github.com/opendaylight/integration.git",
-      "module": "integration",
-      "organization": "opendaylight"
-    },
-    {
-      "uri": "git://github.com/opendaylight/opendove.git",
-      "module": "opendove",
-      "organization": "opendaylight"
-    },
-    {
-      "uri": "git://github.com/opendaylight/groupbasedpolicy.git",
-      "module": "groupbasedpolicy",
-      "organization": "opendaylight"
-    },
-    {
-      "uri": "git://github.com/opendaylight/affinity.git",
-      "module": "affinity",
-      "organization": "opendaylight"
-    },
-    {
-      "uri": "git://github.com/opendaylight/net-virt-platform.git",
-      "module": "net-virt-platform",
-      "organization": "opendaylight"
-    },
-    {
-      "uri": "git://github.com/opendaylight/defense4all.git",
-      "module": "defense4all",
-      "organization": "opendaylight"
-    },
-    {
-      "uri": "git://github.com/opendaylight/defense4all.git",
-      "module": "defense4all",
-      "organization": "opendaylight"
-    }
-  ],
+  "repos": [],
   "project_sources": [
     {
       "organization": "opendaylight",
@@ -538,16 +577,7 @@
     "http://lists.opendaylight.org/pipermail/discuss/",
     "http://lists.opendaylight.org/pipermail/dev/"
   ],
-  "module_groups": [
-    {
-      "module_group_name": "virtualization-group",
-      "modules": [
-        "ovsdb",
-        "opendove",
-        "vtn"
-      ]
-    }
-  ],
+  "module_groups": [],
   "project_types": [
     {
       "id": "all",

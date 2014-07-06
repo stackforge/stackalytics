@@ -1,5 +1,7 @@
 class {'spectrometer':
     clone_repo          => false,
+    debug               => true,
+    default_data_uri    => 'file:///vagrant/etc/default_data.json',
     processor_hour      => '*',
     processor_minute    => '*/20',
     ssh_username        => dave-tucker

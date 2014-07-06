@@ -345,7 +345,8 @@ class TestRecordProcessor(testtools.TestCase):
             record_processor_inst.runtime_storage_inst, 'john_doe'))
 
     def test_process_commit_then_review_with_different_email(self):
-        # In this case, we don't know how to associate the email from the commit with the LDAP ID so two users are created.
+        # In this case, we don't know how to associate the email from the
+        # commit with the LDAP ID so two users are created.
 
         record_processor_inst = self.make_record_processor(
             companies=[{'company_name': 'IBM', 'domains': ['ibm.com']}])
