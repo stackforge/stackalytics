@@ -1,6 +1,38 @@
 {
   "users": [
     {
+      "ldap_id": null,
+      "companies": [
+        {
+          "company_name": "*robots",
+          "end_date": null
+        }
+      ],
+      "user_name": "Jenkins jobs",
+      "emails": [
+        "jenkins-affinity@daylight6.linux-foundation.org",
+        "jenkins-affinty@opendaylight.org",
+        "jenkins-bgpcep@opendaylight.org",
+        "jenkins-controller@opendaylight.org",
+        "jenkins-vtn@opendaylight.org",
+        "jekins-integration@opendaylight.org",
+        "jenkins-integration@opendaylight.org",
+        "jenkins-lispflowmapping@opendaylight.org",
+        "jenkins-lispflowmapping@daylight6.linux-foundation.org",
+        "jenkins-opendove@opendaylight.org",
+        "jenkins-opendove@daylight7.linux-foundation.org",
+        "jenkins-openflowjava@opendaylight.org",
+        "jenkins-openflowplugin@opendaylight.org",
+        "jenkins-ovsdb@opendaylight.org",
+        "jenkins-ovsdb@daylight7.linux-foundation.org",
+        "jenkins-ovsdb@jenkins002.cvo.opendaylight.org",
+        "jekins-snmp4sdn@opendaylight.org",
+        "jenkins-snmp4sdn@opendaylight.org",
+        "jenkins-yangtools@opendaylight.org",
+        "jenkins-yangtools@daylight6.linux-foundation.org"
+      ]
+    },
+    {
       "ldap_id": "aashaikh-d",
       "user_name": "Anees Shaikh",
       "companies": [
@@ -42,6 +74,20 @@
       ],
       "emails": [
         "brent.salisbury@gmail.com"
+      ]
+    },
+    {
+      "ldap_id": "chrisw",
+      "user_name": "Chris Wright",
+      "companies": [
+        {
+          "company_name": "RedHat",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "chrisw@redhat.com",
+        "chrisw@sous-sol.org"
       ]
     },
     {
@@ -208,78 +254,6 @@
       ]
     },
     {
-      "ldap_id": null,
-      "user_name": "Tushar Goyal",
-      "companies": [
-        {
-          "company_name": "Ericsson",
-          "end_date": null
-        }
-      ],
-      "emails": [
-        "goyaltushar7@gmail.com"
-      ]
-    },
-    {
-      "ldap_id": null,
-      "user_name": "Chris Wright",
-      "companies": [
-        {
-          "company_name": "RedHat",
-          "end_date": null
-        }
-      ],
-      "emails": [
-        "chrisw@redhat.com",
-        "chrisw@sous-sol.org"
-      ]
-    },
-    {
-      "ldap_id": null,
-      "user_name": "Denghui Huang",
-      "companies": [
-        {
-          "company_name": "IBM",
-          "end_date": null
-        }
-      ],
-      "emails": [
-        "huangdenghui@gmail.com"
-      ]
-    },
-    {
-      "ldap_id": null,
-      "companies": [
-        {
-          "company_name": "*robots",
-          "end_date": null
-        }
-      ],
-      "user_name": "Jenkins jobs",
-      "emails": [
-        "jenkins-affinity@daylight6.linux-foundation.org",
-        "jenkins-affinty@opendaylight.org",
-        "jenkins-bgpcep@opendaylight.org",
-        "jenkins-controller@opendaylight.org",
-        "jenkins-vtn@opendaylight.org",
-        "jekins-integration@opendaylight.org",
-        "jenkins-integration@opendaylight.org",
-        "jenkins-lispflowmapping@opendaylight.org",
-        "jenkins-lispflowmapping@daylight6.linux-foundation.org",
-        "jenkins-opendove@opendaylight.org",
-        "jenkins-opendove@daylight7.linux-foundation.org",
-        "jenkins-openflowjava@opendaylight.org",
-        "jenkins-openflowplugin@opendaylight.org",
-        "jenkins-ovsdb@opendaylight.org",
-        "jenkins-ovsdb@daylight7.linux-foundation.org",
-        "jenkins-ovsdb@jenkins002.cvo.opendaylight.org",
-        "jekins-snmp4sdn@opendaylight.org",
-        "jenkins-snmp4sdn@opendaylight.org",
-        "jenkins-yangtools@opendaylight.org",
-        "jenkins-yangtools@daylight6.linux-foundation.org"
-      ]
-    },
-    {
       "ldap_id": "vmadhu",
       "user_name": "Madhu Venugopal",
       "companies": [
@@ -296,19 +270,6 @@
         "mavenugo@gmail.com",
         "vmadhu@cisco.com",
         "vmadhu@redhat.com"
-      ]
-    },
-    {
-      "ldap_id": "yangbaohua",
-      "user_name": "Baohua Yang",
-      "companies": [
-        {
-          "company_name": "IBM",
-          "end_date": null
-        }
-      ],
-      "emails": [
-        "yangbaohua@gmail.com"
       ]
     }
   ],
@@ -471,16 +432,16 @@
       ]
     },
     {
-      "company_name": "Noiro",
-      "domains": [
-        "noironetworks.com"
-      ]
-    },
-    {
       "company_name": "NEC",
       "domains": [
         "nec.com",
         "nec.co.jp"
+      ]
+    },
+    {
+      "company_name": "Noiro",
+      "domains": [
+        "noironetworks.com"
       ]
     },
     {
