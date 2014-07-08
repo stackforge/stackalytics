@@ -6207,7 +6207,7 @@
         {
             "domains": ["canonical.com"],
             "company_name": "Canonical",
-            "aliases": ["Canoncail, Ltd."]
+            "aliases": ["Canonical, Ltd.", "Canonical Ltd."]
         },
         {
             "domains": ["centraldesktop.com"],
