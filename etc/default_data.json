@@ -45,6 +45,18 @@
             "emails": ["morgan@parelastic.com", "morgan@tesora.com"]
         },
         {
+            "launchpad_id": "docaedo",
+            "gerrit_id": "doc",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Christopher Aedo",
+            "emails": ["doc@aedo.net", "caedo@mirantis.com"]
+        },
+        {
             "launchpad_id": "a-gorodnev",
             "gerrit_id": "agorodnev",
             "companies": [
