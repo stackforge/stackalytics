@@ -2591,6 +2591,13 @@
             "module": "openstack-manuals",
             "subject": "Enable building of French user Guide"
         }
-
+        {
+            "correction_comment": "Reset LOC to 623 (number of deleted files)",
+            "loc": 623,
+            "change_id": ["908491f6eebc7c123aed03cdb2d1f24a8e3a8d5d"],
+            "primary_key": "aa7a7cd794f7f5244107d888b5add366ff5920f4",
+            "module": "openstack-manuals",
+            "subject": "Remove all mostly untranslated PO files"
+        },
     ]
 }
