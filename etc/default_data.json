@@ -1,5 +1,16 @@
 {
-    "users": [
+    "users": [ 
+        {
+            "launchpad_id": "aishu-ece",
+            "companies": [
+                {
+                    "company_name": "Hewlett Packard",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Aishwarya Thangappa",
+            "emails": ["aishu.ece@gmail.com"]
+        },
         {
             "launchpad_id": "0-doug",
             "companies": [
