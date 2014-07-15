@@ -6147,6 +6147,17 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "koti-kelam",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Koteswara Rao Kelam",
+            "emails": ["koteswara.kelam@hp.com", "koti.kelam@gmail.com"]
         }
     ],
     "companies": [
