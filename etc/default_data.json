@@ -533,6 +533,18 @@
             "emails": ["amigliaccio@nicira.com", "armando.migliaccio@eu.citrix.com", "amigliaccio@internap.com", "armamig@gmail.com", "armando.migliaccio@citrix.com"]
         },
         {
+            "launchpad_id": "koti-kelam",
+            "gerrit_id": "koteswar",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Koteswara Rao Kelam",
+            "emails": ["koteswara.kelam@hp.com", "koti.kelam@gmail.com"]
+        },
+        {
             "launchpad_id": "arnaudleg",
             "companies": [
                 {
