@@ -1,0 +1,241 @@
+{% extends "kpi/base_kpi.html" %}
+
+{% block title %}
+    Example of scripted KPI report
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript">
+        'use strict';
+
+        var now = Math.floor(Date.now() / 1000);
+
+        var release_pattern = /Release (\S+)/;
+        var group_pattern = /Group (\S+)/;
+        var company_pattern = /Company (\S+)/;
+        var user_pattern = /User (\S+)/;
+
+        var in_pattern = /.*?(\s+in\s+(\S+)).*/;
+        var during_pattern = /.*?(\s+during\s+(\d+)\s+days).*/;
+        var make_pattern = /(make|draft|send|implement|file|fix|complete)\s+(\d+)\s+(\S+)/;
+        var top_pattern = /top\s+(\d+)\s+by\s+(\S+)/;
+        var core_pattern = /become\s+core/;
+        var not_less_than_pattern = /less\s+than\s+(\d+)%\s+by\s+(\S+)/;
+
+        function show_error(container, message) {
+            container.append($("<pre class='error'>Error! " + message + "</pre>"));
+        }
+
+        function make_options(release, metric, module, duration) {
+            var options = {metric: metric, module: module, project_type: "all"};
+            if (duration) {
+                options["start_date"] = now - duration * 60 * 60 * 24;
+                options["release"] = "all";
+            } else {
+                options["release"] = release;
+            }
+            return options;
+        }
+
+        function run_make_statement(statement, verb, count, noun, duration, item_type, item_id, module, release, container) {
+            var metric = noun;
+
+            if (noun == "blueprints") {
+                metric = (verb == "draft") ? "bpd" : "bpc";
+            }
+            if (noun == "bugs") {
+                metric = (verb == "file") ? "filed-bugs" : "resolved-bugs";
+            }
+            if (noun == "reviews") {
+                metric = "marks";
+            }
+
+            goal_metric(container, make_options(release, metric, module, duration),
+                    item_type, item_id, count, statement);
+        }
+
+        function run_top_statement(statement, position, noun, duration, item_type, item_id, module, release, container) {
+            var metric = noun;
+            if (noun == "reviews") {
+                metric = "marks";
+            }
+
+            goal_position_in_top(container, make_options(release, metric, module, duration),
+                    item_type, item_id, position, statement);
+        }
+
+        function run_not_less_than_statement(statement, percentage, noun, duration, item_type, item_id, module, release, container) {
+            var metric = noun;
+            if (noun == "reviews") {
+                metric = "marks";
+            }
+
+            goal_percentage_in_top_less_than(container,
+                    make_options(release, metric, module, duration),
+                    item_type, item_id, percentage / 100.0, statement);
+        }
+
+        function parse_statements(item_type, item_id, module, release, details, container) {
+            for (var i in details) {
+                var original_statement = details[i];
+                var statement = original_statement;
+                var local_module = module;
+                var duration = null;
+
+                var pattern_match = in_pattern.exec(statement);
+                if (pattern_match) {
+                    local_module = pattern_match[2];
+                    statement = statement.replace(pattern_match[1], "");
+                }
+                pattern_match = during_pattern.exec(statement);
+                if (pattern_match) {
+                    duration = pattern_match[2];
+                    statement = statement.replace(pattern_match[1], "");
+                }
+
+                statement = statement.trim();
+
+                pattern_match = make_pattern.exec(statement);
+                if (pattern_match) {
+                    run_make_statement(original_statement, pattern_match[1], pattern_match[2], pattern_match[3], duration,
+                            item_type, item_id, local_module, release, container);
+                    continue;
+                }
+
+                pattern_match = top_pattern.exec(statement);
+                if (pattern_match) {
+                    run_top_statement(original_statement, pattern_match[1], pattern_match[2], duration,
+                            item_type, item_id, local_module, release, container);
+                    continue;
+                }
+
+                pattern_match = core_pattern.exec(statement);
+                if (pattern_match) {
+                    goal_core_engineer_in_project(container, item_id, local_module, original_statement);
+                    continue;
+                }
+
+                pattern_match = not_less_than_pattern.exec(statement);
+                if (pattern_match) {
+                    run_not_less_than_statement(original_statement, pattern_match[1], pattern_match[2], duration,
+                            item_type, item_id, local_module, release, container);
+                    continue;
+                }
+
+                show_error(container, "Could not parse statement: '" + statement + "'");
+            }
+        }
+
+        function parse_group(group, release, details, container) {
+            var users = [];
+            var unmatched = {};
+
+            for (var token in details) {
+                var pattern_match = user_pattern.exec(token);
+                if (pattern_match) {
+                    var user = pattern_match[1];
+                    users.push(user);
+
+                    var body = $("<div id='u" + Math.random() + "'/>");
+                    var user_title_block = $("<h3>" + user + "</h3>");
+                    container.append(user_title_block).append(body);
+
+                    load_user_profile(user_title_block, user);
+
+                    parse_statements("engineers", user, group, release, details[token], body);
+                } else {
+                    unmatched[token] = details[token];
+                }
+            }
+        }
+
+        function parse_release(release, details, container) {
+            for (var token in details) {
+                var pattern_match = group_pattern.exec(token);
+                if (pattern_match) {
+                    var group = pattern_match[1];
+
+                    var body = $("<div/>");
+                    var title_block = $("<h2>" + group + "</h2>");
+                    container.append(title_block).append(body);
+
+                    load_module_details(title_block, group);
+
+                    parse_group(group, release, details[token], body);
+                    continue;
+                }
+
+                pattern_match = company_pattern.exec(token);
+                if (pattern_match) {
+                    var company = pattern_match[1];
+
+                    body = $("<div/>");
+                    container.append($("<h2>" + company + "</h2>")).append(body);
+
+                    parse_statements("companies", company, "all", release, details[token], body);
+                    continue;
+                }
+
+                show_error(container, "Could not parse line: '" + token + "'");
+            }
+
+        }
+
+        function parse_kpi_script(parsed_script, container) {
+            for (var token in parsed_script) {
+                var pattern_match = release_pattern.exec(token);
+                if (pattern_match) {
+                    var release = pattern_match[1];
+
+                    var body = $("<div/>");
+                    $(container).append($("<h1>" + release + "</h1>")).append(body);
+
+                    parse_release(release, parsed_script[token], body);
+                    continue;
+                }
+
+                show_error(container, "Could not parse line: '" + token + "'");
+            }
+        }
+
+        $(document).ready(function () {
+
+            var kpi_script = $("#kpi_script").html();
+            var root_container = $("#root_container");
+
+            try {
+                var parsed_script = jsyaml.safeLoad(kpi_script);
+                parse_kpi_script(parsed_script, root_container);
+            } catch(e) {
+                show_error(root_container, "Could not parse script: '" + kpi_script + "'");
+            }
+        });
+    </script>
+{% endblock %}
+
+
+{% block content %}
+
+    <div>KPI report can be configured by script. Please see the example below:</div>
+
+<pre id="kpi_script">
+Release Juno:
+  Group glance-group:
+    User lzy-dev:
+      - top 3 by commits
+      - top 4 by reviews in glance
+      - make 10 commits during 30 days
+      - become core
+    User apevec:
+      - make 15 reviews in python-glanceclient
+      - draft 2 blueprints
+      - implement 7 blueprints
+      - send 10 emails
+  Company Mirantis:
+    - top 5 by locs in openstack,openstack-dev
+    - less than 50% by commits in stackalytics
+</pre>
+
+    <div id="root_container"></div>
+
+{% endblock %}
