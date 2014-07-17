@@ -35,10 +35,20 @@
     <script type="text/javascript" src="{{ url_for('static', filename='js/jqplot.highlighter.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/select2.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.tmpl.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/js-yaml.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/stackalytics-ui.js') }}"></script>
 
     <script type="text/javascript">
         'use strict';
+
+        function append_kpi_block(container_id, kpi_block) {
+            var container = container_id;
+            if (typeof container_id == "string") {
+                container = $("#" + container_id);
+            }
+            container.append($("#kpi_block_template").tmpl(kpi_block));
+        }
+
         function process_stats(container_id, url, query_options, item_id, metric, text_goal, comparator, data_filter) {
             $.ajax({
                 url: makeURI(url, query_options),
@@ -75,7 +85,7 @@
                         result.mark = comparison_result.mark;
                         result.info = comparison_result.info;
                     }
-                    $("#kpi_block_template").tmpl(result).appendTo("#" + container_id);
+                    append_kpi_block(container_id, result);
                 }
             });
         }
@@ -165,7 +175,7 @@
                             text_goal: text_goal,
                             info: user.user_name + " (" + user_id + ") is " + (is_core? "": "not ") + "core engineer in " + project
                         };
-                        $("#kpi_block_template").tmpl(result).appendTo("#" + container_id);
+                        append_kpi_block(container_id, result);
                     },
                     error: function() {
                         var result = {
@@ -173,11 +183,33 @@
                             text_goal: text_goal,
                             info: "Item " + user_id + " is not found in the stats"
                         };
-                        $("#kpi_block_template").tmpl(result).appendTo("#" + container_id);
+                        append_kpi_block(container_id, result);
                     }
                 });
             });
         }
+
+    function load_user_profile(container, user_id) {
+        $.ajax({
+            url: makeURI("/api/1.0/users/" + user_id),
+            dataType: "json",
+            success: function (data) {
+                var user = data["user"];
+                container.html(user["user_name"] + " (" + user["user_id"] + ")");
+            }
+        });
+    }
+
+    function load_module_details(container, module_id) {
+        $.ajax({
+            url: makeURI("/api/1.0/modules/" + module_id),
+            dataType: "json",
+            success: function (data) {
+                var module = data["module"];
+                container.html(module["name"] + " (" + module["id"] + ")");
+            }
+        });
+    }
 
     </script>
 
