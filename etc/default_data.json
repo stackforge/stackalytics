@@ -3110,6 +3110,17 @@
             "emails": ["justin@fathomdb.com", "superstack@superstack.org"]
         },
         {
+            "launchpad_id": "johnson-dantis",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Johnson Dantis",
+            "emails": ["johnson.dantis@hp.com"]
+        },
+        {
             "launchpad_id": "k3vinmcdonald",
             "companies": [
                 {
@@ -6158,6 +6169,17 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "johnson-dantis",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Johnson Dantis",
+            "emails": ["johnson.dantis@hp.com"]
         }
     ],
     "companies": [
