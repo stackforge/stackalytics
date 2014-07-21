@@ -5226,6 +5226,17 @@
             "user_name": "Antoine Rouyer",
             "emails": ["antoine.rouyer@numergy.com", "rouyer.antoine@gmail.com", "sliim@mailoo.org"]
         },
+	{
+            "launchpad_id": "selvakumar-s2",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Selvakumar S",
+            "emails": ["selvakumar.s2@hp.com", "selvakumar.nms@gmail.com"]
+        },
         {
             "launchpad_id": "slukjanov",
             "companies": [
