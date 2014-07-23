@@ -2071,6 +2071,17 @@
             "emails": ["fungi@yuggoth.org", "jeremy@openstack.org"]
         },
         {
+            "launchpad_id": "furlongm",
+            "companies": [
+                {
+                    "company_name": "University of Melbourne",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Marcus Furlong",
+            "emails": ["furlongm@gmail.com", "marcus.furlong@unimelb.edu.au"]
+        },
+        {
             "launchpad_id": "gabriel-hurley",
             "companies": [
                 {
