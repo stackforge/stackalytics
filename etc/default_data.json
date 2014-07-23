@@ -6287,6 +6287,17 @@
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
         }
+        {
+            "launchpad_id": "ashraf-vazeer",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ashraf Vazeer",
+            "emails": ["ashrafvaz@gmail.com", "ashraf.vazeer@hp.com"]
+        }
     ],
     "companies": [
         {
