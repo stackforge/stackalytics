@@ -7,10 +7,27 @@
 {% block scripts %}
     <script type="text/javascript">
         $(document).ready(function () {
-            readKpiScript($("#kpi_script").val(), "root_container");
 
-            $("#btn_update").click(function() {
+            function processTextArea() {
                 readKpiScript($("#kpi_script").val(), "root_container");
+            }
+
+            var url_vars = getUrlVars();
+
+            if ("id" in url_vars) {
+                var script_uri = "https://docs.google.com/feeds/download/documents/export/Export?exportFormat=txt&id=" + url_vars["id"];
+                $.get(script_uri,function (data) {
+                    $("#kpi_script").val(data);
+                    processTextArea();
+                }).fail(function(){
+                    processTextArea();
+                });
+            } else {
+                processTextArea();
+            }
+
+            $("#btn_update").click(function () {
+                processTextArea();
             })
         });
     </script>
