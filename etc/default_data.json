@@ -6423,6 +6423,17 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "prdsilva",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "prdsilva",
+            "emails": ["preethi.dsilva@hp.com", "preethidsilva@gmail.com"]
         }
     ],
     "companies": [
