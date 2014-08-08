@@ -3522,11 +3522,19 @@
             "companies": [
                 {
                     "company_name": "Grid Dynamics",
+                    "end_date": "15-Jun-2011"
+                },
+                {
+                    "company_name": "independent",
+                    "end_date": "22-Jun-2014"
+                },
+                {
+                    "company_name": "Cisco Systems",
                     "end_date": null
                 }
             ],
             "user_name": "Kirill Shileev",
-            "emails": ["kshileev@griddynamics.com", "kshileev@gmail.com"]
+            "emails": ["kshileev@cisco.com", "kshileev@gmail.com"]
         },
         {
             "launchpad_id": "kspear",
