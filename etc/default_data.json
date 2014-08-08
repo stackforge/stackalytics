@@ -96,6 +96,10 @@
       "companies": [
         {
           "company_name": "IBM",
+          "end_date": "2014-Apr-25"
+        },
+        {
+          "company_name": "Brocade",
           "end_date": null
         }
       ],
