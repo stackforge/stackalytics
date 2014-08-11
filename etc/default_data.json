@@ -2499,6 +2499,17 @@
             "emails": ["yaguang.tang@canonical.com", "heut2008@gmail.com"]
         },
         {
+            "launchpad_id": "holzman",
+            "companies": [
+                {
+                    "company_name": "Fermi National Accelerator Laboratory",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Burt Holzman",
+            "emails": ["burt@fnal.gov, holzman@gmail.com"]
+        },
+        {
             "launchpad_id": "hodosmb",
             "companies": [
                 {
