@@ -6528,7 +6528,19 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "sina-sa",
+            "companies": [
+                {
+                    "company_name": "Aptira",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Sina Sadeghi",
+            "emails": ["sina.sa@gmail.com", "sina@aptira.com"]
         }
+
     ],
     "companies": [
         {
