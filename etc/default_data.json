@@ -3360,6 +3360,21 @@
             "emails": ["k3vinmcdonald@gmail.com"]
         },
         {
+            "launchpad_id": "roeyc",
+            "companies": [
+                {
+                    "company_name": "Mellanox",
+                    "end_date": "2014-Aug-4"
+                },
+                {
+                    "company_name": "VMware",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Roey Chen",
+            "emails": ["roeyc@vmware.com", "chen.roey@gmail.com"]
+        },
+        {
             "launchpad_id": "kanaderohan",
             "gerrit_id": "kanaderohan",
             "companies": [
