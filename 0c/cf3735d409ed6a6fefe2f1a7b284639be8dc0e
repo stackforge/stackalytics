@@ -1,0 +1,11 @@
+Verified+2: Jenkins
+Code-Review+1: Jian Wen <wenjian@letv.com>
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Workflow+1: Ilya Shakhat <ishakhat@mirantis.com>
+Code-Review+1: LIU Yulong <liuyulong@letv.com>
+Code-Review+1: Deliang Fan <fandeliang@letv.com>
+Submitted-by: Jenkins
+Submitted-at: Tue, 19 Aug 2014 08:52:47 +0000
+Reviewed-on: https://review.openstack.org/115164
+Project: stackforge/stackalytics
+Branch: refs/heads/master
