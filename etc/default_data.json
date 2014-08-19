@@ -3272,6 +3272,17 @@
             "emails": ["jon@csail.mit.edu", "jon@jonproulx.com"]
         },
         {
+            "launchpad_id": "johnsom",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Michael Johnson",
+            "emails": ["johnsom@hp.com", "johnsomor@gmail.com"]
+        },
+        {
             "launchpad_id": "jsavak",
             "companies": [
                 {
