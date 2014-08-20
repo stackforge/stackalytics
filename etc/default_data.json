@@ -5755,6 +5755,18 @@
             "emails": ["kokhang@gmail.com", "steve.leon@hp.com"]
         },
         {
+            "launchpad_id": "steve-lewis",
+            "gerrit_id": "stevelle",
+            "companies": [
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null,
+                }
+            ],
+            "user_name": "Steve Lewis",
+            "emails": ["steve.lewis@rackspace.com","stevelle@gmail.com"]
+        },
+        {   
             "launchpad_id": "steve-stevebaker",
             "companies": [
                 {
@@ -5790,6 +5802,18 @@
             ],
             "user_name": "Steve Kowalik",
             "emails": ["steven@wedontsleep.org"]
+        },
+        {
+            "launchpad_id": "steve-lewis",
+            "gerrit_id": "stevelle",
+            "companies": [
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Steve Lewis",
+            "emails": ["steve.lewis@rackspace.com", "stevelle@gmail.com"]
         },
         {
             "launchpad_id": "subbu",
