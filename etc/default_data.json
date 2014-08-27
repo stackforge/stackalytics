@@ -174,11 +174,16 @@
       "companies": [
         {
           "company_name": "Ericsson",
+          "end_date": "30-Mar-2014"
+        },
+        {
+          "company_name": "Brocade",
           "end_date": null
         }
       ],
       "emails": [
         "luis.gomez@ericsson.com",
+        "lpalacio@brocade.com>",
         "ecelgp@gmail.com"
       ]
     },
