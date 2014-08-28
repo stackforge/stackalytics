@@ -1081,11 +1081,15 @@
             "companies": [
                 {
                     "company_name": "Rackspace",
+                    "end_date": "2014-Jul-28"
+                },
+                {
+                    "company_name": "EMC",
                     "end_date": null
                 }
             ],
             "user_name": "Chad Lung",
-            "emails": ["chad.lung@gmail.com", "chad.lung@rackspace.com"]
+            "emails": ["chad.lung@gmail.com", "chad.lung@rackspace.com", "chad.lung@emc.com"]
         },
         {
             "launchpad_id": "chandankumar-093047",
