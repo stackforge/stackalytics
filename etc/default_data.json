@@ -4240,12 +4240,12 @@
             "launchpad_id": "miarmak",
             "companies": [
                 {
-                    "company_name": "Symantec",
+                    "company_name": "Mirantis",
                     "end_date": null
                 }
             ],
             "user_name": "Maksym Iarmak",
-            "emails": ["maksym_iarmak@symantec.com", "miarmak@mirantis.com"]
+            "emails": ["miarmak@mirantis.com"]
         },
         {
             "launchpad_id": "michael-ogorman",
