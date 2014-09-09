@@ -8832,6 +8832,33 @@
             ],
             "uri": "git://git.openstack.org/stackforge/fuel-main.git",
             "organization": "stackforge"
+        },
+        {
+            "module": "python-openstackclient",
+            "uri": "git://git.openstack.org/openstack/python-openstackclient.git",
+            "organization": "openstack",
+            "releases": [
+                {
+                    "tag_to": "0.3.0",
+                    "release_name": "m2 (helium)",
+                    "tag_from": "alpha"
+                },
+                {
+                    "tag_to": "0.3.1",
+                    "release_name": "m3 (lithium)",
+                    "tag_from": "0.3.0"
+                },
+                {
+                    "tag_to": "0.4.0",
+                    "release_name": "m4 (beryllium)",
+                    "tag_from": "0.3.0"
+                },
+                {
+                    "tag_to": "0.4.1",
+                    "release_name": "m5 (boron)",
+                    "tag_from": "0.4.0"
+                }
+            ]
         }
     ],
     "project_sources": [
