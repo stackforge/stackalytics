@@ -751,6 +751,17 @@
             "emails": ["bartosz.gorski@nttmcl.com", "bartosz.gorski@ntti3.com"]
         },
         {
+            "launchpad_id": "jacek-swiderski",
+            "companies": [
+                {
+                    "company_name": "NTT",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jacek \u015Awiderski",
+            "emails": ["jacek.swiderski@ntti3.com", "jacek.swiderski@codilime.com"]
+        },
+        {
             "launchpad_id": "bcwaldon",
             "companies": [
                 {
