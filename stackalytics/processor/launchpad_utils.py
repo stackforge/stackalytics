@@ -14,6 +14,7 @@
 # limitations under the License.
 
 import six
+import os
 from six.moves import http_client
 from six.moves.urllib import parse
 
@@ -51,12 +52,27 @@ def lp_profile_by_email(email):
 def lp_module_exists(module):
     uri = LP_URI_DEVEL % module
     parsed_uri = parse.urlparse(uri)
-    conn = http_client.HTTPConnection(parsed_uri.netloc)
-    conn.request('GET', parsed_uri.path)
-    res = conn.getresponse()
-    LOG.debug('Checked uri: %(uri)s, status: %(status)s',
-              {'uri': uri, 'status': res.status})
-    conn.close()
+    if os.environ['http_proxy']:
+        env_httpproxy = os.environ['http_proxy']
+        env_httpproxy_port = int(env_httpproxy.split(':')[-1])
+            if '//' in env_httpproxy:
+                env_httpproxy_host = env_httpproxy.split(':')[1].split('//')[-1]
+            else:
+                env_httpproxy_host = env_httpproxy.split(':')[0]
+        conn = http_client.HTTPConnection(env_httpproxy_host, env_httpproxy_port)
+        conn.set_tunnel(parsed_uri.netloc)
+        conn.request('GET', parsed_uri.path)
+        res = conn.getresponse()
+        LOG.debug('Checked uri: %(uri)s, status: %(status)s',
+                  {'uri': uri, 'status': res.status})
+        conn.close()
+    else:
+        conn = http_client.HTTPConnection(parsed_uri.netloc)
+        conn.request('GET', parsed_uri.path)
+        res = conn.getresponse()
+        LOG.debug('Checked uri: %(uri)s, status: %(status)s',
+                  {'uri': uri, 'status': res.status})
+        conn.close()
     return res.status != 404
 
 

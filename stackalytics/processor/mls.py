@@ -15,6 +15,7 @@
 
 from email import utils as email_utils
 import re
+import os
 
 import six
 from six.moves import http_client
@@ -63,11 +64,25 @@ def _get_mail_archive_links(uri):
 def _link_content_changed(link, runtime_storage_inst):
     LOG.debug('Check changes for mail archive located at uri: %s', link)
     parsed_uri = parse.urlparse(link)
-    conn = http_client.HTTPConnection(parsed_uri.netloc)
-    conn.request('HEAD', parsed_uri.path)
-    res = conn.getresponse()
-    last_modified = res.getheader('last-modified')
-    conn.close()
+    if os.environ['http_proxy']:
+        env_httpproxy = os.environ['http_proxy']
+        env_httpproxy_port = int(env_httpproxy.split(':')[-1])
+        if '//' in env_httpproxy:
+            env_httpproxy_host = env_httpproxy.split(':')[1].split('//')[-1]
+        else:
+            env_httpproxy_host = env_httpproxy.split(':')[0]
+        conn = http_client.HTTPConnection(env_httpproxy_host, env_httpproxy_port)
+        conn.set_tunnel(parsed_uri.netloc)
+        conn.request('HEAD', parsed_uri.path)
+        res = conn.getresponse()
+        last_modified = res.getheader('last-modified')
+        conn.close()
+    else:
+        conn = http_client.HTTPConnection(parsed_uri.netloc)
+        conn.request('HEAD', parsed_uri.path)
+        res = conn.getresponse()
+        last_modified = res.getheader('last-modified')
+        conn.close()
 
     if last_modified != runtime_storage_inst.get_by_key('mail_link:' + link):
         LOG.debug('Mail archive changed, last modified at: %s', last_modified)
