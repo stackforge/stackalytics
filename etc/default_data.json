@@ -263,6 +263,24 @@
       ]
     },
     {
+      "user_name": "Thomas D. Nadeau",
+      "ldap_id": "tnadeau",
+      "companies": [
+        {
+          "company_name": "Lucidvision",
+          "end_date": null
+        },
+        {
+          "company_name": "Brocade",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "tnadeau@lucidvision.com",
+        "tnadeau@brocade.com"
+      ]
+    },
+    {
       "ldap_id": "vmadhu",
       "user_name": "Madhu Venugopal",
       "companies": [
