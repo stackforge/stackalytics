@@ -1,6 +1,17 @@
 {
     "users": [
         {
+            "launchpad_id": "romilg",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "romilg",
+            "emails": ["romilg@hp.com", "romilgupta19@gmail.com"]
+        },
+        {
             "launchpad_id": "0-doug",
             "companies": [
                 {
