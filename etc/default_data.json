@@ -2053,6 +2053,17 @@
             "emails": ["duncan.thomas@hp.com", "duncan.thomas@gmail.com"]
         },
         {
+            "launchpad_id": "mark-sturdevant",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Mark Sturdevant",
+            "emails": ["mark.sturdevant@hp.com", "markstur@hp.com"]
+        },
+        {
             "launchpad_id": "dustin",
             "companies": [
                 {
