@@ -4423,6 +4423,21 @@
             "emails": ["morgan.fainberg@gmail.com", "morgan@fainberg.net", "morgan.fainberg@hp.com", "m@metacloud.com", "morgan@metacloud.com"]
         },
         {
+            "launchpad_id": "med",
+            "companies": [
+                {
+                    "company_name": "*independent",
+                    "end_date": "2014-Jan-27"
+                },
+                {
+                    "company_name": "Time Warner Cable",
+                    "end_date": null
+                }
+            ],
+            "user_name": "David Medberry",
+            "emails": ["openstack@medberry.net", "david.medberry@twcable.com", "ubuntu@medberry.net", "dave@medberry.net" "medberry@gmail.com"]
+        },
+        {
             "launchpad_id": "mestery",
             "companies": [
                 {
