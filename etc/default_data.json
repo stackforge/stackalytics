@@ -7011,6 +7011,17 @@
             "emails": ["xianghui@cn.ibm.com", "hui.xiang@canonical.com"]
         },
         {
+            "launchpad_id": "tan-lin-good",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Tan Lin",
+            "emails": ["tan.lin.good@gmail.com"]
+        },
+        {
             "launchpad_id": "xtoddx",
             "companies": [
                 {
