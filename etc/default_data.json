@@ -6490,6 +6490,17 @@
             "emails": ["thang.pham@us.ibm.com", "thang.pham@simplivity.com", "thang.g.pham@gmail.com"]
         },
         {
+            "launchpad_id": "tan-lin-good",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Tan Lin",
+            "emails": [ "tan.lin.good@gmail.com"]
+        },
+        {
             "launchpad_id": "therve",
             "companies": [
                 {
