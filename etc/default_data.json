@@ -6794,10 +6794,6 @@
             "company_name": "Mirantis"
         },
         {
-            "domains": ["mit.edu"],
-            "company_name": "MIT"
-        },
-        {
             "domains": ["momentumsi.com"],
             "company_name": "MomentumSI",
             "aliases": ["MomentumSI, Transcend Computing"]
