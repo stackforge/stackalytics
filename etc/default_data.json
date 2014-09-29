@@ -740,6 +740,17 @@
             "emails": ["mkislins@yahoo-inc.com", "mkislinska@griddynamics.com"]
         },
         {
+            "launchpad_id": "azher-ullah-khan",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Azher Ullah Khan",
+            "emails": ["azher-ullah.khan@hp.com"]
+        },
+        {
             "launchpad_id": "bartosz-gorski",
             "companies": [
                 {
