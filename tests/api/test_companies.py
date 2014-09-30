@@ -81,7 +81,16 @@ class TestAPICompanies(test_api.TestAPI):
                      'uri': 'git://git.openstack.org/openstack/nova.git'},
                     {'module': 'glance', 'project_type': 'openstack',
                      'organization': 'openstack',
-                     'uri': 'git://git.openstack.org/openstack/glance.git'}]},
+                     'uri': 'git://git.openstack.org/openstack/glance.git'}],
+                 'module_groups': {
+                     'nova': test_api.make_module('nova'),
+                     'glance': test_api.make_module('glance'),
+                 },
+                 'project_types': [
+                     {'id': 'all', 'title': 'All',
+                      'modules': ['nova', 'glance', 'nova-cli']},
+                     {'id': 'openstack', 'title': 'OpenStack',
+                      'modules': ['nova', 'glance']}]},
                 test_api.make_records(record_type=['commit'],
                                       loc=[10, 20, 30],
                                       module=['glance'],
