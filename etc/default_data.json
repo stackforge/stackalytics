@@ -4665,7 +4665,11 @@
             "companies": [
                 {
                     "company_name": "Cisco Systems",
-                    "end_date": null
+                    "end_date": "2014-Sep-26"
+                },
+                {
+                    "company_name": "HP",
+                    "end_date": "null"
                 }
             ],
             "user_name": "Kyle Mestery",
