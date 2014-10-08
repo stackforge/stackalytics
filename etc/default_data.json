@@ -361,6 +361,17 @@
             "emails": ["allison@lohutok.net", "allison@ubuntu.com", "allison.randal@hp.com"]
         },
         {
+            "launchpad_id": "amaurymedeiros",
+            "companies": [
+                {
+                    "company_name": "*independent",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Amaury Medeiros",
+            "emails": ["amaurymedeiros@gmail.com"]
+        },
+        {
             "launchpad_id": "amcrn",
             "companies": [
                 {
