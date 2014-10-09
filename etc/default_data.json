@@ -8062,7 +8062,8 @@
         },
         {
             "domains": ["enovance.com"],
-            "company_name": "eNovance"
+            "company_name": "Red Hat",
+            "aliases": ["eNovance"]
         },
         {
             "domains": ["epam.com"],
