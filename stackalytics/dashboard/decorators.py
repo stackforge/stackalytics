@@ -197,6 +197,24 @@ def record_filter(ignore=None):
                     record_ids,
                     memory_storage_inst.get_record_ids_by_companies(company))
 
+            if params.has_key("group"):
+                group = params['group']
+                if group:
+                    user_ids = []
+                    if flask.session.has_key("groupdata"):
+                        json_data = flask.session["groupdata"]
+                        data = json.loads(json_data)
+                    else:
+                        json_data=open('/home/loki/Desktop/s.json')
+                        data = json.load(json_data)
+                    for g in data["data"]:
+                        print g["group"],group[0]
+                        if g["group"].lower() == group[0].lower():
+                            userdids = g["users"]
+                    record_ids = _intersect(
+                        record_ids,
+                        memory_storage_inst.get_record_ids_by_user_ids(userdids))
+
             metric = params['metric']
             if 'all' not in metric:
                 for metric in metric:
