@@ -197,6 +197,22 @@ def record_filter(ignore=None):
                     record_ids,
                     memory_storage_inst.get_record_ids_by_companies(company))
 
+            if "group" in params:
+                group = params['group']
+                if group:
+                    if "groupdata" in flask.session:
+                        json_data = flask.session["groupdata"]
+                        data = json.loads(json_data)
+                    else:
+                        data = {"data": []}
+                    for g in data["data"]:
+                        if g["group"].lower() == group[0].lower():
+                            userids = g["users"]
+                    record_ids = _intersect(
+                        record_ids,
+                        memory_storage_inst.get_record_ids_by_user_ids(
+                            userids))
+
             metric = params['metric']
             if 'all' not in metric:
                 for metric in metric:

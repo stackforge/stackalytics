@@ -7,6 +7,29 @@ Stackalytics {% if page_title %}| {{ page_title }} {% endif %}
 {% block head %}
 
 <script type="text/javascript">
+
+    function files_upload(){
+           json = $("#file_selector").val()
+           try {
+               var c = $.parseJSON(json);
+           }
+           catch (err) {
+               alert("Not a valid json");
+               return;
+           }
+           $.ajax({
+               type: "POST",
+               url: '/savejson',
+               data: { 'js': json },
+               success: function (data) {
+                        location.reload();
+                        window.location.reload();
+               },
+           });
+         setTimeout(function () { location.reload(true); }, 3000);
+    }
+
+
     $(document).ready(function () {
         initSelectors("");
     });
@@ -75,6 +98,15 @@ Stackalytics {% if page_title %}| {{ page_title }} {% endif %}
                 <input type="hidden" id="metric_selector" style="width: 140px" data-placeholder="Select metric"/>
             </div>
 
+           <div class="drop">
+                <label for="metric_selector" title="One of available groups">Group</label>
+                <input type="hidden" id="group_selector" style="width: 140px" data-placeholder="Select group"/>
+            </div>
+
+            <div class="drop">
+                <label for="metric_selector" title="One of available groups">Group</label>
+               <a> <input type="text" id="file_selector" style="width: 140px;height: 25px"  data-placeholder="Select group"/> <span><input type="submit" onclick="files_upload();" /></span></a>
+            </div>
         </div>
     </div>
 
