@@ -8017,6 +8017,11 @@
             "company_name": "Debian",
             "aliases": ["debian.org"]
         },
+         {
+            "domains": ["dektech.com.au"],
+            "company_name": "DEK Technologies",
+            "aliases": ["DEK Technologies","DEK"]
+        },
         {
             "domains": ["dell.com", "software.dell.com"],
             "company_name": "Dell",
