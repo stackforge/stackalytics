@@ -3476,8 +3476,8 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Johnson koil raj",
-            "emails": ["johnson.raj@hp.com", "jjohnsonkoilraj@yahoo.co.in"]
+            "user_name": "johnson raj",
+            "emails": ["johnson.raj@hp.com"]
         },
         {
             "launchpad_id": "jk0",
@@ -4486,6 +4486,17 @@
             ],
             "user_name": "Kei Masumoto",
             "emails": ["masumotok@nttdata.co.jp"]
+        },
+        {
+            "launchpad_id": "matarazzoangelo",
+            "companies": [
+               {
+                    "company_name": "DEK Technologies",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Angelo Matarazzo",
+            "emails": ["angelo.matarazzo@dektech.com.au"]
         },
         {
             "launchpad_id": "mathieu-rohon",
@@ -8018,6 +8029,11 @@
             "aliases": ["debian.org"]
         },
         {
+            "domains": ["dektech.com.au"],
+            "company_name": "DEK Technologies",
+            "aliases": ["DEK Technologies","DEK"]
+        },
+        {
             "domains": ["dell.com", "software.dell.com"],
             "company_name": "Dell",
             "aliases": ["Dell  &amp; Ganette Publishing", "Dell, Inc., Cabarrus County Schools", "Dell & Ganette Publishing"]
@@ -8059,6 +8075,10 @@
         {
             "domains": ["endurancewindpower.com"],
             "company_name": "Endurance Wind Power"
+        },
+        {
+            "domains": ["enovance.com"],
+            "company_name": "eNovance"
         },
         {
             "domains": ["epam.com"],
@@ -8476,9 +8496,9 @@
             "company_name": "Ravello Systems"
         },
         {
-            "domains": ["redhat.com", "gluster.com", "enovance.com"],
+            "domains": ["redhat.com", "gluster.com"],
             "company_name": "Red Hat",
-            "aliases": ["Red Hat Canada, Inc", "Red Hat Czech, s.r.o.", "Red Hat, Inc., Bloomberg L.P.", "Red Hat India Pvt. Ltd.", "Red Hat Software", "eNovance"]
+            "aliases": ["Red Hat Canada, Inc", "Red Hat Czech, s.r.o.", "Red Hat, Inc., Bloomberg L.P.", "Red Hat India Pvt. Ltd.", "Red Hat Software"]
         },
         {
             "domains": ["reduxio.com"],
