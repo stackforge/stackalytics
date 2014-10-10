@@ -18,6 +18,7 @@ import operator
 import os
 import re
 import time
+import json
 
 import flask
 from oslo.config import cfg
@@ -36,7 +37,9 @@ from stackalytics.processor import utils
 # Application objects ---------
 
 app = flask.Flask(__name__)
+
 app.config.from_object(__name__)
+app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
 app.config.from_envvar('DASHBOARD_CONF', silent=True)
 app.register_blueprint(reports.blueprint)
 app.register_blueprint(kpi.blueprint)
@@ -319,6 +322,32 @@ def get_modules_json(record_ids, **kwargs):
                        'tag': module['tag']})
 
     return sorted(result, key=operator.itemgetter('text'))
+
+
+@app.route('/api/1.0/group')
+@decorators.exception_handler()
+@decorators.response()
+@decorators.jsonify(root=('data', 'default'))
+def get_groups_json(**kwargs):
+    group_list = []
+    if flask.session.has_key('groupdata'):
+        json_data = flask.session['groupdata']
+        data = json.loads(json_data)
+    else:
+        data = {"data":""} 
+
+    for dat in data["data"]:
+        group_list.append(dat["group"])
+    return (sorted([{'id': m, 'text': m} for m in
+                    group_list],
+                   key=operator.itemgetter('text')),
+            parameters.get_default('group'))
+
+@app.route('/savejson', methods=["POST"])
+@decorators.response()
+def get_jsonfile(**kwargs):
+    flask.session['groupdata'] =  flask.request.form['js']
+    return
 
 
 @app.route('/api/1.0/companies/<company_name>')
