@@ -1,0 +1,10 @@
+Verified+2: Jenkins
+Code-Review+1: David Medberry <openstack@medberry.net>
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Workflow+1: Ilya Shakhat <ishakhat@mirantis.com>
+Code-Review+1: Adam Vinsh <a.vinsh1@comcast.net>
+Submitted-by: Jenkins
+Submitted-at: Tue, 14 Oct 2014 12:07:59 +0000
+Reviewed-on: https://review.openstack.org/128102
+Project: stackforge/stackalytics
+Branch: refs/heads/master
