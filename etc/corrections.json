@@ -2687,5 +2687,13 @@
             "module": "openstack-manuals",
             "subject": "Update sitemap.xml file"
         }
+        {
+            "correction_comment": "Reset LOC to 0",
+            "loc": 0,
+            "change_id": ["Id875ad0f221acc6532b0df85114b34d4bb175a7f"],
+            "primary_key": "11b4d2c213c55542e6b6af7a8e02191d0fa57497",
+            "module": "openstack-manuals",
+            "subject": "Regenerate sitemap.xml"
+        }
     ]
 }
