@@ -5239,6 +5239,17 @@
             "emails": ["novel.kumar@gmail.com"]
         },
         {
+            "launchpad_id": "nejc-saje",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Nejc Saje",
+            "emails": ["nsaje@redhat.com", "nejc.saje@xlab.si", "nejc.saje@gmail.com", "nejc@saje.info "]
+        },
+        {
             "launchpad_id": "o-tony",
             "companies": [
                 {
