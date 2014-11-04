@@ -216,6 +216,20 @@
       ]
     },
     {
+      "ldap_id": "hideyuki",
+      "user_name": "Hideyuki Tai",
+      "companies": [
+        {
+          "company_name": "NEC",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "Hideyuki.Tai@necam.com",
+        "h-tai@cd.jp.nec.com"
+      ]
+    },
+    {
       "ldap_id": "hugo",
       "user_name": "Hugo Trippaers",
       "companies": [
@@ -475,6 +489,7 @@
     {
       "company_name": "NEC",
       "domains": [
+        "necam.com",
         "nec.com",
         "nec.co.jp"
       ]
