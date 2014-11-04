@@ -23,3 +23,16 @@ development activities and displays statistics on contribution. The features are
 
  * Source Code: http://github.com/davetucker/spectrometer
  * Wiki: https://wiki.opendaylight.org/view/Spectrometer
+
+# Running the tests
+
+To run the tests::
+
+    pip install tox
+    # Start memcached
+    memcached -d
+    # Run tests against all Python versions
+    tox
+    # Run tests against a specific version
+    tox -e py27
+
