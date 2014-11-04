@@ -1,0 +1,15 @@
+language: python
+
+env:
+  - TOXENV=py27
+  - TOXENV=py33
+  - TOXENV=pep8
+
+services:
+  - memcached
+
+install:
+  "pip install -r requirements.txt -r test-requirements.txt"
+
+script:
+  - tox
