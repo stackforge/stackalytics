@@ -11,3 +11,4 @@ sphinx>=1.1.2,<1.2
 sphinxcontrib-httpdomain
 testrepository>=0.0.17
 testtools>=0.9.32
+tox>=1.8.1
