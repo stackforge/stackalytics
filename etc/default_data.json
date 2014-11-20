@@ -498,6 +498,12 @@
       ]
     },
     {
+      "company_name": "The Linux Foundation",
+      "domains": [
+        "linuxfoundation.org"
+      ]
+    },
+    {
       "company_name": "Midokura",
       "domains": [
         "midokura.com"
@@ -545,12 +551,6 @@
       "company_name": "RedHat",
       "domains": [
         "redhat.com"
-      ]
-    },
-    {
-      "company_name": "The Linux Foundation",
-      "domains": [
-        "linuxfoundation.org"
       ]
     },
     {
