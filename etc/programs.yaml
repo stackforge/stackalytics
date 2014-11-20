@@ -1,3 +1,10 @@
+Authentication Authorizing Accounting:
+  codename: aaa
+  url: https://wiki.opendaylight.org/view/AAA:Main
+  projects:
+    - repo: opendaylight/aaa
+      incubated-since: hydrogen
+
 Affinity Metadata Service:
   codename: affinity
   url: https://wiki.opendaylight.org/view/Affinity_Metadata_Service:Main
@@ -19,6 +26,20 @@ Controller:
     - repo: opendaylight/controller
       bootstrapped-since: hydrogen
 
+Defense4All:
+  codename: defense4all
+  url: https://wiki.opendaylight.org/view/Defense4All:Main
+  projects:
+    - repo: opendaylight/defense4all
+      incubated-since: hydrogen
+
+Discovery:
+  codename: discovery
+  url: https://wiki.opendaylight.org/view/Discovery:Main
+  projects:
+    - repo: opendaylight/discovery
+      incubated-since: helium
+
 OpenDaylight User eXperience:
   codename: dlux
   url: https://wiki.opendaylight.org/view/OpenDaylight_dlux:Main
@@ -33,11 +54,18 @@ Documentation:
     - repo: opendaylight/docs
       incubated-since: helium
 
-Defense4All:
-  codename: defense4all
-  url: https://wiki.opendaylight.org/view/Defense4All:Main
+Group Policy:
+  codename: groupbasedpolicy
+  url: https://wiki.opendaylight.org/view/Group_Policy:Main
   projects:
-    - repo: opendaylight/defense4all
+    - repo: opendaylight/groupbasedpolicy
+      incubated-since: helium
+
+Integration Group:
+  codename: integration
+  url: https://wiki.opendaylight.org/view/CrossProject:Integration_Group
+  projects:
+    - repo: opendaylight/integration
       incubated-since: hydrogen
 
 Dynamic Resource Reservation:
@@ -54,12 +82,12 @@ Group Policy:
     - repo: opendaylight/groupbasedpolicy
       incubated-since: helium
 
-Integration Group:
-  codename: integration
-  url: https://wiki.opendaylight.org/view/CrossProject:Integration_Group
+L2 Switch:
+  codename: l2switch
+  url: https://wiki.opendaylight.org/view/L2_Switch:Main
   projects:
-    - repo: opendaylight/integration
-      incubated-since: hydrogen
+    - repo: opendaylight/l2switch
+      incubated-since: helium
 
 LISP Flow Mapping:
   codename: lisp
@@ -116,6 +144,13 @@ Packet Cable PCMM Project:
   url: https://wiki.opendaylight.org/view/PacketCablePCMM:Main
   projects:
     - repo: opendaylight/packetcable
+      incubated-since: helium
+
+Release Engineering:
+  codename: releng
+  url: https://wiki.opendaylight.org/view/RelEng:Main
+  projects:
+    - repo: opendaylight/releng-builder
       incubated-since: helium
 
 Secure Network Bootstrapping Infrastructure Project:
