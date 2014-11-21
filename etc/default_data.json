@@ -77,6 +77,25 @@
       ]
     },
     {
+      "ldap_id": "avishnoi",
+      "user_name": "Anil Vishnoi",
+      "companies": [
+        {
+          "company_name": "IBM",
+          "end_date": "2014-Oct-30"
+        },
+        {
+          "company_name": "Brocade",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "vishnoianil@gmail.com",
+	"avishnoi@brocade.com",
+        "avishnoi@in.ibm.com"
+      ]
+    },
+    {
       "user_name": "Brent Salisbury",
       "ldap_id": "brentsalisbury",
       "companies": [
