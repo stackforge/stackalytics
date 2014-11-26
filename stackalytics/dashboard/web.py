@@ -240,6 +240,66 @@ def get_distinct_engineers(records, **kwargs):
     return result
 
 
+@app.route('/api/1.0/company_changes')
+@decorators.exception_handler()
+@decorators.response()
+@decorators.jsonify('company_changes')
+def get_company_changes(**kwargs):
+
+    start_days = str(flask.request.args.get('start_days') or
+                     utils.timestamp_to_date(int(time.time()) -
+                                             365 * 24 * 60 * 60))
+    end_days = str(flask.request.args.get('end_days') or
+                   utils.timestamp_to_date(int(time.time())))
+
+    start_date = utils.date_to_timestamp_ext(start_days)
+    end_date = utils.date_to_timestamp_ext(end_days)
+
+    runtime_storage = vault.get_runtime_storage()
+    result = {}
+    for user in runtime_storage.get_all_users():
+        if 'companies' in user and len(user['companies']) >= 2:
+            companies = user['companies']
+
+            for i in six.moves.xrange(0, len(companies) - 1):
+                old_company_name = companies[i]['company_name']
+                date = companies[i]['end_date']
+
+                if start_date <= date <= end_date:
+                    new_company_name = companies[i + 1]['company_name']
+
+                    if old_company_name not in result:
+                        result[old_company_name] = {}
+                    if new_company_name not in result[old_company_name]:
+                        result[old_company_name][new_company_name] = set()
+
+                    result[old_company_name][new_company_name].add(
+                        user['user_id'])
+
+    response = []
+
+    for old_company_name in result:
+        for new_company_name in result[old_company_name]:
+            dict = {}
+            dict['metric'] = len(result[old_company_name][new_company_name])
+            dict['old_company_name'] = old_company_name
+            dict['new_company_name'] = new_company_name
+            dict['users'] = []
+
+            for user_id in result[old_company_name][new_company_name]:
+                user = vault.get_user_from_runtime_storage(user_id)
+                dict['users'].append(user['user_name'])
+
+            dict['users'].sort()
+
+            response.append(dict)
+
+    response.sort(key=lambda x: x['metric'], reverse=True)
+    utils.add_index(response)
+
+    return response
+
+
 @app.route('/api/1.0/activity')
 @decorators.exception_handler()
 @decorators.response()

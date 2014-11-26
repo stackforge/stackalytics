@@ -46,6 +46,11 @@ def date_to_timestamp_ext(d):
         return int(d)
 
 
+def timestamp_to_date(timestamp):
+    return (datetime.datetime.fromtimestamp(timestamp).
+            strftime('%Y-%b-%d'))
+
+
 def member_date_to_timestamp(d):
     if not d:
         return 0

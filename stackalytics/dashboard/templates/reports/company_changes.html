@@ -1,0 +1,131 @@
+{% extends "reports/base_report.html" %}
+
+{% block title %}
+Company Affiliation Changes
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript">
+
+    function show_users_table(options) {
+        var table_column_names = ["index", "from", "to", "count"];
+        var table_id = "users_table";
+
+        $.ajax({
+            url: makeURI("/api/1.0/company_changes", options),
+            dataType: "json",
+            success: function (data) {
+                var tableData = data["company_changes"];
+
+                var tableColumns = [];
+                var sort_by_column = 0;
+                for (var i = 0; i < table_column_names.length; i++) {
+                    tableColumns.push({"mData": table_column_names[i]});
+                }
+
+                for (i = 0; i < tableData.length; i++) {
+                    tableData[i].from = tableData[i].old_company_name;
+                    tableData[i].to = tableData[i].new_company_name;
+
+                    var title = tableData[i].users.join(", ");
+                    tableData[i].count = "<span title = '" + title + "'>" + tableData[i].metric + "</span>";
+                }
+
+                if (table_id) {
+                    $("#" + table_id).dataTable({
+                        "aaSorting": [
+                            [ sort_by_column, "asc" ]
+                        ],
+                        "bFilter": true,
+                        "bInfo": true,
+                        "bAutoWidth": false,
+                        "aaData": tableData,
+                        "aoColumns": tableColumns,
+                        "bDestroy": true,
+                        'bPaginate': true,
+                        "sPaginationType": "full_numbers",
+                        "aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+                        "iDisplayLength": -1
+                    });
+                }
+            }
+        });
+    }
+
+    function make_options() {
+        var options = {};
+        options['start_days'] = $('#start_days_selector').val();
+        options['end_days'] = $('#end_days_selector').val();
+
+        return options;
+    }
+
+    function reload() {
+        window.location.search = $.map(make_options(),function (val, index) {
+            return index + "=" + val;
+        }).join("&")
+    }
+
+    function show_page() {
+        show_users_table(make_options());
+    }
+
+    $(document).ready(function () {
+
+        $("#start_days_selector").val("{{ start_days }}").on('change', function (evt) {
+            reload();
+        });
+        $("#end_days_selector").val("{{ end_days }}").on('change', function (evt) {
+            reload();
+        });
+
+        show_page();
+    });
+
+    $(function() {
+        $( "#start_days_selector" ).datepicker({
+            dateFormat: 'yy-M-d',
+            changeMonth: true,
+            changeYear: true
+        });
+    });
+
+    $(function() {
+        $( "#end_days_selector" ).datepicker({
+            dateFormat: 'yy-M-d',
+            changeMonth: true,
+            changeYear: true
+        });
+    });
+
+    $(document).ready(function () {
+        $('#start_days_selector').val("{{ start_days }}");
+        $('#end_days_selector').val("{{ end_days }}");
+        show_page();
+    });
+
+    </script>
+
+{% endblock %}
+
+{% block content %}
+<h1>Company Affiliation Changes</h1>
+
+    <p>Start of the period: <input type="text" id="start_days_selector"/> &nbsp; End of the period: <input type="text" id="end_days_selector"/></p>
+
+    <div class="body" style="margin-right: 1em;">
+        <table id="users_table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Count</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}
