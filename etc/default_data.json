@@ -5318,6 +5318,17 @@
             "emails": ["skywalker.nick@gmail.com", "mali@awcloud.com", "nick.ma@live.cn"]
         },
         {
+            "launchpad_id": "wudx05",
+            "companies": [
+                {
+                    "company_name": "Awcloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Mark Wu",
+            "emails": ["wudx05@gmail.com", "wudx@awcloud.com"]
+        },
+        {
             "launchpad_id": "nijaba",
             "companies": [
                 {
