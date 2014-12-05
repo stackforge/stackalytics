@@ -10250,19 +10250,28 @@
     "project_sources": [
         {
             "organization": "openstack",
-            "exclude": ["openstack", "gantt", "python-ganttclient"]
+            "exclude": ["openstack", "gantt", "python-ganttclient"],
+            "uri": "gerrit://review.openstack.org"
         },
         {
-            "organization": "openstack-dev"
+            "organization": "openstack-dev",
+            "uri": "gerrit://review.openstack.org"
         },
         {
-            "organization": "openstack-infra"
+            "organization": "openstack-infra",
+            "uri": "gerrit://review.openstack.org"
         },
         {
-            "organization": "openstack-ops"
+            "organization": "openstack-ops",
+            "uri": "gerrit://review.openstack.org"
         },
         {
-            "organization": "stackforge"
+            "organization": "stackforge",
+            "uri": "gerrit://review.openstack.org"
+        },
+        {
+            "organization": "cloudfoundry",
+            "uri": "github://"
         }
     ],
     "module_groups": [
@@ -10402,7 +10411,25 @@
         {
             "id": "complimentary",
             "title": "Complimentary",
-            "modules": ["docker", "kubernetes", "jcloud"]
+            "modules": ["docker", "kubernetes", "jclouds", "cloudfoundry"]
+        },
+        {
+            "id": "cloudfoundry-group",
+            "title": "CloudFoundary",
+            "child": true,
+            "modules": ["cloudfoundry"]
+        },
+        {
+            "id": "docker-group",
+            "title": "Docker",
+            "child": true,
+            "modules": ["docker"]
+        },
+        {
+            "id": "kubernetes-group",
+            "title": "kubernetes",
+            "child": true,
+            "modules": ["kubernetes"]
         }
     ]
 }

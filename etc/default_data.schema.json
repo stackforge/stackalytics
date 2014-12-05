@@ -146,9 +146,8 @@
                     "organization": {
                         "type": "string"
                     },
-                    "module_group_name": {
-                        "type": "string",
-                        "pattern": "^[\\w-]+$"
+                    "uri": {
+                        "type": "string"
                     },
                     "exclude": {
                         "type": "array",
@@ -157,7 +156,7 @@
                         }
                     }
                 },
-                "required": ["organization"],
+                "required": ["organization", "uri"],
                 "additionalProperties": false
             }
         },
