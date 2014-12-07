@@ -10258,6 +10258,14 @@
             "organization": "stackforge"
         },
         {
+            "module": "python-magnumclient",
+            "aliases": [
+                "python-magnumclient"
+            ],
+            "uri": "git://git.openstack.org/stackforge/python-magnumclient.git",
+            "organization": "stackforge"
+        },
+        {
             "module": "api-wg",
             "uri": "git://git.openstack.org/openstack/api-wg.git",
             "organization": "openstack",
