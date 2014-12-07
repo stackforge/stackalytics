@@ -10242,6 +10242,14 @@
             "organization": "stackforge"
         },
         {
+            "module": "kolla",
+            "aliases": [
+                "kolla"
+            ],
+            "uri": "git://git.openstack.org/stackforge/kolla.git",
+            "organization": "stackforge"
+        },
+        {
             "module": "api-wg",
             "uri": "git://git.openstack.org/openstack/api-wg.git",
             "organization": "openstack",
