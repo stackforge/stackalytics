@@ -10250,6 +10250,14 @@
             "organization": "stackforge"
         },
         {
+            "module": "magnum",
+            "aliases": [
+                "magnum"
+            ],
+            "uri": "git://git.openstack.org/stackforge/magnum.git",
+            "organization": "stackforge"
+        },
+        {
             "module": "api-wg",
             "uri": "git://git.openstack.org/openstack/api-wg.git",
             "organization": "openstack",
