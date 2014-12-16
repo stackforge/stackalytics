@@ -8343,6 +8343,17 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "sombrafam",
+            "companies": [
+                {
+                    "company_name": "FIT",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Erlon R. Cruz",
+            "emails": ["sombrafam@gmail.com", "erlon.cruz@fit-tecnologia.org.br"]
         }
     ],
     "companies": [
@@ -9374,6 +9385,11 @@
         {
             "domains": ["zmanda.com"],
             "company_name": "Zmanda"
+        },
+        {
+            "domains": ["fit-tecnologia.org.br", "br.flextronics.com"],
+            "company_name": "FIT Instituto de Tecnologia",
+            "aliases": ["FIT"]
         }
     ],
     "repos": [
