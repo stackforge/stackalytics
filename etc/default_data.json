@@ -5141,6 +5141,17 @@
             "emails": ["ivarlazzaro@gmail.com"]
         },
         {
+            "launchpad_id": "mmohan-9",
+            "companies": [
+                {
+                    "company_name": "MontaVista Software",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Madhu Mohan Nelemane",
+            "emails": ["snmohan83@gmail.com", "mmohan@mvista.com"]
+        },
+        {
             "launchpad_id": "mordred",
             "companies": [
                 {
@@ -7083,6 +7094,28 @@
             ],
             "user_name": "Alexei V. Vinogradov",
             "emails": ["alexei_vinogradov@symantec.com", "avinogradov@mirantis.com"]
+        },
+        {
+            "launchpad_id": "sragolu",
+            "companies": [
+                {
+                    "company_name": "MontaVista Software",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Srinivas Rao Ragolu",
+            "emails": ["sragolu@mvista.com"]
+        },
+        {
+            "launchpad_id": "srangare",
+            "companies": [
+                {
+                    "company_name": "MontaVista Software",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Samta Rangare",
+            "emails": ["srangare@mvista.com"]
         },
         {
             "launchpad_id": "srics-r",
