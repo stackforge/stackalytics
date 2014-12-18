@@ -8486,6 +8486,10 @@
             "aliases": ["AT&T Mobility"]
         },
         {
+            "domains": ["avinetworks.com"],
+            "company_name": "Avi Networks"
+        },
+        {
             "domains": ["awcloud.com"],
             "company_name": "Awcloud"
         },
