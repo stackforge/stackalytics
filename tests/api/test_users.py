@@ -37,9 +37,10 @@ class TestAPIUsers(test_api.TestAPI):
             response = self.app.get('/api/1.0/users?'
                                     'module=nova&metric=commits')
             users = json.loads(response.data)['data']
- #           self.assertEqual(2, len(users))
- #           self.assertIn({'id': 'john_doe', 'text': 'John Doe'}, users)
- #           self.assertIn({'id': 'bill_smith', 'text': 'Bill Smith'}, users)
+# Commented out for now. Causing CI tests to fail.
+#           self.assertEqual(2, len(users))
+#           self.assertIn({'id': 'john_doe', 'text': 'John Doe'}, users)
+#           self.assertIn({'id': 'bill_smith', 'text': 'Bill Smith'}, users)
 
     def test_user_details(self):
         with test_api.make_runtime_storage(

@@ -101,6 +101,7 @@ class TestMps(testtools.TestCase):
         member_iterator = mps_inst.log()
         result = list(member_iterator)
 
+# Commented out for now; causing CI tests to fail
 #       self.assertEqual(result[0]["member_id"], "foo")
 #       self.assertEqual(result[1]["member_id"], "dave-tucker")
 
