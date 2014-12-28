@@ -6635,11 +6635,15 @@
             "companies": [
                 {
                     "company_name": "Comcast",
+                    "end_date": "2014-Dec-26"
+                },
+                {
+                    "company_name": "Mirantis",
                     "end_date": null
                 }
             ],
             "user_name": "Sean M. Collins",
-            "emails": ["sean@coreitpro.com"]
+            "emails": ["sean@coreitpro.com"
         },
         {
             "launchpad_id": "sdague",
