@@ -616,6 +616,10 @@
     {
       "release_name": "Helium",
       "end_date": "2014-Sep-29"
+    },
+    {
+      "release_name": "Lithium",
+      "end_date": "2015-Jun-25"
     }
   ],
   "mail_lists": [
