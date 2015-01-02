@@ -28,18 +28,18 @@ class TestAPICompanies(test_api.TestAPI):
                            {'module': 'glance', 'project_type': 'openstack',
                             'organization': 'openstack',
                             'uri': 'git://github.com/openstack/glance.git'}],
-                    'project_types': [
-                        {'id': 'openstack', 'title': 'OpenStack',
-                         'modules': ['nova', 'glance']}
-                    ],
-                    'module_groups': {
-                        'openstack': {'module_group_name': 'openstack',
-                                      'modules': ['nova', 'glance']},
-                        'nova': {'module_group_name': 'nova',
-                                 'modules': ['nova']},
-                        'glance': {'module_group_name': 'glance',
-                                   'modules': ['glance']},
-                    }},
+                 'project_types': [
+                     {'id': 'openstack', 'title': 'OpenStack',
+                      'modules': ['nova', 'glance']}
+                 ],
+                 'module_groups': {
+                     'openstack': {'module_group_name': 'openstack',
+                                   'modules': ['nova', 'glance']},
+                     'nova': {'module_group_name': 'nova',
+                              'modules': ['nova']},
+                     'glance': {'module_group_name': 'glance',
+                                'modules': ['glance']},
+                 }},
                 test_api.make_records(record_type=['commit'],
                                       loc=[10, 20, 30],
                                       module=['glance'],
@@ -60,7 +60,7 @@ class TestAPICompanies(test_api.TestAPI):
             response = self.app.get('/api/1.0/companies?metric=commits&'
                                     'module=glance')
             companies = json.loads(response.data)['data']
-# Commented out for now; causing CI tests to fail.
+# Commented out for now. Causing CI tests to fail
 #            self.assertEqual([{'id': 'ibm', 'text': 'IBM'},
 #                              {'id': 'nec', 'text': 'NEC'},
 #                              {'id': 'ntt', 'text': 'NTT'}], companies)
@@ -68,7 +68,7 @@ class TestAPICompanies(test_api.TestAPI):
             response = self.app.get('/api/1.0/companies?metric=marks&'
                                     'module=glance')
             companies = json.loads(response.data)['data']
-# Commented out for now; causing CI tests to fail.
+# Commented out for now. Causing CI tests to fail
 #            self.assertEqual([{'id': 'ibm', 'text': 'IBM'},
 #                              {'id': 'nec', 'text': 'NEC'}], companies)
 
