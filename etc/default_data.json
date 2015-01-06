@@ -1696,6 +1696,16 @@
             "emails": ["d.gollub@telekom.de"]
         },
         {
+            "launchpad_id": "dgonzalez",
+            "companies": [
+                {
+                    "company_name": "Deutsche Telekom",
+                }
+            ],
+            "user_name": "Daniel Gonzalez Nothnagel",
+            "emails": ["daniel@gonzalez-nothnagel.de"]
+        },
+        {
             "launchpad_id": "dachary",
             "companies": [
                 {
