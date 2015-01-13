@@ -1,6 +1,39 @@
 {
     "users": [
         {
+            "launchpad_id": "9lex",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Alex Barclay",
+            "emails": ["alex@planet-barclay.com", "alex.barclay@hp.com"]
+        },
+        {
+            "launchpad_id": "swiftwangster",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Min Wang",
+            "emails": ["swiftwangster@gmail.com", "min.wang6@hp.com"]
+        },
+        {
+            "launchpad_id": "al-miller",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Al Miller",
+            "emails": ["al.miller@ajmiller.net", "al.miller@hp.com"]
+        },
+        {
             "launchpad_id": "0-doug",
             "companies": [
                 {
