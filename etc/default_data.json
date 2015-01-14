@@ -1833,6 +1833,21 @@
             "emails": ["darren.birkett@gmail.com"]
         },
         {
+            "launchpad_id": "dims-v",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": "2015-Jan-15"
+                },
+                {
+                    "company_name": "Mirantis",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Davanum Srinivas",
+            "emails": ["dims@mirantis.com", "dims@linux.vnet.ibm.com", "davanum@gmail.com"]
+        },
+        {
             "launchpad_id": "davewalker",
             "companies": [
                 {
