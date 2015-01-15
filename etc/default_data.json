@@ -3749,6 +3749,17 @@
                     "end_date": null
                 }
             ],
+            "user_name": "Joe Beda",
+            "emails": ["joe.github@bedafamily.com"]
+        },
+        {
+            "launchpad_id": "joe-launchpad-bedafamily",
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
             "user_name": "Joe Arnold",
             "emails": ["joe@swiftstack.com", "joe@cloudscaling.com"]
         },
