@@ -8557,6 +8557,17 @@
             "emails": ["zhhuabj@cn.ibm.com", "joshua.zhang@canonical.com", "veryhua2006@gmail.com"]
         },
         {
+            "launchpad_id": "harshit-3",
+            "companies": [
+                {
+                    "company_name": "Acelio",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Harshit Chitalia",
+            "emails": ["harshit@acelio.com"]
+        },
+        {
             "launchpad_id": "zhidong",
             "companies": [
                 {
