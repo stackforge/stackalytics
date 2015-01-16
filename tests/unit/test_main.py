@@ -24,7 +24,7 @@ class TestMain(testtools.TestCase):
 
     def test_read_official_programs_yaml(self):
         path_to_test_data = os.getcwd() + '/etc/test_programs.yaml'
-        programs_uri = 'file://{}'.format(path_to_test_data)
+        programs_uri = 'file://{0}'.format(path_to_test_data)
         RELEASES = ["Hydrogen", "Helium"]
         module_groups = main._read_official_programs_yaml(programs_uri,
                                                           RELEASES)
