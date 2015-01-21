@@ -7464,6 +7464,18 @@
             "emails": ["steve.lewis@rackspace.com","stevelle@gmail.com"]
         },
         {
+            "launchpad_id": "vpandari-4",
+            "gerrit_id": "vpandari",
+            "companies": [
+                {
+                    "company_name": "Cisco Systems",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Vinod Pandarinathan",
+            "emails": ["vpandari@outlook.com","vpandari@cisco.com"]
+        },
+        {
             "launchpad_id": "steve-stevebaker",
             "companies": [
                 {
