@@ -8755,6 +8755,21 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "ramon-linux-labs",
+            "companies": [
+                {
+                    "company_name": "Canonical",
+                    "end_date": "2014-May-01"
+                },
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ramon Acedo",
+            "emails": ["ramon@linux-labs.net", "racedo@redhat.com"]
         }
     ],
     "companies": [
