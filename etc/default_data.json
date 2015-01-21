@@ -6893,6 +6893,17 @@
             "user_name": "Sean M. Collins",
             "emails": ["sean@coreitpro.com", "scollins@mirantis.com", "sean_collins2@cable.comcast.com"]
         },
+         {
+            "github_id": "scottfrederick",
+            "companies": [
+                {
+                    "company_name": "Pivotal",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Scott Frederick",
+            "emails": ["scottyfred@gmail.com"]
+        },
         {
             "launchpad_id": "sdague",
             "companies": [
