@@ -420,6 +420,16 @@
             "emails": ["allison@lohutok.net", "allison@ubuntu.com", "allison.randal@hp.com"]
         },
         {
+            "github_id": "aluzzardi",
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Andrea Luzzardi",
+        },
+        {
             "launchpad_id": "amcrn",
             "companies": [
                 {
@@ -520,6 +530,19 @@
             ],
             "user_name": "Andrew Bogott",
             "emails": ["abogott@wikimedia.org"]
+        },
+        {
+            "github_id": "andreykostov",
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Andrey Kostov",
+            "emails": [
+                "akostov@docker.com",
+            ]
         },
         {
             "launchpad_id": "andrlw",
@@ -918,6 +941,16 @@
             "user_name": "Bertrand Lallau",
             "emails": ["bertrand.lallau@gmail.com", "bertrand.lallau@thalesgroup.com"]
         },
+        {
+            "github_id": "bfirsh",
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ben Firschman",
+            "emails": ["b@fir.sh"]
         {
             "launchpad_id": "bfschott",
             "companies": [
@@ -1340,6 +1373,17 @@
             "emails": ["simon.sy.chang@gmail.com", "schang@tesora.com"]
         },
         {
+            "github_id": "chanwit",
+            "companies": [
+                {
+                    "company_name": "Suranee University of Technology",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Chanwit Kaewkasi",
+            "emails": ["chanwit@gmail.com"]
+        },
+        {
             "launchpad_id": "chemikadze",
             "companies": [
                 {
@@ -1673,6 +1717,17 @@
             "emails": ["cristian.a.sanchez@intel.com"]
         },
         {
+            "github_id": "crosbymichael",
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Michael Crosby",
+            "emails": ["crosbymichael@gmail.com"]
+        },
+        {
             "launchpad_id": "cschwede",
             "companies": [
                 {
@@ -1962,6 +2017,17 @@
             "emails": ["dborodaenko@mirantis.com", "angdraug@gmail.com"]
         },
         {
+            "github_id": "ddysher",
+            "user_name": "Deyuan Deng",
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "emails": ["Deyuan.Deng@gmail.com"]
+        },
+        {
             "launchpad_id": "debo",
             "companies": [
                 {
@@ -2222,6 +2288,17 @@
             "emails": ["dustin@null-ptr.net", "dlundquist@gmail.com", "dlundquist@bluebox.net"]
         },
         {
+            "github_id": "dmcgowan",
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Derek McGowan",
+            "emails": ["derek@mcgstyle.net"]
+        },
+        {
             "launchpad_id": "dmllr",
             "companies": [
                 {
@@ -2268,6 +2345,17 @@
             ],
             "user_name": "Doug Hellmann",
             "emails": ["doug.hellmann@gmail.com", "doug.hellmann@dreamhost.com", "doug@doughellmann.com"]
+        },
+        {
+            "github_id": "dqmihn",
+            "companies": [
+                {
+                   "company_name": "Nitrous",
+                   "end_date": null
+                }
+            ],
+            "user_name": "Dao Quang Mihn",
+            "emails": ["dqminh89@gmail.com"]
         },
         {
             "launchpad_id": "dragon889",
@@ -2500,6 +2588,18 @@
             "emails": ["eharney@redhat.com", "eharney@gmail.com"]
         },
         {
+            "launchpad_id": "ehazlett",
+            "github_id": "ehazlett"
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Evan Hazlett",
+            "emails": ["ejhazlett@gmail.com"]
+        },
+        {
             "launchpad_id": "eikke",
             "gerrit_id": "nicolast",
             "companies": [
@@ -2584,6 +2684,17 @@
             ],
             "user_name": "Eric Martin",
             "emails": ["eric_martin4@cable.comcast.com"]
+        },
+        {
+            "github_id": "erikh",
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Erik Hollensbe",
+            "emails": ["github@hollensbe.org"]
         },
         {
             "launchpad_id": "eric-scholz1975",
@@ -2924,6 +3035,17 @@
             ],
             "user_name": "Henry Gessau",
             "emails": ["gessau@cisco.com", "gessau@gmail.com"]
+        },
+        {
+            "github_id": "ggiamarchi",
+            "companies": [
+                {
+                    "company_name": "Numergy",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Guillaume Giamarchi",
+            "emails": ["guillaume.giamarchi@gmail.com"]
         },
         {
             "launchpad_id": "ghe.rivero",
@@ -5450,6 +5572,17 @@
             "emails": ["nate_johnston@cable.comcast.com"]
         },
         {
+            "github_id": "nathanclaire",
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Nathan LeClaire",
+            "emails": ["nathan.leclaire@gmail.com"]
+        },
+        {
             "launchpad_id": "nathan-regola",
             "companies": [
                 {
@@ -6864,6 +6997,17 @@
             "emails": ["saschpe@suse.de", "saschpe@gmx.de"]
         },
         {
+            "github_id": "satnam6502",
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Satnam Singth",
+            "emails": ["satnam@raintown.org"]
+        },
+        {
             "launchpad_id": "sbadia",
             "companies": [
                 {
@@ -6892,6 +7036,17 @@
             ],
             "user_name": "Sean M. Collins",
             "emails": ["sean@coreitpro.com", "scollins@mirantis.com", "sean_collins2@cable.comcast.com"]
+        },
+         {
+            "github_id": "scottfrederick",
+            "companies": [
+                {
+                    "company_name": "Pivotal",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Scott Frederick",
+            "emails": ["scottyfred@gmail.com"]
         },
         {
             "launchpad_id": "sdague",
@@ -8797,6 +8952,10 @@
             "company_name": "Acelio"
         },
         {
+            "domains": ["ac.th"],
+            "company_name": "Suranaree University of Technology"
+
+        {
             "domains": ["alcatel-lucent.com"],
             "company_name": "Alcatel-Lucent",
             "aliases": ["Alcatel Lucent", "Alcatel-Lucent, Nuage Networks", "Alcatel-Lcuent", "Alcatel-Lucent Austria", "Alcatel-Lucent Bell Labs France"]
@@ -9400,6 +9559,9 @@
             "domains": ["nimbula.com"],
             "company_name": "Nimbula"
         },
+        {
+            "domains": ["nitrous.io"],
+            "company_name": "Nitrous"
         {
             "domains": ["nokia.com"],
             "company_name": "Nokia",
