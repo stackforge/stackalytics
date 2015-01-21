@@ -522,6 +522,17 @@
             "emails": ["abogott@wikimedia.org"]
         },
         {
+            "github_id": "andreykostov",
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Andrey Kostov",
+            "emails": ["akostov@docker.com"]
+        },
+        {
             "launchpad_id": "andrlw",
             "companies": [
                 {
@@ -917,6 +928,17 @@
             ],
             "user_name": "Bertrand Lallau",
             "emails": ["bertrand.lallau@gmail.com", "bertrand.lallau@thalesgroup.com"]
+        },
+        {
+            "github_id": "bfirsh",
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ben Firschman",
+            "emails": ["b@fir.sh"]
         },
         {
             "launchpad_id": "bfschott",
@@ -1340,6 +1362,17 @@
             "emails": ["simon.sy.chang@gmail.com", "schang@tesora.com"]
         },
         {
+            "github_id": "chanwit",
+            "companies": [
+                {
+                    "company_name": "Suranee University of Technology",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Chanwit Kaewkasi",
+            "emails": ["chanwit@gmail.com"]
+        },
+        {
             "launchpad_id": "chemikadze",
             "companies": [
                 {
@@ -1661,6 +1694,17 @@
             "emails": ["craigtracey@gmail.com", "ctracey@bluebox.net"]
         },
         {
+            "github_id": "creack",
+            "companies": [
+                {
+                    "company_name": "SimpleReach",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Guillaume J. Charmes",
+            "emails": [""]
+        },
+        {
             "launchpad_id": "cristian-a-sanchez",
             "gerrit_id": "casanch1",
             "companies": [
@@ -1671,6 +1715,17 @@
             ],
             "user_name": "Cristian A Sanchez",
             "emails": ["cristian.a.sanchez@intel.com"]
+        },
+        {
+            "github_id": "crosbymichael",
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Michael Crosby",
+            "emails": ["crosbymichael@gmail.com"]
         },
         {
             "launchpad_id": "cschwede",
@@ -1962,6 +2017,17 @@
             "emails": ["dborodaenko@mirantis.com", "angdraug@gmail.com"]
         },
         {
+            "github_id": "ddysher",
+            "user_name": "Deyuan Deng",
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "emails": ["deyuan.eng@gmail.com"]
+        },
+        {
             "launchpad_id": "debo",
             "companies": [
                 {
@@ -2222,6 +2288,17 @@
             "emails": ["dustin@null-ptr.net", "dlundquist@gmail.com", "dlundquist@bluebox.net"]
         },
         {
+            "github_id": "dmcgowan",
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Derek McGowan",
+            "emails": ["derek@mcgstyle.net"]
+        },
+        {
             "launchpad_id": "dmllr",
             "companies": [
                 {
@@ -2268,6 +2345,17 @@
             ],
             "user_name": "Doug Hellmann",
             "emails": ["doug.hellmann@gmail.com", "doug.hellmann@dreamhost.com", "doug@doughellmann.com"]
+        },
+        {
+            "github_id": "dqmihn",
+            "companies": [
+                {
+                   "company_name": "Nitrous",
+                   "end_date": null
+                }
+            ],
+            "user_name": "Dao Quang Mihn",
+            "emails": ["dqminh89@gmail.com"]
         },
         {
             "launchpad_id": "dragon889",
@@ -2321,6 +2409,17 @@
             ],
             "user_name": "Cian O'Driscoll",
             "emails": ["cian@hp.com", "cian.o-driscoll@hp.com"]
+        },
+        {
+            "github_id": "drnic",
+            "companies": [
+                {
+                    "company_name": "Stark & Wayne LLC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Dr Nic Williams",
+            "emails": ["drnicwilliams@gmail.com"]
         },
         {
             "launchpad_id": "dshrews",
@@ -2402,6 +2501,17 @@
             ],
             "user_name": "Doug Weimer",
             "emails": ["dweimer@gmail.com", "dougw@sdsc.edu"]
+        },
+        {
+            "github_id": "dzuelke",
+            "companies": [
+                {
+                    "company_name": "Heroku",
+                    "end_date": null
+                }
+            ],
+            "user_name": "David Zülke",
+            "emails": ["dzuelke@gmail.com"]
         },
         {
             "launchpad_id": "e0ne",
@@ -2500,6 +2610,17 @@
             "emails": ["eharney@redhat.com", "eharney@gmail.com"]
         },
         {
+            "launchpad_id": "ehazlett",
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Evan Hazlett",
+            "emails": ["ejhazlett@gmail.com"]
+        },
+        {
             "launchpad_id": "eikke",
             "gerrit_id": "nicolast",
             "companies": [
@@ -2595,6 +2716,17 @@
             ],
             "user_name": "Eric Scholz",
             "emails": ["eric_scholz@cable.comcast.com", "eric.scholz1975@gmail.com"]
+        },
+        {
+            "github_id": "erikh",
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Erik Hollensbe",
+            "emails": ["github@hollensbe.org"]
         },
         {
             "launchpad_id": "erobinso-2000",
@@ -2802,6 +2934,17 @@
             ]
         },
         {
+            "github_id": "frodenas",
+            "companies": [
+                {
+                    "company_name": "Pivotal",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ferran Rodenas",
+            "emails": ["frodenas@gmail.com"]
+         },
+        {
             "launchpad_id": "fujioka-yuuichi-d",
             "gerrit_id": "fujiokayuuichi",
             "companies": [
@@ -2924,6 +3067,17 @@
             ],
             "user_name": "Henry Gessau",
             "emails": ["gessau@cisco.com", "gessau@gmail.com"]
+        },
+        {
+            "github_id": "ggiamarchi",
+            "companies": [
+                {
+                    "company_name": "Numergy",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Guillaume Giamarchi",
+            "emails": ["guillaume.giamarchi@gmail.com"]
         },
         {
             "launchpad_id": "ghe.rivero",
@@ -3240,6 +3394,17 @@
             ],
             "user_name": "Burt Holzman",
             "emails": ["burt@fnal.gov", "holzman@gmail.com"]
+        },
+        {
+            "github_id": "hone",
+            "companies": [
+                {
+                    "company_name": "Heroku",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Terence Lee",
+            "emails": ["hone02@gmail.com"]
         },
         {
             "launchpad_id": "hovyakov",
@@ -3849,6 +4014,17 @@
             "emails": ["joe@topjian.net"]
         },
         {
+            "launchpad_id": "joffrey-k",
+            "companies": [
+                {
+                    "company_name": "docCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Joffrey",
+            "emails": ["joffrey@dotcloud.com"]
+        },
+        {
             "launchpad_id": "jogo",
             "companies": [
                 {
@@ -4298,6 +4474,17 @@
             "emails": ["ken.pepple@cloudtp.com", "ken@pepple.info", "ken.pepple@rabbityard.com", "ken.pepple@gmail.com"]
         },
         {
+            "github_id": "kennethreitz",
+            "companies": [
+                {
+                    "company_name": "Heroku",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Kenneth Reitz",
+            "emails": ["me@kennethreitz.org"]
+        },
+        {
             "launchpad_id": "kevinbenton",
             "user_name": "Kevin Benton",
             "companies": [
@@ -4377,6 +4564,17 @@
             ],
             "user_name": "Koteswara Rao Kelam",
             "emails": ["koteswara.kelam@hp.com", "koti.kelam@gmail.com"]
+        },
+        {
+            "launchpad_id": "kowshik",
+            "companies": [
+                {
+                    "company_name": "Facebook",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Kowshik Prakasam",
+            "emails": ["kowshik@gmail.com"]
         },
         {
             "launchpad_id": "kozhukalov",
@@ -5461,6 +5659,17 @@
             "emails": ["nathan_regola@cable.comcast.com"]
         },
         {
+            "github_id": "nathanclaire",
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Nathan LeClaire",
+            "emails": ["nathan.leclaire@gmail.com"]
+        },
+        {
             "launchpad_id": "nati-ueno",
             "companies": [
                 {
@@ -5885,6 +6094,17 @@
             "emails": ["pblaho@redhat.com", "petrblaho@gmail.com"]
         },
         {
+            "launchpad_id": "pbozeman",
+            "companies": [
+                {
+                    "company_name": "VMware",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Patrick Bozeman",
+            "emails": ["pbozeman@gmail.com"]
+        },
+        {
             "launchpad_id": "pe-ettori",
             "companies": [
                 {
@@ -5995,6 +6215,17 @@
             ],
             "user_name": "Pradeep Kilambi",
             "emails": ["pkilambi@cisco.com", "praddevel@gmail.com"]
+        },
+        {
+            "github_id": "pmenglund",
+            "companies": [
+                {
+                    "company_name": "Facebook",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Martin Englund",
+            "emails": ["martin@englund.nu"]
         },
         {
             "launchpad_id": "pradeep-av",
@@ -6794,6 +7025,17 @@
             "emails": ["salv.orlando@gmail.com", "sorlando@nicira.com", "salvatore.orlando@eu.citrix.com"]
         },
         {
+            "github_id": "samalba",
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Sam Alba",
+            "emails": ["sam.alba@gmail.com"]
+        },
+        {
             "launchpad_id": "sambetts",
             "companies": [
                 {
@@ -6864,6 +7106,17 @@
             "emails": ["saschpe@suse.de", "saschpe@gmx.de"]
         },
         {
+            "github_id": "satnam6502",
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Satnam Singth",
+            "emails": ["satnam@raintown.org"]
+        },
+        {
             "launchpad_id": "sbadia",
             "companies": [
                 {
@@ -6892,6 +7145,17 @@
             ],
             "user_name": "Sean M. Collins",
             "emails": ["sean@coreitpro.com", "scollins@mirantis.com", "sean_collins2@cable.comcast.com"]
+        },
+         {
+            "github_id": "scottfrederick",
+            "companies": [
+                {
+                    "company_name": "Pivotal",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Scott Frederick",
+            "emails": ["scottyfred@gmail.com"]
         },
         {
             "launchpad_id": "sdague",
@@ -7072,6 +7336,17 @@
             ],
             "user_name": "Shweta P",
             "emails": ["shpadubi@cisco.com", "shweta.ap05@gmail.com"]
+        },
+        {
+            "launchpad_id": "shykes",
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Solomon Hykes",
+            "emails": ["solomon@docker.com"]
         },
         {
             "launchpad_id": "sileht",
@@ -7613,6 +7888,17 @@
             "emails": ["sylvain.afchain@enovance.com", "safchain@redhat.com"]
         },
         {
+            "launchpad_id": "syslxg",
+            "companies": [
+                {
+                    "company_name": "VMware",
+                    "end_date": "2014-Jun-24"
+                }
+            ],
+            "user_name": "Gary Liu",
+            "emails": ["galiu@pivotal.io"]
+        },
+        {
             "launchpad_id": "tan-lin-good",
             "companies": [
                 {
@@ -8145,6 +8431,17 @@
             "emails": ["victor@lsd.ufcg.edu.br", "victsou@gmail.com"]
         },
         {
+            "launchpad_id": "vieux",
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Victor Vieux",
+            "emails": ["vieux@docker.com"]
+        },
+        {
             "launchpad_id": "vipuls",
             "companies": [
                 {
@@ -8188,6 +8485,17 @@
             ],
             "user_name": "Vishwanath Jayaraman",
             "emails": ["vjayara@brocade.com", "vishwanathj@hotmail.com"]
+        },
+        {
+            "github_id": "vito",
+            "companies": [
+                {
+                    "company_name": "Cloud Foundry",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Alex Suraci",
+            "emails": ["suraci.alex@gmail.com"]
         },
         {
             "launchpad_id": "vito-ordaz",
@@ -8408,6 +8716,17 @@
                 }
             ],
             "emails": ["andrey@xdel.ru", "akorolev@mirantis.com"]
+        },
+        {
+            "github_id": "xiang90",
+            "companies": [
+                {
+                    "company_name": "CoreOS",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Xiang Li",
+            "emails": ["xiangli.cs@gmail.com"]
         },
         {
             "launchpad_id": "xianghui",
@@ -8789,6 +9108,10 @@
             "company_name": "A10 Networks"
         },
         {
+            "domains": ["ac.th"],
+            "company_name": "Suranaree University of Technology"
+        },
+        {
             "domains": ["accenture.com"],
             "company_name": "Accenture"
         },
@@ -9039,6 +9362,10 @@
         {
             "domains": ["docker.com"],
             "company_name": "Docker"
+        },
+        {
+            "domains": ["dotcloud.com"],
+            "company_name": "dotCloud"
         },
         {
             "domains": ["dreamhost.com"],
@@ -9399,6 +9726,10 @@
         {
             "domains": ["nimbula.com"],
             "company_name": "Nimbula"
+        },
+        {
+            "domains": ["nitrous.io"],
+            "company_name": "Nitrous"
         },
         {
             "domains": ["nokia.com"],
