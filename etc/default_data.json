@@ -6595,6 +6595,18 @@
             "emails": ["romain.hardouin@cloudwatt.com", "romain_hardouin@yahoo.fr"]
         },
         {
+            "launchpad_id": "bureaufrancois",
+            "gerrit_id": "Fdot",
+            "companies": [
+                {
+                    "company_name": "Cloudwatt",
+                    "end_date": null
+                }
+            ],
+            "user_name": "François Bureau",
+            "emails": ["francois.bureau@cloudwatt.com", "bureaufrancois@gmail.com"]
+        },
+        {
             "launchpad_id": "romainsc",
             "companies": [
                 {
