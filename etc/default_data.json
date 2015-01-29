@@ -7002,6 +7002,16 @@
             "emails": ["rodrigods@lsd.ufcg.edu.br", "rodrigodsousa@gmail.com"]
         },
         {
+            "launchpad_id": "rodrigo-barbieri2010",
+            "gerrit_id": "ganso",
+            "companies": [
+                {
+                    "company_name": "Hitachi",
+                    "end_date": null
+                }
+        },
+
+        {
             "launchpad_id": "roeyc",
             "companies": [
                 {
