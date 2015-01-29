@@ -6990,6 +6990,15 @@
             "emails": ["ricardo@catalyst.net.nz", "rocha.porto@gmail.com"]
         },
         {
+            "launchpad_id": "rodrigo-barbieri2010",
+            "gerrid_id": "ganso",
+            "companies": [
+                {
+                    "company_name": "Hitachi",
+                    "end_date": null
+                } 
+        },
+        {
             "launchpad_id": "rodrigodsousa",
             "gerrit_id": "rodrigods",
             "companies": [
