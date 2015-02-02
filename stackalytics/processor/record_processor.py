@@ -140,7 +140,6 @@ class RecordProcessor(object):
         if not lp_profile:
             LOG.debug('User with id %s not found', launchpad_id)
             return launchpad_id
-
         return lp_profile['display_name']
 
     def _get_independent(self):
@@ -810,7 +809,7 @@ class RecordProcessor(object):
             company_draft = record['company_draft']
             company_name = self.domains_index.get(
                 utils.normalize_company_name(company_draft)) or (
-                    utils.normalize_company_draft(company_draft))
+                utils.normalize_company_draft(company_draft))
 
             if company_name == record['company_name']:
                 continue
