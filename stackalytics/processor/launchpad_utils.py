@@ -12,7 +12,10 @@
 # implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+#import sys
+#if "/home/ubuntu/stackalytics" not in sys.path:
+#    sys.path.append("/home/ubuntu/stackalytics")
+#    print sys.path
 import six
 from six.moves import http_client
 from six.moves.urllib import parse
@@ -95,3 +98,6 @@ def lp_bug_generator(module, modified_since):
             yield record
 
         uri = chunk.get('next_collection_link')
+
+if __name__=="__main__":
+    print lp_profile_by_launchpad_id("yanheven")
