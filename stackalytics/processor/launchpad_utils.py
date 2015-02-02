@@ -12,7 +12,6 @@
 # implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
 import six
 from six.moves import http_client
 from six.moves.urllib import parse
