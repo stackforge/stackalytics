@@ -1497,6 +1497,18 @@
             "emails": ["chris@buccella.org", "buccella@linux.vnet.ibm.com", "chris.buccella@antallagon.com"]
         },
         {
+            "launchpad_id": "cdearbor",
+            "gerrit_id": "cdearbor",
+            "companies": [
+                {
+                    "company_name": "Dell",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Chris Dearborn",
+            "emails": ["christopher_dearborn@dell.com", "cdearbor@comcast.net"]
+        },
+        {
             "launchpad_id": "chris-p-robinson",
             "companies": [
                 {
