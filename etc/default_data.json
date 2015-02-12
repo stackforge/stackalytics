@@ -3146,6 +3146,18 @@
             "emails": ["gkotton@vmware.com", "gkotton@redhat.com", "garyk@radware.com"]
         },
         {
+            "launchpad_id": "9-me-9",
+            "gerrit_id": "vmtyler",
+            "companies": [
+                {
+                    "company_name": "EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Tyler Britten",
+            "emails": ["me@vmtyler.com", "tyler.britten@emc.com"]
+        },
+        {
             "launchpad_id": "geekinutah",
             "companies": [
                 {
