@@ -9328,6 +9328,17 @@
             "user_name": "Yevgen Runts",
             "emails": ["yevgen_runts@epam.com", "yevhenrunts@gmail.com"]
         },
+        {   "launchpad_id": "9-me-9",
+            "gerrit_id": "vmtyler",
+            "companies": [
+                {
+                    "company_name": "EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Tyler Britten",
+            "emails": ["me@vmtyler.com", "tyler.britten@emc.com"]
+        },
         {
             "launchpad_id": "yogesh-srikrishnan",
             "companies": [
