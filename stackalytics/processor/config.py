@@ -47,7 +47,7 @@ OPTS = [
                 help='Forcibly read default data and update records'),
     cfg.StrOpt('program-list-uri',
                default=('https://git.openstack.org/cgit/'
-                        'openstack/governance/plain/reference/programs.yaml'),
+                        'openstack/governance/plain/reference/projects.yaml'),
                help='The address of file with list of programs'),
     cfg.StrOpt('driverlog-data-uri',
                default='https://git.openstack.org/cgit/'
