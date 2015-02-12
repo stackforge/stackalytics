@@ -4535,6 +4535,17 @@
             "user_name": "Kevin McDonald",
             "emails": ["k3vinmcdonald@gmail.com"]
         },
+	{
+            "launchpad_id": "kallebe-monteiro",
+            "companies": [
+                {
+                    "company_name": "Hitachi",
+                    "end_date": "null"
+                },
+            ],
+            "user_name": "Kallebe Monteiro",
+            "emails": ["kallebe.monteiro@lsbd.ufc.br"]
+        },
         {
             "launchpad_id": "kanaderohan",
             "gerrit_id": "kanaderohan",
