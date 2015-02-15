@@ -3675,6 +3675,18 @@
            "emails": ["ichihara.hirofumi@lab.ntt.co.jp", "ichihara.hirofumi@gmail.com"]
         },
         {
+           "launchpad_id": "idzzy",
+           "gerrit_id": "idzzy",
+           "companies": [
+               {
+                   "company_name": "KVH",
+                   "end_date": null
+               }
+           ],
+           "user_name": "Yusuke Ide",
+           "emails": ["idzzyzzbi@gmail.com"]
+        },
+        {
            "launchpad_id": "idegtiarov",
            "gerrit_id": "tovstun",
            "companies": [
