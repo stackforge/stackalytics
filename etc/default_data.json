@@ -4016,6 +4016,18 @@
             "emails": ["jason@koelker.net", "jkoelker@rackspace.com"]
         },
         {
+            "launchpad_id": "jason-jasonamyers",
+            "gerrit_id": "jasonamyers",
+            "companies": [
+                {
+                    "company_name": "Cisco",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jason Myers",
+            "emails": ["jason@jasonamyers.com", "jasomyer@cisco.com"]
+        },
+        {
             "launchpad_id": "jason-oldos",
             "companies": [
                 {
