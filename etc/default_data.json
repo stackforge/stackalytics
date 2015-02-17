@@ -9712,6 +9712,21 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "sdake",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": "2015-Jan-30"
+                },
+                {
+                    "company_name": "Cisco Systems"
+                    "end_date": null
+                }
+            ],
+            "user_name": "Steven Dake",
+            "emails": ["sdake@redhat.com", "stdake@cisco.com"]
         }
     ],
     "companies": [
