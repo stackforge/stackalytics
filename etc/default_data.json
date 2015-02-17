@@ -7481,6 +7481,21 @@
             "emails": ["ryuyada@gmail.com", "ryutaro.yada@mail.rakuten.com"]
         },
         {
+            "launchpad_id": "sdake",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": "2015-Jan-30"
+                },
+                {
+                    "company_name": "Cisco Systems"
+                    "end_date": null
+                }
+            ],
+            "user_name": "Steven Dake",
+            "emails": ["sdake@redhat.com", "stdake@cisco.com"]
+        }
+        {
            "launchpad_id": "s-haub",
            "gerrit_id": "shaub",
            "companies": [
