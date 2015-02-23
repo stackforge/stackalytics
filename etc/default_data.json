@@ -9948,6 +9948,10 @@
             "company_name": "Bitergia"
         },
         {
+            "domains": ["bit-isle.co.jp"],
+            "company_name": "Bit-isle Inc."
+        },
+        {
             "domains": ["bluebox.net"],
             "company_name": "Blue Box",
             "aliases": ["Blue Box Group"]
