@@ -9540,6 +9540,17 @@
             "emails": ["yogesh.srikrishnan@rackspace.com", "yoga80@yahoo.com"]
         },
         {
+            "launchpad_id": "ynshenoy",
+            "companies": [
+                {
+                    "company_name": "Reliance",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yogeshwar Shenoy",
+            "emails": ["ynshenoy@gmail.com", "yogeshwar.shenoy@ril.com"]
+        },
+        {
             "launchpad_id": "yongiman",
             "companies": [
                 {
