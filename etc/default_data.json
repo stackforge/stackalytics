@@ -1,6 +1,17 @@
 {
     "users": [
         {
+            "launchpad_id": "yanheven",
+            "companies": [
+                {
+                    "company_name": "ChinaNetCenter",
+                    "end_date": null
+                }
+            ],
+            "user_name": "yanheven",
+            "emails": ["yanheven@gmail.com", "yanhf@chinanetcenter.com"]
+        },
+	{
             "launchpad_id": "0-doug",
             "companies": [
                 {
