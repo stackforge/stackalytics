@@ -630,33 +630,7 @@
       ]
     }
   ],
-  "repos": [
-    {
-      "releases": [
-        {
-          "branch": "stable/hydrogen",
-          "tag_to": "HEAD",
-          "release_name": "Hydrogen",
-          "tag_from": "f5087c8"
-        },
-        {
-          "branch": "stable/helium",
-          "tag_to": "HEAD",
-          "release_name": "Helium",
-          "tag_from": "42c04ed"
-        },
-        {
-          "branch": "develop",
-          "tag_to": "HEAD",
-          "release_name": "Current",
-          "tag_from": "8e1dc0f"
-        }
-      ],
-     "uri": "https://git.opendaylight.org/gerrit/p/lispflowmapping.git",
-     "module": "lispflowmapping",
-     "organization": "opendaylight"
-    }
-  ],
+  "repos": [],
   "project_sources": [
     {
       "organization": "opendaylight",
