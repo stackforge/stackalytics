@@ -11945,6 +11945,21 @@
             "module": "jcloud",
             "organization": "jcloud",
             "uri": "https://github.com/jclouds/jclouds.git"
+        },
+        {
+            "module": "ansible",
+            "organization": "ansible",
+            "uri": "https://github.com/ansible/ansible.git"
+        },
+        {
+            "module": "ansible-modules-core",
+            "organization": "ansible",
+            "uri": "https://github.com/ansible/ansible-modules-core.git"
+        },
+        {
+            "module": "ansible-modules-extras",
+            "organization": "ansible",
+            "uri": "https://github.com/ansible/ansible-modules-extras.git"
         }
     ],
     "project_sources": [
@@ -12019,6 +12034,10 @@
         {
             "module_group_name": "docker-group",
             "modules": ["docker", "docker-registry", "docker-network", "libcontainer", "distribution", "machine", "swarm", "libtrust"]
+        }
+        {
+            "module_group_name": "ansible-group",
+            "modules": ["ansible", "ansible-modules-core", "ansible-modules-extras"]
         }
     ],
     "releases": [
@@ -12110,7 +12129,7 @@
         {
             "id": "complementary",
             "title": "Complementary",
-            "modules": ["docker-group", "kubernetes", "jclouds", "cloudfoundry"]
+            "modules": ["docker-group", "kubernetes", "jclouds", "cloudfoundry", "ansible-group"]
         },
         {
             "id": "cloudfoundry-group",
@@ -12123,6 +12142,12 @@
             "title": "Docker",
             "child": true,
             "modules": ["docker-group"]
+        },
+        {
+            "id": "ansible-group",
+            "title": "Ansible",
+            "child": true,
+            "modules": ["ansible-group"]
         },
         {
             "id": "kubernetes-group",
