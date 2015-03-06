@@ -7958,6 +7958,21 @@
             "emails": ["sergey.vilgelm@gmail.com", "svilgelm@mirantis.com"]
         },
         {
+            "launchpad_id": "shashikumar-h-r",
+            "companies": [
+                {
+                    "company_name": "*independent",
+                    "end_date": "2014-Nov-12"
+                },
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Shashikumar H R"
+            "emails": ["shashikumar.h-r@hp.com", "shashikumar7019@gmail.com"]
+        },
+        {
             "launchpad_id": "shaunm-gnome",
             "companies": [
                 {
