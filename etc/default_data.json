@@ -9972,6 +9972,17 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "hanrong",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Rong Han ZTE",
+            "emails": ["spring068@sina.cn", "han.rong3@zte.com.cn "]
         }
     ],
     "companies": [
