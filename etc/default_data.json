@@ -9122,6 +9122,17 @@
             "emails": ["unmesh.gurjar@vertex.co.in", "unmesh.gurjar@nttdata.com", "unmesh.gurjar@hp.com"]
         },
         {
+            "launchpad_id": "usrleon",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Lvov Maxim",
+            "emails": ["usrleon@gmail.com", "mlvov@mirantis.com"]
+        },
+        {
             "launchpad_id": "uwe-schreiber",
             "gerrit_id": "uschreiber",
             "companies": [
@@ -9132,17 +9143,6 @@
             ],
             "user_name": "Uwe Schreiber",
             "emails": ["uwe.schreiber@sva.de"]
-        },
-        {
-            "launchpad_id": "usrleon",
-            "companies": [
-                {
-                    "company_name": "Mirantis",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Lvov Maxim",
-            "emails": ["usrleon@gmail.com", "mlvov@mirantis.com"]
         },
         {
             "launchpad_id": "vanderliang",
