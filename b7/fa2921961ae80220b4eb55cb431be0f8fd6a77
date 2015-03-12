@@ -1,0 +1,9 @@
+Verified+2: Jenkins
+Code-Review+2: Herman Narkaytis <hnarkaytis@mirantis.com>
+Workflow+1: Herman Narkaytis <hnarkaytis@mirantis.com>
+Code-Review+1: Thanassis Parathyras <aparathyras@stackmasters.eu>
+Submitted-by: Jenkins
+Submitted-at: Thu, 12 Mar 2015 21:16:47 +0000
+Reviewed-on: https://review.openstack.org/163757
+Project: stackforge/stackalytics
+Branch: refs/heads/master
