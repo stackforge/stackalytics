@@ -67,8 +67,8 @@ All requests support common set of parameters that allow to filter resulting dat
 ............................
 
 Data can be queried by time period:
- * ``start_date`` - when the period starts
- * ``end_date`` - when the period ends
+ * ``start_date`` - when the period starts (unix epoch)
+ * ``end_date`` - when the period ends (unix epoch)
 Note that if both release and time period are specified then the data is selected for the
 intersection (thus the useful way is to specify release as ``all``).
 
