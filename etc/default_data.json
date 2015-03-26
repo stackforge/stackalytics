@@ -4336,6 +4336,17 @@
             "user_name": "Jeff White",
             "emails": ["jeladi@yahoo.com"]
         },
+	{
+	    "launchpad_id": "jejbcan",
+            "companies": [
+                {
+                    "company_name": "Parallels",
+                    "end_date": null
+                }
+            ],
+            "user_name": "James Bottomley",
+            "emails": ["James.Bottomley@HansenPartnership.com", "jejbcan@hansenpartnership.com", "jbottomley@parallels.com", "jejbcan1@hansenpartnership.com"]
+	},
         {
             "launchpad_id": "jerome-gallard",
             "companies": [
