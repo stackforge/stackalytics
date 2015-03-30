@@ -10228,6 +10228,17 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "hfamily15",
+            "companies": [
+                {
+                    "company_name": "LGCNS",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ha Hyun",
+            "emails": ["hfamily15@gmail.com", "hahyun0523@lgcns.com"]
         }
     ],
     "companies": [
@@ -11363,6 +11374,10 @@
         {
             "domains": ["zte.com.cn"],
             "company_name": "ZTE Corporation"
+        },
+        {
+            "domains": ["lgcns.com"],
+            "company_name": "LG CNS"
         }
     ],
     "repos": [
