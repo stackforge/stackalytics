@@ -124,6 +124,19 @@
             "emails": ["aaron@greenbtn.com"]
         },
         {
+            "github_id": "abadger",
+            "companies": [
+                {
+                    "company_name": "RedHat",
+                    "end_date": null
+                }
+            "user_name": "Toshio Kuratomi",
+            "emails": ["toshio@fedoraproject.org", "a.badger@gmail.com"]
+            ],
+            "user_name": "Aaron Greengrass",
+            "emails": ["aaron@greenbtn.com"]
+        },
+        {
             "launchpad_id": "abhijeet-jain",
             "gerrit_id": "Abhijeet.Jain",
             "companies": [
@@ -966,6 +979,17 @@
             ],
             "user_name": "Basil Baby",
             "emails": ["basilbaby@gmail.com"]
+        },
+        {
+            "github_id": "bcoca",
+            "companies": [
+                {
+                    "company_name": "Ansible",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Basil Baby",
+            "emails": ["bcoca@ansible.com", "brian.coca+git@gmail.com"]
         },
         {
             "launchpad_id": "bcwaldon",
@@ -5925,6 +5949,18 @@
             "emails": ["mayank.kumar@hp.com","mayank0107@yahoo.co.in"]
         },
         {
+            "launchpad_id": "mpdehaan",
+            "github_id": "mpdehaan",
+            "companies": [
+                {
+                    "company_name": "Ansible",
+                    "end_date": "2015-Jan-30"
+                }
+            ],
+            "user_name": "Michael DeHaan",
+            "emails": ["michael.dehaan@gmail.com","michael.dehaan@ansible.com"]
+        },
+        {
             "launchpad_id": "mdrnstm",
             "companies": [
                 {
@@ -10376,6 +10412,10 @@
         {
             "domains": ["alyseo.com"],
             "company_name": "Alyseo"
+        },
+        {
+            "domains": ["ansible.com"],
+            "company_name": "Ansible"
         },
         {
             "domains": ["anchor.com.au", "anchor.net.au", "anchor.hosting"],
