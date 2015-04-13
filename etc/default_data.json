@@ -10538,6 +10538,17 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "nuaafe",
+            "companies": [
+                {
+                    "company_name": "Cisco Systems",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Wei Tie",
+            "emails": ["nuaafe@gmail.com", "wtie@cisco.com"]
         }
     ],
     "companies": [
