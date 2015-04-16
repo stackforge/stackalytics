@@ -14,6 +14,7 @@
 # limitations under the License.
 
 import collections
+import logging as std_logging
 import operator
 import os
 import re
@@ -37,14 +38,10 @@ from stackalytics.processor import utils
 
 app = flask.Flask(__name__)
 app.config.from_object(__name__)
-app.config.from_envvar('DASHBOARD_CONF', silent=True)
 app.register_blueprint(reports.blueprint)
 app.register_blueprint(kpi.blueprint)
 
 LOG = logging.getLogger(__name__)
-
-conf = cfg.CONF
-conf.register_opts(config.OPTS)
 
 
 # Handlers ---------
@@ -650,21 +647,27 @@ def remove_ctrl_chars(text):
     return re.sub(r'[\W]', '_', text)
 
 
-def main():
+def configure():
+    conf = cfg.CONF
+    conf.register_opts(config.OPTS)
+
     logging.register_options(conf)
     logging.set_defaults()
 
+    conf_kwargs = dict(args=[], project='stackalytics')
     conf_file = os.getenv('STACKALYTICS_CONF')
     if conf_file and os.path.isfile(conf_file):
-        conf(default_config_files=[conf_file])
-        app.config['DEBUG'] = cfg.CONF.debug
-        LOG.info('Stackalytics.dashboard is configured via "%s"', conf_file)
-    else:
-        conf(project='stackalytics')
+        conf_kwargs['default_config_files'] = [conf_file]
+
+    conf(**conf_kwargs)
+    app.config['DEBUG'] = cfg.CONF.debug
 
     logging.setup(conf, 'stackalytics.dashboard')
+    LOG.info('Logging enabled')
+    conf.log_opt_values(LOG, std_logging.DEBUG)
 
-    app.run(cfg.CONF.listen_host, cfg.CONF.listen_port)
+configure()
+
 
 if __name__ == '__main__':
-    main()
+    app.run(cfg.CONF.listen_host, cfg.CONF.listen_port)
