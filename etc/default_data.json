@@ -12797,6 +12797,7 @@
         "http://lists.openstack.org/pipermail/openstack-dev/",
         "http://lists.openstack.org/pipermail/openstack-docs/",
         "http://lists.openstack.org/pipermail/openstack-infra/",
+        "http://lists.openstack.org/pipermail/openstack-docs/",
         "http://lists.openstack.org/pipermail/openstack-operators/",
         "http://lists.openstack.org/pipermail/openstack/"
     ],
