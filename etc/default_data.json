@@ -4000,6 +4000,18 @@
             "emails": ["hwbi2008@gmail.com"]
         },
         {
+            "launchpad_id": "hong-wong",
+            "gerrit_id": "hwong",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Hong Wong",
+            "emails": ["hong.wong@hp.com"]
+        },
+        {
             "launchpad_id": "i-kumagai",
             "gerrit_id": "kumagai19o",
             "companies": [
