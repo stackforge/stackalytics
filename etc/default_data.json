@@ -7491,6 +7491,17 @@
             "emails": ["jamie@vialstudios.com"]
         },
         {
+            "github_id": "resouer",
+            "companies": [
+                {
+                    "company_name": "Zhejiang University",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Harry Zhang",
+            "emails": ["resouer@163.com", "harryzhang@zju.edu.cn", "resouer@gmail.com"]
+        },
+        {
             "launchpad_id": "retr0h",
             "companies": [
                 {
@@ -9972,6 +9983,17 @@
             "emails": ["wkqwu@cn.ibm.com", "wkq5325@gmail.com"]
         },
         {
+            "github_id": "WIZARD-CXY",
+            "companies": [
+                {
+                    "company_name": "Zhejiang University",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Xinyu Chen",
+            "emails": ["wizard_cxy@hotmail.com", "wizardcxy@126.com"]
+        },
+        {
             "launchpad_id": "wrongfan",
             "companies": [
                 {
@@ -11658,6 +11680,10 @@
         {
             "domains": ["zhaw.ch"],
             "company_name": "Zurich University of Applied Sciences"
+        },
+        {
+            "domains": ["zju.edu.cn"],
+            "company_name": "Zhejiang University"
         },
         {
             "domains": ["zinux.com"],
