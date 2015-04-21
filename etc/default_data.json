@@ -672,6 +672,17 @@
             "emails": ["andy.edmonds@gmail.com", "andy@edmonds.be"]
         },
         {
+            "launchpad_id": "resouer",
+            "companies": [
+                {
+                    "company_name": "Zhejiang University",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Harry Zhang",
+            "emails": ["resouer@163.com", "harryzhang@zju.edu.cn", "resouer@gmail.com"]
+        },
+        {
             "launchpad_id": "anish7",
             "companies": [
                 {
@@ -10487,6 +10498,10 @@
               "Freelance IT Specialist", "No Affiliation", "Not applicable", "Unaffilliated", "Unaffiliate", "Unafilliated",
               "Unaffliated", "test", "Unffiliated", "independent user", "me", "my", "unaffeliated", "Unaffilaited",
               "Unaffiliaited", "Unaffilated", "Personal user"]
+        },
+        {
+            "domains": ["zju.edu.cn"],
+            "company_name": "Zhejiang University"
         },
         {
             "domains": ["360.cn"],
