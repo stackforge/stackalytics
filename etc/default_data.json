@@ -238,6 +238,20 @@
       ]
     },
     {
+      "ldap_id": "evanz",
+      "user_name": "Evan Zeller",
+      "companies": [
+        {
+          "company_name": "Brocade",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "evanrzeller@gmail.com",
+        "ezeller@brocade.com"
+      ]
+    },
+    {
       "ldap_id": "ffernandes",
       "user_name": "Flavio Fernandes",
       "companies": [
