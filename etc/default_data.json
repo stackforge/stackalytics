@@ -321,6 +321,20 @@
       ]
     },
     {
+      "ldap_id": "rgoulding",
+      "user_name": "Ryan Goulding",
+      "companies": [
+        {
+          "company_name": "Brocade",
+          "end_date": null
+        }
+      ],
+      "emails": [
+        "ryandgoulding@gmail.com",
+        "rgouldin@brocade.com"
+      ]
+    },
+    {
       "ldap_id": "rob.adams",
       "user_name": "Rob Adams",
       "companies": [
