@@ -62,6 +62,20 @@
         "aasdevaddr@gmail.com"
       ]
     },
+    {
+      "ldap_id": "aivanov",
+      "user_name": "Anton Ivanov",
+      "companies": [
+        {
+          "company_name": "Brocade",
+          "end_date":  null
+        }
+      ],
+      "emails": [
+        "anton.ivanov@kot-begemot.co.uk",
+	    "aivanov@brocade.com"
+      ]
+    },
         {
       "ldap_id": "amittbose",
       "user_name": "Amit Bose",
