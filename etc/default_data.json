@@ -7275,7 +7275,8 @@
             "emails": ["priti_desai@symantec.com", "pritidesai8@gmail.com"]
         },
         {
-            "launchpad_id": "prykhodchenko",
+            "launchpad_id": "romcheg",
+            "gerrit_id": "prykhodchenko",
             "companies": [
                 {
                     "company_name": "Mirantis",
