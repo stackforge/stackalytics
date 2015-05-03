@@ -10217,7 +10217,19 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "ankita-wagh7",
+            "companies": [
+                {
+                    "company_name": "Symantec",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ankita Wagh",
+            "emails": ["ankita.wagh7@gmail.com", "ankita_wagh@symantec.com"]
         }
+
     ],
     "companies": [
         {
