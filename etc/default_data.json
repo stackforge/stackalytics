@@ -9711,6 +9711,17 @@
             "emails": ["vbatts@gmail.com"]
         },
         {
+            "launchpad_id": "vkrayneva",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Veronica Krayneva",
+            "emails": ["vkrayneva@mirantis.com"]
+        },
+        {
             "launchpad_id": "vedlad",
             "gerrit_id": "vedlad",
             "companies": [
