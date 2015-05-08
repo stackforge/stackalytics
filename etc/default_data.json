@@ -9735,6 +9735,17 @@
             "emails": ["vey.julien@gmail.com", "julien.vey@numergy.com"]
         },
         {
+            "launchpad_id": "vkrayneva",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Veronica Krayneva",
+            "emails": ["vkrayneva@mirantis.com"]
+        },
+        {
             "launchpad_id": "victor-feitosa",
             "gerrit_id": "victorfeitosa",
             "companies": [
