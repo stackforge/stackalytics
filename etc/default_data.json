@@ -12811,6 +12811,11 @@
             ]
         },
         {
+            "module": "proliantutils",
+            "uri": "git://git.openstack.org/stackforge/proliantutils.git",
+            "organization": "stackforge"
+        },
+        {
             "module": "oslo.versionedobjects",
             "uri": "git://git.openstack.org/openstack/oslo.versionedobjects.git",
             "organization": "openstack",
