@@ -7610,11 +7610,11 @@
             "companies": [
                 {
                     "company_name": "Comcast",
-                    "end_date": null
+                    "end_date": "2015-May-20"
                 }
             ],
             "user_name": "Raphael Mondesir",
-            "emails": ["raphael_mondesir@cable.comcast.com", "raphmraph@gmail.com"]
+            "emails": ["raphmraph@gmail.com"]
         },
         {
             "launchpad_id": "raymond-angelone",
