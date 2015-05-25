@@ -1,6 +1,22 @@
 {
     "users": [
         {
+            "launchpad_id": "dmakogon",
+            "gerrit-id": "dmakogon",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": "2015-Apr-22"
+                },
+                {
+                    "company_name": "EPAM Systems",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Denis M.",
+            "emails": ["Denys_Makogon@epam.com", "lildee1991@gmail.com"]
+        },
+        {
             "launchpad_id": "0-doug",
             "companies": [
                 {
