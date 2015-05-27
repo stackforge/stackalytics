@@ -8626,6 +8626,17 @@
             ],
             "user_name": "Sergey Vilgelm",
             "emails": ["sergey.vilgelm@gmail.com", "svilgelm@mirantis.com"]
+        },    
+        {     
+            "launchpad_id": "seungkyua",
+            "companies": [
+                {     
+                    "company_name": "OpenStack Korea User Group",
+                    "end_date": null
+                }     
+            ],    
+            "user_name": "Seungkyu Ahn",
+            "emails": ["seungkyua@gmail.com"]
         },
         {
             "launchpad_id": "shaunm-gnome",
