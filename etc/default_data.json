@@ -2882,6 +2882,10 @@
                     "company_name": "Nebula",
                     "end_date": "2015-Apr-01"
                 }
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
             ],
             "user_name": "Dean Troyer",
             "emails": ["dt-github@xr7.org", "dtroyer@gmail.com"]
