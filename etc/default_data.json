@@ -6548,11 +6548,16 @@
             "companies": [
                 {
                     "company_name": "MontaVista Software",
+                    "end_date": "2015-June-15"
+                },
+                {
+                    "company_name": "independent",
                     "end_date": null
                 }
+
             ],
             "user_name": "Madhu Mohan Nelemane",
-            "emails": ["snmohan83@gmail.com", "mmohan@mvista.com"]
+            "emails": ["snmohan83@gmail.com"]
         },
         {
             "launchpad_id": "mmuehl",
