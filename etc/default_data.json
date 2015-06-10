@@ -864,6 +864,18 @@
             "emails": ["aplanas@gmail.com", "aplanas@suse.de"]
         },
         {
+            "launchpad_id": "kbaikov",
+            "gerrit_id": "kbaikov",
+            "companies": [
+                {
+                    "company_name": "SUSE",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Konstantin Baikov",
+            "emails": ["konstantin.baikov@gmail.com", "kbaikov@suse.com"]
+        },
+        {
             "launchpad_id": "armando-migliaccio",
             "gerrit_id": "armando-migliaccio",
             "companies": [
