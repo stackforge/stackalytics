@@ -1816,6 +1816,17 @@
             "emails": ["chris@buccella.org", "buccella@linux.vnet.ibm.com", "chris.buccella@antallagon.com"]
         },
         {
+            "launchpad_id": "chris.mauritz",
+            "companies": [
+                {
+                    "company_name": "comcast",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Christopher mauritz",
+            "emails": ["chris.mauritz@gmail.com"]
+        },
+        {
             "launchpad_id": "chris-p-robinson",
             "companies": [
                 {
@@ -1837,17 +1848,7 @@
             "user_name": "Christophe Sauthier",
             "emails": ["christophe@sauthier.com", "christophe.sauthier@objectif-libre.com"]
         },
-        {
-            "launchpad_id": "chris.mauritz",
-            "companies": [
-                {
-                    "company_name": "comcast",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Christopher mauritz",
-            "emails": ["chris.mauritz@gmail.com"]
-        },
+
         {
             "launchpad_id": "chungg",
             "companies": [
