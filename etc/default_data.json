@@ -1827,6 +1827,17 @@
             "emails": ["chris_p_robinson@hotmail.com", "chrisprobinson@outlook.com", "chris.p.robinson@hp.com"]
         },
         {
+            "launchpad_id": "chris.mauritz",
+            "companies": [
+                {
+                    "company_name": "comcast",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Christopher mauritz",
+            "emails": ["chris.mauritz@gmail.com"]
+        },
+        {
             "launchpad_id": "christophe.sauthier",
             "companies": [
                 {
