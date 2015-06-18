@@ -101,7 +101,10 @@ def _process_repo(repo, runtime_storage_inst, record_processor_inst,
     LOG.info('Processing repo uri: %s', uri)
 
     LOG.debug('Processing blueprints for repo uri: %s', uri)
-    bp_iterator = lp.log(repo)
+    blueprint_size = runtime_storage_inst.get_by_key(
+        'blueprint_size-%s' % repo['module'])
+
+    bp_iterator = lp.log(repo, blueprint_size)
     bp_iterator_typed = _record_typer(bp_iterator, 'bp')
     processed_bp_iterator = record_processor_inst.process(
         bp_iterator_typed)

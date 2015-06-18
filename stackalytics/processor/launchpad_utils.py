@@ -64,8 +64,11 @@ def lp_module_exists(module):
     return res.status != 404
 
 
-def lp_blueprint_generator(module):
+def lp_blueprint_generator(module, start):
     uri = LP_URI_DEVEL % (module + '/all_specifications')
+    if start:
+        uri += '?ws.start=%s' % start
+
     while uri:
         LOG.debug('Reading chunk from uri %s', uri)
         chunk = utils.read_json_from_uri(uri)
