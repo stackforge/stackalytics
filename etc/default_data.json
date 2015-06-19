@@ -6687,6 +6687,19 @@
             "emails": ["snmohan83@gmail.com", "mmohan@mvista.com"]
         },
         {
+            "launchpad_id": "madhusudhan-kandadai",
+            "gerrit_id": "madhusudhan-kandadai",
+            "github_id": "akmadhusudhan",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Madhusudhan Kandadai",
+            "emails": ["madhusudhan.openstack@gmail.com", "madhusudhan.kandadai@hp.com"]
+        },
+        {
             "launchpad_id": "mmuehl",
             "companies": [
                 {
