@@ -11151,7 +11151,7 @@
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
         },
-		{
+	{
             "launchpad_id": "liujunpeng",
             "companies": [
                 {
@@ -12411,7 +12411,7 @@
             "domains": ["zte.com.cn"],
             "company_name": "ZTE Corporation"
         },
-		{
+	{
             "domains": ["inspur.com"],
             "company_name": "INSPUR Corporation"
         }
