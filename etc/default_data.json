@@ -412,6 +412,17 @@
             "emails": ["akbajaj@hp.com"]
         },
         {
+             "launchpad_id": "akhivin",
+             "companies": [
+                 {
+                     "company_name": "Mirantis",
+                     "end_date": null
+                 }
+             ],
+            "user_name": "Alexey Khivin",
+            "emails": ["akhivin@mirantis.com"]
+        },
+        {
 
             "launchpad_id": "akscram",
             "companies": [
