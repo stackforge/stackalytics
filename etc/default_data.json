@@ -46,6 +46,18 @@
             "emails": ["295988511@qq.com","liuxinguo@huawei.com"]
         },
         {
+            "launchpad_id": "jikyll",
+            "gerrit_id": "jikyll",
+            "companies": [
+                {
+                    "company_name": "EasyStack",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Haodong Tang",
+            "emails": ["jikyll25@gmail.com","haodong.tang@easystack.cn"]
+        },
+        {
             "launchpad_id": "3-andrew",
             "gerrit_id": "AndrewSpiers",
             "companies": [
