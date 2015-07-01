@@ -11176,6 +11176,17 @@
             "emails": ["zxiiro@gmail.com", "thanh.ha@linuxfoundation.org"]
         },
         {
+            "launchpad_id": "jikyll",
+            "companies": [
+                {
+                    "company_name": "EasyStack",
+                    "end_date": null
+                }
+            ],
+            "user_name": "jikyll",
+            "emails": ["jikyll25@gmail.com", "haodong.tang@easystack.cn"]
+        },
+        {
             "launchpad_id": "zyluo",
             "companies": [
                 {
