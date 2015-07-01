@@ -3468,6 +3468,18 @@
             "emails": ["me@mark.atwood.name", "fallenpegasus@gmail.com", "mark.atwood@gmail.com", "matwood@redhat.com", "mark.atwood@hp.com"]
         },
         {
+            "launchpad_id": "zhen-fang",
+            "gerrit_id": "fangzhen",
+            "companies": [
+                {
+                    "company_name": "EasyStack",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Fang Zhen",
+            "emails": ["zhen.fang@easystack.cn","fangzhenzyou@gmail.com"]
+        },
+        {
             "launchpad_id": "ficoos",
             "companies": [
                 {
