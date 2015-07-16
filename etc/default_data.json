@@ -9289,6 +9289,18 @@
             "user_name": "Swaroop Jayanthi",
             "emails": ["sjayanthi@hp.com"]
         },
+	{
+	    "launchpad_id": "sinvalv",
+	    "gerrit_id": "sinvalvieira",
+	    "companies": [
+	        {
+	            "company_name": "Universidade Federal de Campina Grande",
+                    "end_date": null
+		}
+	    ],
+		    "user_name": "Sinval Vieira",
+		    "emails": ["sinval@lsd.ufcg.edu.br", "sinvalneto01@gmail.com"]
+        },
         {
             "launchpad_id": "sjmc7",
             "companies": [
