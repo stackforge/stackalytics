@@ -557,6 +557,18 @@
             "emails": ["alexei.kornienko@gmail.com", "akornienko@mirantis.com"]
         },
         {
+            "launchpad_id": "aleksiyantsa",
+            "gerrit_id": "yappo",
+            "companies": [
+                {
+                    "company_name": "ISP RAS",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Alexander Aleksiyants",
+            "emails": ["aleksiyantsa@gmail.com", "aleksiyantsa@ispras.ru"]
+        },
+        {
             "launchpad_id": "alexpilotti",
             "companies": [
                 {
