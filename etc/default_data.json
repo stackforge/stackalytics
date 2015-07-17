@@ -920,6 +920,17 @@
             "emails": ["aplanas@gmail.com", "aplanas@suse.de"]
         },
         {
+            "launchpad_id": "apoorvad",
+            "companies": [
+                {
+                    "company_name": "Tintri",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Apoorva Deshpande",
+            "emails": ["apps.desh@gmail.com", "aproovad@tintri.com"]
+        },
+        {
             "launchpad_id": "arahal",
             "companies": [
                 {
@@ -12559,6 +12570,10 @@
         {
             "domains": ["tieto.com"],
             "company_name": "Tieto"
+        },
+        {
+            "domains": ["tintri.com"],
+            "company_name": "Tintri"
         },
         {
             "domains": ["toronto.edu"],
