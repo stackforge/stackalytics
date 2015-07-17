@@ -10084,6 +10084,35 @@
             "emails": ["takaaki.furukawa@rakops.com", "takaaki.furukawa@mail.rakuten.com"]
         },
         {
+            "lanchpad_id": "Takeaki Matsumoto",
+            "gerrit_id": "takmatsu",
+            "companies": [
+               {
+                   "company_name": "NTT",
+                   "end_date": null
+               }
+           ],
+           "user_name": "Takeaki Mitsui",
+           "emails": [
+                "takeaki.matsumoto@ntt.com"
+           ]
+        },
+        {
+            "lanchpad_id": "tkyk-mitsui",
+            "gerrit_id": "takayuki-mitsui",
+            "companies": [
+               {
+                   "company_name": "NTT",
+                   "end_date": null
+               }
+           ],
+           "user_name": "takayuki",
+           "emails": [
+                "tkyk.mitsui@gmail.com",
+                "takayuki.mitsui@ntt.com"
+           ]
+        },
+        {
             "launchpad_id": "tmazur",
             "companies": [
                 {
