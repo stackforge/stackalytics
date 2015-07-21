@@ -11226,6 +11226,17 @@
             "emails": ["yuntongjin@gmail.com", "yuntong.jin@intel.com"]
         },
         {
+            "launchpad_id": "shaohef",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "shaohefeng",
+            "emails": ["shaohef@126.com", "shaohe.feng@intel.com"]
+        },
+        {
             "launchpad_id": "yuxcer",
             "companies": [
                 {
