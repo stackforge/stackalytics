@@ -2907,11 +2907,15 @@
             "companies": [
                 {
                     "company_name": "Mirantis",
+                    "end_date": "2015-Jun-30"
+                },
+                {
+                    "company_name": "*independent",
                     "end_date": null
                 }
             ],
             "user_name": "Christopher Aedo",
-            "emails": ["doc@aedo.net", "caedo@mirantis.com"]
+            "emails": ["doc@aedo.net"]
          },
          {
             "launchpad_id": "dolph",
