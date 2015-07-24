@@ -8408,6 +8408,21 @@
             "emails": ["kiran.ranganath@maplelabs.com", "kiran7193@gmail.com"]
         },
         {
+            "launchpad_id": "robhirschfeld",
+            "companies": [
+                {
+                    "company_name": "Dell",
+                    "end_date": "2014-Oct-01"
+                },
+                {
+                    "company_name": "RackN",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Rob @zehicle Hirschfeld",
+            "emails": ["rob@zehicle.com","rob@rackn.com"]
+        },
+        {
             "launchpad_id": "rkukura",
             "companies": [
                 {
@@ -12487,6 +12502,10 @@
         {
             "domains": ["qrclab.com"],
             "company_name": "Quanta Research Cambridge"
+        },
+        {
+            "domains": ["rackn.com"],
+            "company_name": "RackN"
         },
         {
             "domains": ["rackspace.co.uk", "rackspace.com", "slicehost.com", "mailtrust.com"],
