@@ -3104,6 +3104,18 @@
             ]
         },
         {
+           "launchpad_id": "donovan-4",
+           "gerrit_id": "donovan-4",
+           "companies": [
+               {
+                   "company_name": "Catalyst IT",
+                   "end_date": null
+               }
+           ],
+           "user_name": "Donovan Jones",
+           "emails": ["donovan@catalyst.net.nz"]
+        },
+        {
             "launchpad_id": "dtroyer",
             "companies": [
                 {
