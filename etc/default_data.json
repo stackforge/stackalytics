@@ -6766,6 +6766,17 @@
             "emails": ["matt@mattfischer.com", "mfisch@ubuntu.com", "matt.fischer@twcable.com", "matthew.fischer@twcable.com"]
         },
         {
+            "launchpad_id": "margaret-frances",
+            "companies": [
+                {
+                    "company_name": "Comcast",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Margaret Frances",
+            "emails": ["margaret_frances@cable.comcast.com"]
+        },
+        {
             "launchpad_id": "mgagne",
             "companies": [
                 {
