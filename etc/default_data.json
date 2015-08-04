@@ -4844,6 +4844,17 @@
             "emails": ["jasmeet_sidhu@symantec.com", "sidhuj@gmail.com"]
         },
         {
+            "launchpad_id": "jay-clark",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jay Clark",
+            "emails": ["jason.t.clark@hp.com", "jay.clark@gmail.com"]
+        },
+        {
             "launchpad_id": "jason-jasonamyers",
             "gerrit_id": "jasonamyers",
             "companies": [
