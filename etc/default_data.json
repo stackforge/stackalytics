@@ -5761,6 +5761,18 @@
             "user_name": "Janet Yu",
             "emails": ["jwy@cs.stanford.edu"]
         },
+                {
+           "launchpad_id": "jxstanford",
+           "gerrit_id": "jxstanford",
+           "companies": [
+               {
+                   "company_name": "Solinea",
+                   "end_date": null
+               },
+           ],
+           "user_name": "John Stanford",
+           "emails": ["jxstanford@gmail.com", "john@solinea.com"]
+        },
         {
             "launchpad_id": "k3vinmcdonald",
             "companies": [
