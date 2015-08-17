@@ -232,8 +232,11 @@ def get_blueprint_id(module, name):
     return module + ':' + name
 
 
-def get_bug_id(module, bug_id):
-    return module + '/' + bug_id
+def make_bug_id(bug_id, module, release=None):
+    if release:
+        return '/'.join([module, release, bug_id])
+    else:
+        return '/'.join([module, bug_id])
 
 
 def get_patch_id(review_id, patch_number):
