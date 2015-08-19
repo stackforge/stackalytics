@@ -500,6 +500,17 @@
             "emails": ["al.miller@ajmiller.net", "ajmiller@ajmiller.net", "al.miller@hp.com"]
         },
         {
+            "launchpad_id": "aleskrivak",
+            "companies": [
+                {
+                    "company_name": "Ultimum Technologies",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Aleš Křivák",
+            "emails": ["ales.krivak@ultimumtechnologies.com", "ales.krivak@gmail.com"]
+        },
+        {
             "launchpad_id": "al592b",
             "gerrit_id": "alopgeek",
             "companies": [
