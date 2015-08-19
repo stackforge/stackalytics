@@ -5886,6 +5886,17 @@
             "user_name": "Kaushik Chandrashekar",
             "emails": ["kaushik.chand@gmail.com", "kaushik.chandrashekar@rackspace.com"]
         },
+	{
+            "launchpad_id": "kali-karthik",
+            "companies": [
+                {
+                    "company_name": "Reliance",
+                    "end_date": null
+                }
+            ],
+            "user_name": "KingKhan",
+            "emails": ["kali.karthik@gmail.com"]
+        },
         {
             "launchpad_id": "kb-sankethi",
             "companies": [
