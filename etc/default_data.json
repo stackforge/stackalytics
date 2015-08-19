@@ -7204,6 +7204,17 @@
             "emails": ["mgoddard@cray.com"]
         },
         {
+            "launchpad_id": "v-magk-g",
+            "companies": [
+                {
+                    "company_name": "Workday",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Mark Gloshen",
+            "emails": ["mark.gloshen@workday.com"]
+        },
+        {
             "launchpad_id": "mhu",
             "companies": [
                 {
