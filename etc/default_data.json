@@ -592,6 +592,17 @@
             "emails": ["alex.meade@rackspace.com", "hatboy112@yahoo.com", "mr.alex.meade@gmail.com"]
         },
         {
+            "launchpad_id": "gouthamr",
+            "companies": [
+                {
+                    "company_name": "NetApp",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Goutham Pacha Ravi",
+            "emails": [ "gouthamr@netapp.com", "gouthampravi@gmail.com"]
+        },
+        {
             "launchpad_id": "alex-schultz",
             "gerrit_id": "mwhahaha",
             "companies": [
