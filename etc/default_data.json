@@ -12349,6 +12349,18 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "zhang-quanwei",
+            "gerrit_id": "partys",
+            "companies": [
+                {
+                    "company_name": "Fujitsu",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Zhang Quanwei",
+            "emails": ["zhang_quanwei@yeah.net","zhangqw.fnst@cn.fujitsu.com"]
         }
     ],
     "companies": [
