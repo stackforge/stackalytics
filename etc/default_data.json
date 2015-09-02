@@ -2893,6 +2893,17 @@
             "user_name": "Denny Zhang",
             "emails": ["denny@unitedstack.com", "filebat.mark@gmail.com"]
         },
+	{
+            "launchpad_id": "deray",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Debayan Ray",
+            "emails": ["debayan.ray@gmail.com"]
+        },
         {
             "launchpad_id": "derek-morton",
             "companies": [
