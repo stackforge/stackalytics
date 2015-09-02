@@ -18,7 +18,6 @@ import re
 
 from oslo_log import log as logging
 import six
-from six.moves import http_client
 from six.moves.urllib import parse
 
 from stackalytics.processor import utils
@@ -63,11 +62,7 @@ def _get_mail_archive_links(uri):
 def _link_content_changed(link, runtime_storage_inst):
     LOG.debug('Check changes for mail archive located at uri: %s', link)
     parsed_uri = parse.urlparse(link)
-    conn = http_client.HTTPConnection(parsed_uri.netloc)
-    conn.request('HEAD', parsed_uri.path)
-    res = conn.getresponse()
-    last_modified = res.getheader('last-modified')
-    conn.close()
+    last_modified = utils.read_last_modified_from_uri(parsed_uri.netloc)
 
     if last_modified != runtime_storage_inst.get_by_key('mail_link:' + link):
         LOG.debug('Mail archive changed, last modified at: %s', last_modified)

@@ -140,6 +140,34 @@ def read_json_from_uri(uri):
                  {'error': e, 'uri': uri})
 
 
+def read_status_from_uri(uri):
+    try:
+        req = six.moves.urllib.request.Request(
+            url=uri, headers={'User-Agent': random.choice(user_agents)})
+        fd = six.moves.urllib.request.urlopen(req)
+        if six.PY3:
+            fd = io.TextIOWrapper(fd)
+        fd.close()
+        return fd.getcode()
+    except Exception as e:
+        LOG.warn('Error "%(error)s" while reading uri %(uri)s',
+                 {'error': e, 'uri': uri})
+
+
+def read_last_modified_from_uri(uri):
+    try:
+        req = six.moves.urllib.request.Request(
+            url=uri, headers={'User-Agent': random.choice(user_agents)})
+        fd = six.moves.urllib.request.urlopen(req)
+        if six.PY3:
+            fd = io.TextIOWrapper(fd)
+        fd.close()
+        return fd.headers.getheader('last-modified')
+    except Exception as e:
+        LOG.warn('Error "%(error)s" while reading uri %(uri)s',
+                 {'error': e, 'uri': uri})
+
+
 def gzip_decompress(content):
     if six.PY3:
         return gzip.decompress(content).decode('utf8')
