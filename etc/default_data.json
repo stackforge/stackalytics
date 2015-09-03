@@ -2871,6 +2871,18 @@
             "emails": ["denis.cavalcante@lsbd.ufc.br", "dencaval@gmail.com"]
         },
         {
+            "launchpad_id": "dmeltsaykin",
+            "gerrit_id": "dmeltsaykin",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Denis Meltsaykin",
+            "emails": ["dmeltsaykin@mirantis.com"]
+        },
+        {
             "launchpad_id": "dennis-kusidlo",
             "gerrit_id": "dkusidlo",
             "companies": [
