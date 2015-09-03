@@ -3127,6 +3127,18 @@
             "emails": ["derek@mcgstyle.net"]
         },
         {
+            "launchpad_id": "dmeltsaykin",
+            "gerrit_id": "dmeltsaykin",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Denis Meltsaykin",
+            "emails": ["dmeltsaykin@mirantis.com"]
+        },
+        {
             "launchpad_id": "dmllr",
             "companies": [
                 {
