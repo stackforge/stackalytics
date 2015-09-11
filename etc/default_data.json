@@ -8255,6 +8255,17 @@
             "user_name": "Novel Kumar",
             "emails": ["novel.kumar@gmail.com"]
         },
+	{
+            "launchpad_id": "ntata",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Nandini Tata",
+            "emails": ["nandini.tata@intel.com", "nandini.tata.15@gmail.com"]
+        },
         {
             "launchpad_id": "nuaafe",
             "companies": [
