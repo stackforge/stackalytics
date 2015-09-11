@@ -10697,6 +10697,18 @@
             "user_name": "Subramanian Neelakantan",
             "emails": ["subramanian.neelakantan@gmail.com"]
         },
+	{
+            "launchpad_id": "sujitha-neti",
+            "gerrit_id": "Sujitha",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Sujitha",
+            "emails": ["sujitha.neti@intel.com"]
+       	},
         {
             "launchpad_id": "sulochan-acharya",
             "companies": [
