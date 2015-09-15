@@ -11927,6 +11927,17 @@
             "emails": ["reviewwanghong@126.com", "wh@chinanetcenter.com"]
         },
         {
+            "launchpad_id": "walter-boring",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Walter A. Boring IV",
+            "emails": ["walter.boring@hp.com", "walter.boring@hpe.com", "waboring@hemna.com"]
+        },
+        {
             "launchpad_id": "waipengyip",
             "gerrit_id": "jake",
             "companies": [
