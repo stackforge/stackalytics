@@ -9213,6 +9213,17 @@
             ],
             "user_name": "Richard H",
             "emails": ["richardwheil@gmail.com"]
+         },
+         {
+            "launchpad_id": "richard-hagarty",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Richard Hagarty",
+            "emails": ["richard.hagarty@hp.com", "richard.hagarty@hpe.com"]
         },
         {
             "launchpad_id": "rick-chen",
