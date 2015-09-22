@@ -12810,7 +12810,22 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
-        }
+        },
+        {
+            "launchpad_id": "harsh-mishra",
+            "companies": [
+                 {
+                    "company_name": "Wipro",
+                    "end_date": "2015-Apr-10"
+                },
+                {
+                    "company_name": "Imaginea Technologies Inc.",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Harsh Mishra",
+            "emails": ["harsh.mishra@wipro.com", "mh.harsh@gmail.com", "harsh.mishra@imaginea.com","harsh.mishra@live.com"]
+        },
     ],
     "companies": [
         {
