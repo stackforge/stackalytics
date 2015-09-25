@@ -9944,6 +9944,19 @@
             "user_name": "Santhosh Kumar Muniraj",
             "emails": ["santhom@thoughtworks.com", "santhosh.m@thoughtworks.com"]
         },
+	{
+    	  "launchpad_id": "sanket-lawangare-d",
+    	  "gerrit_id": "sanket.lawangare",
+    	  "companies": [
+        	{
+            "company_name": "Intel",
+            "end_date": null
+        	}
+    	],
+    	"user_name": "sanket lawangare",
+    	"emails": ["sanket.lawangare@gmail.com","csg341@my.utsa.edu"]
+	},
+
         {
             "launchpad_id": "sarada-a",
             "companies": [
