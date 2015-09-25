@@ -5603,6 +5603,7 @@
         {
             "launchpad_id": "jerome-gallard",
             "companies": [
+
                 {
                     "company_name": "*independent",
                     "end_date": "2014-Feb-03"
@@ -6124,6 +6125,20 @@
                     "end_date": null
                 }
             ],
+       {
+           "launchpad_id": "kalyani030592",
+           "gerrit_id": "kalyani",
+           "companies": [
+               {
+                   "company_name": "Intel",
+                   "end_date": null
+               }
+           ],
+           "user_name": "Kalyani Shinde",
+           "emails": ["kalyani030592@gmail.com", "rnq797@my.utsa.edu"]
+       },
+
+
             "user_name": "KingKhan",
             "emails": ["kali.karthik@gmail.com", "karthik.suresh@ril.com"]
         },
