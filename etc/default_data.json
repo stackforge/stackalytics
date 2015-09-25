@@ -6997,6 +6997,19 @@
             "user_name": "Zhi Yan Liu",
             "emails": ["lzy.dev@gmail.com", "zhiyanl@cn.ibm.com"]
         },
+
+        {
+            "launchpad_id": "m-ghanatbari",
+            "gerrit_id": "mehrdadorm",
+            "companies": [
+                 {
+                      "company_name": "Intel",
+                      "end_date": null
+                 }        
+            ],
+            "user_name": "Mehrab Ghanat Bari",
+            "emails": ["m.ghanatbari@gmail.com","mehrab.ghanatbari@utsa.edu"]
+        },
         {
             "launchpad_id": "m-koderer",
             "gerrit_id": "mkoderer",
