@@ -1,6 +1,17 @@
 {
     "users": [
         {
+           "launchpad_id": "csravelar",
+           "companies": [
+               {
+                   "company_name": "Intel",
+                   "end_date": null
+               }
+           ],
+           "user_name": "Richard Avelar",
+           "emails": ["csravelar@gmail.com"]
+        },
+        {
             "launchpad_id": "0-doug",
             "companies": [
                 {
