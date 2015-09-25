@@ -958,6 +958,17 @@
             "emails": ["jesse@gigantor.local", "jesse@aire.local", "anotherjesse@gmail.com"]
         },
         {
+            "launchpad_id": "antal",
+            "companies": [
+                {
+                    "company_name": "Ericsson",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Gábor Antal",
+            "emails": ["antal@inf.u-szeged.hu"]
+        },
+        {
             "launchpad_id": "anteaya",
             "companies": [
                 {
@@ -4779,6 +4790,17 @@
             "emails": ["yaguang.tang@canonical.com", "heut2008@gmail.com", "ytang@mirantis.com"]
         },
         {
+            "launchpad_id": "hferenc",
+            "companies": [
+                {
+                    "company_name": "Ericsson",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ferenc Horváth",
+            "emails": ["hferenc@inf.u-szeged.hu"]
+        }
+        {
             "launchpad_id": "hfamily15",
             "companies": [
                 {
@@ -4877,6 +4899,17 @@
             ],
             "user_name": "Dmitry Khovyakov",
             "emails": ["hovyakov@gmail.com", "hovyakov@griddynamics.com", "dkhovyakov@griddynamics.com"]
+        },
+        {
+            "launchpad_id": "hpeter",
+            "companies": [
+                {
+                    "company_name": "Ericsson",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Péter Hegedűs",
+            "emails": ["hpeter@inf.u-szeged.hu"]
         },
         {
             "launchpad_id": "huangsm",
@@ -11646,6 +11679,17 @@
             ],
             "user_name": "Vaidyanath",
             "emails": ["vaidyanath.m@gmail.com", "vaidyanath.manogaran@ril.com"]
+        },
+        {
+            "launchpad_id": "vancsics",
+            "companies": [
+                {
+                    "company_name": "Ericsson",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Béla Vancsics",
+            "emails": ["vancsics@inf.u-szeged.hu"]
         },
         {
             "launchpad_id": "vanderliang",
