@@ -9945,16 +9945,16 @@
             "emails": ["santhom@thoughtworks.com", "santhosh.m@thoughtworks.com"]
         },
 	{
-    	  "launchpad_id": "sanket-lawangare-d",
-    	  "gerrit_id": "sanket.lawangare",
-    	  "companies": [
+    	    "launchpad_id": "sanket-lawangare-d",
+    	    "gerrit_id": "sanket.lawangare",
+    	    "companies": [
         	{
-            "company_name": "Intel",
-            "end_date": null
+                    "company_name": "Intel",
+                    "end_date": null
         	}
-    	],
-    	"user_name": "sanket lawangare",
-    	"emails": ["sanket.lawangare@gmail.com","csg341@my.utsa.edu"]
+    	    ],
+    	    "user_name": "sanket lawangare",
+    	    "emails": ["sanket.lawangare@gmail.com","csg341@my.utsa.edu"]
 	},
 
         {
