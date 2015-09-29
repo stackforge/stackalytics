@@ -4,7 +4,7 @@
             "launchpad_id": "0-doug",
             "companies": [
                 {
-                    "company_name": "Tesora",
+                    "company_name": "Intel",
                     "end_date": null
                 }
             ],
@@ -5916,6 +5916,17 @@
             ],
             "user_name": "Jordan Pittier",
             "emails": ["jordan.pittier-ext@cloudwatt.com", "jordan.pittier@gmail.com", "jordan.pittier@cloudwatt.com", "jordan.pittier@scality.com"]
+        },
+        {
+            "launchpad_id": "joseph-c-cavazos",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Joseph Cavazos",
+            "emails": ["mpq055@my.utsa.edu", "joseph.c.cavazos@gmail.com"]
         },
         {
             "launchpad_id": "joseph-r-email",
