@@ -5,7 +5,7 @@
 
 {% block head %}
     <script type="text/javascript">
-        var base_url = "http://stackalytics.com/driverlog/";
+        var base_url = "http://localhost:8080/";
 
         $(document).ready(function () {
             initSelectors(base_url);
@@ -92,9 +92,9 @@
                 <td>
                     {%if value.ci_tested %}
                         {%if value.ci_result %}
-                            <span style="color: green">&#x2714;</span>
+                            <span style="color: limegreen">&#x2714;</span>
                         {%else%}
-                            <span style="color: red">&#x2716;</span>
+                            <span style="color: darkred">&#x2716;</span>
                         {%/if%}
                     {%else%}
                         <span style="color: gray">&#x2753;</span>
