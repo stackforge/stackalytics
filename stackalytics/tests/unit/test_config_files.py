@@ -23,6 +23,21 @@ import testtools
 from stackalytics.processor import normalizer
 
 
+IGNORED_COMPANIES = [u'*robots', u'April', u'Chelsio Communications',
+                     u'CloudRunner.io', u'Datera', u'Facebook',
+                     u'Fermi National Accelerator Laboratory', u'Github',
+                     u'H3C', u'Huaxin Hospital, '
+                             u'First Hospital of Tsinghua University',
+                     u'InfluxDB', u'Kickstarter', u'National Security Agency',
+                     u'OpenStack Foundation', u'OpenStack Korea User Group',
+                     u'ProphetStor', u'Reliance',
+                     u'SVA System Vertrieb Alexander GmbH', u'Sencha',
+                     u'Stark & Wayne LLC', u'Styra',
+                     u'Suranee University of Technology',
+                     u'The Linux Foundation', u'UTi Worldwide', u'Undead Labs',
+                     u'Violin Memory', u'docCloud', u'npm']
+
+
 def dict_raise_on_duplicates(ordered_pairs):
     """Reject duplicate keys."""
     d = {}
@@ -32,7 +47,6 @@ def dict_raise_on_duplicates(ordered_pairs):
         else:
             d[k] = v
     return d
-
 
 class TestConfigFiles(testtools.TestCase):
     def setUp(self):
@@ -188,3 +202,28 @@ class TestConfigFiles(testtools.TestCase):
 
     def test_test_default_data_user_profiles_correctness(self):
         self._validate_default_data_correctness('etc/test_default_data.json')
+
+    def _validate_user_companies(self, file_name):
+        data = self._read_file(file_name)
+        users = data['users']
+        companies = data['companies']
+        company_names = []
+        for company in companies:
+            company_names.append(company['company_name'])
+            for alias in company.get('aliases', []):
+                company_names.append(alias)
+
+        for user in users:
+            for company in user['companies']:
+                if not company['company_name'] in IGNORED_COMPANIES:
+                    error_msg = ('Company "%s" is unknown. Please add it into'
+                                 ' the list of companies in default_data.json '
+                                 'file' % company['company_name'])
+                    self.assertTrue(company['company_name'] in company_names,
+                                    error_msg)
+
+    def test_default_data_user_companies(self):
+        self._validate_user_companies('etc/default_data.json')
+
+    def test_test_default_data_user_companies(self):
+        self._validate_user_companies('etc/test_default_data.json')
