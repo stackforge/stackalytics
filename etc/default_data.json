@@ -9831,18 +9831,18 @@
            "user_name": "Stefan Haub",
            "emails": ["s.haub@telekom.de"]
         },
-        {   	
-           "launchpad_id": "shravya-g90",
-           "gerrit_id": "ShravyaGaddam",
-           "companies": [
-               {
-                   "company_name": "Intel",
-                   "end_date": null
-               }  
-           ]    ,
-           "user_name": "ShravyaGaddam",
-           "emails": ["shravya.g90@gmail.com","Shravya.Gaddam@utsa.edu"]
-        }   
+        {
+            "launchpad_id": "shravya-g90",
+            "gerrit_id": "ShravyaGaddam",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Shravya Gaddam",
+            "emails": ["shravya.g90@gmail.com", "shravya.Gaddam@utsa.edu"]
+        },
         {
             "launchpad_id": "s8m",
             "gerrit_id": "SamYaple",
