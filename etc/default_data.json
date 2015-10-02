@@ -11005,9 +11005,7 @@
             "user_name": "Min Wang",
             "emails": ["swiftwangster@gmail.com", "min.wang6@hp.com"]
         },
-
-
-       {
+        {
            "launchpad_id": "ahsanmohsin04",
            "gerrit_id": "ahsan518",
            "companies": [
@@ -11019,9 +11017,7 @@
            "user_name": "Syed Ahsan Shamim Zaidi",
            "emails": ["ahsanmohsin04@yahoo.com", "tvj515@my.utsa.edu", "ahsanmx518@gmail.com"]
        },
-
-
-        {
+       {
             "launchpad_id": "sylvain-bauza",
             "gerrit_id": "sbauza",
             "companies": [
