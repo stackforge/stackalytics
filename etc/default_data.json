@@ -1556,7 +1556,18 @@
             "user_name": "Bharath M",
             "emails": ["bharath.stacker@gmail.com", "bharath.m@hp.com"]
         },
-        {
+	{
+            "launchpad_id": "blin-9",
+            "companies": [
+                {
+                    "company_name": "VMware",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ben Lin",
+            "emails": ["blin23@gmail.com", "blin@nicira.com"]
+        },
+	{
             "launchpad_id": "blueboxjesse",
             "companies": [
                 {
