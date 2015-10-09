@@ -13144,6 +13144,17 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "xinze",
+            "companies": [
+                {
+                    "company_name": "XSky",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Xinze Chi",
+            "emails": ["xmdxcxz@gmail.com", "xinze@xsky.com"]
         }
     ],
     "companies": [
