@@ -2294,6 +2294,17 @@
             "emails": ["claire921@gmail.com"]
         },
         {
+            "launchpad_id": "yang-yapeng",
+            "companies": [
+                {
+                    "company_name": "99cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "yangyapeng",
+            "emails": ["yang.yapeng@99cloud.net", "a394954369@gmail.com"]
+        },
+        {
             "launchpad_id": "clay-gerrard",
             "companies": [
                 {
