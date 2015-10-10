@@ -14193,6 +14193,11 @@
             "aliases": ["Seagate Technology"]
         },
         {
+            "domains": ["firma.seznam.cz"],
+            "company_name": "Seznam.cz",
+            "aliases": ["Seznam.cz, a.s."]
+        },
+        {
             "domains": ["siaras.com"],
             "company_name": "Siaras"
         },
