@@ -7579,6 +7579,17 @@
             "user_name": "Maty Grosz",
             "emails": ["maty.grosz@alcatel-lucent.com", "imdg24@gmail.com"]
         },
+                {
+            "launchpad_id": "maurice-schreiber",
+            "companies": [
+                {
+                    "company_name": "SAP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Maurice Schreiber",
+            "emails": ["maurice.schreiber@sap.com"]
+        },
         {
             "launchpad_id": "mauricio-lima",
             "companies": [
