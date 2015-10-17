@@ -11567,6 +11567,17 @@
             "emails": ["tiago.pasqualini@gmail.com", "tiagop.silva@fit-tecnologia.org.br"]
         },
         {
+            "launchpad_id": "tianshan",
+            "companies": [
+                {
+                    "company_name": "XSKY",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Tianshan Qu",
+            "email": ["qutianshan@gmail.com", "tianshan@xsky.com"]
+        },
+        {
             "launchpad_id": "tim-miller-0",
             "companies": [
                 {
