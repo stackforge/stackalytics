@@ -1402,6 +1402,17 @@
             "emails": ["bcoca@ansible.com", "brian.coca+git@gmail.com"]
         },
         {
+            "launchpad_id": "battu-amulya",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "AmulyaBattu",
+            "emails": ["battu.amulya@gmail.com", "akt827@my.utsa.edu"]
+        },
+        {
             "launchpad_id": "bcwaldon",
             "companies": [
                 {
