@@ -6382,6 +6382,22 @@
             "emails": ["kasey.alusi@gmail.com"]
         },
         {
+            "launchpad_id": "harshada-kakad",
+            "gerrit_id": "harshada.kakad",
+            "companies": [
+                {
+                    "company_name": "Izel Technologies",
+                    "end_date": "2015-July-10"
+                },
+                {
+                    "company_name": "Metsi Technologies",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Harshada Mangesh Kakad",
+            "emails": ["harshadak.openstack@gmail.com", "harshada.kakad@izeltech.com", "harshadak@metsi.co.uk"]
+        },
+        {
             "launchpad_id": "kaushikc",
             "companies": [
                 {
@@ -13938,6 +13954,10 @@
             "domains": ["juniper.com", "juniper.net"],
             "company_name": "Juniper",
             "aliases": ["Juniper Networks", "Juniper Networks Inc.", "Juniper Networks India", "Juniper India"]
+        },
+        {
+            "domains": ["metsi.co.uk"],
+            "company_name": "Metsi Technologies"
         },
         {
             "domains": ["kau.se"],
