@@ -6341,12 +6341,12 @@
                     "end_date": "2012-Nov-21"
                 },
                 {
-                    "company_name": "HP",
+                    "company_name": "HPE",
                     "end_date": null
                 }
             ],
             "user_name": "Kanagaraj Manickam",
-            "emails": ["mkr1481@gmail.com", "kanagaraj.manickam@hp.com"]
+            "emails": ["mkr1481@gmail.com", "kanagaraj.manickam@hpe.com"]
         },
         {
             "launchpad_id": "kannan",
