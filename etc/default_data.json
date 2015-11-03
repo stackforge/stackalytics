@@ -3221,6 +3221,17 @@
             "emails": ["dfleming@austin.rr.com", "diflemin@cisco.com", "diflemin@ebay.com", "diane.fleming@rackspace.com"]
         },
         {
+            "launchpad_id": "diana-clarke",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Diana Clarke",
+            "emails": ["diana.joan.clarke@gmail.com", "diana.clarke@redhat.com"]
+        },
+        {
             "launchpad_id": "dims-v",
             "companies": [
                 {
