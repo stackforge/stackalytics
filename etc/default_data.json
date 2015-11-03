@@ -6341,12 +6341,12 @@
                     "end_date": "2012-Nov-21"
                 },
                 {
-                    "company_name": "HP",
+                    "company_name": "HPE",
                     "end_date": null
                 }
             ],
             "user_name": "Kanagaraj Manickam",
-            "emails": ["mkr1481@gmail.com", "kanagaraj.manickam@hp.com"]
+            "emails": ["mkr1481@gmail.com", "kanagaraj.manickam@hpe.com"]
         },
         {
             "launchpad_id": "kannan",
@@ -13817,6 +13817,10 @@
               "HP cloud services", "HP India software Operation", "HP Labs", "Hewlett-Packard Helion", "Hewlett-Packard India Software Operations",
               "Hewlett Packard Enterprise", "Hewlett-Packard Enterprise", "Hewlett-Packard Singapore Pte", "Hewlett Packard Romania",
               "HP Helion Public Cloud", "HP Japan", "HP Korea", "HP Helion", "HP Costa Rica", "China HP"]
+        },
+        {
+            "domains": ["hpe.com"],
+            "company_name": "HPE"
         },
         {
             "domains": ["huawei.com"],
