@@ -13006,6 +13006,17 @@
             "emails": ["zealot0630@gmail.com", "zangmingjie@corp.netease.com"]
         },
         {
+            "launchpad_id": "zerodivisible",
+            "companies": [
+                {
+                    "company_name": "Workday",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Michal Stolarczyk",
+            "emails": ["zerodivisible@gmail.com"]
+        },
+        {
             "github_id": "zeke",
             "companies": [
                 {
