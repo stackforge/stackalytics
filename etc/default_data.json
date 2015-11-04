@@ -15779,6 +15779,11 @@
             "uri": "https://github.com/ceph/ceph.git"
         },
         {
+            "module": "linux",
+            "organization": "linux",
+            "uri": "https://github.com/torvalds/linux.git"
+        },
+        {
             "module": "barbican",
             "organization": "openstack",
             "uri": "git://git.openstack.org/openstack/barbican.git",
@@ -16106,7 +16111,7 @@
         {
             "id": "complementary",
             "title": "Complementary",
-            "modules": ["ansible-group", "ceph", "docker-group", "kubernetes", "jclouds", "cloudfoundry", "ovs", "pypa-group"]
+            "modules": ["ansible-group", "ceph", "docker-group", "kubernetes", "jclouds", "cloudfoundry", "ovs", "pypa-group", "linux"]
         },
         {
             "id": "ansible-group",
@@ -16149,6 +16154,12 @@
             "title": "Python Packaging",
             "child": true,
             "modules": ["pypa-group"]
+        },
+        {
+            "id": "linux-group",
+            "title": "Linux Kernel",
+            "child": true,
+            "modules": ["linux"]
         }
     ]
 }
