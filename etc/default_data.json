@@ -10518,8 +10518,13 @@
             "companies": [
                 {
                     "company_name": "EMC",
+                    "end_date": "2015-Sep-28"
+                }
+                {
+                    "company_name": "IBM",
                     "end_date": null
                 }
+
             ],
             "user_name": "Shamail Tahir",
             "emails": ["itzshamail@gmail.com"]
