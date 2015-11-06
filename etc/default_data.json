@@ -11685,6 +11685,19 @@
             "emails": ["tiago.pasqualini@gmail.com", "tiagop.silva@fit-tecnologia.org.br"]
         },
         {
+            "launchpad_id": "timello",
+            "gerrit_id": "tmello",
+            "github_id": "timello",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Tiago Mello",
+            "emails": ["tmello@linux.vnet.ibm.com", "timello@gmail.com"]
+        },
+        {
             "launchpad_id": "tianshan",
             "companies": [
                 {
