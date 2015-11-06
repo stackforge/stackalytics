@@ -11696,6 +11696,19 @@
             "emails": ["qutianshan@gmail.com", "tianshan@xsky.com"]
         },
         {
+            "launchpad_id": "timello",
+            "gerrit_id": "tmello",
+            "github_id": "timello",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Tiago Mello",
+            "emails": ["tmello@linux.vnet.ibm.com", "timello@gmail.com"]
+        },
+        {
             "launchpad_id": "tim-miller-0",
             "companies": [
                 {
