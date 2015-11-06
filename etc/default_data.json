@@ -1879,12 +1879,12 @@
             "launchpad_id": "carl-baldwin",
             "companies": [
                 {
-                    "company_name": "HP",
+                    "company_name": "HPE",
                     "end_date": null
                 }
             ],
             "user_name": "Carl Baldwin",
-            "emails": ["carl@ecbaldwin.net", "carl.baldwin@hp.com"]
+            "emails": ["carl@ecbaldwin.net", "carl.baldwin@hp.com", "carl.baldwin@hpe.com"]
         },
         {
             "launchpad_id": "cbehrens",
