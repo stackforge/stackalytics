@@ -1,0 +1,17 @@
+Verified+2: Jenkins
+Code-Review+1: Gavin Brebner <gavin.brebner@hp.com>
+Code-Review+1: guang-yee <guang.yee@hpe.com>
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Workflow+1: Ilya Shakhat <ishakhat@mirantis.com>
+Code-Review+1: Haifeng Yan <yanheven@qq.com>
+Code-Review+1: Jim Meyer <jim@geekdaily.org>
+Code-Review+1: Diana Whitten <hurgleburgler@gmail.com>
+Code-Review+1: Chris Cannon <ccannon@hp.com>
+Code-Review+1: Pierre-Arthur MATHIEU <pierre-arthur.mathieu@hpe.com>
+Code-Review+1: venkatamahesh <venkatamaheshkotha@gmail.com>
+Code-Review+1: Clint Adams <clint@gcfm.net>
+Submitted-by: Jenkins
+Submitted-at: Mon, 09 Nov 2015 09:54:32 +0000
+Reviewed-on: https://review.openstack.org/242601
+Project: openstack/stackalytics
+Branch: refs/heads/master
