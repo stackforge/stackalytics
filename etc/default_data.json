@@ -3112,6 +3112,10 @@
                 },
                 {
                     "company_name": "HP",
+                    "end_date": "2015-Sept-25"
+                },
+                {
+                    "company_name": "IBM",
                     "end_date": null
                 }
             ],
