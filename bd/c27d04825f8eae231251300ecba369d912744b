@@ -1,0 +1,10 @@
+Verified+2: Jenkins
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Workflow+1: Ilya Shakhat <ishakhat@mirantis.com>
+Code-Review+1: Travis Tripp <travis.tripp@hpe.com>
+Code-Review+1: venkatamahesh <venkatamaheshkotha@gmail.com>
+Submitted-by: Jenkins
+Submitted-at: Wed, 11 Nov 2015 08:49:59 +0000
+Reviewed-on: https://review.openstack.org/242904
+Project: openstack/stackalytics
+Branch: refs/heads/master
