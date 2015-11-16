@@ -13404,6 +13404,17 @@
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
         }
+        {
+            "launchpad_id": "himanshugarg",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Himanshu Garg",
+            "emails": ["hwgarg@gmail.com", "himanshu.garg@hpe.com"]
+        },
     ],
     "companies": [
         {
