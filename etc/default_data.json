@@ -10390,6 +10390,17 @@
             "emails": ["satnam@raintown.org"]
         },
         {
+            "launchpad_id": "ashish-singh7",
+            "companies": [
+                {
+                    "company_name": "Ericsson",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ashish Singh",
+            "emails": ["ashishsingh2k8@gmail.com"]
+        },
+        {
             "launchpad_id": "satya-patibandla",
             "companies": [
                 {
