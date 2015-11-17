@@ -1228,6 +1228,17 @@
             "emails": ["ashishsingh2k8@gmail.com"]
         },
         {
+            "launchpad_id": "ashlee-i",
+            "companies": [
+                {
+                    "company_name": "*independent",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ashlee Young",
+            "emails": ["ashlee@onosfw.com", "ashlee@wildernessvoice.com"]
+        },
+        {
             "launchpad_id": "ashleighfarnham-deactivatedaccount",
             "companies": [
                 {
@@ -1588,17 +1599,6 @@
             ],
             "user_name": "Bharath M",
             "emails": ["bharath.stacker@gmail.com", "bharath.m@hp.com"]
-        },
-        {
-            "launchpad_id": "biswajeeban",
-            "companies": [
-                {
-                    "company_name": "Ericsson",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Biswajeeban Mishra",
-            "emails": ["mishra@inf.u-szeged.hu"]
         },
         {
             "launchpad_id": "blueboxjesse",
