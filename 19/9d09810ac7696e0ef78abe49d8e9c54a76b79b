@@ -1,0 +1,10 @@
+Verified+2: Jenkins
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Workflow+1: Ilya Shakhat <ishakhat@mirantis.com>
+Code-Review+1: venkatamahesh <venkatamaheshkotha@gmail.com>
+Code-Review+1: Ramanjaneya Reddy Palleti <ramanjaneya.palleti@huawei.com>
+Submitted-by: Jenkins
+Submitted-at: Tue, 24 Nov 2015 10:44:20 +0000
+Reviewed-on: https://review.openstack.org/248738
+Project: openstack/stackalytics
+Branch: refs/heads/master
