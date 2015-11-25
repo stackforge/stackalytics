@@ -16018,6 +16018,356 @@
             ]
         },
         {
+            "module": "webos",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/webos.git"
+        },
+        {
+            "module": "talk",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/talk.git"
+        },
+        {
+            "module": "android-playground",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/android-playground.git"
+        },
+        {
+            "module": "android-legacy",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/android-legacy.git"
+        },
+        {
+            "module": "sync-qt",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/sync-qt.git"
+        },
+        {
+            "module": "news-chrome-notifier",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/news-chrome-notifier.git"
+        },
+        {
+            "module": "windows-phone",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/windows-phone.git"
+        },
+        {
+            "module": "news-mobile",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/news-mobile.git"
+        },
+        {
+            "module": "windows8",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/windows8.git"
+        },
+        {
+            "module": "mod_security",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/mod_security.git"
+        },
+        {
+            "module": "appstore-issues",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/appstore-issues.git"
+        },
+        {
+            "module": "News-Qt-App",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/News-Qt-App.git"
+        },
+        {
+            "module": "acceptance-testing",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/acceptance-testing.git"
+        },
+        {
+            "module": "windows-phone-uploader",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/windows-phone-uploader.git"
+        },
+        {
+            "module": "notes-OSX-App",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/notes-OSX-App.git"
+        },
+        {
+            "module": "metadata",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/metadata.git"
+        },
+        {
+            "module": "apps-playground",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/apps-playground.git"
+        },
+        {
+            "module": "app-tutorial",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/app-tutorial.git"
+        },
+        {
+            "module": "localshare",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/localshare.git"
+        },
+        {
+            "module": "groupadmin",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/groupadmin.git"
+        },
+        {
+            "module": "format-filter-server",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/format-filter-server.git"
+        },
+        {
+            "module": "owncloud-client-binary",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/owncloud-client-binary.git"
+        },
+        {
+            "module": "design",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/design.git"
+        },
+        {
+            "module": "videos",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/videos.git"
+        },
+        {
+            "module": "talk",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/talk.git"
+        },
+        {
+            "module": "SMStorage",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/SMStorage.git"
+        },
+        {
+            "module": "web_hooks",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/web_hooks.git"
+        },
+        {
+            "module": "webui-tests",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/webui-tests.git"
+        },
+        {
+            "module": "gallery-old",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/gallery-old.git"
+        },
+        {
+            "module": "impersonate",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/impersonate.git"
+        },
+        {
+            "module": "homebrew-owncloud",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/homebrew-owncloud.git"
+        },
+        {
+            "module": "test-data",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/test-data.git"
+        },
+        {
+            "module": "news-iOS-App",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/news-iOS-App.git"
+        },
+        {
+            "module": "proxy",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/proxy.git"
+        },
+        {
+            "module": "notes-iOS-App",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/notes-iOS-App.git"
+        },
+        {
+            "module": "ocdev",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/ocdev.git"
+        },
+        {
+            "module": "security-advisories",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/security-advisories.git"
+        },
+        {
+            "module": "QA",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/QA.git"
+        },
+        {
+            "module": "chat",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/chat.git"
+        },
+        {
+            "module": "rados",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/rados.git"
+        },
+        {
+            "module": "doc-index-org",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/doc-index-org.git"
+        },
+        {
+            "module": "doc-index-com",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/doc-index-com.git"
+        },
+        {
+            "module": "files_irods",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/files_irods.git"
+        },
+        {
+            "module": "promo",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/promo.git"
+        },
+        {
+            "module": "board",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/board.git"
+        },
+        {
+            "module": "TarStreamer",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/TarStreamer.git"
+        },
+        {
+            "module": "app-approval",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/app-approval.git"
+        },
+        {
+            "module": "user_cas",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/user_cas.git"
+        },
+        {
+            "module": "mozilla_sync",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/mozilla_sync.git"
+        },
+        {
+            "module": "screenshots",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/screenshots.git"
+        },
+        {
+            "module": "files_locking",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/files_locking.git"
+        },
+        {
+            "module": "music",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/music.git"
+        },
+        {
+            "module": "bookmarks",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/bookmarks.git"
+        },
+        {
+            "module": "example-files",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/example-files.git"
+        },
+        {
+            "module": "files_pdfviewer",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/files_pdfviewer.git"
+        },
+        {
+            "module": "search_lucene",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/search_lucene.git"
+        },
+        {
+            "module": "pyocclient",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/pyocclient.git"
+        },
+        {
+            "module": "gallery",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/gallery.git"
+        },
+        {
+            "module": "vm",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/vm.git"
+        },
+        {
+            "module": "mail",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/mail.git"
+        },
+        {
+            "module": "contacts",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/contacts.git"
+        },
+        {
+            "module": "files_texteditor",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/files_texteditor.git"
+        },
+        {
+            "module": "apps",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/apps.git"
+        },
+        {
+            "module": "firstrunwizard",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/firstrunwizard.git"
+        },
+        {
+            "module": "updater",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/updater.git"
+        },
+        {
+            "module": "shorty",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/shorty.git"
+        },
+        {
+            "module": "files_antivirus",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/files_antivirus.git"
+        },
+        {
+            "module": "ios-library",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/ios-library.git"
+        },
+        {
+            "module": "tasks",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/tasks.git"
+        },
+        {
+            "module": "templateeditor",
+            "organization": "owncloud",
+            "uri": "https://github.com/owncloud/templateeditor.git"
+        },
+        {
             "module": "releng",
             "organization": "opnfv",
             "uri": "git://git.opnfv.org/releng.git"
@@ -16152,6 +16502,7 @@
             "organization": "opnfv",
             "uri": "git://git.opnfv.org/doctor.git"
         }
+
     ],
     "project_sources": [
         {
@@ -16176,6 +16527,80 @@
         {
             "module_group_name": "libra-group",
             "modules": ["libra", "python-libraclient"]
+        },
+        {
+            "module_group_name": "owncloud-group",
+            "modules": [
+              "apps",
+              "firstrunwizard",
+              "updater",
+              "shorty",
+              "files_antivirus",
+              "ios-library",
+              "tasks",
+              "templateeditor",
+              "files_texteditor",
+              "contacts",
+              "mail",
+              "vm",
+              "gallery",
+              "pyocclient",
+              "search_lucene",
+              "files_pdfviewer",
+              "example-files",
+              "bookmarks",
+              "music",
+              "files_locking",
+              "screenshots",
+              "mozilla_sync",
+              "user_cas",
+              "app-approval",
+              "TarStreamer",
+              "board",
+              "promo",
+              "files_irods",
+              "doc-index-com",
+              "doc-index-org",
+              "rados",
+              "chat",
+              "QA",
+              "security-advisories",
+              "ocdev",
+              "notes-iOS-App",
+              "proxy",
+              "news-iOS-App",
+              "test-data",
+              "homebrew-owncloud",
+              "impersonate",
+              "gallery-old",
+              "webui-tests",
+              "web_hooks",
+              "SMStorage",
+              "talk",
+              "videos",
+              "design",
+              "owncloud-client-binary",
+              "format-filter-server",
+              "groupadmin",
+              "localshare",
+              "app-tutorial",
+              "apps-playground",
+              "metadata",
+              "notes-OSX-App",
+              "windows-phone-uploader",
+              "acceptance-testing",
+              "News-Qt-App",
+              "appstore-issues",
+              "mod_security",
+              "windows8",
+              "news-mobile",
+              "windows-phone",
+              "news-chrome-notifier",
+              "sync-qt",
+              "android-legacy",
+              "android-playground",
+              "webos"
+            ]
         },
         {
             "module_group_name": "fuel-group",
@@ -16461,7 +16886,7 @@
         {
             "id": "complementary",
             "title": "Complementary",
-            "modules": ["ansible-group", "ceph", "docker-group", "kubernetes", "jclouds", "cloudfoundry", "opnfv", "ovs", "pypa-group"]
+            "modules": ["ansible-group", "ceph", "docker-group", "kubernetes", "jclouds", "cloudfoundry", "opnfv", "ovs", "pypa-group", "owncloud-group"]
         },
         {
             "id": "ansible-group",
@@ -16510,6 +16935,12 @@
             "title": "Python Packaging",
             "child": true,
             "modules": ["pypa-group"]
+        },
+        {
+            "id": "owncloud-group",
+            "title": "ownCloud",
+            "child": true,
+            "modules": ["owncloud-group"]
         }
     ]
 }
