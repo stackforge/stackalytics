@@ -2833,6 +2833,17 @@
             "emails": ["danny.al-gaaf@bisect.de"]
         },
         {
+            "launchpad_id": "zeih",
+            "companies": [
+                {
+                    "company_name": "Deutsche Telekom",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Martin Oemke",
+            "emails": ["zeih@zeih.eu"]
+        },
+        {
             "launchpad_id": "danwent",
             "companies": [
                 {
