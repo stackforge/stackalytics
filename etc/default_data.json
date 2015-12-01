@@ -202,6 +202,17 @@
             "emails": ["abhishek.srivastav@maplelabs.com"]
         },
         {
+            "launchpad_id": "abhic",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Abhisek Chatterjee",
+            "emails": ["abhic@ozlabs.org"]
+        },
+        {
             "launchpad_id": "abhishekl",
             "companies": [
                 {
