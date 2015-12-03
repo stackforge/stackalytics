@@ -11228,6 +11228,18 @@
             "user_name": "Sofer Athlan-Guyot",
             "emails": ["sathlang@redhat.com", "chem@sathlan.org", "sofer.athlan-guyot@enovance.com"]
         },
+ 	{
+           "launchpad_id": "som-mishra",
+           "gerrit_id": "smishra",
+           "companies": [
+               {
+                   "company_name": "Intel",
+                   "end_date": null
+               }
+           ],
+           "user_name": "Som Mishra",
+           "emails": ["som.mishra@intel.com"]
+       },
         {
             "launchpad_id": "sombrafam",
             "companies": [
