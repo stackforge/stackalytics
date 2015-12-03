@@ -10373,6 +10373,18 @@
             "user_name": "Sahid Orentino Ferdjaoui",
             "emails": ["sahid.ferdjaoui@cloudwatt.com", "sahid.ferdjaoui@gmail.com", "sferdjao@redhat.com", "sahid.ferdjaoui@redhat.com", "sferdjaoui@redhat.com", "sahid@redhat.com"]
         },
+	{
+	    "launchpad_id": "saisrikiran-mudigonda",
+            "gerrit_id": "saisrikiran",
+            "companies": [
+                { 
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Saisrikiran Mudigonda",
+            "emails": ["saisrikiran.mudigonda@intel.com"]
+	},
         {
             "launchpad_id": "sajuptpm",
             "companies": [
