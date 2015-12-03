@@ -6271,6 +6271,18 @@
             "emails": ["josh@pcsforeducation.com", "josh.gachnang@rackspace.com", "josh@servercobra.com"]
         },
         {
+            "launchpad_id": "joshua-l-white",
+	    "gerrit_id": "jwhite",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Joshua White",
+            "emails": ["joshua.l.white@intel.com", "jlw709@gmail.com"]
+         },
+         {
             "launchpad_id": "joshua-mckenty",
             "companies": [
                 {
