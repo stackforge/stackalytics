@@ -1067,6 +1067,18 @@
             "user_name": "Antony Messerli",
             "emails": ["root@debian.ohthree.com", "ant@openstack.org", "amesserl@rackspace.com"]
         },
+	{
+		"launchpad_id": "anup",
+		"gerrit_id":"anupnavare",
+		"companies":[
+			{
+				"company_name":"Intel"
+				"end_date":null
+			}
+		],
+		"user_name":"anup",
+		"emails":["anup.d.navare@intel.com"]
+	},
         {
             "launchpad_id": "anusha-iiitm",
             "gerrit_id": "anusha08",
