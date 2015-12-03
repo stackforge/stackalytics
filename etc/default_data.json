@@ -10495,6 +10495,17 @@
             "emails": ["sarada.a@hp.com"]
         },
         {
+            "launchpad_id": "sarafraj-singh",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "sarafrajsingh",
+            "emails": ["Sarafraj.Singh@intel.com"]
+        },
+        {
             "launchpad_id": "sarob",
             "companies": [
                 {
