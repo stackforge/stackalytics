@@ -13055,7 +13055,3589 @@
             ],
             "user_name": "Yapeng Wu",
             "emails": ["yapengwu@gmail.com", "yapeng.wu@huawei.com"]
+        }
+        {
+            "launchpad_id": "yarko-tymciurak",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yarko Tymciurak",
+            "emails": ["yarkot1@gmail.com", "yarko.tymciurak@intel.com"]
         },
+        {
+            "launchpad_id": "yatinkumbhare-c",
+            "companies": [
+                {
+                    "company_name": "Reliance",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yatin Kumbhare",
+            "emails": ["yatinkumbhare@gmail.com", "yatin.kumbhare@ril.com"]
+        },
+        {
+            "launchpad_id": "ybabenko",
+            "companies": [
+                {
+                    "company_name": "Deutsche Telekom",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yuriy Babenko",
+            "emails": ["ybabenko3@gmail.com"]
+        },
+        {
+            "launchpad_id": "yevgen-runts",
+            "companies": [
+                {
+                    "company_name": "EPAM Systems",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yevgen Runts",
+            "emails": ["yevgen_runts@epam.com", "yevhenrunts@gmail.com"]
+        },
+        {
+            "launchpad_id": "ynshenoy",
+            "companies": [
+                {
+                    "company_name": "Reliance",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yogeshwar Shenoy",
+            "emails": ["ynshenoy@gmail.com", "yogeshwar.shenoy@ril.com"]
+        },
+        {
+            "launchpad_id": "yogesh-srikrishnan",
+            "companies": [
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yogeshwar Srikrishnan",
+            "emails": ["yogesh.srikrishnan@rackspace.com", "yoga80@yahoo.com"]
+        },
+        {
+            "launchpad_id": "yongiman",
+            "companies": [
+                {
+                    "company_name": "Samsung",
+                    "end_date": null
+                }
+            ],
+            "user_name": "John Haan",
+            "emails": ["seungjin77.han@samsung.com", "yongiman@gmail.com"]
+        },
+        {
+            "launchpad_id": "yorik-sar",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yuriy Taraday",
+            "emails": ["yorik.sar@gmail.com"]
+        },
+        {
+            "launchpad_id": "yosshy",
+            "companies": [
+                {
+                    "company_name": "NEC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Akira Yoshiyama",
+            "emails": ["a-yoshiyama@bu.jp.nec.com", "akirayoshiyama@gmail.com"]
+        },
+        {
+            "launchpad_id": "yportnova",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yuliya Portnova",
+            "emails": ["yportnova@griddynamics.com", "yportnov@yahoo-inc.com", "yportnova@mirantis.com"]
+        },
+        {
+            "launchpad_id": "ypraveen",
+            "companies": [
+                {
+                    "company_name": "Avi Networks",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Praveen Yalagandula",
+            "emails": ["ypraveen@gmail.com", "ypraveen@avinetworks.com"]
+        },
+        {
+            "launchpad_id": "ysboychakov",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Evgeny Sboychakov",
+            "emails": ["ysboychakov@mirantis.com"]
+        },
+        {
+            "launchpad_id": "yugsuo",
+            "companies": [
+                {
+                    "company_name": "UnitedStack",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Guangyu Suo",
+            "emails": ["yugsuo@gmail.com", "guangyu@unitedstack.com"]
+        },
+        {
+            "launchpad_id": "yunshen",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yun Shen",
+            "emails": ["yun.shen@hp.com"]
+        },
+        {
+            "launchpad_id": "yuntongjin",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yuntong Jin",
+            "emails": ["yuntongjin@gmail.com", "yuntong.jin@intel.com"]
+        },
+        {
+            "launchpad_id": "yuxcer",
+            "companies": [
+                {
+                    "company_name": "*independent",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yuxingchao",
+            "emails": ["yuxcer@126.com", "yuxcer@gmail.com"]
+        },
+        {
+            "launchpad_id": "z8715000",
+            "companies": [
+                {
+                    "company_name": "ChinaNetCenter",
+                    "end_date": null
+                }
+            ],
+            "user_name": "jun moon",
+            "emails": ["z8715000@126.com", "muj@chinanetcenter.com"]
+        },
+        {
+            "launchpad_id": "zaitcev",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Pete Zaitcev",
+            "emails": ["zaitcev@kotori.zaitcev.us", "zaitcev@redhat.com"]
+        },
+        {
+            "launchpad_id": "zara-zaimeche",
+            "gerrit_id": "Zara",
+            "companies": [
+                {
+                    "company_name": "Codethink",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Zara",
+            "emails": ["zara.zaimeche@codethink.co.uk"]
+        },
+        {
+            "launchpad_id": "zaro0508",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Khai Do",
+            "emails": ["zaro0508@gmail.com"]
+        },
+        {
+            "launchpad_id": "zealot0630",
+            "gerrit_id": "zealot",
+            "companies": [
+                {
+                    "company_name": "Netease",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Zang MingJie",
+            "emails": ["zealot0630@gmail.com", "zangmingjie@corp.netease.com"]
+        },
+        {
+            "launchpad_id": "zeih",
+            "companies": [
+                {
+                    "company_name": "Deutsche Telekom",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Martin Oemke",
+            "emails": ["zeih@zeih.eu"]
+        },
+        {
+            "github_id": "zeke",
+            "companies": [
+                {
+                    "company_name": "npm",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Zeke Sikelianos",
+            "emails": ["zeke@sikelianos.com"]
+        },
+        {
+            "launchpad_id": "zengyunling",
+            "companies": [
+                {
+                    "company_name": "Huawei",
+                    "end_date": null
+                }
+            ],
+            "user_name": "ling-yun",
+            "emails": ["yunlingzeng@hotmail.com", "zengyunling@huawei.com"]
+        },
+        {
+            "launchpad_id": "zerodivisible",
+            "companies": [
+                {
+                    "company_name": "Workday",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Michal Stolarczyk",
+            "emails": ["zerodivisible@gmail.com"]
+        },
+        {
+            "launchpad_id": "zhang-jinnan",
+            "companies": [
+                {
+                    "company_name": "99cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jin Nan Zhang",
+            "emails": ["zhang.jinnan@99cloud.net", "zhangjinnan87@gmail.com"]
+        },
+        {
+            "launchpad_id": "zhangjialong",
+            "companies": [
+                {
+                    "company_name": "Awcloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhangjl",
+            "emails": ["zhangjl@awcloud.com", "zhangjl_cn@qq.com"]
+        },
+        {
+            "launchpad_id": "zhangleiqiang",
+            "companies": [
+                {
+                    "company_name": "Huawei",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Trump.Zhang",
+            "emails": ["zhangleiqiang@gmail.com", "zhangleiqiang@huawei.com"]
+        },
+        {
+            "launchpad_id": "zhaohua-zhao",
+            "gerrit_id": "zhaohua",
+            "companies": [
+                {
+                    "company_name": "Huawei",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhaohua",
+            "emails": ["zhaohua.zhao@huawei.com"]
+        },
+        {
+            "launchpad_id": "zhaolijun",
+            "companies": [
+                {
+                    "company_name": "Awcloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhaolijun",
+            "emails": ["zhaolijun@awcloud.com"]
+        },
+        {
+            "launchpad_id": "zhaoqin",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Qin Zhao",
+            "emails": ["chaochin@gmail.com", "zhaoqin@cn.ibm.com"]
+        },
+        {
+            "launchpad_id": "zhaoxinyu",
+            "companies": [
+                {
+                    "company_name": "Huawei",
+                    "end_date": "2015-Apr-25"
+                },
+                {
+                    "company_name": "Fortinet",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jerry Zhao",
+            "emails": ["xyzjerry@gmail.com", "jerryzhao@fortinet.com", "zhaoxinyu@huawei.com"]
+        },
+        {
+            "launchpad_id": "zhen-fang",
+            "gerrit_id": "fangzhen",
+            "companies": [
+                {
+                    "company_name": "EasyStack",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Fang Zhen",
+            "emails": ["zhen.fang@easystack.cn","fangzhenzyou@gmail.com"]
+        },
+        {
+            "launchpad_id": "zhengzhenyu",
+            "companies": [
+                {
+                "company_name": "Huawei",
+                "end_date": null
+                }
+            ],
+            "user_name": "Zhenyu Zheng",
+            "emails": ["zhengzhenyu@huawei.com", "zheng.zhenyu@outlook.com", "zhengzhenyulixi@gmail.com"]
+        },
+        {
+            "launchpad_id": "zhhuabj",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": "2014-May-23"
+                },
+                {
+                    "company_name": "Canonical",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Hua Zhang",
+            "emails": ["zhhuabj@cn.ibm.com", "joshua.zhang@canonical.com", "veryhua2006@gmail.com"]
+        },
+        {
+            "launchpad_id": "zhidong",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Zhidong Yu",
+            "emails": ["zdyu2000@gmail.com", "zhidong.yu@intel.com"]
+        },
+        {
+            "launchpad_id": "zhikunliu",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Zhi Kun Liu",
+            "emails": ["liuzhikun@gmail.com", "zhikunli@cn.ibm.com"]
+        },
+        {
+            "launchpad_id": "zhiteng-huang",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": "2013-Jun-22"
+                },
+                {
+                    "company_name": "eBay",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Huang Zhiteng",
+            "emails": ["zhiteng.huang@intel.com", "zhithuang@ebaysf.com", "winston.d@gmail.com"]
+        },
+        {
+            "launchpad_id": "zhouhan",
+            "companies": [
+                {
+                    "company_name": "eBay",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Han Zhou",
+            "emails": ["hzhou8@ebaysf.com", "zhouhan@gmail.com"]
+        },
+        {
+            "launchpad_id": "zhouhy",
+            "companies": [
+                {
+                    "company_name": "Awcloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "ZouHuiying",
+            "emails": ["zhouhy@awcloud.com"]
+        },
+        {
+            "launchpad_id": "zhu-rong",
+            "companies": [
+                {
+                    "company_name": "99cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhu.rong",
+            "emails": ["zhu.rong@99cloud.net", "aaronzhu1020@gmail.com"]
+        },
+        {
+            "launchpad_id": "ziad-sawalha",
+            "companies": [
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ziad Sawalha",
+            "emails": ["ziad.sawalha@rackspace.com", "github@highbridgellc.com", "gihub@highbridgellc.com", "ziad@sawalha.com", "gerrit@highbridgellc.com"]
+        },
+        {
+            "launchpad_id": "zrzhit",
+            "gerrit_id": "zrzhit",
+            "companies": [
+                {
+                    "company_name": "SINA",
+                    "end_date": "2013-Jan-15"
+                },
+                {
+                    "company_name": "UnitedStack",
+                    "end_date": "2015-Apr-30"
+                },
+                {
+                    "company_name": "Mirantis",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Rongze Zhu",
+            "emails": ["zrzhit@gmail.com", "rongze@ustack.com", "rongze@unitedstack.com", "rzhu@mirantis.com"]
+        },
+        {
+            "launchpad_id": "zulcss",
+            "companies": [
+                {
+                    "company_name": "Canonical",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Chuck Short",
+            "emails": ["chuck.short@canonical.com", "zulcss@ubuntu.com"]
+        },
+        {
+            "launchpad_id": "zxiiro",
+            "companies": [
+                {
+                    "company_name": "The Linux Foundation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Thanh Ha",
+            "emails": ["zxiiro@linux.com", "zxiiro@gmail.com", "thanh.ha@linuxfoundation.org"]
+        },
+        {
+            "launchpad_id": "zxkuqyb",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": "2015-Sep-04"
+                },
+                {
+                    "company_name": "IBM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "matthew wagoner",
+            "emails": ["zxkuqyb@gmail.com", "matthew.wagoner@hp.com"]
+        },
+        {
+            "launchpad_id": "zyluo",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Zhongyue Luo",
+            "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        }
+    ],
+    "companies": [
+        {
+            "domains": [""],
+            "company_name": "*independent",
+            "aliases": ["None", "Non", "l-", ".", "****", "1", "aaa", "-", "dsadsadsadsad", "I dont have one", "company",
+              "n/a", "Self", "Student", "home", "Home Based", "Independent", "Independen", "Independant", "MyHome",
+              "HomeOffice", "Self Employeed", "Self Employed", "myself", "Self-employeed", "individual", "Individual Contributor",
+              "Unaffiliated", "没有", "Null", "Univerisity", "fsfsf", "xxx", "no job", "Freelancer", "free", "Freelance",
+              "Freelance IT Specialist", "No Affiliation", "Not applicable", "Unaffilliated", "Unaffiliate", "Unafilliated",
+              "Unaffliated", "test", "Unffiliated", "independent user", "me", "my", "unaffeliated", "Unaffilaited",
+              "Unaffiliaited", "Unaffilated", "Personal user", "independent user - Unaffiliated", "Unaffliliated", "dummy",
+              "unaffillated", "Unafflicated", "Unafiliated", "Unaffialiated", "Unaffiliation", "Unaffilicated", "Unaffilinated",
+              "indepedent", "Unaffiliatd", "Anonomous", "unaffiliated student", "Personal", "Unalliliated", "Unafillated",
+              "Not Affiliated", "Unaffilited"]
+        },
+        {
+            "domains": ["360.cn"],
+            "company_name": "Qihoo 360 Technology Co"
+        },
+        {
+            "domains": ["3ds.com"],
+            "company_name": "Dassault Syst\u00e8mes"
+        },
+        {
+            "domains": ["4loops.com"],
+            "company_name": "Four Loops Solutions",
+            "aliases": ["4Loops Solutions pvt ltd"]
+        },
+        {
+            "domains": ["6wind.com"],
+            "company_name": "6WIND"
+        },
+        {
+            "domains": ["99cloud.net"],
+            "company_name": "99cloud"
+        },
+        {
+            "domains": ["a10networks.com"],
+            "company_name": "A10 Networks"
+        },
+        {
+            "domains": ["ac.th"],
+            "company_name": "Suranaree University of Technology"
+        },
+        {
+            "domains": ["accenture.com"],
+            "company_name": "Accenture"
+        },
+        {
+            "domains": ["acelio.com"],
+            "company_name": "Acelio"
+        },
+        {
+            "domains": ["akanda.io"],
+            "company_name": "Akanda"
+        },
+        {
+            "domains": ["alcatel-lucent.com"],
+            "company_name": "Alcatel-Lucent",
+            "aliases": ["Alcatel Lucent", "Alcatel-Lucent, Nuage Networks", "Alcatel-Lcuent", "Alcatel-Lucent Austria", "Alcatel-Lucent Bell Labs France"]
+        },
+        {
+            "domains": ["allegrogroup.com", "allegro.pl"],
+            "company_name": "Allegro",
+            "aliases": ["Allegro Group", "Grupa Allegro", "Grupa Allegro Sp. z o.o."]
+        },
+        {
+            "domains": ["altiscale.com"],
+            "company_name": "Altiscale"
+        },
+        {
+            "domains": ["alyseo.com"],
+            "company_name": "Alyseo"
+        },
+        {
+            "domains": ["amadeus.com"],
+            "company_name": "Amadeus"
+        },
+        {
+            "domains": ["ampliphae.com"],
+            "company_name": "Ampliphae"
+        },
+        {
+            "domains": ["anchor.com.au", "anchor.net.au", "anchor.hosting"],
+            "company_name": "Anchor"
+        },
+        {
+            "domains": ["anl.gov"],
+            "company_name": "Argonne National Laboratory"
+        },
+        {
+            "domains": ["ansible.com"],
+            "company_name": "Ansible"
+        },
+        {
+            "domains": ["apalia.net"],
+            "company_name": "Apalia"
+        },
+        {
+            "domains": ["apple.com"],
+            "company_name": "Apple, Inc."
+        },
+        {
+            "domains": ["aptira.com"],
+            "company_name": "Aptira"
+        },
+        {
+            "domains": ["aricent.com"],
+            "company_name": "Aricent"
+        },
+        {
+            "domains": ["aristanetworks.com"],
+            "company_name": "Arista Networks"
+        },
+        {
+            "domains": ["arubanetworks.com"],
+            "company_name": "Aruba Networks"
+        },
+        {
+            "domains": ["askbot.com"],
+            "company_name": "Askbot"
+        },
+        {
+            "domains": ["atomia.com"],
+            "company_name": "Atomia"
+        },
+        {
+            "domains": ["att.com", "attinteractive.com", "research.att.com"],
+            "company_name": "AT&T",
+            "aliases": ["AT&T Mobility", "AT&T Services"]
+        },
+        {
+            "domains": ["avaya.com"],
+            "company_name": "Avaya"
+        },
+        {
+            "domains": ["avinetworks.com"],
+            "company_name": "Avi Networks"
+        },
+        {
+            "domains": ["awcloud.com"],
+            "company_name": "Awcloud"
+        },
+        {
+            "domains": ["axway.com"],
+            "company_name": "Axway"
+        },
+        {
+            "domains": ["b1-systems.de"],
+            "company_name": "B1 Systems"
+        },
+        {
+            "domains": ["bacoosta.com"],
+            "company_name": "Bacoosta IT Services"
+        },
+        {
+            "domains": ["bestbuy.com"],
+            "company_name": "Best Buy"
+        },
+        {
+            "domains": ["bigswitch.com"],
+            "company_name": "Big Switch Networks",
+            "aliases": ["Big Switch"]
+        },
+        {
+            "domains": ["bit-isle.co.jp"],
+            "company_name": "Bit-isle Inc."
+        },
+        {
+            "domains": ["bitergia.com"],
+            "company_name": "Bitergia"
+        },
+        {
+            "domains": ["bluebox.net"],
+            "company_name": "Blue Box",
+            "aliases": ["Blue Box Group"]
+        },
+        {
+            "domains": ["bluehost.com"],
+            "company_name": "Bluehost"
+        },
+        {
+            "domains": ["boeing.com"],
+            "company_name": "Boeing"
+        },
+        {
+            "domains": ["brightcomputing.com"],
+            "company_name": "Bright Computing",
+            "aliases": ["Bright Computing, BV"]
+        },
+        {
+            "domains": ["brinkster.com"],
+            "company_name": "Brinkster",
+            "aliases": ["Brinkster Communications"]
+        },
+        {
+            "domains": ["broadcom.com"],
+            "company_name": "Broadcom"
+        },
+        {
+            "domains": ["brocade.com"],
+            "company_name": "Brocade",
+            "aliases": ["Brocade Communication", "Brocade Communications", "Brocade Communications Systems"]
+        },
+        {
+            "domains": ["bull.net"],
+            "company_name": "Bull",
+            "aliases": ["Bull SAS"]
+        },
+        {
+            "domains": ["cable.comcast.com"],
+            "company_name": "Comcast"
+        },
+        {
+            "domains": ["calsoftinc.com"],
+            "company_name": "Calsoft"
+        },
+        {
+            "domains": ["calxeda.com"],
+            "company_name": "Calxeda"
+        },
+        {
+            "domains": ["canonical.com"],
+            "company_name": "Canonical",
+            "aliases": ["Canoncail, Ltd.", "Ubuntu Canonical"]
+        },
+        {
+            "domains": ["catalyst.net.nz"],
+            "company_name": "Catalyst IT"
+        },
+        {
+            "domains": ["centraldesktop.com"],
+            "company_name": "Central Desktop"
+        },
+        {
+            "domains": ["centurylink.com"],
+            "company_name": "CenturyLink"
+        },
+        {
+            "domains": ["cern.ch"],
+            "company_name": "CERN"
+        },
+        {
+            "domains": ["chinamobile.com", "cmss.chinamobile.com"],
+            "company_name": "China Mobile"
+        },
+        {
+            "domains": ["chinanetcenter.com"],
+            "company_name": "ChinaNetCenter",
+            "aliases": ["ChinaNetCenter Cloud", "ChinaNetCenter CDN", "ChinaNetCenter IDC", "China Cache", "ChinaNetCenter USA"]
+        },
+        {
+            "domains": ["cienet.com.cn"],
+            "company_name": "CIeNET Technologies"
+        },
+        {
+            "domains": ["cisco.com", "noironetworks.com"],
+            "company_name": "Cisco Systems",
+            "aliases": ["Cisco System", "Cisco Systems Inc., Intel, Microsoft, Dorkbotz", "Cisco System, Inc., Nebula, Inc.",
+              "Cisco", "Cisco Inc", "Cisco Hong Kong", "Cisco Canada", "Cisco APAC", "Cisco Systems India"]
+        },
+        {
+            "domains": ["citrix.com"],
+            "company_name": "Citrix"
+        },
+        {
+            "domains": ["cloud.com"],
+            "company_name": "Citrix Systems"
+        },
+        {
+            "domains": ["cloudbasesolutions.com"],
+            "company_name": "Cloudbase Solutions",
+            "aliases": ["Cloudbase"]
+        },
+        {
+            "domains": ["cloudbau.de"],
+            "company_name": "Cloudbau"
+        },
+        {
+            "domains": ["cloudenablers.com"],
+            "company_name": "Cloudenablers",
+            "aliases": ["CD Cloudenablers"]
+        },
+        {
+            "domains": ["cloudfounders.com"],
+            "company_name": "CloudFounders"
+        },
+        {
+            "domains": ["cloudfoundry.org"],
+            "company_name": "Cloud Foundry"
+        },
+        {
+            "domains": ["cloudscaling.com"],
+            "company_name": "Cloudscaling"
+        },
+        {
+            "domains": ["cloudtp.com"],
+            "company_name": "Cloud Technology Partners"
+        },
+        {
+            "domains": ["cloudvps.com"],
+            "company_name": "CloudVPS"
+        },
+        {
+            "domains": ["cloudwatt.com"],
+            "company_name": "Cloudwatt"
+        },
+        {
+            "domains": ["codethink.co.uk"],
+            "company_name": "Codethink"
+        },
+        {
+            "domains": ["colt.net"],
+            "company_name": "Colt",
+            "aliases": ["Colt Technology Services", "KVH", "KVH Co., Ltd."]
+        },
+        {
+            "domains": ["coraid.com"],
+            "company_name": "Coraid"
+        },
+        {
+            "domains": ["coreos.com"],
+            "company_name": "CoreOS"
+        },
+        {
+            "domains": ["corvisa.com"],
+            "company_name": "Corvisa",
+            "aliases": ["Corvisa Services"]
+        },
+        {
+            "domains": ["cray.com"],
+            "company_name": "Cray"
+        },
+        {
+            "domains": ["crs4.it"],
+            "company_name": "CRS4"
+        },
+        {
+            "domains": ["cs2c.com.cn"],
+            "company_name": "cs2c",
+            "aliases": ["CS2C"]
+        },
+        {
+            "domains": ["csail.mit.edu"],
+            "company_name": "MIT CSAIL"
+        },
+        {
+            "domains": ["cybera.ca"],
+            "company_name": "Cybera"
+        },
+        {
+            "domains": ["cybercom.fi", "cybercom.com"],
+            "company_name": "Cybercom"
+        },
+        {
+            "domains": ["d-red.jp"],
+            "company_name": "Daikanyama RED"
+        },
+        {
+            "domains": ["datacentred.co.uk", "datacentred.io"],
+            "company_name": "DataCentred"
+        },
+        {
+            "domains": ["debian.org"],
+            "company_name": "Debian",
+            "aliases": ["debian.org"]
+        },
+        {
+            "domains": ["dektech.com.au"],
+            "company_name": "DEK Technologies",
+            "aliases": ["DEK Technologies","DEK"]
+        },
+        {
+            "domains": ["dell.com", "software.dell.com"],
+            "company_name": "Dell",
+            "aliases": ["Dell  &amp; Ganette Publishing", "Dell, Inc., Cabarrus County Schools", "Dell & Ganette Publishing",
+                "Dell Software Group"]
+        },
+        {
+            "domains": ["denali-systems.com"],
+            "company_name": "Denali Systems"
+        },
+        {
+            "domains": ["docker.com"],
+            "company_name": "Docker"
+        },
+        {
+            "domains": ["dotcloud.com"],
+            "company_name": "dotCloud"
+        },
+        {
+            "domains": ["dreamhost.com"],
+            "company_name": "DreamHost",
+            "aliases": ["DreamHost, Inktank"]
+        },
+        {
+            "domains": ["earthlink.net"],
+            "company_name": "Earthlink"
+        },
+        {
+            "domains": ["easystack.cn"],
+            "company_name": "EasyStack"
+        },
+        {
+            "domains": ["ebay.com", "ebaysf.com"],
+            "company_name": "eBay"
+        },
+        {
+            "domains": ["embrane.com"],
+            "company_name": "Embrane"
+        },
+        {
+            "domains": ["emc.com"],
+            "company_name": "EMC",
+            "aliases": ["EMC Corportion", "EMC employee; Russian Cloud Computing Professional Association - Head of executive commitee", "EMC, VMWare"]
+        },
+        {
+            "domains": ["endurancewindpower.com"],
+            "company_name": "Endurance Wind Power"
+        },
+        {
+            "domains": ["entpnt.com"],
+            "company_name": "Entry Point Networks"
+        },
+        {
+            "domains": ["epam.com"],
+            "company_name": "EPAM Systems"
+        },
+        {
+            "domains": ["ericsson.com"],
+            "company_name": "Ericsson",
+            "aliases": ["Ericsson AB", "Ericsson Research", "Ericcson AB", "Ericsson Eurolab Deutschland GmbH",
+              "Ericsson India", "Ericsson Montreal", "Ericsson Hungary", "Ericsson China", "Ericsson Canada",
+              "Ericsson India Global Services"]
+        },
+        {
+            "domains": ["fathomdb.com"],
+            "company_name": "FathomDB"
+        },
+        {
+            "domains": ["firma.seznam.cz"],
+            "company_name": "Seznam.cz",
+            "aliases": ["Seznam.cz, a.s."]
+        },
+        {
+            "domains": ["fit-tecnologia.org.br"],
+            "company_name": "FIT Instituto de Tecnologia",
+            "aliases": ["FIT"]
+        },
+        {
+            "domains": ["fnal.gov"],
+            "company_name": "Fermilab"
+        },
+        {
+            "domains": ["fortinet.com"],
+            "company_name": "Fortinet",
+            "aliases": ["Fortinet Inc"]
+        },
+        {
+            "domains": ["freescale.com"],
+            "company_name": "Freescale",
+            "aliases": ["Freescale (I) Pvt Ltd", "Freescale Semiconductors"]
+        },
+        {
+            "domains": ["fujitsu.com"],
+            "company_name": "Fujitsu",
+            "aliases": ["FUJITSU HOKURIKU SYSTEMS LIMITED"]
+        },
+        {
+            "domains": ["getchef.com", "opscode.com"],
+            "company_name": "Chef"
+        },
+        {
+            "domains": ["gigaspaces.com"],
+            "company_name": "GigaSpaces"
+        },
+        {
+            "domains": ["globallogic.com"],
+            "company_name": "GlobalLogic"
+        },
+        {
+            "domains": ["godaddy.com"],
+            "company_name": "Go Daddy"
+        },
+        {
+            "domains": ["google.com"],
+            "company_name": "Google"
+        },
+        {
+            "domains": ["gplhost.com"],
+            "company_name": "GPLHost"
+        },
+        {
+            "domains": ["gridcentric.ca", "gridcentric.com"],
+            "company_name": "Gridcentric"
+        },
+        {
+            "domains": ["griddynamics.com", "griddynamics.net"],
+            "company_name": "Grid Dynamics"
+        },
+        {
+            "domains": ["grnet.gr"],
+            "company_name": "GRNET"
+        },
+        {
+            "domains": ["gslab.com"],
+            "company_name": "Great Software Laboratory"
+        },
+        {
+            "domains": ["guardian.co.uk", "theguardian.com"],
+            "company_name": "The Guardian"
+        },
+        {
+            "domains": ["harmonicinc.com"],
+            "company_name": "Harmonic"
+        },
+        {
+            "domains": ["hastexo.com"],
+            "company_name": "Hastexo",
+            "aliases": ["hastexo Professional Services GmbH"]
+        },
+        {
+            "domains": ["hcl.com"],
+            "company_name": "HCL",
+            "aliases": ["HCL Technologies"]
+        },
+        {
+            "domains": ["hds.com", "hitachi.com","hitachi.co.in"],
+            "company_name": "Hitachi",
+            "aliases": ["Hitachi Data Systems", "Hitachi India"]
+        },
+        {
+            "domains": ["heroku.com"],
+            "company_name": "Heroku"
+        },
+        {
+            "domains": ["hihuron.com"],
+            "company_name": "Huron",
+            "aliases": ["Huron Technologies"]
+        },
+        {
+            "domains": ["hortonworks.com"],
+            "company_name": "Hortonworks"
+        },
+        {
+            "domains": ["hp.com", "hpe.com"],
+            "company_name": "HP",
+            "aliases": ["HP Cloud", "HP ES GD China", "HP, IBM", "HP Software", "HP Storage Division", "Hewlett Packard",
+              "Hewlett-Packard Company", "Hewlett-Packard", "Hewllet-Packard", "HP R and D", "HP Cloud OS", "HP Networking",
+              "hewelett-packard company", "HewlettPackard", "Hewlett-Pack", "Hewlitt-Packard", "Hewlett-PackardHP India Software Operations",
+              "HP cloud services", "HP India software Operation", "HP Labs", "Hewlett-Packard Helion", "Hewlett-Packard India Software Operations",
+              "Hewlett Packard Enterprise", "Hewlett-Packard Enterprise", "Hewlett-Packard Singapore Pte", "Hewlett Packard Romania",
+              "HP Helion Public Cloud", "HP Japan", "HP Korea", "HP Helion", "HP Costa Rica", "China HP"]
+        },
+        {
+            "domains": ["huawei.com"],
+            "company_name": "Huawei",
+            "aliases": ["Huawei Technologies", "Huawei Technology", "Huawei Technologies Co. Limitied",
+              "Huawei Technologies Düsseldorf", "Huawei Technologies India Private Limited", "Huawei china",
+              "Huawei Tech", "Huawei Enterprise Business Group", "huawei technical", "Huawei Technologies India",
+              "huawei storage system", "华为技术有限公司", "华为", "Huawei Technolgies"]
+        },
+        {
+            "domains": ["ibm.com", "linux.vnet.ibm.com"],
+            "company_name": "IBM",
+            "aliases": ["IBM Australia", "IBM Canada", "IBM Canada Ltd", "IBM China", "IBM Corporation", "IBM India", "IBM Japan",
+              "IBM Research", "IBM Research - China", "IBM Research Lab, India", "IBM Deutschland Research & Development GmbH",
+              "International Business Machines Corporation", "IBM UK Ltd", "IBM Ireland", "IBM Cloud Infrastructure Services",
+              "IBM Deutschland", "IBM Malaysia", "IBM Haifa", "IBM Global Services", "IBM Softlayer", "IBM Cloud Division",
+              "IBM Malaysia Sdn Bhd", "IBM India Private"]
+        },
+        {
+            "domains": ["ifca.unican.es"],
+            "company_name": "CSIC",
+            "aliases": ["Spanish National Research Council", "CSIC - Spanish National Research Council"]
+        },
+        {
+            "domains": ["igbmc.fr"],
+            "company_name": "IGBMC",
+            "aliases": ["IGBMC biological research lab"]
+        },
+        {
+            "domains": ["imaginea.com"],
+            "company_name": "Imaginea Technologies Inc."
+        },
+        {
+            "domains": ["inaugust.com"],
+            "company_name": "In August"
+        },
+        {
+            "domains": ["infoblox.com"],
+            "company_name": "Infoblox"
+        },
+        {
+            "domains": ["inktank.com"],
+            "company_name": "Inktank"
+        },
+        {
+            "domains": ["inmon.com"],
+            "company_name": "InMon"
+        },
+        {
+            "domains": ["inria.fr"],
+            "company_name": "Inria",
+            "aliases": ["INRIA"]
+        },
+        {
+            "domains": ["intel.com"],
+            "company_name": "Intel",
+            "aliases": ["Intel Media", "Intel OTC", "Intern at intel", "Intel Security"]
+        },
+        {
+            "domains": ["interhost.no"],
+            "company_name": "InterhostAS"
+        },
+        {
+            "domains": ["internap.com"],
+            "company_name": "Internap"
+        },
+        {
+            "domains": ["inwinstack.com"],
+            "company_name": "inwinSTACK"
+        },
+        {
+            "domains": ["iomart.com"],
+            "company_name": "iomart",
+            "aliases": ["iomart group"]
+        },
+        {
+            "domains": ["iroquoisystems.com"],
+            "company_name": "IroquoiSystems"
+        },
+        {
+            "domains": ["isi.edu"],
+            "company_name": "Information Sciences Institute"
+        },
+        {
+            "domains": ["ispras.ru"],
+            "company_name": "ISP RAS"
+        },
+        {
+            "domains": ["it.pt", "av.it.pt", "lx.it.pt", "co.it.pt"],
+            "company_name": "Instituto de Telecomunicacoes"
+        },
+        {
+            "domains": ["itsyn.com"],
+            "company_name": "IT Synergy"
+        },
+        {
+            "domains": ["iweb.co.uk"],
+            "company_name": "iWebSolutions",
+            "aliases": ["iweb.co.uk", "iwebsolutions.co.uk", "nuisoft.com"]
+        },
+        {
+            "domains": ["iweb.com"],
+            "company_name": "iWeb"
+        },
+        {
+            "domains": ["izeltech.com"],
+            "company_name": "Izel Technologies"
+        },
+        {
+            "domains": ["jhuapl.edu"],
+            "company_name": "Johns Hopkins University Applied Physics Laboratory",
+            "aliases": ["Johns Hopkins University Applied Physics Lab", "Johns Hopkins University Applied Physics Laboratory", "JHU/APL"]
+        },
+        {
+            "domains": ["jpberlin.de"],
+            "company_name": "JP Berlin"
+        },
+        {
+            "domains": ["juniper.com", "juniper.net"],
+            "company_name": "Juniper",
+            "aliases": ["Juniper Networks", "Juniper Networks Inc.", "Juniper Networks India", "Juniper India"]
+        },
+        {
+            "domains": ["kau.se"],
+            "company_name": "Karlstad Universitet"
+        },
+        {
+            "domains": ["kent.ac.uk"],
+            "company_name": "University of Kent",
+            "aliases": ["University of Kent"]
+        },
+        {
+            "domains": ["kionetworks.com"],
+            "company_name": "KIO Networks",
+            "aliases": ["Kionetworks", "KIO", "Kio operaciones", "KIO-Networks"]
+        },
+        {
+            "domains": ["kt.com"],
+            "company_name": "KT Corporation"
+        },
+        {
+            "domains": ["kth.se"],
+            "company_name": "Kungliga Tekniska h\u00f6gskolan"
+        },
+        {
+            "domains": ["kylin-cloud.com"],
+            "company_name": "Kylin Cloud"
+        },
+        {
+            "domains": ["lahondaresearch.org"],
+            "company_name": "La Honda Research",
+            "aliases": ["La Honda Research Center"]
+        },
+        {
+            "domains": ["lavabit.com"],
+            "company_name": "Lavabit"
+        },
+        {
+            "domains": ["lenovo.com"],
+            "company_name": "Lenovo"
+        },
+        {
+            "domains": ["letv.com"],
+            "company_name": "Letv Cloud Computing"
+        },
+        {
+            "domains": ["lgcns.com"],
+            "company_name": "LG CNS",
+            "aliases": ["LG CNS"]
+        },
+        {
+            "domains": ["limilo.com"],
+            "company_name": "Limilo"
+        },
+        {
+            "domains": ["linagora.com"],
+            "company_name": "Linagora"
+        },
+        {
+            "domains": ["locaweb.com.br"],
+            "company_name": "Locaweb"
+        },
+        {
+            "domains": ["lsd.ufcg.edu.br"],
+            "company_name": "Universidade Federal de Campina Grande"
+        },
+        {
+            "domains": ["m3s.it"],
+            "company_name": "M3S"
+        },
+        {
+            "domains": ["maginatics.com"],
+            "company_name": "Maginatics"
+        },
+        {
+            "domains": ["managedit.ie"],
+            "company_name": "Managed IT"
+        },
+        {
+            "domains": ["maplelabs.com"],
+            "company_name": "Maplelabs"
+        },
+        {
+            "domains": ["maprtech.com", "mapr.com"],
+            "company_name": "MapR"
+        },
+        {
+            "domains": ["mellanox.com", "mellanox.co.il"],
+            "company_name": "Mellanox",
+            "aliases": ["Mellanox Technologies", "Mellanox.com"]
+        },
+        {
+            "domains": ["memset.com"],
+            "company_name": "Memset"
+        },
+        {
+            "domains": ["metacloud.com"],
+            "company_name": "Metacloud"
+        },
+        {
+            "domains": ["metaswitch.com"],
+            "company_name": "Metaswitch",
+            "aliases": ["Metaswitch Networks"]
+        },
+        {
+            "domains": ["metsi.co.uk"],
+            "company_name": "Metsi Technologies"
+        },
+        {
+            "domains": ["microsoft.com"],
+            "company_name": "Microsoft"
+        },
+        {
+            "domains": ["midokura.com", "midokura.jp"],
+            "company_name": "Midokura",
+            "aliases": ["Midokura Japan"]
+        },
+        {
+            "domains": ["mirantis.com", "mirantis.ru"],
+            "company_name": "Mirantis"
+        },
+        {
+            "domains": ["mit.edu"],
+            "company_name": "MIT"
+        },
+        {
+            "domains": ["momentumsi.com"],
+            "company_name": "MomentumSI",
+            "aliases": ["MomentumSI, Transcend Computing"]
+        },
+        {
+            "domains": ["mvista.com"],
+            "company_name": "MontaVista Software",
+            "aliases": ["MontaVista"]
+        },
+        {
+            "domains": ["mynet.at"],
+            "company_name": "myNET",
+            "aliases": ["MYNETWORK TECHNOLOGY"]
+        },
+        {
+            "domains": ["nasa.gov"],
+            "company_name": "NASA"
+        },
+        {
+            "domains": ["navy.mil"],
+            "company_name": "US Navy"
+        },
+        {
+            "domains": ["nebula.com", "ansolabs.com"],
+            "company_name": "Nebula",
+            "aliases": ["Nebula, Inc. ; CFO Tools", "Nebulaworks"]
+        },
+        {
+            "domains": ["nec.com", "nec.co.jp", "nectechnologies.in", "neclab.eu"],
+            "company_name": "NEC",
+            "aliases": ["NEC Europe Ltd.", "NEC Soft, Ltd.", "NEC Technologies India Ltd.", "NEC Technlogies India Ltd", "NEC Laboratories Europe",
+                "NEC Solution Innovators"]
+        },
+        {
+            "domains": ["netapp.com"],
+            "company_name": "NetApp"
+        },
+        {
+            "domains": ["netease.com"],
+            "company_name": "Netease"
+        },
+        {
+            "domains": ["netone.co.jp"],
+            "company_name": "NetOne Systems"
+        },
+        {
+            "domains": ["netronome.com"],
+            "company_name": "Netronome"
+        },
+        {
+            "domains": ["nexenta.com"],
+            "company_name": "Nexenta"
+        },
+        {
+            "domains": ["nextgrail.com"],
+            "company_name": "NextGrail"
+        },
+        {
+            "domains": ["nimbisservices.com"],
+            "company_name": "Nimbis Services"
+        },
+        {
+            "domains": ["nimbula.com"],
+            "company_name": "Nimbula"
+        },
+        {
+            "domains": ["nine.ch"],
+            "company_name": "Nine Internet Solutions AG"
+        },
+        {
+            "domains": ["nitrous.io"],
+            "company_name": "Nitrous"
+        },
+        {
+            "domains": ["nokia.com"],
+            "company_name": "Nokia",
+            "aliases": ["Nokia Solutions and Networks", "Nokia Networks"]
+        },
+        {
+            "domains": ["ntt.com", "nttmcl.com", "nttdata.co.jp", "ntt.co.jp", "nttdata.com", "vertex.co.in", "ntts.co.jp"],
+            "company_name": "NTT",
+            "aliases": ["NTT CORPORATION", "NTT DATA", "NTT DATA INTELLILINK CORPORATION", "NTT DATA INTELLILINK Corpration", "NTT Communications"]
+        },
+        {
+            "domains": ["nuagenetworks.net"],
+            "company_name": "Nuage Networks"
+        },
+        {
+            "domains": ["numergy.com", "numergy.fr"],
+            "company_name": "Numergy"
+        },
+        {
+            "domains": ["objectif-libre.com"],
+            "company_name": "Objectif Libre"
+        },
+        {
+            "domains": ["oneconvergence.com"],
+            "company_name": "One Convergence",
+            "aliases": ["One Convergence Devices Pvt. Ltd", "Oneconvergence Devices Pvt Ltd", "One Convergence Devices"]
+        },
+        {
+            "domains": ["optiflows.com"],
+            "company_name": "Optiflows"
+        },
+        {
+            "domains": ["oracle.com"],
+            "company_name": "Oracle",
+            "aliases": ["Oracle America Inc.", "Oracle India Pvt. Ltd"]
+        },
+        {
+            "domains": ["orange.com"],
+            "company_name": "Orange",
+            "aliases": ["Orange Labs", "Orange Polska S.A."]
+        },
+        {
+            "domains": ["osones.com"],
+            "company_name": "Osones"
+        },
+        {
+            "domains": ["ovh.com"],
+            "company_name": "OVH",
+            "aliases": ["OVH Group", "RunAbove"]
+        },
+        {
+            "domains": ["parallels.com"],
+            "company_name": "Parallels"
+        },
+        {
+            "domains": ["pdx.edu"],
+            "company_name": "Portland State University"
+        },
+        {
+            "domains": ["percona.com"],
+            "company_name": "Percona"
+        },
+        {
+            "domains": ["persistent.co.in"],
+            "company_name": "Persistent Systems",
+            "aliases": ["Persistent System Limited", "persistent sys limited", "Persistent Ltd"]
+        },
+        {
+            "domains": ["pistoncloud.com"],
+            "company_name": "Piston Cloud",
+            "aliases": ["Piston Cloud Computing, Inc.", "Piston"]
+        },
+        {
+            "domains": ["pivotal.io", "gopivotal.com", "pivotallabs.com"],
+            "company_name": "Pivotal"
+        },
+        {
+            "domains": ["playhaven.com"],
+            "company_name": "PlayHaven"
+        },
+        {
+            "domains": ["plcloud.com"],
+            "company_name": "PLCloud"
+        },
+        {
+            "domains": ["plumgrid.com"],
+            "company_name": "PLUMgrid"
+        },
+        {
+            "domains": ["pluribusnetworks.com"],
+            "company_name": "Pluribus Networks"
+        },
+        {
+            "domains": ["powertech.no"],
+            "company_name": "PowerTech Information Systems AS"
+        },
+        {
+            "domains": ["projectcalico.org"],
+            "company_name": "Project Calico",
+            "aliases": ["Calico"]
+        },
+        {
+            "domains": ["pubyun.com"],
+            "company_name": "Pubyun"
+        },
+        {
+            "domains": ["puppetlabs.com"],
+            "company_name": "Puppet Labs"
+        },
+        {
+            "domains": ["purestorage.com"],
+            "company_name": "Pure Storage"
+        },
+        {
+            "domains": ["qrclab.com"],
+            "company_name": "Quanta Research Cambridge"
+        },
+        {
+            "domains": ["rackspace.co.uk", "rackspace.com", "slicehost.com", "mailtrust.com"],
+            "company_name": "Rackspace",
+            "aliases": ["Rackspace, Cloudscaling, Korea Telcom, friends with lots of people", "Rackspace.com", "Rackspace Hosting",
+              "Rackspce", "Rackspace Hosting; Tunnel Vision Laboratories LLC"]
+        },
+        {
+            "domains": ["rackwareinc.com"],
+            "company_name": "Rackware"
+        },
+        {
+            "domains": ["radisys.com"],
+            "company_name": "Radisys"
+        },
+        {
+            "domains": ["radware.com"],
+            "company_name": "Radware"
+        },
+        {
+            "domains": ["rakuten.com", "rakops.com"],
+            "company_name": "Rakuten"
+        },
+        {
+            "domains": ["ravellosystems.com"],
+            "company_name": "Ravello Systems"
+        },
+        {
+            "domains": ["redhat.com", "gluster.com", "enovance.com"],
+            "company_name": "Red Hat",
+            "aliases": ["Red Hat Canada, Inc", "Red Hat Czech, s.r.o.", "Red Hat, Inc., Bloomberg L.P.", "Red Hat India Pvt. Ltd.", "Red Hat Software", "eNovance"]
+        },
+        {
+            "domains": ["reduxio.com"],
+            "company_name": "Reduxio"
+        },
+        {
+            "domains": ["rightscale.com"],
+            "company_name": "Rightscale"
+        },
+        {
+            "domains": ["ril.com"],
+            "company_name": "Reliance"
+        },
+        {
+            "domains": ["rizu.mu"],
+            "company_name": "Rizumu"
+        },
+        {
+            "domains": ["samsung.com"],
+            "company_name": "Samsung",
+            "aliases": ["Samsung SDS", "Samsung India Software Operations"]
+        },
+        {
+            "domains": ["sap.com"],
+            "company_name": "SAP",
+            "aliases": ["SAP SE"]
+        },
+        {
+            "domains": ["scality.com"],
+            "company_name": "Scality",
+            "aliases": ["Scality.com"]
+        },
+        {
+            "domains": ["sdsc.edu"],
+            "company_name": "San Diego Supercomputer Center"
+        },
+        {
+            "domains": ["seagate.com"],
+            "company_name": "Seagate",
+            "aliases": ["Seagate Technology"]
+        },
+        {
+            "domains": ["servosity.com"],
+            "company_name": "Servosity"
+        },
+        {
+            "domains": ["siaras.com"],
+            "company_name": "Siaras"
+        },
+        {
+            "domains": ["simplivity.com"],
+            "company_name": "SimpliVity"
+        },
+        {
+            "domains": ["sina.com"],
+            "company_name": "SINA",
+            "aliases": ["SINA Weibo Fund"]
+        },
+        {
+            "domains": ["siu.edu"],
+            "company_name": "Southern Illinois University"
+        },
+        {
+            "domains": ["snabb.co"],
+            "company_name": "Snabb"
+        },
+        {
+            "domains": ["softlayer.com"],
+            "company_name": "SoftLayer",
+            "aliases": ["SoftLayer, an IBM Company"]
+        },
+        {
+            "domains": ["solidfire.com"],
+            "company_name": "SolidFire"
+        },
+        {
+            "domains": ["solinea.com"],
+            "company_name": "Solinea"
+        },
+        {
+            "domains": ["sonian.net"],
+            "company_name": "Sonian"
+        },
+        {
+            "domains": ["sonymobile.com"],
+            "company_name": "Sony Mobile Communications"
+        },
+        {
+            "domains": ["spilgames.com"],
+            "company_name": "Spil Games"
+        },
+        {
+            "domains": ["stackinsider.com"],
+            "company_name": "Stackinsider"
+        },
+        {
+            "domains": ["stackmasters.eu"],
+            "company_name": "Stackmasters"
+        },
+        {
+            "domains": ["stackops.com"],
+            "company_name": "StackOps"
+        },
+        {
+            "domains": ["stackstorm.com"],
+            "company_name": "StackStorm"
+        },
+        {
+            "domains": ["stratoscale.com"],
+            "company_name": "Stratoscale"
+        },
+        {
+            "domains": ["stsci.edu"],
+            "company_name": "Space Telescope Science Institute"
+        },
+        {
+            "domains": ["suse.cz", "suse.de", "suse.com"],
+            "company_name": "SUSE",
+            "aliases": ["SUSE Linux GmbH"]
+        },
+        {
+            "domains": ["swiftstack.com"],
+            "company_name": "SwiftStack",
+            "aliases": ["SwifStack Ancestry.com"]
+        },
+        {
+            "domains": ["swisscom.com"],
+            "company_name": "Swisscom"
+        },
+        {
+            "domains": ["switch.ch"],
+            "company_name": "Switch"
+        },
+        {
+            "domains": ["symantec.com"],
+            "company_name": "Symantec",
+            "aliases": ["Symantec Software and Services"]
+        },
+        {
+            "domains": ["tail-f.com"],
+            "company_name": "Tail-f"
+        },
+        {
+            "domains": ["taobao.com"],
+            "company_name": "Taobao"
+        },
+        {
+            "domains": ["tcs.com"],
+            "company_name": "Tata",
+            "aliases": ["Tata Consultancy Services", "Tata Consultancy Services Limited"]
+        },
+        {
+            "domains": ["telefonica.com"],
+            "company_name": "Telefonica I+D"
+        },
+        {
+            "domains": ["telekom.de"],
+            "company_name": "Deutsche Telekom"
+        },
+        {
+            "domains": ["tesora.com", "parelastic.com"],
+            "company_name": "Tesora",
+            "aliases": ["ParElastic Corp", "ParElastic", "Tesora.com"]
+        },
+        {
+            "domains": ["thalesgroup.com", "mythalesgroup.com"],
+            "company_name": "Thales"
+        },
+        {
+            "domains": ["thoughtworks.com"],
+            "company_name": "ThoughtWorks"
+        },
+        {
+            "domains": ["tieto.com"],
+            "company_name": "Tieto"
+        },
+        {
+            "domains": ["tintri.com"],
+            "company_name": "Tintri"
+        },
+        {
+            "domains": ["toronto.edu"],
+            "company_name": "University of Toronto"
+        },
+        {
+            "domains": ["tunnelvisionlabs.com"],
+            "company_name": "Tunnel Vision Laboratories"
+        },
+        {
+            "domains": ["twcable.com"],
+            "company_name": "Time Warner Cable"
+        },
+        {
+            "domains": ["ubisoft.com"],
+            "company_name": "Ubisoft",
+            "aliases": ["Ubisoft Entertainment"]
+        },
+        {
+            "domains": ["ultimum.io", "ultimumtechnologies.com"],
+            "company_name": "Ultimum Technologies"
+        },
+        {
+            "domains": [ "umcloud.com"],
+            "company_name": "UMCloud"
+        },
+        {
+            "domains": ["umd.edu"],
+            "company_name": "University of Maryland"
+        },
+        {
+            "domains": ["umn.edu"],
+            "company_name": "University of Minnesota"
+        },
+        {
+            "domains": ["uni-wuerzburg.de"],
+            "company_name": "University of Würzburg"
+        },
+        {
+            "domains": ["unimelb.edu.au"],
+            "company_name": "University of Melbourne",
+            "aliases": ["The University of Melbourne"]
+        },
+        {
+            "domains": ["ustack.com", "unitedstack.com"],
+            "company_name": "UnitedStack"
+        },
+        {
+            "domains": ["valinux.co.jp"],
+            "company_name": "VA Linux",
+            "aliases": ["VA Linux Systems Japan K.K."]
+        },
+        {
+            "domains": ["varmour.com"],
+            "company_name": "vArmour",
+            "aliases": ["vArmour Networks"]
+        },
+        {
+            "domains": ["vbridges.com"],
+            "company_name": "VirtualBridges"
+        },
+        {
+            "domains": ["vccloud.vn"],
+            "company_name": "VCCloud"
+        },
+        {
+            "domains": ["vce.com"],
+            "company_name": "VCE"
+        },
+        {
+            "domains": ["verilume.com"],
+            "company_name": "Verilume"
+        },
+        {
+            "domains": ["veritas.com"],
+            "company_name": "Veritas"
+        },
+        {
+            "domains": ["versa-networks.com"],
+            "company_name": "Versa Networks"
+        },
+        {
+            "domains": ["vexxhost.com"],
+            "company_name": "VexxHost"
+        },
+        {
+            "domains": ["virtualtech.jp"],
+            "company_name": "Virtualtech",
+            "aliases": ["VirtualTech Japan Inc."]
+        },
+        {
+            "domains": ["vmturbo.com"],
+            "company_name": "VMTurbo Inc.",
+            "aliases": ["VMTurbo"]
+        },
+        {
+            "domains": ["vmware.com", "nicira.com"],
+            "company_name": "VMware",
+            "aliases": ["CYSO VMWARE DHPA", "VMware, Nicira, Telstra, Accenture",
+              "VMware Software"]
+        },
+        {
+            "domains": ["walmart.com"],
+            "company_name": "Walmart"
+        },
+        {
+            "domains": ["wanclouds.net"],
+            "company_name": "Wanclouds"
+        },
+        {
+            "domains": ["wdc.com"],
+            "company_name": "Western Digital"
+        },
+        {
+            "domains": ["wikimedia.org"],
+            "company_name": "Wikimedia Foundation"
+        },
+        {
+            "domains": ["windriver.com"],
+            "company_name": "Wind River",
+            "aliases": ["Wind River Systems", "WindRiver System", "WindRiver"]
+        },
+        {
+            "domains": ["wipro.com"],
+            "company_name": "Wipro",
+            "aliases": ["Wipro Infotech", "Wipro Technologies", "Wipro Arabia Ltd", "Wipro Technoligies"]
+        },
+        {
+            "domains": ["workday.com"],
+            "company_name": "Workday"
+        },
+        {
+            "domains": ["x-io.com", "xiostorage.com"],
+            "company_name": "X-IO Technologies"
+        },
+        {
+            "domains": ["x-ion.de"],
+            "company_name": "x-ion"
+        },
+        {
+            "domains": ["xerox.com"],
+            "company_name": "Xerox"
+        },
+        {
+            "domains": ["xlab.si"],
+            "company_name": "Xlab"
+        },
+        {
+            "domains": ["xsky.io", "xsky.com"],
+            "company_name": "XSky"
+        },
+        {
+            "domains": ["yahoo-inc.com"],
+            "company_name": "Yahoo!"
+        },
+        {
+            "domains": ["yandex-team.ru"],
+            "company_name": "Yandex"
+        },
+        {
+            "domains": ["ysance.com"],
+            "company_name": "Ysance"
+        },
+        {
+            "domains": ["zadarastorage.com"],
+            "company_name": "Zadara Storage"
+        },
+        {
+            "domains": ["zelin.io"],
+            "company_name": "Zelin",
+            "aliases": ["zelin.io"]
+        },
+        {
+            "domains": ["zetta.io"],
+            "company_name": "Zetta.IO Technology AS",
+            "aliases": ["Zetta.IO"]
+        },
+        {
+            "domains": ["zhaw.ch"],
+            "company_name": "Zurich University of Applied Sciences"
+        },
+        {
+            "domains": ["zinux.com"],
+            "company_name": "Zinux",
+            "aliases": ["ZinuX"]
+        },
+        {
+            "domains": ["zju.edu.cn"],
+            "company_name": "Zhejiang University"
+        },
+        {
+            "domains": ["zmanda.com"],
+            "company_name": "Zmanda"
+        },
+        {
+            "domains": ["zte.com.cn"],
+            "company_name": "ZTE Corporation"
+        }
+    ],
+    "repos": [
+        {
+            "releases": [
+                {
+                    "tag_to": "2012.1",
+                    "release_name": "Essex",
+                    "tag_from": "2011.3"
+                },
+                {
+                    "tag_to": "folsom-eol",
+                    "release_name": "Folsom",
+                    "tag_from": "2012.1"
+                },
+                {
+                    "tag_to": "grizzly-eol",
+                    "release_name": "Grizzly",
+                    "tag_from": "2012.2"
+                },
+                {
+                    "tag_to": "havana-eol",
+                    "release_name": "Havana",
+                    "tag_from": "2013.1"
+                },
+                {
+                    "branch": "stable/icehouse",
+                    "tag_to": "HEAD",
+                    "release_name": "Icehouse",
+                    "tag_from": "2013.2"
+                },
+                {
+                    "branch": "stable/juno",
+                    "tag_to": "HEAD",
+                    "release_name": "Juno",
+                    "tag_from": "2014.1"
+                },
+                {
+                    "branch": "stable/kilo",
+                    "tag_to": "HEAD",
+                    "release_name": "Kilo",
+                    "tag_from": "2014.2.rc2"
+                },
+                {
+                    "branch": "stable/liberty",
+                    "tag_to": "HEAD",
+                    "release_name": "Liberty",
+                    "tag_from": "2015.1.0rc1"
+                },
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Mitaka",
+                    "tag_from": "12.0.0.0rc1"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/nova.git",
+            "module": "nova",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "2012.1",
+                    "release_name": "Essex",
+                    "tag_from": "2011.3"
+                },
+                {
+                    "tag_to": "folsom-eol",
+                    "release_name": "Folsom",
+                    "tag_from": "2012.1"
+                },
+                {
+                    "tag_to": "grizzly-eol",
+                    "release_name": "Grizzly",
+                    "tag_from": "2012.2"
+                },
+                {
+                    "tag_to": "havana-eol",
+                    "release_name": "Havana",
+                    "tag_from": "2013.1"
+                },
+                {
+                    "branch": "stable/icehouse",
+                    "tag_to": "HEAD",
+                    "release_name": "Icehouse",
+                    "tag_from": "2013.2"
+                },
+                {
+                    "branch": "stable/juno",
+                    "tag_to": "HEAD",
+                    "release_name": "Juno",
+                    "tag_from": "2014.1"
+                },
+                {
+                    "branch": "stable/kilo",
+                    "tag_to": "HEAD",
+                    "release_name": "Kilo",
+                    "tag_from": "2014.2.rc2"
+                },
+                {
+                    "branch": "stable/liberty",
+                    "tag_to": "HEAD",
+                    "release_name": "Liberty",
+                    "tag_from": "2015.1.0rc1"
+                },
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Mitaka",
+                    "tag_from": "8.0.0.0rc1"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/keystone.git",
+            "module": "keystone",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "folsom-eol",
+                    "release_name": "Folsom",
+                    "tag_from": "c53d8e34"
+                },
+                {
+                    "tag_to": "grizzly-eol",
+                    "release_name": "Grizzly",
+                    "tag_from": "2012.2"
+                },
+                {
+                    "tag_to": "havana-eol",
+                    "release_name": "Havana",
+                    "tag_from": "2013.1"
+                },
+                {
+                    "branch": "stable/icehouse",
+                    "tag_to": "HEAD",
+                    "release_name": "Icehouse",
+                    "tag_from": "2013.2"
+                },
+                {
+                    "branch": "stable/juno",
+                    "tag_to": "HEAD",
+                    "release_name": "Juno",
+                    "tag_from": "2014.1"
+                },
+                {
+                    "branch": "stable/kilo",
+                    "tag_to": "HEAD",
+                    "release_name": "Kilo",
+                    "tag_from": "2014.2.rc2"
+                },
+                {
+                    "branch": "stable/liberty",
+                    "tag_to": "HEAD",
+                    "release_name": "Liberty",
+                    "tag_from": "2015.1.0rc1"
+                },
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Mitaka",
+                    "tag_from": "7.0.0.0rc1"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/cinder.git",
+            "module": "cinder",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "2012.1",
+                    "release_name": "Essex",
+                    "tag_from": "2011.3"
+                },
+                {
+                    "tag_to": "folsom-eol",
+                    "release_name": "Folsom",
+                    "tag_from": "2012.1"
+                },
+                {
+                    "tag_to": "grizzly-eol",
+                    "release_name": "Grizzly",
+                    "tag_from": "2012.2"
+                },
+                {
+                    "tag_to": "havana-eol",
+                    "release_name": "Havana",
+                    "tag_from": "2013.1"
+                },
+                {
+                    "branch": "stable/icehouse",
+                    "tag_to": "HEAD",
+                    "release_name": "Icehouse",
+                    "tag_from": "2013.2"
+                },
+                {
+                    "branch": "stable/juno",
+                    "tag_to": "HEAD",
+                    "release_name": "Juno",
+                    "tag_from": "2014.1"
+                },
+                {
+                    "branch": "stable/kilo",
+                    "tag_to": "HEAD",
+                    "release_name": "Kilo",
+                    "tag_from": "2014.2.rc2"
+                },
+                {
+                    "branch": "stable/liberty",
+                    "tag_to": "HEAD",
+                    "release_name": "Liberty",
+                    "tag_from": "2015.1.0rc1"
+                },
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Mitaka",
+                    "tag_from": "11.0.0.0rc1"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/glance.git",
+            "module": "glance",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "2012.1",
+                    "release_name": "Essex",
+                    "tag_from": "2011.3"
+                },
+                {
+                    "tag_to": "folsom-eol",
+                    "release_name": "Folsom",
+                    "tag_from": "2012.1"
+                },
+                {
+                    "tag_to": "grizzly-eol",
+                    "release_name": "Grizzly",
+                    "tag_from": "2012.2"
+                },
+                {
+                    "tag_to": "havana-eol",
+                    "release_name": "Havana",
+                    "tag_from": "2013.1"
+                },
+                {
+                    "branch": "stable/icehouse",
+                    "tag_to": "HEAD",
+                    "release_name": "Icehouse",
+                    "tag_from": "2013.2"
+                },
+                {
+                    "branch": "stable/juno",
+                    "tag_to": "HEAD",
+                    "release_name": "Juno",
+                    "tag_from": "2014.1"
+                },
+                {
+                    "branch": "stable/kilo",
+                    "tag_to": "HEAD",
+                    "release_name": "Kilo",
+                    "tag_from": "2014.2.rc2"
+                },
+                {
+                    "branch": "stable/liberty",
+                    "tag_to": "HEAD",
+                    "release_name": "Liberty",
+                    "tag_from": "2015.1.0rc1"
+                },
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Mitaka",
+                    "tag_from": "7.0.0.0rc1"
+                },
+                {
+                    "branch": "feature/pecan",
+                    "tag_from": "2015.1.0rc1",
+                    "tag_to": "HEAD",
+                    "release_name": "Liberty"
+                },
+                {
+                    "branch": "feature/qos",
+                    "tag_from": "2015.1.0rc1",
+                    "tag_to": "HEAD",
+                    "release_name": "Liberty"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/neutron.git",
+            "module": "neutron",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "2012.1",
+                    "release_name": "Essex",
+                    "tag_from": "2011.3"
+                },
+                {
+                    "tag_to": "folsom-eol",
+                    "release_name": "Folsom",
+                    "tag_from": "2012.1"
+                },
+                {
+                    "tag_to": "grizzly-eol",
+                    "release_name": "Grizzly",
+                    "tag_from": "2012.2"
+                },
+                {
+                    "tag_to": "havana-eol",
+                    "release_name": "Havana",
+                    "tag_from": "2013.1"
+                },
+                {
+                    "branch": "stable/icehouse",
+                    "tag_to": "HEAD",
+                    "release_name": "Icehouse",
+                    "tag_from": "2013.2"
+                },
+                {
+                    "branch": "stable/juno",
+                    "tag_to": "HEAD",
+                    "release_name": "Juno",
+                    "tag_from": "2014.1"
+                },
+                {
+                    "branch": "stable/kilo",
+                    "tag_to": "HEAD",
+                    "release_name": "Kilo",
+                    "tag_from": "2014.2.rc2"
+                },
+                {
+                    "branch": "stable/liberty",
+                    "tag_to": "HEAD",
+                    "release_name": "Liberty",
+                    "tag_from": "2015.1.0rc1"
+                },
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Mitaka",
+                    "tag_from": "8.0.0.0rc1"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/horizon.git",
+            "module": "horizon",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "1.4.8",
+                    "release_name": "Essex",
+                    "tag_from": "1.4.3"
+                },
+                {
+                    "tag_to": "folsom-eol",
+                    "release_name": "Folsom",
+                    "tag_from": "1.4.8"
+                },
+                {
+                    "tag_to": "grizzly-eol",
+                    "release_name": "Grizzly",
+                    "tag_from": "1.7.4"
+                },
+                {
+                    "tag_to": "havana-eol",
+                    "release_name": "Havana",
+                    "tag_from": "1.8.0"
+                },
+                {
+                    "branch": "stable/icehouse",
+                    "tag_to": "HEAD",
+                    "release_name": "Icehouse",
+                    "tag_from": "1.10.0"
+                },
+                {
+                    "branch": "stable/juno",
+                    "tag_to": "HEAD",
+                    "release_name": "Juno",
+                    "tag_from": "1.13.0"
+                },
+                {
+                    "branch": "stable/kilo",
+                    "tag_to": "HEAD",
+                    "release_name": "Kilo",
+                    "tag_from": "2.2.0"
+                },
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Liberty",
+                    "tag_from": "2.3.0rc1"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/swift.git",
+            "module": "swift",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "0.2.0",
+                    "release_name": "Folsom",
+                    "tag_from": "0.1.0"
+                },
+                {
+                    "tag_to": "0.2.3",
+                    "release_name": "Grizzly",
+                    "tag_from": "0.2.0"
+                },
+                {
+                    "tag_to": "0.4.1",
+                    "release_name": "Havana",
+                    "tag_from": "0.2.3"
+                },
+                {
+                    "tag_to": "0.8.0",
+                    "release_name": "Icehouse",
+                    "tag_from": "0.4.1"
+                },
+                {
+                    "tag_to": "0.11.0",
+                    "release_name": "Juno",
+                    "tag_from": "0.8.0"
+                },
+                {
+                    "tag_to": "1.3.0",
+                    "release_name": "Kilo",
+                    "tag_from": "0.11.0"
+                },
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Liberty",
+                    "tag_from": "1.3.0"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/python-keystoneclient.git",
+            "module": "python-keystoneclient",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "2.9.0",
+                    "release_name": "Folsom",
+                    "tag_from": "essex-rc1"
+                },
+                {
+                    "tag_to": "2.13.0",
+                    "release_name": "Grizzly",
+                    "tag_from": "2.9.0"
+                },
+                {
+                    "tag_to": "2.15.0",
+                    "release_name": "Havana",
+                    "tag_from": "2.13.0"
+                },
+                {
+                    "tag_to": "2.17.0",
+                    "release_name": "Icehouse",
+                    "tag_from": "2.15.0"
+                },
+                {
+                    "tag_to": "2.20.0",
+                    "release_name": "Juno",
+                    "tag_from": "2.17.0"
+                },
+                {
+                    "tag_to": "2.23.0",
+                    "release_name": "Kilo",
+                    "tag_from": "2.20.0"
+                },
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Liberty",
+                    "tag_from": "2.23.0"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/python-novaclient.git",
+            "module": "python-novaclient",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "1.0.3",
+                    "release_name": "Grizzly",
+                    "tag_from": "1.0.0"
+                },
+                {
+                    "tag_to": "1.0.6",
+                    "release_name": "Havana",
+                    "tag_from": "1.0.3"
+                },
+                {
+                    "tag_to": "1.0.8",
+                    "release_name": "Icehouse",
+                    "tag_from": "1.0.6"
+                },
+                {
+                    "tag_to": "1.1.1",
+                    "release_name": "Juno",
+                    "tag_from": "1.0.8"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/python-cinderclient.git",
+            "module": "python-cinderclient",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "0.9.0",
+                    "release_name": "Grizzly",
+                    "tag_from": "0.6.0"
+                },
+                {
+                    "tag_to": "0.11.0",
+                    "release_name": "Havana",
+                    "tag_from": "0.9.0"
+                },
+                {
+                    "tag_to": "0.12.0",
+                    "release_name": "Icehouse",
+                    "tag_from": "0.11.0"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/python-glanceclient.git",
+            "module": "python-glanceclient",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "2.1",
+                    "release_name": "Folsom",
+                    "tag_from": "2012.1"
+                },
+                {
+                    "tag_to": "2.2.1",
+                    "release_name": "Grizzly",
+                    "tag_from": "2.1"
+                },
+                {
+                    "tag_to": "2.3.1",
+                    "release_name": "Havana",
+                    "tag_from": "2.2.1"
+                },
+                {
+                    "tag_to": "2.3.4",
+                    "release_name": "Icehouse",
+                    "tag_from": "2.3.1"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/python-neutronclient.git",
+            "module": "python-neutronclient",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "1.3.0",
+                    "release_name": "Grizzly",
+                    "tag_from": "1.2.0"
+                },
+                {
+                    "tag_to": "1.8.0",
+                    "release_name": "Havana",
+                    "tag_from": "1.4.0"
+                },
+                {
+                    "tag_to": "2.0.3",
+                    "release_name": "Icehouse",
+                    "tag_from": "1.8.0"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/python-swiftclient.git",
+            "module": "python-swiftclient",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "grizzly-eol",
+                    "release_name": "Grizzly",
+                    "tag_from": "v7.release"
+                },
+                {
+                    "tag_to": "havana-eol",
+                    "release_name": "Havana",
+                    "tag_from": "2013.1"
+                },
+                {
+                    "branch": "stable/icehouse",
+                    "tag_to": "HEAD",
+                    "release_name": "Icehouse",
+                    "tag_from": "2013.2"
+                },
+                {
+                    "branch": "stable/juno",
+                    "tag_to": "HEAD",
+                    "release_name": "Juno",
+                    "tag_from": "2014.1"
+                },
+                {
+                    "branch": "stable/kilo",
+                    "tag_to": "HEAD",
+                    "release_name": "Kilo",
+                    "tag_from": "2014.2.rc3"
+                },
+                {
+                    "branch": "stable/liberty",
+                    "tag_to": "HEAD",
+                    "release_name": "Liberty",
+                    "tag_from": "2015.1.0rc1"
+                },
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Mitaka",
+                    "tag_from": "5.0.0.0rc1"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/heat.git",
+            "module": "heat",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "0.2.2",
+                    "release_name": "Grizzly",
+                    "tag_from": "0.1.0"
+                },
+                {
+                    "tag_to": "0.2.5",
+                    "release_name": "Havana",
+                    "tag_from": "0.2.2"
+                },
+                {
+                    "tag_to": "0.2.9",
+                    "release_name": "Icehouse",
+                    "tag_from": "0.2.5"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/python-heatclient.git",
+            "module": "python-heatclient",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "havana-eol",
+                    "release_name": "Havana",
+                    "tag_from": "2013.1"
+                },
+                {
+                    "branch": "stable/icehouse",
+                    "tag_to": "HEAD",
+                    "release_name": "Icehouse",
+                    "tag_from": "2013.2"
+                },
+                {
+                    "branch": "stable/juno",
+                    "tag_to": "HEAD",
+                    "release_name": "Juno",
+                    "tag_from": "2014.1"
+                },
+                {
+                    "branch": "stable/kilo",
+                    "tag_to": "HEAD",
+                    "release_name": "Kilo",
+                    "tag_from": "2014.2.rc2"
+                },
+                {
+                    "branch": "stable/liberty",
+                    "tag_to": "HEAD",
+                    "release_name": "Liberty",
+                    "tag_from": "2015.1.0rc1"
+                },
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Mitaka",
+                    "tag_from": "5.0.0.0rc1"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/ceilometer.git",
+            "module": "ceilometer",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "1.0.6",
+                    "release_name": "Havana",
+                    "tag_from": "1.0.0"
+                },
+                {
+                    "tag_to": "1.0.10",
+                    "release_name": "Icehouse",
+                    "tag_from": "1.0.6"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/python-ceilometerclient.git",
+            "module": "python-ceilometerclient",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "havana-eol",
+                    "release_name": "Havana",
+                    "tag_from": "2013.1"
+                },
+                {
+                    "branch": "stable/icehouse",
+                    "tag_to": "HEAD",
+                    "release_name": "Icehouse",
+                    "tag_from": "2013.2"
+                },
+                {
+                    "branch": "stable/juno",
+                    "tag_to": "HEAD",
+                    "release_name": "Juno",
+                    "tag_from": "2014.1"
+                },
+                {
+                    "branch": "stable/kilo",
+                    "tag_to": "HEAD",
+                    "release_name": "Kilo",
+                    "tag_from": "2014.2"
+                },
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Liberty",
+                    "tag_from": "2015.1.0"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/oslo-incubator.git",
+            "module": "oslo-incubator",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "havana-eol",
+                    "release_name": "Havana",
+                    "tag_from": "fc8ca59"
+                },
+                {
+                    "tag_to": "1.3.0",
+                    "release_name": "Icehouse",
+                    "tag_from": "1.2.1"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/oslo.config.git",
+            "module": "oslo.config",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "folsom-eol",
+                    "release_name": "Folsom",
+                    "tag_from": "2012.1"
+                },
+                {
+                    "tag_to": "grizzly-eol",
+                    "release_name": "Grizzly",
+                    "tag_from": "2012.2"
+                },
+                {
+                    "tag_to": "havana-eol",
+                    "release_name": "Havana",
+                    "tag_from": "2013.1.rc2"
+                },
+                {
+                    "branch": "stable/icehouse",
+                    "tag_to": "HEAD",
+                    "release_name": "Icehouse",
+                    "tag_from": "2013.2"
+                },
+                {
+                    "tag_to": "faba059",
+                    "release_name": "Juno",
+                    "tag_from": "7dcdb23"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/openstack-manuals.git",
+            "module": "openstack-manuals",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "0.11",
+                    "release_name": "Icehouse",
+                    "tag_from": "95617e3"
+                },
+                {
+                    "tag_to": "0.20",
+                    "release_name": "Juno",
+                    "tag_from": "0.11"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/openstack-doc-tools.git",
+            "module": "openstack-doc-tools",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "2013.2",
+                    "release_name": "Havana",
+                    "tag_from": "65027f8"
+                },
+                {
+                    "tag_to": "1883cbb",
+                    "release_name": "Icehouse",
+                    "tag_from": "2013.2"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/operations-guide.git",
+            "module": "operations-guide",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "15cfe96",
+                    "release_name": "prehistory",
+                    "tag_from": "e7a49d397d05f62e9c9059c4b80f5665c4cd73d4"
+                },
+                {
+                    "tag_to": "9066f772",
+                    "release_name": "Juno",
+                    "tag_from": "15cfe96"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/training-guides.git",
+            "module": "training-guides",
+            "organization": "openstack"
+        },
+        {
+            "releases": [
+                {
+                    "tag_to": "2013.2",
+                    "release_name": "Havana",
+                    "tag_from": "2013.1"
+                },
+                {
+                    "tag_to": "b951d9651",
+                    "release_name": "Icehouse",
+                    "tag_from": "2013.2"
+                }
+            ],
+            "uri": "git://git.openstack.org/openstack/api-site.git",
+            "module": "api-site",
+            "organization": "openstack"
+        },
+        {
+            "module": "sahara",
+            "aliases": [
+                "savanna"
+            ],
+            "uri": "git://git.openstack.org/openstack/sahara.git",
+            "organization": "openstack",
+            "releases": [
+                {
+                    "tag_to": "0.3",
+                    "release_name": "Havana",
+                    "tag_from": "0.1"
+                },
+                {
+                    "branch": "stable/icehouse",
+                    "tag_to": "HEAD",
+                    "release_name": "Icehouse",
+                    "tag_from": "0.3"
+                },
+                {
+                    "branch": "stable/juno",
+                    "tag_to": "2014.2",
+                    "release_name": "Juno",
+                    "tag_from": "2014.1"
+                },
+                {
+                    "branch": "stable/kilo",
+                    "tag_to": "HEAD",
+                    "release_name": "Kilo",
+                    "tag_from": "2014.2.rc2"
+                },
+                {
+                    "branch": "stable/liberty",
+                    "tag_to": "HEAD",
+                    "release_name": "Liberty",
+                    "tag_from": "2015.1.0rc1"
+                },
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Mitaka",
+                    "tag_from": "3.0.0.0rc1"
+                }
+            ]
+        },
+        {
+            "module": "sahara-dashboard",
+            "uri": "git://git.openstack.org/openstack/sahara-dashboard.git",
+            "organization": "openstack",
+            "releases": [
+                {
+                    "tag_to": "0.3",
+                    "release_name": "Havana",
+                    "tag_from": "06bce5a1"
+                },
+                {
+                    "tag_to": "2014.1",
+                    "release_name": "Icehouse",
+                    "tag_from": "0.3"
+                }
+            ]
+        },
+        {
+            "module": "python-saharaclient",
+            "uri": "git://git.openstack.org/openstack/python-saharaclient.git",
+            "organization": "openstack",
+            "releases": [
+                {
+                    "tag_to": "0.3",
+                    "release_name": "Havana",
+                    "tag_from": "0f4f63b1"
+                },
+                {
+                    "tag_to": "0.7.0",
+                    "release_name": "Icehouse",
+                    "tag_from": "0.3"
+                }
+            ]
+        },
+        {
+            "module": "fuel-main",
+            "aliases": [
+                "fuel"
+            ],
+            "uri": "git://git.openstack.org/openstack/fuel-main.git",
+            "organization": "openstack"
+        },
+        {
+            "module": "api-wg",
+            "uri": "git://git.openstack.org/openstack/api-wg.git",
+            "organization": "openstack"
+        },
+        {
+            "module": "openstack-user-stories",
+            "uri": "git://git.openstack.org/openstack/openstack-user-stories.git",
+            "organization": "openstack"
+        },
+        {
+            "module": "vmware-nsx",
+            "uri": "git://git.openstack.org/openstack/vmware-nsx.git",
+            "organization": "openstack",
+            "releases": [
+                {
+                    "release_name": "ignored",
+                    "tag_from": "44e6ae3a44d73be5618daac6cc7785f08242817b",
+                    "tag_to": "067694223916f0098f8dc455a7567bc3e53b8574"
+                }
+            ]
+        },
+        {
+            "module": "oslo.versionedobjects",
+            "uri": "git://git.openstack.org/openstack/oslo.versionedobjects.git",
+            "organization": "openstack",
+            "releases": [
+                {
+                    "release_name": "ignored",
+                    "tag_from": "ff29c76abb68798195412639fc3f99d2ee310b2e",
+                    "tag_to": "591c480cafc2e729586feffbd3e0565d82bb528f"
+                }
+            ]
+        },
+        {
+            "module": "docker",
+            "organization": "docker",
+            "uri": "https://github.com/docker/docker.git"
+        },
+        {
+            "module": "docker-registry",
+            "organization": "docker",
+            "uri": "https://github.com/docker/docker-registry.git"
+        },
+        {
+            "module": "docker-network",
+            "organization": "docker",
+            "uri": "https://github.com/docker/docker-network.git"
+        },
+        {
+            "module": "libcontainer",
+            "organization": "docker",
+            "uri": "https://github.com/docker/libcontainer.git"
+        },
+        {
+            "module": "distribution",
+            "organization": "docker",
+            "uri": "https://github.com/docker/distribution.git"
+        },
+        {
+            "module": "machine",
+            "organization": "docker",
+            "uri": "https://github.com/docker/machine.git"
+        },
+        {
+            "module": "swarm",
+            "organization": "docker",
+            "uri": "https://github.com/docker/swarm.git"
+        },
+        {
+            "module": "libtrust",
+            "organization": "docker",
+            "uri": "https://github.com/docker/libtrust.git"
+        },
+        {
+            "module": "compose",
+            "organization": "docker",
+            "uri": "https://github.com/docker/compose.git"
+        },
+        {
+            "module": "docker-py",
+            "organization": "docker",
+            "uri": "https://github.com/docker/docker-py.git"
+        },
+        {
+            "module": "kubernetes",
+            "organization": "googlecloudplatform",
+            "uri": "https://github.com/googlecloudplatform/kubernetes.git"
+        },
+        {
+            "module": "jcloud",
+            "organization": "jcloud",
+            "uri": "https://github.com/jclouds/jclouds.git"
+        },
+        {
+            "module": "ansible",
+            "organization": "ansible",
+            "uri": "https://github.com/ansible/ansible.git",
+            "default_branch": "devel"
+        },
+        {
+            "module": "ansible-modules-core",
+            "organization": "ansible",
+            "uri": "https://github.com/ansible/ansible-modules-core.git",
+            "default_branch": "devel"
+        },
+        {
+            "module": "ansible-modules-extras",
+            "organization": "ansible",
+            "uri": "https://github.com/ansible/ansible-modules-extras.git",
+            "default_branch": "devel"
+        },
+        {
+            "module": "pip",
+            "organization": "pypa",
+            "uri": "https://github.com/pypa/pip.git",
+            "default_branch": "develop"
+        },
+        {
+            "module": "warehouse",
+            "organization": "pypa",
+            "uri": "https://github.com/pypa/warehouse.git",
+            "default_branch": "master"
+        },
+        {
+            "module": "twine",
+            "organization": "pypa",
+            "uri": "https://github.com/pypa/twine.git",
+            "default_branch": "master"
+        },
+        {
+            "module": "virtualenv",
+            "organization": "pypa",
+            "uri": "https://github.com/pypa/virtualenv.git",
+            "default_branch": "develop"
+        },
+        {
+            "module": "ovs",
+            "organization": "openvswitch",
+            "uri": "https://github.com/openvswitch/ovs.git"
+        },
+        {
+            "module": "ceph",
+            "organization": "ceph",
+            "uri": "https://github.com/ceph/ceph.git"
+        },
+        {
+            "module": "barbican",
+            "organization": "openstack",
+            "uri": "git://git.openstack.org/openstack/barbican.git",
+            "releases": [
+                {
+                    "branch": "stable/juno",
+                    "tag_to": "HEAD",
+                    "release_name": "Juno",
+                    "tag_from": "2014.1"
+                },
+                {
+                    "branch": "stable/kilo",
+                    "tag_to": "HEAD",
+                    "release_name": "Kilo",
+                    "tag_from": "2014.2"
+                },
+                {
+                    "branch": "stable/liberty",
+                    "tag_to": "HEAD",
+                    "release_name": "Liberty",
+                    "tag_from": "2015.1.0"
+                },
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Mitaka",
+                    "tag_from": "1.0.0.0rc1"
+                }
+            ]
+        },
+        {
+            "module": "releng",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/releng.git"
+        },
+        {
+            "module": "compass4nfv",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/compass4nfv.git"
+        },
+        {
+            "module": "onosfw",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/onosfw.git"
+        },
+        {
+            "module": "joid",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/joid.git"
+        },
+        {
+            "module": "yardstick",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/yardstick.git"
+        },
+        {
+            "module": "apex",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/apex.git"
+        },
+        {
+            "module": "moon",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/moon.git"
+        },
+        {
+            "module": "sfc",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/sfc.git"
+        },
+        {
+            "module": "copper",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/copper.git"
+        },
+        {
+            "module": "vswitchperf",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/vswitchperf.git"
+        },
+        {
+            "module": "functest",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/functest.git"
+        },
+        {
+            "module": "opnfvdocs",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/opnfvdocs.git"
+        },
+        {
+            "module": "genesisreq",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/genesisreq.git"
+        },
+        {
+            "module": "octopus",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/octopus.git"
+        },
+        {
+            "module": "lsoapi",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/lsoapi.git"
+        },
+        {
+            "module": "qtip",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/qtip.git"
+        },
+        {
+            "module": "escalator",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/escalator.git"
+        },
+        {
+            "module": "availability",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/availability.git"
+        },
+        {
+            "module": "storperf",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/storperf.git"
+        },
+        {
+            "module": "multisite",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/multisite.git"
+        },
+        {
+            "module": "parser",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/parser.git"
+        },
+        {
+            "module": "enfv",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/enfv.git"
+        },
+        {
+            "module": "conductor",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/conductor.git"
+        },
+        {
+            "module": "genesis",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/genesis.git"
+        },
+        {
+            "module": "promise",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/promise.git"
+        },
+        {
+            "module": "bottlenecks",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/bottlenecks.git"
+        },
+        {
+            "module": "doctor",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/doctor.git"
+        },
+        {
+            "module": "osops-example-configs",
+            "organization": "openstack",
+            "uri": "git://github.com/openstack/osops-example-configs.git"
+        },
+        {
+            "module": "osops-tools-contrib",
+            "organization": "openstack",
+            "uri": "git://github.com/openstack/osops-tools-contrib.git"
+        },
+        {
+            "module": "osops-tools-generic",
+            "organization": "openstack",
+            "uri": "git://github.com/openstack/osops-tools-generic.git"
+        },
+        {
+            "module": "osops-tools-logging",
+            "organization": "openstack",
+            "uri": "git://github.com/openstack/osops-tools-logging.git"
+        },
+        {
+            "module": "osops-tools-monitoring",
+            "organization": "openstack",
+            "uri": "https://github.com/openstack/osops-tools-monitoring.git"
+        }
+    ],
+    "project_sources": [
+        {
+            "organization": "openstack",
+            "exclude": ["openstack", "gantt", "python-ganttclient"]
+        },
+        {
+            "organization": "openstack-dev"
+        },
+        {
+            "organization": "openstack-infra"
+        },
+        {
+            "organization": "openstack-ops"
+        },
+        {
+            "organization": "cloudfoundry",
+            "uri": "github://"
+        }
+    ],
+    "module_groups": [
+        {
+            "module_group_name": "libra-group",
+            "modules": ["libra", "python-libraclient"]
+        },
+        {
+            "module_group_name": "fuel-group",
+            "modules": [
+              "fuel-agent",
+              "fuel-astute",
+              "fuel-dev-tools",
+              "fuel-devops",
+              "fuel-docs",
+              "fuel-library",
+              "fuel-main",
+              "fuel-menu",
+              "fuel-mirror",
+              "fuel-nailgun-agent",
+              "fuel-octane",
+              "fuel-ostf",
+              "fuel-ostf-plugin",
+              "fuel-plugins",
+              "fuel-provision",
+              "fuel-specs",
+              "fuel-stats",
+              "fuel-tasklib",
+              "fuel-upgrade",
+              "fuel-web",
+              "fuel-qa",
+              "python-fuelclient",
+              "network-checker",
+              "shotgun"
+            ]
+        },
+        {
+            "module_group_name": "fuel-python",
+            "modules": [
+              "fuel-agent",
+              "fuel-astute",
+              "fuel-nailgun-agent",
+              "fuel-provision",
+              "fuel-tasklib",
+              "fuel-upgrade",
+              "fuel-web",
+              "fuel-plugins",
+              "python-fuelclient"
+            ]
+        },
+        {
+            "module_group_name": "group-based-policy-group",
+            "modules": ["group-based-policy", "group-based-policy-ui",
+            "group-based-policy-automation", "group-based-policy-specs",
+            "python-group-based-policy-client"]
+        },
+        {
+            "module_group_name": "mistral-group",
+            "modules": ["python-mistralclient", "mistral", "mistral-extra", "mistral-dashboard"]
+        },
+        {
+            "module_group_name": "murano-group",
+            "modules": ["murano", "python-muranoclient", "murano-dashboard", "murano-agent", "murano-specs", "murano-apps"]
+        },
+        {
+            "module_group_name": "solum-group",
+            "modules": ["python-solumclient", "solum", "solum-dashboard", "solum-infra-guestagent", "solum-specs"]
+        },
+        {
+            "module_group_name": "chef-group",
+            "modules": ["openstack-chef-repo", "cookbook-ceph", "cookbook-openstack-bare-metal", "cookbook-openstack-block-storage", "cookbook-openstack-client", "cookbook-openstack-common", "cookbook-openstack-compute", "cookbook-openstack-dashboard", "cookbook-openstack-data-processing", "cookbook-openstack-database", "cookbook-openstack-identity", "cookbook-openstack-image", "cookbook-openstack-integration-test", "cookbook-openstack-network", "cookbook-openstack-object-storage", "cookbook-openstack-ops-database", "cookbook-openstack-ops-messaging", "cookbook-openstack-orchestration", "cookbook-openstack-telemetry"]
+        },
+        {
+            "module_group_name": "magnetodb-group",
+            "modules": ["magnetodb", "python-magnetodbclient"]
+        },
+        {
+            "module_group_name": "monasca-group",
+            "modules": ["monasca-agent", "cookbook-monasca-agent", "monasca-api", "monasca-log-api", "cookbook-monasca-api", "monasca-notification", "cookbook-monasca-notification", "monasca-persister", "cookbook-monasca-persister", "cookbook-monasca-schema", "monasca-thresh", "cookbook-monasca-thresh", "monasca-agent", "monasca-ceilometer", "monasca-common", "monasca-ui", "monasca-vagrant", "monasca-statsd", "python-monascaclient", "stacktach-klugman", "stacktach-notification-utils", "stacktach-notigen", "stacktach-quince", "stacktach-quincy", "stacktach-sandbox", "stacktach-shoebox", "stacktach-simport", "stacktach-stackdistiller", "stacktach-timex", "stacktach-winchester"]
+        },
+        {
+            "module_group_name": "rally-group",
+            "modules": ["rally", "python-rallyclient", "osprofiler"]
+        },
+        {
+            "module_group_name": "docker-group",
+            "modules": ["docker", "docker-registry", "docker-network", "libcontainer", "distribution", "machine", "swarm", "libtrust",
+                "compose", "docker-py"]
+        },
+        {
+            "module_group_name": "ansible-group",
+            "modules": ["ansible", "ansible-modules-core", "ansible-modules-extras"]
+        },
+        {
+            "module_group_name": "pypa-group",
+            "modules": ["pip", "warehouse", "twine", "virtualenv"]
+        },
+        {
+            "module_group_name": "refstack-group",
+            "modules": ["refstack", "refstack-client"]
+        },
+        {
+            "module_group_name": "fuel-plugins-group",
+            "modules": ["fuel-plugin-contrail", "fuel-plugin-calico", "fuel-plugin-elasticsearch-kibana", "fuel-plugin-influxdb-grafana", "fuel-plugin-lma-collector", "fuel-plugin-lma-infrastructure-alerting", "fuel-plugin-mellanox", "fuel-plugin-zabbix-snmptrapd", "fuel-plugin-midonet", "fuel-plugin-opendaylight", "fuel-plugin-neutron-fwaas", "fuel-plugin-neutron-vpnaas", "fuel-plugin-cinder-netapp", "fuel-plugin-nova-nfs", "fuel-plugin-glance-nfs", "fuel-plugin-vmware-dvs", "fuel-plugin-vxlan", "fuel-plugin-external-zabbix", "fuel-plugin-cisco-aci", "fuel-plugin-solidfire-cinder", "fuel-plugin-zabbix-monitoring-emc", "fuel-plugin-zabbix-monitoring-extreme-networks", "fuel-plugin-external-emc", "fuel-plugin-saltstack", "fuel-plugin-calamari", "fuel-plugin-tls", "fuel-plugin-external-glusterfs", "fuel-plugin-ha-fencing", "fuel-plugin-neutron-lbaas"]
+        },
+        {
+            "module_group_name": "vitrage-group",
+            "modules": ["vitrage", "python-vitrageclient", "vitrage-dashboard", "vitrage-specs"]
+        }
+    ],
+    "releases": [
+        {
+            "release_name": "prehistory",
+            "end_date": "2010-Jan-01"
+        },
+        {
+            "release_name": "Austin",
+            "end_date": "2010-Oct-21",
+            "refs": {
+                "governance": {
+                    "type": "legacy",
+                    "source": "http://git.openstack.org/cgit/openstack/governance/plain/reference/programs.yaml?id=sept-2014-elections"
+                }
+            }
+        },
+        {
+            "release_name": "Bexar",
+            "end_date": "2011-Feb-03",
+            "refs": {
+                "governance": {
+                    "type": "legacy",
+                    "source": "http://git.openstack.org/cgit/openstack/governance/plain/reference/programs.yaml?id=sept-2014-elections"
+                }
+            }
+        },
+        {
+            "release_name": "Cactus",
+            "end_date": "2011-Apr-15",
+            "refs": {
+                "governance": {
+                    "type": "legacy",
+                    "source": "http://git.openstack.org/cgit/openstack/governance/plain/reference/programs.yaml?id=sept-2014-elections"
+                }
+            }
+        },
+        {
+            "release_name": "Diablo",
+            "end_date": "2011-Sep-22",
+            "refs": {
+                "governance": {
+                    "type": "legacy",
+                    "source": "http://git.openstack.org/cgit/openstack/governance/plain/reference/programs.yaml?id=sept-2014-elections"
+                }
+            }
+        },
+        {
+            "release_name": "Essex",
+            "end_date": "2012-Apr-05",
+            "refs": {
+                "governance": {
+                    "type": "legacy",
+                    "source": "http://git.openstack.org/cgit/openstack/governance/plain/reference/programs.yaml?id=sept-2014-elections"
+                }
+            }
+        },
+        {
+            "release_name": "Folsom",
+            "end_date": "2012-Oct-04",
+            "refs": {
+                "governance": {
+                    "type": "legacy",
+                    "source": "http://git.openstack.org/cgit/openstack/governance/plain/reference/programs.yaml?id=sept-2014-elections"
+                }
+            }
+        },
+        {
+            "release_name": "Grizzly",
+            "end_date": "2013-Apr-04",
+            "refs": {
+                "governance": {
+                    "type": "legacy",
+                    "source": "http://git.openstack.org/cgit/openstack/governance/plain/reference/programs.yaml?id=sept-2014-elections"
+                }
+            }
+        },
+        {
+            "release_name": "Havana",
+            "end_date": "2013-Oct-17",
+            "refs": {
+                "governance": {
+                    "type": "legacy",
+                    "source": "http://git.openstack.org/cgit/openstack/governance/plain/reference/programs.yaml?id=sept-2014-elections"
+                }
+            }
+        },
+        {
+            "release_name": "Icehouse",
+            "end_date": "2014-Apr-17",
+            "refs": {
+                "governance": {
+                    "type": "legacy",
+                    "source": "http://git.openstack.org/cgit/openstack/governance/plain/reference/programs.yaml?id=sept-2014-elections"
+                }
+            }
+        },
+        {
+            "release_name": "Juno",
+            "end_date": "2014-Oct-16",
+            "refs": {
+                "governance": {
+                    "type": "legacy",
+                    "source": "http://git.openstack.org/cgit/openstack/governance/plain/reference/programs.yaml?id=sept-2014-elections"
+                }
+            }
+        },
+        {
+            "release_name": "Kilo",
+            "end_date": "2015-Apr-30",
+            "refs": {
+                "governance": {
+                    "type": "early_big_tent",
+                    "source": "https://git.openstack.org/cgit/openstack/governance/plain/reference/projects.yaml?id=april-2015-elections"
+                }
+            }
+        },
+        {
+            "release_name": "Liberty",
+            "end_date": "2015-Oct-15",
+            "refs": {
+                "governance": {
+                    "type": "big_tent",
+                    "source": "https://git.openstack.org/cgit/openstack/governance/plain/reference/projects.yaml?id=sept-2015-elections"
+                }
+            }
+        },
+        {
+            "release_name": "Mitaka",
+            "end_date": "2016-Apr-07",
+            "refs": {
+                "governance": {
+                    "type": "big_tent",
+                    "source": "https://git.openstack.org/cgit/openstack/governance/plain/reference/projects.yaml"
+                }
+            }
+        }
+    ],
+    "mail_lists": [
+        "http://lists.openstack.org/pipermail/openstack-dev/",
+        "http://lists.openstack.org/pipermail/openstack-docs/",
+        "http://lists.openstack.org/pipermail/openstack-infra/",
+        "http://lists.openstack.org/pipermail/openstack-operators/",
+        "http://lists.openstack.org/pipermail/openstack/"
+    ],
+    "member_lists": ["http://www.openstack.org/community/members/profile/"],
+    "project_types": [
+        {
+            "id": "all",
+            "title": "All",
+            "modules": ["openstack", "openstack-infra", "openstack-dev", "unknown"]
+        },
+        {
+            "id": "openstack",
+            "title": "OpenStack",
+            "modules": ["openstack-official", "governance", "api-wg", "openstack-user-stories"]
+        },
+        {
+            "id": "tc-approved-release",
+            "title": "tc-approved-release",
+            "child": true,
+            "modules": ["tc-approved-release"]
+        },
+        {
+            "id": "type:service",
+            "title": "type:service",
+            "child": true,
+            "modules": ["type:service"]
+        },
+        {
+            "id": "type:library",
+            "title": "type:library",
+            "child": true,
+            "modules": ["type:library"]
+        },
+        {
+            "id": "openstack-others",
+            "title": "OpenStack Others",
+            "modules": ["openstack-others", "unknown"]
+        },
+        {
+            "id": "complementary",
+            "title": "Complementary",
+            "modules": ["ansible-group", "ceph", "docker-group", "kubernetes", "jclouds", "cloudfoundry", "opnfv", "ovs", "pypa-group"]
+        },
+        {
+            "id": "ansible-group",
+            "title": "Ansible",
+            "child": true,
+            "modules": ["ansible-group"]
+        },
+        {
+            "id": "ceph-group",
+            "title": "Ceph",
+            "child": true,
+            "modules": ["ceph"]
+        },
+        {
+            "id": "cloudfoundry-group",
+            "title": "Cloud Foundry",
+            "child": true,
+            "modules": ["cloudfoundry"]
+        },
+        {
+            "id": "docker-group",
+            "title": "Docker",
+            "child": true,
+            "modules": ["docker-group"]
+        },
+        {
+            "id": "kubernetes-group",
+            "title": "Kubernetes",
+            "child": true,
+            "modules": ["kubernetes"]
+        },
+        {
+            "id": "opnfv-group",
+            "title": "OPNFV",
+            "child": true,
+            "modules": ["opnfv"]
+        },
+        {
+            "id": "ovs-group",
+            "title": "Open vSwitch",
+            "child": true,
+            "modules": ["ovs"]
+        },
+        {
+            "id": "pypa-group",
+            "title": "Python Packaging",
+            "child": true,
+            "modules": ["pypa-group"]
+        }
+    ]
+},
         {
             "launchpad_id": "yatinkumbhare-c",
             "companies": [
