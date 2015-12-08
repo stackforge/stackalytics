@@ -1,0 +1,9 @@
+Verified+2: Jenkins
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Workflow+1: Ilya Shakhat <ishakhat@mirantis.com>
+Code-Review+1: Zou Keke <zoukeke@cmss.chinamobile.com>
+Submitted-by: Jenkins
+Submitted-at: Tue, 08 Dec 2015 14:38:18 +0000
+Reviewed-on: https://review.openstack.org/254618
+Project: openstack/stackalytics
+Branch: refs/heads/master
