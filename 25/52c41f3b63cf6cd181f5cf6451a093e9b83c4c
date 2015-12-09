@@ -1,0 +1,10 @@
+Verified+2: Jenkins
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Workflow+1: Ilya Shakhat <ishakhat@mirantis.com>
+Code-Review+1: José Eduardo de Carvalho Mello Junior <jose.eduardo.jr@gmail.com>
+Code-Review+1: Jose <jose.falavinha@fit-tecnologia.org.br>
+Submitted-by: Jenkins
+Submitted-at: Wed, 09 Dec 2015 16:07:35 +0000
+Reviewed-on: https://review.openstack.org/255215
+Project: openstack/stackalytics
+Branch: refs/heads/master
