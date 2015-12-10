@@ -13758,6 +13758,17 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "darkwsh-g",
+            "companies": [
+                {
+                    "company_name": "XiangCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Shaohui Wang",
+            "emails": ["darkwsh@gmail.com", "wangshaohui@xiangcloud.com.cn"]
         }
     ],
     "companies": [
