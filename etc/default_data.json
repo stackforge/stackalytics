@@ -9842,6 +9842,18 @@
             "emails": ["john@dewey.ws"]
         },
         {
+           "launchpad_id":"marcusrafael",
+           "gerrit_id":"marcusrafael",
+           "companies":[
+               {
+                    "company_name":"Universidade Federal de Campina Grande",
+                    "end_date":null
+               }
+            ],
+            "user_name":"Rafael Xavier",
+            "emails":["marcusrafael@lsd.ufcg.edu.br"]
+        },
+        {
             "launchpad_id": "rh-s",
             "companies": [
                 {
