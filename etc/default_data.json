@@ -8880,6 +8880,17 @@
             "emails": ["niuzhenguo@huawei.com", "zhenguo@unitedstack.com", "niu.zglinux@gmail.com"]
         },
         {
+            "launchpad_id": "ni-jinquan",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "jinquanni(ZTE)",
+            "emails": ["ni.jinquan@zte.com.cn"]
+        },
+        {
             "launchpad_id": "nmarkov",
             "companies": [
                 {
