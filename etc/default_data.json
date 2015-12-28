@@ -5152,6 +5152,17 @@
             "emails": ["yaguang.tang@canonical.com", "heut2008@gmail.com", "ytang@mirantis.com", "yaguang@umcloud.com"]
         },
         {
+            "launchpad_id": "deng-xiwen",
+            "companies": [
+                {
+                    "company_name": "UMCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Xiwen Deng",
+            "emails": ["deng_xiwen@hotmail.com"]
+        },
+        {
             "launchpad_id": "hfamily15",
             "companies": [
                 {
