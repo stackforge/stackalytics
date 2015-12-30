@@ -1,0 +1,9 @@
+Code-Review+1: Yatin Kumbhare <yatinkumbhare@gmail.com>
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Workflow+1: Ilya Shakhat <ishakhat@mirantis.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Wed, 30 Dec 2015 12:50:49 +0000
+Reviewed-on: https://review.openstack.org/262190
+Project: openstack/stackalytics
+Branch: refs/heads/master
