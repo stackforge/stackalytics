@@ -3566,6 +3566,17 @@
             "emails": ["dsrinivas@mirantis.com", "dims@linux.vnet.ibm.com", "davanum@gmail.com"]
         },
         {
+            "launchpad_id": "dimalg",
+            "companies": [
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Dimitry Ushakov",
+            "emails": ["dimitry.ushakov@rackspace.com", "dimalg@yahoo.com"]
+        },
+        {
             "launchpad_id": "divius",
             "companies": [
                 {
