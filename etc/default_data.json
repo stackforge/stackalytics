@@ -15139,6 +15139,9 @@
             "company_name": "IT Synergy"
         },
         {
+            "domains": ["itri.org.tw"],
+            "company_name": "Industrial Technology Research Institute"
+        },        {
             "domains": ["iweb.co.uk"],
             "company_name": "iWebSolutions",
             "aliases": ["iweb.co.uk", "iwebsolutions.co.uk", "nuisoft.com"]
