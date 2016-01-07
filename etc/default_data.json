@@ -5425,6 +5425,17 @@
             "emails": ["henar.munozfrutos@telefonica.com"]
         },
         {
+            "launchpad_id": "wangliangfu",
+            "companies": [
+                {
+                    "company_name": "UMCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Wang Liangfu",
+            "emails": ["wangliangfu@outlook.com"]
+        },
+        {
             "launchpad_id": "hodosmb",
             "companies": [
                 {
