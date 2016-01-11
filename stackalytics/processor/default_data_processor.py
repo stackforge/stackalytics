@@ -51,20 +51,27 @@ def _check_default_data_change(runtime_storage_inst, default_data):
 def _retrieve_project_list_from_sources(project_sources):
     for project_source in project_sources:
         uri = project_source.get('uri') or cfg.CONF.review_uri
-        repo_iterator = []
+        repo_it = []
         if re.search(rcs.GERRIT_URI_PREFIX, uri):
-            repo_iterator = _retrieve_project_list_from_gerrit(project_source)
+            try:
+                repo_it = _retrieve_project_list_from_gerrit(project_source)
+            except Exception:
+                LOG.warning('Failed to retrieve list of projects from Gerrit. '
+                            'Will use GitHub instead')
+                repo_it = _retrieve_project_list_from_github(project_source)
         elif re.search(GITHUB_URI_PREFIX, uri):
-            repo_iterator = _retrieve_project_list_from_github(project_source)
+            repo_it = _retrieve_project_list_from_github(project_source)
 
         exclude = set(project_source.get('exclude', []))
-        for repo in repo_iterator:
+        for repo in repo_it:
             if repo['module'] not in exclude:
                 yield repo
 
 
 def _retrieve_project_list_from_gerrit(project_source):
     LOG.info('Retrieving project list from Gerrit')
+
+    gerrit_inst = None
     try:
         uri = project_source.get('uri') or cfg.CONF.review_uri
         gerrit_inst = rcs.Gerrit(uri)
@@ -74,11 +81,12 @@ def _retrieve_project_list_from_gerrit(project_source):
         gerrit_inst.setup(key_filename=key_filename, username=username)
 
         project_list = gerrit_inst.get_project_list()
-        gerrit_inst.close()
     except Exception as e:
         LOG.exception(e)
-        LOG.warning('Fail to retrieve list of projects. Keep it unmodified')
-        return
+        raise
+    finally:
+        if gerrit_inst:
+            gerrit_inst.close()
 
     organization = project_source['organization']
     LOG.debug('Get list of projects for organization %s', organization)
