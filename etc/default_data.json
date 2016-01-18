@@ -1658,6 +1658,17 @@
             "emails": ["brian.elliott@rackspace.com", "bdelliott@gmail.com"]
         },
         {
+            "launchpad_id": "changzhi",
+            "companies": [
+                {
+                    "company_name": "UnitedStack",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Zhi Chang",
+            "emails": ["changzhi@unitedstack.com", "changzhi1990@gmail.com"]
+        },
+        {
             "launchpad_id": "berendt",
             "companies": [
                 {
