@@ -12525,6 +12525,17 @@
             "emails": ["sumant.murke@intel.com"]
         },
         {
+            "launchpad_id": "sun-jing22",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Sun Jing",
+            "emails": ["sun.jing22@zte.com.cn", "jingsun59@163.com"]
+        },
+        {
             "launchpad_id": "sunku-ranganath",
             "gerrit_id": "sunkuranganath",
             "companies": [
@@ -12535,17 +12546,6 @@
             ],
             "user_name": "Sunku Ranganath",
             "emails": ["sunku.ranganath@intel.com"]
-        },
-        {
-            "launchpad_id": "sun-jing22",
-            "companies": [
-                {
-                    "company_name": "ZTE Corporation",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Sun Jing",
-            "emails": ["sun.jing22@zte.com.cn", "jingsun59@163.com"]
         },
         {
             "launchpad_id": "sunshuai",
