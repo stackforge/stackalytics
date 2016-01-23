@@ -2362,6 +2362,17 @@
             "emails": ["simon.sy.chang@gmail.com", "schang@tesora.com"]
         },
         {
+            "launchpad_id": "luyuan",
+            "companies": [
+                {
+                    "company_name": "UnitedStack",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Lu Yuan",
+            "emails": ["imluyuan@gmail.com", "luyuan@unitedstack.com"]
+        },
+        {
             "launchpad_id": "changzhi",
             "companies": [
                 {
