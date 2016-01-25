@@ -1037,6 +1037,16 @@
             "emails": ["andy.edmonds@gmail.com", "andy@edmonds.be"]
         },
         {
+            "companies": [
+                {
+                    "company_name": "VMware",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Andy Zhou",
+            "emails": "azhou@nicira.com", "azhou@ovn.org"]
+        },
+        {
             "launchpad_id": "aniketanikhindi",
             "companies": [
                 {
@@ -1810,6 +1820,16 @@
             ],
             "user_name": "Biswajeeban Mishra",
             "emails": ["mishra@inf.u-szeged.hu"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "VMware",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ben Pfaff",
+            "emails": ["blp@nicira.com", "blp@ovn.org"]
         },
         {
             "launchpad_id": "blueboxjesse",
@@ -5325,6 +5345,16 @@
             "emails": ["guoyongxhzhf@163.com"]
         },
         {
+            "companies": [
+                {
+                    "company_name": "VMware",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Gurucharan Shetty",
+            "emails": ["shettyg@nicira.com", "guru@ovn.org"]
+        },
+        {
             "launchpad_id": "gus",
             "companies": [
                 {
@@ -7001,6 +7031,16 @@
             "emails": ["j.petazzoni@docker.com"]
         },
         {
+            "companies": [
+                {
+                    "company_name": "VMware",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Justin Pettit",
+            "emails": ["jpettit@nicira.com", "jpettit@ovn.org"]
+        },
+        {
             "launchpad_id": "jpichon",
             "companies": [
                 {
@@ -7032,6 +7072,16 @@
             ],
             "user_name": "Joe Savak",
             "emails": ["joe.savak@rackspace.com", "jsavak@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "VMware",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Joe Stringer",
+            "emails": ["joestringer@nicira.com", "joe@ovn.org"]
         },
         {
             "launchpad_id": "jshepher",
@@ -7124,6 +7174,16 @@
             ],
             "user_name": "Janet Yu",
             "emails": ["jwy@cs.stanford.edu"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "VMware",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jarno Rajahalme",
+            "emails": ["jrajahalme@nicira.com", "jarno@ovn.org"]
         },
         {
            "launchpad_id": "jxstanford",
