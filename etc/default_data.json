@@ -7089,6 +7089,17 @@
             "emails": ["joe.savak@rackspace.com", "jsavak@gmail.com"]
         },
         {
+            "launchpad_id": "realitix",
+            "companies": [
+                {
+                    "company_name": "Thales",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jean-Sebastien Bevilacqua",
+            "emails": ["realitix@gmail.com", "jean-sebastien.bevilacqua@thalesgroup.com"]
+        },
+        {
             "launchpad_id": "jshepher",
             "companies": [
                 {
