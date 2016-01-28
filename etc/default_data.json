@@ -4939,6 +4939,21 @@
             "emails": ["geekinutah@gmail.com"]
         },
         {
+            "launchpad_id": "german-eichberger",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": "2015-Oct-31"
+                },
+                {
+                    "company_name": "HPE",
+                    "end_date": null
+                }
+            ],
+            "user_name": "German Eichberger",
+            "emails": ["german.eichberger@hp.com", "german.eichberger@hpe.com"]
+        },
+        {
             "launchpad_id": "george-peristerakis",
             "companies": [
                 {
