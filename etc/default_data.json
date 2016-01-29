@@ -9518,6 +9518,17 @@
             "emails": ["nerminamiller@gmail.com"]
         },
         {
+            "launchpad_id": "nguyenat4",
+            "companies": [
+                {
+                    "company_name": "Comcast",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Anthony Nguyen",
+            "emails": ["nguyenat4@gmail.com"]
+        },
+        {
             "launchpad_id": "nfedotov",
             "user_name": "Nikolay Fedotov",
             "companies": [
