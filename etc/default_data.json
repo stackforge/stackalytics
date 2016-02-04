@@ -3899,6 +3899,17 @@
             "emails": ["dolph.mathews@gmail.com", "dolph.mathews@rackspace.com"]
         },
         {
+            "launchpad_id": "npustchi",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Navid Pustchi",
+            "emails": ["npustchi@gmail.com", "navid.pustchi@intel.com"]
+        },
+        {
            "launchpad_id": "donovan-4",
            "gerrit_id": "donovan-4",
            "companies": [
