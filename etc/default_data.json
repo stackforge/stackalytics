@@ -15171,6 +15171,42 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "mnestratov",
+            "gerrit_id": "mnestratov",
+            "companies": [
+                {
+                    "company_name": "Virtuozzo",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Maxim Nestratov",
+            "emails": ["mnestratov@parallels.com", "mnestratov@virtuozzo.com"]
+        },
+        {
+            "launchpad_id": "mfeoktistov",
+            "gerrit_id": "mfeoktistov",
+            "companies": [
+                {
+                    "company_name": "Virtuozzo",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Mikhail Feoktistov",
+            "emails": ["mfeoktistov@parallels.com", "mfeoktistov@virtuozzo.com"]
+        },
+        {
+            "launchpad_id": "eantyshev",
+            "gerrit_id": "eantyshev",
+            "companies": [
+                {
+                    "company_name": "Virtuozzo",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Evgeny Antyshev",
+            "emails": ["eantyshev@parallels.com", "eantyshev@virtuozzo.com"]
         }
     ],
     "companies": [
@@ -16604,6 +16640,11 @@
         {
             "domains": ["zte.com.cn"],
             "company_name": "ZTE Corporation"
+        },
+        {
+            "domains": ["virtuozzo.com", "openvz.org"],
+            "company_name": "Virtuozzo",
+            "aliases": ["OpenVZ"]
         }
     ],
     "repos": [
