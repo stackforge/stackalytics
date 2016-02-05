@@ -1,0 +1,11 @@
+Code-Review+1: Shilla Saebi <shilla.saebi@gmail.com>
+Code-Review+1: Margaret Frances <margaret_frances@cable.comcast.com>
+Code-Review+1: Chuck Burkett <chuck@burkett.org>
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Workflow+1: Ilya Shakhat <ishakhat@mirantis.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Fri, 05 Feb 2016 09:26:23 +0000
+Reviewed-on: https://review.openstack.org/274216
+Project: openstack/stackalytics
+Branch: refs/heads/master
