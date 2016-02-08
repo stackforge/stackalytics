@@ -1,0 +1,9 @@
+Code-Review+1: Nate Johnston <openstacknate@gmail.com>
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Workflow+1: Ilya Shakhat <ishakhat@mirantis.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Mon, 08 Feb 2016 09:30:48 +0000
+Reviewed-on: https://review.openstack.org/275903
+Project: openstack/stackalytics
+Branch: refs/heads/master
