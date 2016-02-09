@@ -8909,6 +8909,18 @@
             "emails": ["marcela.bonell.manjarrez@intel.com", "marcelabonell@gmail.com"]
         },
         {
+            "launchpad_id": "palecrow",
+            "gerrit_id": "mborland",
+            "companies": [
+                {
+                    "company_name": "HPE",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Matt Borland",
+            "emails": ["matt.borland@hpe.com", "matt.borland@hp.com", "palecrow@gmail.com"]
+        },
+        {
             "launchpad_id": "mdrnstm",
             "companies": [
                 {
