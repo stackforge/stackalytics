@@ -7265,6 +7265,17 @@
             "user_name": "John Tran",
             "emails": ["jtran@attinteractive.com", "jhtran@att.com"]
         },
+	{
+	    "launchpad_id": "juan-pablo-lopez-gutierrez",
+	    "companies": [
+                {
+                    "company_name": "Intel Corporation",
+                    "end_date": null
+                }
+	    ],
+	    "user_name": "Juan Pablo Lopez Gutierrez",
+            "emails": ["juan.pablo.lopez.gutierrez@intel.com"]
+	},
         {
             "launchpad_id": "juliaashleykreger",
             "companies": [
