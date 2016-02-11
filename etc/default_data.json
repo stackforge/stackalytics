@@ -7347,6 +7347,18 @@
            "user_name": "John Stanford",
            "emails": ["jxstanford@gmail.com", "john@solinea.com"]
         },
+	{
+	   "launchpad_id": "jrod-d",
+	   "gerrit_id": "jrod",
+	   "companies": [
+	       {
+		   "company_name": "Rackspace",
+		   "end_date": null
+	       }
+	   ],
+	   "user_name": "Joe Rodriguez Jr",
+	   "emails": ["jrod@rackspace.com"]
+	},
         {
             "launchpad_id": "k3vinmcdonald",
             "companies": [
