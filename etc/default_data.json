@@ -1,5 +1,16 @@
 {
     "users": [
+        {   "launchpad_id": "anusha-unnam",
+            "gerrit_id": "aunnam",
+            "companies":[
+                {
+                   "company_name": "Intel",
+                   "end_date": null
+                }
+             ],
+             "user_name": "Anusha Unnam",
+             "emails": ["anusha.unnam@intel.com", "unnam.anusha201@gmail.com"]
+        },
         {
             "launchpad_id": "0-doug",
             "companies": [
