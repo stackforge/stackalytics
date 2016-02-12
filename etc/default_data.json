@@ -11730,7 +11730,20 @@
             "user_name": "Sam Yaple",
             "emails": ["sam@yaple.net", "samuel@yaple.net", "syaple@servosity.com", "sam.yaple@rackspace.com"]
         },
-        {
+         
+         {
+           "launchpad_id": "saigandham467",
+           "gerrit_id": "sai",
+           "companies": [
+               {
+                   "company_name": "Intel",
+                   "end_date": null
+               }
+           ],
+           "user_name": "saigandham467",
+           "emails": ["saigandham467@gmail.com"]
+       },
+       {
             "launchpad_id": "sahid-ferdjaoui",
             "companies": [
                 {
