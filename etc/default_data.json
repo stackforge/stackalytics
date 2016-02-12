@@ -14180,6 +14180,18 @@
             "emails": ["vivekdhayaal@gmail.com", "vivek.kayarohanam@ril.com"]
         },
         {
+            "launchpad_id": "vivekanand ManchikantI",
+            "gerrit_id": "vivekanand-manchikanti",
+             "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+             ],
+             "user_name": "vivekma",
+             "emails": ["vivekmanchikanti@gmail.com"]
+        },
+        {
             "launchpad_id": "vkhomenko",
             "companies": [
                 {
