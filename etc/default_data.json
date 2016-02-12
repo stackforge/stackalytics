@@ -5360,6 +5360,18 @@
             "user_name": "Greg Lange",
             "emails": ["greglange@gmail.com", "glange@rackspace.com"]
         },
+	{
+	    "launchpad id": "gregoryhooksjr",
+	    "gerrit_id": "ghooks",
+	    "companies": [
+	        {
+		    "company_name": "Intel",
+		    "end_date": null
+		}
+	    ],
+	    "user name": "Gregory Hooks",
+	    "emails": ["gregoryhooksjr@gmail.com"]
+	},
         {
             "launchpad_id": "grishkin",
             "companies": [
