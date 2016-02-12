@@ -13903,6 +13903,18 @@
             "user_name": "Vaidyanath",
             "emails": ["vaidyanath.m@gmail.com", "vaidyanath.manogaran@ril.com"]
         },
+       {
+           "launchpad_id": "varun-vr850",
+           "gerrit_id": "Varunkvn",
+           "companies": [
+               {
+                   "company_name": "Intel",
+                   "end_date": null
+               }
+           ],
+           "user_name": "varun-vr850",
+           "emails": ["varun.vr850@gmail.com"]
+       },
         {
             "launchpad_id": "vancsics",
             "companies": [
