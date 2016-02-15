@@ -185,6 +185,29 @@ def _update_with_driverlog_data(default_data, driverlog_data_uri):
             repo['drivers'] = module_cis[repo['module']]
 
 
+def _update_with_translation_team(default_data, translation_team_uri):
+    LOG.info('Reading translation team from uri: %s', translation_team_uri)
+    translation_team = utils.read_yaml_from_uri(translation_team_uri)
+
+    if not translation_team:
+        LOG.warning('Translation team data is not available')
+        return
+
+    lang_code_to_name = dict((k, v['language'][0])
+                             for k, v in translation_team.items())
+    default_data['languages'] = lang_code_to_name
+
+    for team in translation_team.values():
+        for zanata_id in team.get('translators') or []:
+            default_data['users'].append({
+                'user_id': user_processor.make_user_id(zanata_id=zanata_id),
+                'zanata_id': zanata_id,
+                'user_name': zanata_id,
+                'companies': [
+                    {'company_name': '*independent', 'end_date': None}],
+            })
+
+
 def _store_users(runtime_storage_inst, users):
     for user in users:
         stored_user = user_processor.load_user(runtime_storage_inst,
@@ -239,12 +262,15 @@ def _store_default_data(runtime_storage_inst, default_data):
             runtime_storage_inst.set_by_key(key, value)
 
 
-def process(runtime_storage_inst, default_data, driverlog_data_uri):
+def process(runtime_storage_inst, default_data, driverlog_data_uri,
+            translation_team_uri):
     LOG.debug('Process default data')
 
     if 'project_sources' in default_data:
         _update_project_list(default_data)
 
     _update_with_driverlog_data(default_data, driverlog_data_uri)
+
+    _update_with_translation_team(default_data, translation_team_uri)
 
     _store_default_data(runtime_storage_inst, default_data)
