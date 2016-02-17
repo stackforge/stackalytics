@@ -8311,6 +8311,17 @@
             "emails": ["liusheng1175@126.com", "liusheng@huawei.com", "liusheng2048@gmail.com"]
         },
         {
+            "launchpad_id": "chdzsp",
+            "companies": [
+                {
+                    "company_name": "Kylin Cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhongshengping",
+            "emails": ["chdzsp@163.com", "shengping.zhong@kylin-cloud.com", "chdzsp@gmail.com"]
+        },
+        {
             "launchpad_id": "liyingjun",
             "companies": [
                 {
