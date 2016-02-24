@@ -6821,6 +6821,22 @@
             "emails": ["jerome.david.gallard@gmail.com", "jerome.gallard@orange.com", "gallard.jerome@gmail.com"]
         },
         {
+            "launchpad_id": "jesse-pretorius",
+            "github_id": "odyssey4me",
+            "companies": [
+                {
+                    "company_name": "Business Connexion",
+                    "end_date": "2014-Oct-31"
+                },
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jesse Pretorius",
+            "emails": ["jesse.pretorius@rackspace.co.uk", "jesse.pretorius@gmail.com"]
+        },
+        {
             "launchpad_id": "jesusaurus",
             "companies": [
                 {
