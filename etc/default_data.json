@@ -7103,6 +7103,17 @@
             "emails": ["joe.gordon0@gmail.com", "jogo@cloudscaling.com"]
         },
         {
+            "launchpad_id": "johanni-thunstrom",
+            "companies": [
+                {
+                    "company_name": "Workday",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Johanni B Thunstrom",
+            "emails": ["johanni.thunstrom@workday.com"]
+        },
+        {
             "launchpad_id": "johannes.erdfelt",
             "companies": [
                 {
@@ -9189,6 +9200,17 @@
             ],
             "user_name": "David Medberry",
             "emails": ["david.medberry@canonical.com", "openstack@medberry.net", "david.medberry@twcable.com", "ubuntu@medberry.net"]
+        },
+        {
+            "launchpad_id": "megan-baker",
+            "companies": [
+                {
+                    "company_name": "Workday",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Megan Baker",
+            "emails": ["megan.baker@workday.com"]
         },
         {
             "launchpad_id": "mestery",
@@ -12796,6 +12818,17 @@
             ],
             "user_name": "Stephen Ahn",
             "emails": ["skanddh@gmail.com", "seungkyu.ahn@samsung.com"]
+        },
+        {
+            "launchpad_id": "skhotta",
+            "companies": [
+                {
+                    "company_name": "Workday",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Sitakanta Hotta",
+            "emails": ["sitakanta.hotta@workday.com"]
         },
         {
             "launchpad_id": "skuicloud",
