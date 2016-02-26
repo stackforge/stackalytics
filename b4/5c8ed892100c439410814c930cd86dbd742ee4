@@ -1,0 +1,9 @@
+Code-Review+1: Byron McCollum <byron.mccollum@rackspace.com>
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Workflow+1: Ilya Shakhat <ishakhat@mirantis.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Fri, 26 Feb 2016 09:11:43 +0000
+Reviewed-on: https://review.openstack.org/284208
+Project: openstack/stackalytics
+Branch: refs/heads/master
