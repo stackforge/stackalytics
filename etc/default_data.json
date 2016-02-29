@@ -608,6 +608,18 @@
             "emails": ["akhivin@mirantis.com", "akhivin@gmail.com"]
         },
         {
+            "launchpad_id": "akomarek",
+            "gerrit_id": "cznewt",
+            "companies": [
+                {
+                    "company_name": "tcp cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ales Komarek",
+            "emails": ["ales.komarek@tcpcloud.eu", "ales.komarek@newt.cz", "mail@newt.cz", "a.komarek@tcpcloud.eu"]
+        },
+        {
 
             "launchpad_id": "akscram",
             "companies": [
@@ -859,18 +871,6 @@
             ],
             "user_name": "Alyson R. Rosa",
             "emails": ["alyson.rodrigues.rosa@gmail.com", "alyson.rosa@fit-tecnologia.org.br"]
-        },
-        {
-            "launchpad_id": "akomarek",
-            "gerrit_id": "cznewt",
-            "companies": [
-                {
-                    "company_name": "tcp cloud",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Ales Komarek",
-            "emails": ["ales.komarek@tcpcloud.eu", "ales.komarek@newt.cz", "mail@newt.cz", "a.komarek@tcpcloud.eu"]
         },
         {
             "launchpad_id": "amank",
