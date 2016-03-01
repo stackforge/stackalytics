@@ -14585,18 +14585,6 @@
             "emails": ["mark.gloshen@workday.com"]
         },
         {
-            "launchpad_id": "v-mikes-z",
-            "gerrit_id": "vmikes",
-            "companies": [
-                {
-                    "company_name": "tcp cloud",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Vlastimil Mikes",
-            "emails": ["v.mikes@tcpcloud.eu", "vlastimil.mikes@tcpcloud.eu"]
-        },
-        {
             "launchpad_id": "vaidyanath-m",
             "companies": [
                 {
