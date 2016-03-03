@@ -10580,6 +10580,18 @@
             "emails": ["tony@bakeyournoodle.com", "tony.breeds@rackspace.com"]
         },
         {
+            "launchpad_id": "oci-recording",
+            "gerrit_id": "ocirecording",
+            "companies": [
+                {
+                    "company_name": "UTSA Open Cloud Institute(OCI)",
+                    "end_date": null
+                }
+            ],
+            "user_name": "OCI Recording",
+            "emails": ["oci.recording@gmail.com"]
+        },
+        {
             "launchpad_id": "octopuszhang",
             "companies": [
                 {
