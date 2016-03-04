@@ -7399,6 +7399,14 @@
                 {
                     "company_name": "HPE",
                     "end_date": "2016-Feb-03"
+                },
+                {
+                    "company_name": "*independent",
+                    "end_date": "2016-Feb-29"
+                },
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
                 }
             ],
             "user_name": "Erno Kuvaja",
