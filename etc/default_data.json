@@ -16229,6 +16229,18 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "abe-music",
+            "gerrit_id": "abemusic",
+            "companies": [
+                {
+                    "company_name": "Cisco Systems",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Abe Music",
+            "emails": ["abe.music@gmail.com", "abmusic@cisco.com"]
         }
     ],
     "companies": [
