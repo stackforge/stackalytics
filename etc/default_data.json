@@ -13786,6 +13786,19 @@
             "emails": ["sujitha.neti@intel.com"]
         },
         {
+            "launchpad_id": "sungjin",
+            "gerrit_id": "sungjin",
+            "zanata_id": "ujuc",
+            "companies": [
+                {
+                    "company_name": "*independent",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Sungjin Kang",
+            "emails": ["gang.sungjin@gmail.com", "potopro@gmail.com", "ujuc@ujuc.kr"]
+        },
+        {
             "launchpad_id": "sulochan-acharya",
             "companies": [
                 {
