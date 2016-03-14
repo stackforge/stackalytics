@@ -5725,17 +5725,6 @@
             "emails": ["guoyongxhzhf@163.com", "guoyongxhzhf@h3c.com"]
         },
         {
-            "launchpad_id": "zhugaoxiao",
-            "companies": [
-                {
-                    "company_name": "H3C",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Zhu Gaoxiao",
-            "emails": ["zhugaoxiao@gmail.com", "zhu.gaoxiao@h3c.com"]
-        },
-        {
             "launchpad_id": "gus",
             "companies": [
                 {
@@ -16232,6 +16221,17 @@
             ],
             "user_name": "ZouHuiying",
             "emails": ["zhouhy@awcloud.com"]
+        },
+        {
+            "launchpad_id": "zhugaoxiao",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Gaoxiao Zhu",
+            "emails": ["zhugaoxiao@gmail.com", "zhu.gaoxiao@h3c.com"]
         },
         {
             "launchpad_id": "zhu-rong",
