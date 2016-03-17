@@ -2955,11 +2955,15 @@
             "companies": [
                 {
                     "company_name": "HP",
+                    "end_date": "2015-Aug-21"
+                },
+                {
+                    "company_name": "IBM",
                     "end_date": null
                 }
             ],
             "user_name": "Colette Alexander",
-            "emails": ["colette.alexander@hp.com", "colettealexander@gmail.com"]
+            "emails": ["colettealexander@gmail.com"]
         },
         {
            "launchpad_id": "coolsvap",
@@ -8261,6 +8265,10 @@
                 {
                     "company_name": "HP",
                     "end_date": "2015-Jul-31"
+                },
+                {
+                    "company_name": "*independent",
+                    "end_date": null
                 }
             ],
             "user_name": "Louis Taylor",
@@ -10840,6 +10848,10 @@
             "gerrit_id": "mborland",
             "companies": [
                 {
+                    "company_name": "HP",
+                    "end_date": "2015-Oct-31"
+                },
+                {
                     "company_name": "HPE",
                     "end_date": null
                 }
@@ -11538,6 +11550,10 @@
             "companies": [
                 {
                     "company_name": "HP",
+                    "end_date": "2015-Oct-31"
+                },
+                {
+                    "company_name": "HPE",
                     "end_date": "2015-Nov-30"
                 }
             ],
@@ -13727,6 +13743,10 @@
             "companies": [
                 {
                     "company_name": "HP",
+                    "end_date": "2015-Oct-31"
+                },
+                {
+                    "company_name": "HPE",
                     "end_date": null
                 }
             ],
@@ -13739,6 +13759,10 @@
             "companies": [
                 {
                     "company_name": "HP",
+                    "end_date": "2015-Oct-31"
+                },
+                {
+                    "company_name": "HPE",
                     "end_date": null
                 }
             ],
@@ -14673,6 +14697,14 @@
             "companies": [
                 {
                     "company_name": "HP",
+                    "end_date": "2015-Oct-31"
+                },
+                {
+                    "company_name": "HPE",
+                    "end_date": "2015-Nov-30"
+                },
+                {
+                    "company_name": "Oracle",
                     "end_date": null
                 }
             ],
