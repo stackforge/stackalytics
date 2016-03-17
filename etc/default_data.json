@@ -1,15 +1,15 @@
 {
     "users": [
         {
-            "launchpad_id": "0-doug",
+            "launchpad_id": "haobing1",
             "companies": [
                 {
-                    "company_name": "Tesora",
+                    "company_name": "ZTE Corporation",
                     "end_date": null
                 }
             ],
-            "user_name": "Doug Shelley",
-            "emails": ["doug@parelastic.com", "doug@tesora.com"]
+            "user_name": "Bing Hao ZTE",
+            "emails": ["hao.bing1@zte.com.cn", "hbky2012@163.com"]
         },
         {
             "launchpad_id": "0x44",
