@@ -1,17 +1,6 @@
 {
     "users": [
         {
-            "launchpad_id": "0-doug",
-            "companies": [
-                {
-                    "company_name": "Tesora",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Doug Shelley",
-            "emails": ["doug@parelastic.com", "doug@tesora.com"]
-        },
-        {
             "launchpad_id": "0x44",
             "companies": [
                 {
@@ -5792,6 +5781,17 @@
             ],
             "user_name": "Rong Han ZTE",
             "emails": ["spring068@sina.cn", "han.rong3@zte.com.cn"]
+        },
+        {
+            "launchpad_id": "haobing1",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "haobing",
+            "emails": ["hao.bing1@zte.com.cn"]
         },
         {
             "launchpad_id": "haomai",
