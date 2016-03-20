@@ -311,6 +311,17 @@
             "emails": ["zhangcan@letv.com", "can@canx.me"]
         },
         {
+            "launchpad_id": "multi-task",
+            "companies": [
+                {
+                    "company_name": "Letv Cloud Computing",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Gao Zhengwei",
+            "emails": ["gaozhengwei1@letv.com", "multi_task@163.com"]
+        },
+        {
             "launchpad_id": "adam-coldrick",
             "gerrit_id": "SotK",
             "companies": [
