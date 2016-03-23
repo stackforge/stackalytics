@@ -17902,6 +17902,10 @@
         {
             "domains": ["zte.com.cn"],
             "company_name": "ZTE Corporation"
+        },
+        {
+            "domains": ["upv.es"],
+            "company_name": "UPV"
         }
     ],
     "repos": [
