@@ -1,0 +1,10 @@
+Code-Review+1: Michal Skalski <mskalski@mirantis.com>
+Code-Review+1: Jonas Bjurel <jonas.bjurel@ericsson.com>
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Workflow+1: Ilya Shakhat <ishakhat@mirantis.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Thu, 24 Mar 2016 12:22:09 +0000
+Reviewed-on: https://review.openstack.org/296705
+Project: openstack/stackalytics
+Branch: refs/heads/master
