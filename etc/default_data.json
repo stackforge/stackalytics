@@ -5905,10 +5905,14 @@
                 {
                     "company_name": "Yahoo!",
                     "end_date": "2016-Mar-16"
-                }
+                },
+                {
+                    "company_name": "Godaddy",
+                    "end_date": null
+                },
             ],
             "user_name": "Joshua Harlow",
-            "emails": ["harlowja@gmail.com", "harlowja@yahoo-inc.com", "harlowja@outlook.com", "harlowja@fastmail.com"]
+            "emails": ["harlowja@gmail.com", "jxharlow@godaddy.com", "harlowja@yahoo-inc.com", "harlowja@outlook.com", "harlowja@fastmail.com"]
         },
         {
             "launchpad_id": "harsh-mishra",
