@@ -1344,6 +1344,18 @@
             "emails": ["apalkina@mirantis.com"]
         },
         {
+            "launchpad_id": "Vaishnavi",
+            "gerrit_id": "Vaishnavi",
+            "companies": [
+                {
+                    "company_name": "HPE",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Vaishnavi",
+            "emails": ["itsvaishnavi@gmail.com"]
+        },
+        {
             "launchpad_id": "aparnavtce",
             "gerrit_id": "AparnaVikraman",
             "companies": [
