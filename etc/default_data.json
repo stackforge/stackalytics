@@ -11916,6 +11916,18 @@
             "emails": ["john@dewey.ws"]
         },
         {
+            "launchpad_id": "revon-mathews",
+            "gerrit_id": "rmathews",
+            "companies": [
+                {
+                    "company_name": "INTEL",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Revon Mathews",
+            "emails": ["revon.mathews@intel.com"]
+        },
+        {
             "launchpad_id": "rh-s",
             "companies": [
                 {
