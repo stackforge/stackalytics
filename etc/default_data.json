@@ -3726,6 +3726,18 @@
             "emails": ["dborodaenko@mirantis.com", "angdraug@gmail.com"]
         },
         {
+            "launchpad_id": "dcorn",
+	    "github_id": "dcorn",
+            "user_name": "David Corn",
+            "companies": [
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null
+                }
+            ],
+            "emails": ["david.corn@rackspace.com", "me@davidmcorn.com"]
+        },
+	{
             "github_id": "ddollar",
             "user_name": "David Dollar",
             "companies": [
