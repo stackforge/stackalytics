@@ -1,0 +1,10 @@
+Code-Review+1: Matt Dorn <madorn@gmail.com>
+Code-Review+1: Emma Foley <emma.l.foley@intel.com>
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Workflow+1: Ilya Shakhat <ishakhat@mirantis.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Fri, 08 Apr 2016 08:46:26 +0000
+Reviewed-on: https://review.openstack.org/303068
+Project: openstack/stackalytics
+Branch: refs/heads/master
