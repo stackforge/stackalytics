@@ -433,6 +433,7 @@ class RecordProcessor(object):
           * mark - records that a user set approval mark to given review
         """
         owner = record['owner']
+        owner_email = owner.get('email') or ''
         if 'email' in owner or 'username' in owner:
             yield self._make_review_record(record)
 
@@ -451,7 +452,9 @@ class RecordProcessor(object):
                         'username' not in approval['by']):
                     continue  # ignore
 
-                yield self._make_mark_record(record, patch, approval)
+                # Do not record approvals for bot proposed updates
+                if 'openstack-infra@lists.openstack.org' not in owner_email:
+                    yield self._make_mark_record(record, patch, approval)
 
         # check for abandon action
         if record.get('status') == 'ABANDONED':
