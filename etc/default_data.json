@@ -6083,15 +6083,19 @@
             "emails": ["yaguang.tang@canonical.com", "heut2008@gmail.com", "ytang@mirantis.com", "yaguang@umcloud.com"]
         },
         {
-            "launchpad_id": "hfamily15",
+            "launchpad_id": "raymon-ha",
             "companies": [
                 {
                     "company_name": "LG CNS",
+                    "end_date": "2015-July-04"
+                },
+                {
+                    "company_name": "Kakao Corporation",
                     "end_date": null
                 }
             ],
-            "user_name": "Ha Hyun",
-            "emails": ["hfamily15@gmail.com", "hahyun0523@lgcns.com"]
+            "user_name": "Hyun Ha",
+            "emails": ["hfamily15@gmail.com", "raymon.ha@kakaocorp.com"]
         },
         {
             "launchpad_id": "hferenc",
@@ -17369,6 +17373,11 @@
         {
             "domains": ["kau.se"],
             "company_name": "Karlstad Universitet"
+        },
+        {
+            "domains": ["kakaocorp.com"],
+            "company_name": "Kakao Corporation",
+            "aliases": ["Kakao Corporation", "Kakao"]
         },
         {
             "domains": ["kddi.com", "kddilabs.jp"],
