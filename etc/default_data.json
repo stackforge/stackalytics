@@ -6083,17 +6083,6 @@
             "emails": ["yaguang.tang@canonical.com", "heut2008@gmail.com", "ytang@mirantis.com", "yaguang@umcloud.com"]
         },
         {
-            "launchpad_id": "hfamily15",
-            "companies": [
-                {
-                    "company_name": "LG CNS",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Ha Hyun",
-            "emails": ["hfamily15@gmail.com", "hahyun0523@lgcns.com"]
-        },
-        {
             "launchpad_id": "hferenc",
             "companies": [
                 {
@@ -11770,6 +11759,21 @@
             "emails": ["raphael_mondesir@cable.comcast.com", "raphmraph@gmail.com"]
         },
         {
+            "launchpad_id": "raymon-ha",
+            "companies": [
+                {
+                    "company_name": "LG CNS",
+                    "end_date": "2015-Jul-04"
+                },
+                {
+                    "company_name": "Kakao Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Hyun Ha",
+            "emails": ["hfamily15@gmail.com", "raymon.ha@kakaocorp.com"]
+        },
+        {
             "launchpad_id": "raymond-angelone",
             "companies": [
                 {
@@ -17365,6 +17369,11 @@
             "domains": ["juniper.com", "juniper.net"],
             "company_name": "Juniper",
             "aliases": ["Juniper Networks", "Juniper Networks Inc.", "Juniper Networks India", "Juniper India"]
+        },
+        {
+            "domains": ["kakaocorp.com"],
+            "company_name": "Kakao Corporation",
+            "aliases": ["Kakao Corporation", "Kakao"]
         },
         {
             "domains": ["kau.se"],
