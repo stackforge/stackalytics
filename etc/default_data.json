@@ -11592,6 +11592,21 @@
             "emails": ["ran.qunying@zte.com.cn"]
         },
         {
+            "launchpad_id": "rakhmerov",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": "2016-Mar-31"
+                },
+                {
+                    "company_name": "Nokia",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Renat Akhmerov",
+            "emails": ["renat.akhmerov@gmail.com"]
+        },
+        {
             "launchpad_id": "r-thorsten",
             "companies": [
                 {
