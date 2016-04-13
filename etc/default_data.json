@@ -16679,6 +16679,17 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "liujunpeng"
+            "companies": [
+                {
+                    "company_name": "Inspur",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Junpeng Liu",
+            "emails": ["liujunpeng@inspur.com"]
         }
     ],
     "companies": [
@@ -16716,6 +16727,10 @@
         {
             "domains": ["99cloud.net"],
             "company_name": "99cloud"
+        },
+        {
+            "domains": ["inspur.com"],
+            "company_name": "Inspur"
         },
         {
             "domains": ["a10networks.com"],
