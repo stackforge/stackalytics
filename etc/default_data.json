@@ -5894,6 +5894,17 @@
             "emails": ["spring068@sina.cn", "han.rong3@zte.com.cn"]
         },
         {
+            "launchpad_id": "bailin-zhang",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "bailin.zhang",
+            "emails": ["bailin.zhang@hotmail.com"]
+        },
+        {
             "launchpad_id": "haobing1",
             "companies": [
                 {
