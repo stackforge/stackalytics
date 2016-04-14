@@ -57,6 +57,18 @@
             "emails": ["295988511@qq.com","liuxinguo@huawei.com"]
         },
         {
+            "launchpad_id": "xuchao",
+            "gerrit_id": "xuchao",
+            "companies": [
+                {
+                    "company_name": "China Cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Xuchao",
+            "emails": ["xuchao@chinacloud.com.cn"]    
+        },
+        {
             "launchpad_id": "3-andrew",
             "gerrit_id": "AndrewSpiers",
             "companies": [
@@ -17413,6 +17425,10 @@
             "domains": ["intel.com"],
             "company_name": "Intel",
             "aliases": ["Intel Media", "Intel OTC", "Intern at intel", "Intel Security"]
+        },
+        {
+            "domains": ["chinacloud.com.cn"],
+            "company_name": "China Cloud"
         },
         {
             "domains": ["interhost.no"],
