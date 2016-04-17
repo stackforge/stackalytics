@@ -11867,6 +11867,17 @@
             "emails": ["rawlin.peters@hpe.com"]
         },
         {
+             "launchpad_id": "raymon-ha",
+             "companies": [
+                 {
+                     "company_name": "OpenStack Korea User Group",
+                     "end_date": null
+                 }
+             ],
+             "user_name": "Ha Hyun",
+             "emails": ["hfamily15@gmail.com", "raymon.ha@kakaocorp.com"]
+         },
+        {
             "launchpad_id": "raymond-angelone",
             "companies": [
                 {
