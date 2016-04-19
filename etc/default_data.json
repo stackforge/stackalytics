@@ -16770,6 +16770,21 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "eghobo",
+            "companies": [
+                {
+                    "company_name": "Walmart",
+                    "end_date": "2016-Feb-05"
+                },
+                {
+                    "company_name": "Teradata",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Egor Guz",
+            "emails": ["egor.guz@teradata.com", "eguz@walmartlabs.com", "guz_egor@yahoo.com"]
         }
     ],
     "companies": [
