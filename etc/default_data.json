@@ -9590,6 +9590,18 @@
             "emails": ["msherborne@gmail.com"]
         },
         {
+           "launchpad_id": "matt-jarvis",
+           "gerrit_id": "dc_mattj",
+           "companies": [
+                {
+                    "company_name": "DataCentred",
+                    "end_date": null
+                }
+           ],
+           "user_name": "Matt Jarvis",
+           "emails": ["matt.jarvis@datacentred.co.uk"]
+        },
+        {
             "launchpad_id": "mattf",
             "companies": [
                 {
