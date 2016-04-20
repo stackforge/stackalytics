@@ -45,6 +45,17 @@
             "emails": ["a@lexholden.com","ajonasho@cisco.com","alex@alexjonasholden.com"]
         },
         {
+            "launchpad_id": "xuchao",
+            "companies": [
+                {
+                    "company_name": "China Cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Xuchao",
+            "emails": ["xuchao@chinacloud.com.cn"]
+        },
+        {
             "launchpad_id": "295988511-t",
             "gerrit_id": "Bob-OpenStack",
             "companies": [
@@ -18052,6 +18063,10 @@
         {
             "domains": ["teradata.com"],
             "company_name": "Teradata"
+        },
+        {
+            "domains": ["chinacloud.com.cn"],
+            "company_name": "China Cloud"
         },
         {
             "domains": ["tesora.com", "parelastic.com"],
