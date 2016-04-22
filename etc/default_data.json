@@ -16800,6 +16800,17 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "yihleong",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yih Leong Sun",
+            "emails": ["yihleong@gmail.com", "yih.leong.sun@intel.com"]
         }
     ],
     "companies": [
