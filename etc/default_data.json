@@ -16055,6 +16055,17 @@
             "emails": ["yejia@unitedstack.com", "xyj.asmy@gmail.com"]
         },
         {
+            "launchpad_id": "xuchao",
+            "companies": [
+                {
+                    "company_name": "China Cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Xuchao",
+            "emails": ["xuchao@chinacloud.com.cn"]
+        },
+        {
             "launchpad_id": "yamamoto",
             "user_name": "YAMAMOTO Takashi",
             "companies": [
@@ -17186,6 +17197,10 @@
         {
             "domains": ["cybercom.fi", "cybercom.com"],
             "company_name": "Cybercom"
+        },
+        {
+            "domains": ["chinacloud.com.cn"],
+            "company_name": "China Cloud"
         },
         {
             "domains": ["d-red.jp"],
