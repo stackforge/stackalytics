@@ -79,6 +79,17 @@
             "user_name": "xiewj",
             "emails": ["xie.wenjun2@zte.com.cn"]
         },
+		{
+            "launchpad_id": "369283883-o-3",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "LuBin",
+            "emails": ["lu.bin2@zte.com.cn"]
+        },
         {
             "launchpad_id": "6-morgan",
             "companies": [
