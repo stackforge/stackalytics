@@ -859,6 +859,17 @@
             "emails": ["alex.schultz@rackspace.com", "aschultz@next-development.com", "aschultz@mirantis.com"]
         },
         {
+            "launchpad_id": "alokjani",
+            "companies": [
+                {
+                    "company_name": "Reliance",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Alok Jani",
+            "emails": ["alokjani.web@gmail.com", "alok.jani@ril.com"]
+        },
+        {
             "launchpad_id": "alexandra-settle",
             "companies": [
                 {
