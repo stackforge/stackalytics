@@ -6730,11 +6730,22 @@
             "companies": [
                 {
                     "company_name": "NTT",
-                    "end_date": null
+                    "end_date": "2014-Jul-31"
                 }
             ],
             "user_name": "Masanori Itoh",
             "emails": ["itoumsn@nttdata.co.jp"]
+        },
+        {
+            "launchpad_id": "thatsdone",
+            "companies": [
+                {
+                    "company_name": "HPE",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Masanori Itoh",
+            "emails": ["masanori.itoh@gmail.com", "masanori.itoh@hpe.com"]
         },
         {
             "launchpad_id": "itsuugo",
