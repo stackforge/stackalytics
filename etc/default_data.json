@@ -8324,6 +8324,17 @@
             "user_name": "Ke Wu",
             "emails": ["ke.wu@nebula.com", "ke.wu@ibeca.me"]
         },
+        {   
+            "launchpad_id": "kienha9922",
+            "companies": [
+                {   
+                    "company_name": "*independent",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Kien Ha",
+            "emails": ["kienha9922@gmail.com"]
+        },
         {
             "launchpad_id": "keith-newstadt",
             "companies": [
