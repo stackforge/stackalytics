@@ -2751,6 +2751,17 @@
             "emails": ["chen.qiaomin@99cloud.net", "qiaomin032@sina.com"]
         },
         {
+            "launchpad_id": "wei.zhijun",
+            "companies": [
+                {
+                    "company_name": "99cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Wei Zhi Jun",
+            "emails": ["wzj334965317@outlook.com", "wei.zhijun@99cloud.net"]
+        },
+        {
             "launchpad_id": "chen-xueying1",
             "companies": [
                 {
