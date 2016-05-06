@@ -9192,6 +9192,17 @@
             "emails": ["lorin@isi.edu", "lorin@nimbisservices.com"]
         },
         {
+            "launchpad_id": "rkumar-b",
+            "companies": [
+                {
+                    "company_name": "Nimble Storage",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Raunak Kumar",
+            "emails": ["rkumar@nimblestorage.com", "raunak.kumar@nimblestorage.com"]
+        },
+        {
             "launchpad_id": "lucasagomes",
             "companies": [
                 {
