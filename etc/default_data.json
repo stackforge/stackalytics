@@ -17048,6 +17048,17 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
+        },
+        {
+            "launchpad_id": "engapa",
+            "companies": [
+                {
+                    "company_name": "BBVA",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Enrique Garcia Pablos",
+            "emails": ["enrique.garcia.pablos@bbva.com", "engapa@gmail.com"]
         }
     ],
     "companies": [
@@ -17064,6 +17075,10 @@
               "unaffillated", "Unafflicated", "Unafiliated", "Unaffialiated", "Unaffiliation", "Unaffilicated", "Unaffilinated",
               "indepedent", "Unaffiliatd", "Anonomous", "unaffiliated student", "Personal", "Unalliliated", "Unafillated",
               "Not Affiliated", "Unaffilited"]
+        },
+        {
+            "domains": ["bbva.com"],
+            "company_name": "BBVA"
         },
         {
             "domains": ["360.cn"],
