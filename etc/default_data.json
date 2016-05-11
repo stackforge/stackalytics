@@ -17049,6 +17049,17 @@
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
         }
+        {
+            "launchpad_id": "engapa",
+            "companies": [
+                {
+                    "company_name": "BBVA",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Enrique Garcia Pablos",
+            "emails": ["engapa@gmail.com", "enrique.garcia.pablos@bbva.com"]
+        }
     ],
     "companies": [
         {
