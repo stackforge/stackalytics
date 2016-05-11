@@ -6608,6 +6608,18 @@
             "user_name": "Igor Duarte Cardoso",
             "emails": ["igor.duarte.cardoso@intel.com", "igordcard@gmail.com"]
         },
+	{
+            "launchpad_id": "igor-ataide",
+            "gerrit_id": "igorn",
+            "companies": [
+                {
+                    "company_name": "Universidade Federal de Campina Grande",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Igor Natanael Sousa",
+            "emails": ["igornsa@lsd.ufcg.edu.br", "igornatanaelsousa@gmail.com"]
+        },
         {
             "launchpad_id": "ilyaalekseyev",
             "zanata_id": "adiantum",
