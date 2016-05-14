@@ -85,8 +85,9 @@ def log(runtime_storage_inst, translation_team_uri):
                             language=user_stats_item['localeDisplayName'],
                             # Todo: not always consistent to the official name
                             module=user_stats_item['projectSlug'],
-                            # Todo: adapt version to branch
-                            branch=user_stats_item['versionSlug'],
+                            # Zanata uses '-' instead of ',' for branch names
+                            branch=user_stats_item['versionSlug'].replace(
+                                '-', '/'),
                             translated=user_stats_item['wordCount'],
                         )
                         yield record
