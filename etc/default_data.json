@@ -7507,6 +7507,17 @@
             "emails": ["lawrancejing@gmail.com", "jing.liuqing@99cloud.net"]
         },
         {
+            "launchpad_id": "jingtao liang",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "liangjingtao",
+            "emails": ["liang.jingtao@zte.com.cn"]
+        },
+        {
             "launchpad_id": "jjohnsonkoilraj",
             "companies": [
                 {
