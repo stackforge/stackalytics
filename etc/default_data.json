@@ -7463,6 +7463,17 @@
             "emails": ["ji.xuepeng@zte.com.cn"]
         },
         {
+            "launchpad_id": "jiwei",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "WeiJi",
+            "emails": ["ji.wei3@zte.com.cn"]
+        },
+        {
             "launchpad_id": "jiahao.liang",
             "gerrit_id": "Jiahao.liang",
             "companies": [
