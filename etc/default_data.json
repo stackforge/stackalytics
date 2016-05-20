@@ -8720,6 +8720,18 @@
             "emails": ["marc.koderer@sap.com", "m.koderer@telekom.de", "marc@koderer.com"]
         },
         {
+            "launchpad_id": "m5x",
+            "gerrit_id": "maxstack",
+            "companies": [
+                {
+                    "company_name": "100 Percent IT",
+                    "end_date": "null"
+                }
+            ],
+            "user_name": "Max Hollingdale",
+            "emails": ["maxhollingdale.stack@gmail.com", "max@100percentit.com", "max.hollingdale@100percentit.com"]
+        },
+        {
             "launchpad_id": "madhusudhan-kandadai",
             "companies": [
                 {
@@ -15891,6 +15903,10 @@
               "unaffillated", "Unafflicated", "Unafiliated", "Unaffialiated", "Unaffiliation", "Unaffilicated", "Unaffilinated",
               "indepedent", "Unaffiliatd", "Anonomous", "unaffiliated student", "Personal", "Unalliliated", "Unafillated",
               "Not Affiliated", "Unaffilited"]
+        },
+        {
+            "domains": ["100percentit.com"],
+            "company_name": "100 Percent IT"
         },
         {
             "domains": ["360.cn"],
