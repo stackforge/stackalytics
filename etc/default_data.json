@@ -2810,6 +2810,18 @@
             "emails": ["chen.zheng@easystack.cn", "czheng@cn.ibm.com"]
         },
         {
+            "launchpad_id": "caowei-e",
+            "greeit_id": "caowei",
+            "companies": [
+                {
+                    "company_name": "99cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "caowei",
+            "emails": ["cao.wei@99cloud.net", "caowei_e@aliyun.com"]
+        },
+        {
             "launchpad_id": "chengyang",
             "companies": [
                 {
