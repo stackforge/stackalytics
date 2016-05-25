@@ -623,6 +623,7 @@ class RecordProcessor(object):
         # following fields are put into standard fields stored in dashboard mem
         translation['loc'] = record['translated']
         translation['value'] = record['language']
+        translation['branch'] = record['branch']
 
         self._update_record_and_user(translation)
 
