@@ -20156,6 +20156,21 @@
             "module": "osops-tools-monitoring",
             "organization": "openstack",
             "uri": "https://github.com/openstack/osops-tools-monitoring.git"
+        },
+        {
+            "module": "vitrage",
+            "organization": "openstack",
+            "uri": "https://github.com/openstack/vitrage.git"
+        },
+        {
+            "module": "python-vitrageclient",
+            "organization": "openstack",
+            "uri": "https://github.com/openstack/python-vitrageclient.git"
+        },
+        {
+            "module": "puppet-vitrage",
+            "organization": "openstack",
+            "uri": "https://github.com/openstack/puppet-vitrage.git"
         }
     ],
     "project_sources": [
