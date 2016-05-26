@@ -17262,6 +17262,17 @@
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
         }
+        {
+            "launchpad_id": "liu-wei81",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Wei Liu",
+            "emails": ["liu.wei81@zte.com.cn"]
+        }
     ],
     "companies": [
         {
@@ -17873,7 +17884,7 @@
             "aliases": ["Huawei Technologies", "Huawei Technology", "Huawei Technologies Co. Limitied",
               "Huawei Technologies Düsseldorf", "Huawei Technologies India Private Limited", "Huawei china",
               "Huawei Tech", "Huawei Enterprise Business Group", "huawei technical", "Huawei Technologies India",
-              "huawei storage system", "华为技术有限公司", "华为", "Huawei Technolgies"]
+              "huawei storage system", "华为技术有限公�?, "华为", "Huawei Technolgies"]
         },
         {
             "domains": ["ibm.com", "linux.vnet.ibm.com"],
