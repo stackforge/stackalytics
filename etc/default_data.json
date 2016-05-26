@@ -9220,6 +9220,17 @@
             "emails": ["liusheng1175@126.com", "liusheng@huawei.com", "liusheng2048@gmail.com"]
         },
         {
+            "launchpad_id": "liu-wei81",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Wei Liu",
+            "emails": ["liu.wei81@zte.com.cn"]
+        },
+        {
             "launchpad_id": "liyingjun",
             "companies": [
                 {
