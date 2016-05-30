@@ -7567,6 +7567,17 @@
             "emails": ["lawrancejing@gmail.com", "jing.liuqing@99cloud.net"]
         },
         {
+            "launchpad_id": "jirka-v",
+            "companies": [
+                {
+                    "company_name": "Ultimum Technologies",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jiří Kotlín",
+            "emails": ["jiri.kotlin@ultimum.io"]
+        },
+        {
             "launchpad_id": "jiwei",
             "companies": [
                 {
@@ -15754,6 +15765,17 @@
             ],
             "user_name": "Venkata Siva Vijayendra Bhamidipati",
             "emails": ["vijayendrabvs@gmail.com", "vbhamidipati@ebaysf.com", "vbhamidipati@paypal.com"]
+        },
+        {
+            "launchpad_id": "viktor-krivak",
+            "companies": [
+                {
+                    "company_name": "Ultimum Technologies",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Viktor Křivák",
+            "emails": ["viktor.krivak@ultimum.io"]
         },
         {
            "launchpad_id": "vinay-potluri",
