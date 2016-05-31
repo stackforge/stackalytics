@@ -2727,17 +2727,6 @@
             "emails": ["changzhi@unitedstack.com", "changzhi1990@gmail.com"]
         },
         {
-            "launchpad_id": "charlie-j-llewellyn",
-            "companies": [
-                {
-                    "company_name": "Skyscape Cloud Services Ltd",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Charlie Llewellyn",
-            "emails": ["charlie.j.llewellyn@gmail.com", "cllewellyn@skyscapecloud.com"]
-        },
-        {
             "github_id": "chanwit",
             "companies": [
                 {
@@ -2747,6 +2736,17 @@
             ],
             "user_name": "Chanwit Kaewkasi",
             "emails": ["chanwit@gmail.com"]
+        },
+        {
+            "launchpad_id": "charlie-j-llewellyn",
+            "companies": [
+                {
+                    "company_name": "Skyscape Cloud Services Ltd",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Charlie Llewellyn",
+            "emails": ["charlie.j.llewellyn@gmail.com", "cllewellyn@skyscapecloud.com"]
         },
         {
             "launchpad_id": "chdzsp",
