@@ -2727,6 +2727,17 @@
             "emails": ["changzhi@unitedstack.com", "changzhi1990@gmail.com"]
         },
         {
+            "launchpad_id": "charlie-j-llewellyn",
+            "companies": [
+                {
+                    "company_name": "Skyscape Cloud Services Ltd",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Charlie Llewellyn",
+            "emails": ["charlie.j.llewellyn@gmail.com", "cllewellyn@skyscapecloud.com"]
+        },
+        {
             "github_id": "chanwit",
             "companies": [
                 {
@@ -18438,6 +18449,10 @@
         {
             "domains": ["siu.edu"],
             "company_name": "Southern Illinois University"
+        },
+        {
+            "domains": ["skyscapecloud.com"],
+            "company_name": "Skyscape Cloud Services Ltd"
         },
         {
             "domains": ["snabb.co"],
