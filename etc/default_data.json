@@ -1270,6 +1270,18 @@
             "emails": ["jesse@gigantor.local", "jesse@aire.local", "anotherjesse@gmail.com"]
         },
         {
+            "launchpad_id": "ansreas",
+            "gerrit_id": "florath",
+            "companies": [
+                {
+                    "company_name": "flonatel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Andreas Florath",
+            "emails": ["andreas@florath.net"]
+        },
+        {
             "launchpad_id": "anteaya",
             "companies": [
                 {
