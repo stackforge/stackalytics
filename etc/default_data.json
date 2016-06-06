@@ -5045,6 +5045,18 @@
             "emails": ["edouard.thuleau@orange.com", "thuleau@gmail.com", "edouard.thuleau@cloudwatt.com", "edouard1.thuleau@orange.com"]
         },
         {
+            "launchpad_id": "ettore-simone",
+            "gerrit_id": "esimone",
+            "companies": [
+                {
+                    "company_name": "Alchemy Solutions Group",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ettore Simone",
+            "emails": ["ettore.simone@gmail.com", "ettore.simone@alchemy.solutions"]
+        },
+        {
             "launchpad_id": "everett-toews",
             "companies": [
                 {
