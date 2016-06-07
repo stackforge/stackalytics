@@ -12095,6 +12095,10 @@
             "companies": [
                 {
                     "company_name": "VMware",
+                    "end_date": "2015-Sep-4"
+                },
+                {
+                    "company_name": ""salesforce.com",
                     "end_date": null
                 }
             ],
