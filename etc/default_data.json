@@ -9280,6 +9280,18 @@
             "emails": ["lisa.smith@intel.com", "lisasmith@example.com"]
         },
         {
+            "launchpad_id": "justin-wilson",
+            "gerrit_id": "waj334",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Justin Wilson",
+            "emails": ["justin.wilson@intel.com"]
+        },
+        {
             "launchpad_id": "jwy",
             "companies": [
                 {
