@@ -684,6 +684,18 @@
             "user_name": "Alexey Khivin",
             "emails": ["akhivin@mirantis.com", "akhivin@gmail.com"]
         },
+	{
+            "lauchpad_id": "akilan-pughazhendi"
+            "gerrit_id": "AkilP"
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ]
+            "user_name": "Akil Pughazhendi"
+            "emails": akilan.pughazhendi@intel.com
+        },
         {
             "launchpad_id": "akomarek",
             "gerrit_id": "cznewt",
@@ -697,7 +709,6 @@
             "emails": ["ales.komarek@tcpcloud.eu", "ales.komarek@newt.cz", "mail@newt.cz", "a.komarek@tcpcloud.eu"]
         },
         {
-
             "launchpad_id": "akscram",
             "companies": [
                 {
