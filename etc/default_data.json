@@ -10893,6 +10893,17 @@
             "emails": ["mvoelker@cisco.com", "mvoelker@vmware.com", "markvoelker@gmail.com"]
         },
         {
+            "launchpad_id": "michael-w-turvey",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Mike Turvey",
+            "emails": ["michael.w.turvey@intel.com"]
+        },
+        {
             "launchpad_id": "mzawadzki-f",
             "companies": [
                 {
