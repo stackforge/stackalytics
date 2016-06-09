@@ -1750,17 +1750,17 @@
             "emails": ["aurlapova@mirantis.com", "a.urlapova@gmail.com"]
         },
         {
-           "launchpad_id": "aurora-mendiola",
-           "gerrit_id": "amendiola",
-           "companies": [
-               {
-                   "company_name": "Rackspace",
-                   "end_date": null
-               }
-           ],
-           "user_name": "Aurora Mendiola",
-           "emails": ["aurora.mendiola@rackspace.com"]
-        }, 
+            "launchpad_id": "aurora-mendiola",
+            "gerrit_id": "amendiola",
+            "companies": [
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Aurora Mendiola",
+            "emails": ["aurora.mendiola@rackspace.com"]
+        },
         {
             "launchpad_id": "avelar-richard",
             "companies": [
