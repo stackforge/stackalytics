@@ -17511,7 +17511,19 @@
             ],
             "user_name": "Zhongyue Luo",
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
-        }
+        },
+        {
+            "launchpad_id": "alok-kumar-maurya",
+            "companies": [
+                {
+                    "company_name": "HPE",
+                    "end_date": null
+                },
+            ],
+            "user_name": "Alok Kumar Maurya",
+            "emails": ["alok-kumar.maurya@hp.com", "alok-kumar.maurya@hpe.com"]
+        },
+
     ],
     "companies": [
         {
