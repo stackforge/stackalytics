@@ -278,6 +278,17 @@
             "emails": ["abhishek.lekshmanan@gmail.com","abhishek.lekshmanan@ril.com"]
         },
         {
+            "launchpad_id": "liminliu",
+            "companies": [
+                {
+                    "company_name": "CertusNet",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Liu Li Min",
+            "emails": ["liulm@certusnet.com.cn","larrylimin@126.com"]
+        },
+        {
             "launchpad_id": "abitha",
             "companies": [
                 {
