@@ -86,10 +86,11 @@ def _retrieve_project_list_from_gerrit(project_source):
 
     git_base_uri = project_source.get('git_base_uri') or cfg.CONF.git_base_uri
 
+    suffix = ".git" if git_base_uri.startswith("git:") else ""
     for repo in git_repos:
         (org, name) = repo.split('/')
-        repo_uri = '%(git_base_uri)s/%(repo)s.git' % dict(
-            git_base_uri=git_base_uri, repo=repo)
+        repo_uri = '%(git_base_uri)s/%(repo)s%(suffix)s' % dict(
+            git_base_uri=git_base_uri, repo=repo, suffix=suffix)
         yield {
             'branches': ['master'],
             'module': name,
