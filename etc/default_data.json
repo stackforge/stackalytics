@@ -2096,6 +2096,18 @@
             "emails": ["bharath_ves@hotmail.com", "bharath.thiruveedula@imaginea.com"]
         },
         {
+            "launchpad_id": "aneesh-e",
+            "gerrit_id": "coderfish",
+            "companies": [
+                {
+                    "company_name": "Imaginea Technologies Inc.",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Aneesh Kumar",
+            "emails": ["aneeshep@hotmail.com", "aneesh.e@imaginea.com"]
+        },
+        {
             "launchpad_id": "bharathkrishna",
             "gerrit_id": "bharathkrishna",
             "companies": [
