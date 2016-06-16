@@ -12366,6 +12366,17 @@
             "emails": ["paul@openstack.org", "paul@substation9.com", "pvoccio@castor.local", "paul.voccio@rackspace.com"]
         },
         {
+            "launchpad_id": "pengwenwu2008",
+            "companies": [
+                {
+                    "company_name": "CertusNet",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Wenwu",
+            "emails": ["pengww@certusnet.com.cn", "pengwenwu2008@163.com"]
+        },
+        {
             "launchpad_id": "qunyingran",
             "companies": [
                 {
