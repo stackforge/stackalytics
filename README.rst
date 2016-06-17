@@ -23,3 +23,4 @@ Project Info
  * Bugs: https://bugs.launchpad.net/stackalytics
  * Code Reviews: https://review.openstack.org/#q,status:open+project:openstack/stackalytics,n,z
  * IRC: #openstack-stackalytics at freenode
+test
