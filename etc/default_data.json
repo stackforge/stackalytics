@@ -6274,6 +6274,17 @@
             "emails": ["h-aramaki@netone.co.jp"]
         },
         {
+            "launchpad_id": "hanchao-v",
+            "companies": [
+                {
+                    "company_name": "ISCAS",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Han Chao",
+            "emails": ["hanchao@iscas.ac.cn"]
+        },
+        {
             "launchpad_id": "hanjiabao",
             "companies": [
                 {
