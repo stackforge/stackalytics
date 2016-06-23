@@ -4968,6 +4968,17 @@
             "emails": ["dzuelke@gmail.com"]
         },
         {
+            "launchpad_id": "david-zhw1982",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "wei.zhang",
+            "emails": ["David_zhw1982@163.com","zhang.wei57@zte.com.cn"]
+        },
+        {
             "launchpad_id": "e0ne",
             "companies": [
                 {
