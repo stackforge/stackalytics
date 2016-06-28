@@ -1,6 +1,17 @@
 {
     "users": [
         {
+            "launchpad_id": "578043796-b",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "gengchc2014",
+            "emails": ["578043796@qq.com","geng.changcai2@zte.com.cn"]
+        },
+        {
             "launchpad_id": "0-doug",
             "companies": [
                 {
