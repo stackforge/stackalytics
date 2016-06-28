@@ -17613,6 +17613,17 @@
             "emails": ["asmile.yy@gmail.com", "yao.yuan3@zte.com.cn"]
         },
         {
+            "launchpad_id": "su-zhengwei",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "su-zhengwei",
+            "emails": ["su.zhengwei@zte.com.cn"]
+        },
+        {
             "launchpad_id": "yapengwu",
             "companies": [
                 {
