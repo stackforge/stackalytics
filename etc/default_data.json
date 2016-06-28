@@ -11140,6 +11140,18 @@
             "emails": ["matthewm@boedicker.org"]
         },
         {
+            "launchpad_id": "wangjianhe",
+            "companies": [
+                {
+                    "company_name": "Chinac",
+                    "end_date": null
+                }
+            ],
+            "user_name": "wangjianhe-chinac",
+            "emails": ["wangjianhe@chinac.com"]
+
+        },
+        {
             "launchpad_id": "mmohan-9",
             "gerrit_id": "snmohan83",
             "github_id": "snmohan83",
