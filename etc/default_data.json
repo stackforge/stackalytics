@@ -6467,6 +6467,17 @@
             "emails": ["guy.kim088@gmail.com"]
         },
         {
+            "launchpad_id": "HZhang",
+            "companies": [
+                {
+                    "company_name": "Chinac",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Zhang Huan",
+            "emails": ["zhanghuan@chinac.com"]
+        },
+        {
             "launchpad_id": "h-aramaki",
             "gerrit_id": "haramaki",
             "companies": [
@@ -7049,6 +7060,17 @@
             ],
             "user_name": "Robert Clark",
             "emails": ["hyakuhei@gmail.com", "robert.clark@hp.com", "robert.clark@hpe.com"]
+        },
+        {
+            "launchpad_id": "HZhang",
+            "companies": [
+                {
+                    "company_name": "Chinac",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Zhang Huan",
+            "emails": ["zhanghuan@chinac.com"]
         },
         {
             "launchpad_id": "i-kumagai",
