@@ -7051,6 +7051,17 @@
             "emails": ["hyakuhei@gmail.com", "robert.clark@hp.com", "robert.clark@hpe.com"]
         },
         {
+            "launchpad_id": "HZhang",
+            "companies": [
+                {
+                    "company_name": "Chinac",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Zhang Huan",
+            "emails": ["zhanghuan@chinac.com"]
+        },
+        {
             "launchpad_id": "i-kumagai",
             "gerrit_id": "kumagai19o",
             "companies": [
