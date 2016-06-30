@@ -13217,7 +13217,7 @@
                 }
             ],
             "user_name": "Harry Zhang",
-            "emails": ["resouer@163.com", "harryzhang@zju.edu.cn", "resouer@gmail.com"]
+            "emails": ["resouer@163.com", "harryzhang@zju.edu.cn","harryz@hyper.sh", "resouer@gmail.com"]
         },
         {
             "launchpad_id": "retr0h",
@@ -20020,6 +20020,10 @@
             "company_name": "Zhejiang University"
         },
         {
+            "domains": ["hyper.sh"],
+            "company_name": "HyperHQ"
+        },
+        {
             "domains": ["zmanda.com"],
             "company_name": "Zmanda"
         },
@@ -21198,8 +21202,23 @@
         },
         {
             "module": "kubernetes",
-            "organization": "googlecloudplatform",
-            "uri": "https://github.com/googlecloudplatform/kubernetes.git"
+            "organization": "kubernetes",
+            "uri": "https://github.com/kubernetes/kubernetes.git"
+        },
+        {
+            "module": "kubernetes.github.io",
+            "organization": "kubernetes",
+            "uri": "https://github.com/kubernetes/kubernetes.github.io.git"
+        },
+        {
+            "module": "frakti",
+            "organization": "kubernetes",
+            "uri": "https://github.com/kubernetes/frakti.git"
+        },
+        {
+            "module": "heapster",
+            "organization": "kubernetes",
+            "uri": "https://github.com/kubernetes/heapster.git"
         },
         {
             "module": "jcloud",
