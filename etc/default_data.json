@@ -7162,6 +7162,18 @@
             "emails": ["igornsa@lsd.ufcg.edu.br", "igornatanaelsousa@gmail.com"]
         },
         {
+            "launchpad_id": "igormilovanovic",
+            "gerrit_id": "igor",
+            "companies": [
+                {
+                    "company_name": "Ammeon Ltd",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Igor Milovanović",
+            "emails": ["igor.milovanovic@ammeon.com"]
+        },
+        {
             "launchpad_id": "igordcard",
             "companies": [
                 {
