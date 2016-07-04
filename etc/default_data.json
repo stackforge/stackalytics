@@ -1754,6 +1754,18 @@
            "emails": ["ashu@coolsvap.net"]
         },
         {
+            "launchpad_id": "mca-ashu4",
+            "gerrit_id": "ashu_mishra",
+            "companies": [
+                {
+                    "company_name": "One Convergence",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ashutosh Mishra",
+            "emails": ["mca.ashu4@gmail.com", "ashutosh.m2@gmail.com", "ashutosh.mishra@oneconvergence.com"]
+        },
+        {
            "launchpad_id": "ashwin-agate",
            "gerrit_id": "agateaaa",
            "companies": [
