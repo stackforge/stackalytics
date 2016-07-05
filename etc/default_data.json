@@ -18414,6 +18414,17 @@
             "emails": ["zhu.rong@99cloud.net", "aaronzhu1020@gmail.com"]
         },
         {
+            "launchpad_id": "maoshuai",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Shuai Mao ",
+            "emails": ["fwsakura@163.com","mao.shuai@h3c.com"]
+        },
+        {
             "launchpad_id": "zhugaoxiao",
             "companies": [
                 {
