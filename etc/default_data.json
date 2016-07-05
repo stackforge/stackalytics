@@ -18826,6 +18826,10 @@
             "aliases": ["ChinaNetCenter Cloud", "ChinaNetCenter CDN", "ChinaNetCenter IDC", "China Cache", "ChinaNetCenter USA"]
         },
         {
+            "domains": ["unionpay.com"],
+            "company_name": "China UnionPay"
+        },
+        {
             "domains": ["cienet.com.cn"],
             "company_name": "CIeNET Technologies"
         },
