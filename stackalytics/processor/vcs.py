@@ -102,8 +102,8 @@ class Git(Vcs):
         except sh.ErrorReturnCode as e:
             LOG.error('Unable to checkout branch %(branch)s from repo '
                       '%(uri)s. Ignore it',
-                      {'branch': branch, 'uri': self.repo['uri']})
-            LOG.exception(e)
+                      {'branch': branch, 'uri': self.repo['uri']},
+                      exc_info=True)
             return False
 
     def fetch(self):
@@ -116,8 +116,7 @@ class Git(Vcs):
                     sh.git('config', '--get', 'remote.origin.url')).strip()
             except sh.ErrorReturnCode as e:
                 LOG.error('Unable to get config for git repo %s. Ignore it',
-                          self.repo['uri'])
-                LOG.exception(e)
+                          self.repo['uri'], exc_info=True)
                 return {}
 
             if uri != self.repo['uri']:
@@ -133,16 +132,14 @@ class Git(Vcs):
                 os.chdir(self.folder)
             except sh.ErrorReturnCode as e:
                 LOG.error('Unable to clone git repo %s. Ignore it',
-                          self.repo['uri'])
-                LOG.exception(e)
+                          self.repo['uri'], exc_info=True)
         else:
             os.chdir(self.folder)
             try:
                 sh.git('fetch')
             except sh.ErrorReturnCode as e:
                 LOG.error('Unable to fetch git repo %s. Ignore it',
-                          self.repo['uri'])
-                LOG.exception(e)
+                          self.repo['uri'], exc_info=True)
 
         return self._get_release_index()
 
@@ -175,8 +172,7 @@ class Git(Vcs):
                         self.release_index[commit_id.strip()] = release_name
                 except sh.ErrorReturnCode as e:
                     LOG.error('Unable to get log of git repo %s. Ignore it',
-                              self.repo['uri'])
-                    LOG.exception(e)
+                              self.repo['uri'], exc_info=True)
         return self.release_index
 
     def log(self, branch, head_commit_id):
@@ -196,8 +192,7 @@ class Git(Vcs):
                             _decode_errors='ignore', _encoding='utf8')
         except sh.ErrorReturnCode as e:
             LOG.error('Unable to get log of git repo %s. Ignore it',
-                      self.repo['uri'])
-            LOG.exception(e)
+                      self.repo['uri'], exc_info=True)
             return
 
         for rec in re.finditer(GIT_LOG_PATTERN, six.text_type(output)):
@@ -288,8 +283,7 @@ class Git(Vcs):
             return str(sh.git('rev-parse', 'HEAD')).strip()
         except sh.ErrorReturnCode as e:
             LOG.error('Unable to get HEAD for git repo %s. Ignore it',
-                      self.repo['uri'])
-            LOG.exception(e)
+                      self.repo['uri'], exc_info=True)
 
         return None
 
