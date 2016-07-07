@@ -10329,6 +10329,19 @@
             "user_name": "Shuai Mao ",
             "emails": ["fwsakura@163.com"]
         },
+	{
+            "launchpad_id": “mdieder”,
+            "gerrit_id": “marcelodieder”,
+            "zanata_id": "marcelodieder",
+            "companies": [
+                {
+                    "company_name": "Getnet",
+                    "end_date": null
+                }
+            ],
+            "user_name": “Marcelo Dieder“,
+            "emails": [“marcelodieder@gmail.com”]
+        },
         {
            "launchpad_id": "marcus-g-williams",
            "gerrit_id": "mgkwill",
