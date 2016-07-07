@@ -2225,11 +2225,22 @@
             "companies": [
                 {
                     "company_name": "Blue Box",
-                    "end_date": null
+                    "end_date": "2016-May-31"
                 }
             ],
             "user_name": "Jesse Proudman",
             "emails": ["jproudman@bluebox.net"]
+        },
+        {
+            "launchpad_id": "jesseproudman",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": ""
+                }
+            ],
+            "user_name": "Jesse Proudman",
+            "emails": ["j.proudman@us.ibm.com"]
         },
         {
             "launchpad_id": "bmathews-l",
