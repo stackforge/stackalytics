@@ -2600,6 +2600,19 @@
             "emails": ["carl@ecbaldwin.net", "carl.baldwin@hp.com", "carl.baldwin@hpe.com"]
         },
         {
+            "launchpad_id": "career-thnam",
+            "gerrit_id": "career-thnam",
+            "zanata_id": "thnam",
+            "companies": [
+                {
+                    "company_name": "*independent",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Taekho Nam",
+            "emails": ["career.thnam@gmail.com", "thnam@smartx.kr"]
+        },
+        {
             "launchpad_id": "cassandraburnias",
             "gerrit_id": "cassandraburnias",
             "companies": [
