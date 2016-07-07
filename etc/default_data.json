@@ -10818,6 +10818,13 @@
             "emails": ["mca.ashu4@gmail.com", "ashutosh.m2@gmail.com", "ashutosh.mishra@oneconvergence.com"]
         },
         {
+            "launchpad_id": "mdieder",
+            "gerrit_id": "marcelodieder",
+            "zanata_id": "marcelodieder",
+            "user_name": "Marcelo Dieder",
+            "emails": ["marcelodieder@gmail.com"]
+        },
+        {
             "launchpad_id": "mdrnstm",
             "companies": [
                 {
