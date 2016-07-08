@@ -1,6 +1,17 @@
 {
     "users": [
         {
+            "launchpad_id": "gherlein",
+            "companies": [
+                {
+                    "company_name": "Cisco Systems",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Greg Herlein",
+            "emails": ["gherlein@herlein.com", "greherle@cisco.com"]
+        },
+        {
             "launchpad_id": "0-doug",
             "companies": [
                 {
