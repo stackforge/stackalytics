@@ -6767,6 +6767,17 @@
             "emails": ["henrique@lsd.ufcg.edu.br", "henriquecostatruta@gmail.com"]
         },
         {
+            "launchpad_id": "gherlein",
+            "companies": [
+                {
+                    "company_name": "Cisco Systems",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Greg Herlein",
+            "emails": ["gherlein@herlein.com", "greherle@cisco.com"]
+        },
+        {
             "launchpad_id": "heut2008",
             "companies": [
                 {
