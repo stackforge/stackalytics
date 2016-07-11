@@ -309,6 +309,17 @@
             "emails": ["abitha.palaniappan@gmail.com", "abitha.palaniappan@hp.com", "abitha.palaniappan@hpe.com"]
         },
         {
+            "launchpad_id": "abhishek-g-m",
+            "companies": [
+                {
+                    "company_name": "HPE",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Abhishek G M",
+            "emails": ["abhishek.gm@hpe.com", "abhishek.g-m@hp.com"]
+        },
+        {
             "launchpad_id": "academicgareth",
             "companies": [
                 {
