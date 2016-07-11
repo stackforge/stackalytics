@@ -102,6 +102,17 @@
             "user_name": "LuBin",
             "emails": ["lu.bin2@zte.com.cn"]
         },
+	 {
+            "launchpad_id": "506067684-5",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "sunanchen",
+            "emails": [ "506067684@qq.com", "kf.sunanchen@h3c.com","sunanchen0122@gmail.com"]
+        },
         {
             "launchpad_id": "6-morgan",
             "companies": [
@@ -3651,6 +3662,17 @@
             "user_name": "Chuck Thier",
             "emails": ["cthier@gmail.com"]
         },
+	 {
+            "launchpad_id": "cuiyidong",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "cuiyidong",
+            "emails": ["18345155632@163.com", "kf.cuiyidong@h3c.com"]
+        },
         {
             "launchpad_id": "cweidenkeller",
             "companies": [
@@ -6553,6 +6575,17 @@
             ],
             "user_name": "Hiroki Aramaki",
             "emails": ["h-aramaki@netone.co.jp"]
+        },
+	 {
+            "launchpad_id": "h3chanchao",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "openstackhc",
+            "emails": ["409007319@qq.com", "han.chaoB@h3c.com"]
         },
         {
             "launchpad_id": "hanchao-v",
@@ -9868,6 +9901,17 @@
             ],
             "user_name": "Martin Roy",
             "emails": ["lindycoder@gmail.com", "mroy@iweb.com", "martin.roy@internap.com"]
+        },
+	{
+            "launchpad_id": "linlin",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "linlin",
+            "emails": [ "469923498@qq.com", "kf.linlin@h3c.com"]
         },
         {
             "launchpad_id": "linuxjedi",
@@ -17813,6 +17857,17 @@
             ],
             "user_name": "Xiang Li",
             "emails": ["xiangli.cs@gmail.com"]
+        },
+	{
+            "launchpad_id": "xiangbinbin",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "billxiang",
+            "emails": ["m13250816269@163.com", "kf.xiangbinbin@h3c.com"]
         },
         {
             "launchpad_id": "xianghui",
