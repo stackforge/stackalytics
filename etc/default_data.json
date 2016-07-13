@@ -9443,6 +9443,18 @@
             "user_name": "Kowshik Prakasam",
             "emails": ["kowshik@gmail.com"]
         },
+     {
+           "launchpad_id": "kowsalya",
+           "gerrit_id": "kowsalya",
+           "companies": [
+               {
+                   "company_name": "walmart",
+                   "end_date": null
+               }
+           ],
+           "user_name": "kowsalya palaniappan",
+           "emails": ["kowsalya.palaniappan@walamrt.com","kousalya.mkousi@gmail.com"]
+       },
         {
             "launchpad_id": "kozhukalov",
             "user_name": "Vladimir Kozhukalov",
