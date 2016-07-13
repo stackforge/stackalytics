@@ -103,17 +103,6 @@
             "emails": ["lu.bin2@zte.com.cn"]
         },
         {
-            "launchpad_id": "506067684-5",
-            "companies": [
-                {
-                    "company_name": "H3C",
-                    "end_date": null
-                }
-            ],
-            "user_name": "sunanchen",
-            "emails": [ "506067684@qq.com", "kf.sunanchen@h3c.com", "sunanchen0122@gmail.com"]
-        },
-        {
             "launchpad_id": "6-morgan",
             "companies": [
                 {
@@ -6577,7 +6566,7 @@
             "emails": ["h-aramaki@netone.co.jp"]
         },
         {
-            "launchpad_id": "h3chanchao",
+            "launchpad_id": "h3c-hanchao",
             "companies": [
                 {
                     "company_name": "H3C",
@@ -15917,6 +15906,17 @@
             ],
             "user_name": "Sun Jing",
             "emails": ["sun.jing22@zte.com.cn", "jingsun59@163.com"]
+        },
+        {
+            "launchpad_id": "sunanchen",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "sunanchen",
+            "emails": [ "506067684@qq.com", "kf.sunanchen@h3c.com", "sunanchen0122@gmail.com"]
         },
         {
             "launchpad_id": "sungjin",
