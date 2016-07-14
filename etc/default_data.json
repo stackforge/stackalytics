@@ -9289,6 +9289,18 @@
             "user_name": "Kevin Conway",
             "emails": ["kevinjacobconway@gmail.com"]
         },
+        { 
+            "launchpad_id": "knangia",
+            "gerrit_id": "khanaknangia",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Khanak Nangia",
+            "emails": ["khanak.nangia17@gmail.com", "khanak.nangia@intel.com"]
+        },
         {
             "launchpad_id": "khussein",
             "companies": [
