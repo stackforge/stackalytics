@@ -8697,7 +8697,19 @@
             ],
             "user_name": "Joshua Trivette",
             "emails": ["joshuatrivette@gmail.com"]
-        },
+	},
+	{
+	    "launchpad_id": "jovon-mccloud",
+	    "gerrit_id": "JovonMcc",
+	    "companies": [
+		{
+		    "company_name": "Intel",
+		    "end_date": null,
+		}
+	    ],
+	    "user_name": "Jovon McCloud",
+	    "emails": ["jovon.mccloud@intel.com"]
+	},
         {
             "launchpad_id": "jpena-c",
             "gerrit_id": "jpena",
