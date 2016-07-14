@@ -3646,6 +3646,17 @@
             "emails": ["cristian.schwede@enovance.com", "cschwede@redhat.com"]
         },
         {
+            "launchpad_id": "csravelar",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Richard Avelar",
+            "emails": ["csravelar@gmail.com", "richard.avelar@intel.com"]
+        },
+        {
             "launchpad_id": "cthiel-suse",
             "companies": [
                 {
