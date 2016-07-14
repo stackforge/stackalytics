@@ -4207,6 +4207,17 @@
             ],
             "emails": ["dborodaenko@mirantis.com", "angdraug@gmail.com"]
         },
+	{
+	    "launchpad_id": "dbyellap",
+	    "user_name": "Divya Yellapragada",
+	    "companies": [
+		{
+		     "company_name": "Intel",
+		     "end_date": null
+		}
+	    ],
+	    "emails": ["divya.b.yellapragada@intel.com", "yellapra@usc.edu"]
+	},
         {
             "launchpad_id": "dcwangmit01",
             "user_name": "David C Wang",
