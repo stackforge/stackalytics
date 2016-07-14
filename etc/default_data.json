@@ -270,21 +270,6 @@
             "emails": ["abhijeet.malawade@gmail.com", "abhijeet.malawade@nttdata.com"]
         },
         {
-            "launchpad_id": "abhishek-g-m",
-            "companies": [
-                {
-                    "company_name": "HP",
-                    "end_date": "2015-Oct-31"
-                },
-                {
-                    "company_name": "HPE",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Abhishek G M",
-            "emails": ["abhishek.gm@hpe.com", "abhishek.g-m@hp.com"]
-        },
-        {
             "launchpad_id": "abhishek-srivastav",
             "github_id": "srivastav-abhishek",
             "gerrit_id": "Abhishek",
@@ -702,18 +687,6 @@
             ],
             "user_name": "Ajay Bajaj",
             "emails": ["akbajaj@hp.com", "akbajaj@hpe.com"]
-        },
-        {
-             "launchpad_id": "akhila-kishore",
-             "gerrit_id": "kishoreakhila",
-             "companies": [
-                 {
-                     "company_name": "Intel",
-                     "end_date": null
-                 }
-             ],
-            "user_name": "Akhila Kishore",
-            "emails": ["akhila.kishore@intel.com"]
         },
         {
              "launchpad_id": "akhivin",
@@ -2270,6 +2243,17 @@
             "emails": ["blp@nicira.com", "blp@ovn.org"]
         },
         {
+            "launchpad_id": "blueboxjesse",
+            "companies": [
+                {
+                    "company_name": "Blue Box",
+                    "end_date": "2016-May-31"
+                }
+            ],
+            "user_name": "Jesse Proudman",
+            "emails": ["jproudman@bluebox.net"]
+        },
+        {
             "launchpad_id": "bmathews-l",
             "companies": [
                 {
@@ -3181,10 +3165,6 @@
                 },
                 {
                     "company_name": "Verilume",
-                    "end_date": "2016-Mar-04"
-                },
-                {
-                    "company_name": "Intralinks",
                     "end_date": null
                 }
             ],
@@ -3670,6 +3650,17 @@
             ],
             "user_name": "Chuck Thier",
             "emails": ["cthier@gmail.com"]
+        },
+        {
+            "launchpad_id": "cuiyidong",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "cuiyidong",
+            "emails": ["18345155632@163.com", "kf.cuiyidong@h3c.com"]
         },
         {
             "launchpad_id": "cweidenkeller",
@@ -6575,6 +6566,17 @@
             "emails": ["h-aramaki@netone.co.jp"]
         },
         {
+            "launchpad_id": "h3c-hanchao",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "openstackhc",
+            "emails": ["409007319@qq.com", "han.chaob@h3c.com"]
+        },
+        {
             "launchpad_id": "hanchao-v",
             "companies": [
                 {
@@ -7151,10 +7153,6 @@
                 },
                 {
                     "company_name": "HPE",
-                    "end_date": "2016-Apr-01"
-                },
-                {
-                    "company_name": "IBM",
                     "end_date": null
                 }
             ],
@@ -7964,17 +7962,6 @@
             "emails": ["jean-philippe.evrard@rackspace.co.uk", "jean-philippe.evrard@belnet.be", "jean-philippe@evrard.me"]
         },
         {
-            "launchpad_id": "jedwards20",
-            "companies": [
-                {
-                    "company_name": "Walmart",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Jared Edwards",
-            "emails": ["zamorano9@gmail.com", "jared.edwards@walmart.com"]
-        },
-        {
             "launchpad_id": "jeff-fischer",
             "companies": [
                 {
@@ -8055,16 +8042,12 @@
             "github_id": "blueboxjesse",
             "companies": [
                 {
-                    "company_name": "Blue Box",
-                    "end_date": "2016-May-31"
-                },
-                {
                     "company_name": "IBM",
                     "end_date": null
                 }
             ],
             "user_name": "Jesse Proudman",
-            "emails": ["j.proudman@us.ibm.com", "jproudman@bluebox.net", "jesse@jesseproudman.com"]
+            "emails": ["j.proudman@us.ibm.com"]
         },
         {
             "launchpad_id": "jesusaurus",
@@ -8501,15 +8484,11 @@
                 },
                 {
                     "company_name": "HPE",
-                    "end_date": "2016-Jun-17"
-                },
-                {
-                    "company_name": "Rackspace",
                     "end_date": null
                 }
             ],
             "user_name": "Michael Johnson",
-            "emails": ["johnsom@hp.com", "johnsomor@gmail.com", "michael.d.johnson@hpe.com", "michael.johnsonus@rackspace.com"]
+            "emails": ["johnsom@hp.com", "johnsomor@gmail.com", "michael.d.johnson@hpe.com"]
         },
         {
             "launchpad_id": "johnson-dantis",
@@ -9911,6 +9890,17 @@
             ],
             "user_name": "Martin Roy",
             "emails": ["lindycoder@gmail.com", "mroy@iweb.com", "martin.roy@internap.com"]
+        },
+        {
+            "launchpad_id": "linlin",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "linlin",
+            "emails": [ "469923498@qq.com", "kf.linlin@h3c.com"]
         },
         {
             "launchpad_id": "linuxjedi",
@@ -12122,10 +12112,6 @@
                 },
                 {
                     "company_name": "HPE",
-                    "end_date": "2016-Jul-11"
-                },
-                {
-                    "company_name": "Mirantis",
                     "end_date": null
                 }
             ],
@@ -13719,17 +13705,6 @@
             "emails": ["ruby.loo@intel.com", "opensrloo@gmail.com", "rloo@yahoo-inc.com", "rlooyahoo@gmail.com"]
         },
         {
-            "launchpad_id": "rltaylo",
-            "companies": [
-                {
-                    "company_name": "Walmart",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Bob Taylor",
-            "emails": ["robert.taylor@walmart.com", "robert.taylor@wal-mart.com", "robertt@pobox.com"]
-        },
-        {
             "launchpad_id": "rlucio",
             "companies": [
                 {
@@ -14010,7 +13985,7 @@
                 },
                 {
                     "company_name": "HPE",
-                    "end_date": "2015-Dec-05"
+                    "end_date": "2016-Dec-05"
                 },
                 {
                     "company_name": "Ericsson",
@@ -15933,6 +15908,17 @@
             "emails": ["sun.jing22@zte.com.cn", "jingsun59@163.com"]
         },
         {
+            "launchpad_id": "sunanchen",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "sunanchen",
+            "emails": [ "506067684@qq.com", "kf.sunanchen@h3c.com", "sunanchen0122@gmail.com"]
+        },
+        {
             "launchpad_id": "sungjin",
             "gerrit_id": "sungjin",
             "zanata_id": "ujuc",
@@ -17042,17 +17028,6 @@
             "emails": ["vbatts@gmail.com"]
         },
         {
-            "launchpad_id": "vdenisov",
-            "companies": [
-                {
-                    "company_name": "Mirantis",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Victor Denisov",
-            "emails": ["vdenisov@mirantis.com", "denisovenator@gmail.com"]
-        },
-        {
             "launchpad_id": "vedlad",
             "gerrit_id": "vedlad",
             "companies": [
@@ -17882,6 +17857,17 @@
             ],
             "user_name": "Xiang Li",
             "emails": ["xiangli.cs@gmail.com"]
+        },
+        {
+            "launchpad_id": "xiangbinbin",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "billxiang",
+            "emails": ["m13250816269@163.com", "kf.xiangbinbin@h3c.com"]
         },
         {
             "launchpad_id": "xianghui",
@@ -19616,10 +19602,6 @@
         {
             "domains": ["internap.com"],
             "company_name": "Internap"
-        },
-        {
-            "domains": ["intralinks.com"],
-            "company_name": "Intralinks"
         },
         {
             "domains": ["inwinstack.com"],
