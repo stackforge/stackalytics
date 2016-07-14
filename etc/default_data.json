@@ -6173,6 +6173,17 @@
             "emails": ["z-launchpad@brim.net", "gholt@rackspace.com"]
         },
         {
+            "launchpad_id": "ggrabo",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Grzegorz",
+            "emails": ["ggrabo@seznam.cz", "grzegorz.grabowski@intel.com"]
+        },
+        {
             "launchpad_id": "git-harry",
             "companies": [
                 {
