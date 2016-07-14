@@ -15860,6 +15860,18 @@
             "emails": ["strigazi@gmail.com", "spyridon.trigazis@cern.ch"]
         },
         {
+            "launchpad_id": "stephen-watson",
+            "gerrit_id": "swatson",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Stephen Watson",
+            "emails": ["stephen.watson@intel.com"]
+        },
+        {
             "launchpad_id": "stuart-mclaren",
             "gerrit_id": "stuart-mclaren",
             "companies": [
