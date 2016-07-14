@@ -14915,6 +14915,18 @@
             "user_name": "Shashirekha Gundur",
             "emails": ["shashirekha.j.gundur@intel.com", "shashi.j.gundur@gmail.com"]
         },
+	{
+	   "launchpad_id": "shasha.tavil",
+	   "gerrit_id": "shasha.tavil",
+           "comapnies": [
+                {
+                   "company_name": "Intel",
+                   "end_date": null
+                }
+           ],
+           "user_name": "Shashank Tavildar",
+           "emails": ["shashank.s.tavildar@intel.com"]
+        }
         {
             "launchpad_id": "shaunm-gnome",
             "companies": [
