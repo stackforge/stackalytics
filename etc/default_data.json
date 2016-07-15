@@ -19044,6 +19044,17 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+        {
+          "launchpad_id": "fang-he",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Fang He",
+            "emails": ["fang.he@h3c.com", "fang.he@hotmail.com"]
         }
     ],
     "companies": [
