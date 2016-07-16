@@ -17849,6 +17849,17 @@
             "emails": ["wytdahu@gmail.com", "wuyuting@awcloud.com"]
         },
         {
+            "launchpad_id": "wuyongpeng163",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Wu Yongpeng",
+            "emails": ["wuyongpeng163@163.com", "406461598@qq.com", "wu.yongpeng@h3c.com"]
+        },
+        {
            "launchpad_id": "xavpaice",
            "gerrit_id": "xavpaice",
            "companies": [
