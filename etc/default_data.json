@@ -18931,6 +18931,17 @@
             "emails": ["zhugaoxiao@gmail.com", "zhu.gaoxiao@h3c.com"]
         },
         {
+            "launchpad_id": "zhu-xuanlong",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Xuanlong Zhu",
+            "emails": ["zhu.xuanlong@zte.com.cn"]
+        },		
+        {
             "launchpad_id": "ziad-sawalha",
             "companies": [
                 {
