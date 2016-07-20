@@ -14611,6 +14611,17 @@
             "emails": ["shilla.saebi@gmail.com","shilla_saebi@cable.comcast.com"]
         },
         {
+            "launchpad_id": "zhu-shiping",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Shiping",
+            "emails": ["zhu.shiping@zte.com.cn"]
+        },
+        {
             "launchpad_id": "shiva-m",
             "companies": [
                 {
