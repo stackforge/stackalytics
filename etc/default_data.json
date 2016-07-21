@@ -9486,6 +9486,17 @@
             "emails": ["knikolla@bu.edu"]
         },
         {
+            "launchpad_id": "kohei.yoshikawa",
+            "companies": [
+                {
+                    "company_name": "MITSUBISHI",
+                    "end_date": null
+                }
+            ]
+            "user_name": "Kohei Yoshikawa",
+            "emails": ["yoshikawa-kohei@mdis.co.jp"]
+        },
+        {
             "launchpad_id": "kong",
             "gerrit_id": "kong",
             "companies": [
@@ -20065,6 +20076,11 @@
         {
             "domains": ["mit.edu"],
             "company_name": "MIT"
+        },
+        {
+            "domains": ["mitsubishielectric.co.jp", "mdis.co.jp"],
+            "company_name": "MITSUBISHI",
+            "aliases": ["MITSUBISHI ELECTRIC", "MITSUBISHI ELECTRIC INFORMATION SYSTEMS"]
         },
         {
             "domains": ["momentumsi.com"],
