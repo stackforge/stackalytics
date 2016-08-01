@@ -3379,6 +3379,17 @@
             "emails": ["cmsj@tenshu.net", "chjones@redhat.com", "cmsj@redhat.com"]
         },
         {
+            "launchpad_id": "coco-gao",
+            "companies": [
+                {
+                    "company_name": "Lenovo",
+                    "end_date": null
+                }
+            ],
+            "user_name": "coco-Gao",
+            "emails": ["419546439@qq.com", "gaojh4@lenovo.com"]
+        },
+        {
             "launchpad_id": "cody-somerville",
             "companies": [
                 {
@@ -4798,6 +4809,17 @@
             "emails": ["dolph.mathews@gmail.com", "dolph.mathews@rackspace.com"]
         },
         {
+            "launchpad_id": "dong-juan1",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "dongjuan",
+            "emails": ["dong.juan1@zte.com.cn"]
+        },
+        {
            "launchpad_id": "dong-wenshuai",
            "companies": [
                {
@@ -4883,7 +4905,7 @@
                 }
             ],
             "user_name": "LIU Yulong",
-            "emails": ["liuyulong@letv.com", "yulong@cloudcraft.cn", "dragon889@163.com"]
+            "emails": ["liuyulong@letv.com", "yulong@cloudcraft.cn", "dragon889@163.com", "liuyulong@le.com", "i@liuyulong.me"]
         },
         {
             "launchpad_id": "dreidellhasa",
@@ -5692,6 +5714,17 @@
             ],
             "user_name": "Mark Atwood",
             "emails": ["me@mark.atwood.name", "fallenpegasus@gmail.com", "mark.atwood@gmail.com", "matwood@redhat.com", "mark.atwood@hp.com", "mark.atwood@hpe.com"]
+        },
+        {
+            "launchpad_id": "fang-he",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Fang He",
+            "emails": ["fang.he@hotmail.com", "fang.he@h3c.com"]
         },
         {
             "launchpad_id": "fausto-marzi",
@@ -6623,6 +6656,17 @@
             ],
             "user_name": "Hiroki Aramaki",
             "emails": ["h-aramaki@netone.co.jp"]
+        },
+        {
+            "launchpad_id": "h3c-hanchao",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "openstackhc",
+            "emails": ["409007319@qq.com", "han.chaob@h3c.com"]
         },
         {
             "launchpad_id": "hanchao-v",
@@ -9945,6 +9989,18 @@
             "emails": ["robertc@robertcollins.net", "rbtcollins@hp.com", "rbtcollins@hpe.com"]
         },
         {
+            "launchpad_id": "lijing",
+            "gerrit_id":"lijing",
+            "companies": [
+                {
+                    "company_name": "GohighSec",
+                    "end_date": null
+                }
+            ],
+            "user_name": "lijing",
+            "emails": ["lijing@gohighsec.com"]
+        },
+        {
             "launchpad_id": "liminliu",
             "companies": [
                 {
@@ -9984,6 +10040,19 @@
             ],
             "user_name": "Martin Roy",
             "emails": ["lindycoder@gmail.com", "mroy@iweb.com", "martin.roy@internap.com"]
+        },
+        {
+            "launchpad_id": "linlin",
+            "gerrit_id": "linlin",
+            "zanata_id": "linlin",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "linlin",
+            "emails": ["469923498@qq.com", "kf.linlin@h3c.com"]
         },
         {
             "launchpad_id": "linuxjedi",
@@ -11534,6 +11603,18 @@
             "emails": ["ivarlazzaro@gmail.com"]
         },
         {
+            "launchpad_id": "mmalik4",
+            "gerrit_id": "mmalik4",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Mohit Malik",
+            "emails": ["mohit.malik@intel.com"]
+        },
+        {
             "launchpad_id": "mmasaki",
             "companies": [
                 {
@@ -12002,6 +12083,17 @@
             ],
             "user_name": "Nermina Miller",
             "emails": ["nerminamiller@gmail.com"]
+        },
+        {
+            "launchpad_id": "newgoliath",
+            "companies": [
+                {
+                    "company_name": "Dell",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Judd Maltin",
+            "emails": ["judd_maltin@dell.com", "judd@newgoliath.com"]
         },
         {
             "launchpad_id": "nfedotov",
@@ -13310,6 +13402,22 @@
             "emails": ["raildo@lsd.ufcg.edu.br"]
         },
         {
+            "launchpad_id": "rajasi-kulkarni",
+            "gerrit_id": "RajasiKulkarni",
+            "companies": [
+                {
+                    "company_name": "Persistent Systems",
+                    "end_date": "2016-Jan-08"
+                },
+                {
+                    "company_name": "*independent",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Rajasi Kulkarni",
+            "emails": ["rajasikulkarni18@gmail.com"]
+        },
+        {
             "launchpad_id": "rajdeepd",
             "companies": [
                 {
@@ -13789,6 +13897,17 @@
             ],
             "user_name": "Robert Kukura",
             "emails": ["kukura@noironetworks.com","rkukura@redhat.com"]
+        },
+        {
+            "launchpad_id": "rkumar-b",
+            "companies": [
+                {
+                    "company_name": "Nimble Storage",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Raunak Kumar",
+            "emails": ["rkumar@nimblestorage.com", "raunak.kumar@nimblestorage.com"]
         },
         {
             "launchpad_id": "rlane",
@@ -15663,6 +15782,17 @@
             "emails": ["neutron@zte.com.cn"]
         },
         {
+             "launchpad_id": "sonia-ghanekar",
+            "companies": [
+                {
+                    "company_name": "Nimble Storage",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Sonia Ghanekar",
+            "emails": ["sonia.ghanekar@nimblestorage.com"]
+        },
+        {
             "launchpad_id": "sonu-sudhakaran",
             "gerrit_id": "sonu",
             "companies": [
@@ -15969,6 +16099,10 @@
                 {
                     "company_name": "HPE",
                     "end_date": "2016-Jun-24"
+                },
+                {
+                    "company_name": "SUSE",
+                    "end_date": null
                 }
             ],
             "user_name": "Steve Kowalik",
@@ -16011,6 +16145,17 @@
             ],
             "user_name": "Stuart McLaren",
             "emails": ["stuart.mclaren@hp.com", "stuart.mclaren@hpe.com"]
+        },
+        {
+            "launchpad_id": "su-zhengwei",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "su-zhengwei",
+            "emails": ["su.zhengwei@zte.com.cn"]
         },
         {
             "launchpad_id": "subbu",
@@ -16068,6 +16213,17 @@
             ],
             "user_name": "Sun Jing",
             "emails": ["sun.jing22@zte.com.cn", "jingsun59@163.com"]
+        },
+        {
+            "launchpad_id": "sunanchen",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "sunanchen",
+            "emails": ["sunanchen0122@gmail.com", "kf.sunanchen@h3c.com", "506067684@qq.com"]
         },
         {
             "launchpad_id": "sungjin",
@@ -16788,6 +16944,17 @@
             ],
             "user_name": "Tom Pollard",
             "emails": ["tom.pollard@codethink.co.uk", "tom_pollard@hotmail.co.uk"]
+        },
+        {
+            "launchpad_id": "tomjosekal",
+            "companies": [
+                {
+                    "company_name": "Walmart",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Tom Jose Kalapura",
+            "emails": ["tomjosekal@gmail.com", "tkalapura@walmartlabs.com", "tkalapura@walmart.com"]
         },
         {
             "launchpad_id": "torgomatic",
@@ -17677,6 +17844,8 @@
         },
         {
             "launchpad_id": "wang-junjie",
+            "gerrit_id": "wang-junjie",
+            "zanata_id": "petro",
             "companies": [
                 {
                     "company_name": "H3C",
@@ -17974,6 +18143,17 @@
             "emails": ["wujun@awcloud.com"]
         },
         {
+            "launchpad_id": "wuyongpeng163",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Wu Yongpeng",
+            "emails": ["wuyongpeng163@163.com", "wu.yongpeng@h3c.com"]
+        },
+        {
             "launchpad_id": "wuyuting",
             "companies": [
                 {
@@ -18056,6 +18236,22 @@
             ],
             "user_name": "xiaobo698745",
             "emails": ["xiaobo@awcloud.com"]
+        },
+        {
+            "launchpad_id": "xiaohhui",
+            "gerrit_id": "HongHuiXiao",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": "2016-Jul-22"
+                },
+                {
+                    "company_name": "Huawei",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Hong Hui Xiao",
+            "emails": ["honghui_xiao@yeah.net", "xiaohhui123@gmail.com", "xiaohonghui@huawei.com"]
         },
         {
             "launchpad_id": "xinze",
@@ -18719,6 +18915,17 @@
             "emails": ["zhangjl@awcloud.com", "zhangjl_cn@qq.com"]
         },
         {
+            "launchpad_id": "zhangjianfeng",
+            "companies": [
+                {
+                    "company_name": "Chinac",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhangjianfeng",
+            "emails": ["kill51216@163.com", "zhangjianfeng@chinac.com"]
+        },
+        {
             "launchpad_id": "zhangleiqiang",
             "companies": [
                 {
@@ -18918,6 +19125,17 @@
             ],
             "user_name": "zhu.rong",
             "emails": ["zhu.rong@99cloud.net", "aaronzhu1020@gmail.com"]
+        },
+        {
+            "launchpad_id": "zhu-xuanlong",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhuxuanlong",
+            "emails": ["zhu.xuanlong@zte.com.cn"]
         },
         {
             "launchpad_id": "zhugaoxiao",
@@ -20031,6 +20249,10 @@
         {
             "domains": ["nimbleengineering.io"],
             "company_name": "Nimble Engineering AS"
+        },
+        {
+            "domains": ["nimblestorage.com"],
+            "company_name": "Nimble Storage"
         },
         {
             "domains": ["nimbula.com"],
@@ -21797,26 +22019,6 @@
             "uri": "https://github.com/docker/docker-py.git"
         },
         {
-            "module": "kubernetes",
-            "organization": "kubernetes",
-            "uri": "https://github.com/kubernetes/kubernetes.git"
-        },
-        {
-            "module": "kubernetes.github.io",
-            "organization": "kubernetes",
-            "uri": "https://github.com/kubernetes/kubernetes.github.io.git"
-        },
-        {
-            "module": "frakti",
-            "organization": "kubernetes",
-            "uri": "https://github.com/kubernetes/frakti.git"
-        },
-        {
-            "module": "heapster",
-            "organization": "kubernetes",
-            "uri": "https://github.com/kubernetes/heapster.git"
-        },
-        {
             "module": "jcloud",
             "organization": "jcloud",
             "uri": "https://github.com/jclouds/jclouds.git"
@@ -22059,6 +22261,11 @@
             "uri": "git://git.opnfv.org/ipv6.git"
         },
         {
+            "module": "pharos",
+            "organization": "opnfv",
+            "uri": "git://git.opnfv.org/pharos.git"
+        },
+        {
             "module": "osops-example-configs",
             "organization": "openstack",
             "uri": "git://github.com/openstack/osops-example-configs.git"
@@ -22100,6 +22307,11 @@
         },
         {
             "organization": "cloudfoundry",
+            "uri": "github://"
+        },
+        {
+            "organization": "kubernetes",
+            "module_group_id": "kubernetes-group",
             "uri": "github://"
         }
     ],
@@ -22404,7 +22616,7 @@
         {
             "id": "complementary",
             "title": "Complementary",
-            "modules": ["ansible-group", "ceph", "docker-group", "kubernetes", "jclouds", "cloudfoundry", "opnfv", "ovs", "pypa-group"]
+            "modules": ["ansible-group", "ceph", "docker-group", "kubernetes-group", "jclouds", "cloudfoundry", "opnfv", "ovs", "pypa-group"]
         },
         {
             "id": "ansible-group",
@@ -22434,7 +22646,7 @@
             "id": "kubernetes-group",
             "title": "Kubernetes",
             "child": true,
-            "modules": ["kubernetes"]
+            "modules": ["kubernetes-group"]
         },
         {
             "id": "opnfv-group",
