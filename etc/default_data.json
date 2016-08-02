@@ -1,6 +1,17 @@
 {
     "users": [
-        {
+       {
+            "launchpad_id": "yusuke12"
+            "companies": [
+                {
+                    "company_name": "ADOC International",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yusuke Higashino"
+            "emails": ["yusuke_higashino@adoc.co.jp"]
+       },  
+       {
             "launchpad_id": "0-doug",
             "companies": [
                 {
