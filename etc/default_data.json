@@ -19328,6 +19328,10 @@
             "company_name": "Acelio"
         },
         {
+            "domains": ["adoc.com"],
+            "company_name": "ADOC International"
+        }, 
+        {
             "domains": ["akanda.io"],
             "company_name": "Akanda"
         },
