@@ -18835,6 +18835,8 @@
         },
         {
             "launchpad_id": "zengluul",
+	    "zanata_id": "zenglulu",
+	    "gerrit_id": "zenglulu",
             "companies": [
                 {
                     "company_name": "H3C",
