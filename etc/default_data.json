@@ -18716,6 +18716,17 @@
             "emails": ["wenzhi_yu@163.com", "yuywz@cn.ibm.com"]
         },
         {
+            "launchpad_id": "y-maruyama",
+            "companies": [
+                {
+                    "company_name": "TOKYO SYSTEM HOUSE",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yasunori Maruyama",
+            "emails": ["y-maruyama@tsh-world.co.jp"]
+        },
+        {
             "launchpad_id": "z8715000",
             "companies": [
                 {
