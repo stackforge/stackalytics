@@ -8242,6 +8242,17 @@
             "emails": ["yuval@brik.org.il", "yuval.brik@huawei.com"]
         },
         {
+            "launchpad_id": "jonnary-liu",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "jonnary",
+            "emails": ["liu.xuefeng1@zte.com.cn"]
+        },
+        {
             "launchpad_id": "jhinman",
             "companies": [
                 {
