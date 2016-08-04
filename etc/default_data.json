@@ -470,6 +470,17 @@
             "emails": ["yin.desheng@zte.com.cn"]
         },
         {
+            "launchpad_id": "yan-wei7",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "yanwei",
+            "emails": ["yan.wei7@zte.com.cn"]
+        },
+        {
             "launchpad_id": "aditirav",
             "companies": [
                 {
