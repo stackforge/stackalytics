@@ -18369,6 +18369,17 @@
             "emails": ["xuchao@chinacloud.com.cn"]
         },
         {
+            "launchpad_id": "XueFeng Liu",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "jonnary",
+            "emails": ["liu.xuefeng1@zte.com.cn"]
+        },
+        {
             "launchpad_id": "xuhj",
             "companies": [
                 {
