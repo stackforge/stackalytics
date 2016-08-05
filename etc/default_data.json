@@ -18809,6 +18809,17 @@
             "emails": ["wenzhi_yu@163.com", "yuywz@cn.ibm.com"]
         },
         {
+            "launchpad_id": "yan-wei7",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "YanWei",
+            "emails": ["yan.wei7@zte.com.cn"]
+        },
+        {
             "launchpad_id": "z8715000",
             "companies": [
                 {
