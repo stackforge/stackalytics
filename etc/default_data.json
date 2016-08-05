@@ -481,6 +481,17 @@
             "emails": ["yin.desheng@zte.com.cn"]
         },
         {
+            "launchpad_id": "yan-wei7",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "YanWei",
+            "emails": ["yan.wei7@zte.com.cn"]
+        },
+        {
             "launchpad_id": "aditirav",
             "companies": [
                 {
@@ -892,7 +903,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Aleš Křivák",
+            "user_name": "AleÅ¡ KÅivÃ¡k",
             "emails": ["ales.krivak@ultimum.io", "ales.krivak@ultimumtechnologies.com", "ales.krivak@gmail.com"]
         },
         {
@@ -2570,7 +2581,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "François Bureau",
+            "user_name": "FranÃ§ois Bureau",
             "emails": ["francois.bureau@cloudwatt.com", "bureaufrancois@gmail.com"]
         },
         {
@@ -3662,7 +3673,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Cédric Savignan",
+            "user_name": "CÃ©dric Savignan",
             "emails": ["liced@liced.fr", "cedric.savignan@orange.com"]
         },
         {
@@ -5147,7 +5158,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "David Zülke",
+            "user_name": "David ZÃ¼lke",
             "emails": ["dzuelke@gmail.com"]
         },
         {
@@ -6005,7 +6016,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Gábor Antal",
+            "user_name": "GÃ¡bor Antal",
             "emails": ["antal@inf.u-szeged.hu"]
         },
         {
@@ -6381,7 +6392,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Gonéri Le Bouder",
+            "user_name": "GonÃ©ri Le Bouder",
             "emails": ["goneri.lebouder@enovance.com", "gleboude@redhat.com"]
         },
         {
@@ -6951,7 +6962,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Ferenc Horváth",
+            "user_name": "Ferenc HorvÃ¡th",
             "emails": ["hferenc@inf.u-szeged.hu"]
         },
         {
@@ -7102,7 +7113,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Péter Hegedűs",
+            "user_name": "PÃ©ter HegedÅ±s",
             "emails": ["hpeter@inf.u-szeged.hu"]
         },
         {
@@ -7413,7 +7424,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Igor Milovanović",
+            "user_name": "Igor MilovanoviÄ",
             "emails": ["igor.milovanovic@ammeon.com"]
         },
         {
@@ -8148,7 +8159,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Jérôme Gallard",
+            "user_name": "JÃ©rÃ´me Gallard",
             "emails": ["jerome.david.gallard@gmail.com", "jerome.gallard@orange.com", "gallard.jerome@gmail.com"]
         },
         {
@@ -8362,7 +8373,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Jiří Kotlín",
+            "user_name": "JiÅÃ­ KotlÃ­n",
             "emails": ["jiri.kotlin@ultimum.io"]
         },
         {
@@ -8847,7 +8858,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Javier Peña",
+            "user_name": "Javier PeÃ±a",
             "emails": ["jpena@redhat.com"]
         },
         {
@@ -8858,7 +8869,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Jérôme Petazzoni",
+            "user_name": "JÃ©rÃ´me Petazzoni",
             "emails": ["j.petazzoni@docker.com"]
         },
         {
@@ -9709,7 +9720,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Károly Szabó",
+            "user_name": "KÃ¡roly SzabÃ³",
             "emails": ["kszab@inf.u-szeged.hu"]
         },
         {
@@ -9885,7 +9896,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Lenka Husáková",
+            "user_name": "Lenka HusÃ¡kovÃ¡",
             "emails": ["lenka.husakova@ultimum.io"]
         },
         {
@@ -9900,7 +9911,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Sébastien Han",
+            "user_name": "SÃ©bastien Han",
             "emails": ["sebastien.han@enovance.com", "shan@redhat.com"]
         },
         {
@@ -10672,7 +10683,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Martin André",
+            "user_name": "Martin AndrÃ©",
             "emails": ["martin.andre@gmail.com", "m.andre@redhat.com", "martin.andre@kvhasia.com"]
         },
         {
@@ -11374,7 +11385,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Mathieu Gagné",
+            "user_name": "Mathieu GagnÃ©",
             "emails": ["mgagne@calavera.ca", "mgagne@iweb.com", "mgagne@internap.com"]
         },
         {
@@ -13819,7 +13830,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Ricardo Araújo Santos",
+            "user_name": "Ricardo AraÃºjo Santos",
             "emails": ["ricardo@lsd.ufcg.edu.br", "ricoaraujosantos@gmail.com"]
 
         },
@@ -15507,7 +15518,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Jan Šimák",
+            "user_name": "Jan Å imÃ¡k",
             "emails": ["simak.jan@gmail.com"]
         },
         {
@@ -16659,7 +16670,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Telles Mota Vidal Nóbrega",
+            "user_name": "Telles Mota Vidal NÃ³brega",
             "emails": ["tenobreg@redhat.com", "tellesnobrega@gmail.com", "tellesmvn@lsd.ufcg.edu.br"]
         },
         {
@@ -17386,7 +17397,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Béla Vancsics",
+            "user_name": "BÃ©la Vancsics",
             "emails": ["vancsics@inf.u-szeged.hu"]
         },
         {
@@ -17632,7 +17643,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Viktor Křivák",
+            "user_name": "Viktor KÅivÃ¡k",
             "emails": ["viktor.krivak@ultimum.io"]
         },
         {
@@ -17655,7 +17666,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Vincent Cassé",
+            "user_name": "Vincent CassÃ©",
             "emails": ["vincent.casse@ovh.net", "vincent@casse.me"]
         },
         {
@@ -17779,7 +17790,7 @@
                     "end_date": null
                 }
             ],
-            "user_name": "Victoria Martínez de la Cruz",
+            "user_name": "Victoria MartÃ­nez de la Cruz",
             "emails": ["vimartin@redhat.com", "victoria@redhat.com", "victoria@vmartinezdelacruz.com"]
         },
         {
@@ -19400,7 +19411,7 @@
             "aliases": ["None", "Non", "l-", ".", "****", "1", "aaa", "-", "dsadsadsadsad", "I dont have one", "company",
               "n/a", "Self", "Student", "home", "Home Based", "Independent", "Independen", "Independant", "MyHome",
               "HomeOffice", "Self Employeed", "Self Employed", "myself", "Self-employeed", "individual", "Individual Contributor",
-              "Unaffiliated", "没有", "Null", "Univerisity", "fsfsf", "xxx", "no job", "Freelancer", "free", "Freelance",
+              "Unaffiliated", "æ²¡æ", "Null", "Univerisity", "fsfsf", "xxx", "no job", "Freelancer", "free", "Freelance",
               "Freelance IT Specialist", "No Affiliation", "Not applicable", "Unaffilliated", "Unaffiliate", "Unafilliated",
               "Unaffliated", "test", "Unffiliated", "independent user", "me", "my", "unaffeliated", "Unaffilaited",
               "Unaffiliaited", "Unaffilated", "Personal user", "independent user - Unaffiliated", "Unaffliliated", "dummy",
@@ -20037,7 +20048,7 @@
             "domains": ["huawei.com"],
             "company_name": "Huawei",
             "aliases": ["Huawei Technologies", "Huawei Technology", "Huawei Technologies Co. Limitied",
-              "Huawei Technologies Düsseldorf", "Huawei Technologies India Private Limited", "Huawei china",
+              "Huawei Technologies DÃ¼sseldorf", "Huawei Technologies India Private Limited", "Huawei china",
               "Huawei Tech", "Huawei Enterprise Business Group", "huawei technical", "Huawei Technologies India",
               "huawei storage system", "华为技术有限公司", "华为", "Huawei Technolgies"]
         },
@@ -20057,7 +20068,7 @@
         {
             "domains": ["ict.ac.cn"],
             "company_name": "ICT",
-            "aliases": ["Institute of Computing Technology of the Chinese Academy of Sciences", "中科院计算所"]
+            "aliases": ["Institute of Computing Technology of the Chinese Academy of Sciences", "ä¸­ç§é¢è®¡ç®æ"]
         },
         {
             "domains": ["ifca.unican.es"],
@@ -20136,7 +20147,7 @@
         {
             "domains": ["iscas.ac.cn"],
             "company_name": "ISCAS",
-            "aliases": ["Institute of Software Chinese Academy of Sciences", "中国科学院软件研究所", "中科院软件所"]
+            "aliases": ["Institute of Software Chinese Academy of Sciences", "ä¸­å½ç§å­¦é¢è½¯ä»¶ç ç©¶æ", "ä¸­ç§é¢è½¯ä»¶æ"]
         },
         {
             "domains": ["isi.edu"],
@@ -20803,7 +20814,7 @@
         },
         {
             "domains": ["uni-wuerzburg.de"],
-            "company_name": "University of Würzburg"
+            "company_name": "University of WÃ¼rzburg"
         },
         {
             "domains": ["unimelb.edu.au"],
