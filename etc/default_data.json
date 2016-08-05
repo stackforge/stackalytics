@@ -481,6 +481,17 @@
             "emails": ["yin.desheng@zte.com.cn"]
         },
         {
+            "launchpad_id": "yan-wei7",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "YanWei",
+            "emails": ["yan.wei7@zte.com.cn"]
+        },
+        {
             "launchpad_id": "aditirav",
             "companies": [
                 {
@@ -20039,7 +20050,7 @@
             "aliases": ["Huawei Technologies", "Huawei Technology", "Huawei Technologies Co. Limitied",
               "Huawei Technologies DÃ¼sseldorf", "Huawei Technologies India Private Limited", "Huawei china",
               "Huawei Tech", "Huawei Enterprise Business Group", "huawei technical", "Huawei Technologies India",
-              "huawei storage system", "åä¸ºæŠ€æœ¯æœ‰é™å…¬å¸", "åä¸º", "Huawei Technolgies"]
+              "huawei storage system", "»ªÎª¼¼ÊõÓĞÏŞ¹«Ë¾", "»ªÎª", "Huawei Technolgies"]
         },
         {
             "domains": ["hyper.sh"],
