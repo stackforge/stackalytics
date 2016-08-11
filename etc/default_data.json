@@ -9043,6 +9043,17 @@
             "emails": ["wangjunqing@cmss.chinamobile.com", "junqingwang@139.com"]
         },
         {
+            "launchpad_id": "jun-zhongjun",
+            "companies": [
+                {
+                    "company_name": "Huawei",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhongjun2",
+            "emails": ["jun.zhongjun@huawei.com", "jun.zhongjun2@gmail.com"]
+        },
+        {
             "launchpad_id": "justin-fathomdb",
             "companies": [
                 {
