@@ -2600,7 +2600,7 @@
             ],
             "user_name": "tingwang",
             "emails": ["ting.wang@easystack.cn", "bx_wang@outlook.com"]
-        },
+      	},
         {
             "launchpad_id": "byron-g-mccollum",
             "gerrit_id": "joe-dirt",
@@ -18004,6 +18004,18 @@
             ],
             "user_name": "Will Miller",
             "emails": ["wmiller@cray.com"]
+        },
+        {
+            "launchpad_id": "wei-li",
+            "gerrit_id": "liwei1",
+            "companies": [
+                {
+                    "company_name": "EasyStack",
+                    "end_date": null
+                }
+            ],
+            "user_name": "liwei",
+            "emails": ["wei.li@easystack.cn"]
         },
         {
             "launchpad_id": "w-wanghong",
