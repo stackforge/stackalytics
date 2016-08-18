@@ -7481,6 +7481,18 @@
             "emails": ["mkassawara@gmail.com"]
         },
         {
+            "launchpad_id": "iphutch",
+            "gerrit_id": "iphutch",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": "null"
+                },
+            ],
+            "user_name": "Ianeta Hutchinson",
+            "emails": ["ianeta.hutch@gmail.com", "ianeta.hutchinson@intel.com"]
+        },
+        {
             "launchpad_id": "irenab",
             "companies": [
                 {
