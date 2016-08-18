@@ -9099,6 +9099,18 @@
             "emails": ["jwy@cs.stanford.edu"]
         },
         {
+           "launchpad_id": "jwatford",
+           "gerrit_id": "jwatford",
+           "companies": [
+               {
+                   "company_name": "Intel",
+                   "end_date": null
+               }
+           ],
+           "user_name": "jwatford",
+           "emails": ["jonte.watford@intel.com", "watfordjw@gmail.com"]
+       },
+        {
            "launchpad_id": "jxstanford",
            "gerrit_id": "jxstanford",
            "companies": [
