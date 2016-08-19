@@ -1,6 +1,25 @@
 {
     "users": [
-        {
+            { 
+              "launchpad_id":"YumengBao",
+              "companies":[
+             {
+                   "company_name":"ZTE Corporation"
+                   "end_date":null
+              }   
+              "user_name":"yumeng-bao"
+              "emials":["bao.yumeng@zte.com.cn"]
+             ]
+
+
+
+
+            },        
+
+
+
+
+{
             "launchpad_id": "0-doug",
             "companies": [
                 {
