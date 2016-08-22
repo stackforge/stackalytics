@@ -19610,6 +19610,18 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+        {
+            "launchpad_id": "mekala-sarath",
+            "gerrit_id": "SarathMekala",
+            "companies": [
+                {
+                    "company_name": "Juniper",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Sarath Chandra Mekala",
+            "emails": ["mekala.sarath@gmail.com", "sarathmekala.openstack@gmail.com", "sarathcm@juniper.net"]
         }
     ],
     "companies": [
