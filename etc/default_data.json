@@ -18400,6 +18400,17 @@
             "user_name": "Kai Qiang Wu(Kennan)",
             "emails": ["wkqwu@cn.ibm.com", "wkq5325@gmail.com"]
         },
+	{
+            "launchpad_id": "woshishui419",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Wenyan Wang",
+            "emails": ["wenyan_wang@h3c.com", "woshishui419@126.com"]
+        },
         {
             "launchpad_id": "wrongfan",
             "companies": [
