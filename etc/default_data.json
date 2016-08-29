@@ -21310,6 +21310,10 @@
         {
             "domains": ["zte.com.cn"],
             "company_name": "ZTE Corporation"
+        },
+        {
+            "domains": ["eisoo.com"],
+            "company_name": "Eisoo"
         }
     ],
     "repos": [
