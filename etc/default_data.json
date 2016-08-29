@@ -19721,6 +19721,17 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+        {
+            "launchpad_id": "yizhihui",
+            "companies": [
+                {
+                    "company_name": "Eisoo",
+                    "end_date": null
+                }
+            ],
+            "user_name": "yizhihui",
+            "emails": ["yi.zhihui@eisoo.com"]
         }
     ],
     "companies": [
@@ -21310,6 +21321,10 @@
         {
             "domains": ["zte.com.cn"],
             "company_name": "ZTE Corporation"
+        },
+        {
+            "domains": ["eisoo.com"],
+            "company_name": "Eisoo"
         }
     ],
     "repos": [
