@@ -20342,6 +20342,11 @@
             "company_name": "Hortonworks"
         },
         {
+            "domains": ["hnu.edu.cn"],
+            "company_name": "Hunan University, Institution of Supercomputing and Cloud Computing",
+            "aliases": ["湖南大学超级计算与云计算研究所"]
+	 },
+        {
             "domains": ["hp.com"],
             "company_name": "HP",
             "aliases": ["Hewlett Packard", "Hewlett-Packard Company", "Hewlett-Packard",
