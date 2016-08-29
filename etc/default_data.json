@@ -21303,6 +21303,10 @@
             "domains": ["zju.edu.cn"],
             "company_name": "Zhejiang University"
         },
+	{
+	    "domains": ["hnu.edu.cn"],
+            "company_name": "Hunan University, Institution of Supercomputing and Cloud Computing"
+	},
         {
             "domains": ["zmanda.com"],
             "company_name": "Zmanda"
