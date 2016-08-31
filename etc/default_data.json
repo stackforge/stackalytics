@@ -19851,6 +19851,26 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+        {
+            "launchpad_id": "celebdor",
+            "gerrit_id": "toni",
+            "companies": [
+                {
+                    "company_name": "Midokura",
+                    "end_date": "2016-Aug-09"
+                },
+                {
+                    "company_name": "*independent",
+                    "end_date": "2016-Aug-28"
+                },
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+            ],
+            "user_name": "celebdor",
+            "emails": ["toni@midokura.com", "antonisp@celebdor.com", "asegurap@redhat.com"]
         }
     ],
     "companies": [
