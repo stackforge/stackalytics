@@ -12628,7 +12628,8 @@
 
         },
         {
-            "launchpad_id": "ntata",
+            "launchpad_id": "nandini-tata",
+            "gerrit_id": "ntata",
             "companies": [
                 {
                     "company_name": "Intel",
