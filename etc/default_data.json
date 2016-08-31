@@ -5969,12 +5969,12 @@
                 "freyes@tty.cl", "freyes@suse.com"
             ]
         },
-	{
+        {
            "launchpad_id": "friendgct",
            "gerrit_id": "friendgct",
            "companies": [
                {
-                   "company_name": "inspur",
+                   "company_name": "Inspur",
                    "end_date": null
                }
            ],
