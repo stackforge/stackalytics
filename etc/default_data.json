@@ -5969,6 +5969,18 @@
                 "freyes@tty.cl", "freyes@suse.com"
             ]
         },
+	{
+           "launchpad_id": "friendgct",
+           "gerrit_id": "friendgct",
+           "companies": [
+               {
+                   "company_name": "inspur",
+                   "end_date": null
+               }
+           ],
+           "user_name": "guochunting",
+           "emails": ["guochunting@inspur.com"]
+        },
         {
             "github_id": "frodenas",
             "companies": [
