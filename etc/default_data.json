@@ -9054,6 +9054,19 @@
             "emails": ["galstrom21@gmail.com", "jshepher@rackspace.com"]
         },
         {
+            "launchpad_id": "jsshin",
+            "gerrit_id": "jsshin",
+            "zanata_id": "jsshin",
+            "companies": [
+                {
+                    "company_name": "*independent",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jun-Sik Shin",
+            "emails": ["jsshin@smartx.kr", "jsshin1230@gmail.com"]
+        },
+        {
             "launchpad_id": "jsuh",
             "companies": [
                 {
