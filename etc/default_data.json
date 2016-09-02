@@ -8018,6 +8018,17 @@
             "emails": ["jay@jvf.cc", "jay.faulkner@rackspace.com"]
         },
         {
+            "launchpad_id": "nhouse",
+            "companies": [
+                {
+                    "company_name": "Rackspace",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Nhouse",
+            "emails": ["nhouse@gmail.com", "nathan.house@rackspace.com"]
+        },
+        {
             "launchpad_id": "jason-smithss",
             "companies": [
                 {
