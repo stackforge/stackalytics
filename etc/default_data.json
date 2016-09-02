@@ -19592,6 +19592,18 @@
             "user_name": "Qin Zhao",
             "emails": ["chaochin@gmail.com", "zhaoqin@cn.ibm.com"]
         },
+        {     
+            "launchpad_id": "zhaorenming",
+            "gerrit_id": "zhaorenming",
+            "companies": [
+                {     
+                    "company_name": "Inspur",
+                    "end_date": null
+                }     
+            ],    
+            "user_name": "Emmanuel Zhao",
+            "emails": ["zhaorenming@inspur.com", "zhaorenming@outlook.com", "reaminjocye@gmail.com"]
+        }, 
         {
             "launchpad_id": "zhaoxinyu",
             "companies": [
@@ -19606,18 +19618,6 @@
             ],
             "user_name": "Jerry Zhao",
             "emails": ["xyzjerry@gmail.com", "jerryzhao@fortinet.com", "zhaoxinyu@huawei.com"]
-        },
-        {
-            "launchpad_id": "zhaorenming",
-            "gerrit_id": "zhaorenming",
-            "companies": [
-                {
-                    "company_name": "Inspur",
-                    "end_date": "null"
-                }
-            ],
-            "user_name": "Emmanuel Zhao",
-            "emails": ["zhaorenming@inspur.com", "zhaorenming@outlook.com", "reaminjocye@gmail.com"]
         },
         {
             "launchpad_id": "zhen-fang",
