@@ -10449,6 +10449,19 @@
             "user_name": "Liujunpeng",
             "emails": ["liujunpeng@inspur.com"]
         },
+	{
+            "launchpad_id": "wanghongtaozz",
+            "gerrit_id":"wanghongtaozz",
+            "zanata_id":"wanghongtaozz",
+            "companies": [
+                {
+                    "company_name": "Inspur",
+                    "end_date": null
+                }
+            ],
+            "user_name": "wanghongtaozz",
+            "emails": ["wanghongtaozz@inspur.com"]
+	},
         {
             "launchpad_id": "liuqing",
             "companies": [
