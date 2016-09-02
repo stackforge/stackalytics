@@ -19771,6 +19771,17 @@
             "emails": ["zhugaoxiao@gmail.com", "zhu.gaoxiao@h3c.com"]
         },
         {
+            "launchpad_id": "zhubingbing",
+            "companies": [
+                 {
+                     "company_name": "99cloud",
+                     "end_date": null
+                 } 
+            ],
+            "user_name": "zhubingbing",
+            "emails": ["zhubingbing10@gmail.com", "zhu.bingbing@99cloud.net"]
+        },
+        {
             "launchpad_id": "ziad-sawalha",
             "companies": [
                 {
