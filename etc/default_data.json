@@ -19592,18 +19592,18 @@
             "user_name": "Qin Zhao",
             "emails": ["chaochin@gmail.com", "zhaoqin@cn.ibm.com"]
         },
-        {     
+        {
             "launchpad_id": "zhaorenming",
             "gerrit_id": "zhaorenming",
-            "companies": [
-                {     
+            "companies":
+                {
                     "company_name": "Inspur",
                     "end_date": null
-                }     
-            ],    
+                }
+            ],
             "user_name": "Emmanuel Zhao",
             "emails": ["zhaorenming@inspur.com", "zhaorenming@outlook.com", "reaminjocye@gmail.com"]
-        }, 
+        },
         {
             "launchpad_id": "zhaoxinyu",
             "companies": [
