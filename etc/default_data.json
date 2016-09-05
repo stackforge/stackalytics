@@ -1,6 +1,105 @@
 {
     "users": [
         {
+            "launchpad_id": "ftarasenko",
+            "companies": [
+                {
+                    "company_name": "itkey",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Fedor Tarasenko",
+            "emails": ["ftarasenko@itkey.com", "feodor.tarasenko@gmail.com"]
+        },
+        {
+           "launchpad_id": "rklimenko",
+           "companies": [
+               {
+                   "company_name": "itkey",
+                   "end_date": null
+               }
+           ],
+           "user_name": "Roman Klimenko",
+           "emails": ["rklimenko@itkey.com", "roman9100@mail.ru"]
+        },
+        {
+           "launchpad_id": "adrozd",
+           "companies": [
+               {
+                   "company_name": "itkey",
+                   "end_date": null
+               }
+           ],
+           "user_name": "Alex Drozd",
+           "emails": ["adrozd@itkey.com", "alexander.s.drozd@gmail.com"]
+        },
+        {
+           "launchpad_id": "filatecs",
+           "companies": [
+               {
+                   "company_name": "itkey",
+                   "end_date": null
+               }
+           ],
+           "user_name": "Sergey Filatov",
+           "emails": ["sfilatov@itkey.com", "s.s.filatov94@gmail.com", "filatecs@gmail.com"]
+        },
+        {
+            "launchpad_id": "a-yurtaykin",
+            "companies": [
+                {
+                    "company_name": "itkey",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Andrey Yurtaykin",
+            "emails": ["ayurtaykin@itkey.com", "a.yurtaykin@gmail.com"]
+        },
+        {
+          "launchpad_id": "vicglarson",
+          "companies": [
+            {
+              "company_name": "itkey",
+              "end_date": null
+            }
+          ],
+          "user_name": "Victor Galkin",
+          "emails": ["vgalkin@itkey.com", "vicglarson@gmail.com", "vgalkin@mirantis.com"]
+        },
+        {
+           "launchpad_id": "aakulshin",
+           "companies": [
+               {
+                   "company_name": "itkey",
+                   "end_date": null
+               }
+           ],
+           "user_name": "Artem Akulshin",
+           "emails": ["aakulshin@itkey.com"]
+        },
+        {
+            "launchpad_id": "manor477",
+            "companies": [
+                {
+                    "company_name": "itkey",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Nikolay Nazarov",
+            "emails": ["nnazarov@itkey.com", "manor477@gmail.com"]
+        },
+        {
+            "launchpad_id": "ktarasyuk",
+            "companies": [
+                {
+                    "company_name": "itkey",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Konstantin Tarasyuk",
+            "emails": ["ktarasyuk@itkey.com",]
+        },
+        {
             "launchpad_id": "0-doug",
             "companies": [
                 {
