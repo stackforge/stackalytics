@@ -491,11 +491,11 @@
             "user_name": "yindesheng",
             "emails": ["yin.desheng@zte.com.cn"]
         },
-	{
+        {
             "launchpad_id": "adinandan",
             "companies": [
                 {
-                    "company_name": "infinite",
+                    "company_name": "Infinite",
                     "end_date": null
                 }
             ],
