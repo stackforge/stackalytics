@@ -14009,6 +14009,21 @@
             "emails": ["ramon@linux-labs.net", "racedo@redhat.com"]
         },
         {
+            "launchpad_id": "ranasheel2000",
+            "companies": [
+                {
+                    "company_name": "NEC",
+                    "end_date": "2016-Sep-06"
+                },
+                {
+                    "company_name": "*independent",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Sheel Rana",
+            "emails": ["ranasheel2000@gmail.com", "sheel.rana@nectechnologies.in"]
+        },
+        {
             "launchpad_id": "raphael-glon",
             "companies": [
                 {
