@@ -20203,6 +20203,17 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+        {
+            "launchpad_id": "58750307-3",
+            "companies": [
+                {
+                    "company_name": "Dt Dream",
+                    "end_date": null
+                }
+            ],
+            "user_name": "dupengfei",
+            "emails": ["58750307@qq.com", "dupf@dtdream.com"]
         }
     ],
     "companies": [
@@ -21828,6 +21839,10 @@
         {
             "domains": ["zte.com.cn"],
             "company_name": "ZTE Corporation"
+        },
+        {
+            "domains": ["dtdream.com"],
+            "company_name": "Dt Dream"
         }
     ],
     "repos": [
