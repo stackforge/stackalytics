@@ -499,8 +499,21 @@
                     "end_date": null
                 }
             ],
+
             "user_name": "Aditi Raveesh",
             "emails": ["aditi.raveesh@gmail.com", "aditirav@thoughtworks.com"]
+        },
+{
+            "launchpad_id": "ikochetova-hx",
+            "gerrit_id": "ikochetov-hx",
+            "companies": [
+                {
+                    "company_name": "Hystax",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Irina Kochetova",
+            "emails": ["ikochetova@hystax.com", "irinkin67@gmail.com"]
         },
         {
             "launchpad_id": "adkinss",
