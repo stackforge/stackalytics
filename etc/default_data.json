@@ -20608,6 +20608,11 @@
             "company_name": "CRS4"
         },
         {
+            "domains": ["csee.hnu.edu.cn/iscc/default.html"],
+            "company_name": "Hunan University, Institution of Supercomputing and Cloud Computing"
+            "aliases": ["湖南大学超级计算与云计算研究所"]
+        },
+        {
             "domains": ["cs2c.com.cn"],
             "company_name": "cs2c",
             "aliases": ["CS2C"]
@@ -20835,11 +20840,6 @@
             "domains": ["hihuron.com"],
             "company_name": "Huron",
             "aliases": ["Huron Technologies"]
-        },
-        {
-            "domains": ["hnu.edu.cn"],
-            "company_name":"Hunan University, Institution of Supercomputing and Cloud Computing",
-            "aliases":["湖南大学超级计算与云计算研究所"]
         },
         {
             "domains": ["hortonworks.com"],
