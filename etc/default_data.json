@@ -114,6 +114,17 @@
             "emails": ["453528434@qq.com","zhang.chuanjin@h3c.com"]
         },
         {
+            "launchpad_id": "58750307-3",
+            "companies": [
+                {
+                    "company_name": "Dt Dream",
+                    "end_date": null
+                }
+            ],
+            "user_name": "dupengfei",
+            "emails": ["58750307@qq.com", "dupf@dtdream.com"]
+        },
+        {
             "launchpad_id": "6-morgan",
             "companies": [
                 {
@@ -20312,6 +20323,8 @@
         {
             "domains": ["ansible.com"],
             "company_name": "Ansible"
+mains": ["a
+
         },
         {
             "domains": ["apalia.net"],
@@ -20659,6 +20672,10 @@
         {
             "domains": ["dmm.com"],
             "company_name": "DMM.com Labo"
+        },
+        {
+            "domains": ["dtdream.com"],
+            "company_name": "Dt Dream"
         },
         {
             "domains": ["docker.com"],
