@@ -491,6 +491,17 @@
             "user_name": "yindesheng",
             "emails": ["yin.desheng@zte.com.cn"]
         },
+	{
+            "launchpad_id": "adinandan",
+            "companies": [
+                {
+                    "company_name": "infinite",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Aditya Nandan",
+            "emails": ["adinandan@gmail.com", "aditya.nandan@infinite.com"]
+        },
         {
             "launchpad_id": "aditirav",
             "companies": [
