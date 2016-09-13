@@ -20203,6 +20203,18 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+        {
+            "launchpad_id": "dmakarov",
+            "gerrit_id": "dmakarov",
+            "companies": [
+                {
+                    "company_name": "Hystax",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Dmitriy Makarov",
+            "emails": ["dmakarov@hystax.com"]
         }
     ],
     "companies": [
