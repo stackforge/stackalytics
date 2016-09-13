@@ -1896,6 +1896,17 @@
             "emails": ["asomya@cisco.com"]
         },
         {
+            "launchpad_id": "Asmita Singh",
+            "companies": [
+                {
+                    "company_name": "infinite",
+                    "end_date": null
+                }
+            ],
+             "user_name": "asmita",
+             "emails": ["asmita.singh@infinite.com","asmitas43@gmail.com"]
+        },
+        {
             "launchpad_id": "aswad-r",
             "companies": [
                 {
