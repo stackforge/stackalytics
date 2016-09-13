@@ -11497,6 +11497,18 @@
             "emails": ["mbozhenko@hystax.com", "mbozhenko@gmail.com"]
         },
         {
+            "launchpad_id": "aalekseenko",
+            "gerrit_id": "aalekseenko",
+            "companies": [
+                {
+                    "company_name": "Hystax",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Aleksey Alekseenko",
+            "emails": ["aalekseenko@hystax.com", "9118250541@mail.ru"]
+        },
+        {
             "launchpad_id": "mca-ashu4",
             "gerrit_id": "ashu_mishra",
             "companies": [
