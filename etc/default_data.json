@@ -155,6 +155,17 @@
             "emails": ["alex@planet-barclay.com", "alex.barclay@hp.com", "alex.barclay@hpe.com"]
         },
         {
+            "launchpad_id": "a-pugachev-wd",
+            "companies": [
+                {
+                    "company_name": "Workday",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Alexander Pugachev",
+            "emails": ["alexander.pugachev@workday.com"]
+        },
+        {
             "launchpad_id": "a-gorodnev",
             "gerrit_id": "agorodnev",
             "companies": [
