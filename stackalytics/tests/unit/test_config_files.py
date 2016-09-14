@@ -221,7 +221,7 @@ class TestConfigFiles(testtools.TestCase):
                     error_msg = ('Company "%s" is unknown. Please add it into'
                                  ' the list of companies in default_data.json '
                                  'file' % company['company_name'])
-                    self.assertTrue(company['company_name'] in company_names,
+                    self.assertIn(company['company_name'], company_names,
                                     error_msg)
 
     def test_default_data_user_companies(self):
