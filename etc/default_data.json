@@ -8793,6 +8793,21 @@
             "emails": ["jnowak@mirantis.com", "pigmej@gmail.com", "mail@jedrzejnowak.pl"]
         },
         {
+            "launchpad_id": "joadavis",
+            "companies": [
+                {
+                    "company_name": "Hewlett-Packard",
+                    "end_date": "2015-Nov-01"
+                },
+                {
+                    "company_name": "Hewlett Packard Enterprise",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Joseph Davis",
+            "emails": ["joseph.a.davis@hp.com", "joseph.a.davis@hpe.com"]
+        },
+        {
             "launchpad_id": "joe-arnold",
             "companies": [
                 {
