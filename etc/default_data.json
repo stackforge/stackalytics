@@ -33,6 +33,18 @@
             "user_name": "Tim Burke",
             "emails": ["tim@swiftstack.com", "tim.burke@gmail.com"]
         },
+	{
+		"launchpad_id":"navyasomepalli",
+		"gerrit_id":"navyasomepalli",
+		"companies":[
+			{
+				"company_name:"Intel",
+				"end_date":null
+			}
+				],
+			"user_name:navyasomepalli",
+			"emails":["somepalli.navya@gmail.com","navya.somepalli@gmail.com"]
+},
         {
             "launchpad_id": "1lex",
             "companies": [
