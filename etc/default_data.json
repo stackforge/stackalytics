@@ -1,6 +1,18 @@
 {
     "users": [
         {
+            "launchpad_id": "jarred-deeley",
+	    "gerrit_id": "Jarred-Deeley",
+            "companies": [
+                {
+                    "company_name": "University of Texas at San Antonio",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jarred Deeley",
+            "emails": ["j.mcknight.d@gmail.com", "jarred.deeley@utsa.edu"]
+        },
+        {
             "launchpad_id": "0-doug",
             "companies": [
                 {
