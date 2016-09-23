@@ -8531,6 +8531,18 @@
             "emails": ["jesse.pretorius@rackspace.co.uk", "jesse.pretorius@gmail.com"]
         },
         {
+            "launchpad_id": "donovan-francesco",
+            "github_id": "drifterza",
+            "companies": [
+                {
+                    "company_name": "Internet Solutions",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Donovan Francesco",
+            "emails": ["donovan.francesco@is.co.za", "donovan.francesco@gmail.com"]
+        },
+        {
             "launchpad_id": "jesseproudman",
             "github_id": "blueboxjesse",
             "companies": [
@@ -21383,6 +21395,10 @@
             "domains": ["iweb.com"],
             "company_name": "iWeb"
         },
+        {
+            "domains": ["is.co.za"],
+            "company_name": "Internet Solutions"
+	},
         {
             "domains": ["izeltech.com"],
             "company_name": "Izel Technologies"
