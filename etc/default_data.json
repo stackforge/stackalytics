@@ -271,6 +271,18 @@
             "emails": ["toshio@fedoraproject.org", "a.badger@gmail.com"]
         },
         {
+            "launchpad_id": "amaheen",
+            "gerrit_id" : "amaheen",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Aatika Maheen",
+            "emails": ["aatika.maheen@gmail.com"]
+        },
+        {
             "launchpad_id": "abashmak",
             "gerrit_id": "abashmak",
             "companies": [
