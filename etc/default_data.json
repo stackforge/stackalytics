@@ -7228,6 +7228,18 @@
             "emails": ["hellochosen@gmail.com", "yedongcan@awcloud.com"]
         },
         {
+            "launchpad_id": "phemankita",
+            "gerrit_id": "phemankita",
+            "companies": [
+                {
+                    "company_name": "UTSA",
+                    "end_date": null
+                }
+            ],
+            "user_name": "phemankita",
+            "emails": ["phemankita@gmail.com", "nfq301@my.utsa.edu"]
+        },
+        {
             "launchpad_id": "henrique-4",
             "gerrit_id": "henriquetruta",
             "companies": [
