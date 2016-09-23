@@ -12406,6 +12406,18 @@
             "user_name": "Michael DeHaan",
             "emails": ["michael.dehaan@gmail.com", "michael.dehaan@ansible.com", "michael@ansible.com", "michael@ansibleworks.com"]
         },
+         {
+           "launchpad_id": "Moulikao",
+           "gerrit_id": "Moulikao",
+           "companies": [
+               {
+                   "company_name": "Intel",
+                   "end_date": null
+               }
+           ],
+           "user_name": "Moulikao",
+           "emails": ["moulikao@gmail.com", "lyx441@my.utsa.edu"]
+       },
         {
             "launchpad_id": "mpmsimo",
             "companies": [
