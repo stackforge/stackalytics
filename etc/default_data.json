@@ -68,6 +68,18 @@
             "user_name": "Andrew Spiers",
             "emails": ["andrew@andrewspiers.net", "andrew.spiers@unimelb.edu.au"]
         },
+	{
+            "launchpad_id": "Rajiv Madeswaran",
+            "gerrit_id": "Rajiv",
+            "companies": [
+                {
+                    "company_name": "University of Texas at San Antonio",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Rajiv",
+            "emails": ["smrajiv15@gmail.com"]
+        },
         {
             "launchpad_id": "307419146-q",
             "gerrit_id": "liyf",
