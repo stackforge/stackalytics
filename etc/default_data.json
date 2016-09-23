@@ -283,6 +283,18 @@
             "emails": ["alexander.bashmakov@intel.com", "abashmak@yahoo.com"]
         },
         {
+           "launchpad_id": "abdul-azhar",
+           "gerrit_id": "abdul-azhar",
+           "companies": [
+               {
+                   "company_name": "OCI-UTSA",
+                   "end_date": null
+               }
+           ],
+           "user_name": "Abdul Azhar",
+           "emails": ["abdulazharmohammed@gmail.com", "abdulazhar.mohammed@utsa.edu"]
+        },
+        {
             "launchpad_id": "abe-music",
             "gerrit_id": "abemusic",
             "companies": [
