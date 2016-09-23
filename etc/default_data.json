@@ -1,6 +1,18 @@
 {
     "users": [
         {
+            "launchpad_id": "charlledani2",
+            "gerrit_id": "charlledani2",
+            "companies": [
+                {
+                    "company_name": "Universidade Federal de Campina Grande",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Charlle Daniel",
+            "emails": ["charlledani2@gmail.com", "charlledaniel@lsd.ufcg.edu.br"]
+        },
+        {
             "launchpad_id": "0-doug",
             "companies": [
                 {
