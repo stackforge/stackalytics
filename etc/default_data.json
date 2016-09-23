@@ -1,5 +1,17 @@
 {
     "users": [
+      	{	
+           "launchpad_id": "Rohith",
+           "gerrit_id": "rpolishetty",
+           "companies": [
+               {
+                   "company_name": "UTSA",
+                   "end_date": null
+               }
+           ],
+           "user_name": "rpolishetty",
+           "emails": ["rohith,polishetty@gmail.com"]
+       },
         {
             "launchpad_id": "0-doug",
             "companies": [
