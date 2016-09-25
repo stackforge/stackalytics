@@ -12918,6 +12918,18 @@
             "emails": ["nish.patwa@intel.com"]
         },
         {
+            "launchpad_id": "nishant-tech07",
+            "gerrit_id": "nishant.e.kumar",
+            "companies": [
+                {
+                    "company_name": "Ericsson",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Nishant Kumar",
+            "emails": ["nishant.e.kumar@ericsson.com", "nishant.tech07@gmail.com"]
+        },
+        {
             "launchpad_id": "niu-zglinux",
             "companies": [
                 {
