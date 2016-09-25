@@ -1799,7 +1799,7 @@
             ],
             "user_name": "Arnaud Legendre",
             "emails": ["arnaudleg@gmail.com"]
-        },
+        }, 
         {
             "launchpad_id": "arun-mithil",
             "gerrit_id": "arun-mithil",
@@ -19495,6 +19495,18 @@
             ],
             "user_name": "Yasunori Maruyama",
             "emails": ["y-maruyama@tsh-world.co.jp"]
+        },
+        {
+            "launchpad_id": "yab277",
+	    "gerrit_id": "arundasan91",
+            "companies": [
+                {
+                    "company_name": "Open Cloud Institute, UTSA",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Arun Das",
+            "emails": ["yab277@my.utsa.edu", "arundas1991@gmail.com"]
         },
         {
             "launchpad_id": "yalogr",
