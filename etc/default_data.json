@@ -17341,6 +17341,18 @@
             "emails": ["swamireddy@gmail.com", "swami.reddy@ril.com"]
         },
         {
+           "launchpad_id": "swan1991",
+           "gerrit_id": "Swan",
+           "companies": [
+               {
+                   "company_name": "Intel",
+                   "end_date": null
+               }
+           ],
+           "user_name": "Swan",
+           "emails": ["swan1991m@gmail.com"]
+        },
+        {
             "launchpad_id": "swann-w",
             "companies": [
                 {
@@ -17355,20 +17367,6 @@
             "user_name": "Swann Croiset",
             "emails": ["swann.croiset@bull.net", "swann@oopss.org"]
         },
-
-        {
-           "launchpad_id": "swan1991",
-           "gerrit_id": "Swan",
-           "companies": [
-               {
-                   "company_name": "Intel",
-                   "end_date": null
-               }
-           ],
-           "user_name": "Swan",
-           "emails": ["swan1991m@gmail.com"]
-        },
-
         {
             "launchpad_id": "swiftwangster",
             "companies": [
