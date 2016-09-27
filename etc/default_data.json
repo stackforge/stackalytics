@@ -467,11 +467,15 @@
             "companies": [
                 {
                     "company_name": "Rackspace",
+                    "end_date": "2016-Sep-23"
+                },
+                {
+                    "company_name": "*independent",
                     "end_date": null
                 }
             ],
             "user_name": "Adam Harwell",
-            "emails": ["flux.adam@gmail.com", "adam.harwell@rackspace.com"]
+            "emails": ["flux.adam@gmail.com"]
         },
         {
             "launchpad_id": "adam-kijak",
