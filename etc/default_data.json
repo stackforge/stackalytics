@@ -260,6 +260,18 @@
             "emails": ["344677472@qq.com", "dinghh@awcloud.com"]
         },
         {
+            "launchpad_id": "amaheen",
+            "gerrit_id": "amaheen",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Aatika Maheen",
+            "emails": ["aatika.maheen@gmail.com"]
+        },
+        {
             "github_id": "abadger",
             "companies": [
                 {
