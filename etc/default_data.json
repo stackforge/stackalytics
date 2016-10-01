@@ -19439,6 +19439,18 @@
             "user_name": "Xiang Li",
             "emails": ["xiangli.cs@gmail.com"]
         },
+	{
+            "launchpad_id": "xiangbinbin",
+            "gerrit_id": "xiangbinbin",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "xiangbinbin",
+            "emails": ["m13250816269@163.com", "kf.xiangbinbin@h3c.com"]
+        },
         {
             "launchpad_id": "xianghui",
             "companies": [
