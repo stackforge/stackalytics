@@ -20366,6 +20366,18 @@
             "emails": ["zhangleiqiang@gmail.com", "zhangleiqiang@huawei.com"]
         },
         {
+            "launchpad_id": "zhangyujun",
+            "gerrit_id": "zhangyujun",
+            "companies": [
+                {
+                    "company_name": "EasyStack",
+                    "end_date": null
+                }
+            ],
+            "user_name": "ZhangYujun",
+            "emails": ["yujun.zhang@easystack.cn","284517620@qq.com"]
+        },
+        {
             "launchpad_id": "zhaohua-zhao",
             "gerrit_id": "zhaohua",
             "companies": [
