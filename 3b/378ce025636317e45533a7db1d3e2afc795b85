@@ -1,0 +1,13 @@
+Code-Review+1: Maciej Kwiek <mkwiek@mirantis.com>
+Code-Review+1: Ihor Dvoretskyi <idvoretskyi@mirantis.com>
+Code-Review+1: Jedrzej Nowak <jnowak@mirantis.com>
+Code-Review+1: Viktoria Efimova <vefimova@mirantis.com>
+Code-Review+1: Lukasz Oles <loles@mirantis.com>
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Workflow+1: Ilya Shakhat <ishakhat@mirantis.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Thu, 13 Oct 2016 10:20:45 +0000
+Reviewed-on: https://review.openstack.org/385824
+Project: openstack/stackalytics
+Branch: refs/heads/master
