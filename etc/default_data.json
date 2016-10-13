@@ -18916,6 +18916,17 @@
             "emails": ["vincent.casse@ovh.net", "vincent@casse.me"]
         },
         {
+            "launchpad_id": "krishnavinochand",
+            "companies": [
+                {
+                    "company_name": "Infinite",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Vinoth",
+            "emails": ["krishnavinochand@gmail.com", "vinoth.kondiyaan@infinite.com"]
+        },
+        {
             "launchpad_id": "vipuls",
             "companies": [
                 {
