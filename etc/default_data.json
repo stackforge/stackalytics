@@ -6282,6 +6282,19 @@
            "emails": ["guochunting@inspur.com"]
         },
         {
+            "launchpad_id": "chenyingnan",
+            "gerrit_id": "Cady_Chen",
+            "zanata_id": "chenyingnan",
+            "companies": [
+                {
+                    "company_name": "Inspur",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Cady_Chen",
+            "emails": ["chenyingnan@inspur.com"]
+        },
+        {
             "github_id": "frodenas",
             "companies": [
                 {
