@@ -14142,6 +14142,21 @@
             "emails": ["pradeep.av@hp.com", "pradeep.av@hpe.com"]
         },
         {
+            "launchpad_id": "pradeep-singh-u",
+            "companies": [
+                {
+                    "company_name": "NEC",
+                    "end_date": "2015-Dec-09"
+                },
+                {
+                    "company_name": "Walmart",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Pradeep Kumar Singh",
+            "emails": ["ps4openstack@gmail.com", "pradeep.singh@nectechnologies.in"]
+        },
+        {
             "launchpad_id": "prameswar",
             "gerrit_id": "prameswar",
             "companies": [
@@ -16049,6 +16064,22 @@
             ],
             "user_name": "Stephen Balukoff",
             "emails": ["stephen@balukoff.com", "sbalukoff@us.ibm.com", "sbalukoff@bluebox.net"]
+        },
+        {
+            "launchpad_id": "sbelous",
+            "gerrit_id": "sbelous",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": "2016-Oct-18"
+                },
+                {
+                    "company_name": "*independent",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Sergey Belous",
+            "emails": ["sbelous@mirantis.com", "belous.py@gmail.com"]
         },
         {
             "launchpad_id": "sc",
