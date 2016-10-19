@@ -4235,6 +4235,19 @@
             "emails": ["danwent@gmail.com", "dan@nicira.com"]
         },
         {
+            "launchpad_id": "darland-maik",
+            "gerrit_id": "darland",
+            "github_id": "darland",
+            "companies": [
+                {
+                    "company_name": "Sberbank",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Artem Tiumentcev",
+            "emails": ["AITyumentsev.SBT@sberbank.ru", "darland.maik@gmail.com"]
+        },
+        {
             "launchpad_id": "darkwsh-g",
             "companies": [
                 {
@@ -5664,6 +5677,18 @@
             ],
             "user_name": "Nicolas Trangez",
             "emails": ["ikke@nicolast.be", "nicolas.trangez@scality.com"]
+        },
+        {
+            "launchpad_id": "ekaterian",
+            "github_id": "kale-male",
+            "user_name": "Khripunova Ekaterina",
+            "companies": [
+                {
+                    "company_name": "Sberbank",
+                    "end_date": null
+                }
+            ],
+            "emails": ["EAKhripunova.SBT@sberbank.ru", "ekirpichov@gmail.com"]
         },
         {
             "launchpad_id": "ekirpichov",
@@ -22269,6 +22294,11 @@
             "domains": ["sap.com"],
             "company_name": "SAP",
             "aliases": ["SAP SE"]
+        },
+        {
+            "domains": ["sberbank.ru"],
+            "company_name": "Sberbank",
+            "aliases": ["SBERBANK", "Sberbank Technologies"]
         },
         {
             "domains": ["scality.com"],
