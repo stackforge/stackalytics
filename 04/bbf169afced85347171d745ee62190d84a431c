@@ -1,0 +1,8 @@
+Code-Review+2: Herman Narkaytis <hnarkaytis@mirantis.com>
+Workflow+1: Herman Narkaytis <hnarkaytis@mirantis.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Wed, 19 Oct 2016 08:40:08 +0000
+Reviewed-on: https://review.openstack.org/387927
+Project: openstack/stackalytics
+Branch: refs/heads/master
