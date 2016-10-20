@@ -92,6 +92,18 @@
             "emails": ["xie.wenjun2@zte.com.cn"]
         },
         {
+            "launchpad_id": "nanaboat",
+            "gerrit_id": "nanaboat",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Prince Nana",
+            "emails": ["prince.a.owusu.boateng@intel.com"]
+        },
+        {
             "launchpad_id": "369283883-o",
             "companies": [
                 {
