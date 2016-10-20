@@ -10772,6 +10772,10 @@
             "companies": [
                 {
                     "company_name": "UnitedStack",
+                    "end_date": "2016-Sep-4"
+                },
+                {
+                    "company_name": "Polex",
                     "end_date": null
                 }
             ],
