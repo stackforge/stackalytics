@@ -20940,6 +20940,17 @@
             "emails": ["zdyu2000@gmail.com", "zhidong.yu@intel.com"]
         },
         {
+            "launchpad_id": "lixiangyu",
+            "companies": [
+                {
+                    "company_name": "China Mobile",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Xiangyu Li",
+            "emails": ["lixiangyu@cmss.chinamobile.com"]
+        },
+        {
             "launchpad_id": "zhikunliu",
             "companies": [
                 {
