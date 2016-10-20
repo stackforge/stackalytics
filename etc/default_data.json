@@ -1408,11 +1408,15 @@
             "companies": [
                 {
                     "company_name": "Chelsio Communications",
+                    "end_date": "2015-Sep-11"
+                },
+                {
+                    "company_name": "Salesforce",
                     "end_date": null
                 }
             ],
             "user_name": "Anish Bhatt",
-            "emails": ["anish@chelsio.com", "anish7@gmail.com"]
+            "emails": ["anish@chelsio.com", "anish7@gmail.com", "anish.bhatt@salesforce.com"]
         },
         {
            "launchpad_id": "ankita-wagh7",
