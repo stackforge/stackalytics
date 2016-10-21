@@ -8074,6 +8074,18 @@
             "emails": ["ialekseev@griddynamics.com", "ilya@oscloud.ru", "ilyaalekseyev@acm.org"]
         },
         {
+            "launchpad_id": "ilya-p",
+            "gerrit_id": "IPO",
+            "companies": [
+                {
+                    "company_name": "Sberbank",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ilya Popov",
+            "emails": ["ilvpopov.sbt@sberbank.ru", "ilya_p@hotmail.com"]
+        },
+        {
             "launchpad_id": "imsplitbit",
             "companies": [
                 {
