@@ -17801,6 +17801,17 @@
             "emails": ["sunanchen0122@gmail.com", "kf.sunanchen@h3c.com", "506067684@qq.com"]
         },
         {
+            "launchpad_id": "sungg82901",
+            "companies": [
+                {
+                    "company_name": "inspur",
+                    "end_date": null
+                }
+            ],
+            "user_name": "sungg82901",
+            "emails": ["sungg82901@163.com"]
+        },
+        {
             "launchpad_id": "sungjin",
             "gerrit_id": "sungjin",
             "zanata_id": "ujuc",
