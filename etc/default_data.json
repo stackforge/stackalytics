@@ -18766,6 +18766,18 @@
             "emails": ["ttcl@mac.com", "troy.toman@rackspace.com"]
         },
         {
+            "launchpad_id": "trygve-vea-gmail",
+            "gerrit_id": "trygve.vea",
+            "companies": [
+                {
+                    "company_name": "Redpill Linpro AS",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Trygve Vea",
+            "emails": [ "trygve.vea@gmail.com" ]
+        },
+        {
             "launchpad_id": "tteggel",
             "companies": [
                 {
