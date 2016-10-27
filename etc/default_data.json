@@ -3278,6 +3278,17 @@
             "user_name": "ChenZheng",
             "emails": ["chen.zheng@easystack.cn", "czheng@cn.ibm.com"]
         },
+	{
+	    "launchpad_id": "chendy-0598", 
+	    "companies": [
+	        {
+		    "company_name": "CertusNet",
+		    "end_date": null
+		}
+	     ],
+	     "user_name": "Dengyi",
+	     "emails": ["chendy_0598@163.com", "chendy@certusnet.com.cn"]
+	},
         {
             "github_id": "chengweiv5",
             "companies": [
