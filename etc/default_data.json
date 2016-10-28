@@ -14025,6 +14025,17 @@
             "emails": ["paulmontgomery.code@gmail.com", "paul.montgomery@rackspace.com"]
         },
         {
+            "launchpad_id": "paulo-matias",
+            "companies": [
+                {
+                    "company_name": "Universidade Federal de Sao Carlos",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Paulo Matias",
+            "emails": ["matias@ufscar.br"]
+        },
+        {
             "launchpad_id": "pavel-cizinsky",
             "gerrit_id": "LotharKAtt",
             "companies": [
