@@ -11807,10 +11807,14 @@
                 {
                     "company_name": "ZTE Corporation",
                     "end_date": "2015-Jul-10"
+                },
+                {
+                    "company_name": "*independent",
+                    "end_date": null
                 }
             ],
-            "user_name": "Eric Xie",
-            "emails": ["mark_xiett@163.com", "xie.taotao@zte.com.cn"]
+            "user_name": "Mark Xie",
+            "emails": ["mark_xiett@163.com"]
         },
         {
             "launchpad_id": "mark.rushakoff",
