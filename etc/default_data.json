@@ -10270,6 +10270,18 @@
             "emails": ["kevinjacobconway@gmail.com"]
         },
         {
+            "launchpad_id": "kevin-zhao",
+            "gerrit_id": "KevinZhao",
+            "companies": [
+                {
+                    "company_name": "Linaro",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Kevin Zhao",
+            "emails": ["kevin.zhao@linaro.org"]
+        },
+        {
             "launchpad_id": "khussein",
             "companies": [
                 {
@@ -22416,6 +22428,10 @@
         {
             "domains": ["linagora.com"],
             "company_name": "Linagora"
+        },
+        {
+            "domains": ["linaro.org"],
+            "company_name": "Linaro"
         },
         {
             "domains": ["lithium.com"],
