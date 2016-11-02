@@ -20339,6 +20339,19 @@
             ],
             "user_name": "Yejia Xu",
             "emails": ["yejia@unitedstack.com", "xyj.asmy@gmail.com"]
+
+
+        },
+	{
+            "launchpad_id": "xiaoshusheng",
+            "companies": [
+                {
+                    "company_name": "CertusNet",
+                    "end_date": null
+                }
+            ],
+            "user_name": "xiaoshusheng",
+            "emails": [" 2370871772@qq.com"]
         },
         {
             "launchpad_id": "y-maruyama",
