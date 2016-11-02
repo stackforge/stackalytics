@@ -10270,6 +10270,17 @@
             "emails": ["kevinjacobconway@gmail.com"]
         },
         {
+            "launchpad_id": "kevin-zhao",
+            "companies": [
+                {
+                    "company_name": "ARM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Kevin Zhao",
+            "emails": ["kevin.zhao@linaro.org"]
+        },
+        {
             "launchpad_id": "khussein",
             "companies": [
                 {
