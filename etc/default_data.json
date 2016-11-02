@@ -11505,6 +11505,17 @@
             "emails": ["lzy.dev@gmail.com", "zhiyanl@cn.ibm.com"]
         },
         {
+            "launchpad_id": "liming+wang",
+            "companies": [
+                {
+                    "company_name": "CertusNet",
+                    "end_date": null
+                }
+            ],
+            "user_name": "limingWang",
+            "emails": ["2718311197@qq.com"]
+        },
+        {
             "launchpad_id": "m-koderer",
             "gerrit_id": "mkoderer",
             "companies": [
