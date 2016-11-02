@@ -1,6 +1,17 @@
 {
     "users": [
         {
+            "launchpad_id": "nicolasbock",
+            "companies": [
+                {
+                    "company_name": "SUSE",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Nicolas Bock",
+            "emails": ["nicolasbock@gmail.com", "nicolas.bock@suse.com"]
+        },
+        {
             "launchpad_id": "0-doug",
             "companies": [
                 {
