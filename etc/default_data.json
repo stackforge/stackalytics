@@ -6423,6 +6423,18 @@
            "emails": ["guochunting@inspur.com"]
         },
         {
+           "launchpad_id": "jeckxie",
+           "gerrit_id": "jeckxie",
+           "companies": [
+               {
+                   "company_name": "Inspur",
+                   "end_date": null
+               }
+           ],
+           "user_name": "jeckxie",
+           "emails": ["xiexiaozhe@inspur.com"]
+        },
+        {
             "github_id": "frodenas",
             "companies": [
                 {
