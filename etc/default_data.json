@@ -8714,16 +8714,20 @@
             "launchpad_id": "jay-clark",
             "companies": [
                 {
-                    "company_name": "HP",
-                    "end_date": "2015-Oct-31"
+                    "company_name": "IBM",
+                    "end_date": null
                 },
                 {
                     "company_name": "HPE",
-                    "end_date": null
+                    "end_date": "2016-Oct-31"
+                },
+                {
+                    "company_name": "HP",
+                    "end_date": "2015-Oct-31"
                 }
             ],
-            "user_name": "Jay Clark",
-            "emails": ["jason.t.clark@hp.com", "jay.clark@gmail.com", "jason.t.clark@hpe.com"]
+            "user_name": "Jason Clark",
+            "emails": ["jason.clark@ibm.com", "jay.clark@gmail.com", "openstack@jasondotstar.com"]
         },
         {
             "launchpad_id": "jay-lau-513",
