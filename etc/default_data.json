@@ -11521,6 +11521,17 @@
             "emails": ["lzy.dev@gmail.com", "zhiyanl@cn.ibm.com"]
         },
         {
+            "launchpad_id": "wanglmopenstack",
+            "companies": [
+                {
+                    "company_name": "CertusNet",
+                    "end_date": null
+                }
+            ],
+            "user_name": "wanglmopenstack",
+            "emails": ["wanglm_openstack@163.com"]
+        },
+        {
             "launchpad_id": "m-koderer",
             "gerrit_id": "mkoderer",
             "companies": [
