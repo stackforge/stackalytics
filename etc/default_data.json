@@ -20145,6 +20145,17 @@
             "emails": ["wytdahu@gmail.com", "wuyuting@awcloud.com"]
         },
         {
+            "launchpad_id": "wanglmopenstack",
+            "companies": [
+                {
+                    "company_name": "CertusNet",
+                    "end_date": null
+                }
+            ],
+            "user_name": "wanglmopenstack",
+            "emails": ["wanglm_openstack@163.com"]
+        },
+        {
            "launchpad_id": "xavpaice",
            "gerrit_id": "xavpaice",
            "companies": [
