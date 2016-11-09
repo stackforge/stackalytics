@@ -3256,6 +3256,17 @@
             "emails": ["chen.qiaomin@99cloud.net", "qiaomin032@sina.com", "chenqiaomin@99cloud.net"]
         },
         {
+            "launchpad_id": "zhang-qiankun",
+            "companies": [
+                {
+                    "company_name": "puhua-sgcc",
+                    "end_date": null
+                }
+            ],
+            "user_name": "qiankun.zhang",
+            "emails": ["zhangqiankun@sgitg.sgcc.com.cn", "zhqk1234567@126.com"]
+        },
+        {
             "launchpad_id": "chen-xueying1",
             "companies": [
                 {
