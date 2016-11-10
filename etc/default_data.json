@@ -16474,6 +16474,18 @@
             "user_name": "Saulo Eleuterio",
             "emails": ["sauloa@lsd.ufcg.edu.br", "aislansaulo@gmail.com"]
         },
+	{
+            "launchpad_id": "sayantani.goswami",
+            "gerrit_id": "sayantani.goswami",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "sayantani goswami",
+            "emails": ["sayantani.goswami@intel.com"]
+        },
         {
             "launchpad_id": "sbadia",
             "companies": [
