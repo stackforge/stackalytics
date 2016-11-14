@@ -1,0 +1,11 @@
+Code-Review+1: ningwei <jxxiaohou331500@yeah.net>
+Code-Review+1: Yikun Jiang <yikunkero@gmail.com>
+Code-Review+1: Rui Chen <chenrui.momo@gmail.com>
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Workflow+1: Ilya Shakhat <ishakhat@mirantis.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Mon, 14 Nov 2016 09:41:32 +0000
+Reviewed-on: https://review.openstack.org/396472
+Project: openstack/stackalytics
+Branch: refs/heads/master
