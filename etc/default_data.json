@@ -20009,6 +20009,17 @@
             "emails": ["sxmatch1986@gmail.com", "hwang7073@fiberhome.com"]
         },
         {
+            "launchpad_id": "zuohuasun",
+            "companies": [
+                {
+                    "company_name": "Fiberhome",
+                    "end_date": null
+                }
+            ],
+            "user_name": "sunzuohua",
+            "emails": ["zuohuasun@gmail.com", "zhsun@fiberhome.com"]
+        },
+        {
             "launchpad_id": "wangjianhe",
             "companies": [
                 {
