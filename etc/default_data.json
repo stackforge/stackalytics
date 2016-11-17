@@ -16946,6 +16946,17 @@
             "emails": ["shaomingwu@inspur.com"]
         },
         {
+            "launchpad_id": "shapeliang",
+            "companies": [
+                {
+                    "company_name": "JD.COM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "liangxiaoping",
+            "emails": ["shapeliang@gmail.com", "liangxiaoping@jd.com"]
+        },
+        {
             "launchpad_id": "shasha.tavil",
             "gerrit_id": "shasha.tavil",
             "companies": [
@@ -22651,6 +22662,11 @@
         {
             "domains": ["izeltech.com"],
             "company_name": "Izel Technologies"
+        },
+        {
+            "domains": ["jd.com"],
+            "company_name": "JD.COM",
+            "aliases": ["JD", "JD.COM", "JD.COM Inc.", "360buy Ltd.", "京东"]
         },
         {
             "domains": ["jhuapl.edu"],
