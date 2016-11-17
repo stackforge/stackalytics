@@ -12892,6 +12892,10 @@
                 {
                     "company_name": "Comcast",
                     "end_date": "2016-Oct-17"
+                },
+                {
+                    "company_name": "Ellucian",
+                    "start_date": null
                 }
             ],
             "user_name": "Matthew J. Black",
