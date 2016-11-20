@@ -21866,6 +21866,18 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+        {
+            "launchpad_id": "vijendra-soni",
+            "gerrit_id": "iamvijendra",
+            "companies": [
+                {
+                    "company_name": "Cognizant",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Vijendra Soni",
+            "emails": ["vijendra.soni@cognizant.com", "vijendra.soni@gmail.com"]
         }
     ],
     "companies": [
