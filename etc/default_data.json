@@ -10948,6 +10948,30 @@
             "emails": ["leiyashuai@inspur.com"]
         },
         {
+            "launchpad_id": "leogenyhptioson",
+            "gerrit_id": "lijingadeveloper",
+            "companies": [
+                {
+                    "company_name": "h3c",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jing Li",
+            "emails": ["727030349@qq.com", "kf.lijingb@h3c.com"]
+        },
+        {
+            "launchpad_id": "leoliluo",
+            "gerrit_id": "gaoshilian",
+            "companies": [
+                {
+                    "company_name": "h3c",
+                    "end_date": null
+                }
+            ],
+            "user_name": "shilian gao",
+            "emails": ["543950568@qq.com", "kf.gaoshilian@h3c.com"]
+        },
+        {
             "launchpad_id": "lenka-husakova",
             "gerrit_id": "lenkahusakova",
             "zanata_id": "lenkahusakova",
