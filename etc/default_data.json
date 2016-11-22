@@ -681,6 +681,18 @@
             "emails": ["aignatov@mirantis.com", "aignatov@miranits.com"]
         },
         {
+            "launchpad_id": "ailusazh",
+			"gerrit_id": "ailusa",
+            "companies": [
+                {
+                    "company_name": "JD.com",
+                    "end_date": null
+                }
+            ],
+            "user_name": "ailusa",
+            "emails": ["ailusazh@126.com", "njzhangweiwei@jd.com"]
+        },
+        {
             "launchpad_id": "ailzhang",
             "companies": [
                 {
