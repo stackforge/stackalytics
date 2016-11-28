@@ -21589,6 +21589,17 @@
             "user_name": "zhaohua",
             "emails": ["zhaohua.zhao@huawei.com"]
         },
+		{
+            "launchpad_id": "kedy",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Zhao Kai",
+            "emails": ["zhao.kaia@h3c.com"]
+        },
         {
             "launchpad_id": "zhaolijun",
             "companies": [
