@@ -10353,6 +10353,17 @@
             "emails": ["ksvechnikova@mirantis.com", "kdemina@mirantis.com"]
         },
         {
+            "launchpad_id": "kedy",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Zhao Kai",
+            "emails": ["zhao.kaia@h3c.com"]
+        },
+        {
             "launchpad_id": "ke-wu",
             "companies": [
                 {
