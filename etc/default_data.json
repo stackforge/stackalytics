@@ -3173,6 +3173,22 @@
             "emails": ["chdent@redhat.com", "cdent@anticdent.org", "cdent@mirantis.com", "chris.dent@gmail.com"]
         },
         {
+            "launchpad_id": "cedric-zhuang",
+            "gerrit_id": "CedricZhuang",
+            "companies": [
+                {
+                    "company_name": "EMC",
+                    "end_date": "2017-Jan-31"
+                },
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Cedric Zhuang",
+            "emails": ["cedric.zhuang@emc.com", "cedric.zhuang@gmail.com"]
+        },
+        {
             "launchpad_id": "celebdor",
             "gerrit_id": "toni",
             "companies": [
@@ -6115,6 +6131,22 @@
             "emails": ["ekotowski@gmail.com", "ekotowski@hp.com", "ekotowski@hpe.com"]
         },
         {
+            "launchpad_id": "eladzucker",
+            "gerrit_id": "elad-zucker",
+            "companies": [
+                {
+                    "company_name": "EMC",
+                    "end_date": "2017-Jan-31"
+                },
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Elad Zucker",
+            "emails": ["elad.zucker@emc.com", "eladz@hexsys-solutions.com"]
+        },
+        {
             "launchpad_id": "eldar-nugaev",
             "gerrit_id": "eldar",
             "companies": [
@@ -7683,6 +7715,22 @@
             "emails": ["shihai1992@gmail.com"]
         },
         {
+            "launchpad_id": "hallur-p-t",
+            "gerrit_id": "parash-hallur",
+            "companies": [
+                {
+                    "company_name": "EMC",
+                    "end_date": "2017-Jan-31"
+                },
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Parashuram Hallur",
+            "emails": ["parashuram.hallur@emc.com", "hallur.p.t@gmail.com"]
+        },
+        {
             "launchpad_id": "hanchao-v",
             "companies": [
                 {
@@ -9241,6 +9289,22 @@
             ],
             "user_name": "Jay Lau",
             "emails": ["jay.lau.513@gmail.com", "liugya@cn.ibm.com"]
+        },
+        {
+            "launchpad_id": "jay-xu",
+            "gerrit_id": "jay.xu",
+            "companies": [
+                {
+                    "company_name": "EMC",
+                    "end_date": "2017-Jan-31"
+                },
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "jay.xu",
+            "emails": ["jay.xu@emc.com"]
         },
         {
             "launchpad_id": "jaycen-v-grant",
@@ -13217,6 +13281,22 @@
             "emails": ["mei.zhifang97@zte.com.cn"]
         },
         {
+            "launchpad_id": "meir-kriheli",
+            "gerrit_id": "mkriheli",
+            "companies": [
+                {
+                    "company_name": "EMC",
+                    "end_date": "2017-Jan-31"
+                },
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Meir Kriheli",
+            "emails": ["meir.kriheli@emc.com"]
+        },
+        {
             "launchpad_id": "mekala-sarath",
             "gerrit_id": "SarathMekala",
             "companies": [
@@ -15195,6 +15275,22 @@
             "emails": ["peter.portante@redhat.com"]
         },
         {
+            "launchpad_id": "peter.wang",
+            "gerrit_id": "peter_wang",
+            "companies": [
+                {
+                    "company_name": "EMC",
+                    "end_date": "2017-Jan-31"
+                },
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Peter Wang",
+            "emails": ["peter.wang13@emc.com", "wangxu198709@gmail.com"]
+        },
+        {
             "launchpad_id": "peterstac",
             "companies": [
                 {
@@ -17160,6 +17256,22 @@
             "emails": ["ryan.brandt@hp.com","ryan.brandt@hpe.com"]
         },
         {
+            "launchpad_id": "ryan-liang",
+            "gerrit_id": "RyanLiang",
+            "companies": [
+                {
+                    "company_name": "EMC",
+                    "end_date": "2017-Jan-31"
+                },
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ryan Liang",
+            "emails": ["ryan.liang@emc.com", "menglei.leung@gmail.com"]
+        },
+        {
             "launchpad_id": "ryan-petrello",
             "gerrit_id": "ryanpetrello",
             "companies": [
@@ -17325,6 +17437,22 @@
             ],
             "user_name": "Salvatore Orlando",
             "emails": ["salv.orlando@gmail.com", "sorlando@nicira.com", "salvatore.orlando@eu.citrix.com"]
+        },
+        {
+            "launchpad_id": "sam-wan",
+            "gerrit_id": "samwan",
+            "companies": [
+                {
+                    "company_name": "EMC",
+                    "end_date": "2017-Jan-31"
+                },
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Sam Wan",
+            "emails": ["sam.wan@emc.com"]
         },
         {
             "github_id": "samalba",
@@ -17989,6 +18117,22 @@
             "emails": ["shashirekha.j.gundur@intel.com", "shashi.j.gundur@gmail.com"]
         },
         {
+            "launchpad_id": "shaun-edwards",
+            "gerrit_id": "sedwards",
+            "companies": [
+                {
+                    "company_name": "EMC",
+                    "end_date": "2017-Jan-31"
+                },
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Shaun Edwards",
+            "emails": ["shaun.edwards@emc.com"]
+        },
+        {
             "launchpad_id": "shaunm-gnome",
             "companies": [
                 {
@@ -18035,6 +18179,22 @@
             ],
             "user_name": "Shawn Aten",
             "emails": ["shawnmaten@gmail.com"]
+        },
+        {
+            "launchpad_id": "shay-halsband",
+            "gerrit_id": "shyh",
+            "companies": [
+                {
+                    "company_name": "EMC",
+                    "end_date": "2017-Jan-31"
+                },
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Shay Halsband",
+            "emails": ["shay.halsband@emc.com"]
         },
         {
             "launchpad_id": "sheshananda",
@@ -19918,6 +20078,22 @@
             "emails": ["tim.simpson@rackspace.com", "tim.simpson4@gmail.com"]
         },
         {
+            "launchpad_id": "tina-tang",
+            "gerrit_id": "Tina",
+            "companies": [
+                {
+                    "company_name": "EMC",
+                    "end_date": "2017-Jan-31"
+                },
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Tina Tang",
+            "emails": ["tina.tang@emc.com"]
+        },
+        {
             "launchpad_id": "tkak",
             "gerrit_id": "tkakfrkw",
             "companies": [
@@ -20759,6 +20935,22 @@
             "emails": ["vincent.casse@ovh.net", "vincent@casse.me"]
         },
         {
+            "launchpad_id": "vinita",
+            "gerrit_id": "vinita",
+            "companies": [
+                {
+                    "company_name": "EMC",
+                    "end_date": "2017-Jan-31"
+                },
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "vinita",
+            "emails": ["vinita.deshpande@emc.com"]
+        },
+        {
             "launchpad_id": "vipuls",
             "companies": [
                 {
@@ -21074,6 +21266,22 @@
             ],
             "user_name": "Jake Yip",
             "emails": ["waipengyip@yahoo.com", "waipengyip@gmail.com", "jake.yip@unimelb.edu.au"]
+        },
+        {
+            "launchpad_id": "walshh2",
+            "gerrit_id": "walshh2",
+            "companies": [
+                {
+                    "company_name": "EMC",
+                    "end_date": "2017-Jan-31"
+                },
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Helen Walsh",
+            "emails": ["helen.walsh@emc.com"]
         },
         {
             "launchpad_id": "walter-boring",
@@ -21718,6 +21926,22 @@
             ],
             "user_name": "Hong Hui Xiao",
             "emails": ["honghui_xiao@yeah.net", "xiaohhui123@gmail.com", "xiaohonghui@huawei.com"]
+        },
+        {
+            "launchpad_id": "xing-yang",
+            "gerrit_id": "xing-yang",
+            "companies": [
+                {
+                    "company_name": "EMC",
+                    "end_date": "2017-Jan-31"
+                },
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "xing-yang",
+            "emails": ["xing.yang@emc.com", "xing.yang@dell.com"]
         },
         {
             "launchpad_id": "xinze",
@@ -23716,10 +23940,11 @@
             "aliases": ["DEK Technologies","DEK"]
         },
         {
-            "domains": ["dell.com", "software.dell.com"],
-            "company_name": "Dell",
+            "company_name": "Dell EMC",
             "aliases": ["Dell  &amp; Ganette Publishing", "Dell, Inc., Cabarrus County Schools", "Dell & Ganette Publishing",
-                "Dell Software Group"]
+                "Dell Software Group", "Dell", "Dell EMC", "Dell EMC - previously Cloudscaling", "DellEMC", "DellEMC unaffiliated", "Dell - Unaffiliated", "Dell ESG Open Source Solutions", "Dell International Services", "Dell Services", "Dell Services Tata Consultancy Services Deutsche Bank", "Dell Software Zhuhai", "Dell Support Number", "dell computer company",
+"EMC", "EMC Corporation",
+                "EMC Corportion", "EMC employee; Russian Cloud Computing Professional Association - Head of executive commitee", "EMC, VMWare", "EMC - Unaffiliated", "EMC - ETD", "EMC - ScaleIO", "EMC Corporation Unaffiliated", "EMC IT Solutions Ltd", "EMC {code}", "EMC.com", "Office of The CTO EMC Corporation", "VCE - EMC"]
         },
         {
             "domains": ["denali-systems.com"],
@@ -23782,11 +24007,6 @@
         {
             "domains": ["embrane.com"],
             "company_name": "Embrane"
-        },
-        {
-            "domains": ["emc.com"],
-            "company_name": "EMC",
-            "aliases": ["EMC Corportion", "EMC employee; Russian Cloud Computing Professional Association - Head of executive commitee", "EMC, VMWare"]
         },
         {
             "domains": ["endurancewindpower.com"],
