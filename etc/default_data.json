@@ -1,6 +1,18 @@
 {
     "users": [
         {
+            "launchpad_id": "jeffrey-olsen",
+            "gerrit_id": "jeffrey.olsen",
+            "companies": [
+                {
+                    "company_name": "EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jeffrey Olsen",
+            "emails": ["jeffrey.olsen@emc.com"]
+        },
+        {
             "launchpad_id": "0-doug",
             "companies": [
                 {
