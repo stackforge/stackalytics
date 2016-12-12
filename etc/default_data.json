@@ -22379,6 +22379,18 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+        {
+            "launchpad_id": "yuyangwang1985",
+            "gerrit_id": "YuYangWang",
+            "companies": [
+                {
+                    "company_name": "winhong",
+                    "end_date": null
+                }
+            ],
+            "user_name": "YuYang",
+            "emails": ["wangyy@winhong.com", "yuyangwang1985@gmail.com"]
         }
     ],
     "companies": [
