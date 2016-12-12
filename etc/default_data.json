@@ -22379,6 +22379,18 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+        {
+            "launchpad_id": "yuyangwang1985",
+            "gerrit_id": "YuYangWang",
+            "companies": [
+                {
+                    "company_name": "winhong",
+                    "end_date": null
+                }
+            ],
+            "user_name": "YuYang",
+            "emails": ["wangyy@winhong.com", "yuyangwang1985@gmail.com"]
         }
     ],
     "companies": [
@@ -23080,6 +23092,12 @@
               "Huawei Technologies Düsseldorf", "Huawei Technologies India Private Limited", "Huawei china",
               "Huawei Tech", "Huawei Enterprise Business Group", "huawei technical", "Huawei Technologies India",
               "huawei storage system", "华为技术有限公司", "华为", "Huawei Technolgies"]
+        },
+        {
+            "domains": ["winhong.com"],
+            "company_name": "winhong",
+            "aliases": ["www.winhong.com","winhong Technology"
+            ]
         },
         {
             "domains": ["hust.edu.cn"],
