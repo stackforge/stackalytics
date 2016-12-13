@@ -3170,6 +3170,18 @@
             "emails": ["chad.lung@gmail.com", "chad.lung@rackspace.com"]
         },
         {
+            "launchpad_id": "chaifuzhi",
+            "companies": [
+                {
+                    "company_name": "inspur",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Fuzhi Chai",
+            "emails": ["cfz1025@163.com", "chaifz@inspur.com"]
+        },
+
+        {
             "launchpad_id": "chamankang",
             "companies": [
                 {
