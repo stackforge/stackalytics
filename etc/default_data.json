@@ -22372,6 +22372,19 @@
             "emails": ["lzyeval@gmail.com", "zhongyue.nah@intel.com"]
         },
         {
+            "launchpad_id": "bharath-kumar3",
+            "gerrit_id": "bharathshetty4",
+            "zanata_id": "bharathshetty4",
+            "companies": [
+                {
+                    "company_name": "hpe",
+                    "end_date": null
+                }
+            ],
+            "user_name": "bharathshetty4",
+            "emails": ["shettybharath4@gmail.com"]
+        },
+        {
             "launchpad_id": "zzxwill",
             "gerrit_id": "zzxwill",
             "zanata_id": "zzxwill",
