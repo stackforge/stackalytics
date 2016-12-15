@@ -21642,6 +21642,19 @@
             "emails": ["yukky37@gmail.com"]
         },
         {
+            "launchpad_id": "bharath-kumar3",
+            "gerrit_id": "bharathshetty4"
+            "zanata_id": "bharathshetty4",
+            "companies": [
+                {
+                    "company_name": "HPE",
+                    "end_date": null
+                }
+            ],
+            "user_name": "bharathshetty4",
+            "emails": ["shettybharath4@gmail.com"]
+        },
+        {
             "launchpad_id": "z8715000",
             "companies": [
                 {
