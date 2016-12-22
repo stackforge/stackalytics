@@ -26086,6 +26086,11 @@
             ],
             "uri": "git://git.openstack.org/openstack/karbor-dashboard.git",
             "organization": "openstack"
+        },
+        {
+            "module": "novajoin",
+            "uri": "git://git.openstack.org/openstack/novajoin.git",
+            "organization": "openstack"
         }
     ],
     "project_sources": [
