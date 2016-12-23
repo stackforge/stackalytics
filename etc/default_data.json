@@ -9366,6 +9366,18 @@
             "emails": ["jianyi@sgitg.sgcc.com.cn", "jian_yi1987@163.com"]
         },
         {
+            "launchpad_id": "jianyitest",
+            "gerrit_id": "jianyitest",
+            "companies": [
+                {
+                    "company_name": "SG.Cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "jianyitest",
+            "emails": ["jianyi@sgitg.sgcc.com.cn", "jian_yi1987@163.com"]
+        },
+        {
             "launchpad_id": "jikyll",
             "gerrit_id": "jikyll",
             "companies": [
