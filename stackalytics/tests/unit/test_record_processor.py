@@ -581,8 +581,9 @@ class TestRecordProcessor(testtools.TestCase):
         }, bugs[1])
 
     # process records complex scenarios
-
-    def test_process_blueprint_one_draft_spawned_lp_doesnt_know_user(self):
+	
+	
+	test_process_blueprint_one_draft_spawned_lp_doesn't_know_user(self):
         # In: blueprint record
         #     LP doesn't know user
         # Out: blueprint-draft record
