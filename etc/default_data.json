@@ -13,6 +13,17 @@
             "emails": ["doug@parelastic.com", "doug@tesora.com", "dougshelley66@gmail.com"]
         },
         {
+            "launchpad_id": "idegtiarov",
+           "companies": [
+               {
+                   "company_name": "Mirantis",
+                   "end_date": null
+               }
+           ],
+           "user_name": "Igor Degtiarov",
+           "emails": ["idegtiarov@mirantis.com"]
+        },
+        {
             "launchpad_id": "0x44",
             "companies": [
                 {
