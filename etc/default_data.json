@@ -24429,6 +24429,10 @@
         {
             "domains": ["zte.com.cn"],
             "company_name": "ZTE Corporation"
+        },
+        {
+            "domains": ["harmonycloud.cn"],
+            "company_name": "HarmonyCloud"
         }
 
     ],
