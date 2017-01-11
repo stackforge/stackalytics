@@ -3592,6 +3592,18 @@
             "emails": ["imtiaz.chowdhury@workday.com"]
         },
         {
+            "launchpad_id": "chuanbo",
+            "gerrit_id": "chuanbo",
+            "companies": [
+                {
+                    "company_name": "SG.Cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "chuanbo",
+            "emails": ["xuchuanbo@sgitg.sgcc.com.cn", "xuchuanbo@hotmail.com"]
+        },
+        {
             "launchpad_id": "chris-buccella",
             "gerrit_id": "hdd",
             "companies": [
