@@ -22617,6 +22617,17 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+        {
+            "launchpad_id": "alejandro.esc",
+            "companies": [
+                {
+                    "company_name": "Samsung SDS",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Alejandro Escobar",
+            "emails": ["jaescobar.cell@gmail.com"]
         }
     ],
     "companies": [
