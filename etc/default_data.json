@@ -1,6 +1,18 @@
 {
     "users": [
         {
+            "launchpad_id": "alejandro.esc",
+            "gerrit_id": "alejandroEsc",
+            "companies": [
+                {
+                    "company_name": "Samsung SDS",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Alejandro Escobar",
+            "emails": ["jaescobar.cell@gmail.com"]
+        },
+        {
             "launchpad_id": "0-doug",
             "gerrit_id": "dougshelley",
             "companies": [
