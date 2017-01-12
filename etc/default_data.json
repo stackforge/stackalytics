@@ -1,6 +1,17 @@
 {
     "users": [
         {
+            "launchpad_id": "klkumar",
+            "companies": [
+                {
+                    "company_name": "aptira",
+                    "end_date": null
+                }
+            ],
+            "user_name": "kumar lakshman kumar",
+            "emails": ["lakshman@aptira.com "]
+        },
+        {
             "launchpad_id": "0-doug",
             "gerrit_id": "dougshelley",
             "companies": [
