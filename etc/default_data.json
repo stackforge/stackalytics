@@ -4467,6 +4467,17 @@
             "emails": ["danny.al-gaaf@bisect.de"]
         },
         {
+            "launchpad_id": "dannyh",
+            "companies": [
+                {
+                    "company_name": "inwinSTACK",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Danny.Ho",
+            "emails": ["danny.h@inwinstack.com ", "kiss5891@gmail.com"]
+        },
+        {
             "launchpad_id": "danwent",
             "companies": [
                 {
