@@ -12065,6 +12065,17 @@
             "user_name": "Madhuri Kumari",
             "emails": ["madhuri.rai07@gmail.com", "madhuri.kumari@intel.com", "madhuri.kumari@nectechnologies.in"]
         },
+                {
+            "launchpad_id": "maurice-schreiber",
+            "companies": [
+                {
+                    "company_name": "SAP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Maurice Schreiber",
+            "emails": ["maurice.schreiber@sap.com"]
+        },
         {
             "launchpad_id": "madhusudhan-kandadai",
             "companies": [
