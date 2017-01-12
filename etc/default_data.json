@@ -1,6 +1,17 @@
 {
     "users": [
         {
+            "launchpad_id": "coolias-lj",
+            "companies": [
+                {
+                    "company_name": "T2CLOUD",
+                    "end_date": null
+                }
+            ],
+            "user_name": "xiechao",
+            "emails": ["coolias.lj@gmail.com", "xiechao@t2cloud.net"]
+        },
+        {
             "launchpad_id": "0-doug",
             "gerrit_id": "dougshelley",
             "companies": [
