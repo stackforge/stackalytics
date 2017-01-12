@@ -18846,6 +18846,18 @@
             "emails": ["gang.sungjin@gmail.com", "potopro@gmail.com", "ujuc@ujuc.kr"]
         },
         {
+            "launchpad_id": "sungg82901",
+            "companies": [
+                {
+                    "company_name": "Inspur",
+                    "end_date": null
+                }
+            ],
+            "user_name": "sun guigang",
+            "emails": ["sungg82901@gmail.com", "sunguigang@inspur.com"]
+        },
+
+        {
             "launchpad_id": "sunjh1999",
             "gerrit_id": "HenryS",
             "companies": [
