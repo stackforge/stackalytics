@@ -7447,6 +7447,17 @@
             "emails": ["guoyongxhzhf@163.com", "guoyongxhzhf@h3c.com"]
         },
         {
+            "launchpad_id": "zhugaoxiao",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Zhu Gaoxiao",
+            "emails": ["zhugaoxiao@gmail.com", "zhu.gaoxiao@h3c.com"]
+        }, 
+        {
             "launchpad_id": "gus",
             "companies": [
                 {
