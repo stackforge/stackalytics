@@ -13,6 +13,17 @@
             "emails": ["doug@parelastic.com", "doug@tesora.com", "dougshelley66@gmail.com"]
         },
         {
+            "launchpad_id": "hhktony",
+            "companies": [
+                {
+                    "company_name": "T2cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "xutao",
+            "emails": ["xutao@t2cloud.net", "hhktony@gmail.com"]
+        },
+        {
             "launchpad_id": "0x44",
             "companies": [
                 {
