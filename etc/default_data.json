@@ -1,6 +1,17 @@
 {
     "users": [
         {
+            "launchpad_id": "zhangwenjian",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhangwenjian",
+            "emails": ["wenjian.zhang@gmail.com", "zhang.wenjian2@zte.com.cn"]
+        },
+        {
             "launchpad_id": "0-doug",
             "gerrit_id": "dougshelley",
             "companies": [
