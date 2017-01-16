@@ -9150,6 +9150,17 @@
             "emails": ["joshd@hq.newdream.net", "josh.durgin@dreamhost.com", "josh.durgin@inktank.com", "jdurgin@redhat.com"]
         },
         {
+            "launchpad_id": "jean.caron",
+            "companies": [
+                {
+                    "company_name": "OVH",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jean Caron",
+            "emails": ["jean.caron@corp.ovh.com"]
+        },
+        {
             "launchpad_id": "jean-daniel-bonnetot",
             "companies": [
                 {
