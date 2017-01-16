@@ -21323,6 +21323,17 @@
             "emails": ["xuxinkun@gmail.com"]
         },
         {
+            "launchpad_id": "xuzhenhai",
+            "companies": [
+                {
+                    "company_name": "JD.COM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "xuzhenhai",
+            "emails": ["xuzhenhai@jd.com,xuzhenhai@wo.cn"]
+        },
+        {
             "github_id": "xuzhenglun",
             "companies": [
                 {
