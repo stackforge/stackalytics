@@ -21334,6 +21334,18 @@
             "emails": ["xuzhenglun@gmail.com", "zhenglun.xu@daocloud.io"]
         },
         {
+            "launchpad_id": "xuzhenhai",
+            "gerrit_id": "xuzhenhai",
+            "companies": [
+                {
+                    "company_name": "JD.COM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "xuzhenhai",
+            "emails": ["xuzhenhai@jd.com"]
+        },
+        {
             "launchpad_id": "xychu2008",
             "companies": [
                 {
@@ -21354,18 +21366,6 @@
             ],
             "user_name": "Yejia Xu",
             "emails": ["yejia@unitedstack.com", "xyj.asmy@gmail.com"]
-        },
-        {
-            "launchpad_id": "xuzhenhai",
-            "gerrit_id": "xuzhenhai",
-            "companies": [
-                {
-                    "company_name": "JD.COM",
-                    "end_date": null
-                }
-            ],
-            "user_name": "xuzhenhai",
-            "emails": ["xuzhenhai@jd.com"]
         },
         {
             "launchpad_id": "y-maruyama",
