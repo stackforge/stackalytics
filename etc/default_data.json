@@ -21341,17 +21341,6 @@
             "emails": ["todd@ansolabs.com", "todd@rubidine.com", "xtoddx@gmail.com"]
         },
         {
-            "launchpad_id": "xuao",
-            "companies": [
-                {
-                    "company_name": "Awcloud",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Xu Ao",
-            "emails": ["xuao@awcloud.com"]
-        },
-        {
             "launchpad_id": "xu.hongzhi",
             "gerrit_id": "xu.hongzhi",
             "companies": [
@@ -21362,6 +21351,17 @@
             ],
             "user_name": "xu.hongzhi",
             "emails": ["xuhongzhi@sgitg.sgcc.com.cn", "toxhz@163.com"]
+        },
+        {
+            "launchpad_id": "xuao",
+            "companies": [
+                {
+                    "company_name": "Awcloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Xu Ao",
+            "emails": ["xuao@awcloud.com"]
         },
         {
             "launchpad_id": "xuchao",
