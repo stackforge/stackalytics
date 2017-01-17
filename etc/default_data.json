@@ -3935,6 +3935,18 @@
             "emails": ["coreypobrien@gmail.com", "corey.obrien@rackspace.com"]
         },
         {
+            "launchpad_id": "corin-v",
+            "zanata_id": "corin",
+            "companies": [
+                {
+                    "company_name": "*independent",
+                    "end_date": null
+                }
+            ],
+            "user_name":"Corinne Verheyde",
+            "emails": ["cverheyd@gmail.com"]
+        },
+        {
             "launchpad_id": "corvus",
             "companies": [
                 {
