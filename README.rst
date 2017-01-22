@@ -1,4 +1,4 @@
-Stackalytics
+ssStackalytics
 ============
 
 Application Features
