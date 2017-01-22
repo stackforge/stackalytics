@@ -22293,6 +22293,18 @@
             "emails": ["zerodivisible@gmail.com"]
         },
         {
+            "launchpad_id": "zhangyongqian",
+            "gerrit_id": "zhangyongqian",
+            "companies": [
+                {
+                    "company_name": "99cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhangyongqian",
+            "emails": ["zhang.yongqian@99cloud.net"]
+        }, 
+        {
           "launchpad_id": "zhang-haixia",
             "companies": [
                 {
