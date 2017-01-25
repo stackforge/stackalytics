@@ -69,7 +69,7 @@ DASHBOARD_OPTS = [
                help='Default metric'),
     cfg.StrOpt('default-release',
                help='Default release, the most recent if not set'),
-    cfg.StrOpt('default-project-type', default='openstack',
+    cfg.StrOpt('default-project-type', default='all',
                help='Default project type'),
     cfg.IntOpt('dashboard-update-interval', default=3600,
                help='The interval specifies how frequently dashboard should '
