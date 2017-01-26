@@ -1264,6 +1264,21 @@
             "emails": ["andrew.mitry@walmart.com", "andrew_mitry@cable.comcast.com", "amitry@gmail.com"]
         },
         {
+            "launchpad_id": "maurya0092",
+            "companies": [
+                {
+                    "company_name": "Calsoft",
+                    "end_date": "2016-July-25"
+                },
+                {
+                    "company_name": "AFour Technologies",
+                    "end_date": null
+                }
+            ],
+            "user_name": "AmitKumar",
+            "emails": ["maurya0092@gmail.com", "amit.kumar@afourtech.com"]
+        },
+        {
             "launchpad_id": "amrith",
             "companies": [
                 {
