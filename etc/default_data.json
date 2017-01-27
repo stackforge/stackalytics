@@ -9078,6 +9078,7 @@
             "user_name": "Jay Clark",
             "emails": ["jason.t.clark@hp.com", "jay.clark@gmail.com", "jason.t.clark@hpe.com"]
         },
+
         {
             "launchpad_id": "jay-lau-513",
             "companies": [
@@ -10223,6 +10224,21 @@
             ],
             "user_name": "Joe Savak",
             "emails": ["joe.savak@rackspace.com", "jsavak@gmail.com"]
+        },
+        {
+            "launchpad_id": "jsbryant",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": "2017-Jan-20"
+                },
+                {
+                    "company_name": "Lenovo",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jay Bryant",
+            "emails": ["jungleboyj@electronicjungle.net", "jsbryant@electronicjungle.net", "jbryant1@lenovo.com", "jsbryant@us.ibm.com"]
         },
         {
             "launchpad_id": "jshepher",
