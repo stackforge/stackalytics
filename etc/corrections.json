@@ -2995,5 +2995,12 @@
             "module": "openstack-manuals",
             "subject": "Cleanup the common/ directory"
         }
+    ],
+    "user_corrections": [
+        {
+            "user_id": "zhangyujun",
+            "emails": ["yujun.zhang@easystack.cn","284517620@qq.com"],
+            "correction_comment": "Related-Bug: #1634020 Reset emails"
+        }
     ]
 }
