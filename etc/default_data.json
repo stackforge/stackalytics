@@ -18909,6 +18909,17 @@
             "emails": ["strigazi@gmail.com", "spyridon.trigazis@cern.ch"]
         },
         {
+            "launchpad_id": "cjdc",
+            "companies": [
+                {
+                    "company_name": "CERN",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Cristovao Cordeiro",
+            "emails": ["cjdcordeiro@gmail.com", "cristovao.cordeiro@cern.ch"]
+        },
+        {
             "launchpad_id": "stuart-mclaren",
             "gerrit_id": "stuart-mclaren",
             "companies": [
