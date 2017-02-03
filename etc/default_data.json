@@ -15591,6 +15591,18 @@
             "emails": ["thorsten@atomia.com"]
         },
         {
+            "launchpad_id": "rwellum",
+            "gerrit_id": "richwellum",
+            "companies": [
+                {
+                    "company_name": "Lenovo",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Rich Wellum",
+            "emails": ["rwellum@lenovo.com", "richwellum@gmail.com"]
+        },
+        {
             "launchpad_id": "r-uone",
             "gerrit_id": "rtrezeciak",
             "companies": [
