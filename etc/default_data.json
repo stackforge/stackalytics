@@ -82,8 +82,8 @@
             "emails": ["andrew@andrewspiers.net", "andrew.spiers@unimelb.edu.au"]
         },
         {
-            "launchpad_id": "xuqihou",
-            "gerrit_id": "xuqihou",
+            "launchpad_id": "xqh",
+            "gerrit_id": "xqh",
             "companies": [
                 {
                     "company_name": "Fiberhome",
@@ -91,7 +91,7 @@
                 }
             ],
             "user_name": "xqh",
-            "emails": ["xu_91@163.com", "igis_xqh@fiberhome.com"]
+            "emails": ["xu_91@163.com"]
         },
         {
             "launchpad_id": "307419146-q",
