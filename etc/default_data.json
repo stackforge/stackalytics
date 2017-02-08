@@ -586,6 +586,17 @@
             "emails": ["scott.adkins@walmart.com", "scott_adkins@cable.comcast.com", "adkinss@gmail.com"]
         },
         {
+            "launchpad_id": "keerthiv",
+            "companies": [
+                {
+                    "company_name": "Walmart",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Keerthivasan Selvaraaj",
+            "emails": ["Keerthivasan.Selvaraj@walmart.com", "openstackdev86@gmail.com", "keerthivassan86@gmail.com"]
+        },
+        {
             "launchpad_id": "adolfo-duarte",
             "companies": [
                 {
