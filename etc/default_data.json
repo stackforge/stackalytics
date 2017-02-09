@@ -1,6 +1,18 @@
 {
     "users": [
         {
+            "launchpad_id": "areial",
+            "gerrit_id": "zwhe",
+            "companies": [
+                {
+                    "company_name": "fiberhome",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zwhe",
+            "emails": ["zwhe@fiberhome.com", "areialray@gmail.com"]
+        },		
+        {
             "launchpad_id": "0-doug",
             "gerrit_id": "dougshelley",
             "companies": [
