@@ -23138,6 +23138,17 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+        {
+            "launchpad_id": "indicoliteplus",
+            "companies": [
+                {
+                    "company_name": "Fiberhome",
+                    "end_date": null
+                }
+            ],
+            "user_name": "indicoliteplus",
+            "emails": ["indicoliteplus@gmail.com", "ccyu@fiberhome.com"]
         }
     ],
     "companies": [
