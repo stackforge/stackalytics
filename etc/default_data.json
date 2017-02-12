@@ -8280,6 +8280,17 @@
             "emails": ["mhuntxu@gmail.com"]
         },
         {
+            "launchpad_id": "chenyb",
+            "companies": [
+                {
+                    "company_name": "Eayun",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yuanbin Chen",
+            "emails": ["cybing4@gmail.com", "yuanbin.chen@eayun.com"]
+        },
+        {
             "launchpad_id": "hurgleburgler",
             "companies": [
                 {
