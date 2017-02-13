@@ -1,0 +1,10 @@
+Code-Review+1: xuqihou <xu_91@163.com>
+Code-Review+1: zhichao zhu <zczhu@fiberhome.com>
+Code-Review+2: Ilya Shakhat <ishakhat@mirantis.com>
+Workflow+1: Ilya Shakhat <ishakhat@mirantis.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Mon, 13 Feb 2017 07:02:27 +0000
+Reviewed-on: https://review.openstack.org/432871
+Project: openstack/stackalytics
+Branch: refs/heads/master
