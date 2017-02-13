@@ -8302,6 +8302,18 @@
             "emails": ["mhuntxu@gmail.com"]
         },
         {
+            "launchpad_id": "blkart",
+            "gerrit_id": "blkart",
+            "companies": [
+                {
+                    "company_name": "Eayun",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Zhe Ma",
+            "emails": ["blkart.org@gmail.com"]
+        },
+        {
             "launchpad_id": "hurgleburgler",
             "companies": [
                 {
