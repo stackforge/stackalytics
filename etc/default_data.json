@@ -22046,6 +22046,22 @@
             "emails": ["yatinkumbhare@gmail.com", "ykumbhare@walmartlabs.com"]
         },
         {
+            "launchpad_id": "warmchang",
+            "gerrit_id": "warmchang",
+            "companies": [
+                {
+                    "company_name": "Huawei",
+                    "end_date": "2010-Feb-03"
+                },
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "William Chang",
+            "emails": ["warmchang@outlook.com", "zhang.wanmin@zte.com.cn"]
+        },
+        {
             "launchpad_id": "ybabenko",
             "companies": [
                 {
@@ -23245,22 +23261,6 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
-        },
-        {
-            "launchpad_id": "warmchang",
-            "gerrit_id": "warmchang",
-            "companies": [
-                {
-                    "company_name": "Huawei",
-                    "end_date": "2010-Feb-03"
-                },
-                {
-                    "company_name": "ZTE Corporation",
-                    "end_date": null
-                }
-            ],
-            "user_name": "warmchang",
-            "emails": ["zhang.wanmin@zte.com.cn"]
         }
     ],
     "companies": [
