@@ -22102,6 +22102,17 @@
             "emails": ["yatinkumbhare@gmail.com", "ykumbhare@walmartlabs.com"]
         },
         {
+            "launchpad_id": "warmchang",
+            "companies": [
+                {
+                    "company_name": "*independent",
+                    "end_date": null
+                }
+            ],
+            "user_name": "William Chang",
+            "emails": ["warmchang@outlook.com"]
+        },
+        {
             "launchpad_id": "ybabenko",
             "companies": [
                 {
