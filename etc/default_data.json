@@ -3040,6 +3040,17 @@
             "emails": ["castulo.martinez@intel.com"]
         },
         {
+            "launchpad_id": "warmchang",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "warmchang",
+            "emails": ["warmchang@outlook.com"]
+        },
+        {
             "launchpad_id": "cbehrens",
             "companies": [
                 {
