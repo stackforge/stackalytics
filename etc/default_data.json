@@ -15977,6 +15977,22 @@
             "emails": ["rahul.unnikrishnan.nair@intel.com", "rahulunair@gmail.com", "hqp365@my.utsa.edu"]
         },
         {
+            "launchpad_id": "pradeepkumarks",
+            "gerrit_id": "pradeepkumarks",
+            "companies": [
+                {
+                    "company_name": "Ericsson",
+                    "end_date": null
+                },
+                {
+                    "company_name": "AT&T",
+                    "end_date": null
+                }
+            ],
+            "user_name": "pradeepkumarks",
+            "emails": ["pradeepkumar.ks@ericsson.com", "pk5294@att.com", "pradeep.sreenivas@gmail.com"]
+        },
+        {
             "launchpad_id": "raiesmh08",
             "gerrit_id": "raiesmh08",
             "companies": [
