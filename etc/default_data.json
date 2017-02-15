@@ -15539,6 +15539,22 @@
             "emails": ["prabhu.m4@hpe.com", "prabhu.m4@hp.com"]
         },
         {
+            "launchpad_id": "pradeepkumar.ks",
+            "gerrit_id": "pradeepkumarks",
+            "companies": [
+                {
+                    "company_name": "Ericsson",
+                    "end_date": null
+                },
+                {
+                    "company_name": "AT&T",
+                    "end_date": "2017-Jan-31"
+                }
+            ],
+            "user_name": "pradeepkumarks",
+            "emails": ["pradeepkumar.ks@ericsson.com", "pk5294@att.com", "pradeep.sreenivas@gmail.com"]
+        },
+        {
             "launchpad_id": "pradeep-av",
             "companies": [
                 {
