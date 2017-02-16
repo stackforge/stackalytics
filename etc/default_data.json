@@ -25202,6 +25202,10 @@
         {
             "domains": ["zte.com.cn"],
             "company_name": "ZTE Corporation"
+        },
+        {
+            "domains": ["apprenda.com"],
+            "company_name": "Apprenda"
         }
 
     ],
