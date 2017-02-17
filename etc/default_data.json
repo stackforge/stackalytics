@@ -21871,6 +21871,17 @@
             "emails": ["xianghui@cn.ibm.com", "hui.xiang@canonical.com"]
         },
         {
+            "launchpad_id": "Xianghui Zeng",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Xianghui Zeng",
+            "emails": ["zeng.xianghui@zte.com.cn"]
+        },
+        {
            "launchpad_id": "xiaobo-2",
             "companies": [
                 {
@@ -24160,7 +24171,7 @@
             "aliases": ["Huawei Technologies", "Huawei Technology", "Huawei Technologies Co. Limitied",
               "Huawei Technologies Düsseldorf", "Huawei Technologies India Private Limited", "Huawei china",
               "Huawei Tech", "Huawei Enterprise Business Group", "huawei technical", "Huawei Technologies India",
-              "huawei storage system", "华为技术有限公司", "华为", "Huawei Technolgies"]
+              "huawei storage system", "华为技术有限公�?, "华为", "Huawei Technolgies"]
         },
         {
             "domains": ["hust.edu.cn"],
@@ -24897,7 +24908,7 @@
         {
             "domains": ["t2cloud.net"],
             "company_name": "t2cloud",
-            "aliases": ["T2Cloud", "云图腾", "北京云途腾科技有限责任公司"]
+            "aliases": ["T2Cloud", "云图�?, "北京云途腾科技有限责任公司"]
         },
         {
             "domains": ["tail-f.com"],
