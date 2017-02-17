@@ -24,6 +24,18 @@
             "emails": ["chris@pistoncloud.com", "chris@slicehost.com"]
         },
         {
+            "launchpad_id": "blue55",
+            "gerrit_id": "lan",
+            "companies": [
+                {
+                    "company_name": "fiberhome",
+                    "end_date": null
+                }
+            ],
+            "user_name": "lan",
+            "emails": ["yllan@fiberhome.com"]
+        },
+        {
             "launchpad_id": "1-tim-z",
             "companies": [
                 {
