@@ -1863,6 +1863,18 @@
             "emails": ["zwhe@fiberhome.com", "areialray@gmail.com"]
         },
         {
+            "launchpad_id": "htpeng",
+            "gerrit_id": "htpeng",
+            "companies": [
+                {
+                    "company_name": "Fiberhome",
+                    "end_date": null
+                }
+            ],
+            "user_name": "htpeng",
+            "emails": ["htpeng@fiberhome.com", "phtao1982@gmail.com"]
+        },
+        {
             "launchpad_id": "arif-ali",
             "gerrit_id": "arif-ali",
             "companies": [
