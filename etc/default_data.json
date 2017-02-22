@@ -11225,7 +11225,7 @@
         },
         {
             "launchpad_id": "keith-berger",
-            "gerrit_id": "kberger"
+            "gerrit_id": "kberger",
             "companies": [
                 {
                     "company_name": "HPE",
@@ -11234,7 +11234,7 @@
             ],
             "user_name": "Keith Berger",
             "emails": ["keith.berger@hpe.com"]
-        }
+        },
         {
             "launchpad_id": "keith-newstadt",
             "companies": [
