@@ -11224,6 +11224,18 @@
             "emails": ["zhao.kaia@h3c.com"]
         },
         {
+            "launchpad_id": "keith-berger",
+            "gerrit_id": "kberger"
+            "companies": [
+                {
+                    "company_name": "HPE",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Keith Berger",
+            "emails": ["keith.berger@hpe.com"]
+        }
+        {
             "launchpad_id": "keith-newstadt",
             "companies": [
                 {
