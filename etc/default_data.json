@@ -179,6 +179,22 @@
             "emails": ["alex@planet-barclay.com", "alex.barclay@hp.com", "alex.barclay@hpe.com"]
         },
         {
+            "launchpad_id": "arkady",
+            "gerrit_id": "arkady",
+            "companies": [
+                {
+                    "company_name": "Dell",
+                    "end_date": "2017-Jan-31"
+                }
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Arkady Kanevsky",
+            "emails": ["arkady.kanevsky@dell.com"]
+        },
+        {
             "launchpad_id": "a-gorodnev",
             "gerrit_id": "agorodnev",
             "companies": [
@@ -3242,11 +3258,15 @@
             "companies": [
                 {
                     "company_name": "Dell",
+                    "end_date": "2017-Jan-31"
+                }
+                {
+                    "company_name": "Dell EMC",
                     "end_date": null
                 }
             ],
             "user_name": "Chris Dearborn",
-            "emails": ["christopher_dearborn@dell.com", "cdearbor@comcast.net"]
+            "emails": ["christopher_dearborn@dell.com", "christopher.dearborn@dell.com", "cdearbor@comcast.net"]
         },
         {
             "launchpad_id": "cdent",
@@ -4982,11 +5002,15 @@
             "companies": [
                 {
                     "company_name": "Dell",
+                    "end_date": "2017-Jan-31"
+                }
+                {
+                    "company_name": "Dell EMC",
                     "end_date": null
                 }
             ],
             "user_name": "David Paterson",
-            "emails": ["david_paterson@dell.com", "davpat2112@yahoo.com"]
+            "emails": ["david_paterson@dell.com", "david.paterson@dell.com", "davpat2112@yahoo.com"]
         },
         {
             "launchpad_id": "daz",
@@ -9748,6 +9772,21 @@
             "emails": ["jeff.fischer@workday.com"]
         },
         {
+            "launchpad_id": "jeff-seiler",
+            "gerrit_id": "jseiler",
+            "companies": [
+                {
+                    "company_name": "Dell",
+                    "end_date": "2017-Jan-31"
+                }
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jeff Seiler",
+            "emails": ["jeff.seiler@dell.com"]
+        },
             "launchpad_id": "jeffrey-olsen",
             "gerrit_id": "jeffrey.olsen",
             "companies": [
@@ -11582,6 +11621,17 @@
             "emails": ["michael.krotscheck@hpe.com", "michael.krotscheck@hp.com", "krotscheck@gmail.com"]
         },
         {
+            "launchpad_id": "kurt-hey",
+            "companies": [
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Kurt Hey",
+            "emails": ["kurt.hey@dell.com"]
+        },
+        {
             "launchpad_id": "krtaylor",
             "companies": [
                 {
@@ -12928,7 +12978,7 @@
             "companies": [
                 {
                     "company_name": "Dell",
-                    "end_date": null
+                    "end_date": "2016-Dec-31"
                 }
             ],
             "user_name": "Stas Maksimov",
@@ -14721,7 +14771,7 @@
             "companies": [
                 {
                     "company_name": "Dell",
-                    "end_date": null
+                    "end_date": "2016-Dec-31"
                 }
             ],
             "user_name": "Judd Maltin",
@@ -15673,7 +15723,7 @@
             "companies": [
                 {
                     "company_name": "Dell",
-                    "end_date": null
+                    "end_date": "2016-Dec-31"
                 }
             ],
             "user_name": "Raymond Pekowski",
@@ -16883,6 +16933,10 @@
             "companies": [
                 {
                     "company_name": "Dell",
+                    "end_date": "2017-Jan-31"
+                }
+                {
+                    "company_name": "Dell EMC",
                     "end_date": null
                 }
             ],
@@ -18404,11 +18458,15 @@
             "companies": [
                 {
                     "company_name": "Dell",
+                    "end_date": "2017-Jan-31"
+                }
+                {
+                    "company_name": "Dell EMC",
                     "end_date": null
                 }
             ],
             "user_name": "Sean McGinnis",
-            "emails": ["sean_mcginnis@dell.com", "sean.mcginnis@gmail.com", "sean.mcginnis@gmx.com"]
+            "emails": ["sean_mcginnis@dell.com", "sean.mcginnis@dell.com", "sean.mcginnis@gmail.com", "sean.mcginnis@gmx.com"]
         },
         {
             "launchpad_id": "sean-perry-a",
@@ -20751,6 +20809,22 @@
             "emails": ["tomoki_amano@adoc.co.jp"]
         },
         {
+            "launchpad_id": "tomswanson",
+            "gerrit_id": "tom-swanson",
+            "companies": [
+                {
+                    "company_name": "Dell",
+                    "end_date": "2017-Jan-31"
+                }
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Tom Swanson",
+            "emails": ["tom.swanson@dell.com" ]
+          },
+        {
             "launchpad_id": "toreanderson",
             "companies": [
                 {
@@ -21301,7 +21375,7 @@
             "companies": [
                 {
                     "company_name": "Dell",
-                    "end_date": null
+                    "end_date": "2015-May-01"
                 }
             ],
             "user_name": "Victor Lowther",
