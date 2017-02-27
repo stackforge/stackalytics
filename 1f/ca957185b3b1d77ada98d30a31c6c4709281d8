@@ -1,0 +1,11 @@
+Code-Review+1: Siyi Luo <syluo5695@fiberhome.com>
+Code-Review+1: Lingyong Xu <lyxu@fiberhome.com>
+Code-Review+1: Ken'ichi Ohmichi <ken1ohmichi@gmail.com>
+Code-Review+2: Ilya Shakhat <shakhat@gmail.com>
+Workflow+1: Ilya Shakhat <shakhat@gmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Mon, 27 Feb 2017 08:14:37 +0000
+Reviewed-on: https://review.openstack.org/436828
+Project: openstack/stackalytics
+Branch: refs/heads/master
