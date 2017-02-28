@@ -16667,6 +16667,22 @@
             "emails": ["rbowen@redhat.com", "rbowen@rcbowen.com"]
         },
         {
+            "launchpad_id": "rico-lin",
+            "gerrit_id": "rico.lin",
+            "companies": [
+                {
+                    "company_name": "inwinSTACk",
+                    "end_date": "2017-Feb-24"
+                },
+                {
+                    "company_name": "EasyStack",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Rico Lin",
+            "emails": ["rico.lin@easystack.cn", "rico.lin.guanyu@gmail.com"]
+        },
+        {
             "launchpad_id": "rboyapat",
             "gerrit_id": "rboyapat",
             "companies": [
