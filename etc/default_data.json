@@ -24042,6 +24042,18 @@
             "emails": ["zoukeke@cmss.chinamobile.com"]
         },
         {
+            "launchpad_id": "zongzhe-wang01",
+            "gerrit_id": "zongzhewang",
+            "companies": [
+                {
+                    "company_name": "SG.Cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zongzhewang",
+            "emails": ["649826038@qq.com"]
+        },
+        {
             "launchpad_id": "zrzhit",
             "gerrit_id": "zrzhit",
             "companies": [
