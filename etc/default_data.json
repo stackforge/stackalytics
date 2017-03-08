@@ -17963,18 +17963,6 @@
            "emails": ["s.haub@telekom.de"]
         },
         {
-           "launchpad_id": "shenxiaotian",
-           "gerrit_id": "shenxiaotian",
-           "companies": [
-               {
-                   "company_name": "SG.Cloud",
-                   "end_date": null
-               }
-           ],
-           "user_name": "shenxiaotian",
-           "emails": ["450828284@qq.com"]
-        },
-        {
             "launchpad_id": "s1syphuswxg",
             "companies": [
                 {
@@ -18868,6 +18856,18 @@
             "emails": ["shay.halsband@emc.com"]
         },
         {
+            "launchpad_id": "shenxiaotian",
+            "gerrit_id": "shenxiaotian",
+            "companies": [
+                {
+                   "company_name": "SG.Cloud",
+                   "end_date": null
+                }
+           ],
+           "user_name": "shenxiaotian",
+           "emails": ["450828284@qq.com"]
+        },
+	{
             "launchpad_id": "sheshananda",
             "github_id": "sheshanand",
             "gerrit_id": "sheshananda",
