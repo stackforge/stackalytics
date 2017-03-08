@@ -24030,6 +24030,20 @@
             "emails": ["zinoviev.ii@gmail.com"]
         },
         {
+            "launchpad_id": "zongzhewang",
+            "gerrit_id": "zongzhewang",
+            "companies": [
+                {
+                    "company_name": "SG.Cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zongzhewang",
+            "emails": ["649826038@qq.com"]
+        },
+        {
+<<<<<<< HEAD
+=======
             "launchpad_id": "zoukeke",
             "gerrit_id": "zoukeke",
             "companies": [
@@ -24042,6 +24056,7 @@
             "emails": ["zoukeke@cmss.chinamobile.com"]
         },
         {
+>>>>>>> 7af6a7f... add my infomation to default_data.json
             "launchpad_id": "zrzhit",
             "gerrit_id": "zrzhit",
             "companies": [
