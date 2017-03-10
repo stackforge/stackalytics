@@ -679,7 +679,7 @@ def too_old(timestamp):
     return timestamp + age < now
 
 
-def main():
+def setup():
     logging.register_options(conf)
     logging.set_defaults()
 
@@ -693,7 +693,13 @@ def main():
 
     logging.setup(conf, 'stackalytics.dashboard')
 
+
+def main():
+    setup()
     app.run(cfg.CONF.listen_host, cfg.CONF.listen_port)
+
 
 if __name__ == '__main__':
     main()
+else:
+    setup()
