@@ -19,6 +19,7 @@ import copy
 import functools
 import time
 
+from oslo_config import cfg
 from oslo_log import log as logging
 import six
 
@@ -240,7 +241,7 @@ class RecordProcessor(object):
         user_name = record.get('author_name')
         launchpad_id = record.get('launchpad_id')
         if (email and (not user_e) and (not launchpad_id) and
-                (not user_e.get('launchpad_id'))):
+                (not user_e.get('launchpad_id')) and cfg.CONF.query_launchpad):
             # query LP
             launchpad_id, lp_user_name = self._get_lp_info(email)
             if lp_user_name:
