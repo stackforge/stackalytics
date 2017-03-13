@@ -1,0 +1,9 @@
+Code-Review+1: 鲍亚萍 <ypbao@fiberhome.com>
+Code-Review+2: Ilya Shakhat <shakhat@gmail.com>
+Workflow+1: Ilya Shakhat <shakhat@gmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Mon, 13 Mar 2017 09:18:26 +0000
+Reviewed-on: https://review.openstack.org/444147
+Project: openstack/stackalytics
+Branch: refs/heads/master
