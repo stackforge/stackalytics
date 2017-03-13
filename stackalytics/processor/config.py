@@ -55,6 +55,8 @@ PROCESSOR_OPTS = [
                default='https://git.openstack.org/cgit/openstack/i18n/'
                        'plain/tools/zanata/translation_team.yaml',
                help='URI of translation team data'),
+    cfg.BoolOpt("query-launchpad", default=True,
+                help="Query information(users, etc) from launchpad?"),
     cfg.IntOpt('members-look-ahead', default=250,
                help='How many member profiles to look ahead after the last'),
     cfg.IntOpt('read-timeout', default=120,
