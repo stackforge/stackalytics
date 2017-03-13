@@ -45,11 +45,11 @@ if six.PY2:
     _unihash = {}
 
     def uniintern(o):
-        if not isinstance(o, basestring):
+        if not isinstance(o, six.string_types[0]):
             return o
         if isinstance(o, str):
-            return intern(o)
-        if isinstance(o, unicode):
+            return six.moves.intern(o)
+        if isinstance(o, six.text_type):
             return _unihash.setdefault(o, o)
 else:
     def uniintern(o):
