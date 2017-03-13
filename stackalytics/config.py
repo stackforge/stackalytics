@@ -55,6 +55,9 @@ PROCESSOR_OPTS = [
                default='https://git.openstack.org/cgit/openstack/i18n/'
                        'plain/tools/zanata/translation_team.yaml',
                help='URI of translation team data'),
+    cfg.StrOpt("fetching-user-source", default='launchpad',
+               choices=['launchpad', None],
+               help="Source for fetching user profiles"),
     cfg.IntOpt('members-look-ahead', default=250,
                help='How many member profiles to look ahead after the last'),
     cfg.IntOpt('read-timeout', default=120,
@@ -83,7 +86,8 @@ DASHBOARD_OPTS = [
                help='Warn if the age of data is more than this value, sec'),
 ]
 
+ALL_OPTS = CONNECTION_OPTS + PROCESSOR_OPTS + DASHBOARD_OPTS
+
 
 def list_opts():
-    yield (None, copy.deepcopy(CONNECTION_OPTS + PROCESSOR_OPTS +
-                               DASHBOARD_OPTS))
+    yield (None, copy.deepcopy(ALL_OPTS))
