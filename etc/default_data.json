@@ -4561,6 +4561,18 @@
             "emails": ["loic@dachary.org", "loic.dachary@cloudwatt.com", "loic.dachary@enovance.com"]
         },
         {
+            "launchpad_id": "daeseong.kim",
+            "gerrit_id": "daeseong.kim",
+            "companies": [
+                {
+                    "company_name": "SK telecom",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Dae Seong Kim",
+            "emails": ["daeseong.kim@sk.com", "ppppowerds@hanmail.net"]
+        },
+        {
             "launchpad_id": "dag-stenstad",
             "gerrit_id": "stenstad",
             "companies": [
