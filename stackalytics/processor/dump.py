@@ -22,7 +22,7 @@ from oslo_config import cfg
 from oslo_log import log as logging
 import six
 
-from stackalytics.processor import config
+from stackalytics import config
 from stackalytics.processor import utils
 
 
