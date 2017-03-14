@@ -23,13 +23,13 @@ from oslo_config import cfg
 from oslo_log import log as logging
 import six
 
+from stackalytics import config
 from stackalytics.dashboard import decorators
 from stackalytics.dashboard import helpers
 from stackalytics.dashboard import kpi
 from stackalytics.dashboard import parameters
 from stackalytics.dashboard import reports
 from stackalytics.dashboard import vault
-from stackalytics.processor import config
 from stackalytics.processor import utils
 
 # Application objects ---------

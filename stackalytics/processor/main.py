@@ -21,8 +21,8 @@ import psutil
 import six
 import time
 
+from stackalytics import config
 from stackalytics.processor import bps
-from stackalytics.processor import config
 from stackalytics.processor import default_data_processor
 from stackalytics.processor import driverlog
 from stackalytics.processor import governance
