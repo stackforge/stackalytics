@@ -4744,9 +4744,9 @@
             "user_name": "Daniel Pawlik",
             "emails": ["daniel.pawlik@corp.ovh.com"]
         },
-	{
+        {
             "launchpad_id": "danila3",
-            "companies":[
+            "companies": [
                 {
                     "company_name": "Sberbank",
                     "end_date": null
