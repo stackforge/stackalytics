@@ -4542,6 +4542,17 @@
             "emails": ["d.gollub@telekom.de"]
         },
         {
+            "launchpad_id": "danila3",
+            "companies":[
+                {
+                    "company_name": "Sberbank",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Danila Troshchinsky",
+            "emails": [ "troschinsky@gmail.com"]
+        },
+        {
             "launchpad_id": "dachary",
             "companies": [
                 {
