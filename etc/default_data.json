@@ -12617,6 +12617,15 @@
             "user_name": "liuxinrj",
             "emails": ["liuxinrj@inspur.com"]
         },
+	{   "launchpad_id": "liuyamin",
+	    "gerrit_id": "liuyamin"
+	    "companies": [{
+                "company_name": "fiberhome",
+	        "end_date": null
+      								                            }],
+											    "user_name":"liuyamin"
+            "emails":["liuyamin@fiberhome.com"]
+	},
         {
             "launchpad_id": "lixing",
             "gerrit_id": "lixing",
