@@ -138,6 +138,17 @@
             "emails": ["58750307@qq.com", "dupf@dtdream.com"]
         },
         {
+            "launchpad_id": "61755280-l",
+            "companies": [
+                {
+                    "company_name": "Wise2c",
+                    "end_date": null
+                }
+            ],
+            "user_name": "CuiHaozhi",
+            "emails": ["cuihz@wise2c.com"]
+        },
+        {
             "launchpad_id": "6-morgan",
             "companies": [
                 {
