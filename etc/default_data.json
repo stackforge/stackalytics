@@ -4837,6 +4837,22 @@
             "emails": ["dara2002-openstack@yahoo.com", "darragh.oreilly@hp.com", "darragh.oreilly@hpe.com"]
         },
         {
+            "launchpad_id": "xsfhxh",
+            "gerrit_id": "rydou",
+            "user_name": "Dou Rui Yuan",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": "2016-May-31"
+                },
+                {
+                    "company_name": "FiberHome",
+                    "end_date": null
+                }
+            ],
+            "emails": ["douruiyuan@163.com", "rydou@cn.ibm.com", "rydou@fiberhome.com"]
+        },
+        {
             "launchpad_id": "darren-birkett",
             "companies": [
                 {
