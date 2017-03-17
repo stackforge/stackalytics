@@ -1996,11 +1996,15 @@
                 },
                 {
                     "company_name": "HPE",
+                    "end_date": "2017-Mar-08"
+                },
+                {
+                    "company_name": "SUSE",
                     "end_date": null
                 }
             ],
             "user_name": "Armando Migliaccio",
-            "emails": ["amigliaccio@nicira.com", "armando.migliaccio@eu.citrix.com", "amigliaccio@internap.com", "armamig@gmail.com", "armando.migliaccio@citrix.com"]
+            "emails": ["armamig@gmail.com"]
         },
         {
             "launchpad_id": "arnaud-jost",
