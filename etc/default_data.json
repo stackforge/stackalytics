@@ -13,17 +13,6 @@
             "emails": ["doug@parelastic.com", "doug@tesora.com", "dougshelley66@gmail.com"]
         },
         {
-            "launchpad_id": "0x44",
-            "companies": [
-                {
-                    "company_name": "Piston Cloud",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Christopher MacGown",
-            "emails": ["chris@pistoncloud.com", "chris@slicehost.com"]
-        },
-        {
             "launchpad_id": "1-tim-z",
             "companies": [
                 {
@@ -8917,6 +8906,17 @@
             ],
             "user_name": "Masayuki Igawa",
             "emails": ["masayuki.igawa@gmail.com", "igawa@mxs.nes.nec.co.jp", "mas-igawa@ut.jp.nec.com", "masayuki.igawa@hpe.com", "masayuki@igawa.me", "masayuki@igawa.io", "masayuki.igawa@suse.com"]
+        },
+        {
+            "launchpad_id": "igis_sj",
+            "companies": [
+                {
+                    "company_name": "Fiberhome",
+                    "end_date": null
+                }
+            ],
+            "user_name": "igis_sj",
+            "emails": ["igis_sj@fiberhome.com"]
         },
         {
             "launchpad_id": "igor-ataide",
