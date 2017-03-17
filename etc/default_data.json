@@ -1,4 +1,4 @@
-{
+﻿{
     "users": [
         {
             "launchpad_id": "0-doug",
@@ -5986,7 +5986,6 @@
                     "company_name": "HPE",
                     "end_date": null
                 }
-            ],
             "user_name": "Donald Stufft",
             "emails": [
                 "donald@stufft.io",
@@ -24654,6 +24653,18 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+ 	{
+            "launchpad_id": "tjohns9000",
+            "gerrit_id": "tjohns",
+            "companies": [
+                {
+                    "company_name": "State Farm Insurance",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Troy Johns",
+            "emails": ["troy.johns.plde@statefarm.com"]
         }
     ],
     "companies": [
