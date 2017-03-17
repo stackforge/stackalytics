@@ -22891,6 +22891,18 @@
             "emails": ["15901119122@163.com"]
         },
         {
+            "launchpad_id": "thankxie",
+            "gerrit_id": "thankxie",
+            "companies": [
+                {
+                    "company_name": "Fiberhome",
+                    "end_date": null
+                }
+            ],
+            "user_name": "thankxie",
+            "emails": ["cdxie@fiberhome.com", "thankxie@163.com"]
+        },
+        {
             "launchpad_id": "xing-yang",
             "gerrit_id": "xing-yang",
             "companies": [
