@@ -21271,6 +21271,22 @@
             "emails": ["mtreinish@kortar.org", "treinish@linux.vnet.ibm.com"]
         },
         {
+            "launchpad_id": "trinath-somanchi-m",
+            "gerrit_id": "trinath-somanchi",
+            "companies": [
+                {
+                    "company_name": "Freescale",
+                    "end_date": "2016-Nov-01"
+                },
+                {
+                    "company_name": "NXP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Trinath Somanchi",
+            "emails": ["trinath.somachi@freescale.com", "trinath.somanchi@nxp.com", "trinath.somanchi@gmail.com"]
+        },
+        {
             "launchpad_id": "tristanc",
             "companies": [
                 {
