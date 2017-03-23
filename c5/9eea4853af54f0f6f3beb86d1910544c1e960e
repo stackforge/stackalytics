@@ -1,0 +1,10 @@
+Code-Review+1: Ian Y. Choi <ianyrchoi@gmail.com>
+Code-Review+1: sak0 <cuihz@wise2c.com>
+Code-Review+2: Ilya Shakhat <shakhat@gmail.com>
+Workflow+1: Ilya Shakhat <shakhat@gmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Thu, 23 Mar 2017 13:19:25 +0000
+Reviewed-on: https://review.openstack.org/447245
+Project: openstack/stackalytics
+Branch: refs/heads/master
