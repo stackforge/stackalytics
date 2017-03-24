@@ -1,0 +1,10 @@
+Code-Review+1: Dima Kuznetsov <dima.kuznetsov@toganetworks.com>
+Code-Review+1: Lihi Wishnitzer <lihiwish@gmail.com>
+Code-Review+2: Ilya Shakhat <shakhat@gmail.com>
+Workflow+1: Ilya Shakhat <shakhat@gmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Fri, 24 Mar 2017 08:51:19 +0000
+Reviewed-on: https://review.openstack.org/447298
+Project: openstack/stackalytics
+Branch: refs/heads/master
