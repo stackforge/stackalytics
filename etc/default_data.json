@@ -28198,6 +28198,11 @@
             "organization": "docker",
             "uri": "https://github.com/docker/docker.github.io.git"
         },
+	{
+            "module": "kube-state-metrics",
+            "organization": "kubernetes",
+            "uri": "https://github.com/kubernetes/kube-state-metrics.git"
+        },
         {
             "module": "cri-o",
             "organization": "kubernetes",
