@@ -19,6 +19,7 @@ import copy
 import functools
 import time
 
+from oslo_config import cfg
 from oslo_log import log as logging
 import six
 
@@ -27,6 +28,7 @@ from stackalytics.processor import user_processor
 from stackalytics.processor import utils
 
 
+CONF = cfg.CONF
 LOG = logging.getLogger(__name__)
 
 
@@ -634,7 +636,7 @@ class RecordProcessor(object):
             record['release'] = self._get_release(record['date'])
 
     def process(self, record_iterator):
-        PROCESSORS = {
+        all_processors = {
             'commit': self._process_commit,
             'review': self._process_review,
             'email': self._process_email,
@@ -644,6 +646,10 @@ class RecordProcessor(object):
             'ci': self._process_ci,
             'i18n': self._process_translation,
         }
+        PROCESSORS = {}
+        for processor in all_processors:
+            if processor in CONF.enabled_processors:
+                PROCESSORS[processor] = all_processors[processor]
 
         for record in record_iterator:
             for r in PROCESSORS[record['record_type']](record):

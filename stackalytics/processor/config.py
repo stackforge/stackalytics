@@ -60,6 +60,10 @@ PROCESSOR_OPTS = [
                help='Number of seconds to wait for remote response'),
     cfg.IntOpt('gerrit-retry', default=10,
                help='How many times to retry after Gerrit errors'),
+    cfg.ListOpt("enabled_processors",
+                default=["commit", "review", "email", "bp", "bug", "member",
+                         "ci", "i18n"],
+                help='Processors for collecting data'),
 ]
 
 

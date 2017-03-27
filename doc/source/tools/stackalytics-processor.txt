@@ -3,6 +3,7 @@ usage: stackalytics-processor [-h] [--config-dir DIR] [--config-file PATH]
                               [--days_to_update_members DAYS_TO_UPDATE_MEMBERS]
                               [--debug] [--default-data-uri DEFAULT_DATA_URI]
                               [--driverlog-data-uri DRIVERLOG_DATA_URI]
+                              [--enabled_processors ENABLED_PROCESSORS]
                               [--gerrit-retry GERRIT_RETRY]
                               [--git-base-uri GIT_BASE_URI]
                               [--log-config-append PATH]
@@ -44,6 +45,8 @@ optional arguments:
                         file:///path/to/default_data.json
   --driverlog-data-uri DRIVERLOG_DATA_URI
                         URI for default data
+  --enabled_processors ENABLED_PROCESSORS
+                        Processors for collecting data
   --gerrit-retry GERRIT_RETRY
                         How many times to retry after Gerrit errors
   --git-base-uri GIT_BASE_URI
