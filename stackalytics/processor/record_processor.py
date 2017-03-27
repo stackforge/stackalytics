@@ -37,6 +37,9 @@ class RecordProcessor(object):
         self.domains_index = runtime_storage_inst.get_by_key('companies')
 
         self.releases = runtime_storage_inst.get_by_key('releases')
+        if self.releases is None:
+            raise Exception('releases is mandatory information for parsing '
+                            'data. Please add releases into default_data.json')
         self.releases_dates = [r['end_date'] for r in self.releases]
 
         self.modules = None
