@@ -16162,6 +16162,17 @@
             "user_name": "Jakub Pavlik",
             "emails": ["pavlk.jakub@gmail.com", "jakub.pavlik@tcpcloud.eu", "j.pavlik@tcpcloud.eu"]
         },
+        {   "launchpad_id": "pawnesh.kumar",
+            "gerrit_id": "pawnesh.kumar",
+            "companies": [
+                {
+                    "company_name": "NEC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "pawnesh kumar",
+            "emails": ["pawnesh.kumar@nectechnologies.in"]
+        },
         {
             "launchpad_id": "pawel-palucki",
             "gerrit_id": "pawel.palucki",
