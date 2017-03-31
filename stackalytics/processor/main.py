@@ -164,7 +164,6 @@ def _process_repo_ci_votes(repo, runtime_storage_inst, record_processor_inst,
 
 def _process_repo_vcs(repo, runtime_storage_inst, record_processor_inst):
     vcs_inst = vcs.get_vcs(repo, CONF.sources_root)
-    vcs_inst.fetch()
 
     for branch in _get_repo_branches(repo):
         LOG.info('Processing commits in repo: %s, branch: %s',
@@ -243,7 +242,7 @@ def _post_process_records(record_processor_inst, repos):
     release_index = {}
     for repo in repos:
         vcs_inst = vcs.get_vcs(repo, CONF.sources_root)
-        release_index.update(vcs_inst.fetch())
+        release_index.update(vcs_inst.get_release_index())
 
     LOG.debug('Post-process all records')
     record_processor_inst.post_processing(release_index)

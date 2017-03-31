@@ -325,7 +325,7 @@ class RecordProcessor(object):
         record['primary_key'] = record['commit_id']
         record['loc'] = record['lines_added'] + record['lines_deleted']
         record['author_email'] = record['author_email'].lower()
-        record['commit_date'] = record['date']
+        record['commit_date'] = record.get('author_date') or record['date']
 
         coauthors = record.get('coauthor')
         if not coauthors:

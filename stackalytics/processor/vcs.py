@@ -1,5 +1,3 @@
-# Copyright (c) 2013 Mirantis Inc.
-#
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -17,14 +15,18 @@ import os
 import re
 import shutil
 
+import git
+import gitdb
 from oslo_log import log as logging
-import sh
-import six
 
 from stackalytics.processor import utils
 
 
 LOG = logging.getLogger(__name__)
+
+
+class VcsException(Exception):
+    pass
 
 
 class Vcs(object):
@@ -38,32 +40,15 @@ class Vcs(object):
                 raise Exception('Sources root folder %s is not writable' %
                                 sources_root)
 
-    def fetch(self):
+    def get_release_index(self):
         pass
 
-    def log(self, branch, head_commit_id):
+    def log(self, branch, head_commit_id=None):
         pass
 
     def get_last_id(self, branch):
         pass
 
-
-GIT_LOG_PARAMS = [
-    ('commit_id', '%H'),
-    ('date', '%at'),
-    ('author_name', '%an'),
-    ('author_email', '%ae'),
-    ('subject', '%s'),
-    ('message', '%b'),
-]
-GIT_LOG_FORMAT = ''.join([(r[0] + ':' + r[1] + '%n')
-                          for r in GIT_LOG_PARAMS]) + 'diff_stat:'
-DIFF_STAT_PATTERN = ('[^\d]+(\d+)\s+[^\s]*\s+changed'
-                     '(,\s+(\d+)\s+([^\d\s]*)\s+(\d+)?)?')
-GIT_LOG_PATTERN = re.compile(''.join([(r[0] + ':(.*?)\n')
-                                      for r in GIT_LOG_PARAMS]) +
-                             'diff_stat:(?P<diff_stat>.+?)(?=commit|\Z)',
-                             re.DOTALL)
 
 CO_AUTHOR_PATTERN_RAW = ('(?P<author_name>.*?)\s*'
                          '<?(?P<author_email>[\w\.-]+@[\w\.-]+)>?')
@@ -80,6 +65,10 @@ MESSAGE_PATTERNS = {
 }
 
 
+def extract_message(s):
+    return '\n'.join(line for line in s.splitlines()[1:] if line.strip())
+
+
 class Git(Vcs):
 
     def __init__(self, repo, sources_root):
@@ -87,34 +76,22 @@ class Git(Vcs):
         uri = self.repo['uri']
         match = re.search(r'([^/]+)\.git$', uri)
         if match:
-            self.folder = os.path.normpath(self.sources_root + '/' +
-                                           match.group(1))
+            self.folder = os.path.normpath(
+                os.path.join(self.sources_root, match.group(1)))
         else:
             raise Exception('Unexpected uri %s for git' % uri)
-        self.release_index = {}
+        self.git_repo = self._fetch()
+        self.release_index = self.get_release_index()
 
-    def _checkout(self, branch):
-        try:
-            sh.git('clean', '-d', '--force')
-            sh.git('reset', '--hard')
-            sh.git('checkout', 'origin/' + branch)
-            return True
-        except sh.ErrorReturnCode:
-            LOG.error('Unable to checkout branch %(branch)s from repo '
-                      '%(uri)s. Ignore it',
-                      {'branch': branch, 'uri': self.repo['uri']},
-                      exc_info=True)
-            return False
-
-    def fetch(self):
+    def _fetch(self):
         LOG.debug('Fetching repo uri %s', self.repo['uri'])
 
         if os.path.exists(self.folder):
-            os.chdir(self.folder)
+            # check that repo folder is readable and matches configured URI
+            repo = git.Repo(self.folder)
             try:
-                uri = str(
-                    sh.git('config', '--get', 'remote.origin.url')).strip()
-            except sh.ErrorReturnCode:
+                uri = next(repo.remotes.origin.urls)
+            except gitdb.exc.ODBError:
                 LOG.error('Unable to get config for git repo %s. Ignore it',
                           self.repo['uri'], exc_info=True)
                 return {}
@@ -122,131 +99,116 @@ class Git(Vcs):
             if uri != self.repo['uri']:
                 LOG.warning('Repo uri %(uri)s differs from cloned %(old)s',
                             {'uri': self.repo['uri'], 'old': uri})
-                os.chdir('..')
                 shutil.rmtree(self.folder)
 
         if not os.path.exists(self.folder):
-            os.chdir(self.sources_root)
             try:
-                sh.git('clone', self.repo['uri'])
-                os.chdir(self.folder)
-            except sh.ErrorReturnCode:
-                LOG.error('Unable to clone git repo %s. Ignore it',
-                          self.repo['uri'], exc_info=True)
+                repo = git.Repo.clone_from(self.repo['uri'], self.folder)
+            except gitdb.exc.ODBError:
+                msg = 'Unable to clone git repo %s into %s' % (
+                    self.repo['uri'], self.folder)
+                LOG.error(msg, exc_info=True)
+                raise VcsException(msg)
         else:
-            os.chdir(self.folder)
+            repo = git.Repo(self.folder)
             try:
-                sh.git('fetch')
-            except sh.ErrorReturnCode:
+                repo.remotes.origin.fetch()
+            except gitdb.exc.ODBError:
                 LOG.error('Unable to fetch git repo %s. Ignore it',
                           self.repo['uri'], exc_info=True)
 
-        return self._get_release_index()
+        return repo
 
-    def _get_release_index(self):
-        if not os.path.exists(self.folder):
-            return {}
+    def get_release_index(self):
+        LOG.debug('Get release index for repo: %s', self.repo['uri'])
+        release_index = {}
+        for release in self.repo.get('releases', []):
+            release_name = release['release_name'].lower()
 
-        LOG.debug('Get release index for repo uri: %s', self.repo['uri'])
-        os.chdir(self.folder)
-        if not self.release_index:
-            for release in self.repo.get('releases', []):
-                release_name = release['release_name'].lower()
+            if 'branch' in release:
+                branch = release['branch']
+            else:
+                branch = 'master'
 
-                if 'branch' in release:
-                    branch = release['branch']
-                else:
-                    branch = 'master'
-                if not self._checkout(branch):
-                    continue
+            tag_to = release['tag_to']
+            if tag_to == 'HEAD':
+                tag_to = branch
 
-                if 'tag_from' in release:
-                    tag_range = release['tag_from'] + '..' + release['tag_to']
-                else:
-                    tag_range = release['tag_to']
+            if 'tag_from' in release:
+                tag_range = release['tag_from'] + '..' + tag_to
+            else:
+                tag_range = tag_to
 
-                try:
-                    git_log_iterator = sh.git('log', '--pretty=%H', tag_range,
-                                              _tty_out=False)
-                    for commit_id in git_log_iterator:
-                        self.release_index[commit_id.strip()] = release_name
-                except sh.ErrorReturnCode:
-                    LOG.error('Unable to get log of git repo %s. Ignore it',
-                              self.repo['uri'], exc_info=True)
-        return self.release_index
+            try:
+                for rec in self.git_repo.iter_commits(tag_range):
+                    release_index[rec.hexsha] = release_name
 
-    def log(self, branch, head_commit_id):
-        LOG.debug('Parsing git log for repo uri %s', self.repo['uri'])
+            except gitdb.exc.ODBError:
+                LOG.error('Unable to get log of git repo %s. Ignore it',
+                          self.repo['uri'], exc_info=True)
+        return release_index
 
-        os.chdir(self.folder)
-        if not self._checkout(branch):
+    def log(self, branch, head_commit_id=None):
+        LOG.debug('Parsing git log for repo: %s', self.repo['uri'])
+
+        if not self.get_last_id(branch):  # branch not exist
             return
 
-        commit_range = 'HEAD'
+        commit_range = 'origin/' + branch
         if head_commit_id:
-            commit_range = head_commit_id + '..HEAD'
+            commit_range = head_commit_id + '..' + commit_range
 
-        try:
-            output = sh.git('log', '--pretty=' + GIT_LOG_FORMAT, '--shortstat',
-                            '-M', '--no-merges', commit_range, _tty_out=False,
-                            _decode_errors='ignore', _encoding='utf8')
-        except sh.ErrorReturnCode:
-            LOG.error('Unable to get log of git repo %s. Ignore it',
-                      self.repo['uri'], exc_info=True)
-            return
+        merge_refs = {}
 
-        for rec in re.finditer(GIT_LOG_PATTERN, six.text_type(output)):
-            i = 1
-            commit = {}
-            for param in GIT_LOG_PARAMS:
-                commit[param[0]] = rec.group(i)
-                i += 1
+        for rec in self.git_repo.iter_commits(commit_range):
 
             # ignore machine/script produced submodule auto updates
-            if commit['subject'] == u'Update git submodules':
+            if rec.summary == 'Update git submodules':
                 continue
 
-            if not commit['author_email']:
+            if len(rec.parents) > 1:  # merge commit
+                for one in rec.parents[1:]:  # first refers to commit in master
+                    merge_refs[one.hexsha] = rec
+                continue
+
+            if not rec.author.email:
                 # ignore commits with empty email (there are some < Essex)
                 continue
 
-            commit['author_email'] = utils.keep_safe_chars(
-                commit['author_email'])
+            commit = {
+                'commit_id': rec.hexsha,
+                'author_name': rec.author.name,
+                'author_email': utils.keep_safe_chars(rec.author.email),
+                'date': rec.authored_date,
+                'author_date': rec.authored_date,
+                'subject': rec.summary,
+                'message': extract_message(rec.message),
+                'module': self.repo['module'],
+                'branches': {branch},
+                'files_changed': rec.stats.total['files'],
+                'lines_added': rec.stats.total['insertions'],
+                'lines_deleted': rec.stats.total['deletions'],
+            }
 
-            diff_stat_str = rec.group('diff_stat')
-            diff_rec = re.search(DIFF_STAT_PATTERN, diff_stat_str)
+            # update with date and author of merge
+            if rec.hexsha in merge_refs:
+                mc = merge_refs[rec.hexsha]
+                commit.update({
+                    'date': mc.authored_date,  # override with merge date
+                    'merge_author_name': mc.author.name,
+                    'merge_author_email': utils.keep_safe_chars(
+                        mc.author.email),
+                })
 
-            if diff_rec:
-                files_changed = int(diff_rec.group(1))
-                lines_changed_group = diff_rec.group(2)
-                lines_changed = diff_rec.group(3)
-                deleted_or_inserted = diff_rec.group(4)
-                lines_deleted = diff_rec.group(5)
-
-                if lines_changed_group:  # there inserted or deleted lines
-                    if not lines_deleted:
-                        if deleted_or_inserted[0] == 'd':  # deleted
-                            lines_deleted = lines_changed
-                            lines_changed = 0
-            else:
-                files_changed = 0
-                lines_changed = 0
-                lines_deleted = 0
-
-            commit['files_changed'] = files_changed
-            commit['lines_added'] = int(lines_changed or 0)
-            commit['lines_deleted'] = int(lines_deleted or 0)
-
-            for pattern_name, pattern in six.iteritems(MESSAGE_PATTERNS):
+            # extract attributes out of commit message
+            for pattern_name, pattern in MESSAGE_PATTERNS.items():
                 collection = set()
                 for item in re.finditer(pattern, commit['message']):
                     collection.add(item.group('id'))
                 if collection:
-                    commit[pattern_name] = list(collection)
+                    commit[pattern_name] = list(sorted(collection))
 
-            commit['date'] = int(commit['date'])
-            commit['module'] = self.repo['module']
-            commit['branches'] = set([branch])
+            # set release if we know for sure
             if commit['commit_id'] in self.release_index:
                 commit['release'] = self.release_index[commit['commit_id']]
             else:
@@ -256,11 +218,13 @@ class Git(Vcs):
                 # drop commits that are marked by 'ignored' release
                 continue
 
+            # make link to blueprint (legacy)
             if 'blueprint_id' in commit:
                 commit['blueprint_id'] = [(commit['module'] + ':' + bp_name)
                                           for bp_name
                                           in commit['blueprint_id']]
 
+            # extract co-authors out of the message
             if 'coauthor' in commit:
                 verified_coauthors = []
                 for coauthor in commit['coauthor']:
@@ -277,17 +241,13 @@ class Git(Vcs):
             yield commit
 
     def get_last_id(self, branch):
-        LOG.debug('Get head commit for repo uri: %s', self.repo['uri'])
-
-        os.chdir(self.folder)
-        if not self._checkout(branch):
-            return None
+        LOG.debug('Get head commit for repo uri: %s', self.git_repo)
 
         try:
-            return str(sh.git('rev-parse', 'HEAD')).strip()
-        except sh.ErrorReturnCode:
+            return self.git_repo.commit('origin/' + branch).hexsha
+        except gitdb.exc.ODBError:
             LOG.error('Unable to get HEAD for git repo %s. Ignore it',
-                      self.repo['uri'], exc_info=True)
+                      self.git_repo, exc_info=True)
 
         return None
 
