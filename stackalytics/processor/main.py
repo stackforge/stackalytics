@@ -107,7 +107,6 @@ def _process_repo(repo, runtime_storage_inst, record_processor_inst,
         'bug_modified_since-%s' % repo['module'], current_date)
 
     vcs_inst = vcs.get_vcs(repo, CONF.sources_root)
-    vcs_inst.fetch()
 
     branches = {repo.get('default_branch', 'master')}
     for release in repo.get('releases', []):
@@ -214,7 +213,7 @@ def _post_process_records(record_processor_inst, repos):
     release_index = {}
     for repo in repos:
         vcs_inst = vcs.get_vcs(repo, CONF.sources_root)
-        release_index.update(vcs_inst.fetch())
+        release_index.update(vcs_inst.get_release_index())
 
     LOG.debug('Post-process all records')
     record_processor_inst.post_processing(release_index)
