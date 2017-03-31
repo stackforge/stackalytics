@@ -117,6 +117,6 @@ class TestAPIModules(test_api.TestAPI):
                      'module_name': 'nova',
                      'visible': True,
                      'repo_uri': 'git://git.openstack.org/openstack/nova.git'},
-                     {'module_name': 'nova-cli', 'visible': False},
+                     {'module_name': 'nova-cli', 'visible': True},
                  ],
                  'name': 'Nova-group', 'tag': 'group'}, module)
