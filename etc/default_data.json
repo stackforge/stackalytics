@@ -22850,6 +22850,18 @@
             "emails": ["wchrisjohnson@gmail.com", "wchrisjohnson@hp.com", "wchrisjohnson@hpe.com"]
         },
         {
+            "launchpad_id": "weichuancheng",
+            "gerrit_id": "weichuancheng",
+            "companies": [
+                {
+                    "company_name": "Inspur",
+                    "end_date": null
+                }
+            ],
+            "user_name": "weichuancheng",
+            "emails": ["weichuancheng@inspur.com", "weichuancheng@hotmail.com", "weichuancheng@outlook.com"]
+        },
+        {
             "launchpad_id": "wei-d-chen",
             "companies": [
                 {
