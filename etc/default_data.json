@@ -5273,6 +5273,17 @@
             "emails": ["deepak.garg@citrix.com", "deepakgarg.iitg@gmail.com"]
         },
         {
+            "launchpad_id": "deepak-kumar-9",
+            "companies": [
+                {
+                    "company_name": "NEC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "DeepaJon",
+            "emails": ["deepak.kumar@nectechnologies.in", "deepak.os31@yahoo.com"]
+        },
+        {
             "launchpad_id": "deepali-verneya",
             "companies": [
                 {
