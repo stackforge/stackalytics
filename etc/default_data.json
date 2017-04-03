@@ -2896,6 +2896,21 @@
             "emails": ["boris@pavlovic.me", "bpavlovic@mirantis.com"]
         },
         {
+            "launchpad_id": "bbobrov",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": "2017-Feb-10"
+                },
+                {
+                    "company_name": "Mail.Ru",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Boris Bobrov",
+            "emails": ["breton@cynicmansion.ru", "bbobrov@mirantis.com", "b.bobrov@corp.mail.ru"]
+        },
+        {
             "launchpad_id": "brad-klein",
             "companies": [
                 {
