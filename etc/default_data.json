@@ -3796,18 +3796,6 @@
             "emails": ["chenyingnan@inspur.com"]
         },
         {
-           "launchpad_id": "zhangdebo1987",
-           "gerrit_id": "zhangdebo1987",
-           "companies": [
-               {
-                   "company_name": "Inspur",
-                   "end_date": null
-               }
-           ],
-           "user_name": "zhangdebo1987",
-           "emails": ["zhangdebo@inspur.com"]
-        },
-        {
             "launchpad_id": "chenyuan314",
             "companies": [
                 {
@@ -24403,6 +24391,18 @@
             ],
             "user_name": "Zeyu Zhu",
             "emails": ["zhu.zeyu@zte.com.cn", "zhuzeyu0409@gmail.com"]
+        },
+        {
+           "launchpad_id": "zhangdebo1987",
+           "gerrit_id": "zhangdebo1987",
+           "companies": [
+               {
+                   "company_name": "Inspur",
+                   "end_date": null
+               }
+           ],
+           "user_name": "zhangdebo1987",
+           "emails": ["zhangdebo@inspur.com"]
         },
         {
           "launchpad_id": "zhang-haixia",
