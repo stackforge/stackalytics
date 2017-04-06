@@ -1,4 +1,4 @@
-{
+default_data = {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "required": ["users", "releases", "companies", "repos", "project_types"],
@@ -48,13 +48,13 @@
                                 }
                             },
                             "required": ["company_name", "end_date"],
-                            "additionalProperties": false
+                            "additionalProperties": False
                         },
                         "minItems": 1
                     }
                 },
                 "required": ["user_name", "emails"],
-                "additionalProperties": false
+                "additionalProperties": False
             }
         },
         "releases": {
@@ -73,7 +73,7 @@
                     }
                 },
                 "required": ["release_name", "end_date"],
-                "additionalProperties": false
+                "additionalProperties": False
             }
         },
         "repos": {
@@ -122,7 +122,7 @@
                     }
                 },
                 "required": ["uri", "module", "organization"],
-                "additionalProperties": false
+                "additionalProperties": False
             }
         },
         "companies": {
@@ -148,7 +148,7 @@
                     }
                 },
                 "required": ["company_name", "domains"],
-                "additionalProperties": false
+                "additionalProperties": False
             }
         },
         "project_sources": {
@@ -185,7 +185,7 @@
                     }
                 },
                 "required": ["organization"],
-                "additionalProperties": false
+                "additionalProperties": False
             }
         },
         "module_groups": {
@@ -205,7 +205,7 @@
                     }
                 },
                 "required": ["module_group_name", "modules"],
-                "additionalProperties": false
+                "additionalProperties": False
             }
         },
         "mail_lists": {
@@ -244,7 +244,7 @@
                     }
                 },
                 "required": ["id", "title", "modules"],
-                "additionalProperties": false
+                "additionalProperties": False
             }
         }
     },
