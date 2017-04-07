@@ -5,8 +5,7 @@ usage: stackalytics-dashboard [-h] [--config-dir DIR] [--config-file PATH]
                               [--nodebug] [--nouse-journal] [--nouse-syslog]
                               [--nowatch-log-file]
                               [--syslog-log-facility SYSLOG_LOG_FACILITY]
-                              [--use-journal] [--use-syslog]
-                              [--watch-log-file]
+                              [--use-journal] [--use-syslog] [--watch-log-file]
 
 optional arguments:
   -h, --help            show this help message and exit

@@ -15,7 +15,6 @@
 
 import itertools
 
-import jsonschema
 from oslo_config import cfg
 from oslo_log import log as logging
 import psutil
@@ -30,7 +29,6 @@ from stackalytics.processor import mls
 from stackalytics.processor import rcs
 from stackalytics.processor import record_processor
 from stackalytics.processor import runtime_storage
-from stackalytics.processor import schema
 from stackalytics.processor import utils
 from stackalytics.processor import vcs
 from stackalytics.processor import zanata
@@ -95,7 +93,11 @@ def _process_repo_blueprints(repo, runtime_storage_inst,
 
 
 def _process_repo_bugs(repo, runtime_storage_inst, record_processor_inst):
-    LOG.info('Processing bugs for repo: %s', repo['uri'])
+    LOG.info('Processing bugs for repo: %s', repo['module'])
+
+    if repo['bug_tracker'] != 'launchpad':
+        LOG.warning('Bug tracker %s is not supported. Skip repo: %s',
+                    (repo['bug_tracker'], repo['module']))
 
     current_date = utils.date_to_timestamp('now')
     bug_modified_since = runtime_storage_inst.get_by_key(
@@ -111,13 +113,17 @@ def _process_repo_bugs(repo, runtime_storage_inst, record_processor_inst):
                                     current_date)
 
 
-def _process_repo_reviews(repo, runtime_storage_inst, record_processor_inst,
-                          rcs_inst):
+def _process_repo_reviews(repo, runtime_storage_inst, record_processor_inst):
+    rcs_inst = rcs.get_rcs(repo['code_review'])
+    rcs_inst.setup(key_filename=CONF.ssh_key_filename,
+                   username=CONF.ssh_username,
+                   gerrit_retry=CONF.gerrit_retry)
+
     for branch in _get_repo_branches(repo):
         LOG.info('Processing reviews for repo: %s, branch: %s',
-                 repo['uri'], branch)
+                 repo['module'], branch)
 
-        quoted_uri = six.moves.urllib.parse.quote_plus(repo['uri'])
+        quoted_uri = six.moves.urllib.parse.quote_plus(repo['module'])
         rcs_key = 'rcs:%s:%s' % (quoted_uri, branch)
         last_retrieval_time = runtime_storage_inst.get_by_key(rcs_key)
         current_retrieval_time = utils.date_to_timestamp('now')
@@ -136,6 +142,8 @@ def _process_repo_reviews(repo, runtime_storage_inst, record_processor_inst,
                                          utils.merge_records)
         runtime_storage_inst.set_by_key(rcs_key, current_retrieval_time)
 
+    rcs_inst.close()
+
 
 def _process_repo_vcs(repo, runtime_storage_inst, record_processor_inst):
     vcs_inst = vcs.get_vcs(repo, CONF.sources_root)
@@ -143,9 +151,9 @@ def _process_repo_vcs(repo, runtime_storage_inst, record_processor_inst):
 
     for branch in _get_repo_branches(repo):
         LOG.info('Processing commits in repo: %s, branch: %s',
-                 repo['uri'], branch)
+                 repo['module'], branch)
 
-        quoted_uri = six.moves.urllib.parse.quote_plus(repo['uri'])
+        quoted_uri = six.moves.urllib.parse.quote_plus(repo['module'])
         vcs_key = 'vcs:%s:%s' % (quoted_uri, branch)
         last_id = runtime_storage_inst.get_by_key(vcs_key)
 
@@ -160,19 +168,22 @@ def _process_repo_vcs(repo, runtime_storage_inst, record_processor_inst):
         runtime_storage_inst.set_by_key(vcs_key, last_id)
 
 
-def _process_repo(repo, runtime_storage_inst, record_processor_inst,
-                  rcs_inst):
-    LOG.info('Processing repo: %s', repo['uri'])
+def _process_repo(repo, runtime_storage_inst, record_processor_inst):
+    LOG.info('Processing repo: %s', repo['module'])
 
-    _process_repo_vcs(repo, runtime_storage_inst, record_processor_inst)
+    if repo.get('code'):
+        _process_repo_vcs(repo, runtime_storage_inst, record_processor_inst)
 
-    _process_repo_bugs(repo, runtime_storage_inst, record_processor_inst)
+    if repo.get('bug_tracker'):
+        _process_repo_bugs(repo, runtime_storage_inst, record_processor_inst)
 
-    _process_repo_blueprints(repo, runtime_storage_inst, record_processor_inst)
+    if repo.get('blueprints'):
+        _process_repo_blueprints(repo, runtime_storage_inst,
+                                 record_processor_inst)
 
-    if 'has_gerrit' in repo:
+    if repo.get('code_review'):
         _process_repo_reviews(repo, runtime_storage_inst,
-                              record_processor_inst, rcs_inst)
+                              record_processor_inst)
 
 
 def _process_mail_list(uri, runtime_storage_inst, record_processor_inst):
@@ -183,9 +194,9 @@ def _process_mail_list(uri, runtime_storage_inst, record_processor_inst):
     runtime_storage_inst.set_records(processed_mail_iterator)
 
 
-def _process_translation_stats(runtime_storage_inst, record_processor_inst):
-    translation_iterator = zanata.log(runtime_storage_inst,
-                                      CONF.translation_team_uri)
+def _process_translation_stats(runtime_storage_inst, record_processor_inst,
+                               translation_teams):
+    translation_iterator = zanata.log(runtime_storage_inst, translation_teams)
     translation_iterator_typed = _record_typer(translation_iterator, 'i18n')
     processed_translation_iterator = record_processor_inst.process(
         translation_iterator_typed)
@@ -206,25 +217,25 @@ def _post_process_records(record_processor_inst, repos):
 def process(runtime_storage_inst, record_processor_inst):
     repos = utils.load_repos(runtime_storage_inst)
 
-    rcs_inst = rcs.get_rcs(CONF.review_uri)
-    rcs_inst.setup(key_filename=CONF.ssh_key_filename,
-                   username=CONF.ssh_username,
-                   gerrit_retry=CONF.gerrit_retry)
+    mail_lists = set()
+    translation_teams = set()
 
     for repo in repos:
-        _process_repo(repo, runtime_storage_inst, record_processor_inst,
-                      rcs_inst)
+        _process_repo(repo, runtime_storage_inst, record_processor_inst)
 
-    rcs_inst.close()
+        if repo.get('mail_lists'):
+            mail_lists |= set(repo.get('mail_lists'))
+        if repo.get('translation_team'):
+            translation_teams += repo.get('translation_team')
 
     LOG.info('Processing mail lists')
-    mail_lists = runtime_storage_inst.get_by_key('mail_lists') or []
     for mail_list in mail_lists:
         _process_mail_list(mail_list, runtime_storage_inst,
                            record_processor_inst)
 
     LOG.info('Processing translations stats')
-    _process_translation_stats(runtime_storage_inst, record_processor_inst)
+    _process_translation_stats(runtime_storage_inst, record_processor_inst,
+                               translation_teams)
 
     _post_process_records(record_processor_inst, repos)
 
@@ -283,19 +294,17 @@ def main():
     runtime_storage_inst = runtime_storage.get_runtime_storage(
         CONF.runtime_storage_uri)
 
-    default_data = utils.read_json_from_uri(CONF.default_data_uri)
-    if not default_data:
-        LOG.critical('Unable to load default data')
-        return not 0
+    config_data = utils.read_yaml_from_uri(CONF.config_uri)
 
     try:
-        jsonschema.validate(default_data, schema.default_data)
-    except jsonschema.ValidationError as e:
-        LOG.critical('The default data is invalid: %s' % e)
+        schema = utils.read_yaml_file(utils.resolve_relative_path(
+            '%s%s.yaml' % (config.SCHEMAS, 'source')))
+        utils.validate_yaml(config_data, schema)
+    except Exception as e:
+        LOG.critical('The default data is invalid: %s', e)
         return not 0
 
-    default_data_processor.process(runtime_storage_inst,
-                                   default_data)
+    default_data_processor.process(runtime_storage_inst, config_data)
 
     process_project_list(runtime_storage_inst)
 

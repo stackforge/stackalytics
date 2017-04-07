@@ -17,6 +17,7 @@ import copy
 
 from oslo_config import cfg
 
+SCHEMAS = 'stackalytics/resources/schemas/'
 
 CONNECTION_OPTS = [
     cfg.StrOpt('runtime-storage-uri', default='memcached://127.0.0.1:11211',
@@ -24,30 +25,19 @@ CONNECTION_OPTS = [
 ]
 
 PROCESSOR_OPTS = [
-    cfg.StrOpt('default-data-uri',
-               default='https://git.openstack.org/cgit/'
-                       'openstack/stackalytics/plain/etc/default_data.json',
-               help='URI for default data. A local file can be used with the '
-                    'prefix "file://". For example, '
-                    'default_data_uri = file:///path/to/default_data.json'),
+    cfg.StrOpt('config-uri',
+               required=True,
+               help='Stackalytics config URI.'),
     cfg.StrOpt('sources-root', default='/var/local/stackalytics',
                help='The folder that holds all project sources to analyze'),
     cfg.StrOpt('corrections-uri',
                default=('https://git.openstack.org/cgit/'
                         'openstack/stackalytics/plain/etc/corrections.json'),
                help='The address of file with corrections data'),
-    cfg.StrOpt('review-uri', default='gerrit://review.openstack.org',
-               help='URI of review system'),
-    cfg.StrOpt('git-base-uri', default='git://git.openstack.org',
-               help='git base location'),
     cfg.StrOpt('ssh-key-filename', default='/home/user/.ssh/id_rsa',
                help='SSH key for gerrit review system access'),
     cfg.StrOpt('ssh-username', default='user',
                help='SSH username for gerrit review system access'),
-    cfg.StrOpt('translation-team-uri',
-               default='https://git.openstack.org/cgit/openstack/i18n/'
-                       'plain/tools/zanata/translation_team.yaml',
-               help='URI of translation team data'),
     cfg.StrOpt("fetching-user-source", default='launchpad',
                choices=['launchpad', '<None>'],
                help="Source for fetching user profiles"),

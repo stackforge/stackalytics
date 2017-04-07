@@ -23,6 +23,7 @@ from oslo_config import cfg
 from oslo_log import log as logging
 import six
 
+from stackalytics.processor import config
 from stackalytics.processor import normalizer
 from stackalytics.processor import rcs
 from stackalytics.processor import user_processor
@@ -32,21 +33,6 @@ CONF = cfg.CONF
 LOG = logging.getLogger(__name__)
 
 GITHUB_URI_PREFIX = r'^github:\/\/'
-
-
-def _check_default_data_change(runtime_storage_inst, default_data):
-    h = hashlib.new('sha1')
-    h.update(json.dumps(default_data))
-    digest = h.hexdigest()
-
-    p_digest = runtime_storage_inst.get_by_key('default_data_digest')
-    if digest == p_digest:
-        LOG.debug('No changes in default data, sha1: %s', digest)
-        return False
-
-    LOG.debug('Default data has changes, sha1: %s', digest)
-    runtime_storage_inst.set_by_key('default_data_digest', digest)
-    return True
 
 
 def _retrieve_project_list_from_sources(project_sources):
@@ -67,7 +53,7 @@ def _retrieve_project_list_from_sources(project_sources):
 def _retrieve_project_list_from_gerrit(project_source):
     LOG.info('Retrieving project list from Gerrit')
     try:
-        uri = project_source.get('uri') or CONF.review_uri
+        uri = project_source.get('uri')
         gerrit_inst = rcs.Gerrit(uri)
         key_filename = (project_source.get('ssh_key_filename') or
                         CONF.ssh_key_filename)
@@ -84,7 +70,7 @@ def _retrieve_project_list_from_gerrit(project_source):
     LOG.debug('Get list of projects for organization %s', organization)
     git_repos = [f for f in project_list if f.startswith(organization + "/")]
 
-    git_base_uri = project_source.get('git_base_uri') or CONF.git_base_uri
+    git_base_uri = project_source.get('git_base_uri')
 
     for repo in git_repos:
         (org, name) = repo.split('/')
@@ -92,11 +78,10 @@ def _retrieve_project_list_from_gerrit(project_source):
             git_base_uri=git_base_uri, repo=repo)
         yield {
             'branches': ['master'],
-            'module': name,
+            'module': repo,
             'organization': org,
-            'uri': repo_uri,
+            'code': repo_uri,
             'releases': [],
-            'has_gerrit': True,
         }
 
 
@@ -175,8 +160,39 @@ def _update_project_list(default_data):
         default_data['project_sources'], default_data['repos'])
 
 
+def _normalize_user(user):
+    user['companies'] = user.get('companies') or user.get('affiliation')
+
+    for c in user['companies']:
+        c['end_date'] = utils.date_to_timestamp(
+            c.get('until') or c.get('end_date'))
+
+    # sort companies by end_date
+    def end_date_comparator(x, y):
+        if x["end_date"] == 0:
+            return 1
+        elif y["end_date"] == 0:
+            return -1
+        else:
+            return x["end_date"] - y["end_date"]
+
+    user['companies'].sort(key=utils.cmp_to_key(end_date_comparator))
+    if user['companies']:
+        for c in user['companies']:
+            c['company_name'] = c.get('name') or c.get('company_name')
+        if user['companies'][-1]['end_date'] != 0:
+            user['companies'].append(dict(company_name='*independent',
+                                          end_date=0))
+    user['user_id'] = user_processor.make_user_id(
+        launchpad_id=user.get('launchpad_id'),
+        emails=user.get('emails'))
+    user['user_name'] = user.get('name') or user.get('user_name')
+
+
 def _store_users(runtime_storage_inst, users):
     for user in users:
+        _normalize_user(user)
+
         stored_user = user_processor.load_user(runtime_storage_inst,
                                                user_id=user['user_id'])
         updated_user = user_processor.update_user_profile(stored_user, user)
@@ -187,7 +203,7 @@ def _store_companies(runtime_storage_inst, companies):
     domains_index = {}
     for company in companies:
         for domain in company['domains']:
-            domains_index[domain] = company['company_name']
+            domains_index[domain] = company.get('company_name')
 
         if 'aliases' in company:
             for alias in company['aliases']:
@@ -211,16 +227,29 @@ def _store_module_groups(runtime_storage_inst, module_groups):
     runtime_storage_inst.set_by_key('module_groups', stored_mg)
 
 
+def _store_releases(runtime_storage_inst, releases):
+    for release in releases:
+        release['release_name'] = release['release_name'].lower()
+        release['end_date'] = utils.date_to_timestamp(release['end_date'])
+    releases.sort(key=lambda x: x['end_date'])
+
+    runtime_storage_inst.set_by_key('releases', releases)
+
+
+def _store_repositories(runtime_storage_inst, repos):
+    runtime_storage_inst.set_by_key('repos', repos)
+
+
 STORE_FUNCS = {
-    'users': _store_users,
-    'companies': _store_companies,
+    'contributors': _store_users,
+    'organizations': _store_companies,
     'module_groups': _store_module_groups,
+    'releases': _store_releases,
+    'repositories': _store_repositories,
 }
 
 
 def _store_default_data(runtime_storage_inst, default_data):
-    normalizer.normalize_default_data(default_data)
-
     LOG.debug('Update runtime storage with default data')
     for key, value in six.iteritems(default_data):
         if key in STORE_FUNCS:
@@ -229,10 +258,50 @@ def _store_default_data(runtime_storage_inst, default_data):
             runtime_storage_inst.set_by_key(key, value)
 
 
-def process(runtime_storage_inst, default_data):
-    LOG.debug('Process default data')
+def inherit_repositories_dfn(source, repos):
+    keys = ['code_review', 'bug_tracker', 'mail_lists', 'translation_team']
+    for repo in repos:
+        for key in keys:
+            if source.get(key):
+                repo[key] = source[key]
+        yield repo
 
-    if 'project_sources' in default_data:
-        _update_project_list(default_data)
 
-    _store_default_data(runtime_storage_inst, default_data)
+def _load_dependencies(config_data):
+    LOG.debug('Load config dependencies')
+    default_data = {}
+
+    for collection_name, sources in config_data.items():
+        collection = []
+        for source_block in sources:
+            source_type = next(iter(source_block.keys()))
+            source_values = source_block[source_type]
+
+            if source_type == 'include':
+                uri = source_values['uri']
+                jsonpath = source_values['jsonpath']
+                ul = utils.get_value_by_path(
+                    utils.read_json_from_uri(uri), jsonpath)
+                collection.extend(ul)
+            elif source_type == 'list':
+                collection.extend(source_values)
+            elif collection_name == 'repositories' and source_type == 'gerrit':
+                collection.extend(
+                    inherit_repositories_dfn(
+                        source_values, _retrieve_project_list_from_gerrit(
+                            source_values)))
+            elif collection_name == 'repositories' and source_type == 'github':
+                collection.extend(
+                    inherit_repositories_dfn(
+                        source_values, _retrieve_project_list_from_github(
+                            source_values)))
+
+        default_data[collection_name] = collection
+
+    return default_data
+
+
+def process(runtime_storage_inst, config_data):
+    data = _load_dependencies(config_data)
+
+    _store_default_data(runtime_storage_inst, data)
