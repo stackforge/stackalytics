@@ -1,0 +1,157 @@
+name: Stackalytics source definition schema
+
+type: map
+mapping:
+  metadata:
+    type: seq
+    sequence:
+    - type: map
+      mapping:
+        description:
+          type: str
+
+  contributors:
+    type: seq
+    matching: any
+    sequence:
+    - type: map
+      mapping:
+        list:
+          type: seq
+          sequence:
+          - type: map
+            mapping:
+              name:
+                type: str
+                required: true
+              launchpad_id:
+                type: str
+                pattern: "^[a-z\\d\\.\\+-]+$"
+              emails:
+                type: seq
+                sequence:
+                - type: str
+                  pattern: "^[a-z\\d_\\.\\+-]+@([a-z\\d\\.-]+\\.)*(([a-z]+)|\\(none\\))$"
+              companies:
+                type: seq
+                sequence:
+                - type: map
+                  mapping:
+                    name:
+                      type: str
+                      required: true
+                    until:
+                      type: date
+                      format: "%Y-%b-%d"
+        include:
+          type: map
+          mapping:
+            uri:
+              type: str
+              required: true
+            jsonpath:
+              type: str
+              required: true
+
+  companies:
+    type: seq
+    matching: any
+    sequence:
+    - type: map
+      mapping:
+        include:
+          type: map
+          mapping:
+            uri:
+              type: str
+              required: true
+            jsonpath:
+              type: str
+              required: true
+        list:
+          type: any
+
+  repositories:
+    type: seq
+    matching: any
+    sequence:
+    - type: map
+      mapping:
+        include:
+          type: map
+          mapping:
+            uri:
+              type: str
+              required: true
+            jsonpath:
+              type: str
+              required: true
+        list:
+          type: seq
+          sequence:
+          - type: map
+            mapping:
+              module:
+                type: str
+                pattern: "[a-zA-Z0-9_-]+/[a-zA-Z0-9_-]+"
+                required: true
+              code:
+                type: str
+                required: true
+              bug_tracker:
+                type: str
+              releases:
+                type: seq
+                sequence:
+                - type: map
+                  mapping:
+                    release_name:
+                      type: str
+                      required: true
+                    tag_from:
+                      type: text
+                      required: true
+                    tag_to:
+                      type: text
+                      required: true
+        gerrit:
+          type: map
+          mapping:
+            uri:
+              type: str
+            git_base_uri:
+              type: str
+            organization:
+              type: str
+            code_review:
+              type: str
+              enum: [gerrit]
+            mail_lists:
+              type: seq
+              sequence:
+              - type: str
+            driverlog:
+              type: str
+
+  releases:
+    type: any
+
+  module_groups:
+    type: any
+
+  project_types:
+    type: seq
+    sequence:
+    - type: map
+      mapping:
+        list:
+          type: seq
+          sequence:
+          - type: map
+            mapping:
+              id:
+                type: str
+              modules:
+                type: seq
+                sequence:
+                - type: str

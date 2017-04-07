@@ -21,7 +21,8 @@ from stackalytics.processor import utils
 
 def _normalize_user(user):
     for c in user['companies']:
-        c['end_date'] = utils.date_to_timestamp(c['end_date'])
+        c['end_date'] = utils.date_to_timestamp(
+            c.get('until') or c.get('end_date'))
 
     # sort companies by end_date
     def end_date_comparator(x, y):
@@ -34,6 +35,8 @@ def _normalize_user(user):
 
     user['companies'].sort(key=utils.cmp_to_key(end_date_comparator))
     if user['companies']:
+        for c in user['companies']:
+            c['company_name'] = c.get('name') or c.get('company_name')
         if user['companies'][-1]['end_date'] != 0:
             user['companies'].append(dict(company_name='*independent',
                                           end_date=0))
@@ -44,6 +47,7 @@ def _normalize_user(user):
         github_id=user.get('github_id'),
         zanata_id=user.get('zanata_id'),
         ldap_id=user.get('ldap_id')) or user.get('user_id')
+    user['user_name'] = user.get('name') or user.get('user_name')
 
 
 def _normalize_users(users):

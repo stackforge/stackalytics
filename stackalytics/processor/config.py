@@ -17,6 +17,7 @@ import copy
 
 from oslo_config import cfg
 
+SCHEMAS = 'stackalytics/resources/schemas/'
 
 CONNECTION_OPTS = [
     cfg.StrOpt('runtime-storage-uri', default='memcached://127.0.0.1:11211',
@@ -24,7 +25,10 @@ CONNECTION_OPTS = [
 ]
 
 PROCESSOR_OPTS = [
+    cfg.StrOpt('config-uri',
+               required=True),
     cfg.StrOpt('default-data-uri',
+               deprecated_for_removal=True,
                default='https://git.openstack.org/cgit/'
                        'openstack/stackalytics/plain/etc/default_data.json',
                help='URI for default data. A local file can be used with the '
@@ -39,18 +43,22 @@ PROCESSOR_OPTS = [
                         'openstack/stackalytics/plain/etc/corrections.json'),
                help='The address of file with corrections data'),
     cfg.StrOpt('review-uri', default='gerrit://review.openstack.org',
+               deprecated_for_removal=True,
                help='URI of review system'),
     cfg.StrOpt('git-base-uri', default='git://git.openstack.org',
+               deprecated_for_removal=True,
                help='git base location'),
     cfg.StrOpt('ssh-key-filename', default='/home/user/.ssh/id_rsa',
                help='SSH key for gerrit review system access'),
     cfg.StrOpt('ssh-username', default='user',
                help='SSH username for gerrit review system access'),
     cfg.StrOpt('driverlog-data-uri',
+               deprecated_for_removal=True,
                default='https://git.openstack.org/cgit/'
                        'openstack/driverlog/plain/etc/default_data.json',
                help='URI for default data'),
     cfg.StrOpt('translation-team-uri',
+               deprecated_for_removal=True,
                default='https://git.openstack.org/cgit/openstack/i18n/'
                        'plain/tools/zanata/translation_team.yaml',
                help='URI of translation team data'),
@@ -58,6 +66,7 @@ PROCESSOR_OPTS = [
                choices=['launchpad', '<None>'],
                help="Source for fetching user profiles"),
     cfg.IntOpt('members-look-ahead', default=250,
+               deprecated_for_removal=True,
                help='How many member profiles to look ahead after the last'),
     cfg.IntOpt('read-timeout', default=120,
                help='Number of seconds to wait for remote response'),

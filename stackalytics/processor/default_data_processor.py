@@ -23,6 +23,7 @@ from oslo_config import cfg
 from oslo_log import log as logging
 import six
 
+from stackalytics.processor import config
 from stackalytics.processor import normalizer
 from stackalytics.processor import rcs
 from stackalytics.processor import user_processor
@@ -67,7 +68,7 @@ def _retrieve_project_list_from_sources(project_sources):
 def _retrieve_project_list_from_gerrit(project_source):
     LOG.info('Retrieving project list from Gerrit')
     try:
-        uri = project_source.get('uri') or CONF.review_uri
+        uri = project_source.get('uri')
         gerrit_inst = rcs.Gerrit(uri)
         key_filename = (project_source.get('ssh_key_filename') or
                         CONF.ssh_key_filename)
@@ -84,7 +85,7 @@ def _retrieve_project_list_from_gerrit(project_source):
     LOG.debug('Get list of projects for organization %s', organization)
     git_repos = [f for f in project_list if f.startswith(organization + "/")]
 
-    git_base_uri = project_source.get('git_base_uri') or CONF.git_base_uri
+    git_base_uri = project_source.get('git_base_uri')
 
     for repo in git_repos:
         (org, name) = repo.split('/')
@@ -258,12 +259,68 @@ def _store_default_data(runtime_storage_inst, default_data):
             runtime_storage_inst.set_by_key(key, value)
 
 
-def process(runtime_storage_inst, default_data, driverlog_data_uri):
-    LOG.debug('Process default data')
+def inherit_repositories_dfn(source, repos):
+    keys = ['code_review', 'bug_tracker', 'mail_lists', 'driverlog']
+    for repo in repos:
+        for key in keys:
+            if source.get(key):
+                repo[key] = source[key]
+        yield repo
 
-    if 'project_sources' in default_data:
-        _update_project_list(default_data)
 
-    _update_with_driverlog_data(default_data, driverlog_data_uri)
+def transform_config_to_default_data(config_data):
+    LOG.debug('Transforming config into default_data')
+    default_data = {}
+
+    for collection_name, sources in config_data.items():
+        collection = []
+        for source_block in sources:
+            source_type = next(iter(source_block.keys()))
+            source_values = source_block[source_type]
+
+            if source_type == 'include':
+                uri = source_values['uri']
+                jsonpath = source_values['jsonpath']
+                ul = utils.get_value_by_path(
+                    utils.read_json_from_uri(uri), jsonpath)
+                collection.extend(ul)
+            elif source_type == 'list':
+                collection.extend(source_values)
+            elif collection_name == 'repositories' and source_type == 'gerrit':
+                collection.extend(
+                    inherit_repositories_dfn(
+                        source_values, _retrieve_project_list_from_gerrit(
+                            source_values)))
+            elif collection_name == 'repositories' and source_type == 'github':
+                collection.extend(
+                    inherit_repositories_dfn(
+                        source_values, _retrieve_project_list_from_github(
+                            source_values)))
+
+        default_data[collection_name] = collection
+
+    # map back to old format
+    default_data['users'] = default_data['contributors']
+
+    return default_data
+
+
+def process(runtime_storage_inst, default_data, driverlog_data_uri,
+            config_data):
+    if config_data:
+        schema = utils.read_yaml_file(utils.resolve_relative_path(
+            '%s%s.yaml' % (config.SCHEMAS, 'source')))
+        utils.validate_yaml(config_data, schema)
+
+        exit(0)
+
+        default_data = transform_config_to_default_data(config_data)
+    else:
+        LOG.debug('Process default data')
+
+        if 'project_sources' in default_data:
+            _update_project_list(default_data)
+
+        _update_with_driverlog_data(default_data, driverlog_data_uri)
 
     _store_default_data(runtime_storage_inst, default_data)

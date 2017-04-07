@@ -311,14 +311,13 @@ def main():
     runtime_storage_inst = runtime_storage.get_runtime_storage(
         CONF.runtime_storage_uri)
 
-    default_data = utils.read_json_from_uri(CONF.default_data_uri)
-    if not default_data:
-        LOG.critical('Unable to load default data')
-        return not 0
+    config_data = utils.read_yaml_from_uri(CONF.config_uri)
+    default_data = utils.read_yaml_from_uri(CONF.config_uri)
 
     default_data_processor.process(runtime_storage_inst,
                                    default_data,
-                                   CONF.driverlog_data_uri)
+                                   CONF.driverlog_data_uri,
+                                   config_data)
 
     process_project_list(runtime_storage_inst)
 

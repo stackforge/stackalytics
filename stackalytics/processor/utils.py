@@ -17,6 +17,7 @@ import calendar
 import cgi
 import datetime
 import gzip
+import os
 import random
 import re
 import time
@@ -24,6 +25,8 @@ import time
 import iso8601
 from oslo_config import cfg
 from oslo_log import log as logging
+from pykwalify import core as pykwalify_core
+from pykwalify import errors as pykwalify_errors
 import requests
 import requests_file
 import six
@@ -366,3 +369,84 @@ def make_pipeline_processor(processors):
                         yield r
 
     return pipeline_processor
+
+
+def resolve_relative_path(file_name):
+    path = os.path.normpath(os.path.join(
+        os.path.dirname(__import__('stackalytics').__file__), '..', file_name))
+    if os.path.exists(path):
+        return path
+
+
+def read_file(file_name, base_dir='', alias_mapper=None):
+    full_path = os.path.normpath(os.path.join(base_dir, file_name))
+
+    if alias_mapper:  # interpret file_name as alias
+        alias_path = resolve_relative_path(alias_mapper(file_name))
+        if alias_path:
+            full_path = alias_path
+            LOG.info('Alias "%s" is resolved into file "%s"',
+                     file_name, full_path)
+
+    if not os.path.exists(full_path):
+        # treat file_name as relative to shaker's package root
+        full_path = os.path.normpath(os.path.join(
+            os.path.dirname(__import__('shaker').__file__), '../', file_name))
+        if not os.path.exists(full_path):
+            msg = ('File %s not found by absolute nor by relative path' %
+                   file_name)
+            LOG.error(msg)
+            raise IOError(msg)
+
+    fd = None
+    try:
+        fd = open(full_path)
+        return fd.read()
+    except IOError as e:
+        LOG.error('Error reading file: %s', e)
+        raise
+    finally:
+        if fd:
+            fd.close()
+
+
+def write_file(data, file_name, base_dir=''):
+    full_path = os.path.normpath(os.path.join(base_dir, file_name))
+    fd = None
+    try:
+        fd = open(full_path, 'w')
+        return fd.write(data)
+    except IOError as e:
+        LOG.error('Error writing file: %s', e)
+        raise
+    finally:
+        if fd:
+            fd.close()
+
+
+def read_yaml_file(file_name):
+    raw = read_file(file_name)
+    try:
+        parsed = yaml.safe_load(raw)
+        return parsed
+    except Exception as e:
+        LOG.error('Failed to parse file %(file)s in YAML format: %(err)s',
+                  dict(file=file_name, err=e))
+        raise
+
+
+def get_value_by_path(src, param):
+    tokens = param.split('.')
+    for token in tokens:
+        if token not in src:
+            return None
+        src = src[token]
+    return src
+
+
+def validate_yaml(data, schema):
+    c = pykwalify_core.Core(source_data=data, schema_data=schema)
+    try:
+        c.validate(raise_exception=True)
+    except pykwalify_errors.SchemaError as e:
+        raise Exception('File does not conform to schema: %s' % e)

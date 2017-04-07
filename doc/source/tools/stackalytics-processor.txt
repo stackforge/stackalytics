@@ -1,4 +1,5 @@
 usage: stackalytics-processor [-h] [--config-dir DIR] [--config-file PATH]
+                              [--config-uri CONFIG_URI]
                               [--corrections-uri CORRECTIONS_URI]
                               [--days_to_update_members DAYS_TO_UPDATE_MEMBERS]
                               [--debug] [--default-data-uri DEFAULT_DATA_URI]
@@ -10,7 +11,7 @@ usage: stackalytics-processor [-h] [--config-dir DIR] [--config-file PATH]
                               [--log-date-format DATE_FORMAT]
                               [--log-dir LOG_DIR] [--log-file PATH]
                               [--members-look-ahead MEMBERS_LOOK_AHEAD]
-                              [--nodebug] [--nouse-syslog] [--noverbose]
+                              [--nodebug] [--nouse-syslog]
                               [--nowatch-log-file]
                               [--read-timeout READ_TIMEOUT]
                               [--review-uri REVIEW_URI]
@@ -20,12 +21,12 @@ usage: stackalytics-processor [-h] [--config-dir DIR] [--config-file PATH]
                               [--ssh-username SSH_USERNAME]
                               [--syslog-log-facility SYSLOG_LOG_FACILITY]
                               [--translation-team-uri TRANSLATION_TEAM_URI]
-                              [--use-syslog] [--verbose] [--watch-log-file]
+                              [--use-syslog] [--watch-log-file]
 
 optional arguments:
   -h, --help            show this help message and exit
-  --config-dir DIR      Path to a config directory to pull *.conf files from.
-                        This file set is sorted, so as to provide a
+  --config-dir DIR      Path to a config directory to pull `*.conf` files
+                        from. This file set is sorted, so as to provide a
                         predictable parse order if individual options are
                         over-ridden. The set is parsed after the file(s)
                         specified via previous --config-file, arguments hence
@@ -33,6 +34,7 @@ optional arguments:
   --config-file PATH    Path to a config file to use. Multiple config files
                         can be specified, with values in later files taking
                         precedence. Defaults to None.
+  --config-uri CONFIG_URI
   --corrections-uri CORRECTIONS_URI
                         The address of file with corrections data
   --days_to_update_members DAYS_TO_UPDATE_MEMBERS
@@ -51,7 +53,7 @@ optional arguments:
                         How many times to retry after Gerrit errors
   --git-base-uri GIT_BASE_URI
                         git base location
-  --log-config-append PATH, --log_config PATH
+  --log-config-append PATH, --log-config PATH, --log_config PATH
                         The name of a logging configuration file. This file is
                         appended to any existing logging configuration files.
                         For details about logging configuration files, see the
@@ -77,7 +79,6 @@ optional arguments:
                         How many member profiles to look ahead after the last
   --nodebug             The inverse of --debug
   --nouse-syslog        The inverse of --use-syslog
-  --noverbose           The inverse of --verbose
   --nowatch-log-file    The inverse of --watch-log-file
   --read-timeout READ_TIMEOUT
                         Number of seconds to wait for remote response
@@ -99,8 +100,6 @@ optional arguments:
   --use-syslog          Use syslog for logging. Existing syslog format is
                         DEPRECATED and will be changed later to honor RFC5424.
                         This option is ignored if log_config_append is set.
-  --verbose, -v         If set to false, the logging level will be set to
-                        WARNING instead of the default INFO level.
   --watch-log-file      Uses logging handler designed to watch file system.
                         When log file is moved or removed this handler will
                         open a new log file with specified path
