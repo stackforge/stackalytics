@@ -1,9 +1,9 @@
 {
     "users": [
         {
-            "launchpad_id": "0-doug",
-            "gerrit_id": "dougshelley",
-            "companies": [
+            "launchpad_id": "yeting",
+            "gerrit_id": "yeting",
+          "companies": [
                 {
                     "company_name": "Tesora",
                     "end_date": null
