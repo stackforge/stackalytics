@@ -1,4 +1,5 @@
 usage: stackalytics-processor [-h] [--config-dir DIR] [--config-file PATH]
+                              [--config-uri CONFIG_URI]
                               [--corrections-uri CORRECTIONS_URI] [--debug]
                               [--default-data-uri DEFAULT_DATA_URI]
                               [--fetching-user-source FETCHING_USER_SOURCE]
@@ -17,8 +18,7 @@ usage: stackalytics-processor [-h] [--config-dir DIR] [--config-file PATH]
                               [--ssh-username SSH_USERNAME]
                               [--syslog-log-facility SYSLOG_LOG_FACILITY]
                               [--translation-team-uri TRANSLATION_TEAM_URI]
-                              [--use-journal] [--use-syslog]
-                              [--watch-log-file]
+                              [--use-journal] [--use-syslog] [--watch-log-file]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -31,6 +31,7 @@ optional arguments:
   --config-file PATH    Path to a config file to use. Multiple config files
                         can be specified, with values in later files taking
                         precedence. Defaults to None.
+  --config-uri CONFIG_URI
   --corrections-uri CORRECTIONS_URI
                         The address of file with corrections data
   --debug, -d           If set to true, the logging level will be set to DEBUG

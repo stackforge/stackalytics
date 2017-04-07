@@ -23,6 +23,7 @@ from oslo_config import cfg
 from oslo_log import log as logging
 import six
 
+from stackalytics.processor import config
 from stackalytics.processor import normalizer
 from stackalytics.processor import rcs
 from stackalytics.processor import user_processor
@@ -67,7 +68,7 @@ def _retrieve_project_list_from_sources(project_sources):
 def _retrieve_project_list_from_gerrit(project_source):
     LOG.info('Retrieving project list from Gerrit')
     try:
-        uri = project_source.get('uri') or CONF.review_uri
+        uri = project_source.get('uri')
         gerrit_inst = rcs.Gerrit(uri)
         key_filename = (project_source.get('ssh_key_filename') or
                         CONF.ssh_key_filename)
@@ -84,7 +85,7 @@ def _retrieve_project_list_from_gerrit(project_source):
     LOG.debug('Get list of projects for organization %s', organization)
     git_repos = [f for f in project_list if f.startswith(organization + "/")]
 
-    git_base_uri = project_source.get('git_base_uri') or CONF.git_base_uri
+    git_base_uri = project_source.get('git_base_uri')
 
     for repo in git_repos:
         (org, name) = repo.split('/')
@@ -187,7 +188,7 @@ def _store_companies(runtime_storage_inst, companies):
     domains_index = {}
     for company in companies:
         for domain in company['domains']:
-            domains_index[domain] = company['company_name']
+            domains_index[domain] = company.get('company_name')
 
         if 'aliases' in company:
             for alias in company['aliases']:
@@ -212,8 +213,8 @@ def _store_module_groups(runtime_storage_inst, module_groups):
 
 
 STORE_FUNCS = {
-    'users': _store_users,
-    'companies': _store_companies,
+    'contributors': _store_users,
+    'organizations': _store_companies,
     'module_groups': _store_module_groups,
 }
 
@@ -229,10 +230,54 @@ def _store_default_data(runtime_storage_inst, default_data):
             runtime_storage_inst.set_by_key(key, value)
 
 
-def process(runtime_storage_inst, default_data):
-    LOG.debug('Process default data')
+def inherit_repositories_dfn(source, repos):
+    keys = ['code_review', 'bug_tracker', 'mail_lists', 'translation_team']
+    for repo in repos:
+        for key in keys:
+            if source.get(key):
+                repo[key] = source[key]
+        yield repo
 
-    if 'project_sources' in default_data:
-        _update_project_list(default_data)
+
+def load_dependencies(config_data):
+    LOG.debug('Load config dependencies')
+    default_data = {}
+
+    for collection_name, sources in config_data.items():
+        collection = []
+        for source_block in sources:
+            source_type = next(iter(source_block.keys()))
+            source_values = source_block[source_type]
+
+            if source_type == 'include':
+                uri = source_values['uri']
+                jsonpath = source_values['jsonpath']
+                ul = utils.get_value_by_path(
+                    utils.read_json_from_uri(uri), jsonpath)
+                collection.extend(ul)
+            elif source_type == 'list':
+                collection.extend(source_values)
+            elif collection_name == 'repositories' and source_type == 'gerrit':
+                collection.extend(
+                    inherit_repositories_dfn(
+                        source_values, _retrieve_project_list_from_gerrit(
+                            source_values)))
+            elif collection_name == 'repositories' and source_type == 'github':
+                collection.extend(
+                    inherit_repositories_dfn(
+                        source_values, _retrieve_project_list_from_github(
+                            source_values)))
+
+        default_data[collection_name] = collection
+
+    # map back to old format
+    default_data['users'] = default_data['contributors']
+    default_data['repos'] = default_data['repositories']
+
+    return default_data
+
+
+def process(runtime_storage_inst, config_data):
+    default_data = load_dependencies(config_data)
 
     _store_default_data(runtime_storage_inst, default_data)

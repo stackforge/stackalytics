@@ -15,7 +15,6 @@
 
 import itertools
 
-import jsonschema
 from oslo_config import cfg
 from oslo_log import log as logging
 import psutil
@@ -30,7 +29,6 @@ from stackalytics.processor import mls
 from stackalytics.processor import rcs
 from stackalytics.processor import record_processor
 from stackalytics.processor import runtime_storage
-from stackalytics.processor import schema
 from stackalytics.processor import utils
 from stackalytics.processor import vcs
 from stackalytics.processor import zanata
@@ -206,16 +204,20 @@ def _post_process_records(record_processor_inst, repos):
 def process(runtime_storage_inst, record_processor_inst):
     repos = utils.load_repos(runtime_storage_inst)
 
-    rcs_inst = rcs.get_rcs(CONF.review_uri)
-    rcs_inst.setup(key_filename=CONF.ssh_key_filename,
-                   username=CONF.ssh_username,
-                   gerrit_retry=CONF.gerrit_retry)
-
     for repo in repos:
-        _process_repo(repo, runtime_storage_inst, record_processor_inst,
-                      rcs_inst)
+        # todo move this deeper
+        if repo.get('code_review'):
+            rcs_inst = rcs.get_rcs(repo['code_review'])
+            rcs_inst.setup(key_filename=CONF.ssh_key_filename,
+                           username=CONF.ssh_username,
+                           gerrit_retry=CONF.gerrit_retry)
 
-    rcs_inst.close()
+            repo['uri'] = repo.get('code')
+
+            _process_repo(repo, runtime_storage_inst, record_processor_inst,
+                          rcs_inst)
+
+            rcs_inst.close()
 
     LOG.info('Processing mail lists')
     mail_lists = runtime_storage_inst.get_by_key('mail_lists') or []
@@ -283,19 +285,17 @@ def main():
     runtime_storage_inst = runtime_storage.get_runtime_storage(
         CONF.runtime_storage_uri)
 
-    default_data = utils.read_json_from_uri(CONF.default_data_uri)
-    if not default_data:
-        LOG.critical('Unable to load default data')
-        return not 0
+    config_data = utils.read_yaml_from_uri(CONF.config_uri)
 
     try:
-        jsonschema.validate(default_data, schema.default_data)
-    except jsonschema.ValidationError as e:
-        LOG.critical('The default data is invalid: %s' % e)
+        schema = utils.read_yaml_file(utils.resolve_relative_path(
+            '%s%s.yaml' % (config.SCHEMAS, 'source')))
+        utils.validate_yaml(config_data, schema)
+    except Exception as e:
+        LOG.critical('The default data is invalid: %s', e)
         return not 0
 
-    default_data_processor.process(runtime_storage_inst,
-                                   default_data)
+    default_data_processor.process(runtime_storage_inst, config_data)
 
     process_project_list(runtime_storage_inst)
 
