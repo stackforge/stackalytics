@@ -23737,7 +23737,7 @@
             ],
             "user_name": "yaoyuan",
             "emails": ["asmile.yy@gmail.com", "yao.yuan3@zte.com.cn"]
-        },
+        },        
         {
             "launchpad_id": "yapengwu",
             "companies": [
@@ -24052,6 +24052,17 @@
             "user_name": "Yuki Kasuya",
             "emails": ["yu-kasuya@kddilabs.jp"]
         },
+        {
+            "launchpad_id": "yuan.han",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Michael-ZTE",
+            "emails": ["yuan.han@zte.com.cn"]
+        },        
         {
             "launchpad_id": "yueyuquan",
             "companies": [
