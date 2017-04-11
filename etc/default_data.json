@@ -25042,6 +25042,18 @@
             "emails": ["649826038@qq.com"]
         },
         {
+            "launchpad_id": "zouyee",
+            "gerrit_id": "zouyee",
+            "companies": [
+                {
+                    "company_name": "China Mobile",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zoues",
+            "emails": ["zouyee1989@gmail.com"]
+        },
+        {
             "launchpad_id": "zoukeke",
             "gerrit_id": "zoukeke",
             "companies": [
