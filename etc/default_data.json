@@ -13,6 +13,18 @@
             "emails": ["doug@parelastic.com", "doug@tesora.com", "dougshelley66@gmail.com"]
         },
         {
+            "launchpad_id": "digambarpatil15",
+            "gerrit_id": "digambar",
+            "companies": [
+                {
+                    "company_name": "*independent",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Digambar Patil (diga)",
+            "emails": ["digambarpat@gmail.com", "digambarpatil15@yahoo.co.in"]
+        },
+        {
             "launchpad_id": "0x44",
             "companies": [
                 {
