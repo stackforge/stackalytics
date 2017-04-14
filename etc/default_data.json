@@ -10349,7 +10349,8 @@
             "emails": ["jeremyfreudberg@gmail.com", "jfreud@bu.edu"]
         },
         {
-            "launchpad_id": "jgravel",
+            "launchpad_id": "julie-gravel",
+            "gerrit_id": "jgravel",
             "companies": [
                 {
                     "company_name": "HP",
