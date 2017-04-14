@@ -22026,6 +22026,18 @@
             "emails": ["v.mikes@tcpcloud.eu", "vlastimil.mikes@tcpcloud.eu"]
         },
         {
+            "launchpad_id": "bjozsa",
+            "gerrit_id": "v1k0d3n",
+            "companies": [
+                {
+                    "company_name": "AT&T",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Brandon B. Jozsa",
+            "emails": ["bj916b@att.com", "bjozsa@att.com", "bjozsa@jinkit.com", "bjozsa@gmail.com"]
+        },
+        {
             "launchpad_id": "vaidyanath-m",
             "companies": [
                 {
