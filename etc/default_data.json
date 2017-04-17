@@ -25096,6 +25096,17 @@
             "emails": ["649826038@qq.com"]
         },
         {
+            "launchpad_id": "lianghao",
+            "companies": [
+                {
+                    "company_name": "China Mobile",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Liang Hao",
+            "emails": ["lianghao@cmss.chinamobile.com"]
+        },
+        {
             "launchpad_id": "zoukeke",
             "gerrit_id": "zoukeke",
             "companies": [
