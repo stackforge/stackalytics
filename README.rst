@@ -12,6 +12,7 @@ development activities and displays statistics on contribution. The features are
  * Extract blueprint and bug ids from commit messages;
  * Auto-update of database.
 
+# test 
 Quickstart
 ----------
 
