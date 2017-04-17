@@ -9316,6 +9316,18 @@
             "emails": ["indicoliteplus@gmail.com", "ccyu@fiberhome.com"]
         },
         {
+            "launchpad_id": "inesa-liuchao",
+            "gerrit_id": "chao",
+            "companies": [
+                {
+                    "company_name": "inesa",
+                    "end_date": null
+                }
+            ],
+            "user_name": "chao liu",
+            "emails": ["liuc@rc.inesa.com", "liuchao19860906@sina.com"]
+        },
+        {
             "launchpad_id": "int32bit",
             "gerrit_id": "int32bit",
             "github_id": "int32bit",
