@@ -11,7 +11,7 @@ development activities and displays statistics on contribution. The features are
  * Filter statistics by time, modules, companies, authors;
  * Extract blueprint and bug ids from commit messages;
  * Auto-update of database.
-
+wangy test
 Quickstart
 ----------
 
