@@ -27676,7 +27676,7 @@
                 {
                     "tag_to": "HEAD",
                     "release_name": "Pike",
-                    "tag_from": "2.11.0"
+                    "tag_from": "2.13.0"
                 }
             ],
             "uri": "git://git.openstack.org/openstack/swift.git",
