@@ -27657,26 +27657,26 @@
                 },
                 {
                     "branch": "stable/mitaka",
-                    "tag_to": "HEAD",
+                    "tag_to": "2.7.0",
                     "release_name": "Mitaka",
                     "tag_from": "2.5.0"
                 },
                 {
                     "branch": "stable/newton",
-                    "tag_to": "HEAD",
+                    "tag_to": "2.10.0",
                     "release_name": "Newton",
                     "tag_from": "2.7.0"
                 },
                 {
                     "branch": "stable/ocata",
-                    "tag_to": "HEAD",
+                    "tag_to": "2.13.0",
                     "release_name": "Ocata",
                     "tag_from": "2.10.0"
                 },
                 {
                     "tag_to": "HEAD",
                     "release_name": "Pike",
-                    "tag_from": "2.11.0"
+                    "tag_from": "2.13.0"
                 }
             ],
             "uri": "git://git.openstack.org/openstack/swift.git",
