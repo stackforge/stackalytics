@@ -25311,6 +25311,17 @@
             "emails": ["649826038@qq.com"]
         },
         {
+            "github_id": "zoues",
+            "companies": [
+                {
+                    "company_name": "China Mobile",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zoues",
+            "emails": ["zounengren@cmss.chinamobile.com"]
+        },
+        {
             "launchpad_id": "zoukeke",
             "gerrit_id": "zoukeke",
             "companies": [
