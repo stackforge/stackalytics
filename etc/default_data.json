@@ -26222,6 +26222,10 @@
             "aliases": ["IGBMC biological research lab"]
         },
         {
+            "domains": ["itri.org.tw"],
+            "company_name": "Industrial Technology Research Institute"
+        },
+        {
             "domains": ["imaginea.com"],
             "company_name": "Imaginea Technologies Inc."
         },
