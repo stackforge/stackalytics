@@ -7118,6 +7118,19 @@
             "emails": ["flavio@flaviof.com", "flavio.fernandes@ibm.com"]
         },
         {
+            "launchpad_id": "fengchaoyang",
+            "gerrit_id": "fengchaoyang",
+            "github_id": "SunnyFenng",
+            "companies": [
+                {
+                    "company_name": "UnitedStack",
+                    "end_date": "2017-May-5"
+                }
+            ],
+            "user_name": "fengchaoyang",
+            "emails": ["fenngzhaoyang@gmail.com"]
+        },
+        {
             "github_id": "ffilz",
             "companies": [
                 {
