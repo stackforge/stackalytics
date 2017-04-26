@@ -24639,6 +24639,17 @@
             "emails": ["zeih@zeih.eu"]
         },
         {
+            "github_id": "zouyee",
+            "companies": [
+                {
+                    "company_name": "China Mobile",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zoues",
+            "emails": ["zounengren@cmss.chinamobile.com"]
+        },
+        {
             "github_id": "zeke",
             "companies": [
                 {
