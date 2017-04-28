@@ -1,0 +1,8 @@
+Code-Review+2: Joshua Hesketh <joshua.hesketh@rackspace.com>
+Workflow+1: Ilya Shakhat <shakhat@gmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Fri, 28 Apr 2017 07:59:08 +0000
+Reviewed-on: https://review.openstack.org/460827
+Project: openstack/stackalytics
+Branch: refs/heads/master
