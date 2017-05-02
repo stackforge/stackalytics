@@ -46,7 +46,7 @@ default_data = {
                         "type": "array",
                         "items": {
                             "type": "string",
-                            "pattern": ("^[a-z\\d_\\.\\+-]+@([a-z\\d\\.-]+\\.)"
+                            "pattern": ("^[a-zA-Z\\d_\\.\\+-]+@([a-z\\d\\.-]+\\.)"
                                         "*(([a-z]+)|\\(none\\))$")
                         },
                         "minItems": 1
