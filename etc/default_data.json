@@ -28837,6 +28837,11 @@
             "uri": "https://github.com/docker/compose.git"
         },
         {
+            "module": "libcompose",
+            "organization": "docker",
+            "uri": "https://github.com/docker/libcompose.git"
+        },
+        {
             "module": "docker-py",
             "organization": "docker",
             "uri": "https://github.com/docker/docker-py.git"
@@ -29816,7 +29821,7 @@
         {
             "module_group_name": "docker-group",
             "modules": ["docker", "docker-registry", "docker-network", "engine-api", "libcontainer", "distribution", "machine", "swarm", "swarmkit", "libtrust",
-                "compose", "docker-py", "libnetwork", "containerd"]
+                "compose", "docker-py", "libnetwork", "containerd", "libcompose"]
         },
         {
             "module_group_name": "ansible-group",
