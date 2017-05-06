@@ -191,6 +191,18 @@
             "emails": ["alex@planet-barclay.com", "alex.barclay@hp.com", "alex.barclay@hpe.com"]
         },
         {
+            "launchpad_id": "fanyishi",
+            "gerrit_id": "fanys",
+            "companies": [
+                {
+                    "company_name": "HNU",
+                    "end_date": null
+                }
+            ],
+            "user_name": "fanys",
+            "emails": ["fanyishi@163.com"]
+        },
+        {
             "launchpad_id": "a-gorodnev",
             "gerrit_id": "agorodnev",
             "companies": [
