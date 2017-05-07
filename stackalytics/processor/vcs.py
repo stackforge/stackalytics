@@ -206,6 +206,9 @@ class Git(Vcs):
                 # ignore commits with empty email (there are some < Essex)
                 continue
 
+            # ignore machine/script produced submodule auto updates
+            if commit['subject'] == u'Update git submodules':
+                continue
             commit['author_email'] = utils.keep_safe_chars(
                 commit['author_email'])
 
