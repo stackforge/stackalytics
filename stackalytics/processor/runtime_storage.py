@@ -123,6 +123,16 @@ class MemcachedStorage(RuntimeStorage):
                 self.set_by_key(self._get_record_name(record_id), original)
                 self._commit_update(record_id)
 
+
+    def apply_uncount_corrections(self, corrections_iterator):
+        for correction in corrections_iterator:
+            for primary_key in correction.get('primary_keys'):
+                if primary_key not in self.record_index:
+                    continue
+                record_id = self.record_index[primary_key]
+                self.delete_by_key(self._get_record_name(record_id))
+                self.record_index.pop(primary_key)
+
     def inc_user_count(self):
         return self.memcached.incr('user:count')
 
