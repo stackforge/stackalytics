@@ -263,6 +263,14 @@ def apply_corrections(uri, runtime_storage_inst):
             LOG.warning('Correction misses primary key: %s', c)
     runtime_storage_inst.apply_corrections(valid_corrections)
 
+    uncount_corrections = []
+    for u in corrections.get('commit_uncounts'):
+        if 'primary_keys' in u:
+            uncount_corrections.append(u)
+        else:
+            LOG.warning('Correction misses primary_keys: %s', u)
+    runtime_storage_inst.apply_uncount_corrections(uncount_corrections)
+
 
 def process_project_list(runtime_storage_inst):
     module_groups = runtime_storage_inst.get_by_key('module_groups') or {}
