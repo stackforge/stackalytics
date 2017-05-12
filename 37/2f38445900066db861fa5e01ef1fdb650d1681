@@ -1,0 +1,9 @@
+Code-Review+1: Ngo Quoc Cuong <cuongnq@vn.fujitsu.com>
+Code-Review+2: Ilya Shakhat <shakhat@gmail.com>
+Workflow+1: Ilya Shakhat <shakhat@gmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Fri, 12 May 2017 09:41:05 +0000
+Reviewed-on: https://review.openstack.org/464127
+Project: openstack/stackalytics
+Branch: refs/heads/master
