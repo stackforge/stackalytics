@@ -2178,6 +2178,26 @@
                        "asalkeld@redhat.com", "angus.salkeld@rackspace.com"]
         },
         {
+            "launchpad_id": "ashish.billore",
+            "gerrit_id": "ashish.billore",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": "2015-June-20"
+                },
+                {
+                    "company_name": "HGST",
+                    "end_date": "2016-May-15"
+                },
+                {
+                    "company_name": "Samsung",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ashish Billore",
+            "emails": ["ashish.billore@gmail.com", "ashish.billore@outlook.com", "ash.billore@samsung.com", "ashish.billore1@in.ibm.com"]
+        },
+        {
             "launchpad_id": "ashish-kumar-gupta",
             "companies": [
                 {
