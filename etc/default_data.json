@@ -7865,6 +7865,21 @@
             "emails": ["eric.guo@easystack.cn", "guochbo@cn.ibm.com", "glongwave@gmail.com"]
         },
         {
+            "launchpad_id": "yin-zheng",
+            "gerrit_id": "zy751713126",
+            "companies": [
+                {
+                    "company_name": "EasyStack",
+                    "end_date": "2017-Apr-24"
+                },
+                {
+                    "company_name": "Chinac",
+                    "end_date": null
+                }
+            ],
+            "emails": ["yin__zheng@163.com", "zhengyin@chinac.com", "yin.zheng@easystack.cn"]
+        },
+        {
             "launchpad_id": "glonlas",
             "zanata_id": "geraldlonlas",
             "companies": [
