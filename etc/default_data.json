@@ -10585,6 +10585,18 @@
             "emails": ["jiangpch@gohighsec.com"]
         },
         {
+            "launchpad_id": "jiangpengcheng",
+            "gerrit_id":"jiangpengcheng",
+            "companies": [
+                {
+                    "company_name": "NAVER",
+                    "end_date": null
+                }
+            ],
+            "user_name": "jiangpengcheng",
+            "emails": ["jiangpengcheng@navercorp.com"]
+        },
+        {
             "launchpad_id": "jiangwt100",
             "companies": [
                 {
