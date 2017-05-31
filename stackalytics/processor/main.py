@@ -337,6 +337,9 @@ def main():
         LOG.critical('Unable to load default data')
         return not 0
 
+    user_data = utils.read_json_from_uri(CONF.user_data_uri)
+    default_data['users'] = user_data.get('users', [])
+
     try:
         jsonschema.validate(default_data, schema.default_data)
     except jsonschema.ValidationError as e:
