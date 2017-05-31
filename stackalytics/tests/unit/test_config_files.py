@@ -96,18 +96,21 @@ class TestConfigFiles(testtools.TestCase):
     def test_test_default_data_duplicate_keys(self):
         self._verify_default_data_duplicate_keys('etc/test_default_data.json')
 
-    def _verify_default_data_by_schema(self, file_name):
-        default_data = self._read_file(file_name)
+    def _verify_default_data_by_schema(self, default_data):
         try:
             jsonschema.validate(default_data, coded_schema.default_data)
         except jsonschema.ValidationError as e:
             self.fail(e)
 
     def test_default_data_schema_conformance(self):
-        self._verify_default_data_by_schema('etc/default_data.json')
+        default_data = self._read_file('etc/default_data.json')
+        user_data = self._read_file('etc/user_data.json')
+        default_data['users'] = user_data['users']
+        self._verify_default_data_by_schema(default_data)
 
     def test_test_default_data_schema_conformance(self):
-        self._verify_default_data_by_schema('etc/test_default_data.json')
+        default_data = self._read_file('etc/test_default_data.json')
+        self._verify_default_data_by_schema(default_data)
 
     def _verify_companies_in_alphabetical_order(self, file_name):
         companies = self._read_file(file_name)['companies']
@@ -131,7 +134,7 @@ class TestConfigFiles(testtools.TestCase):
                 'or github id')
 
     def test_users_in_alphabetical_order(self):
-        self._verify_users_in_alphabetical_order('etc/default_data.json')
+        self._verify_users_in_alphabetical_order('etc/user_data.json')
 
     def test_users_in_alphabetical_order_in_test_file(self):
         self._verify_users_in_alphabetical_order('etc/test_default_data.json')
@@ -171,7 +174,7 @@ class TestConfigFiles(testtools.TestCase):
                 storage[email] = user
 
     def test_users_unique_profiles(self):
-        self._verify_users_unique('etc/default_data.json')
+        self._verify_users_unique('etc/user_data.json')
 
     def test_users_unique_profiles_in_test_file(self):
         self._verify_users_unique('etc/test_default_data.json')
@@ -203,8 +206,7 @@ class TestConfigFiles(testtools.TestCase):
     def test_test_default_data_user_profiles_correctness(self):
         self._validate_default_data_correctness('etc/test_default_data.json')
 
-    def _validate_user_companies(self, file_name):
-        data = self._read_file(file_name)
+    def _validate_user_companies(self, data):
         users = data['users']
         companies = data['companies']
         company_names = []
@@ -223,10 +225,14 @@ class TestConfigFiles(testtools.TestCase):
                                     error_msg)
 
     def test_default_data_user_companies(self):
-        self._validate_user_companies('etc/default_data.json')
+        data = self._read_file('etc/default_data.json')
+        user_data = self._read_file('etc/user_data.json')
+        data['users'] = user_data['users']
+        self._validate_user_companies(data)
 
     def test_test_default_data_user_companies(self):
-        self._validate_user_companies('etc/test_default_data.json')
+        data = self._read_file('etc/test_default_data.json')
+        self._validate_user_companies(data)
 
     def test_file_mode(self):
         files = os.listdir('etc')
@@ -249,7 +255,7 @@ class TestConfigFiles(testtools.TestCase):
                                 '%s. Please keep only one' % ', '.join(ops))
 
     def test_default_data_users_one_open_interval(self):
-        self._verify_users_one_open_interval('etc/default_data.json')
+        self._verify_users_one_open_interval('etc/user_data.json')
 
     def test_test_default_data_users_one_open_interval(self):
         self._verify_users_one_open_interval('etc/test_default_data.json')
