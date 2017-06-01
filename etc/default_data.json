@@ -3301,6 +3301,18 @@
             "emails": ["carl@ecbaldwin.net", "carl.baldwin@hp.com", "carl.baldwin@hpe.com"]
         },
         {
+            "launchpad_id": "carlpuga",
+            "gerrit_id": "carlpuga",
+            "companies": [
+                {
+                    "company_name": "Walmart",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Carlos Puga",
+            "emails": ["carlpuga@gmail.com", "carlos.puga@walmart.com"]
+        },
+        {
             "launchpad_id": "carone1",
             "gerrit_id": "carone1",
             "companies": [
