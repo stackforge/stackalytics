@@ -1,0 +1,11 @@
+Code-Review+1: Maciej Kucia <maciej@kucia.net>
+Code-Review+1: Erik Olof Gunnar Andersson <eandersson@blizzard.com>
+Code-Review+1: Pradeep Kumar Velusamy <PradeepKumar.V@cognizant.com>
+Code-Review+2: Ilya Shakhat <shakhat@gmail.com>
+Workflow+1: Ilya Shakhat <shakhat@gmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Fri, 02 Jun 2017 13:01:11 +0000
+Reviewed-on: https://review.openstack.org/468626
+Project: openstack/stackalytics
+Branch: refs/heads/master
