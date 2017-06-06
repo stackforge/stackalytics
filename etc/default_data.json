@@ -13368,6 +13368,15 @@
             "emails":["liuyamin@fiberhome.com"]
         },
         {
+            "launchpad_id": "l-xiaoqiang",
+            "companies": [{
+                "company_name": "H3C",
+                "end_date": null
+            }],
+            "user_name":"erenliu",
+            "emails":["liu.xiaoqiang@h3c.com","l.xiaoqiang@qq.com"]
+        },
+        {
             "launchpad_id": "lixing",
             "gerrit_id": "lixing",
             "companies": [
