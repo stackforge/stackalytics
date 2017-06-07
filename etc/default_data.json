@@ -27626,6 +27626,10 @@
         {
             "domains": ["zte.com.cn"],
             "company_name": "ZTE Corporation"
+        },
+        {
+            "domains": ["dmm.com"],
+            "company_name": "DMM.com Labo"
         }
 
     ],
