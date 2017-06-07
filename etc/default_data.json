@@ -237,6 +237,17 @@
             "emails": ["alexander.pugachev@workday.com"]
         },
         {
+            "launchpad_id": "yyuanyuee",
+            "companies": [
+              {
+                    "company_name": "China Railway ITC",
+                    "end_date":null
+              }
+            ],
+            "user_name":"yuanyue",
+            "emails": ["yyuanyuee@163.com"]
+        },
+        {
             "launchpad_id": "a6822342",
             "companies": [
               {
