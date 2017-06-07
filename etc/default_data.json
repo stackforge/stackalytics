@@ -17944,6 +17944,17 @@
             "emails": ["resouer@163.com", "harryzhang@zju.edu.cn","harryz@hyper.sh", "resouer@gmail.com"]
         },
         {
+            "github_id": "xulike666",
+            "companies": [
+                {
+                    "company_name": "HarmonyCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Aaron.L.Xu",
+            "emails": ["likexu@harmonycloud.cn", "xuliker@zju.edu.cn", "liker.xu@foxmail.com"]
+        },
+        {
             "launchpad_id": "retr0h",
             "companies": [
                 {
@@ -27626,6 +27637,10 @@
         {
             "domains": ["zte.com.cn"],
             "company_name": "ZTE Corporation"
+        },
+        {
+            "domains": ["harmonycloud.cn"],
+            "company_name": "HarmonyCloud"
         }
 
     ],
