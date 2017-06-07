@@ -2,7 +2,7 @@ Project hosting with Launchpad
 ==============================
 
 The Stackalytics project homepage on Launchpad is
-http://launchpad.net/stackalytics.
+httsp://launchpad.net/stackalytics.
 
 
 Bug tracking
