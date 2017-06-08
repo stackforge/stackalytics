@@ -10757,6 +10757,17 @@
             "user_name": "Lawrance",
             "emails": ["lawrancejing@gmail.com", "jing.liuqing@99cloud.net"]
         },
+	{
+	    "launchpad_id": "jinzhenguo88",
+	    "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+	    "user_name": "jinzhenguo",
+            "emails": ["jinzhenguo88@sina.com"]
+	},
         {
             "launchpad_id": "jirka-v",
             "companies": [
