@@ -2845,6 +2845,18 @@
             "emails": ["blkart.org@gmail.com"]
         },
         {
+            "launchpad_id": "cdyangzhenyu",
+            "gerrit_id": "yangzhenyu",
+            "companies": [
+                {
+                    "company_name": "Eayun",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Zhenyu Yang",
+            "emails": ["cdyangzhenyu@gmail.com"]
+        },
+        {
             "github_id": "blp",
             "companies": [
                 {
