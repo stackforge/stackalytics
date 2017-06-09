@@ -25194,6 +25194,18 @@
             "emails": ["zheng.yao1@zte.com.cn"]
         },
         {
+            "launchpad_id": "zhengwei6082",
+            "gerrit_id": "zhengwei6082",
+            "companies": [
+                {
+                    "company_name": "Fiberhome",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhengwei6082",
+            "emails":  ["zhengwei6082@fiberhome.com"]
+        },
+        {
             "launchpad_id": "zhengzhenyu",
             "companies": [
                 {
