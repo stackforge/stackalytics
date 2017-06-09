@@ -7327,7 +7327,7 @@
              "launchpad_id": "fmliu",
              "companies": [
                  {
-                     "company_name": "CDGCC, HUST",
+                     "company_name": "CDGCC-HUST",
                      "end_date": null
                  }
              ],
@@ -15804,7 +15804,7 @@
              "launchpad_id": "newypei",
              "companies": [
                  {
-                     "company_name": "CDGCC, HUST",
+                     "company_name": "CDGCC-HUST",
                      "end_date": null
                  }
              ],
@@ -20738,11 +20738,10 @@
             "emails": ["soulascedric@gmail.com", "cedric.soulas@cloudwatt.com"]
         },
         {
-             "launchpad_id": "southeast02",
              "gerrit_id": "southeast02",
              "companies": [
                  {
-                     "company_name": "CDGCC, HUST",
+                     "company_name": "CDGCC-HUST",
                      "end_date": null
                  }
              ],
@@ -26564,7 +26563,7 @@
         },
         {
             "domains": ["hust.edu.cn", "grid.hust.edu.cn"],
-            "company_name": "CDGCC, HUST",
+            "company_name": "CDGCC-HUST",
             "aliases": ["Cloud Datacenter & Green Computing/Communications Reserach Group, Huazhong University of Science and Technology",
               "华中科技大学云数据中心与绿色计算/通信小组"]
         },
