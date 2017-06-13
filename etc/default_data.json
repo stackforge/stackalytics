@@ -117,6 +117,17 @@
             "emails": ["xie.wenjun2@zte.com.cn"]
         },
         {
+            "launchpad_id": "zhuxuanpeng",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhuxuanpeng",
+            "emails": ["zhu.xuanpeng@zte.com.cn"]
+        },
+        {
             "launchpad_id": "369283883-o",
             "companies": [
                 {
