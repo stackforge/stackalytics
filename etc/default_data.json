@@ -26062,6 +26062,18 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+        {
+            "launchpad_id": "dongjx",
+            "user_name": "dongjx",
+            "gerrit_id": "dongjx",
+            "companies": [
+                {
+                    "company_name": "inesa",
+                    "end_date": null
+                }
+            ],
+            "emails": ["dongjx@rc.inesa.com"]
         }
     ],
     "companies": [
