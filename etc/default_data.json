@@ -1,6 +1,18 @@
 {
     "users": [
         {
+            "launchpad_id": "azuercici",
+            "gerrit_id": "CiciSUN",
+            "companies": [
+                {
+                    "company_name": "inesa",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ruoxi SUN",
+            "emails": ["sunrx@rc.inesa.com"]
+        },
+        {
             "launchpad_id": "0-doug",
             "gerrit_id": "dougshelley",
             "companies": [
