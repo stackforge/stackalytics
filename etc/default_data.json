@@ -20898,6 +20898,18 @@
              "emails": ["yingfeicaozhang100527@gmail.com"]
         },
         {
+             "launchpad_id": "lyman-xu",
+             "gerrit_id": "lyman-xu",
+             "companies": [
+                 {
+                     "company_name": "HUST",
+                     "end_date": null
+                 }
+             ],
+             "user_name": "Zhuangzhuang Xu",
+             "emails": ["xu_lyman@163.com"]
+        },
+        {
             "launchpad_id": "sputnik13",
             "gerrit_id": "sputnik13",
             "companies": [
