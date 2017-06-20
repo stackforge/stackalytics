@@ -24417,6 +24417,18 @@
             ],
             "emails": ["wangy@rc.inesa.com"]
         },
+	{
+	    "launchpad_id": "dongjx",
+            "user_name": "dongjx",
+            "gerrit_id": "dongjx",
+            "companies": [
+                {
+                    "company_name": "inesa",
+                    "end_date": null
+                }
+            ],
+            "emails": ["dongjx@rc.inesa.com"]
+	},
         {
             "launchpad_id": "yangwanli",
             "gerrit_id": "yangawnli",
