@@ -1,6 +1,22 @@
 {
     "users": [
         {
+            "launchpad_id": "astaroverov",
+            "gerrit_id": "astaroverov",
+            "companies": [
+                {
+                    "company_name": "*independent",
+                    "end_date": "2017-May-31"
+                },
+                {
+                    "company_name": "Mirantis",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Anton Staroverov",
+            "emails": ["avstaroverov@gmail.com"]
+        },
+        {
             "launchpad_id": "0-doug",
             "gerrit_id": "dougshelley",
             "companies": [
