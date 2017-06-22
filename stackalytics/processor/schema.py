@@ -27,9 +27,6 @@ default_data = {
                         "type": "string",
                         "pattern": "^[a-z\\d\\.\\+-]+$"
                     },
-                    "github_id": {
-                        "type": "string"
-                    },
                     "zanata_id": {
                         "type": "string"
                     },

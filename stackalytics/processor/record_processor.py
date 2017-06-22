@@ -187,7 +187,7 @@ class RecordProcessor(object):
         merged_user = {}  # merged user profile
 
         # collect ordinary fields
-        for key in ['seq', 'user_name', 'user_id', 'gerrit_id', 'github_id',
+        for key in ['seq', 'user_name', 'user_id', 'gerrit_id',
                     'launchpad_id', 'companies', 'static', 'zanata_id']:
             value = next((v.get(key) for v in user_profiles if v.get(key)),
                          None)
