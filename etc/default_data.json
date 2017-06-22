@@ -1007,6 +1007,17 @@
             "emails": ["andrew.laski@rackspace.com", "andrew@lascii.com", "alaski@mirantis.com", "alaski@gmail.com"]
         },
         {
+            "launchpad_id": "alecuyer",
+            "companies": [
+                {
+                    "company_name": "OVH",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Alexandre Lecuyer",
+            "emails": ["alexandre.lecuyer@corp.ovh.com"]
+        },
+        {
             "launchpad_id": "aldavud",
             "companies": [
                 {
@@ -2451,7 +2462,7 @@
             "companies": [
                 {
                     "company_name": "OVH",
-                    "end_date": null
+                    "end_date": "2016-Dec-22"
                 }
             ],
             "user_name": "Bartek Zurawski",
@@ -17077,6 +17088,17 @@
             ],
             "user_name": "Pradhan",
             "emails": ["psp0808@gmail.com"]
+        },
+        {
+            "launchpad_id": "psuder",
+            "companies": [
+                {
+                    "company_name": "OVH",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Pawel Suder",
+            "emails": ["pawel.suder@corp.ovh.com"]
         },
         {
             "launchpad_id": "purp",
