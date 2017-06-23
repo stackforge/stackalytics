@@ -1,6 +1,19 @@
 {
     "users": [
         {
+            "launchpad_id": "jenkins",
+            "companies": [
+                {
+                    "company_name": "*robots",
+                    "end_date": null
+                }
+            ],
+            "user_name": "OpenStack Robot",
+            "emails": ["review@openstack.org", "jenkins@review.openstack.org",
+                "jenkins@openstack.org", "hudson@openstack.org",
+                "openstack-infra@lists.openstack.org", "elastic-hadoop-ci@mirantis.com"]
+        },
+        {
             "launchpad_id": "foo",
             "user_name": "Pupkin",
             "emails": ["user@test.org"],
@@ -14,19 +27,6 @@
                     "end_date": null
                 }
             ]
-        },
-        {
-            "launchpad_id": "jenkins",
-            "companies": [
-                {
-                    "company_name": "*robots",
-                    "end_date": null
-                }
-            ],
-            "user_name": "OpenStack Robot",
-            "emails": ["review@openstack.org", "jenkins@review.openstack.org",
-                "jenkins@openstack.org", "hudson@openstack.org",
-                "openstack-infra@lists.openstack.org", "elastic-hadoop-ci@mirantis.com"]
         }
     ],
 
