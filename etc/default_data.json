@@ -20955,6 +20955,17 @@
             "user_name": "sunanchen",
             "emails": ["sunanchen0122@gmail.com", "kf.sunanchen@h3c.com", "506067684@qq.com"]
         },
+	{
+            "launchpad_id": "sunguigang82901",
+            "companies": [
+                {
+                    "company_name": "Inspur",
+                    "end_date": null
+                }
+            ],
+            "user_name": "guigang sun",
+            "emails": ["sunguigang82901@163.com", "sunguigang@inspur.com"]
+        },
         {
             "launchpad_id": "sungjin",
             "zanata_id": "ujuc",
