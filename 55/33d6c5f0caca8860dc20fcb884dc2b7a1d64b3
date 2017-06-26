@@ -1,0 +1,10 @@
+Code-Review+1: Balazs Gibizer <balazs.gibizer@ericsson.com>
+Code-Review+1: Viktor Varga <vvarga@inf.u-szeged.hu>
+Code-Review+2: Ilya Shakhat <shakhat@gmail.com>
+Workflow+1: Ilya Shakhat <shakhat@gmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Mon, 26 Jun 2017 09:05:38 +0000
+Reviewed-on: https://review.openstack.org/476928
+Project: openstack/stackalytics
+Branch: refs/heads/master
