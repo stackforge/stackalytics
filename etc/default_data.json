@@ -1,6 +1,17 @@
 {
     "users": [
         {
+            "launchpad_id": "jiangpf",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "jiangpengfei",
+            "emails": ["jiang.pengfei@h3c.com", "jiangpf1992@outlook.com"]
+        },
+        {
             "launchpad_id": "0-doug",
             "companies": [
                 {
