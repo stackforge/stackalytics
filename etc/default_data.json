@@ -25548,8 +25548,12 @@
             "companies": [
                 {
                     "company_name": "Canonical",
-                    "end_date": null
-                }
+                    "end_date": "2017-Apr-15"
+                },
+		{
+		   "company_name": "Ericsson",
+		   "end_date": null
+		 }
             ],
             "user_name": "Chuck Short",
             "emails": ["chuck.short@canonical.com", "zulcss@ubuntu.com"]
