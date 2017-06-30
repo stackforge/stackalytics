@@ -23081,6 +23081,17 @@
             "emails": ["wangliangfu@outlook.com"]
         },
         {
+            "launchpad_id": "wangly",
+            "companies": [
+                {
+                    "company_name": "GohighSec",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Liangyu Wang",
+            "emails": ["wangliangyu@gohigh.com.cn"]
+        },
+        {
             "launchpad_id": "wanglmopenstack",
             "companies": [
                 {
