@@ -7120,6 +7120,17 @@
             "emails": ["fausto.marzi@ericsson.com", "fausto.marzi@gmail.com", "fausto.marzi@hp.com", "fausto.marzi@hpe.com"]
         },
         {
+            "launchpad_id": "fm577c",
+            "companies": [
+                {
+                    "company_name": "AT&T",
+                    "end_date": null
+                }
+            ],
+            "user_name": "felipe.monteiro",
+            "emails": ["felipe.monteiro@att.com", "felipe.carneiro.monteiro@gmail.com"]
+        },
+        {
             "launchpad_id": "fellypefca",
             "companies": [
                 {
