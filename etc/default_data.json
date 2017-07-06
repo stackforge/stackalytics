@@ -110,6 +110,17 @@
             "user_name": "xiewj",
             "emails": ["xie.wenjun2@zte.com.cn"]
         },
+       {
+            "launchpad_id": "zhang-yanxian",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhangyanxian",
+            "emails": ["zhangyanxianmail@163.com"]
+        },
         {
             "launchpad_id": "369283883-o",
             "companies": [
