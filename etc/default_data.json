@@ -11445,6 +11445,17 @@
             "emails": ["juan.pablo.lopez.gutierrez@intel.com"]
         },
         {
+            "launchpad_id": "johjuhyun",
+            "companies": [
+                {
+                    "company_name": "Samsung",
+                    "end_date": null
+                }
+            ],
+            "user_name": "johjuhyun",
+            "emails": ["juhyun.joh@samsung.com"]
+        },
+        {
             "launchpad_id": "juliaashleykreger",
             "companies": [
                 {
