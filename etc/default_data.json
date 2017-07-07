@@ -5741,6 +5741,17 @@
             "emails": ["dfleming@austin.rr.com", "diflemin@cisco.com", "diflemin@ebay.com", "diane.fleming@rackspace.com"]
         },
         {
+            "launchpad_id": "digitalr00ts",
+            "companies": [
+                {
+                    "company_name": "Verizon Digital Media",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Carlos Meza",
+            "emails": ["cmeza99@gmail.com", "carlos@digitalr00ts.com", "openstack@digitalr00ts.com"]
+        },
+        {
             "launchpad_id": "dileep-ranganathan",
             "companies": [
                 {
