@@ -8693,6 +8693,18 @@
             "emails": ["heetae82.ahn@samsung.com", "irisis@gmail.com"]
         },
         {
+            "launchpad_id": "sj-bark",
+            "zanata_id": "seokjae",
+            "companies": [
+                {
+                    "company_name": "Samsung",
+                    "end_date": null
+                }
+            ],
+            "user_name": "seokjae",
+            "emails": ["sj.bark@samsung.com", "bong4235@gmail.com"]
+        },
+        {
             "launchpad_id": "hellochosen",
             "companies": [
                 {
