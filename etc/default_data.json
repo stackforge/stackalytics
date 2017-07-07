@@ -11175,6 +11175,17 @@
             "emails": ["joonmyung.kang@gmail.com", "joon-myung.kang@hp.com", "joon-myung.kang@hpe.com"]
         },
         {
+            "launchpad_id": "joo-oh",
+            "companies": [
+                {
+                    "company_name": "Samsung",
+                    "end_date": null
+                }
+            ],
+            "user_name": "ohjoohyun",
+            "emails": ["oh011798@gmail.com", "joo.oh@samsung.com"]
+        },
+        {
             "launchpad_id": "jordan-pittier",
             "companies": [
                 {
