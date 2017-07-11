@@ -1,0 +1,9 @@
+Code-Review+1: XueFeng Liu <liu.xuefeng1@zte.com.cn>
+Code-Review+2: Ilya Shakhat <shakhat@gmail.com>
+Workflow+1: Ilya Shakhat <shakhat@gmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Tue, 11 Jul 2017 07:28:57 +0000
+Reviewed-on: https://review.openstack.org/482107
+Project: openstack/stackalytics
+Branch: refs/heads/master
