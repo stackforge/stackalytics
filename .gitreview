@@ -1,4 +1,5 @@
 [gerrit]
-host=review.openstack.org
+#host=review.openstack.org
+host=104.130.246.91
 port=29418
 project=openstack/stackalytics.git
