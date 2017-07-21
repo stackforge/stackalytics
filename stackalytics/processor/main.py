@@ -303,10 +303,10 @@ def process_project_list(runtime_storage_inst):
     # make list of OpenStack unofficial projects
     others = module_groups.get('openstack-others')
     off_rm = module_groups.get('openstack-official', {}).get('releases')
-    official = dict((r, set(m)) for r, m in six.iteritems(off_rm))
+    official = dict((r, set(m)) for r, m in off_rm.items())
 
     for module in module_groups.get('openstack', {}).get('modules', []):
-        for r, off_m in six.iteritems(official):
+        for r, off_m in official.items():
             if module not in off_m:
                 others['releases'][r].add(module)
 

@@ -19,7 +19,6 @@ import json
 
 import mock
 from oslo_utils import uuidutils
-import six
 import testtools
 
 from stackalytics.dashboard import web
@@ -164,13 +163,13 @@ def _add_generated_records(data, *generators):
 def algebraic_product(**kwargs):
     position_to_key = {}
     values = []
-    for key, value in six.iteritems(kwargs):
+    for key, value in kwargs.items():
         position_to_key[len(values)] = key
         values.append(value)
 
     for chain in itertools.product(*values):
         result = {}
-        for position, key in six.iteritems(position_to_key):
+        for position, key in position_to_key.items():
             result[key] = chain[position]
         yield result
 

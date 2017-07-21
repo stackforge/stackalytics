@@ -109,7 +109,7 @@ def _prepare_params(kwargs, ignore):
 
     if ignore:
         return dict([(k, v if k not in ignore else [])
-                     for k, v in six.iteritems(params)])
+                     for k, v in params.items()])
     else:
         return params
 

@@ -18,7 +18,6 @@ import operator
 import re
 import time
 
-import six
 
 from stackalytics.dashboard import parameters
 from stackalytics.dashboard import vault
@@ -53,7 +52,7 @@ def _extend_record_common_fields(record):
 def _extend_by_parent_info(record, parent, prefix='parent_'):
     parent = vault.extend_record(parent)
     _extend_record_common_fields(parent)
-    for k, v in six.iteritems(parent):
+    for k, v in parent.items():
         record[prefix + k] = v
 
 
@@ -285,7 +284,7 @@ def make_link(title, uri=None, options=None):
         param_values.update(options)
     if param_values:
         uri += '?' + '&'.join(['%s=%s' % (n, utils.safe_encode(v))
-                               for n, v in six.iteritems(param_values)])
+                               for n, v in param_values.items()])
     return '<a href="%(uri)s">%(title)s</a>' % {'uri': uri, 'title': title}
 
 

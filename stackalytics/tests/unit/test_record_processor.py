@@ -1601,14 +1601,14 @@ class TestRecordProcessor(testtools.TestCase):
                              record)
 
     def assertRecordsMatch(self, expected, actual):
-        for key, value in six.iteritems(expected):
+        for key, value in expected.items():
             self.assertEqual(value, actual.get(key),
                              'Values for key %s do not match' % key)
 
     def assertUsersMatch(self, expected, actual):
         self.assertIsNotNone(actual, 'User should not be None')
         match = True
-        for key, value in six.iteritems(expected):
+        for key, value in expected.items():
             if key == 'emails':
                 match = (set(value) == set(actual.get(key)))
             else:

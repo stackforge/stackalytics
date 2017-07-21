@@ -17,7 +17,6 @@ from email import utils as email_utils
 import re
 
 from oslo_log import log as logging
-import six
 from six.moves.urllib import parse
 
 from stackalytics.processor import utils
@@ -111,7 +110,7 @@ def _retrieve_mails(uri):
 
         email['body'] = _optimize_body(email['body'])
 
-        for pattern_name, pattern in six.iteritems(MESSAGE_PATTERNS):
+        for pattern_name, pattern in MESSAGE_PATTERNS.items():
             collection = set()
             for item in re.finditer(pattern, email['body']):
                 groups = item.groupdict()

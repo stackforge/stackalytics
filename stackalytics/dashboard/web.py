@@ -21,7 +21,6 @@ import time
 import flask
 from oslo_config import cfg
 from oslo_log import log as logging
-import six
 
 from stackalytics.dashboard import config
 from stackalytics.dashboard import decorators
@@ -300,7 +299,7 @@ def get_modules_json(record_ids, **kwargs):
         'module', record_ids)
 
     add_modules = set([])
-    for module in six.itervalues(module_id_index):
+    for module in module_id_index.values():
         if set(module['modules']) & module_ids:
             add_modules.add(module['id'])
     module_ids |= add_modules
@@ -416,7 +415,7 @@ def get_languages(records, **kwargs):
         if record.record_type in ['tr']:
             languages[record.value] += record.loc
 
-    for lang, val in six.iteritems(languages):
+    for lang, val in languages.items():
         result.append({
             'id': lang,
             'name': lang,
@@ -504,7 +503,7 @@ def get_releases_json(**kwargs):
 @decorators.jsonify(root=('data', 'default'))
 def get_metrics_json(**kwargs):
     return (sorted([{'id': m, 'text': t} for m, t in
-                    six.iteritems(parameters.METRIC_LABELS)],
+                    parameters.METRIC_LABELS.items()],
                    key=operator.itemgetter('text')),
             parameters.get_default('metric'))
 
@@ -640,10 +639,10 @@ def timeline(records, **kwargs):
                 if record.release == release_name:
                     release_stat[day].add(user_id)
                 all_stat[day].add(user_id)
-        for day, users in six.iteritems(release_stat):
+        for day, users in release_stat.items():
             week = utils.timestamp_to_week(day * 24 * 3600)
             week_stat_commits_hl[week] += len(users)
-        for day, users in six.iteritems(all_stat):
+        for day, users in all_stat.items():
             week = utils.timestamp_to_week(day * 24 * 3600)
             week_stat_commits[week] += len(users)
     else:

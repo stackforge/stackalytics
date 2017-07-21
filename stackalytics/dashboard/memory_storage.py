@@ -13,7 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import six
 
 from stackalytics.processor import utils
 
@@ -57,7 +56,7 @@ class CachedMemoryStorage(MemoryStorage):
                 record.record_type not in ['patch', 'review']):
             return
         self.records[record.record_id] = record
-        for key, index in six.iteritems(self.indexes):
+        for key, index in self.indexes.items():
             self._add_to_index(index, record, key)
         for bp_id in (record.blueprint_id or []):
             if bp_id in self.blueprint_id_index:
@@ -96,7 +95,7 @@ class CachedMemoryStorage(MemoryStorage):
         return have_updates
 
     def _remove_record_from_index(self, record):
-        for key, index in six.iteritems(self.indexes):
+        for key, index in self.indexes.items():
             index[getattr(record, key)].remove(record.record_id)
 
         record_day = utils.timestamp_to_day(record.date)
@@ -148,7 +147,7 @@ class CachedMemoryStorage(MemoryStorage):
 
     def get_index_keys_by_record_ids(self, index_name, record_ids):
         return set(key
-                   for key, value in six.iteritems(self.indexes[index_name])
+                   for key, value in self.indexes[index_name].items()
                    if value & record_ids)
 
     def get_record_ids(self):

@@ -128,7 +128,7 @@ def export_data(memcached_inst, fd):
                     pickle.dump((key, memcached_inst.get(key)), fd)
             else:
                 # dump the whole chunk
-                for k, v in six.iteritems(chunk):
+                for k, v in chunk.items():
                     pickle.dump((key_prefix + str(k), v), fd)
 
     for user_seq in range((memcached_inst.get('user:count') or 0) + 1):

@@ -114,7 +114,7 @@ class MemcachedStorage(RuntimeStorage):
             original = self.get_by_key(self._get_record_name(record_id))
             need_update = False
 
-            for field, value in six.iteritems(correction):
+            for field, value in correction.items():
                 if (field not in original) or (original[field] != value):
                     need_update = True
                     original[field] = value
