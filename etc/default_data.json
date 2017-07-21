@@ -8735,6 +8735,18 @@
             "emails": ["heetae82.ahn@samsung.com", "irisis@gmail.com"]
         },
         {
+            "launchpad_id": "JunHeon",
+            "zanata_id": "jheon",
+            "companies": [
+                {
+                    "company_name": "Samsung",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Junheon Hwang",
+            "emails": ["jheon.hwang@samsung.com", "hwangmc88@gmail.com"]
+        },
+        {
             "launchpad_id": "hellochosen",
             "companies": [
                 {
