@@ -8724,16 +8724,16 @@
             "emails": ["heckj@mac.com"]
         },
         {
-            "launchpad_id": "heetae82-ahn",
-            "zanata_id": "heetaeahn",
+            "launchpad_id": "Junheon",
+            "zanata_id": "jheon",
             "companies": [
                 {
                     "company_name": "Samsung",
                     "end_date": null
                 }
             ],
-            "user_name": "Heetae Ahn",
-            "emails": ["heetae82.ahn@samsung.com", "irisis@gmail.com"]
+            "user_name": "Junheon Hwang",
+            "emails": ["jheon.hwang@samsung.com", "hwangmc88@gmail.com"]
         },
         {
             "launchpad_id": "hellochosen",
