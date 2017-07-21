@@ -257,7 +257,7 @@ def make_age_string(seconds):
 
 def merge_records(original, new):
     need_update = False
-    for key, value in six.iteritems(new):
+    for key, value in new.items():
         if original.get(key) != value:
             need_update = True
             original[key] = value

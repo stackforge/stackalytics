@@ -13,7 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import six
 
 from stackalytics.processor import user_processor
 from stackalytics.processor import utils
@@ -68,6 +67,6 @@ NORMALIZERS = {
 
 
 def normalize_default_data(default_data):
-    for key, normalizer in six.iteritems(NORMALIZERS):
+    for key, normalizer in NORMALIZERS.items():
         if key in default_data:
             normalizer(default_data[key])

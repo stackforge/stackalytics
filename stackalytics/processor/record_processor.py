@@ -21,7 +21,6 @@ import time
 
 from oslo_config import cfg
 from oslo_log import log as logging
-import six
 
 from stackalytics.processor import launchpad_utils
 from stackalytics.processor import user_processor
@@ -350,7 +349,7 @@ class RecordProcessor(object):
 
     def _make_review_record(self, record):
         # copy everything except patchsets and flatten user data
-        review = dict([(k, v) for k, v in six.iteritems(record)
+        review = dict([(k, v) for k, v in record.items()
                        if k not in ['patchSets', 'owner', 'createdOn',
                                     'comments']])
         owner = record['owner']
@@ -405,7 +404,7 @@ class RecordProcessor(object):
 
     def _make_mark_record(self, review, patch, approval):
         # copy everything and flatten user data
-        mark = dict([(k, v) for k, v in six.iteritems(approval)
+        mark = dict([(k, v) for k, v in approval.items()
                      if k not in ['by', 'grantedOn', 'value', 'description']])
         reviewer = approval['by']
 
@@ -511,7 +510,7 @@ class RecordProcessor(object):
     def _process_blueprint(self, record):
         bpd_author = record.get('drafter') or record.get('owner')
 
-        bpd = dict([(k, v) for k, v in six.iteritems(record)
+        bpd = dict([(k, v) for k, v in record.items()
                     if k.find('_link') < 0])
         bpd['record_type'] = 'bpd'
         bpd['primary_key'] = 'bpd:' + record['id']
@@ -525,7 +524,7 @@ class RecordProcessor(object):
 
         if (record.get('assignee') and record['date_completed'] and
                 record.get('implementation_status') == 'Implemented'):
-            bpc = dict([(k, v) for k, v in six.iteritems(record)
+            bpc = dict([(k, v) for k, v in record.items()
                         if k.find('_link') < 0])
             bpc['record_type'] = 'bpc'
             bpc['primary_key'] = 'bpc:' + record['id']
@@ -604,7 +603,7 @@ class RecordProcessor(object):
         yield record
 
     def _process_ci(self, record):
-        ci_vote = dict((k, v) for k, v in six.iteritems(record))
+        ci_vote = dict((k, v) for k, v in record.items())
 
         ci_vote['primary_key'] = '%s:%s' % (record['review_id'],
                                             record['driver_name'])
@@ -749,7 +748,7 @@ class RecordProcessor(object):
 
         yield record_handler_pass_1
 
-        for bp_name, bp in six.iteritems(valid_blueprints):
+        for bp_name, bp in valid_blueprints.items():
             if bp_name in mentioned_blueprints:
                 bp['count'] = mentioned_blueprints[bp_name]['count']
                 bp['date'] = mentioned_blueprints[bp_name]['date']

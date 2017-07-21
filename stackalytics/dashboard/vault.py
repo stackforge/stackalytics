@@ -215,8 +215,7 @@ def _resolve_modules_for_releases(module_ids, releases):
 
             if not releases or 'all' in releases:
                 if 'releases' in module_group:
-                    for release, modules in six.iteritems(
-                            module_group['releases']):
+                    for release, modules in module_group['releases'].items():
                         for module in modules:
                             yield module, release
                 if 'modules' in module_group:

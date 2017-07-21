@@ -239,7 +239,7 @@ class Git(Vcs):
             commit['lines_added'] = int(lines_changed or 0)
             commit['lines_deleted'] = int(lines_deleted or 0)
 
-            for pattern_name, pattern in six.iteritems(MESSAGE_PATTERNS):
+            for pattern_name, pattern in MESSAGE_PATTERNS.items():
                 collection = set()
                 for item in re.finditer(pattern, commit['message']):
                     collection.add(item.group('id'))

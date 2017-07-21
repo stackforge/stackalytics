@@ -14,7 +14,6 @@
 import collections
 
 from oslo_log import log as logging
-import six
 import yaml
 
 from stackalytics.processor import utils
@@ -37,7 +36,7 @@ def _make_module_group(module_groups, name):
 def read_legacy_programs_yaml(module_groups, release_name, content):
     all_official = module_groups['openstack-official']
 
-    for name, info in six.iteritems(content):
+    for name, info in content.items():
         for module in info['projects']:
             mn = module['repo'].split('/')[1]  # module_name
 
@@ -48,7 +47,7 @@ def read_legacy_programs_yaml(module_groups, release_name, content):
 def read_early_big_tent_projects_yaml(module_groups, release_name, content):
     all_official = module_groups['openstack-official']
 
-    for name, info in six.iteritems(content):
+    for name, info in content.items():
         for module in info['projects']:
             repo_split = module['repo'].split('/')
             if len(repo_split) < 2:
@@ -62,13 +61,13 @@ def read_early_big_tent_projects_yaml(module_groups, release_name, content):
 def read_big_tent_projects_yaml(module_groups, release_name, content):
     all_official = module_groups['openstack-official']
 
-    for name, project in six.iteritems(content):
+    for name, project in content.items():
         group_id = '%s-group' % name.lower()
         module_groups[group_id]['module_group_name'] = (
             '%s Official' % name.title())
         module_groups[group_id]['tag'] = 'program'
 
-        for d_name, deliverable in six.iteritems(project['deliverables']):
+        for d_name, deliverable in project['deliverables'].items():
             for repo in deliverable['repos']:
                 repo_split = repo.split('/')
                 if len(repo_split) < 2:
@@ -128,7 +127,7 @@ def process_official_list(releases):
         GOVERNANCE_PROCESSORS[gov_type](module_groups, release_name, content)
 
     # set ids for module groups
-    for group_id, group in six.iteritems(module_groups):
+    for group_id, group in module_groups.items():
         group['id'] = group_id
 
     return module_groups

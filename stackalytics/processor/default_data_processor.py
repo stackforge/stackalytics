@@ -21,7 +21,6 @@ import re
 from github import MainClass
 from oslo_config import cfg
 from oslo_log import log as logging
-import six
 
 from stackalytics.processor import normalizer
 from stackalytics.processor import rcs
@@ -136,7 +135,7 @@ def _create_module_groups_for_project_sources(project_sources, repos):
          for ps in project_sources])
 
     module_groups = []
-    for ogn, modules in six.iteritems(organizations):
+    for ogn, modules in organizations.items():
         module_group_id = ogn
         module_group_name = ogn
 
@@ -252,7 +251,7 @@ def _store_default_data(runtime_storage_inst, default_data):
     normalizer.normalize_default_data(default_data)
 
     LOG.debug('Update runtime storage with default data')
-    for key, value in six.iteritems(default_data):
+    for key, value in default_data.items():
         if key in STORE_FUNCS:
             STORE_FUNCS[key](runtime_storage_inst, value)
         else:
