@@ -1,0 +1,9 @@
+Code-Review+1: Pradeep Kumar Velusamy <PradeepKumar.V@cognizant.com>
+Code-Review+2: Ilya Shakhat <shakhat@gmail.com>
+Workflow+1: Ilya Shakhat <shakhat@gmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Mon, 24 Jul 2017 07:58:33 +0000
+Reviewed-on: https://review.openstack.org/486084
+Project: openstack/stackalytics
+Branch: refs/heads/master
