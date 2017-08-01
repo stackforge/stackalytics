@@ -25627,6 +25627,17 @@
             "emails": ["hfzhengliuyang@163.com"]
         },
         {
+            "launchpad_id": "zhengy23",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhengyong",
+            "emails": ["zhengy23@163.com"]
+        },
+        {
             "launchpad_id": "zhengwei6082",
             "companies": [
                 {
