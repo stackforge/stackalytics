@@ -25926,6 +25926,18 @@
             "emails": ["zhugaoxiao@gmail.com", "zhu.gaoxiao@h3c.com"]
         },
         {
+            "launchpad_id": "xgw1989",
+            "github_id": "kkxue",
+            "companies": [
+                {
+                    "company_name": "TiCOMM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "guanwenxue",
+            "emails": ["xgw1989@sina.com", "xueguanwen@gmail.com"]
+        },
+        {
             "launchpad_id": "zhuhq",
             "companies": [
                 {
