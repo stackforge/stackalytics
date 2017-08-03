@@ -9539,6 +9539,18 @@
             "emails": ["ilkykli@gmail.com","liky@certusnet.com.cn"]
         },
         {
+            "launchpad_id": "iliul",
+            "github_id": "iliul",
+            "companies": [
+                {
+                    "company_name": "China Unicom",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Lei Liu",
+            "emails": ["liul.stone@gmail.com", "liul124@chinaunicom.cn"]
+        },
+        {
             "launchpad_id": "ilya-p",
             "companies": [
                 {
@@ -26492,6 +26504,11 @@
             "domains": ["chinanetcenter.com"],
             "company_name": "ChinaNetCenter",
             "aliases": ["ChinaNetCenter Cloud", "ChinaNetCenter CDN", "ChinaNetCenter IDC", "China Cache", "ChinaNetCenter USA"]
+        },
+        {
+            "domains": ["chinaunicom.cn"],
+            "company_name": "China Unicom",
+            "aliases": ["China Unicom Cloud Data Co. Ltd.", "联通云数据有限公司"]
         },
         {
             "domains": ["cienet.com.cn"],
