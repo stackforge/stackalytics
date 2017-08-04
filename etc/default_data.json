@@ -23577,6 +23577,17 @@
             "emails": ["wangyuwei@unitedstack.com", "yuweifree@gmail.com"]
         },
         {
+            "launchpad_id": "wangxu2017",
+            "companies": [
+                {
+                    "company_name": "Lenovo",
+                    "end_date": null
+                }
+            ],
+            "user_name": "wangxu",
+            "emails": ["wangxu17@lenovo.com", "wx6899923@163.com"]
+        },
+        {
             "launchpad_id": "wangzhh",
             "companies": [
                 {
