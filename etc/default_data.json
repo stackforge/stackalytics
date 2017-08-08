@@ -24736,6 +24736,17 @@
             "user_name": "Yapeng Wu",
             "emails": ["yapengwu@gmail.com", "yapeng.wu@huawei.com"]
         },
+	{
+            "launchpad_id": "yaraat",
+            "companies": [
+                {
+                    "company_name": "sberbank",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yaroslav Ulanovich",
+            "emails": ["yaraat@gmail.com"]
+        },
         {
             "launchpad_id": "yarko-tymciurak",
             "companies": [
