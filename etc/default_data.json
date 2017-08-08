@@ -10254,11 +10254,15 @@
                 },
                 {
                     "company_name": "EasyStack",
+                    "end_date": "2017-Jan-01"
+                },
+                {
+                    "company_name": "Baidu",
                     "end_date": null
                 }
             ],
             "user_name": "Javeme",
-            "emails": ["zhangmei.li@easystack.cn", "javaloveme@gmail.com"]
+            "emails": ["lizhangmei@baidu.com", "zhangmei.li@easystack.cn", "javaloveme@gmail.com"]
         },
         {
             "launchpad_id": "jawon.choo",
