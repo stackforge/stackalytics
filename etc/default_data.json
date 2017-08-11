@@ -30359,6 +30359,11 @@
             ],
             "uri": "git://git.openstack.org/openstack/python-moganclient.git",
             "organization": "openstack"
+        },
+        {
+            "module": "onos",
+            "organization": "ONOS",
+            "uri": "https://gerrit.onosproject.org/onos"
         }
     ],
     "project_sources": [
