@@ -26343,7 +26343,18 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
-        }
+        },
+        {
+            "launchpad_id": "otleimat",
+            "companies": [
+                {
+                    "company_name": "AT&T",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Omar Tleimat",
+            "emails": ["otleimat@ucla.edu", "ot084a@att.com"]
+        }  
     ],
     "companies": [
         {
