@@ -30359,6 +30359,11 @@
             ],
             "uri": "git://git.openstack.org/openstack/python-moganclient.git",
             "organization": "openstack"
+        },
+        {
+            "module": "onos",
+            "organization": "ONOS",
+            "uri": "https://gerrit.onosproject.org/onos"
         }
     ],
     "project_sources": [
@@ -30917,7 +30922,7 @@
         {
             "id": "complementary",
             "title": "Complementary",
-            "modules": ["ansible-group", "ceph", "docker-group", "kubernetes-group", "jclouds", "cloudfoundry", "opnfv", "openshift", "ovs", "pypa-group"]
+            "modules": ["ansible-group", "ceph", "docker-group", "kubernetes-group", "jclouds", "cloudfoundry", "opnfv", "openshift", "ovs", "pypa-group", "onos"]
         },
         {
             "id": "ansible-group",
@@ -30972,6 +30977,12 @@
             "title": "Python Packaging",
             "child": true,
             "modules": ["pypa-group"]
+        },
+        {
+            "id": "onos-group",
+            "title": "ONOS",
+            "child": true,
+            "modules": ["onos"]
         }
     ]
 }
