@@ -6104,6 +6104,17 @@
             "user_name": "Dongjunxiong",
             "emails": ["dongjxf@rc.inesa.com"]
         },
+	{
+            "launchpad_id": "sanyehowah",
+            "companies": [
+                {
+                    "company_name": "inesa",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Si-Heng Chen",
+            "emails": ["chensh@rc.inesa.com"]
+        },
         {
            "launchpad_id": "donovan-4",
            "companies": [
