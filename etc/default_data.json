@@ -30392,6 +30392,91 @@
             "uri": "https://github.com/docker/docker.github.io.git"
         },
         {
+            "module": "istio",
+            "organization": "istio",
+            "uri": "https://github.com/istio/istio.git"
+        },
+        {
+            "module": "pilot",
+            "organization": "istio",
+            "uri": "https://github.com/istio/pilot.git"
+        },
+        {
+            "module": "mixer",
+            "organization": "istio",
+            "uri": "https://github.com/istio/mixer.git"
+        },
+        {
+            "module": "auth",
+            "organization": "istio",
+            "uri": "https://github.com/istio/auth.git"
+        },
+        {
+            "module": "issues",
+            "organization": "istio",
+            "uri": "https://github.com/istio/issues.git"
+        },
+        {
+            "module": "galley",
+            "organization": "istio",
+            "uri": "https://github.com/istio/galley.git"
+        },
+        {
+            "module": "proxy",
+            "organization": "istio",
+            "uri": "https://github.com/istio/proxy.git"
+        },
+        {
+            "module": "istio.github.io",
+            "organization": "istio",
+            "uri": "https://github.com/istio/istio.github.io.git"
+        },
+        {
+            "module": "test-infra",
+            "organization": "istio",
+            "uri": "https://github.com/istio/test-infra.git"
+        },
+        {
+            "module": "api",
+            "organization": "istio",
+            "uri": "https://github.com/istio/api.git"
+        },
+        {
+            "module": "community",
+            "organization": "istio",
+            "uri": "https://github.com/istio/community.git"
+        },
+        {
+            "module": "mixerclient",
+            "organization": "istio",
+            "uri": "https://github.com/istio/mixerclient.git"
+        },
+        {
+            "module": "k8s-test-infra",
+            "organization": "istio",
+            "uri": "https://github.com/istio/k8s-test-infra.git"
+        },
+        {
+            "module": "admin-sites",
+            "organization": "istio",
+            "uri": "https://github.com/istio/admin-sites.git"
+        },
+        {
+            "module": "kube-inject",
+            "organization": "istio",
+            "uri": "https://github.com/istio/kube-inject.git"
+        },
+        {
+            "module": "broker",
+            "organization": "istio",
+            "uri": "https://github.com/istio/broker.git"
+        },
+        {
+            "module": "protobuf",
+            "organization": "istio",
+            "uri": "https://github.com/istio/protobuf.git"
+        },
+        {
             "module": "cri-o",
             "organization": "kubernetes",
             "uri": "https://github.com/kubernetes-incubator/cri-o.git"
@@ -31142,6 +31227,11 @@
             "organization": "kubernetes",
             "module_group_id": "kubernetes-group",
             "uri": "github://"
+        },
+        {
+            "organization": "istio",
+            "module_group_id": "istio-group",
+            "uri": "github://"
         }
     ],
     "module_groups": [
@@ -31605,7 +31695,7 @@
         {
             "id": "complementary",
             "title": "Complementary",
-            "modules": ["ansible-group", "ceph", "docker-group", "kubernetes-group", "jclouds", "cloudfoundry", "opnfv", "openshift", "ovs", "pypa-group"]
+            "modules": ["ansible-group", "ceph", "docker-group", "kubernetes-group", "istio-group", "jclouds", "cloudfoundry", "opnfv", "openshift", "ovs", "pypa-group"]
         },
         {
             "id": "ansible-group",
@@ -31636,6 +31726,12 @@
             "title": "Kubernetes",
             "child": true,
             "modules": ["kubernetes-group"]
+        },
+        {
+            "id": "istio-group",
+            "title": "istio",
+            "child": true,
+            "modules": ["istio-group"]
         },
         {
             "id": "opnfv-group",
