@@ -20695,6 +20695,17 @@
             "user_name": "Sitakanta Hotta",
             "emails": ["sitakanta.hotta@workday.com"]
         },
+	{
+            "launchpad_id": "skumar1601",
+            "companies": [
+                {
+                    "company_name": "Cognizant",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Shantanu Kumar",
+            "emails": ["shantanu.kumar@cognizant.com","kumarshantanu16@gmail.com"]
+        },
         {
             "launchpad_id": "skuicloud",
             "companies": [
