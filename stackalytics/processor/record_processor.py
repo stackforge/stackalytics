@@ -570,39 +570,6 @@ class RecordProcessor(object):
 
             yield bug_fixed
 
-    def _process_member(self, record):
-        user_id = user_processor.make_user_id(member_id=record['member_id'])
-        record['primary_key'] = user_id
-        record['date'] = utils.member_date_to_timestamp(record['date_joined'])
-        record['author_name'] = record['member_name']
-        record['module'] = 'unknown'
-        company_draft = record['company_draft']
-
-        company_name = self.domains_index.get(utils.normalize_company_name(
-            company_draft)) or (utils.normalize_company_draft(company_draft))
-
-        # author_email is a key to create new user
-        record['author_email'] = user_id
-        record['company_name'] = company_name
-        # _update_record_and_user function will create new user if needed
-        self._update_record_and_user(record)
-        record['company_name'] = company_name
-        user = user_processor.load_user(self.runtime_storage_inst,
-                                        user_id=user_id)
-
-        user['user_name'] = record['author_name']
-        user['companies'] = [{
-            'company_name': company_name,
-            'end_date': 0,
-        }]
-        user['company_name'] = company_name
-
-        user_processor.store_user(self.runtime_storage_inst, user)
-
-        record['company_name'] = company_name
-
-        yield record
-
     def _process_ci(self, record):
         ci_vote = dict((k, v) for k, v in six.iteritems(record))
 
@@ -645,7 +612,6 @@ class RecordProcessor(object):
             'email': self._process_email,
             'bp': self._process_blueprint,
             'bug': self._process_bug,
-            'member': self._process_member,
             'ci': self._process_ci,
             'i18n': self._process_translation,
         }
