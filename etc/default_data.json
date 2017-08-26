@@ -4988,6 +4988,17 @@
             "emails": ["dangchb@awcloud.com"]
         },
         {
+            "launchpad_id": "dangogh",
+            "companies": [
+                {
+                    "company_name": "Comcast",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Dan Kirkwood",
+            "emails": ["dangogh@apache.org", "dangogh@gmail.com", "daniel_kirkwood@comcast.com" ]
+        },
+        {
             "launchpad_id": "daniel-a-nguyen",
             "companies": [
                 {
