@@ -23559,6 +23559,17 @@
             "emails": ["waipengyip@yahoo.com", "waipengyip@gmail.com", "jake.yip@unimelb.edu.au"]
         },
         {
+            "launchpad_id": "yanshi-403",
+            "companies": [
+                {
+                    "company_name": "University of Melbourne",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Shi Yan",
+            "emails": ["yanshi.403@gmail.com", "shi.yan@unimelb.edu.au"]
+        },
+        {
             "launchpad_id": "walshh2",
             "companies": [
                 {
