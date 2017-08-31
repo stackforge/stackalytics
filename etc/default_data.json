@@ -25420,6 +25420,17 @@
             "emails": ["yyuanyuee@163.com"]
         },
         {
+             "launchpad_id": "yr-qearl",
+             "companies": [
+               {
+                     "company_name": "Hangzhou Yunrong Technology",
+                     "end_date": null
+               }
+             ],
+             "user_name": "Tingting Yu",
+             "emails": ["yu_qearl@163.com", "yutingting@yunrongtech.com"]
+        },
+        {
             "launchpad_id": "z8715000",
             "companies": [
                 {
