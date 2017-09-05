@@ -25401,6 +25401,17 @@
             "emails": ["yugsuo@gmail.com", "guangyu@unitedstack.com"]
         },
         {
+            "launchpad_id": "hex2dec",
+            "companies": [
+                {
+                    "company_name": "UnitedStack",
+                    "end_data": null
+                }
+            ],
+            "user_names": "William Huang",
+            "emails": ["pyhex2dec@gmail.com"]
+        },
+        {
             "launchpad_id": "yuhengwang",
             "companies": [
                 {
