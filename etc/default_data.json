@@ -4465,8 +4465,11 @@
                },
                {
                    "company_name": "*independent",
-                   "end_date": null
-               }
+                   "end_date": "2017-Sep-03"
+               },
+	       {
+		   "company_name": "Opcito Technologies",
+		   "end_date": null
            ],
            "user_name": "Swapnil Kulkarni (coolsvap)",
            "emails": ["swapnilkulkarni2608@gmail.com", "coolsvap@redhat.com", "coolsvap@gmail.com", "me@coolsvap.net"]
