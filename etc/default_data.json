@@ -4465,6 +4465,10 @@
                },
                {
                    "company_name": "*independent",
+                   "end_date": "2017-Sep-03"
+               },
+               {
+                   "company_name": "Opcito Technologies",
                    "end_date": null
                }
            ],
