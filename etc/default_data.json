@@ -4427,6 +4427,18 @@
             "emails": ["cofyc.jackson@gmail.com", "fuyecheng@qiniu.com"]
         },
         {
+            "launchpad_id": "zhangdongqi",
+            "github_id": "zdq0394",
+            "companies": [
+                {
+                    "company_name": "Qiniu",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Dongqi Zhang",
+            "emails": ["zdq123.hn@163.com", "zhangdongqi@qiniu.com"]
+        },
+        {
             "launchpad_id": "colettealexander",
             "companies": [
                 {
