@@ -24067,6 +24067,17 @@
             "emails": ["weike@awcloud.com", "weike.cs@gmail.com"]
         },
         {
+            "github_id": "weiwei04",
+            "companies": [
+                {
+                    "company_name": "Qiniu",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Wei Wei",
+            "emails": ["weiwei@qiniu.com", "weiwei.inf@gmail.com"]
+        },
+        {
             "launchpad_id": "wengjiangang",
             "companies": [
                 {
