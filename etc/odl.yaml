@@ -1,0 +1,41 @@
+kernel:
+  - aaa
+  - federation
+  - infrautils
+  - mdsal
+  - odlparent
+  - controller
+  - yangtools
+protocol:
+  - bgpcep
+  - genius
+  - netconf
+  - ocpplugin
+  - lispflowmapping
+  - openflowplugin
+  - openflowjava
+  - ovsdb
+  - snmp4sdn
+  - sxp
+  - ttp
+  - usc
+app:
+  - coe
+  - dluxapps
+  - faas
+  - nemo
+  - netvirt
+  - neutron
+  - dlux
+  - systemmetrics
+service:
+  - bier
+  - topoprocessing
+  - unimgr
+support:
+  - docs
+  - integration/distribution
+  - integration/packaging
+  - integration/test
+  - releng/autorelease
+  - releng/builder

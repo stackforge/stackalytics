@@ -30353,12 +30353,9 @@
             "organization": "openstack"
         },
         {
-            "module": "python-moganclient",
-            "aliases": [
-                "python-nimbleclient"
-            ],
-            "uri": "git://git.openstack.org/openstack/python-moganclient.git",
-            "organization": "openstack"
+            "module": "aaa",
+            "uri": "https://git.opendaylight.org/gerrit/aaa",
+            "organization": "odl"
         }
     ],
     "project_sources": [
@@ -30917,7 +30914,7 @@
         {
             "id": "complementary",
             "title": "Complementary",
-            "modules": ["ansible-group", "ceph", "docker-group", "kubernetes-group", "jclouds", "cloudfoundry", "opnfv", "openshift", "ovs", "pypa-group"]
+            "modules": ["ansible-group", "ceph", "docker-group", "kubernetes-group", "jclouds", "cloudfoundry", "opnfv", "openshift", "ovs", "pypa-group", "odl"]
         },
         {
             "id": "ansible-group",
@@ -30972,6 +30969,12 @@
             "title": "Python Packaging",
             "child": true,
             "modules": ["pypa-group"]
+        },
+        {
+            "id": "odl-group",
+            "title": "OpenDaylight",
+            "child": true,
+            "modules": ["odl"]
         }
     ]
 }
