@@ -7675,6 +7675,17 @@
             "emails": ["fthiagogv@outlook.com", "fthiagogv@gmail.com", "thiago.gomes@lsbd.ufc.br"]
         },
         {
+            "launchpad_id": "thiago-mliberati",
+            "companies": [
+                {
+                    "company_name": "NetApp",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Thiago Liberati",
+            "emails": ["thiago.mliberati@gmail.com", "thiago.liberati@fit-tecnologia.org.br"]
+        },
+        {
             "launchpad_id": "fujioka-yuuichi-d",
             "companies": [
                 {
