@@ -26886,6 +26886,17 @@
             "emails": ["zmj1981123@163.com"]
         },
         {
+            "launchpad_id": "zhangxi",
+            "companies": [
+                {
+                    "company_name": "HFBank",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhangxi",
+            "emails": ["1275544132@qq.com"]
+        },
+        {
             "launchpad_id": "zhangyanying",
             "companies": [
                 {
