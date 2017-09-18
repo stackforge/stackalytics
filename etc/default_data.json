@@ -1250,6 +1250,10 @@
             "companies":[
                 {
                     "company_name": "DaoCloud",
+                    "end_date": "2017-Aug-28"
+                },
+                {
+                    "company_name": "Alibaba",
                     "end_date": null
                 }
             ],
@@ -26868,6 +26872,10 @@
             "domains": ["alchemy.solutions"],
             "company_name": "Alchemy Solutions Group",
             "aliases": ["Alchemy Solutions", "Alchemy Lab"]
+        },
+        {
+            "domains": ["alibaba-inc.com", "taobao.com"],
+            "company_name": "Alibaba"
         },
         {
             "domains": ["allegrogroup.com", "allegro.pl"],
