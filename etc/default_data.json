@@ -22402,6 +22402,10 @@
                 },
                 {
                     "company_name": "Charter",
+                    "end_date": "2017-March-15"
+                },
+                {
+                    "company_name": "Tesla",
                     "end_date": null
                 }
             ],
