@@ -10785,6 +10785,17 @@
             "emails": ["pskamruk@mirantis.com", "piotr.skamruk@gmail.com", "jell@jell.pl"]
         },
         {
+            "launchpad_id": "jlwhittyos",
+            "companies": [
+                {
+                    "company_name": "Verizon Wireless",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jennifer Whitty",
+            "emails": ["jlwhittyos@gmail.com"]
+        },
+        {
             "launchpad_id": "jeremy-moffitt",
             "github_id": "jeremy-moffitt",
             "companies": [
