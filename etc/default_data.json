@@ -9269,6 +9269,17 @@
             "emails": ["htpeng@fiberhome.com", "phtao1982@gmail.com"]
         },
         {
+            "launchpad_id": "huan.xiong",
+            "companies": [
+                {
+                    "company_name": "HXT Semiconductor",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Huan Xiong",
+            "emails": ["huan.xiong@hxt-semitech.com"]
+        },
+        {
             "launchpad_id": "huachaomao",
             "github_id": "Huachao",
             "companies": [
