@@ -26981,7 +26981,19 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+	{
+            "launchpad_id": "anilkumarthovi",
+            "companies": [
+                {
+                    "company_name": "Cognizant",
+                    "end_date": null
+                }
+            ],
+            "user_name": "anilkumarthovi",
+            "emails": ["anilkumar.thovi@cognizant.com"]
         }
+
     ],
     "companies": [
         {
