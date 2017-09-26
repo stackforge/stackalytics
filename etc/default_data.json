@@ -11637,6 +11637,17 @@
             "emails": ["joonmyung.kang@gmail.com", "joon-myung.kang@hp.com", "joon-myung.kang@hpe.com"]
         },
         {
+            "launchpad_id": "jordan.dao",
+            "companies": [
+                {
+                    "company_name": "Verizon Wireless",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jordan Dao",
+            "emails": ["jordan.dao@verizonwireless.com","jordan.dao@outlook.com"]
+        },
+        {
             "launchpad_id": "jordan-pittier",
             "companies": [
                 {
