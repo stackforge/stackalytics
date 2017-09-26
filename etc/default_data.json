@@ -24502,6 +24502,14 @@
             "companies": [
                 {
                     "company_name": "Zhejiang University",
+                    "end_date": "2016-Mar-30"
+                },
+                {
+                    "company_name": "qiniu",
+                    "end_date": "2017-Sep-08"
+                },
+                {
+                    "company_name": "Alibaba",
                     "end_date": null
                 }
             ],
@@ -24849,6 +24857,171 @@
             ],
             "user_name": "Xianlu Chen",
             "emails": ["xianlubird@gmail.com"]
+        },
+        {
+            "github_id": "wsxiaozhang",
+            "companies": [
+                {
+                    "company_name": "Alibaba",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Kai Zhang",
+            "emails": ["wsxiaozhang@gmail.com"]
+        },
+        {
+            "github_id": "toolchainX",
+            "companies": [
+                {
+                    "company_name": "Alibaba",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Linhua Tan",
+            "emails": ["toolchainX@gmail.com"]
+        },
+        {
+            "github_id": "cheyang",
+            "companies": [
+                {
+                    "company_name": "Alibaba",
+                    "end_date": null
+                }
+            ],
+            "user_name": "cheyang",
+            "emails": ["cheyang@163.com"]
+        },
+        {
+            "github_id": "menglingwei",
+            "companies": [
+                {
+                    "company_name": "Alibaba",
+                    "end_date": null
+                }
+            ],
+            "user_name": "menglingwei",
+            "emails": ["1741651@qq.com"]
+        },
+        {
+             "github_id": "ringtail",
+             "companies": [
+             {
+               "company_name": "Alibaba",
+               "end_date": null
+              }
+             ],
+              "user_name": "Mo Yuan",
+              "emails": [
+              "zhongwei.lzw@alibaba-inc.com"
+                ]
+          },
+          { 
+               "github_id": "xiaozhu36",
+               "companies":[
+               {
+               "company_name": "Alibaba",
+               "end_date": null
+               }
+               ],
+               "user_name": "He Guimin",
+               "emails": ["guimin.hgm@alibaba-inc.com"]
+         },
+        {   
+               "github_id": "haoshuwei",
+               "companies":[
+               {
+               "company_name": "Alibaba",
+               "end_date": null
+               }
+               ],
+               "user_name": "Shuwei Hao",
+               "emails": ["haoshuwei24@gmail.com"]
+        },
+        {
+                "github_id": "Hyzhou",
+                "companies": [
+               {
+                 "company_name": "Alibaba",
+                 "end_date": null
+                }
+                ],
+                 "user_name": "Misaka Mikoto",
+                 "emails": [
+                   "1187766782@qq.com"
+                ]
+        },
+        {
+                "github_id": "xh4n3",
+                "companies": [
+               {
+                 "company_name": "Alibaba",
+                 "end_date": null
+                }
+                ],
+                 "user_name": "Shane Xie",
+                 "emails": [
+                   "xyn1016@gmail.com"
+                ]
+        },
+        { 
+              "github_id": "shan-yu",
+              "companies":[
+              {
+              "company_name": "Alibaba",
+              "end_date": null
+              }
+               ],
+              "user_name": "Shan Yu",
+              "emails": ["yushan0624@gmail.com"]
+        },
+        { 
+	      "github_id": "yanchanghai",
+              "user_name": "yanchanghai",		
+              "companies":[
+              {
+              "company_name": "Alibaba",
+              "end_date": null
+              }
+               ],
+              "user_name": "yanchanghai",
+              "emails": ["danielyanch@hotmail.com"]
+        },
+        { 
+              "github_id": "zhanghuanzhong",
+              "companies":[
+              {
+              "company_name": "mogujie",
+              "end_date": "2017-3-1"
+              },
+              {
+              "company_name": "Alibaba",
+              "end_date": null
+              }
+               ],
+              "user_name": "anselm",
+              "emails": ["zhanghuanzhong90@gmail.com"]
+        },
+        { 
+              "github_id": "yyb196",
+              "companies":[
+              {
+              "company_name": "Alibaba",
+              "end_date": null
+              }
+               ],
+              "user_name": "frankyang",
+              "emails": ["yyb196@gmail.com"]
+        },
+        { 
+              "github_id": "skoo87",
+              "companies":[
+              {
+              "company_name": "Alibaba",
+              "end_date": null
+              }
+               ],
+              "user_name": "skoo",
+              "emails": ["marckywu@gmail.com"]
         },
         {
            "launchpad_id": "xiaobo-2",
