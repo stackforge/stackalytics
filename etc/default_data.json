@@ -11245,6 +11245,17 @@
             "emails": ["joe.keen@hp.com", "joe.keen@hpe.com"]
         },
         {
+            "launchpad_id": "jkings52",
+            "companies": [
+                {
+                    "company_name": "Verizon Wireless",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Joel Kingsbury",
+            "emails": ["Joel.Kingsbury1@VerizonWireless.com"]
+        },
+        {
             "launchpad_id": "jmckind",
             "companies": [
                 {
