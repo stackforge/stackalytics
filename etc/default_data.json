@@ -12412,6 +12412,17 @@
             "user_name": "Ke Wu",
             "emails": ["ke.wu@nebula.com", "ke.wu@ibeca.me"]
         },
+		{
+            "launchpad_id": "ke.king",
+            "companies": [
+                {
+                    "company_name": "99cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "jinke",
+            "emails": ["jin.ke@99cloud.net","1534057243@qq.com"]
+        },
         {
             "launchpad_id": "kedy",
             "companies": [
@@ -27808,6 +27819,10 @@
             "aliases": ["INESA, 上海仪电"]
         },
         {
+            "domains": ["infinidat.com"],
+            "company_name": "INFINIDAT"
+        },
+        {
             "domains": ["infinite.com"],
             "company_name": "Infinite",
             "aliases": ["Infinite Computer Solutions India Ltd"]
@@ -30315,7 +30330,7 @@
         {
             "module": "containerd",
             "organization": "docker",
-            "uri": "https://github.com/docker/containerd.git"
+            "uri": "https://github.com/containerd/containerd.git"
         },
         {
             "module": "docker",
