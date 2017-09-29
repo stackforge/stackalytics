@@ -3342,6 +3342,17 @@
             "user_name": "Caleb Groom",
             "emails": ["caleb@calebgroom.com", "cgroom@rackspace.com"]
         },
+		{
+            "launchpad_id": "ke.king",
+            "companies": [
+                {
+                    "company_name": "99cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "jinke",
+            "emails": ["jin.ke@99cloud.net", "1534057243@qq.com"]
+        },
         {
             "launchpad_id": "caowei-e",
             "companies": [
