@@ -12412,6 +12412,17 @@
             "user_name": "Ke Wu",
             "emails": ["ke.wu@nebula.com", "ke.wu@ibeca.me"]
         },
+		{
+            "launchpad_id": "ke.king",
+            "companies": [
+                {
+                    "company_name": "99cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "jinke",
+            "emails": ["jin.ke@99cloud.net","1534057243@qq.com"]
+        },
         {
             "launchpad_id": "kedy",
             "companies": [
@@ -12434,7 +12445,7 @@
                     "company_name": "SUSE",
                     "end_date": null
                 }
-            ],
+			],
             "user_name": "Keith Berger",
             "emails": ["keith.berger@hpe.com","keith.berger@suse.com"]
         },
