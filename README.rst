@@ -35,7 +35,7 @@ change them as you like.
     $ sudo apt-get install -y memcached
     $ memcached -u memcache -d
 
-#. Analyze data which are specifed on default_data.json and store the data into memcached DB::
+#. Analyze data which are specified on default_data.json and store the data into memcached DB::
 
     $ stackalytics-processor
 
