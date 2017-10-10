@@ -17823,6 +17823,22 @@
             "emails": ["pete@port.direct", "pete.birley@att.com"]
         },
         {
+            "launchpad_id": "lukepatrick",
+            "github_id": "lukepatrick",
+            "companies": [
+                {
+                    "company_name": "*independent",
+                    "end_date": null
+                },
+                {
+                    "company_name": "Charter",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Luke Philips",
+            "emails": ["lukephilips@gmail.com"]
+        },
+        {
             "launchpad_id": "powerds0111",
             "github_id": "powerds0111",
             "companies": [
