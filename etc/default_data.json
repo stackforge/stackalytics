@@ -31009,9 +31009,15 @@
                     "tag_from": "3.0.0.0rc1"
                 },
                 {
+                    "branch": "stable/pike",
                     "tag_to": "HEAD",
                     "release_name": "Pike",
                     "tag_from": "4.0.0.0rc1"
+                },
+                {
+                    "tag_to": "HEAD",
+                    "release_name": "Queens",
+                    "tag_from": "5.0.0.0rc1"
                 }
             ]
         },
