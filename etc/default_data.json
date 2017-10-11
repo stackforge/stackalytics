@@ -13984,6 +13984,17 @@
             "emails": ["liuhj@gohighsec.com"]
         },
         {
+            "launchpad_id": "hkotak",
+            "companies": [
+                {
+                    "company_name": "Charter Communications",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Harsh Kotak",
+            "emails": ["c-harsh.kotak@charter.com", "harsh.kotak9@gmail.com", "harsh.kotak@charter.com"]
+        },
+        {
             "launchpad_id": "liuhh",
             "companies": [
                 {
