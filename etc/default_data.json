@@ -7391,7 +7391,6 @@
             ],
             "user_name": "Mark Atwood",
             "emails": ["me@mark.atwood.name", "fallenpegasus@gmail.com", "mark.atwood@gmail.com", "matwood@redhat.com", "mark.atwood@hp.com", "mark.atwood@hpe.com"]
-        },
         {
             "launchpad_id": "fang-he",
             "companies": [
@@ -27704,7 +27703,7 @@
         {
             "domains": ["canonical.com"],
             "company_name": "Canonical",
-            "aliases": ["Canoncail, Ltd.", "Ubuntu Canonical"]
+            "aliases": ["Canonical, Ltd.", "Ubuntu Canonical"]
         },
         {
             "domains": ["catalyst.net.nz"],
