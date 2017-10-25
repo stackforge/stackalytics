@@ -12297,6 +12297,18 @@
             "emails": ["k3vinmcdonald@gmail.com"]
         },
         {
+            "launchpad_id": "k82cn",
+            "github_id": "k82cn",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Klaus Ma",
+            "emails": ["madaxa@cn.ibm.com", "klaus1982.cn@gmail.com", "k82cn@icloud.com"]
+        },
+        {
             "launchpad_id": "kaifeng",
             "companies": [
                 {
