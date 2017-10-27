@@ -15392,6 +15392,17 @@
             "emails": ["mayank.kumar@hp.com", "mayank0107@yahoo.co.in", "mayank.kumar@hpe.com"]
         },
         {
+            "launchpad_id": "mazengxie",
+            "companies": [
+                {
+                    "company_name": "China Telecom",
+                    "end_date": null
+                },
+            ],
+            "user_name": "Zachary Ma",
+            "emails": ["mazengxie@126.com"]
+        },
+        {
             "launchpad_id": "mbonell",
             "companies": [
                 {
