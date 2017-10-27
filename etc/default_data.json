@@ -15392,6 +15392,17 @@
             "emails": ["mayank.kumar@hp.com", "mayank0107@yahoo.co.in", "mayank.kumar@hpe.com"]
         },
         {
+            "launchpad_id": "mazengxie",
+            "companies": [
+                {
+                    "company_name": "China Telecom",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Zachary Ma",
+            "emails": ["mazengx@chinatelecom.cn", "mazengxie@126.com"]
+        },
+        {
             "launchpad_id": "mbonell",
             "companies": [
                 {
@@ -27897,6 +27908,10 @@
             "domains": ["chinaunicom.cn"],
             "company_name": "China Unicom",
             "aliases": ["China Unicom Cloud Data Co. Ltd.", "联通云数据有限公司","China Unicom"]
+        },
+        {
+            "domains": ["chinatelecom.cn"],
+            "company_name": "China Telecom"
         },
         {
             "domains": ["cienet.com.cn"],
