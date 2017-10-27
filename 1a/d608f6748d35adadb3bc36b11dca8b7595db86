@@ -1,0 +1,8 @@
+Code-Review+2: Ilya Shakhat <shakhat@gmail.com>
+Workflow+1: Ilya Shakhat <shakhat@gmail.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Fri, 27 Oct 2017 07:44:42 +0000
+Reviewed-on: https://review.openstack.org/515269
+Project: openstack/stackalytics
+Branch: refs/heads/master
