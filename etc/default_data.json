@@ -27579,6 +27579,24 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+        {
+           "launchpad_id": "digambarpatil15",
+           "companies": [
+               {
+                   "company_name": "Independant",
+                   "end_date": "2014-Mar-30"
+               },
+                   "company_name": "Persistent Systems Ltd.",
+                   "end_date": "2017-Sept-15"
+               },
+               {
+                   "company_name": "Calsoft Inc.",
+                   "end_date": null
+               }
+           ],
+           "user_name": "digambar",
+           "emails": ["digambarpatil15@yahoo.co.in", "digambar_patil1@persistent.co.in", "digambar.patil@calsoftinc.com"]
         }
     ],
     "companies": [
