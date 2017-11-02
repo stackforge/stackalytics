@@ -14578,6 +14578,17 @@
             "user_name": "Zhi Yan Liu",
             "emails": ["lzy.dev@gmail.com", "zhiyanl@cn.ibm.com"]
         },
+	{
+            "launchpad_id": "liuluyang",
+            "companies": [
+                {
+                    "company_name": "HFBank",
+                    "end_date": null
+                }
+            ],
+            "user_name": "liuluyang",
+            "emails": ["1120773382@qq.com"]
+        },
         {
             "launchpad_id": "m-koderer",
             "companies": [
