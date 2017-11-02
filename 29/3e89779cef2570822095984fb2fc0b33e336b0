@@ -1,0 +1,9 @@
+Code-Review+1: Jerry Ma <mazengxie2009@126.com>
+Code-Review+2: Ilya Shakhat <shakhat@gmail.com>
+Workflow+1: Ilya Shakhat <shakhat@gmail.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Thu, 02 Nov 2017 08:38:43 +0000
+Reviewed-on: https://review.openstack.org/515572
+Project: openstack/stackalytics
+Branch: refs/heads/master
