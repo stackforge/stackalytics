@@ -27587,7 +27587,8 @@
                    "company_name": "Independant",
                    "end_date": "2014-Mar-30"
                },
-                   "company_name": "Persistent Systems Ltd.",
+               {
+                   "company_name": "Persistent Systems Ltd",
                    "end_date": "2017-Sept-15"
                },
                {
