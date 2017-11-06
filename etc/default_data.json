@@ -364,6 +364,21 @@
             "emails": ["abhic@ozlabs.org"]
         },
         {
+            "launchpad_id": "abhishek-kekane",
+            "companies": [
+                {
+                    "company_name": "NTT",
+                    "end_date": "2017-Nov-3"
+                },
+                {
+                    "company_name": "*independent",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Abhishek Kekane",
+            "emails": ["konan.abhi@gmail.com", "abhishek.kekane@nttdata.com"]
+        },
+        {
             "launchpad_id": "abhijeet-jain",
             "companies": [
                 {
