@@ -13892,6 +13892,17 @@
             "emails": ["andrew@linuxjedi.co.uk"]
         },
         {
+            "launchpad_id": "lioncruise",
+            "companies": [
+                {
+                    "company_name": "ISCAS",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Shijun Qin",
+            "emails": ["272700767@qq.com", "qinshijun16@otcaix.iscas.ac.cn", "qinshijun16@mails.ucas.ac.cn"]
+        },
+        {
             "launchpad_id": "lioplhp",
             "companies": [
                 {
