@@ -10094,6 +10094,10 @@
             "companies": [
                 {
                     "company_name": "PoleX",
+                    "end_date": "2017-Oct-17"
+                },
+                {
+                    "company_name": "CMBC",
                     "end_date": null
                 }
             ],
