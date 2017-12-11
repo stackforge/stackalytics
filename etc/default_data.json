@@ -19553,6 +19553,21 @@
             "emails": ["rmschn@gmail.com"]
         },
         {
+            "launchpad_id": "rajiv-kumar",
+            "companies": [
+                {
+                    "company_name": "NEC",
+                    "end_date": 2017-Dec-08,
+                }
+                {
+                    "company_name": "*independent",
+                    "end_date": null,
+                }
+            ],
+            "user_name": "rajiv.kumar",
+            "emails": ["rajivnewid@gmail.com", "thenakliman@gmail.com", "rajiv.kumar@nectechnologies.in"]
+        },
+        {
             "launchpad_id": "rnandu",
             "companies": [
                 {
