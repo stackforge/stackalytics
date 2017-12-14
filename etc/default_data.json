@@ -13396,6 +13396,17 @@
             "emails": ["peter@balland.net", "pballand@vmware.com", "peter@congress-dev.localdomain"]
         },
         {
+            "launchpad_id": "kongpp",
+            "companies": [
+                {
+                    "company_name": "inspur",
+                    "end_date": null
+                }
+            ],
+            "user_name": "kongpp",
+            "emails": ["kongpp@inspur.com"]
+        },
+        {
             "launchpad_id": "l-xiaoqiang",
             "companies": [{
                 "company_name": "H3C",
