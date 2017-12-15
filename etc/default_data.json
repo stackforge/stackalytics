@@ -9865,8 +9865,10 @@
         },
         {   "launchpad_id": "haifengli",
             "companies": [
+                {
                     "company_name": "Beijing Jiaotong University",
                     "end_date": null
+                }
             ],
             "user_name": "haifengli",
             "emails": ["haifengli@bjtu.edu.cn"]
