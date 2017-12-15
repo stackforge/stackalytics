@@ -9863,6 +9863,15 @@
             "user_name": "Misaka Mikoto",
             "emails": ["1187766782@qq.com"]
         },
+        {   "launchpad_id": "haifengli",
+            "companies": [
+                    "company_name": "Beijing Jiaotong University",
+                    "end_date": null
+            ],
+            "user_name": "haifengli",
+            "emails": ["haifengli@bjtu.edu.cn"]
+           
+        },
         {
             "launchpad_id": "i-kumagai",
             "companies": [
@@ -32795,6 +32804,6 @@
             "title": "Python Packaging",
             "child": true,
             "modules": ["pypa-group"]
-        }
+        },
     ]
 }
