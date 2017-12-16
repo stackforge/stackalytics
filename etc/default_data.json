@@ -8896,6 +8896,17 @@
             "user_name": "hanchao",
             "emails": ["409007319@qq.com", "han.chaob@h3c.com"]
         },
+        {   "launchpad_id": "haifengli",
+            "companies": [
+                {
+                    "company_name": "Beijing Jiaotong University",
+                    "end_date": null
+                }
+            ],
+            "user_name": "haifengli",
+            "emails": ["haifengli@bjtu.edu.cn"]
+           
+        },
         {
             "launchpad_id": "haishi",
             "companies": [
@@ -9862,17 +9873,6 @@
             ],
             "user_name": "Misaka Mikoto",
             "emails": ["1187766782@qq.com"]
-        },
-        {   "launchpad_id": "haifengli",
-            "companies": [
-                {
-                    "company_name": "Beijing Jiaotong University",
-                    "end_date": null
-                }
-            ],
-            "user_name": "haifengli",
-            "emails": ["haifengli@bjtu.edu.cn"]
-           
         },
         {
             "launchpad_id": "i-kumagai",
@@ -28264,6 +28264,11 @@
             "company_name": "Bitergia"
         },
         {
+            "domains": ["bjtu.edu.cn"],
+            "company_name": "Beijing Jiaotong University",
+            "aliases": ["北京交通大学"]
+        },
+        {
             "domains": ["blizzard.com"],
             "company_name": "Blizzard Entertainment"
         },
@@ -28307,11 +28312,6 @@
             "domains": ["bull.net"],
             "company_name": "Bull",
             "aliases": ["Bull SAS"]
-        },
-        {
-            "domains": ["bjtu.edu.cn"],
-            "company_name": "Beijing Jiaotong University",
-            "aliases": ["北京交通大学"]
         },
         {
             "domains": ["cable.comcast.com"],
