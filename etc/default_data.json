@@ -8896,7 +8896,8 @@
             "user_name": "hanchao",
             "emails": ["409007319@qq.com", "han.chaob@h3c.com"]
         },
-        {   "launchpad_id": "haifengli",
+        {
+            "launchpad_id": "haifengli",
             "companies": [
                 {
                     "company_name": "Beijing Jiaotong University",
@@ -8905,7 +8906,6 @@
             ],
             "user_name": "haifengli",
             "emails": ["haifengli@bjtu.edu.cn"]
-           
         },
         {
             "launchpad_id": "haishi",
