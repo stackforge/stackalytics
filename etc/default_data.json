@@ -26235,6 +26235,17 @@
             "emails": ["yanpeifei@gohighsec.com"]
         },
         {
+            "launchpad_id": "zongyimin",
+            "companies": [
+                {
+                    "company_name": "*independent",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zongyimin",
+            "emails": ["2503634009@qq.com"]
+        },
+        {
             "launchpad_id": "yanshi-403",
             "companies": [
                 {
