@@ -25787,17 +25787,6 @@
             "emails": ["honghui_xiao@yeah.net", "xiaohhui123@gmail.com", "honghuix@vmware.com"]
         },
         {
-            "launchpad_id": "XiaojueGuan",
-            "companies": [
-                {
-                    "company_name": "99cloud",
-                    "end_date": null
-                }
-            ],
-            "user_name": "XiaojueGuan",
-            "emails": ["guanalbertjone@gmail.com"]
-        },
-        {
             "launchpad_id": "xiaoquqi",
             "companies": [
                 {
@@ -25809,6 +25798,7 @@
                     "end_date": null
                 }
             ],
+            
             "user_name": "Ray Sun",
             "emails": ["xiaoquqi@gmail.com", "sunqi@hihuron.com", "sunqi@prophetech.cn"]
         },
@@ -26055,6 +26045,17 @@
             ],
             "user_name": "Yejia Xu",
             "emails": ["yejia@unitedstack.com", "xyj.asmy@gmail.com"]
+        },
+        {
+            "launchpad_id": "XiaojueGuan",
+            "companies": [
+                {
+                    "company_name": "99cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "XiaojueGuan",
+            "emails": ["guanalbertjone@gmail.com"]
         },
         {
             "launchpad_id": "y-james-king",
