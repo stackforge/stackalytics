@@ -13064,6 +13064,17 @@
             "emails": ["knikolla@bu.edu", "kristi@nikolla.me"]
         },
         {
+            "launchpad_id": "kongpp",
+            "companies": [
+                {
+                    "company_name": "Inspur",
+                    "end_date": null
+                }
+            ],
+            "user_name": "kongpp",
+            "emails": ["kongpp@inspur.com"]
+        },
+        {
             "launchpad_id": "kong",
             "companies": [
                 {
