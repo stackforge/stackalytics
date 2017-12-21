@@ -11397,11 +11397,19 @@
             "companies": [
                 {
                     "company_name": "Rackspace",
+                    "end_date": "2017-May-01"
+                },
+                {
+                    "company_name": "*independent",
+                    "end_date": "2017-Dec-04"
+                },
+                {
+                    "company_name": "Oath",
                     "end_date": null
                 }
             ],
             "user_name": "Jim Rollenhagen",
-            "emails": ["jim.rollenhagen@rackspace.com", "jim@jimrollenhagen.com"]
+            "emails": ["jim.rollenhagen@rackspace.com", "jim@jimrollenhagen.com", "jim.rollenhagen@oath.com"]
         },
         {
             "launchpad_id": "jimmy-mccrory",
