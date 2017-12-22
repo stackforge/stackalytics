@@ -9481,6 +9481,17 @@
             "emails": ["hong.wong@hp.com", "hong.wong@hpe.com"]
         },
         {
+            "launchpad_id": "houhanyi",
+            "companies": [
+                {
+                    "company_name": "Fiberhome",
+                    "end_date": null
+                }
+            ],
+            "user_name": "hou hanyi",
+            "emails": ["houhanyi@fiberhome.com"]
+        },
+        {
             "launchpad_id": "houshengbo",
             "companies": [
                 {
