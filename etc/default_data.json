@@ -1,15 +1,15 @@
 {
     "users": [
         {
-            "launchpad_id": "0-doug",
+            "launchpad_id": "wanghui20110314",
             "companies": [
                 {
-                    "company_name": "Tesora",
+                    "company_name": "Awcloud",
                     "end_date": null
                 }
             ],
-            "user_name": "Doug Shelley",
-            "emails": ["doug@parelastic.com", "doug@tesora.com", "dougshelley66@gmail.com"]
+            "user_name": "wanghui20110314",
+            "emails": ["wh@awcloud.com"]
         },
         {
             "github_id": "01deyishu",
