@@ -26,7 +26,8 @@ from stackalytics.processor import normalizer
 from stackalytics.processor import schema as coded_schema
 
 
-IGNORED_COMPANIES = ['*robots', 'April', 'Chelsio Communications',
+IGNORED_COMPANIES = ['*robots', 'April', 'Chelsio Communications', 
+                     'China Telecom', 
                      'CloudRunner.io', 'Datera', 'Facebook',
                      'Fermi National Accelerator Laboratory', 'Github',
                      'H3C',
