@@ -28454,10 +28454,6 @@
             "aliases": ["ChinaNetCenter Cloud", "ChinaNetCenter CDN", "ChinaNetCenter IDC", "China Cache", "ChinaNetCenter USA"]
         },
         {
-            "domains": ["chinatelecom.cn"],
-            "company_name": "China Telecom"
-        },
-        {
             "domains": ["chinaunicom.cn"],
             "company_name": "China Unicom",
             "aliases": ["China Unicom Cloud Data Co. Ltd.", "联通云数据有限公司","China Unicom"]
