@@ -3993,6 +3993,18 @@
             "emails": ["cheneydc@gmail.com", "dongc@neunn.com", "kkkodc@126.com"]
         },
         {
+            "launchpad_id": "chenge035238",
+            "gerrit_id": "chenge",
+            "companies": [
+                {
+                    "company_name": "Inspur",
+                    "end_date": null
+                }
+            ],
+            "user_name": "chenge",
+            "emails": ["chengebj@inspur.com"]
+        },
+        {
             "github_id": "chengweiv5",
             "companies": [
                 {
