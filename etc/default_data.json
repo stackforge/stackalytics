@@ -3377,6 +3377,17 @@
             "user_name": "Christoph Kassen",
             "emails": ["c.kassen@telekom.de"]
         },
+				{
+            "launchpad_id": "caishan2018",
+            "companies": [
+                {
+                    "company_name": "Awcloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "caishan",
+            "emails": ["caishan1993@foxmail.com"]
+        },
         {
             "launchpad_id": "calebgroom",
             "companies": [
