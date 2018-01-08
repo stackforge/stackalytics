@@ -1,0 +1,13 @@
+Code-Review+1: yangzhenyu <cdyangzhenyu@gmail.com>
+Code-Review+1: Hongbin Li <chohoor@gmail.com>
+Code-Review+1: Fan Zhang <zh.f@outlook.com>
+Code-Review+1: blkart <blkart.org@gmail.com>
+Code-Review+1: chenyb4 <cybing4@gmail.com>
+Code-Review+2: Ilya Shakhat <shakhat@gmail.com>
+Workflow+1: Ilya Shakhat <shakhat@gmail.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Mon, 08 Jan 2018 09:00:12 +0000
+Reviewed-on: https://review.openstack.org/530736
+Project: openstack/stackalytics
+Branch: refs/heads/master
