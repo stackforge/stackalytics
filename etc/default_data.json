@@ -18222,6 +18222,21 @@
             "emails": ["pi3rra@root.gg", "pierre-arthur.mathieu@hp.com", "pierre-arthur.mathieu@hpe.com"]
         },
         {
+            "launchpad_id": "pierreblanc75",
+            "companies": [
+                {
+                    "company_name": "Redhat",
+                    "end_date": "2017-Dec-01"
+                },
+                {
+                    "company_name": "Ormuco",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Pierre Blanc",
+            "emails": ["pierreblanc75@gmail.com", "pblanc@redhat.com", "pierre.blanc@ormuco.com"]
+        },
+        {
             "launchpad_id": "pierre-padrixe",
             "companies": [
                 {
