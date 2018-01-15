@@ -28260,6 +28260,17 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+        {
+            "launchpad_id": "chenga",
+            "companies": [
+                {
+                    "company_name": "H3C",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Cheng",
+            "emails": ["4523599522qq.com", "li.chenga@h3c.com"]
         }
     ],
     "companies": [
