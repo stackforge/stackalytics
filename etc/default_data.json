@@ -18103,6 +18103,18 @@
             "user_name": "Raymond Pekowski",
             "emails": ["raymond_pekowski@dell.com", "pekowski@gmail.com"]
         },
+	{
+            "launchpad_id": "peiy",
+            "gerrit_id": "peiy",
+            "companies": [
+                {
+                    "company_name": "inesa",
+                    "end_date": null
+                }
+            ],
+            "user_name": "peiyu",
+            "emails": ["peiy@rc.inesa.com"]
+        },
         {
             "github_id": "pendoragon",
             "companies": [
