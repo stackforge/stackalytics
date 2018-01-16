@@ -18088,6 +18088,18 @@
             "user_name": "Pedro Navarro P\u00e9rez",
             "emails": ["pednape@gmail.com"]
         },
+	{
+            "launchpad_id": "peiy",
+            "gerrit_id": "peiy",
+            "companies": [
+                {
+                    "company_name": "inesa",
+                    "end_date": null
+                }
+            ],
+            "user_name": "peiyu",
+            "emails": ["peiy@rc.inesa.com"]
+        },
         {
             "launchpad_id": "pekowski",
             "companies": [
@@ -18103,6 +18115,7 @@
             "user_name": "Raymond Pekowski",
             "emails": ["raymond_pekowski@dell.com", "pekowski@gmail.com"]
         },
+
         {
             "github_id": "pendoragon",
             "companies": [
