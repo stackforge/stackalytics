@@ -12888,6 +12888,7 @@
         },
         {
             "launchpad_id": "keith-berger",
+            "gerrit_id": "kberger",
             "companies": [
                 {
                     "company_name": "HPE",
