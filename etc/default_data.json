@@ -3099,6 +3099,17 @@
             "emails": ["bob.melander@gmail.com"]
         },
         {
+            "github_id": "BoCloud-official",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "BoCloud",
+            "emails": ["liyaqiong_os@beyondcent.com", "zhaoanquan_os@beyondcent.com", "jinwei_os@beyondcent.com", "wuheng@beyondcent.com"]
+        },
+        {
             "launchpad_id": "boden",
             "companies": [
                 {
