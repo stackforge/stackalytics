@@ -4930,6 +4930,17 @@
             "emails": ["crosbymichael@gmail.com"]
         },
         {
+            "github_id": "crystaljade",
+            "companies": [
+                {
+                    "company_name": "TenxCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yubiao Yang",
+            "emails": ["xiaodadeyuer@163", "yubiao@tenxcloud.com"]
+        },
+        {
             "launchpad_id": "csavignan",
             "zanata_id": "liced",
             "companies": [
@@ -9771,6 +9782,17 @@
             "emails": ["jiuyuan.huang@daocloud.io", "huangjiuyuan@163.com"]
         },
         {
+            "github_id": "huangqg",
+            "companies": [
+                {
+                    "company_name": "TenxCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Qigong Huang",
+            "emails": ["csuhp007@gmail.com", "huangqg@tenxcloud.com"]
+        },
+        {
             "launchpad_id": "huangshan",
             "companies": [
                 {
@@ -10556,6 +10578,17 @@
             "emails": ["iz.brandon@yahoo.com"]
         },
         {
+            "github_id": "JoshuaAndrew",
+            "companies": [
+                {
+                    "company_name": "TenxCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Wei Wei",
+            "emails": ["chweiweich@163.com", "weiwei@tenxcloud.com"]
+        },
+        {
             "launchpad_id": "jacek-swiderski",
             "companies": [
                 {
@@ -11218,6 +11251,17 @@
             ],
             "user_name": "James Bottomley",
             "emails": ["james.bottomley@hansenpartnership.com", "jejbcan@hansenpartnership.com", "jbottomley@parallels.com", "jejbcan1@hansenpartnership.com"]
+        },
+        {
+            "github_id": "jekyang",
+            "companies": [
+                {
+                    "company_name": "TenxCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Le Yang",
+            "emails": ["jekyang@Hotmail.com", "yangle@tenxcloud.com"]
         },
         {
             "launchpad_id": "jeladi",
@@ -17354,6 +17398,17 @@
             "emails": ["niuzhenguo@huawei.com", "zhenguo@unitedstack.com", "niu.zglinux@gmail.com"]
         },
         {
+            "github_id": "nkwangleiGIT",
+            "companies": [
+                {
+                    "company_name": "TenxCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Lei Wang",
+            "emails": ["nkwanglei@126.com", "wanglei@tenxcloud.com"]
+        },
+        {
             "launchpad_id": "nmarkov",
             "companies": [
                 {
@@ -21612,6 +21667,17 @@
             "emails": ["zhihui.shi@easystack.cn"]
         },
         {
+            "github_id": "shouhong",
+            "companies": [
+                {
+                    "company_name": "TenxCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Shouhong Zhang",
+            "emails": ["shouhong.zhang@outlook.com", "zhangsh@tenxcloud.com"]
+        },
+        {
             "launchpad_id": "shpark91",
             "companies": [
                 {
@@ -23215,6 +23281,17 @@
             "emails": ["zhihai.song@easystack.cn", "szhsong@cn.ibm.com", "zhhsng@gmail.com"]
         },
         {
+            "github_id": "TinySong",
+            "companies": [
+                {
+                    "company_name": "TenxCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "song",
+            "emails": ["tinysong1226@gmail.com", "songrongxiang@tenxcloud.com"]
+        },
+        {
             "launchpad_id": "tadas-u",
             "companies": [
                 {
@@ -23408,6 +23485,17 @@
             ],
             "user_name": "Tibor Vass",
             "emails": ["teabee89@gmail.com"]
+        },
+        {
+            "github_id": "tedli",
+            "companies": [
+                {
+                    "company_name": "TenxCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "lizhen",
+            "emails": ["lizhen@outlook.jp", "lizhen@tenxcloud.com"]
         },
         {
             "launchpad_id": "tellesmvn",
@@ -30025,6 +30113,11 @@
         {
             "domains": ["tencent.com"],
             "company_name": "Tencent"
+        },
+        {
+            "domains": ["tenxcloud.com"],
+            "company_name": "TenxCloud",
+            "aliases": ["时速云", "TenxCloud Inc."]
         },
         {
             "domains": ["teradata.com"],
