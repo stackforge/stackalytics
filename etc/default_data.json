@@ -28510,6 +28510,17 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+        {
+            "launchpad_id": "liliueecg",
+            "companies": [
+                {
+                    "company_name": "Huawei",
+                    "end_date": null
+                }
+            ],
+            "user_name": "liliueecg",
+            "emails": ["liliueecg@gmail.com", "liliu1@huawei.com"]
         }
     ],
     "companies": [
