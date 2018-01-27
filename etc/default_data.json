@@ -7783,6 +7783,17 @@
             "emails": ["fengzhr@awcloud.com"]
         },
         {
+            "launchpad_id": "fernando-c-pimenta",
+            "companies": [
+                {
+                    "company_name": "DBLink Consult",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Fernando Pimenta",
+            "emails": ["fernando.c.pimenta@gmail.com", "fernandopimenta@dblinkconsult.com.br"]
+        },
+        {
             "launchpad_id": "ffernand",
             "companies": [
                 {
@@ -33468,6 +33479,12 @@
             "title": "FDio",
             "child": true,
             "modules": ["FDio"]
+        },
+        {
+            "id": "DBLink",
+            "title": "DBLink Consult",
+            "child": true,
+            "modules": ["openstack"]
         }
     ]
 }
