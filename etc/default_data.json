@@ -12301,6 +12301,18 @@
             "emails": ["zhanglong@gohighsec.com"]
         },
         {
+            "launchpad_id": "jounqin",
+            "github_id": "JounQin",
+            "companies": [
+              {
+                "company_name": "Alauda",
+                "end_date": null
+              }
+            ],
+            "user_name": "JounQin",
+            "emails": ["admin@1stg.me", "liujiaren1992@vip.qq.com", "jrliu@alauda.io"]
+        },
+        {
             "github_id": "jovizhangwei",
             "companies": [
                 {
@@ -26977,7 +26989,7 @@
                 }
             ],
             "user_name": "yinshuxun",
-            "emails": ["18052012746@163.com", "sxyin@alauda.io"]
+            "emails": ["18052012746@163.com", "sxyin@alauda.io", "shuxun.yin@gmail.com"]
         },
         {
             "launchpad_id": "yixiaolong",
