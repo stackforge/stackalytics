@@ -9835,6 +9835,17 @@
             "emails": ["huanghe@fiberhome.com", "12293363@qq.com"]
         },
         {
+            "launchpad_id": "huang.zhiping",
+            "companies": [
+                {
+                    "company_name": "99cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "huang.zhiping",
+            "emails": ["huang.zhiping@99cloud.net"]
+        },
+        {
             "launchpad_id": "huanght",
             "companies": [
                 {
