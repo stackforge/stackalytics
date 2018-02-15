@@ -28830,6 +28830,21 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+        {
+            "launchpad_id": "dbel",
+            "companies": [
+                {
+                    "company_name": "Midokura",
+                    "end_date": "2015-Jun-29"
+                },
+                {
+                    "company_name": "SUSE",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Abel Navarro",
+            "emails": ["abel.navarro@gmail.com", "abel.navarro@suse.com"]
         }
     ],
     "companies": [
