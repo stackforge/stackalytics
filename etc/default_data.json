@@ -10967,6 +10967,8 @@
         },
         {
             "launchpad_id": "jan-zerebecki",
+            "gerrit_id": "jzerebecki",
+            "github_id": "JanZerebecki",
             "companies": [
                 {
                     "company_name": "*independent",
