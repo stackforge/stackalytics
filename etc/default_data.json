@@ -5269,6 +5269,17 @@
             "emails": ["davide_agnello@hotmail.com", "davide.agnello@hp.com", "davide.agnello@hpe.com"]
         },
         {
+            "github_id": "DahuK",
+            "companies": [
+                {
+                    "company_name": "Alibaba",
+                    "end_date": null
+                }
+            ],
+            "user_name": "DahuK",
+            "emails": ["dahukuang@126.com"]
+        },
+        {
             "launchpad_id": "daijing",
             "companies": [
                 {
@@ -6867,6 +6878,17 @@
             ],
             "user_name": "duanzhiwei",
             "emails": ["duanzw@awcloud.com"]
+        },
+        {
+            "github_id": "duffqiu",
+            "companies": [
+                {
+                    "company_name": "Alibaba",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Duff Qiu",
+            "emails": ["duffqiu@gmail.com", "duffqiu@qq.com"]
         },
         {
             "launchpad_id": "duhzecca",
@@ -12521,6 +12543,17 @@
             ],
             "user_name": "Jarno Rajahalme",
             "emails": ["jrajahalme@nicira.com", "jarno@ovn.org"]
+        },
+        {
+            "github_id": "jqlu",
+            "companies": [
+                {
+                    "company_name": "Alibaba",
+                    "end_date": null
+                }
+            ],
+            "user_name": "pingthere",
+            "emails": ["pingthere@gmail.com"]
         },
         {
             "launchpad_id": "jrod-d",
