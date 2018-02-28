@@ -4520,6 +4520,17 @@
             "emails": ["christopher.m.spencer@intel.com"]
         },
         {
+            "launchpad_id": "cmluciano",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Christopher M Luciano",
+            "emails": ["cmluciano@us.ibm.com", "cmlucian@us.ibm.com", "christophermluciano@gmail.com", "cmluciano@cruznet.org"]
+        },
+        {
             "launchpad_id": "chuanbo",
             "companies": [
                 {
