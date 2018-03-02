@@ -111,6 +111,17 @@
             "emails": ["295988511@qq.com","liuxinguo@huawei.com"]
         },
         {
+            "launchpad_id": "ijsnellf",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Isaiah Snell-Feikema",
+            "emails": ["ijsnellf@us.ibm.com","isaiahsf@gmail.com"]
+        },
+        {
             "github_id": "2eron",
             "companies": [
                 {
