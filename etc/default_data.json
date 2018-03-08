@@ -16568,6 +16568,17 @@
             "emails": ["mgoddard@cray.com", "mark@stackhpc.com"]
         },
         {
+            "launchpad_id": "ktibi",
+            "companies": [
+                {
+                    "company_name": "Devoteam",
+                    "end_date": "null"
+                }
+            ],
+            "user_name": "Kevin Tibi",
+            "emails": ["kevintibi@hotmail.com", "kodokuu@gmail.com", "kevin.tibi@devoteam.com"]
+        },
+        {
             "launchpad_id": "mhban",
             "companies": [
                 {
