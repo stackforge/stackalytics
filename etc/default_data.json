@@ -13777,6 +13777,7 @@
         },
         {
             "launchpad_id": "kthguru",
+            "gerrit_id": "kodokuu"
             "companies": [
                 {
                     "company_name": "Samsung",
@@ -13785,6 +13786,17 @@
             ],
             "user_name": "Taeha Kim",
             "emails": ["kthguru@gmail.com", "thlab.kim@samsung.com"]
+        },
+        {
+            "launchpad_id": "ktibi",
+            "companies": [
+                {
+                    "company_name": "Devoteam",
+                    "end_date": "null"
+                }
+            ],
+            "user_name": "Kevin Tibi",
+            "emails": ["kevintibi@hotmail.com", "kodokuu@gmail.com", "kevin.tibi@devoteam.com"]
         },
         {
             "launchpad_id": "kubernetes",
