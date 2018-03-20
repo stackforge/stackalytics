@@ -2687,6 +2687,17 @@
             "user_name": "Ruoxi SUN",
             "emails": ["sunrx@rc.inesa.com"]
         },
+	{
+	    "launchpad_id": "steven.gao",
+	    "companies": [
+		{
+		    "company_name": "inesa",
+                    "end_date": null
+                }
+            ],
+            "user_name": "stevenGao",
+            "emails": ["gaoyl@rc.inesa.com"]
+	},
         {
             "launchpad_id": "bailin-zhang",
             "companies": [
