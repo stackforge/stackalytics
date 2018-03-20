@@ -21061,8 +21061,8 @@
            "companies": [
                {
                    "company_name": "Deutsche Telekom",
-                   "end_date": null
-               }
+		   "end_date": null
+	       }
            ],
            "user_name": "Stefan Haub",
            "emails": ["s.haub@telekom.de"]
@@ -23367,6 +23367,17 @@
             ],
             "user_name": "Steven Gonzales",
             "emails": ["stevendgonzales@gmail.com"]
+        },
+	{
+            "launchpad_id": "steven.gao",
+            "companies": [
+                {
+                    "company_name": "inesa",
+                    "end_date": null
+                }
+            ],
+            "user_name": "stevenGao",
+            "emails": ["gaoyl@rc.inesa.com"]
         },
         {
             "launchpad_id": "stevenk",
