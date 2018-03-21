@@ -22,6 +22,18 @@
             "user_name": "Shen Yan",
             "emails": ["yanshen@qiniu.com"]
         },
+        
+        {
+            "launchpad_id": "fabian4",
+            "companies": [
+                {
+                    "company_name": "Eayun",
+                    "end_date": null
+                }
+            ],
+            "user_name": "fabian4",
+            "emails": ["chenyb417@163.com"]
+        },
         {
             "launchpad_id": "0x44",
             "companies": [
@@ -34112,3 +34124,4 @@
         }
     ]
 }
+
