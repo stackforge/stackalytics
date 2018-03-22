@@ -16875,6 +16875,17 @@
             "user_name": "Marga Millet",
             "emails": ["marga.sfo@gmail.com", "millet@cisco.com"]
         },
+	{
+	    "launchpad_id": "mingdi99",
+	    "companies": [
+		{
+		    "company_name":"Awcloud",
+		    "end_date": null
+		}
+	    ],
+	    "user_name": "mingdi",
+	    "emails": ["mingdi@outlook.com"]
+	},
         {
             "launchpad_id": "miriamyumi",
             "companies": [
