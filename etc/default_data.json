@@ -1,17 +1,6 @@
 {
     "users": [
         {
-            "launchpad_id": "xbzhang",
-            "companies": [
-                {
-                    "company_name": "Awcloud",
-                    "end_date": null
-                }
-            ],
-            "user_name": "xbzhang",
-            "emails": ["zhxb9@163.com"]
-        },
-        {
             "github_id": "01deyishu",
             "companies": [
                 {
@@ -26641,6 +26630,17 @@
             ],
             "user_name": "Alex Szarka",
             "emails": ["szarka@inf.u-szeged.hu"]
+        },
+	{
+            "launchpad_id": "xbzhang",
+            "companies": [
+                {
+                    "company_name": "Awcloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "xbzhang",
+            "emails": ["zhxb9@163.com"]
         },
         {
             "launchpad_id": "xdeller",
