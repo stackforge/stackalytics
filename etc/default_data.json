@@ -18397,6 +18397,17 @@
             "emails": ["paco.xu@daocloud.io", "roollingstone@gmail.com"]
         },
         {
+            "github_id": "fancyuan",
+            "companies": [
+                {
+                    "company_name": "DaoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Fancy Yuan",
+            "emails": ["fancy.yuan@daocloud.io", "yuansmin11@gmail.com"]
+        },
+        {
             "launchpad_id": "palecrow",
             "companies": [
                 {
