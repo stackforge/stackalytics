@@ -4143,6 +4143,18 @@
             "emails": ["chason.chan@foxmail.com"]
         },
         {
+            "launchpad_id": "li.jiawang",
+            "companies": [
+                {
+                    "company_name": "99cloud",
+                    "start_date": "2018-Apr-4",
+                    "end_date": null
+                }
+            ],
+            "user_name": "li.jiawang",
+            "emails": ["lijiawang8866@gmail.com"]
+        },
+        {
             "launchpad_id": "chen-xueying1",
             "companies": [
                 {
