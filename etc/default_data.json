@@ -26807,6 +26807,17 @@
             "emails": ["1092181938@qq.com","xu.hekang@h3c.com"]
         },
         {
+            "github_id": "xlgao-zju",
+            "companies": [
+                {
+                    "company_name": "Alibaba",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Xianglin Gao",
+            "emails": ["xianglin.gxl@alibaba-inc.com", "xlgao@zju.edu.cn"]
+        },
+        {
             "launchpad_id": "xi-yang",
             "companies": [
                 {
