@@ -22155,6 +22155,106 @@
             "emails": ["shapeliang@gmail.com", "liangxiaoping@jd.com"]
         },
         {
+            "launchpad_id": "lyq-0617",
+            "companies": [
+                {
+                    "company_name": "JD.COM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "lovejoy",
+            "emails": ["lyq.0617@gmail.com", "liangyongqing1@jd.com"]
+        },
+        {
+            "launchpad_id": "sharyhua",
+            "companies": [
+                {
+                    "company_name": "ZTE Corporation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "LiHua Shen",
+            "emails": ["shen.lihua@zte.com.cn"]
+        },
+        {
+            "launchpad_id": "shasha.tavil",
+            "companies": [
+                {
+                   "company_name": "Intel",
+                   "end_date": null
+                }
+            ],
+            "user_name": "Shashank Tavildar",
+            "emails": ["shashank.s.tavildar@intel.com"]
+        },
+        {
+            "launchpad_id": "shashank-kumar-shankar",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Shashank Kumar Shankar",
+            "emails": ["shashank.kumar.shankar@intel.com", "shank4804@gmail.com"]
+        },
+        {
+            "launchpad_id": "shashirekha-j-gundur",
+            "companies": [
+                {
+                   "company_name": "Intel",
+                   "end_date": null
+                }
+            ],
+            "user_name": "Shashirekha Gundur",
+            "emails": ["shashirekha.j.gundur@intel.com", "shashi.j.gundur@gmail.com"]
+        },
+        {
+            "launchpad_id": "shaun-edwards",
+            "companies": [
+                {
+                    "company_name": "EMC",
+                    "end_date": "2017-Jan-31"
+                },
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": "2017-Oct-01"
+                },
+                {
+                    "company_name": "*independent",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Shaun Edwards",
+            "emails": ["shaun.edwards@emc.com"]
+        },
+        {
+            "launchpad_id": "shaunm-gnome",
+            "companies": [
+                {
+                    "company_name": "Cisco Systems",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Shaun McCance",
+            "emails": ["shaunm@gnome.org"]
+        },
+        {
+             "launchpad_id": "shausy",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": "2015-Oct-31"
+                },
+                {
+                    "company_name": "HPE",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Shanthakumar K",
+            "emails": ["shanthakumar.k@hp.com", "shanthakumartk@gmail.com", "shanthakumar.k@hpe.com"]
+        },
+        {
             "launchpad_id": "sharyhua",
             "companies": [
                 {
