@@ -9364,6 +9364,17 @@
             "emails": ["hang.yan@hotmail.com", "hangyan@alauda.io"]
         },
         {
+            "github_id": "hangying365",
+            "companies": [
+               {
+                    "company_name": "HangYing",
+                    "end_date": null
+               }
+            ],
+            "user_name": "kevin wang",
+            "emails": ["hangying365@163.com"]
+        },
+        {
             "launchpad_id": "hanjiabao",
             "companies": [
                 {
@@ -30196,6 +30207,11 @@
             "domains": ["guardian.co.uk", "theguardian.com"],
             "company_name": "The Guardian"
         },
+        {
+            "domains": ["hangying.com.cn"],
+            "company_name": "HangYing",
+            "aliases": ["北京航英科技", "HangYing Inc."]
+	},
         {
             "domains": ["harmonicinc.com"],
             "company_name": "Harmonic"
