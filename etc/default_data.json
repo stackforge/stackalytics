@@ -27184,6 +27184,17 @@
             "emails": ["xmdxcxz@gmail.com", "xinze@xsky.com"]
         },
         {
+            "github_id": "xinzhiheng",
+            "companies": [
+                {
+                    "company_name": "XinZhiheng",
+                    "end_date": null
+                }
+           ],
+           "user_name": "pingqing zhang",
+           "emails": ["xinzhiheng@163.com"]
+        },
+        {
             "github_id": "xlgao-zju",
             "companies": [
                 {
@@ -31443,6 +31454,10 @@
         {
             "domains": ["xiangcloud.com.cn"],
             "company_name": "XiangCloud"
+        },
+        {
+            "domains": ["iet.com.cn"],
+            "company_name": "XinZhiheng"
         },
         {
             "domains": ["xlab.si"],
