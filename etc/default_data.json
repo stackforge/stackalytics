@@ -30306,6 +30306,10 @@
             "aliases": ["Institute of Computing Technology of the Chinese Academy of Sciences", "中科院计算所"]
         },
         {
+            "domains": ["iet.com.cn"],
+            "company_name": "XinZhiheng"
+        },
+        {
             "domains": ["ifca.unican.es"],
             "company_name": "CSIC",
             "aliases": ["Spanish National Research Council", "CSIC - Spanish National Research Council"]
@@ -31454,10 +31458,6 @@
         {
             "domains": ["xiangcloud.com.cn"],
             "company_name": "XiangCloud"
-        },
-        {
-            "domains": ["iet.com.cn"],
-            "company_name": "XinZhiheng"
         },
         {
             "domains": ["xlab.si"],
