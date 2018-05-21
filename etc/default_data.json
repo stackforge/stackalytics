@@ -24131,7 +24131,7 @@
             "github_id": "taiji2018",
             "companies": [
                {
-                    "company_name": "Taiji",
+                    "company_name": "taiji",
                     "end_date": null
                }
             ],
@@ -31147,6 +31147,11 @@
             "domains": ["t2cloud.net"],
             "company_name": "t2cloud",
             "aliases": ["T2Cloud", "云图腾", "北京云途腾科技有限责任公司"]
+        },
+        {
+            "domains": ["taiji.com.cn"],
+            "company_name": "taiji",
+            "aliases": ["太极", "taiji Inc."]
         },
         {
             "domains": ["tail-f.com"],
