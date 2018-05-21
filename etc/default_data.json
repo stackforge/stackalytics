@@ -24128,6 +24128,17 @@
             "emails": [ "qiaoliyong@gmail.com", "liyong.qiao@intel.com", "taget@linux.vnet.ibm.com"]
         },
         {
+            "github_id": "taiji2018",
+            "companies": [
+               {
+                    "company_name": "Taiji",
+                    "end_date": null
+               }
+            ],
+            "user_name": "lily lee",
+            "emails": [ "taiji_tech@163.com"]
+        },
+        {
             "github_id": "tailnode",
             "companies": [
                {
