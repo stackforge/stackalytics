@@ -23261,6 +23261,21 @@
             "emails": ["sonia.ghanekar@nimblestorage.com"]
         },
         {
+            "launchpad_id": "sonu-bhumca11",
+            "companies": [
+                {
+                    "company_name": "NEC",
+                    "end_date": "2018-March-31"
+                },
+                {
+                    "company_name": "*independent",
+                    "end_date": null
+                }
+            ],
+            "user_name": "sonu.kumar",
+            "emails": ["sonu.bhumca11@gmail.com"]
+        },
+        {
             "launchpad_id": "sonu-sudhakaran",
             "companies": [
                 {
