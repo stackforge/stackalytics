@@ -29577,7 +29577,22 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
-        }
+        },
+        {
+          "launchpad_id": "vishakha.agarwal",
+          "companies": [
+              {
+                  "company_name": "*independent",
+                  "end_date": "2018-March-01"
+              },
+              {
+                  "company_name": "NEC",
+                  "end_date": null
+              }
+          ],
+          "user_name": " Vishakha Agarwal",
+          "emails": ["agarwalvishakha18@gmail.com"]
+      }
     ],
     "companies": [
         {
