@@ -29577,7 +29577,22 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
-        }
+        },
+	{
+          "launchpad_id": "manikbindlish19",
+          "companies": [
+              {
+                  "company_name": "*independent",
+                  "end_date": "2018-March-01"
+              },
+              {
+                  "company_name": "NEC",
+                  "end_date": null
+              }
+          ],
+          "user_name": "Manik Bindlish",
+          "emails": ["manikbindlish19@gmail.com"]
+      }
     ],
     "companies": [
         {
