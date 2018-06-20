@@ -27635,6 +27635,17 @@
             ],
             "emails": ["wangy@rc.inesa.com"]
         },
+		{ 
+			"launchpad_id": "yanghongyu614", 
+			"companies": [ 
+				{ 
+					"company_name": "99cloud", 
+					"end_date": null 
+				} 
+			], 
+			"user_name": "yanghongyu",
+			"emails": ["hongyu.yang@vip.163.com", "yang.hongyu@99cloud.net"] 
+		}, 
         {
             "launchpad_id": "yangling",
             "user_name": "yangling",
