@@ -6834,6 +6834,14 @@
                 {
                     "company_name": "Letv Cloud Computing",
                     "end_date": "2017-Feb-28"
+                },
+                {
+                   "company_name": "*independent",
+                   "end_date": "2018-May-18"
+                },
+                {
+                    "company_name": "China Telecom",
+                    "end_date": null
                 }
             ],
             "user_name": "LIU Yulong",
