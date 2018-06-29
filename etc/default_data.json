@@ -28910,6 +28910,17 @@
             "user_name": "Trump.Zhang",
             "emails": ["zhangleiqiang@gmail.com", "zhangleiqiang@huawei.com"]
         },
+		{
+            "launchpad_id": "zhangshj",
+            "companies": [
+                {
+                    "company_name": "Inspur",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Peter Zhang",
+            "emails": ["zhangshj@inspur.com"]
+        },
         {
             "launchpad_id": "zhangxh502",
             "companies": [
