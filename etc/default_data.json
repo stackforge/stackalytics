@@ -28959,6 +28959,18 @@
             "emails": ["zmj1981123@163.com"]
         },
         {
+            "launchpad_id": "zhangxiaoyu-zidif",
+            "github_id": "zhangxiaoyu-zidif",
+            "companies": [
+                {
+                    "company_name": "Alibaba",
+                    "end_date": null
+                },
+            ],
+            "user_name": "zhangxiaoyu-zidif",
+            "emails": ["zxysjtu@gmail.com", "823085103@qq.com", "zhongyuan.zxy@alibaba-inc.com","zhang.xiaoyu33@zte.com.cn"]
+        },
+        {
             "launchpad_id": "zhangyanying",
             "companies": [
                 {
