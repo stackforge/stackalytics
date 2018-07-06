@@ -1,0 +1,9 @@
+Code-Review+1: Sean McGinnis <sean.mcginnis@gmail.com>
+Code-Review+2: Ilya Shakhat <shakhat@gmail.com>
+Workflow+1: Ilya Shakhat <shakhat@gmail.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Fri, 06 Jul 2018 09:52:15 +0000
+Reviewed-on: https://review.openstack.org/579948
+Project: openstack/stackalytics
+Branch: refs/heads/master
