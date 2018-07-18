@@ -34806,6 +34806,13 @@
             "module_group_name": "istio-group",
             "modules": ["istio", "proxy@istio", "istio.github.io", "test-infra@istio",
               "api@istio", "community@istio", "mixerclient", "admin-sites", "fortio"]
+        },
+        {
+            "module_group_name": "airship-group",
+            "modules": ["airship-armada", "airship-berth", "airship-deckhand",
+                        "airship-divingbell", "airship-drydock",
+                        "airship-in-a-bottle","airship-maas", "airship-pegleg",
+                        "airship-promenade", "airship-shipyard"]
         }
     ],
     "releases": [
