@@ -1,26 +1,26 @@
 {
     "users": [
         {
-            "launchpad_id": "0-doug",
+            "launchpad_id": "littlejiumi",
             "companies": [
                 {
-                    "company_name": "Tesora",
+                    "company_name": "Huawei",
                     "end_date": null
                 }
             ],
-            "user_name": "Doug Shelley",
-            "emails": ["doug@parelastic.com", "doug@tesora.com", "dougshelley66@gmail.com"]
+            "user_name": "Xiaohan Zhang",
+            "emails": ["15809181826@qq.com",]
         },
         {
-            "github_id": "01deyishu",
+            "github_id": "Xiaohan Zhang",
             "companies": [
                 {
-                    "company_name": "Qiniu",
+                    "company_name": "Huawei",
                     "end_date": null
                 }
             ],
-            "user_name": "Shen Yan",
-            "emails": ["yanshen@qiniu.com"]
+            "user_name": "littlejiumi",
+            "emails": ["15809181826@qq.com"]
         },
         {
             "launchpad_id": "0x44",
