@@ -7372,6 +7372,17 @@
             "emails": ["edward.hope-morley@canonical.com", "opentastic@gmail.com"]
         },
         {
+            "launchpad_id": "taodd",
+            "companies": [
+                {
+                    "company_name": "Canonical",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Dongdong Tao",
+            "emails": ["dongdong.tao@canonical.com", "tdd21151186@gmail.com"]
+        },
+        {
             "launchpad_id": "edwardbadboy",
             "companies": [
                 {
