@@ -34485,6 +34485,14 @@
             "uri": "https://github.com/FDio/trex.git",
             "organization": "FDio"
 
+        },
+        {
+            "module": "edge-computing",
+            "organization": "openstack"
+        },
+        {
+            "module": "leveraging-containers-openstack",
+            "organization": "openstack"
         }
     ],
     "project_sources": [
