@@ -33503,6 +33503,11 @@
             "organization": "openstack"
         },
         {
+            "module": "neutron-classifier",
+            "uri": "git://git.openstack.org/openstack/neutron-classifier.git",
+            "organization": "openstack"
+        },
+        {
             "module": "vmware-nsx",
             "uri": "git://git.openstack.org/openstack/vmware-nsx.git",
             "organization": "openstack",
