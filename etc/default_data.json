@@ -13600,6 +13600,7 @@
         },
         {
             "launchpad_id": "keith-berger",
+            "gerrit_id": "kberger",
             "github_id": "KeithMnemonic",
             "companies": [
                 {
@@ -13612,7 +13613,7 @@
                 }
             ],
             "user_name": "Keith Berger",
-            "emails": ["keith.berger@suse.com","keith.berger@hpe.com"]
+            "emails": ["keith.berger@suse.com","kberger@suse.com"]
         },
         {
             "launchpad_id": "keith-newstadt",
