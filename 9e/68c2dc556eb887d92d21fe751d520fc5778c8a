@@ -1,0 +1,11 @@
+Code-Review+1: Zhenyu Zheng <zhengzhenyu@huawei.com>
+Code-Review+1: Bi wei <kkttaa678@163.com>
+Code-Review+1: Deepak Mourya <deepakmoriya7@gmail.com>
+Code-Review+2: Ilya Shakhat <shakhat@gmail.com>
+Workflow+1: Ilya Shakhat <shakhat@gmail.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Fri, 17 Aug 2018 08:21:05 +0000
+Reviewed-on: https://review.openstack.org/585699
+Project: openstack/stackalytics
+Branch: refs/heads/master
