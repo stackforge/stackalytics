@@ -50,9 +50,8 @@ CONF.register_opts(processor_cfg.CONNECTION_OPTS + config.DASHBOARD_OPTS)
 # Handlers ---------
 
 @app.route('/')
-@decorators.templated()
 def overview():
-    pass
+    return flask.render_template('overview.html')
 
 
 @app.route('/widget')
