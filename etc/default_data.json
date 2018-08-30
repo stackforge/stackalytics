@@ -25794,7 +25794,7 @@
            "companies": [
                {
                    "company_name": "Dell EMC",
-                   "end_date": "null"
+                   "end_date": null
                }
            ],
            "user_name": "uday344",
