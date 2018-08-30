@@ -25794,6 +25794,17 @@
             "emails": ["uckey.1067@gmail.com"]
         },
         {
+           "launchpad_id": "uday344",
+           "companies": [
+               {
+                   "company_name": "Dell EMC",
+                   "end_date": "null"
+               }
+           ],
+           "user_name": "uday344",
+           "emails": ["uday344@gmail.com", "uday.patil@calsoftinc.com", "Uday_Patil1@Dellteam.com"]
+        },
+        {
             "launchpad_id": "uestc-shi",
             "companies": [
                 {
