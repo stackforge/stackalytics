@@ -2921,20 +2921,6 @@
             "emails": ["brian.elliott@rackspace.com", "bdelliott@gmail.com"]
         },
         {
-            "launchpad_id": "benjenwong",
-            "github_id": "benjenwong",
-            "companies": [
-                {
-                    "company_name": "*independent",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Benjen Wong",
-            "emails": [
-                "gfengwong@qq.com","gfengwong@gmail.com","v_gfengwong@tencent.com"
-            ]
-        },
-        {
             "launchpad_id": "berendt",
             "companies": [
                 {
@@ -3657,17 +3643,6 @@
             ],
             "user_name": "caishan",
             "emails": ["caishan1993@foxmail.com"]
-        },
-        {
-            "launchpad_id": "caixiaoyu",
-            "companies": [
-                {
-                    "company_name": "China Mobile",
-                    "end_date": null
-                }
-            ],
-            "user_name": "caixiaoyu",
-            "emails": ["caixiaoyu@cmss.chinamobile.com", "1261736141@qq.com"]
         },
         {
             "launchpad_id": "calebgroom",
@@ -9156,17 +9131,6 @@
             "emails": [ "gouthamr@netapp.com", "gouthampravi@gmail.com", "goutham.pacharavi@netapp.com", "gpachara@redhat.com"]
         },
         {
-            "launchpad_id": "gowalking",
-            "companies": [
-                {
-                    "company_name": "TenxCloud",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Zhenhai Gao",
-            "emails": ["gaozh1988@live.com", "gaozhenhai@tenxcloud.com"]
-        },
-        {
             "launchpad_id": "gpocentek",
             "companies": [
                 {
@@ -11244,17 +11208,6 @@
             "emails": ["jaimegildesagredo@gmail.com"]
         },
         {
-            "launchpad_id": "jainprasuk1996",
-            "companies": [
-                {
-                    "company_name": "Dell EMC",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Prasuk Jain",
-            "emails": ["jainprasuk1996@gmail.com", "prasuk_jain@dellteam.com", "prasuk.jain@calsoftinc.com"]
-        },
-        {
             "launchpad_id": "jaiveek-shah",
             "companies": [
                 {
@@ -11575,6 +11528,17 @@
             ],
             "user_name": "Jason Straw",
             "emails": ["jason.straw@rackspace.com"]
+        },
+        {
+            "launchpad_id": "jasonyan",
+            "companies": [
+                {
+                  "company_name": "Yovole",
+                  "end_date": null
+                }
+            ],
+            "user_name": "Jason Yan",
+            "emails": ["jason.y.yan@gmail.com","yanyu@yovole.com"]
         },
         {
             "launchpad_id": "jassica66",
@@ -17391,17 +17355,6 @@
             "emails": ["mikemason010@gmail.com", "mmason@hp.com"]
         },
         {
-            "launchpad_id": "mikeweiwei",
-            "companies": [
-                {
-                    "company_name": "TenxCloud",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Yawei Gao",
-            "emails": ["466462983@qq.com", "gaoyawei@tenxcloud.com"]
-        },
-        {
             "launchpad_id": "mikeyp-3",
             "companies": [
                 {
@@ -17690,17 +17643,6 @@
            ],
            "user_name": "Mohit Motiani",
            "emails": ["mohit.motiani@intel.com"]
-        },
-        {
-            "github_id": "mooncak",
-            "companies": [
-                {
-                    "company_name": "TenxCloud",
-                    "end_date": null
-                }
-            ],
-            "user_name": "mooncake",
-            "emails": ["xcoder@tenxcloud.com"]
         },
         {
             "launchpad_id": "mordred",
@@ -35356,17 +35298,7 @@
         },
         {
             "release_name": "Rocky",
-            "end_date": "2018-Aug-30",
-            "refs": {
-                "governance": {
-                    "type": "big_tent",
-                    "source": "https://git.openstack.org/cgit/openstack/governance/plain/reference/projects.yaml"
-                }
-            }
-        },
-        {
-            "release_name": "Stein",
-            "end_date": "2019-Feb-28",
+            "end_date": "2018-Aug-31",
             "refs": {
                 "governance": {
                     "type": "big_tent",
