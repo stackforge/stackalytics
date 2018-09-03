@@ -1,15 +1,15 @@
 {
     "users": [
         {
-            "launchpad_id": "0-doug",
+            "launchpad_id": "zswang",
             "companies": [
                 {
-                    "company_name": "Tesora",
+                    "company_name": "BJTU",
                     "end_date": null
                 }
             ],
-            "user_name": "Doug Shelley",
-            "emails": ["doug@parelastic.com", "doug@tesora.com", "dougshelley66@gmail.com"]
+            "user_name": "wangzengsen",
+            "emails": ["17125168@bjtu.edu.cn"]
         },
         {
             "github_id": "01deyishu",
