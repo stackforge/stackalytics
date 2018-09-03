@@ -30109,6 +30109,17 @@
             "emails": ["zrzhit@gmail.com", "rongze@ustack.com", "rongze@unitedstack.com", "rzhu@mirantis.com"]
         },
         {
+            "launchpad_id": "zswang",
+            "companies": [
+                {
+                      "company_name": "Beijing Jiaotong University",
+                      "end_date": null
+                }
+            ],
+            "user_name": "wangzengsen",
+            "emails": ["17125168@bjtu.edu.cn"]
+        },
+        {
             "launchpad_id": "ztang",
             "companies": [
                 {
@@ -30311,7 +30322,7 @@
         {
             "domains": ["alauda.io"],
             "company_name": "Alauda",
-            "aliases": ["灵雀云", "Alauda, Inc.", "Alauda.io"]
+            "aliases": ["灵雀�?, "Alauda, Inc.", "Alauda.io"]
         },
         {
             "domains": ["alcatel-lucent.com"],
@@ -30326,7 +30337,7 @@
         {
             "domains": ["alibaba.com", "alibabacloud.com", "aliyun.com", "taobao.com", "alibaba-inc.com"],
             "company_name": "Alibaba",
-            "aliases": ["Alibaba", "Alibaba Group", "Alibaba Group Holding Limited", "Alibaba.com Limited", "Alibaba.com Inc.", "Alibaba Cloud", "阿里云计算有限公司", "阿里云"]
+            "aliases": ["Alibaba", "Alibaba Group", "Alibaba Group Holding Limited", "Alibaba.com Limited", "Alibaba.com Inc.", "Alibaba Cloud", "阿里云计算有限公�?, "阿里�?]
         },
         {
             "domains": ["allegrogroup.com", "allegro.pl"],
@@ -30754,7 +30765,7 @@
         {
             "domains": ["critc.cn"],
             "company_name": "China Railway ITC",
-            "aliases": ["中国铁路信息技术中心"]
+            "aliases": ["中国铁路信息技术中�?]
         },
         {
             "domains": ["crs4.it"],
@@ -31067,7 +31078,7 @@
             "aliases": ["Huawei Technologies", "Huawei Technology", "Huawei Technologies Co. Limitied",
               "Huawei Technologies Düsseldorf", "Huawei Technologies India Private Limited", "Huawei china",
               "Huawei Tech", "Huawei Enterprise Business Group", "huawei technical", "Huawei Technologies India",
-              "huawei storage system", "华为技术有限公司", "华为", "Huawei Technolgies"]
+              "huawei storage system", "华为技术有限公�?, "华为", "Huawei Technolgies"]
         },
         {
             "domains": ["hust.edu.cn"],
@@ -31077,7 +31088,7 @@
         {
             "domains": ["hxt-semitech.com"],
             "company_name": "HXT Semiconductor",
-            "aliases": ["Guizhou HXT Semiconductor Technology Co., Ltd.", "贵州华芯通半导体技术有限公司", "华芯通半导体"]
+            "aliases": ["Guizhou HXT Semiconductor Technology Co., Ltd.", "贵州华芯通半导体技术有限公�?, "华芯通半导体"]
         },
         {
             "domains": ["hyper.sh"],
@@ -31605,7 +31616,7 @@
         {
             "domains": ["oschina.cn"],
             "company_name": "ForeverOSS",
-            "aliases": ["恒拓开源", "OSChina"]
+            "aliases": ["恒拓开�?, "OSChina"]
         },
         {
             "domains": ["osones.com", "osones.io", "osones.fr"],
@@ -31696,7 +31707,7 @@
         {
             "domains": ["qiniu.com"],
             "company_name": "Qiniu",
-            "aliases": ["Qiniu Limited", "Shanghai Qiniu Information Technology Co., Ltd.", "Qiniu Storage", "上海七牛信息技术有限公司"]
+            "aliases": ["Qiniu Limited", "Shanghai Qiniu Information Technology Co., Ltd.", "Qiniu Storage", "上海七牛信息技术有限公�?]
         },
         {
             "domains": ["qiyi.com"],
@@ -31941,12 +31952,12 @@
         {
             "domains": ["szzt.com.cn"],
             "company_name": "SZZT Electronics.",
-            "aliases": ["SZZT", "深圳市证通电子股份有限公司"]
+            "aliases": ["SZZT", "深圳市证通电子股份有限公�?]
         },
         {
             "domains": ["t2cloud.net"],
             "company_name": "t2cloud",
-            "aliases": ["T2Cloud", "云图腾", "北京云途腾科技有限责任公司"]
+            "aliases": ["T2Cloud", "云图�?, "北京云途腾科技有限责任公司"]
         },
         {
             "domains": ["tail-f.com"],
@@ -32028,7 +32039,7 @@
         {
             "domains": ["timanetworks.com"],
             "company_name": "timanetworks",
-            "aliases": ["钛马信息网络技术有限公司"]
+            "aliases": ["钛马信息网络技术有限公�?]
         },
         {
             "domains": ["timewarnercable.com"],
