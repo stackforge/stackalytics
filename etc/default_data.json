@@ -2932,6 +2932,20 @@
             "emails": ["brian.elliott@rackspace.com", "bdelliott@gmail.com"]
         },
         {
+            "launchpad_id": "benjenwong",
+            "github_id": "gfengwong",
+            "companies": [
+                {
+                    "company_name": "Artmtech",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Benjen Wong",
+            "emails": [
+                "gfengwong@qq.com"
+            ]
+        },
+        {
             "launchpad_id": "berendt",
             "companies": [
                 {
