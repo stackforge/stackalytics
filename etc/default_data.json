@@ -11526,6 +11526,10 @@
             "companies": [
                 {
                     "company_name": "Rackspace",
+                    "end_date": "25-Apr-2017"
+                },
+                {
+                    "company_name": "*independent",
                     "end_date": null
                 }
             ],
