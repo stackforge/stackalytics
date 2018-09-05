@@ -6447,6 +6447,18 @@
             "emails": ["dharmendra.kushwaha@india.nec.com", "dharmendra.kushwaha@nectechnologies.in", "dharmendra.kushwaha@gmail.com"]
         },
         {
+              "launchpad_id": "longkb.fvl",
+              "github_id": "longkb",
+              "companies": [
+                  {
+                      "company_name": "Fujitsu Vietnam Ltd.",
+                      "end_date": null
+                  }
+              ],
+              "user_name": "Kim Bao Long",
+              "emails": ["longkb@vn.fujitsu.com", "longkb@bka.vn"]
+        },
+        {
             "launchpad_id" : "dhillyard",
             "companies": [
                 {
