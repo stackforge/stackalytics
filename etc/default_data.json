@@ -13618,11 +13618,11 @@
            "companies": [
                {
                    "company_name": "NTT",
-                   "end_date": null
+                   "end_date": "2018-Aug-12",
                }
            ],
            "user_name": "Kazunori Shinohara",
-           "emails": ["kazunori.shinohara@ntt.com", "ksnhr.tech@gmail.com"]
+           "emails": ["ksnhr.tech@gmail.com"]
         },
         {
             "launchpad_id": "kb-sankethi",
