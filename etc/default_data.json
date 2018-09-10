@@ -5,14 +5,14 @@
             "companies": [
                 {
                     "company_name": "Awcloud",
-                    "end_date": "2018-May-9"
+                    "end_date": "2018-May-09"
                 },
                 {
                     "company_name": "UnitedStack",
                     "end_date": null
                 }
             ],
-            "user_name": "Zijian Guo",
+            "user_name": "ZijianGuo",
             "emails": ["guozijn@gmail.com"]
         },
         {
