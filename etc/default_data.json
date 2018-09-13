@@ -22282,6 +22282,17 @@
             "user_name": "Sascha Peilicke",
             "emails": ["saschpe@suse.de", "saschpe@gmx.de"]
         },
+		{
+            "launchpad_id": "SataQiu",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "SataQiu",
+            "emails": ["qiushida@beyondcent.com", "1527062125@qq.com"]
+        },
         {
             "launchpad_id": "satish-venkatasubramanian-7",
             "companies": [
@@ -27508,6 +27519,17 @@
             "user_name": "Kai Zhang",
             "emails": ["wsxiaozhang@gmail.com"]
         },
+		{
+            "launchpad_id": "wuheng",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Heng WU",
+            "emails": ["wuheng@iscas.ac.cn", "wuheng@otcaix.iscas.ac.cn", "wuheng@beyondcent.com"]
+        },
         {
             "launchpad_id": "wu-yucheng",
             "companies": [
@@ -27891,6 +27913,17 @@
             "user_name": "Qunfeng Xia",
             "emails": ["xiaqunfeng@qiniu.com"]
         },
+		{
+            "launchpad_id": "xichengliudui",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "xichengliudui",
+            "emails": ["liuduidui@beyondcent.com", "1693291525@qq.com"]
+		},
         {
             "launchpad_id": "xing-yang",
             "companies": [
@@ -28964,6 +28997,17 @@
             "user_name": "Yun Shen",
             "emails": ["yun.shen@hp.com"]
         },
+		{
+            "launchpad_id": "yuansisi",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "yuansisi",
+            "emails": ["yuansisi@beyondcent.com", "1693291525@qq.com"]
+		},
         {
             "launchpad_id": "yuntongjin",
             "companies": [
