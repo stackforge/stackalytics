@@ -22283,6 +22283,17 @@
             "emails": ["saschpe@suse.de", "saschpe@gmx.de"]
         },
         {
+            "github_id": "SataQiu",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "SataQiu",
+            "emails": ["1527062125@qq.com","qiushida@beyondcent.com"]
+        },
+        {
             "launchpad_id": "satish-venkatasubramanian-7",
             "companies": [
                 {
