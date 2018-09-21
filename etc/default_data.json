@@ -15343,6 +15343,17 @@
             "user_name": "Dong Liu",
             "emails": ["willowd878@gmail.com", "liudong1@hfbank.com.cn"]
         },
+		{
+            "launchpad_id": "liudui",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "liudui",
+            "emails": ["1693291525@qq.com", "xichengliudui@foxmail.com", "liuduidui@beyondcent.com"]
+        },
         {
             "launchpad_id": "liuhaijie",
             "companies": [
