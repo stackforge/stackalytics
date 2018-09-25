@@ -30102,6 +30102,17 @@
             "emails": ["guozijn@gmail.com", "guozijian@unitedstack.com"]
         },
         {
+            "launchpad_id": "manik019",
+            "companies": [
+                {
+                    "company_name": "VoerEir AB",
+                    "end_date": null
+                }
+            ],
+            "user_name": "maniksidana019",
+            "emails": ["manik@voereir.com", "maniksidana019@gmail.com"]
+        },
+        {
             "launchpad_id": "zinoviev.ii",
             "companies": [
                 {
