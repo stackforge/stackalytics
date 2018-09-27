@@ -34059,6 +34059,51 @@
             "organization": "istio",
             "uri": "https://github.com/istio/fortio.git"
         },
+	{
+            "module": "serving@knative",
+            "organization": "knative",
+            "uri": "https://github.com/knative/serving.git"
+        },
+	{
+            "module": "build-pipeline@knative",
+            "organization": "knative",
+            "uri": "https://github.com/knative/build-pipeline.git"
+        },
+	{
+            "module": "eventing@knative",
+            "organization": "knative",
+            "uri": "https://github.com/knative/eventing.git"
+        },
+	{
+            "module": "build@knative",
+            "organization": "knative",
+            "uri": "https://github.com/knative/build.git"
+        },
+	{
+            "module": "test-infra@knative",
+            "organization": "knative",
+            "uri": "https://github.com/knative/test-infra.git"
+        },
+	{
+            "module": "build-templates@knative",
+            "organization": "knative",
+            "uri": "https://github.com/knative/build-templates.git"
+        },
+	{
+            "module": "caching@knative",
+            "organization": "knative",
+            "uri": "https://github.com/knative/caching.git"
+        },
+	{
+            "module": "pkg@knative",
+            "organization": "knative",
+            "uri": "https://github.com/knative/pkg.git"
+        },
+	{
+            "module": "docs@knative",
+            "organization": "knative",
+            "uri": "https://github.com/knative/docs.git"
+        },
         {
             "module": "cri-o",
             "organization": "kubernetes",
@@ -35252,6 +35297,12 @@
             "module_group_name": "istio-group",
             "modules": ["istio", "proxy@istio", "istio.github.io", "test-infra@istio",
               "api@istio", "community@istio", "mixerclient", "admin-sites", "fortio"]
+        },
+	{
+            "module_group_name": "knative-group",
+            "modules": ["serving@knative", "build-pipeline@knative", "pkg@knative", "docs@knative",
+              "eventing@knative", "build@knative", "test-infra@knative", 
+	      "build-templates@knative", "caching@knative"]
         }
     ],
     "releases": [
@@ -35534,6 +35585,12 @@
             "title": "istio",
             "child": true,
             "modules": ["istio-group"]
+        },
+	{
+            "id": "knative-group",
+            "title": "knative",
+            "child": true,
+            "modules": ["knative-group"]
         },
         {
             "id": "opnfv-group",
