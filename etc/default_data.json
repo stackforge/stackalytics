@@ -9092,6 +9092,17 @@
             "emails": ["gaetan.trellu@enovance.com", "gtrellu@redhat.com", "gaetan.trellu@incloudus.com", "gaetan.trellu@ormuco.com"]
         },
         {
+            "launchpad_id": "gaasmann",
+            "companies": [
+                {
+                    "company_name": "Ormuco",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Nicolas Haller",
+            "emails": ["nicolas@boiteameuh.org", "nicolas.haller@ormuco.com"]
+        },
+        {
             "launchpad_id": "goneri",
             "companies": [
                 {
