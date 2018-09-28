@@ -3215,6 +3215,14 @@
             "github_id": "SataQiu",
             "companies": [
                 {
+                    "company_name": "*independent",
+                    "end_date": "2017-Mar-31"
+                },
+                {
+                    "company_name": "CTSI",
+                    "end_date": "2018-Aug-31"
+                },
+                {
                     "company_name": "BoCloud",
                     "end_date": null
                 }
