@@ -24843,6 +24843,17 @@
             "emails": ["galiu@pivotal.io"]
         },
         {
+            "launchpad_id": "syswuheng",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "syswuheng",
+            "emails": ["wuheng@beyondcent.com","wuheng@iscas.ac.cn"]
+        },
+        {
             "launchpad_id": "szhsong",
             "companies": [
                 {
