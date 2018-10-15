@@ -17094,6 +17094,10 @@
                 },
                 {
                     "company_name": "Charter",
+                    "end_date": "2018-02-15"
+                },
+                {
+                    "company_name": "Red Hat",
                     "end_date": null
                 }
             ],
