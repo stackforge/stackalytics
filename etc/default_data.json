@@ -30174,6 +30174,17 @@
             "emails": ["zhouyunfeng@inspur.com"]
         },
         {
+            "launchpad_id": "zhangbailin",
+            "companies": [
+                {
+                    "company_name": "Inspur",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhangbailin",
+            "emails": ["zhangbailin@inspur.com"]
+        },
+        {
             "launchpad_id": "zhu-rong",
             "companies": [
                 {
