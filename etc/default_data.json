@@ -8113,6 +8113,17 @@
             "emails": ["fanguiju1992@163.com", "fan.guiju@99cloud.net"]
         },
         {
+            "launchpad_id":"yj.bai",
+            "companies": [
+                {
+                    "company_name": "99cloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yongjun Bai",
+            "emails": ["byj994@163.com", "bai.yongjun@99cloud.net"]
+        },
+        {
             "launchpad_id": "fanrongxue",
             "companies": [
                 {
