@@ -34461,7 +34461,7 @@
         },
         {
             "module": "virtual-kubelet",
-            "organization": "kubernetes",
+            "organization": "virtual-kubelet",
             "uri": "https://github.com/virtual-kubelet/virtual-kubelet.git"
         },
         {
@@ -35379,6 +35379,21 @@
             "module_group_id": "kubernetes-group",
             "uri": "github://"
         },
+		{
+			"organization": "kubernetes-sigs",
+			"module_group_id": "kubernetes-group",
+			"uri": "github://"
+		},
+		{
+			"organization": "kubernetes-incubator",
+			"module_group_id": "kubernetes-group",
+			"uri": "github://"
+		},
+		{
+			"organization": "kubernetes-client",
+			"module_group_id": "kubernetes-group",
+			"uri": "github://"
+		},
         {
             "organization": "spinnaker",
             "module_group_id": "spinnaker-group",
