@@ -265,6 +265,17 @@
             "emails": ["alex@planet-barclay.com", "alex.barclay@hp.com", "alex.barclay@hpe.com"]
         },
         {
+            "launchpad_id": "clyang82",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Chunlin Yang",
+            "emails": ["clyang.lucky@gmail.com", "clyang@cn.ibm.com"]
+        },
+        {
             "github_id": "CoderAway28th",
             "companies": [
                 {
