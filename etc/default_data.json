@@ -276,6 +276,17 @@
             "emails": ["344905745@qq.com", "lmxia@alauda.io"]
         },
         {
+            "launchpad_id": "clyang82",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Chunlin Yang",
+            "emails": ["clyang.lucky@gmail.com", "clyang@cn.ibm.com"]
+        },
+        {
             "github_id": "Jhhong1",
             "companies": [
                 {
