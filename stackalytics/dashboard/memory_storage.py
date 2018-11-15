@@ -188,6 +188,15 @@ class CachedMemoryStorage(MemoryStorage):
     def get_first_record_day(self):
         return min(self.day_index.keys())
 
+    def get_record_ids_by_language(self, record_ids, language):
+        # special case: filter by attribute not covered by index
+        for record in self.get_records(record_ids):
+            lng = record.get('language')
+            if lng:
+                # todo: optimize
+                if lng.lower() == language.lower():
+                    yield record['record_id']
+
 
 def get_memory_storage(memory_storage_type):
     if memory_storage_type == MEMORY_STORAGE_CACHED:

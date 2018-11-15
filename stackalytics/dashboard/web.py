@@ -408,7 +408,7 @@ def get_bpd(records, **kwargs):
 @decorators.response()
 @decorators.cached()
 @decorators.jsonify('stats')
-@decorators.record_filter()
+@decorators.record_filter(ignore=['language'])
 def get_languages(records, **kwargs):
     result = []
     languages = collections.defaultdict(int)
