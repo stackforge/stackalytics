@@ -19913,6 +19913,18 @@
             "emails": ["pkholkin@mirantis.com", "p.v.holkin@mail.ru"]
         },
         {
+             "launchpad_id": "pandatt",
+             "zanata_id": "pandatt",
+             "companies": [
+                 {
+                     "company_name": "Inspur",
+                     "end_date": null
+                 }
+             ],
+             "user_name": "pandatt",
+             "emails": ["guojingyu@inspur.com","guojy8993@163.com"]
+        },
+        {
             "launchpad_id": "pkilambi",
             "companies": [
                 {
