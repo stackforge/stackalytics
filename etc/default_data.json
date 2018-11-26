@@ -28306,6 +28306,17 @@
             "emails": ["chao.xu@timanetworks.com"]
         },
         {
+            "launchpad_id": "xiaoyangwang",
+            "companies": [
+                {
+                    "company_name": "Phegda",
+                    "end_date": null
+                }
+            ],
+            "user_name": "xiaoyangwang",
+            "emails": ["1161652587@qq.com"]
+        },
+        {
             "github_id": "xiaozhu36",
             "companies": [
                 {
