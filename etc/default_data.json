@@ -27550,6 +27550,10 @@
             "github_id": "Waret",
             "companies": [
                 {
+                    "company_name": "*independent",
+                    "end_date": "2016-May-1"
+                },
+                {
                     "company_name": "BoCloud",
                     "end_date": null
                 }
