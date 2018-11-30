@@ -21854,6 +21854,26 @@
             "emails": ["romil.gupta@ericsson.com", "romilgupta19@gmail.com", "romilg@hp.com", "romilg@hpe.com"]
         },
         {
+            "launchpad_id": "roman-dobosz",
+            "companies": [
+                {
+                    "company_name": "Intel",
+                    "end_date": "2017-Feb-28"
+                },
+                {
+                    "company_name": "*independent",
+                    "end_date": "2018-Jul-31"
+                },
+                {
+                    "company_name": "OVH",
+                    "end_date": null
+                }
+
+            ],
+            "user_name": "Roman Dobosz",
+            "emails": ["roman.dobosz@intel.com", "gryf73@gmail.com", "roman.dobosz@corp.ovh.com"]
+        },
+        {
             "launchpad_id": "ronak-malav-shah",
             "companies": [
                 {
