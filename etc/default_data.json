@@ -19108,11 +19108,15 @@
                 },
                 {
                     "company_name": "OpenNext",
+                    "end_date": "2018-Oct-08"
+                },
+                {
+                    "company_name": "*independent",
                     "end_date": null
                 }
             ],
             "user_name": "Olivier Bourdon",
-            "emails": ["olivierbourdon38@gmail.com", "olivier.bourdon@usharesoft.com", "obourdon@mirantis.com", "obourdon@opennext.io"]
+            "emails": ["olivierbourdon38@gmail.com", "olivier.bourdon@usharesoft.com", "obourdon@mirantis.com", "obourdon@opennext.io", "olivierbourdon38@gmail.com"]
         },
         {
             "launchpad_id": "olkonami",
