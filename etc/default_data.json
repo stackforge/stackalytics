@@ -3156,7 +3156,7 @@
             "user_name": "Bin Li",
             "emails": ["binblee@gmail.com"]
         },
-		{
+        {
            "launchpad_id": "bing",
 		   "zanata_id": "andibing",
 		   "github_id": "andibing",
@@ -3171,7 +3171,7 @@
            "emails": [
                "andi@gowling.com"
            ]
-	    },
+        },
 		{
             "launchpad_id": "binoy.v",
             "companies": [
