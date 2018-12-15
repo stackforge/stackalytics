@@ -34,6 +34,21 @@
             "emails": ["chris@pistoncloud.com", "chris@slicehost.com"]
         },
         {
+            "launchpad_id": "0xF2",
+            "companies": [
+                {
+                    "company_name": "Canonical",
+                    "end_date": "2015-01-12" 
+                },
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Federico Lucifredi",
+            "emails": ["federico@redhat.com", "federico@ubuntu.com"]
+        },
+        {
             "launchpad_id": "1-tim-z",
             "companies": [
                 {
