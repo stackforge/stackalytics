@@ -4530,7 +4530,7 @@
             "emails": ["zhiweik@gmail.com", "zhiwchen@cn.ibm.com"]
         },
         {
-            "launchpad_id": "suigh",
+            "github_id": "suigh",
             "companies": [
                 {
                     "company_name": "IBM",
