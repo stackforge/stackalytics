@@ -4530,6 +4530,17 @@
             "emails": ["zhiweik@gmail.com", "zhiwchen@cn.ibm.com"]
         },
         {
+            "github_id": "suigh",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "suigh",
+            "emails": ["suigh@cn.ibm.com", "suiguanghan@gmail.com"]
+        },
+        {
             "launchpad_id": "chestack",
             "companies": [
                 {
