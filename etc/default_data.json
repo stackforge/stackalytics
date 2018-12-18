@@ -23,6 +23,17 @@
             "emails": ["yanshen@qiniu.com"]
         },
         {
+            "github_id": "suigh",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "suigh",
+            "emails": ["suigh@cn.ibm.com"]
+        },
+        {
             "launchpad_id": "0x44",
             "companies": [
                 {
