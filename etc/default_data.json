@@ -22343,6 +22343,17 @@
             "emails": ["ryuyada@gmail.com", "ryutaro.yada@mail.rakuten.com"]
         },
         {
+            "github_id": "suigh",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "suigh",
+            "emails": ["suigh@cn.ibm.com", "suiguanghan@gmail.com"]
+        },
+        {
            "launchpad_id": "s-haub",
            "companies": [
                {
