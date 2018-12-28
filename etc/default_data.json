@@ -22366,6 +22366,17 @@
             "emails": ["ryuyada@gmail.com", "ryutaro.yada@mail.rakuten.com"]
         },
         {
+            "launchpad_id": "renyux",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "renyux",
+            "emails": ["289999584@qq.com", "renyux@cn.ibm.com"]
+        },
+        {
            "launchpad_id": "s-haub",
            "companies": [
                {
