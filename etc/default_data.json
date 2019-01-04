@@ -18075,6 +18075,17 @@
            "user_name": "Mohit Motiani",
            "emails": ["mohit.motiani@intel.com"]
         },
+        {  
+           "launchpad_id": "monokai",
+           "companies": [
+               {   
+                   "company_name": "Intel",
+                   "end_date": null
+               }
+           ],
+           "user_name": "monokai",
+           "emails": ["2536818783@qq.com"]
+        },
         {
             "github_id": "mooncak",
             "companies": [
