@@ -28283,6 +28283,17 @@
             "user_name": "Xiaojun Liao",
             "emails": ["xiaojunliao85@gmail.com"]
         },
+		{
+            "launchpad_id": "wwkcherry",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "wwkcherry",
+            "emails": ["wwkcherry@163.com"]
+        },
         {
            "launchpad_id": "xavpaice",
            "companies": [
