@@ -16,7 +16,7 @@
             ]
         },
 
-           {
+        {
             "launchpad_id": "ankitpurohit80",
             "gerrit_id": "purohit",
             "companies": [
@@ -26,12 +26,10 @@
                }
            ],
            "user_name": "Ankit Purohit",
-i           "emails": [
+           "emails": [
                 "ankitpurohit80@outlook.com"
            ]
         },
-
-
 
         {
             "launchpad_id": "jenkins",
