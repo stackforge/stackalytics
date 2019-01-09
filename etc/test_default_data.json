@@ -15,6 +15,23 @@
                 }
             ]
         },
+
+        {
+            "launchpad_id": "ankitpurohit80",
+            "gerrit_id": "purohit",
+            "companies": [
+               {
+                   "company_name": "NTT",
+                   "end_date": null
+               }
+           ],
+           "user_name": "Ankit Purohit",
+           "emails": [
+                "ankitpurohit80@outlook.com"
+           ]
+        },
+           
+
         {
             "launchpad_id": "jenkins",
             "companies": [
