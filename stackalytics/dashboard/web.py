@@ -54,6 +54,15 @@ CONF.register_opts(processor_cfg.CONNECTION_OPTS + config.DASHBOARD_OPTS)
 def overview():
     pass
 
+@app.route('/cncf')
+@decorators.templated()
+def cncf():
+    pass
+
+@app.route('/unaffiliated')
+@decorators.templated()
+def unaffiliated():
+    pass
 
 @app.route('/widget')
 def widget():
@@ -504,7 +513,8 @@ def get_user(user_id):
 @decorators.jsonify(root=('data', 'default'))
 def get_releases_json(**kwargs):
     releases = [{'id': release['release_name'],
-                 'text': release['release_name'].capitalize()}
+                 'text': release['release_name'].capitalize(),
+                 'project': release['project']}
                 for release in vault.get_vault()['releases'].values()]
     releases.append({'id': 'all', 'text': 'All'})
     releases.reverse()
