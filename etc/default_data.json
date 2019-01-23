@@ -1,6 +1,546 @@
 {
     "users": [
         {
+            "companies": [
+                {
+                    "company_name": "Sorint.lab",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Simone Gotti",
+            "emails": ["simone.gotti@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "CoreOS",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Evan Cordell",
+            "emails": ["cordell.evan@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Intuit",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Grant Hoffman",
+            "emails": ["grantleehoffman@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Docker",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Nassim 'Nass' Eddequiouaq",
+            "emails": ["eddequiouaq.nassim@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Microsoft",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Avi Vaid",
+            "emails": ["avaid1996@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Wandera",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Santiagor Torres",
+            "emails": ["torresariass@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "NYU Tandon School of Engineering",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Vladimir Diaz",
+            "emails": ["vladimir.v.diaz@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Buoyant",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Dennis Adjei-Baah",
+            "emails": ["dennis@buoyant.io", "dadjeibaah@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Buoyant",
+                    "end_date": null
+                }
+            ],
+            "user_name": "William Morgan",
+            "emails": ["william@buoyant.io", "wmorgan@users.noreply.github.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "National Center for Biotechnology Information (NCBI)",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Borys Pierov",
+            "emails": ["pierovbg@ncbi.nlm.nih.gov", "github@ashald.net"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Buoyant",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Andrew Seigner",
+            "emails": ["siggy@buoyant.io", "andrew@sig.gy"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Buoyant",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Eliza Weismanf",
+            "emails": ["eliza@buoyant.io", "eliza@elizas.website"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "TriggerMesh",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Sebastien Goasguen",
+            "emails": ["runseb@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Microsoft",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Taylor Thomas",
+            "emails": ["thomastaylor312@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "ARM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Eduardo Silva",
+            "emails": ["eduardo@monkey.io"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Treasure Data",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Masahiro Nakagawa",
+            "emails": ["repeatedly@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Treasure Data",
+                    "end_date": null
+                }
+            ],
+            "user_name": "TAGOMORI Satoshi",
+            "emails": ["tagomoris@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Pixel Federation",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Martin Fris",
+            "emails": ["rasta@lj.sk"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Alain Jobart",
+            "emails": ["alainjobart@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Lockheed Martin",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Derek Perkins",
+            "emails": ["derek@derekperkins.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Shenzhe Yao",
+            "emails": ["yaoshengzhe@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "PlanetScale",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Sugu Sougoumarane",
+            "emails": ["ssougou@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Weaveworks",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Bryan Boreham",
+            "emails": ["bjboreham@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Pivotal",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jonathan Boulle",
+            "emails": ["jonathanboulle@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Pivotal",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Gabe Rosenhouse",
+            "emails": ["rosenhouse@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "CoreOS",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Stefan Junker",
+            "emails": ["mail@stefanjunker.de"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Uber",
+                    "end_date": null
+                }
+            ],
+            "user_name": "David Yeghshatyan",
+            "emails": ["6davidy@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Uber",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Won Jun Jang",
+            "emails": ["wjang@uber.com", "wonjun.jangobe@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Pavol Loffay",
+            "emails": ["ploffay@redhat.com", "p.loffay@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Muxi Yan",
+            "emails": ["muxi@users.noreply.github.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Masood Tattermusch",
+            "emails": ["jtattermusch@users.noreply.github.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Masood Malekghassemi",
+            "emails": ["soltanmm@users.noreply.github.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Grafana Labs",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Tom Wilkie",
+            "emails": ["tom.wilkie@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Fabian Reinartz",
+            "emails": ["fab.reinartz@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Grafana Labs",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Goutham Veeramachaneni",
+            "emails": ["cs14btech11014@iith.ac.in"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Walmart",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Pat Moroney",
+            "emails": ["pat@pat.email"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Nikhil Jindal",
+            "emails": ["nikhiljindal18@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Paul Morie",
+            "emails": ["pmorie@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Facebook",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Di Xu",
+            "emails": ["stephenhsu90@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Auni Ahsan",
+            "emails": ["auni@google.com", "auni.ahsan53@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "user_name": "James Synge",
+            "emails": ["jamessynge@google.com", "jamessynge@users.noreply.github.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Lyft",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Derek Schaller",
+            "emails": ["dschaller@users.noreply.github.com", "dschaller@lyft.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "VMware",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Venil Noronha",
+            "emails": ["venil.noronha@gmail.com", "veniln@vmware.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Uber",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Prithvi Raj",
+            "emails": ["vprithvi@users.noreply.github.com", "p.r@uber.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "VMware",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Shriram Rajagopalan",
+            "emails": ["rshriram@users.noreply.github.com", "shriramr@vmware.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Adam Worrall",
+            "emails": ["abw@abw-k8s.mtv.corp.google.com", "abw@google.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "VMware",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Abrar Shivani",
+            "emails": ["abrars@vmware.com", "shivania@vmware.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Microsoft",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Aaron Schlesinger",
+            "emails": ["aschlesinger@deis.com", "aaron@deis.com", "aaschles@microsoft.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Slack",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Stephan Zuercher",
+            "emails": ["zuercher@gmail.com", "szuercher@slack-corp.com", "stephan@turbinelabs.io"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Lantao Liu",
+            "emails": ["taotaotheripper@gmail.com", "lantaol@google.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Craig Tiller",
+            "emails": ["craig.tiller@gmail.com", "ctiller@google.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Kyu Chang",
+            "emails": ["kyuhyun217@gmail.com", "kyuc@google.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Square, Inc",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Snow Pettersen",
+            "emails": ["snowp@squareup.com", "aickck@gmail.com"]
+        },
+        {
+            "companies": [
+                {
+                    "company_name": "Salesforce",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Rama Chavali",
+            "emails": ["rama.rao@salesforce.com", "ramaraochavali@gmail.com"]
+        },
+        {
             "launchpad_id": "0-doug",
             "companies": [
                 {
@@ -285,6 +825,17 @@
             ],
             "user_name": "Lingming Xia",
             "emails": ["344905745@qq.com", "lmxia@alauda.io"]
+        },
+        {
+            "github_id": "FilipB",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Filip Brychta",
+            "emails": ["fbrychta@redhat.com"]
         },
         {
             "github_id": "Jhhong1",
@@ -713,12 +1264,12 @@
                     "end_date": "2018-Nov-23"
                 },
                 {
-                    "company_name": "Oath",
+                    "company_name": "Verizon Media",
                     "end_date": null
                 }
             ],
             "user_name": "Adam Harwell",
-            "emails": ["flux.adam@gmail.com", "adam.harwell@rackspace.com", "aharwell@godaddy.com", "adam.harwell@oath.com"]
+            "emails": ["flux.adam@gmail.com", "adam.harwell@rackspace.com", "aharwell@godaddy.com", "adam.harwell@oath.com", "adam.harwell@verizonmedia.com"]
         },
         {
             "launchpad_id": "adam-kijak",
@@ -1511,6 +2062,17 @@
             "emails": ["alistairncoles@gmail.com", "alistair.coles@hp.com", "alistair.coles@hpe.com"]
         },
         {
+            "github_id": "aljesusg",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Alberto Jesus Gutierrez Juanes",
+            "emails": ["agutierr@redhat.com"]
+        },
+        {
             "github_id": "allencloud",
             "companies":[
                 {
@@ -1611,6 +2173,17 @@
             ],
             "user_name": "Aman Kumar",
             "emails": ["aman.kumar3@hpe.com", "amank@hp.com", "amank3107@gmail.com"]
+        },
+        {
+            "launchpad_id": "ambarish243",
+            "companies": [
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ambarish Deshmukh",
+            "emails": ["ambarish_deshmukh@dellteam.com", "ambarish.deshmukh@calsoftinc.com"]
         },
         {
             "launchpad_id": "amcrn",
@@ -2651,11 +3224,15 @@
             "companies": [
                 {
                     "company_name": "Cisco Systems",
+                    "end_date": "2019-Jan-01"
+                },
+                {
+                    "company_name": "VMware",
                     "end_date": null
                 }
             ],
             "user_name": "Arvind Somya",
-            "emails": ["asomya@cisco.com"]
+            "emails": ["asomya@vmware.com"]
         },
         {
             "launchpad_id": "astaroverov",
@@ -2949,6 +3526,18 @@
             ],
             "user_name": "Brian Waldon",
             "emails": ["brian.waldon@rackspace.com", "bcwaldon@gmail.com"]
+        },
+        {
+            "github_id": "bdecoste",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Bill Decoste",
+            "emails": ["wdecoste@redhat.com", "bdecoste@gmail.com"
+           ]
         },
         {
             "launchpad_id": "bdpayne",
@@ -3521,6 +4110,17 @@
             "emails": ["joseph.breu@rackspace.com", "breu@breu.org"]
         },
         {
+            "github_id": "brian-avery",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Brian Avery",
+            "emails": ["bavery@redhat.com"]
+        },
+        {
             "launchpad_id": "brian-haley",
             "companies": [
                 {
@@ -3613,6 +4213,34 @@
             ],
             "user_name": "Brian Curtin",
             "emails": ["brian@python.org", "brian.curtin@gmail.com", "brian.curtin@rackspace.com"]
+        },
+        {
+            "launchpad_id": "brianredbeard",
+            "github_id": "brianredbeard",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": "2014-Mar-02"
+                },
+                {
+                    "company_name": "CoreOS",
+                    "end_date": "2018-Jan-30"
+                },
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Brian 'redbeard' Harrington",
+             "emails": [
+                "brian@dead-city.org",
+                "redbeard@dead-city.org",
+                "brian.harrington@coreos.com",
+                "redbeard@coreos.com",
+                "bharring@redhat.com",
+                "bharrington@redhat.com",
+                "redbeard@redhat.com"
+            ]
         },
         {
             "launchpad_id": "broskos",
@@ -3869,6 +4497,10 @@
                 },
                 {
                     "company_name": "Dell EMC",
+                    "end_date": "2019-Jan-01"
+                },
+                {
+                    "company_name": "*independent",
                     "end_date": null
                 }
             ],
@@ -4141,6 +4773,17 @@
             ]
         },
         {
+            "github_id": "cfcosta",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Caina Costa",
+            "emails": ["cacosta@redhat.com", "me@cfcosta.com"]
+        },
+        {
             "launchpad_id": "cgoncalves",
             "companies": [
                 {
@@ -4172,6 +4815,10 @@
                 },
                 {
                     "company_name": "Dell EMC",
+                    "end_date": "2019-Jan-01"
+                },
+                {
+                    "company_name": "*independent",
                     "end_date": null
                 }
             ],
@@ -5238,6 +5885,17 @@
             "emails": ["cpuguy83@gmail.com"]
         },
         {
+            "launchpad_id": "cqy0532",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhaodongyin",
+            "emails": ["zhaodongyin@beyondcent.com"]
+        },
+        {
             "github_id": "cr-hui",
             "companies": [
                 {
@@ -5418,6 +6076,10 @@
             "companies": [
                 {
                     "company_name": "Dell EMC",
+                    "end_date": "2019-Jan-01"
+                },
+                {
+                    "company_name": "*independent",
                     "end_date": null
                 }
             ],
@@ -5891,10 +6553,14 @@
                 },
                 {
                     "company_name": "HPE",
+                    "end_date": "2018-Dec-31"
+                },
+                {
+                    "company_name": "SUSE",
                     "end_date": null
                 }
             ],
-            "emails": ["dara2002-openstack@yahoo.com", "darragh.oreilly@hp.com", "darragh.oreilly@hpe.com"]
+            "emails": ["dara2002-openstack@yahoo.com", "darragh.oreilly@hp.com", "darragh.oreilly@hpe.com", "doreilly@suse.com"]
         },
         {
             "launchpad_id": "darren-birkett",
@@ -6395,6 +7061,7 @@
         },
         {
             "launchpad_id": "deray",
+            "github_id": "debayanray",
             "companies": [
                 {
                     "company_name": "HP",
@@ -6402,6 +7069,10 @@
                 },
                 {
                     "company_name": "HPE",
+                    "end_date": "2019-Feb-13"
+                },
+                {
+                    "company_name": "*independent",
                     "end_date": null
                 }
             ],
@@ -6733,6 +7404,17 @@
             "emails": ["bhordinesh07@gmail.com", "dinesh.bhor@nttdata.com"]
         },
         {
+            "launchpad_id": "dingdino",
+            "companies": [
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Dong Ding",
+            "emails": ["dong.ding@emc.com"]
+        },
+        {
             "launchpad_id": "divius",
             "companies": [
                 {
@@ -6855,6 +7537,17 @@
             ],
             "user_name": "Derek McGowan",
             "emails": ["derek@mcgstyle.net"]
+        },
+        {
+            "github_id": "dmitri-d",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Dmitri Dolguikh",
+            "emails": ["ddolguik@redhat.com", "witlessbird@gmail.com"]
         },
         {
             "launchpad_id": "dmitri.plakhov",
@@ -8168,6 +8861,17 @@
             "emails": ["f.kloeker@telekom.de", "eumel@arcor.de"]
         },
         {
+            "launchpad_id": "fabian-ruff",
+            "companies": [
+                {
+                    "company_name": "SAP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Fabian Ruff",
+            "emails": ["fabian@progra.de"]
+        },
+        {
             "launchpad_id": "fabien-boucher",
             "companies": [
                 {
@@ -8326,6 +9030,17 @@
             ],
             "user_name": "Fausto Marzi",
             "emails": ["fausto.marzi@ericsson.com", "fausto.marzi@gmail.com", "fausto.marzi@hp.com", "fausto.marzi@hpe.com"]
+        },
+        {
+            "launchpad_id": "feiskyer",
+            "companies": [
+                {
+                    "company_name": "Microsoft",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Pengfei Ni",
+            "emails": ["peni@microsoft.com", "feiskyer@users.noreply.github.com"]
         },
         {
             "launchpad_id": "fellypefca",
@@ -8916,6 +9631,17 @@
             "emails": ["zxgao@fiberhome.com", "gaozx.fnst@cn.fujitsu.com"]
         },
         {
+            "launchpad_id": "gardenshed",
+            "companies": [
+                {
+                    "company_name": "G-Research",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Matt Smith",
+            "emails": ["math.smith@me.com", "matt.smith@gresearch.co.uk"]
+        },
+        {
             "launchpad_id": "gary-w-smith",
             "companies": [
                 {
@@ -8952,6 +9678,17 @@
             ],
             "user_name": "Gary Kotton",
             "emails": ["gkotton@vmware.com", "gkotton@redhat.com", "garyk@radware.com"]
+         },
+         {
+            "github_id": "gbaufake",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Guilherme Baufake Rego",
+            "emails": ["gbaufake@redhat.com"]
          },
          {
             "launchpad_id": "gbraad",
@@ -8997,6 +9734,17 @@
             ],
             "user_name": "Michael H Wilson",
             "emails": ["geekinutah@gmail.com"]
+        },
+        {
+            "github_id": "geekspertise",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Elise Hines",
+            "emails": ["ehines@redhat.com"]
         },
         {
             "launchpad_id": "george-peristerakis",
@@ -9079,6 +9827,17 @@
             ],
             "user_name": "Guillaume Giamarchi",
             "emails": ["guillaume.giamarchi@gmail.com"]
+        },
+        {
+            "github_id": "ggreenway",
+            "companies": [
+                {
+                    "company_name": "Apple, Inc.",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Greg Greenway",
+            "emails": ["ggreenway@users.noreply.github.com", "ggreenway@apple.com"]
         },
         {
             "launchpad_id": "gh965852614",
@@ -9424,11 +10183,15 @@
                 },
                 {
                     "company_name": "Verizon Wireless",
+                    "end_date": "2019-Feb-08"
+                },
+                {
+                    "company_name": "Microsoft",
                     "end_date": null
                 }
             ],
             "user_name": "Graham Hayes",
-            "emails": ["graham@hayes.ie", "graham.hayes@hp.com", "graham@managedit.ie", "graham.hayes@hpe.com", "graham.hayes@suse.com", "ghayes@suse.com", "gr@ham.ie"]
+            "emails": ["graham@hayes.ie", "graham.hayes@hp.com", "graham@managedit.ie", "graham.hayes@hpe.com", "graham.hayes@suse.com", "ghayes@suse.com", "gr@ham.ie", "graham.hayes@microsoft.com"]
         },
         {
             "launchpad_id": "gregfaust",
@@ -10296,6 +11059,17 @@
             "emails": ["hhktony@gmail.com", "xutao@t2cloud.net"]
         },
         {
+            "github_id": "hhovsepy",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Hayk Hovsepyan",
+            "emails": ["hhovsepy@redhat.com"]
+        },
+        {
             "launchpad_id": "hieulq",
             "companies": [
                 {
@@ -10545,6 +11319,17 @@
             "emails": ["hpeter@inf.u-szeged.hu"]
         },
         {
+            "launchpad_id": "hrasiq",
+            "companies": [
+                {
+                    "company_name": "Hitachi",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Heitor Ricardo Alves de Siqueira",
+            "emails": ["heitorricardo.alvesdesiqueira@fit-tecnologia.org.br"]
+        },
+        {
             "launchpad_id": "htpeng",
             "companies": [
                 {
@@ -10554,6 +11339,17 @@
             ],
             "user_name": "htpeng",
             "emails": ["htpeng@fiberhome.com", "phtao1982@gmail.com"]
+        },
+        {
+            "github_id": "htuch",
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Harvey Tuch",
+            "emails": ["htuch@users.noreply.github.com", "htuch@google.com"]
         },
         {
             "launchpad_id": "huachaomao",
@@ -10972,6 +11768,18 @@
             "emails": ["ipekelny@mirantis.com", "ipekelny@griddynamics.com", "pekelny@gmail.com"]
         },
         {
+            "launchpad_id": "ianhowell",
+            "github_id": "ian-howell",
+            "companies": [
+                {
+                    "company_name": "AT&T",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ian Howell",
+            "emails": ["ian.howell0@gmail.com", "ian.howell@att.com"]
+        },
+        {
             "launchpad_id": "ibolotin",
             "companies": [
                 {
@@ -11329,6 +12137,17 @@
             "emails": ["naveedm9@gmail.com", "naveed.massjouni@rackspace.com"]
         },
         {
+            "launchpad_id": "isaachier",
+            "companies": [
+                {
+                    "company_name": "Uber",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Isaac Hier",
+            "emails": ["ihier@uber.com"]
+        },
+        {
             "launchpad_id": "isantosp",
             "companies": [
                 {
@@ -11387,6 +12206,17 @@
             ],
             "user_name": "Ivan Shvedunov",
             "emails": ["ishvedunov@mirantis.om", "ivan4th@gmail.com"]
+        },
+        {
+            "github_id": "israel-hdez",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Edgar Hernandez Garcia",
+            "emails": ["edgar.hernandez@redhat.com", "ehernand@redhat.com"]
         },
         {
             "launchpad_id": "istartsev",
@@ -12027,7 +12857,7 @@
                     "end_date": "2018-Jun-10"
                 },
                 {
-                    "company_name": "Oath",
+                    "company_name": "Verizon Media",
                     "end_date": null
                 }
             ],
@@ -12361,7 +13191,7 @@
                 }
             ],
             "user_name": "Jesse Pretorius",
-            "emails": ["jesse.pretorius@rackspace.co.uk", "jesse.pretorius@gmail.com"]
+            "emails": ["jesse.pretorius@rackspace.co.uk", "jesse.pretorius@gmail.com", "jesse@odyssey4.me"]
         },
         {
             "launchpad_id": "jesse2017",
@@ -12585,6 +13415,17 @@
             "emails": ["jianyi@sgitg.sgcc.com.cn", "jian_yi1987@163.com"]
         },
         {
+            "launchpad_id": "jiaoht",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": "2019-Feb-28"
+                }
+            ],
+            "user_name": "jiaoht",
+            "emails": ["18332120276@163.com"]
+        },
+        {
             "launchpad_id": "jiasen.lin",
             "companies": [
                 {
@@ -12618,12 +13459,12 @@
                     "end_date": "2017-Dec-04"
                 },
                 {
-                    "company_name": "Oath",
+                    "company_name": "Verizon Media",
                     "end_date": null
                 }
             ],
             "user_name": "Jim Rollenhagen",
-            "emails": ["jim.rollenhagen@rackspace.com", "jim@jimrollenhagen.com", "jim.rollenhagen@oath.com"]
+            "emails": ["jim.rollenhagen@rackspace.com", "jim@jimrollenhagen.com", "jim.rollenhagen@oath.com", "jim.rollenhagen@verizonmedia.com"]
         },
         {
             "launchpad_id": "jimingyu",
@@ -12774,6 +13615,17 @@
             "emails": ["josh.kearney@pistoncloud.com", "josh@jk0.org", "josh.kearney@rackspace.com"]
         },
         {
+            "github_id": "jkandasa",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Jeeva Kandasamy",
+            "emails": ["jkandasa@redhat.com", "jkandasa@gmail.com"]
+        },
+        {
             "launchpad_id": "jkeen",
             "companies": [
                 {
@@ -12798,6 +13650,17 @@
             ],
             "user_name": "Jennifer Whitty",
             "emails": ["jlwhittyos@gmail.com"]
+        },
+        {
+            "github_id": "jmazzitelli",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "John Mazzitelli",
+            "emails": ["jmazzite@redhat.com", "mazz@redhat.com"]
         },
         {
             "launchpad_id": "jmckind",
@@ -13341,6 +14204,17 @@
             "emails": ["zhanglong@gohighsec.com"]
         },
         {
+            "github_id": "jotak",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Joel Takvorian",
+            "emails": ["jtakvori@redhat.com"]
+        },
+        {
             "github_id": "jovizhangwei",
             "companies": [
                 {
@@ -13394,6 +14268,28 @@
             ],
             "user_name": "Julie Pichon",
             "emails": ["julie.pichon@gmail.com", "jpichon@redhat.com"]
+        },
+        {
+            "github_id": "jpkrohling",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Juraci Paixão Kröhling",
+            "emails": ["jpkroehling@redhat.com", "jcosta@redhat.com", "juraci.github@kroehling.de"]
+        },
+        {
+            "launchpad_id": "jproque15130",
+            "companies": [
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jean-Pierre Roquesalane",
+            "emails": ["jeanpierre.roquesalane@dell.com"]
         },
         {
             "launchpad_id": "jproulx",
@@ -13493,6 +14389,17 @@
             "emails": ["jungleboyj@electronicjungle.net", "jsbryant@electronicjungle.net", "jbryant1@lenovo.com", "jsbryant@us.ibm.com", "jungleboyj@gmail.com", "jay.s.bryant@gmail.com"]
         },
         {
+            "github_id": "jshaughn",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Jay Shaughnessy",
+            "emails": ["jshaughn@redhat.com"]
+        },
+        {
             "launchpad_id": "jshepher",
             "companies": [
                 {
@@ -13502,6 +14409,17 @@
             ],
             "user_name": "Justin Shepherd",
             "emails": ["galstrom21@gmail.com", "jshepher@rackspace.com"]
+        },
+        {
+            "github_id": "jstickler",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Julie Stickler",
+            "emails": ["jstickle@redhat.com"]
         },
         {
             "launchpad_id": "jsuh",
@@ -13656,6 +14574,17 @@
             "emails": ["wangjunqing@cmss.chinamobile.com", "junqingwang@139.com"]
         },
         {
+            "github_id": "junr03",
+            "companies": [
+                {
+                    "company_name": "Lyft",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Jose Ulises Nino Rivera",
+            "emails": ["jnino@lyft.com", "junr03@users.noreply.github.com"]
+        },
+        {
             "launchpad_id": "justin-a-scott",
             "companies": [
                 {
@@ -13710,6 +14639,17 @@
             ],
             "user_name": "Joe Cropper",
             "emails": ["jwcroppe@us.ibm.com", "cropper.joe@gmail.com"]
+        },
+        {
+            "github_id": "jwendell",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Jonh Wendell",
+            "emails": ["jonh.wendell@redhat.com", "jsantana@redhat.com"]
         },
         {
             "launchpad_id": "jwoh",
@@ -13789,6 +14729,17 @@
             ],
             "user_name": "Kevin McDonald",
             "emails": ["k3vinmcdonald@gmail.com"]
+        },
+        {
+            "launchpad_id": "k82cn",
+            "companies": [
+                {
+                    "company_name": "Huawei Technologies",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Klaus Ma",
+            "emails": ["klaus1982.cn@gmail.com"]
         },
         {
             "launchpad_id": "kaifeng",
@@ -14427,6 +15378,17 @@
             "emails": ["knikolla@bu.edu", "kristi@nikolla.me"]
         },
         {
+            "github_id": "knrc",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Kevin Conner",
+            "emails": ["kconner@redhat.com"]
+        },
+        {
             "launchpad_id": "kong",
             "companies": [
                 {
@@ -14990,6 +15952,17 @@
             ],
             "user_name": "Leandro Ignacio Costantino",
             "emails": ["leandro.i.costantino@intel.com", "lcostantino@gmail.com"]
+        },
+        {
+            "launchpad_id": "ledor473",
+            "companies": [
+                {
+                    "company_name": "Ticket Master",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Louis-Etienne Dorval",
+            "emails": ["louis-etienne.dorval@ticketmaster.com"]
         },
         {
             "launchpad_id": "leeshow",
@@ -15854,6 +16827,17 @@
             "emails": ["970717493@qq.com", "liu.qing@h3c.com"]
         },
         {
+            "launchpad_id": "liuruiubu",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "LiuRui",
+            "emails": ["liurui@beyondcent.com", "320734098@qq.com"]
+        },
+        {
             "launchpad_id": "liusheng",
             "companies": [{
                 "company_name": "Huawei",
@@ -16151,6 +17135,18 @@
             "emails": ["larry.rensing@charter.com", "lr699s@att.com"]
         },
         {
+            "github_id": "lrx0014",
+            "launchpad_id": "lrx0014",
+            "companies": [
+                {
+                    "company_name": "DaoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "renxiang.li",
+            "emails": ["lrx0014@hotmail.com", "renxiang.li@daocloud.io"]
+        },
+        {
             "launchpad_id": "lseki",
             "companies": [
                 {
@@ -16183,6 +17179,17 @@
             ],
             "user_name": "Lucas Alvares Gomes",
             "emails": ["lucasagomes@gmail.com"]
+        },
+        {
+            "github_id": "lucasponce",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Lucas Ponce",
+            "emails": ["lponce@redhat.com"]
         },
         {
             "launchpad_id": "luckyvega-g",
@@ -17183,6 +18190,28 @@
             "emails": ["matthew.taylor@digitalpacific.com.au", "matt@mty.net.au"]
         },
         {
+            "github_id": "mattklein123",
+            "companies": [
+                {
+                    "company_name": "Lyft",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Matt Klein",
+            "emails": ["mattklein123@users.noreply.github.com", "mattklein123@outlook.com", "mattklein123@gmail.com"]
+        },
+        {
+            "github_id": "mattmahoneyrh",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Matt Mahoney",
+            "emails": ["mmahoney@redhat.com"]
+        },
+        {
             "launchpad_id": "mattmont",
             "companies": [
                 {
@@ -17214,6 +18243,17 @@
             ],
             "user_name": "Matt Thompson",
             "emails": ["mattt@defunct.ca"]
+        },
+        {
+            "launchpad_id": "matttproud",
+            "companies": [
+                {
+                    "company_name": "SoundCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Matt T. Proud",
+            "emails": ["matt@soundcloud.com"]
         },
         {
             "launchpad_id": "maty-grosz",
@@ -17888,6 +18928,17 @@
             "emails": ["mike.j.tamayo@intel.com", "mikecincotamayo@gmail.com"]
         },
         {
+            "launchpad_id": "mikedanese",
+            "companies": [
+                {
+                    "company_name": "Google",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Mike Danese",
+            "emails": ["mikedanese@google.com"]
+        },
+        {
             "launchpad_id": "mikemason010",
             "companies": [
                 {
@@ -18443,6 +19494,17 @@
             "emails": ["msolanas@cisco.com","marc@solanas.cat"]
         },
         {
+            "github_id": "mtho11",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Michael Thompson",
+            "emails": ["mithomps@redhat.com"]
+        },
+        {
             "launchpad_id": "mthompson-n",
             "companies": [
                 {
@@ -18500,6 +19562,17 @@
             ],
             "user_name": "Mark T. Voelker",
             "emails": ["mvoelker@cisco.com", "mvoelker@vmware.com", "markvoelker@gmail.com"]
+        },
+        {
+            "github_id": "mwringe",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Matt Wringe",
+            "emails": ["mwringe@redhat.com"]
         },
         {
             "launchpad_id": "mzawadzki-f",
@@ -19272,6 +20345,18 @@
             "emails": ["o.chaze@gmail.com"]
         },
         {
+            "github_id": "objectiser",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Gary Brown",
+            "emails": ["gbrown@redhat.com", "github@brownuk.com"
+           ]
+        },
+        {
             "launchpad_id": "octopuszhang",
             "companies": [
                 {
@@ -19466,6 +20551,17 @@
             ],
             "user_name": "Peter Penchev",
             "emails": ["pp@storpool.com", "openstack-dev-s@storpool.com"]
+        },
+        {
+            "launchpad_id": "ophir.tal",
+            "companies": [
+                {
+                    "company_name": "VMware",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ophir Adiv Tal",
+            "emails": ["oadivtal@vmware.com", "firtzel@gmail.com"]
         },
         {
             "launchpad_id": "opilotte",
@@ -19830,6 +20926,17 @@
             "emails": ["pavlk.jakub@gmail.com", "jakub.pavlik@tcpcloud.eu", "j.pavlik@tcpcloud.eu"]
         },
         {
+            "github_id": "pavolloffay",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Pavol Loffay",
+            "emails": ["ploffay@redhat.com"]
+        },
+        {
             "launchpad_id": "pawel-palucki",
             "companies": [
                 {
@@ -19934,6 +21041,18 @@
             ],
             "user_name": "Pedro Navarro P\u00e9rez",
             "emails": ["pednape@gmail.com"]
+        },
+        {
+            "launchpad_id": "peibin",
+            "github_id": "peibingit",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "peibin",
+            "emails": ["peibin@beyondcent.com","987157985@qq.com"]
         },
         {
             "launchpad_id": "peiy",
@@ -20074,6 +21193,18 @@
             ],
             "user_name": "Phong Doan Ly",
             "emails": ["phongdly@us.ibm.com"]
+        },
+        {
+            "launchpad_id": "phuongnh",
+            "github_id": "hnwolf",
+            "companies": [
+                {
+                    "company_name": "Fujitsu",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Nguyen Hung Phuong",
+            "emails": ["nguyenhungphuong@yahoo.com", "phuongnh@vn.fujitsu.com"]
         },
         {
             "launchpad_id": "pi3rra",
@@ -20384,6 +21515,17 @@
             ],
             "user_name": "Pradeep Kumar Velusamy",
             "emails": ["pradeepkumar.v@cognizant.com"]
+        },
+        {
+            "launchpad_id": "pramchan-5",
+            "companies": [
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Prakash Ramchandran",
+            "emails": ["pramchan@yahoo.com", "prakash_ramchandran@dell.com"]
         },
         {
             "launchpad_id": "prameswar",
@@ -20980,6 +22122,17 @@
             ],
             "user_name": "Renat Akhmerov",
             "emails": ["renat.akhmerov@gmail.com"]
+        },
+        {
+            "github_id": "ralekseenkov",
+            "companies": [
+                {
+                    "company_name": "Aptomi",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Roman Alekseenkov",
+            "emails": ["roman@aptomi.io", "ralekseenkov@gmail.com", "ralekseenkov@users.noreply.github.com"]
         },
         {
             "launchpad_id": "ramamani-yeleswarapu",
@@ -21733,12 +22886,12 @@
                     "end_date": "2018-Mar-26"
                 },
                 {
-                    "company_name": "Oath",
+                    "company_name": "Verizon Media",
                     "end_date": null
                 }
             ],
             "user_name": "Ruby Loo",
-            "emails": ["rloo@oath.com", "ruby.loo@intel.com", "opensrloo@gmail.com", "rloo@yahoo-inc.com", "rlooyahoo@gmail.com"]
+            "emails": ["rloo@verizonmedia.com", "rloo@oath.com", "ruby.loo@intel.com", "opensrloo@gmail.com", "rloo@yahoo-inc.com", "rlooyahoo@gmail.com"]
         },
         {
             "launchpad_id": "rltaylo",
@@ -21765,6 +22918,17 @@
             ],
             "user_name": "Ryan Lucio",
             "emails": ["rlucio@vmem.com"]
+        },
+        {
+            "github_id": "rmars",
+            "companies": [
+                {
+                    "company_name": "Buoyant",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Risha Mars",
+            "emails": ["mars@buoyant.com", "mars@buoyant.io", "rmars@users.noreply.github.com"]
         },
         {
             "launchpad_id": "rmevans88",
@@ -22242,6 +23406,21 @@
             ],
             "user_name": "Megan Rossetti",
             "emails": ["megan.rossetti@walmart.com", "megan_rossetti@cable.comcast.com", "rossetti.megan18@gmail.com"]
+        },
+        {
+            "launchpad_id": "rossmartyn04",
+            "companies": [
+                {
+                    "company_name": "Memset",
+                    "end_date": "2018-Aug-31"
+                },
+                {
+                    "company_name": "G-Research",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ross Martyn",
+            "emails": ["rossmartyn04@gmail.com", "ross.martyn@gresearch.co.uk", "ross@memset.com"]
         },
         {
             "launchpad_id": "rosso-af",
@@ -23154,7 +24333,18 @@
             "user_name": "scottda",
             "emails": ["scott.dangelo@gmail.com", "scott.dangelo@ibm.com", "scott.dangelo@hpe.com" ]
         },
-         {
+        {
+            "launchpad_id": "scott.solkhon",
+            "companies": [
+                {
+                    "company_name": "G-Research",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Scott Solkhon",
+            "emails": ["scottsolkhon@gmail.com", "scott.solkhon@gresearch.co.uk"]
+        },
+        {
             "github_id": "scottfrederick",
             "companies": [
                 {
@@ -24023,6 +25213,7 @@
             "emails": ["simon.l@inwinstack.com", "x7712611430@gmail.com"]
         },
         {
+            "github_id": "simonpasquier",
             "launchpad_id": "simon-pasquier",
             "companies": [
                 {
@@ -24230,6 +25421,17 @@
             ],
             "user_name": "Sitakanta Hotta",
             "emails": ["sitakanta.hotta@workday.com"]
+        },
+        {
+            "github_id": "skondkar",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Sunil Kondkar",
+            "emails": ["skondkar@redhat.com"]
         },
         {
             "github_id": "skoo87",
@@ -25763,6 +26965,17 @@
             "emails": ["termie@preciousroy.local", "github@anarkystic.com", "code@term.ie"]
         },
         {
+            "launchpad_id": "thainn2",
+            "companies": [
+                {
+                    "company_name": "VINADATA",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Thai Nguyen Ngoc",
+            "emails": ["thainn2@vng.com.vn", "thainguyenngocnbk@gmail.com"]
+        },
+        {
             "launchpad_id": "thang-pham",
             "companies": [
                 {
@@ -26608,6 +27821,18 @@
             "emails": ["thierry@openstack.org", "thierry.carrez@ubuntu.com"]
         },
         {
+            "launchpad_id": "tuanda",
+            "github_id": "datuanmac",
+            "companies": [
+                {
+                    "company_name": "Fujitsu",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Tuan Do Anh",
+            "emails": ["datuanmac@gmail.com", "tuanda@vn.fujitsu.com"]
+        },
+        {
             "launchpad_id": "tungdoan",
             "companies": [
                 {
@@ -26618,7 +27843,17 @@
             "user_name": "Tung Doan",
             "emails": ["doantungbk.203@gmail.com", "tung.doan_van@tu-dresden.de"]
         },
-
+        {
+            "github_id": "tvieira",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Tiago Vieira",
+            "emails": ["tmoreira@redhat.com"]
+        },
         {
             "launchpad_id": "tyr-6",
             "companies": [
@@ -27397,6 +28632,17 @@
             "emails": ["vkuklin@mirantis.com", "aglar@aglar.ru"]
         },
         {
+            "launchpad_id": "vlad-belogrudov",
+            "companies": [
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Vladislav Belogrudov",
+            "emails": ["Vladislav.Belogrudov@emc.com"]
+        },
+        {
             "launchpad_id": "vlad-esten",
             "github_id": "s10",
             "companies": [
@@ -27481,6 +28727,17 @@
             ],
             "user_name": "Vlad Naboichenko",
             "emails": ["vnaboichenko@mirantis.com", "spitekh@gmail.com"]
+        },
+        {
+            "github_id": "vnugent",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Viet Nyguen",
+            "emails": ["vnguyen@redhat.com"]
         },
         {
             "launchpad_id": "vsharshov",
@@ -28492,6 +29749,17 @@
             "emails": ["andrey@xdel.ru", "akorolev@mirantis.com"]
         },
         {
+            "github_id": "xeviknal",
+            "companies": [
+                {
+                    "company_name": "Red Hat",
+                    "end_date": null
+                }
+           ],
+            "user_name": "Xavier Canal Masjuan",
+            "emails": ["xcanalma@redhat.com"]
+        },
+        {
             "launchpad_id": "xgw1989",
             "companies": [
                 {
@@ -29184,11 +30452,15 @@
                 },
                 {
                     "company_name": "StackHPC",
+                    "end_date": "2019-Jan-31"
+                },
+                {
+                    "company_name": "Mesosphere",
                     "end_date": null
                 }
             ],
             "user_name": "Nick Jones",
-            "emails": ["nick.jones@datacentred.co.uk", "nick@datacentred.co.uk", "nick@dischord.org", "yankcrime@gmail.com", "nick@stackhpc.com"]
+            "emails": ["nick.jones@datacentred.co.uk", "nick@datacentred.co.uk", "nick@dischord.org", "yankcrime@gmail.com", "nick@stackhpc.com", "njones@mesosphere.io"]
         },
         {
             "launchpad_id": "yanpeifei",
@@ -29584,6 +30856,10 @@
                 },
                 {
                     "company_name": "Netmarble",
+                    "end_date": "2018-Oct-15"
+                },
+                {
+                    "company_name": "SK telecom",
                     "end_date": null
                 }
             ],
@@ -29835,6 +31111,28 @@
             ],
             "user_name": "Yuntong Jin",
             "emails": ["yuntongjin@gmail.com", "yuntong.jin@intel.com"]
+        },
+        {
+            "github_id": "yurishkuro",
+            "companies": [
+                {
+                    "company_name": "Uber",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yuri Shkuro",
+            "emails": ["ys@uber.com", "yurishkuro@users.noreply.github.com"]
+        },
+        {
+            "launchpad_id": "yury-kulaz",
+            "companies": [
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yury Kulazhenkov",
+            "emails": ["Yury.Kulazhenkov@emc.com"]
         },
         {
             "launchpad_id": "yushb",
@@ -31363,6 +32661,10 @@
             "company_name": "Aptira"
         },
         {
+            "domains": ["aptomi.io"],
+            "company_name": "Aptomi"
+        },
+        {
             "domains": ["aricent.com"],
             "company_name": "Aricent"
         },
@@ -31468,6 +32770,10 @@
             "company_name": "Bitergia"
         },
         {
+            "domains": ["bitnami.com"],
+            "company_name": "Bitnami"
+        },
+        {
             "domains": ["bjtu.edu.cn"],
             "company_name": "Beijing JiaoTong University",
             "aliases": ["BJTU","北京交通大学信息科学研究所"]
@@ -31499,8 +32805,16 @@
             "company_name": "Boeing"
         },
         {
+            "domains": ["booking.com"],
+            "company_name": "Booking.com"
+        },
+        {
             "domains": ["box.com"],
             "company_name": "Box"
+        },
+        {
+            "domains": ["boxever.com"],
+            "company_name": "Boxever"
         },
         {
             "domains": ["brightcomputing.com"],
@@ -31529,6 +32843,10 @@
             "domains": ["bull.net"],
             "company_name": "Bull",
             "aliases": ["Bull SAS"]
+        },
+        {
+            "domains": ["buoyant.io"],
+            "company_name": "Buoyant"
         },
         {
             "domains": ["bytedance.com"],
@@ -31631,6 +32949,10 @@
             "company_name": "City Network"
         },
         {
+            "domains": ["clear-code.com"],
+            "company_name": "Clear Code"
+        },
+        {
             "domains": ["cloud.com"],
             "company_name": "Citrix Systems"
         },
@@ -31712,6 +33034,10 @@
             "aliases": ["Colt Technology Services", "KVH", "KVH Co., Ltd."]
         },
         {
+            "domains": ["cookpad.com"],
+            "company_name": "Cookpad"
+        },
+        {
             "domains": ["coraid.com"],
             "company_name": "Coraid"
         },
@@ -31727,6 +33053,10 @@
             "domains": ["corvisa.com"],
             "company_name": "Corvisa",
             "aliases": ["Corvisa Services"]
+        },
+        {
+            "domains": ["covalent.io"],
+            "company_name": "Covalent"
         },
         {
             "domains": ["cray.com"],
@@ -31778,6 +33108,10 @@
         {
             "domains": ["datacentred.co.uk", "datacentred.io"],
             "company_name": "DataCentred"
+        },
+        {
+            "domains": ["datadoghq.com"],
+            "company_name": "Datadog"
         },
         {
             "domains": ["dblinkconsult.com.br"],
@@ -31832,6 +33166,10 @@
             "aliases": ["DreamHost, Inktank"]
         },
         {
+            "domains": ["dropbox.com"],
+            "company_name": "Dropbox"
+        },
+        {
             "domains": ["dtdream.com"],
             "company_name": "Dt Dream"
         },
@@ -31865,12 +33203,20 @@
             "company_name": "Embrane"
         },
         {
+            "domains": ["endocode.com"],
+            "company_name": "Endocode AG"
+        },
+        {
             "domains": ["endurancewindpower.com"],
             "company_name": "Endurance Wind Power"
         },
         {
             "domains": ["enea.com"],
             "company_name": "Enea"
+        },
+        {
+            "domains": ["engineyard.com"],
+            "company_name": "Engine Yard"
         },
         {
             "domains": ["entpnt.com"],
@@ -31909,6 +33255,10 @@
             "domains": ["fit-tecnologia.org.br"],
             "company_name": "FIT Instituto de Tecnologia",
             "aliases": ["FIT"]
+        },
+        {
+            "domains": ["flipkart.com"],
+            "company_name": "Flipkart"
         },
         {
             "domains": ["florath.net"],
@@ -31975,6 +33325,14 @@
         {
             "domains": ["gplhost.com"],
             "company_name": "GPLHost"
+        },
+        {
+            "domains": ["grafana.com"],
+            "company_name": "Grafana Labs"
+        },
+        {
+            "domains": ["gresearch.co.uk"],
+            "company_name": "G-Research"
         },
         {
             "domains": ["gridcentric.ca", "gridcentric.com"],
@@ -32188,6 +33546,14 @@
             "company_name": "Intralinks"
         },
         {
+            "domains": ["intralinks.com"],
+            "company_name": "Intralinks"
+        },
+        {
+            "domains": ["intuit.com"],
+            "company_name": "Intuit"
+        },
+        {
             "domains": ["inwinstack.com"],
             "company_name": "inwinSTACK"
         },
@@ -32363,8 +33729,16 @@
             "company_name": "Locaweb"
         },
         {
+            "domains": ["lockheed.com"],
+            "company_name": "Lockheed Martin"
+        },
+        {
             "domains": ["lsd.ufcg.edu.br"],
             "company_name": "Universidade Federal de Campina Grande"
+        },
+        {
+            "domains": ["lyft.com"],
+            "company_name": "Lyft"
         },
         {
             "domains": ["m3s.it"],
@@ -32396,6 +33770,10 @@
             "company_name": "Memset"
         },
         {
+            "domains": ["mesosphere.com", "mesosphere.io"],
+            "company_name": "Mesosphere"
+        },
+        {
             "domains": ["metacloud.com"],
             "company_name": "Metacloud"
         },
@@ -32409,7 +33787,7 @@
             "company_name": "Metsi Technologies"
         },
         {
-            "domains": ["microsoft.com"],
+            "domains": ["microsoft.com", "deis.com"],
             "company_name": "Microsoft"
         },
         {
@@ -32429,6 +33807,11 @@
             "domains": ["momentumsi.com"],
             "company_name": "MomentumSI",
             "aliases": ["MomentumSI, Transcend Computing"]
+        },
+        {
+            "domains": ["motorolasolutions.com"],
+            "company_name": "Motorola",
+            "aliases": ["Motorola Solutions"]
         },
         {
             "domains": ["mvista.com"],
@@ -32451,6 +33834,10 @@
         {
             "domains": ["navy.mil"],
             "company_name": "US Navy"
+        },
+        {
+            "domains": ["ncbi.nlm.nih.gov"],
+            "company_name": "National Center for Biotechnology Information (NCBI)"
         },
         {
             "domains": ["nebula.com", "ansolabs.com"],
@@ -32550,9 +33937,18 @@
             "company_name": "NUST"
         },
         {
+            "domains": ["nvidia.com"],
+            "company_name": "Nvidia"
+        },
+        {
             "domains": ["nxp.com"],
             "company_name": "NXP",
             "aliases": ["NXP (I) Pvt Ltd", "NXP"]
+        },
+        {
+            "domains": ["nyu.edu", "engineering.nyu.edu"],
+            "company_name": "NYU",
+            "aliases": ["NYU Tandon School of Engineering"]
         },
         {
             "domains": ["oath.com"],
@@ -32565,6 +33961,10 @@
         {
             "domains": ["ocf.co.uk"],
             "company_name": "OCF plc"
+        },
+        {
+            "domains": ["offerupnow.com", "offerup.com"],
+            "company_name": "OfferUp"
         },
         {
             "domains": ["oneconvergence.com"],
@@ -32633,6 +34033,10 @@
             "aliases": ["Persistent System Limited", "persistent sys limited", "Persistent Ltd"]
         },
         {
+            "domains": ["pinterest.com"],
+            "company_name": "Pinterest"
+        },
+        {
             "domains": ["pistoncloud.com"],
             "company_name": "Piston Cloud",
             "aliases": ["Piston Cloud Computing, Inc.", "Piston"]
@@ -32640,6 +34044,14 @@
         {
             "domains": ["pivotal.io", "gopivotal.com", "pivotallabs.com"],
             "company_name": "Pivotal"
+        },
+        {
+            "domains": ["pixelfederation.com"],
+            "company_name": "Pixel Federation"
+        },
+        {
+            "domains": ["planetscale.com"],
+            "company_name": "PlanetScale"
         },
         {
             "domains": ["platform9.com", "platform9.net"],
@@ -32763,6 +34175,10 @@
             "company_name": "Rizumu"
         },
         {
+            "domains": ["robustperception.io"],
+            "company_name": "Robust Perception"
+        },
+        {
             "domains": ["salesforce.com"],
             "company_name": "Salesforce",
             "aliases": ["Salesforce.com"]
@@ -32850,6 +34266,10 @@
             "aliases": ["SKT", "SKTelecom"]
         },
         {
+            "domains": ["slack-corp.com"],
+            "company_name": "Slack"
+        },
+        {
             "domains": ["snabb.co"],
             "company_name": "Snabb"
         },
@@ -32875,8 +34295,20 @@
             "company_name": "Sony Mobile Communications"
         },
         {
+            "domains": ["sorint.it", "sorintlab.com"],
+            "company_name": "Sorint.lab"
+        },
+        {
+            "domains": ["soundcloud.com"],
+            "company_name": "SoundCloud"
+        },
+        {
             "domains": ["spilgames.com"],
             "company_name": "Spil Games"
+        },
+        {
+            "domains": ["squareup.com"],
+            "company_name": "Square, Inc"
         },
         {
             "domains": ["stackhpc.com"],
@@ -32909,6 +34341,10 @@
         {
             "domains": ["stratoscale.com"],
             "company_name": "Stratoscale"
+        },
+        {
+            "domains": ["stripe.com"],
+            "company_name": "Stripe"
         },
         {
             "domains": ["stsci.edu"],
@@ -33011,12 +34447,20 @@
             "aliases": ["ParElastic Corp", "ParElastic", "Tesora Inc"]
         },
         {
+            "domains": ["tetrate.io"],
+            "company_name": "Tetrate"
+        },
+        {
             "domains": ["thalesgroup.com", "mythalesgroup.com"],
             "company_name": "Thales"
         },
         {
             "domains": ["thoughtworks.com"],
             "company_name": "ThoughtWorks"
+        },
+        {
+            "domains": ["ticketmaster.com"],
+            "company_name": "Ticket Master"
         },
         {
             "domains": ["ticomm.cn"],
@@ -33048,6 +34492,14 @@
             "company_name": "University of Toronto"
         },
         {
+            "domains": ["treasuredata.com"],
+            "company_name": "Treasure Data"
+        },
+        {
+            "domains": ["triggermesh.com"],
+            "company_name": "TriggerMesh"
+        },
+        {
             "domains": ["tsh-world.co.jp"],
             "company_name": "TOKYO SYSTEM HOUSE"
         },
@@ -33070,6 +34522,10 @@
             "aliases": ["SZTE"]
         },
         {
+            "domains": ["uber.com"],
+            "company_name": "Uber"
+        },
+        {
             "domains": ["ubisoft.com"],
             "company_name": "Ubisoft",
             "aliases": ["Ubisoft Entertainment"]
@@ -33081,8 +34537,10 @@
         {
             "domains": ["ucr.edu"],
             "company_name": "University of California Riverside",
-            "aliases": ["University of California Riverside", "UC Riverside",
-                        "UCR"]
+            "aliases": [
+                "University of California Riverside", "UC Riverside",
+                "UCR"
+            ]
         },
         {
             "domains": ["ufscar.br"],
@@ -33172,6 +34630,10 @@
             "company_name": "Verizon Digital Media"
         },
         {
+            "domains": ["verizonmedia.com", "oath.com"],
+            "company_name": "Verizon Media"
+        },
+        {
             "domains": ["verizonwireless.com", "vzw.com"],
             "company_name": "Verizon Wireless"
         },
@@ -33210,6 +34672,10 @@
               "VMware Software"]
         },
         {
+            "domains": ["vng.com.vn"],
+            "company_name": "VINADATA"
+        },
+        {
             "domains": ["voereir.com"],
             "company_name": "VoerEir AB",
             "aliases": ["VoerEir", "VoerEir India Pvt Ltd"]
@@ -33227,8 +34693,16 @@
             "company_name": "Wanclouds"
         },
         {
+            "domains": ["wandera.com"],
+            "company_name": "Wandera"
+        },
+        {
             "domains": ["wdc.com"],
             "company_name": "Western Digital"
+        },
+        {
+            "domains": ["weave.works"],
+            "company_name": "Weaveworks"
         },
         {
             "domains": ["wikimedia.org"],
@@ -33313,6 +34787,11 @@
             "domains": ["zelin.io"],
             "company_name": "Zelin",
             "aliases": ["zelin.io"]
+        },
+        {
+            "domains": ["zendesk.com"],
+            "company_name": "Zendesk",
+            "aliases": ["zendesk.com"]
         },
         {
             "domains": ["zetta.io"],
@@ -35187,31 +36666,6 @@
             "uri": "https://github.com/kubeflow/example-seldon.git"
         },
         {
-            "module": "cri-o",
-            "organization": "kubernetes",
-            "uri": "https://github.com/kubernetes-incubator/cri-o.git"
-        },
-        {
-            "module": "cri-tools",
-            "organization": "kubernetes",
-            "uri": "https://github.com/kubernetes-incubator/cri-tools.git"
-        },
-        {
-            "module": "service-catalog",
-            "organization": "kubernetes",
-            "uri": "https://github.com/kubernetes-incubator/service-catalog.git"
-        },
-        {
-            "module": "kube-state-metrics",
-            "organization": "kubernetes",
-            "uri": "https://github.com/kubernetes/kube-state-metrics.git"
-        },
-        {
-            "module": "kargo",
-            "organization": "kubernetes",
-            "uri": "https://github.com/kubernetes-incubator/kargo.git"
-        },
-        {
             "module": "virtual-kubelet",
             "organization": "virtual-kubelet",
             "uri": "https://github.com/virtual-kubelet/virtual-kubelet.git"
@@ -35382,6 +36836,16 @@
             "module": "ceph",
             "organization": "ceph",
             "uri": "https://github.com/ceph/ceph.git"
+        },
+        {
+            "module": "ceph-ansible",
+            "organization": "ceph",
+            "uri": "https://github.com/ceph/ceph-ansible.git"
+        },
+        {
+            "module": "concourse",
+            "organization": "concourse",
+            "uri": "https://github.com/concourse/concourse.git"
         },
         {
             "module": "barbican",
@@ -35581,6 +37045,11 @@
                     "tag_from": "3.1.0"
                 }
             ]
+        },
+        {
+            "module": "kubernetes",
+            "organization": "kubernetes",
+            "uri": "git://github.com/kubernetes/kubernetes.git"
         },
         {
             "module": "releng",
@@ -36030,7 +37499,71 @@
             "module": "trex",
             "uri": "https://github.com/FDio/trex.git",
             "organization": "FDio"
-
+        },
+        {
+            "module": "prometheus",
+            "uri": "https://github.com/prometheus/prometheus.git",
+            "organization": "Prometheus"
+        },
+        {
+            "module": "fluentd",
+            "uri": "https://github.com/fluent/fluentd.git",
+            "organization": "Fluentd"
+        },
+        {
+            "module": "grpc",
+            "uri": "https://github.com/grpc/grpc.git",
+            "organization": "grpc"
+        },
+        {
+            "module": "rkt",
+            "uri": "https://github.com/rkt/rkt.git",
+            "organization": "rkt"
+        },
+        {
+            "module": "cni",
+            "uri": "https://github.com/containernetworking/cni.git",
+            "organization": "CNI"
+        },
+        {
+            "module": "envoy",
+            "uri": "https://github.com/envoyproxy/envoy.git",
+            "organization": "Envoy Proxy"
+        },
+        {
+            "module": "jaeger",
+            "uri": "https://github.com/jaegertracing/jaeger.git",
+            "organization": "Jaeger"
+        },
+        {
+            "module": "notary",
+            "uri": "https://github.com/theupdateframework/notary.git",
+            "organization": "TUF"
+        },
+        {
+            "module": "tuf",
+            "uri": "https://github.com/theupdateframework/tuf.git",
+            "organization": "TUF"
+        },
+        {
+            "module": "vitess",
+            "uri": "https://github.com/vitessio/vitess.git",
+            "organization": "Vitess"
+        },
+        {
+            "module": "coredns",
+            "uri": "https://github.com/coredns/coredns.git",
+            "organization": "CoreDNS"
+        },
+        {
+            "module": "linkerd",
+            "uri": "https://github.com/linkerd/linkerd.git",
+            "organization": "Linkerd"
+        },
+        {
+            "module": "helm",
+            "uri": "https://github.com/helm/helm.git",
+            "organization": "Helm"
         },
         {
             "module": "edge-computing",
@@ -36678,9 +38211,100 @@
             "modules": ["openstack-others", "unknown"]
         },
         {
-            "id": "complementary",
-            "title": "Complementary",
-            "modules": ["ansible-group", "ceph", "docker-group", "fdio-group", "istio-group", "knative-group", "kubeflow-group", "kubernetes-main-group", "kubernetes-sigs-group", "kubernetes-incubator-group", "kubernetes-client-group", "kubernetes-csi-group", "jclouds", "cloudfoundry", "opnfv", "openlab", "openshift", "ovs", "pypa-group", "spinnaker"]
+            "id": "cncf-group",
+            "title": "CNCF",
+            "modules": ["kubernetes", "prometheus", "fluentd", "grpc", "rkt", "vitess", "coredns", "linkerd", "helm", "cni", "envoy",
+                "jaeger", "notary", "tuf"]
+        },
+        {
+            "id": "kubernetes",
+            "title": "Kubernetes",
+            "child": true,
+            "modules": ["kubernetes"]
+        },
+        {
+            "id": "prometheus",
+            "title": "Prometheus",
+            "child": true,
+            "modules": ["prometheus"]
+        },
+        {
+            "id": "fluentd",
+            "title": "Fluentd",
+            "child": true,
+            "modules": ["fluentd"]
+        },
+        {
+            "id": "grpc",
+            "title": "GRPC",
+            "child": true,
+            "modules": ["grpc"]
+        },
+        {
+            "id": "rkt",
+            "title": "rkt",
+            "child": true,
+            "modules": ["rkt"]
+        },
+        {
+            "id": "vitess",
+            "title": "Vitess",
+            "child": true,
+            "modules": ["vitess"]
+        },
+        {
+            "id": "coredns",
+            "title": "coredns",
+            "child": true,
+            "modules": ["coredns"]
+        },
+        {
+            "id": "linkerd",
+            "title": "linkerd",
+            "child": true,
+            "modules": ["linkerd"]
+        },
+        {
+            "id": "helm",
+            "title": "helm",
+            "child": true,
+            "modules": ["helm"]
+        },
+        {
+            "id": "cni",
+            "title": "cni",
+            "child": true,
+            "modules": ["cni"]
+        },
+        {
+            "id": "envoy",
+            "title": "envoy",
+            "child": true,
+            "modules": ["envoy"]
+        },
+        {
+            "id": "jaeger",
+            "title": "jaeger",
+            "child": true,
+            "modules": ["jaeger"]
+        },
+        {
+            "id": "notary",
+            "title": "notary",
+            "child": true,
+            "modules": ["notary"]
+        },
+        {
+            "id": "tuf",
+            "title": "tuf",
+            "child": true,
+            "modules": ["tuf"]
+        },
+        {
+            "id": "unaffiliated",
+            "title": "Other Projects",
+            "modules": ["ansible-group", "ceph", "concourse", "docker-group", "fdio-group", "istio-group", "knative-group",
+                "kubeflow-group", "jclouds", "cloudfoundry", "opnfv", "openlab", "openshift", "ovs", "pypa-group", "spinnaker", "kubernetes-group"]
         },
         {
             "id": "ansible-group",
