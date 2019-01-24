@@ -22991,6 +22991,21 @@
             "emails": ["sbelous@mirantis.com", "belous.py@gmail.com"]
         },
         {
+            "launchpad_id": "sbogatkin",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": "2017-May-31"
+                },
+                {
+                    "company_name": "GoDaddy",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Stanislaw Bogatkin",
+            "emails": ["sbog@sbog.ru", "sbogatkin@mirantis.com"]
+        },
+        {
             "launchpad_id": "sc",
             "companies": [
                 {
