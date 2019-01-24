@@ -12,6 +12,7 @@
             "emails": ["doug@parelastic.com", "doug@tesora.com", "dougshelley66@gmail.com"]
         },
         {
+
             "github_id": "01deyishu",
             "companies": [
                 {
@@ -31202,6 +31203,18 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+        {
+            "launchpad_id": "ianhowell",
+            "github_id": "ian-howell",
+            "companies": [
+                {
+                    "company_name": "AT&T",
+                    "end_date": null
+                }
+            ]
+            "user_name": "Ian Howell",
+            "emails": ["ian.howell0@gmail.com", "ian.howell@att.com"]
         }
     ],
     "companies": [
