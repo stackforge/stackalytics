@@ -12417,6 +12417,17 @@
             "emails": ["jeremyfreudberg@gmail.com", "jfreud@bu.edu"]
         },
         {
+            "launchpad_id": "jgzhang19",
+            "companies": [
+                {
+                    "company_name": "CFCA",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhangjianguo",
+            "emails": ["276178115@qq.com"]
+        },
+        {
             "launchpad_id": "jhalterman",
             "companies": [
                 {
