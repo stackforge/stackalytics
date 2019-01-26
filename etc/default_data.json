@@ -19394,6 +19394,7 @@
         },
         {
             "launchpad_id": "oomichi",
+            "github_id": "oomichi",
             "companies": [
                 {
                     "company_name": "NEC",
@@ -19401,7 +19402,7 @@
                 }
             ],
             "user_name": "Ken'ichi Ohmichi",
-            "emails": ["ken1ohmichi@gmail.com", "oomichi@mxs.nes.nec.co.jp"]
+            "emails": ["ken1ohmichi@gmail.com", "ken-oomichi@wx.jp.nec.com", "oomichi@mxs.nes.nec.co.jp"]
         },
         {
             "launchpad_id": "opencompute",
