@@ -20262,7 +20262,7 @@
             "companies": [
                 {
                     "company_name": "Daocloud",
-                    "end_date": "null"
+                    "end_date": null
                 },
             ],
             "user_name": "Byron wang",
