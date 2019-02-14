@@ -20256,18 +20256,18 @@
             "user_name": "Matt Panik",
             "emails": ["pnkmtt@gmail.com"]
         },
-	{
-	    "launchpad_id": "pointers",
-	    "github_id": "41tair",
-	    "companies": [
-		{
-		    "company_name": "DaoCloud",
-		    "end_date": null
-		}
-	    ],
-	    "user_name": "Byron Wang",
-	    "emails": ["altair96wby@gmail.com", "altair.wang@daocloud.io"]
-	},
+        {
+            "launchpad_id": "pointers",
+            "github_id": "41tair",
+            "companies": [
+                {
+                    "company_name": "DaoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Byron Wang",
+            "emails": ["altair96wby@gmail.com", "altair.wang@daocloud.io"]
+        },
         {
             "launchpad_id": "portdirect",
             "github_id": "intlabs",
