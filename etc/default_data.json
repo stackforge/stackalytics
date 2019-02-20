@@ -3854,6 +3854,17 @@
             "emails": ["fanbaofa@gmail.com", "baofa.fan@daocloud.io"]
         },
         {
+            "github_id": "lrx0014",
+            "companies": [
+                {
+                    "company_name": "DaoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Renxiang Li",
+            "emails": ["lrx0014@hotmail.com", "renxiang.li@daocloud.io"]
+        },
+        {
             "launchpad_id": "carlpuga",
             "companies": [
                 {
