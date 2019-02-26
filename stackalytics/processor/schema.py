@@ -193,6 +193,12 @@ default_data = {
                     },
                     "module_group_id": {
                         "type": "string"
+                    },
+                    "pattern": {
+                        "type": "string"
+                    },
+                    "prefix": {
+                        "type": "string"
                     }
                 },
                 "required": ["organization"],

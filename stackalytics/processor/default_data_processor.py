@@ -65,7 +65,9 @@ def _retrieve_project_list_from_sources(project_sources):
 
 
 def _retrieve_project_list_from_gerrit(project_source):
-    LOG.info('Retrieving project list from Gerrit')
+    LOG.info('Retrieving project list from Gerrit for organization')
+    organization = project_source['organization']
+    prefix = project_source.get('prefix') or organization + '/'
     try:
         uri = project_source.get('uri') or CONF.review_uri
         gerrit_inst = rcs.Gerrit(uri)
@@ -74,15 +76,15 @@ def _retrieve_project_list_from_gerrit(project_source):
         username = project_source.get('ssh_username') or CONF.ssh_username
         gerrit_inst.setup(key_filename=key_filename, username=username)
 
-        project_list = gerrit_inst.get_project_list()
+        git_repos = gerrit_inst.get_project_list(prefix)
         gerrit_inst.close()
     except rcs.RcsException:
         LOG.error('Failed to retrieve list of projects')
         raise
 
-    organization = project_source['organization']
-    LOG.debug('Get list of projects for organization %s', organization)
-    git_repos = [f for f in project_list if f.startswith(organization + "/")]
+    pattern = project_source.get('pattern')
+    if pattern:
+        git_repos = [f for f in git_repos if re.match(pattern, f)]
 
     git_base_uri = project_source.get('git_base_uri') or CONF.git_base_uri
 
