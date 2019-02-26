@@ -182,8 +182,11 @@ class Gerrit(Rcs):
                 review['module'] = module
                 yield review
 
-    def get_project_list(self):
-        exec_result = self._exec_command_with_retrial('gerrit ls-projects')
+    def get_project_list(self, prefix=None):
+        cmd = 'gerrit ls-projects'
+        if prefix:
+            cmd += ' --prefix %s' % prefix
+        exec_result = self._exec_command_with_retrial(cmd)
         if not exec_result:
             raise RcsException("Gerrit returned no projects")
         stdin, stdout, stderr = exec_result
