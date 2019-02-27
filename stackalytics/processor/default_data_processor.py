@@ -96,6 +96,7 @@ def _retrieve_project_list_from_gerrit(project_source):
             'organization': organization,
             'uri': repo_uri,
             'releases': [],
+            'repo_name': repo,
             'has_gerrit': True,
         }
 
