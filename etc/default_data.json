@@ -19986,7 +19986,6 @@
         },
         {
             "launchpad_id": "peibin",
-            "github_id": "peibingit",
             "companies": [
                 {
                     "company_name": "BoCloud",
@@ -19994,7 +19993,7 @@
                 }
             ],
             "user_name": "peibin",
-            "emails": ["987157985@qq.com","peibin@beyondcent.com"]
+            "emails": ["peibin@beyondcent.com","987157985@qq.com"]
         },
         {
             "launchpad_id": "peiy",
