@@ -29217,17 +29217,6 @@
             "user_name": "JackieYuan",
             "emails": ["jing.yuan@easystack.cn", "yj2311@126.com"]
         },
-        {
-            "launchpad_id": "ynshenoy",
-            "companies": [
-                {
-                    "company_name": "Reliance",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Yogeshwar Shenoy",
-            "emails": ["ynshenoy@gmail.com", "yogeshwar.shenoy@ril.com"]
-        },
 	{
             "launchpad_id": "ymlong",
             "companies": [
@@ -29238,6 +29227,17 @@
             ],
             "user_name": "ymlong",
             "emails": ["yuemian@beyondcent.com", "18261193206@163.com"]
+        },
+        {
+            "launchpad_id": "ynshenoy",
+            "companies": [
+                {
+                    "company_name": "Reliance",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Yogeshwar Shenoy",
+            "emails": ["ynshenoy@gmail.com", "yogeshwar.shenoy@ril.com"]
         },
         {
             "launchpad_id": "yogesh-srikrishnan",
