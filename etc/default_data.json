@@ -1,17 +1,6 @@
 {
     "users": [
         {
-            "launchpad_id": "beemarie",
-            "companies": [
-                {
-                    "company_name": "IBM",
-                    "end_date": null
-                }
-            ],
-            "user_name": "Belinda Vennam",
-            "emails": ["beemarie@us.ibm.com", "beemarie88@gmail.com"]
-        },
-        {
             "launchpad_id": "0-doug",
             "companies": [
                 {
@@ -3044,6 +3033,17 @@
             ],
             "user_name": "Surajit Roy",
             "emails": ["sroy@walmartlabs.com", "bea_surajit_roy@yahoo.com", "beasurajitroy@gmail.com"]
+        },
+        {
+            "github_id": "beemarie",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Belinda Vennam",
+            "emails": ["beemarie@us.ibm.com", "beemarie88@gmail.com"]
         },
         {
             "launchpad_id": "belliott",
