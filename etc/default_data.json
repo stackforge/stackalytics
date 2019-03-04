@@ -1,6 +1,17 @@
 {
     "users": [
         {
+            "launchpad_id": "beemarie",
+            "companies": [
+                {
+                    "company_name": "IBM",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Belinda Vennam",
+            "emails": ["beemarie@us.ibm.com", "beemarie88@gmail.com"]
+        },
+        {
             "launchpad_id": "0-doug",
             "companies": [
                 {
