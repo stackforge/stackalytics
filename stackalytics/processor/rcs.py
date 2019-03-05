@@ -16,6 +16,7 @@
 import json
 import re
 
+from oslo_config import cfg
 from oslo_log import log as logging
 import paramiko
 import time
@@ -27,6 +28,8 @@ GERRIT_URI_PREFIX = r'^gerrit:\/\/'
 PAGE_LIMIT = 100
 REQUEST_COUNT_LIMIT = 20
 SSH_ERRORS_LIMIT = 10
+
+CONF = cfg.CONF
 
 
 class RcsException(Exception):
@@ -67,6 +70,11 @@ class Gerrit(Rcs):
 
         self.key_filename = None
         self.username = None
+        self.sock = None
+        self.proxy_command = CONF.proxy_command
+        if self.proxy_command:
+            self.proxy_command %= (self.hostname, self.port)
+
         self.ssh_errors_limit = SSH_ERRORS_LIMIT
 
         self.client = paramiko.SSHClient()
@@ -87,10 +95,12 @@ class Gerrit(Rcs):
         self._connect()
 
     def _connect(self):
+        if self.proxy_command:
+            self.sock = paramiko.ProxyCommand(self.proxy_command)
         try:
             self.client.connect(self.hostname, port=self.port,
                                 key_filename=self.key_filename,
-                                username=self.username)
+                                username=self.username, sock=self.sock)
             LOG.debug('Successfully connected to Gerrit')
         except Exception as e:
             LOG.error('Failed to connect to gerrit %(host)s:%(port)s. '
@@ -203,6 +213,8 @@ class Gerrit(Rcs):
 
     def close(self):
         self.client.close()
+        if self.sock:
+            self.sock.close()
 
 
 def get_rcs(uri):

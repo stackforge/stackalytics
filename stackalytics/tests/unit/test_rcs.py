@@ -16,9 +16,13 @@
 import json
 
 import mock
+from oslo_config import cfg
 import testtools
 
+from stackalytics.processor import config
 from stackalytics.processor import rcs
+
+CONF = cfg.CONF
 
 REVIEW_ONE = json.dumps(
     {"project": "openstack/nova", "branch": "master", "topic": "bug/1494374",
@@ -31,6 +35,10 @@ REVIEW_END_LINE = json.dumps(
 
 
 class TestRcs(testtools.TestCase):
+
+    def setUp(self):
+        super(TestRcs, self).setUp()
+        CONF.register_opts(config.CONNECTION_OPTS + config.PROCESSOR_OPTS)
 
     @mock.patch('paramiko.SSHClient')
     def test_setup(self, mock_client_cons):
@@ -45,7 +53,30 @@ class TestRcs(testtools.TestCase):
 
         mock_connect.assert_called_once_with(
             'review.openstack.org', port=rcs.DEFAULT_PORT, key_filename='key',
-            username='user')
+            username='user', sock=None)
+
+    @mock.patch('paramiko.ProxyCommand')
+    @mock.patch('paramiko.SSHClient')
+    def test_setup_with_proxy(self, mock_client_cons, mock_proxy_command):
+        mock_client = mock.Mock()
+        mock_client_cons.return_value = mock_client
+
+        mock_connect = mock.Mock()
+        mock_client.connect = mock_connect
+
+        mock_proxy = mock.Mock()
+        mock_proxy_command.return_value = mock_proxy
+
+        CONF.set_override('proxy_command', '%s:%s')
+
+        gerrit = rcs.Gerrit('gerrit://review.openstack.org')
+        gerrit.setup(username='user', key_filename='key')
+
+        mock_proxy_command.assert_called_once_with(
+            'review.openstack.org:%s' % rcs.DEFAULT_PORT)
+        mock_connect.assert_called_once_with(
+            'review.openstack.org', port=rcs.DEFAULT_PORT, key_filename='key',
+            username='user', sock=mock_proxy)
 
     @mock.patch('paramiko.SSHClient')
     def test_setup_error(self, mock_client_cons):
@@ -62,7 +93,7 @@ class TestRcs(testtools.TestCase):
 
         mock_connect.assert_called_once_with(
             'review.openstack.org', port=rcs.DEFAULT_PORT, key_filename='key',
-            username='user')
+            username='user', sock=None)
 
     @mock.patch('paramiko.SSHClient')
     @mock.patch('time.time')
