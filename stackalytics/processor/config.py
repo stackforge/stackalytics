@@ -59,6 +59,8 @@ PROCESSOR_OPTS = [
                help='Number of seconds to wait for remote response'),
     cfg.IntOpt('gerrit-retry', default=10,
                help='How many times to retry after Gerrit errors'),
+    cfg.StrOpt('proxy-command', default=None,
+               help='Proxy command to support Gerrit query behind proxy'),
 ]
 
 
