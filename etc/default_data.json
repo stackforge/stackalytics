@@ -31460,17 +31460,6 @@
             "emails": ["zhu.xuanlong@zte.com.cn"]
         },
         {
-            "launchpad_id": "zhupeixiang",
-            "companies": [
-                {
-                    "company_name": "BoCloud",
-                    "end_date": null
-                }
-            ],
-            "user_name": "zhupeixiang",
-            "emails": ["zhupeixiang@beyondcent.com"]
-        },
-        {
             "launchpad_id": "zhuangzejian",
             "companies": [
                 {
@@ -31546,6 +31535,17 @@
             ],
             "user_name": "zhulingjie",
             "emails": ["easyzlj@gmail.com"]
+        },
+        {
+            "launchpad_id": "zhupeixiang",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhupeixiang",
+            "emails": ["zhupeixiang@beyondcent.com"]
         },
         {
             "launchpad_id": "zhusz",
