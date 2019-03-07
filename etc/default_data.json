@@ -21169,6 +21169,17 @@
             "emails": ["qianyuqiao1@outlook.com"]
         },
         {
+            "launchpad_id": "qienze",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "qienze",
+            "emails": ["qienze@beyondcent.com", "sepveneto@qq.com"]
+        },
+        {
              "launchpad_id": "qiky",
              "zanata_id": "qiaiyuan",
              "companies": [
@@ -31447,6 +31458,17 @@
             ],
             "user_name": "zhuxuanlong",
             "emails": ["zhu.xuanlong@zte.com.cn"]
+        },
+        {
+            "launchpad_id": "zhupeixiang",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "zhupeixiang",
+            "emails": ["zhupeixiang@beyondcent.com"]
         },
         {
             "launchpad_id": "zhuangzejian",
