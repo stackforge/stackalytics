@@ -70,7 +70,7 @@ def _log_module(module, primary_module, modified_since):
 
 def log(repo, modified_since):
     repo_module = repo['module']
-    modules = [repo_module] + repo.get('aliases', [])
+    modules = [repo['launchpad_name']] + repo.get('aliases', [])
 
     for module in modules:
         if not launchpad_utils.lp_module_exists(module):
