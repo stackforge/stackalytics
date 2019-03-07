@@ -15265,17 +15265,6 @@
             "user_name": "zhiyuan su",
             "emails": ["suzhiyuan@inspur.com"]
         },
-	{
-            "launchpad_id": "lbbeyond",
-            "companies": [
-                {
-                    "company_name": "BoCloud",
-                    "end_date": null
-                }
-            ],
-            "user_name": "lubo",
-            "emails": ["lubo@beyondcent.com","1044140385@qq.com"]
-        },
         {
             "launchpad_id": "lcsong",
             "companies": [
