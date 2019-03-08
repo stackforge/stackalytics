@@ -31799,6 +31799,21 @@
             ],
             "user_name": "zzxwill",
             "emails": ["zzxwill@gmail.com"]
+        },
+        {
+            "launchpad_id": "vegasq",
+            "companies": [
+                {
+                    "company_name": "Mirantis",
+                    "end_date": null
+                },
+                {
+                    "company_name": "AT&T",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Mykola Yakovliev",
+            "emails": ["vegasq@gmail.com", "myakovliev@mirantis.com", "my5878@att.com"]
         }
     ],
     "companies": [
