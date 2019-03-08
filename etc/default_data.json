@@ -1,4 +1,4 @@
-{
+﻿{
     "users": [
         {
             "launchpad_id": "0-doug",
@@ -15264,6 +15264,17 @@
             ],
             "user_name": "zhiyuan su",
             "emails": ["suzhiyuan@inspur.com"]
+        },
+        {
+            "launchpad_id": "lbbeyond",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "lubo",
+            "emails": ["lubo@beyondcent.com"]
         },
         {
             "launchpad_id": "lcsong",
