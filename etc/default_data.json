@@ -1,4 +1,4 @@
-{
+﻿{
     "users": [
         {
             "launchpad_id": "0-doug",
@@ -19413,6 +19413,17 @@
             ],
             "user_name": "Zhenguo Niu",
             "emails": ["niuzhenguo@huawei.com", "zhenguo@unitedstack.com", "niu.zglinux@gmail.com"]
+        },
+        {
+            "launchpad_id": "nkodreamer",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "nkodreamer",
+            "emails": ["zhaozhangcheng@beyondcent.com","942507848@qq.com"]
         },
         {
             "github_id": "nkwangleiGIT",
