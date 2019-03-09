@@ -19481,6 +19481,17 @@
             "user_name": "Chris Krelle",
             "emails": ["nobodycam@gmail.com"]
         },
+	{
+            "launchpad_id": "nodetext1",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": null
+                }
+            ],
+            "user_name": "XuChenXin",
+            "emails": ["xuchenxin@beyondcent.com"]
+        },
         {
             "launchpad_id": "noelbk",
             "companies": [
