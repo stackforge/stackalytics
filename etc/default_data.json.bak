@@ -28717,6 +28717,17 @@
             "user_name": "Ken Wronkiewicz",
             "emails": ["wh-openstack@wirewd.com", "wh-ubuntuone@wirewd.com"]
         },
+	{
+            "launchpad_id": "whbo",
+            "companies": [
+                {
+                    "company_name": "BoCloud",
+                    "end_date": "null"
+                }
+            ],
+            "user_name": "whbo",
+            "emails": ["wanghongbo@beyondcent.com"]
+        },
         {
             "launchpad_id": "whoami-rajat",
             "companies": [
