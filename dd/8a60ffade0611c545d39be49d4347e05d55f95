@@ -1,0 +1,10 @@
+Code-Review+1: Ilya Shakhat <shakhat@gmail.com>
+Code-Review+1: Andrii Ostapenko <aostapenko@mirantis.com>
+Code-Review+2: Sergey Nikitin <nikitinserv@gmail.com>
+Workflow+1: Sergey Nikitin <nikitinserv@gmail.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Mon, 11 Mar 2019 16:59:03 +0000
+Reviewed-on: https://review.openstack.org/642232
+Project: openstack/stackalytics
+Branch: refs/heads/master
