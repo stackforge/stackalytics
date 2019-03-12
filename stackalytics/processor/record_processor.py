@@ -97,9 +97,11 @@ class RecordProcessor(object):
                 user_name = lp_user_name
 
         gerrit_id = record.get('gerrit_id')
+        gerrit_tuple = None
         if gerrit_id:
+            gerrit_tuple = (record['gerrit_hostname'], [gerrit_id])
             user_g = user_processor.load_user(
-                self.runtime_storage_inst, gerrit_id=gerrit_id) or {}
+                self.runtime_storage_inst, gerrit_id=gerrit_tuple) or {}
             if (self._need_to_fetch_launchpad() and (not user_g) and
                     (not launchpad_id) and (not user_e.get('launchpad_id'))):
                 # query LP
@@ -133,7 +135,7 @@ class RecordProcessor(object):
             return user_e
 
         user = user_processor.create_user(
-            self.domains_index, launchpad_id, email, gerrit_id, zanata_id,
+            self.domains_index, launchpad_id, email, gerrit_tuple, zanata_id,
             user_name)
 
         if user_e or user_l or user_g or user_z:
@@ -251,6 +253,7 @@ class RecordProcessor(object):
                                        or 'Anonymous Coward')
         if uploader.get('email'):
             patch_record['author_email'] = uploader['email'].lower()
+        patch_record['gerrit_hostname'] = review['gerrit_hostname']
         patch_record['module'] = review['module']
         patch_record['branch'] = review['branch']
         patch_record['review_id'] = review['id']
@@ -275,6 +278,7 @@ class RecordProcessor(object):
         mark['branch'] = review['branch']
         mark['review_id'] = review['id']
         mark['patch'] = int(patch['number'])
+        mark['gerrit_hostname'] = review['gerrit_hostname']
 
         if reviewer['username'] == patch['uploader'].get('username'):
             # reviewer is the same as author of the patch
