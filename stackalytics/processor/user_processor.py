@@ -23,12 +23,12 @@ INDEPENDENT = '*independent'
 ROBOTS = '*robots'
 
 
-def make_user_id(emails=None, launchpad_id=None, gerrit_id=None,
+def make_user_id(emails=None, launchpad_id=None, gerrit_tuple=None,
                  member_id=None, github_id=None, zanata_id=None):
     if launchpad_id or emails:
         return launchpad_id or emails[0]
-    if gerrit_id:
-        return 'gerrit:%s' % gerrit_id
+    if gerrit_tuple:
+        return 'gerrit:%s:%s' % gerrit_tuple
     if member_id:
         return 'member:%s' % member_id
     if github_id:
@@ -48,9 +48,10 @@ def store_user(runtime_storage_inst, user):
         runtime_storage_inst.set_by_key('user:%s' % user['user_id'], user)
     if user.get('launchpad_id'):
         runtime_storage_inst.set_by_key('user:%s' % user['launchpad_id'], user)
-    if user.get('gerrit_id'):
-        runtime_storage_inst.set_by_key('user:gerrit:%s' % user['gerrit_id'],
-                                        user)
+    for hostname, ids in user.get('gerrit_ids', {}).items():
+        for gerrit_id in ids:
+            runtime_storage_inst.set_by_key(
+                'user:gerrit:%s:%s' % (hostname, gerrit_id), user)
     if user.get('github_id'):
         runtime_storage_inst.set_by_key('user:github:%s' % user['github_id'],
                                         user)
@@ -62,10 +63,10 @@ def store_user(runtime_storage_inst, user):
 
 
 def load_user(runtime_storage_inst, seq=None, user_id=None, email=None,
-              launchpad_id=None, gerrit_id=None, member_id=None,
+              launchpad_id=None, gerrit_tuple=None, member_id=None,
               github_id=None, zanata_id=None):
 
-    key = make_user_id(gerrit_id=gerrit_id, member_id=member_id,
+    key = make_user_id(gerrit_tuple=gerrit_tuple, member_id=member_id,
                        github_id=github_id, zanata_id=zanata_id)
     if not key:
         key = seq or user_id or launchpad_id or email
@@ -85,8 +86,14 @@ def update_user_profile(stored_user, user):
     if stored_user:
         updated_user = copy.deepcopy(stored_user)
         updated_user.update(user)
-        updated_user['emails'] = list(set(stored_user.get('emails', [])) |
-                                      set(user.get('emails', [])))
+        updated_user['emails'] = sorted(
+            list(set(stored_user.get('emails', [])) |
+                 set(user.get('emails', [])))
+        )
+        gerrit_ids = _merge_gerrit_ids([stored_user, user])
+        if gerrit_ids:
+            updated_user['gerrit_ids'] = gerrit_ids
+
     else:
         updated_user = copy.deepcopy(user)
     updated_user['static'] = True
@@ -123,14 +130,15 @@ def get_company_by_email(domains_index, email):
     return None
 
 
-def create_user(domains_index, launchpad_id, email, gerrit_id, zanata_id,
+def create_user(domains_index, launchpad_id, email, gerrit_tuple, zanata_id,
                 user_name):
     company = get_company_by_email(domains_index, email) or INDEPENDENT
     emails = [email] if email else []
 
     user = {
         'user_id': make_user_id(
-            emails=emails, launchpad_id=launchpad_id, gerrit_id=gerrit_id,
+            emails=emails, launchpad_id=launchpad_id,
+            gerrit_tuple=gerrit_tuple,
             zanata_id=zanata_id),
         'launchpad_id': launchpad_id,
         'user_name': user_name or '',
@@ -141,8 +149,10 @@ def create_user(domains_index, launchpad_id, email, gerrit_id, zanata_id,
         'emails': emails,
     }
 
-    if gerrit_id:
-        user['gerrit_id'] = gerrit_id
+    if gerrit_tuple:
+        user['gerrit_ids'] = {
+            gerrit_tuple[0]: [gerrit_tuple[1]]
+        }
     if zanata_id:
         user['zanata_id'] = zanata_id
 
@@ -170,6 +180,20 @@ def update_user_affiliation(domains_index, user):
             break
 
 
+def _merge_gerrit_ids(users):
+    gerrit_ids = {}
+    hostnames = set()
+    for user in users:
+        hostnames.update(set(user.get('gerrit_ids', {}).keys()))
+    for hostname in hostnames:
+        ids = set()
+        for user in users:
+            ids |= set(user.get('gerrit_ids', {}).get(hostname, []))
+        if ids:
+            gerrit_ids[hostname] = sorted(list(ids))
+    return gerrit_ids
+
+
 def merge_user_profiles(domains_index, user_profiles):
     """Merge user profiles into one
 
@@ -182,23 +206,18 @@ def merge_user_profiles(domains_index, user_profiles):
     """
     LOG.debug('Merge profiles: %s', user_profiles)
 
-    # check of there are more than 1 launchpad_id nor gerrit_id
+    # check of there are more than 1 launchpad_id
     lp_ids = set(u.get('launchpad_id') for u in user_profiles
                  if u.get('launchpad_id'))
     if len(lp_ids) > 1:
         LOG.debug('Ambiguous launchpad ids: %s on profiles: %s',
                   lp_ids, user_profiles)
-    g_ids = set(u.get('gerrit_id') for u in user_profiles
-                if u.get('gerrit_id'))
-    if len(g_ids) > 1:
-        LOG.debug('Ambiguous gerrit ids: %s on profiles: %s',
-                  g_ids, user_profiles)
 
     merged_user = {}  # merged user profile
 
     # collect ordinary fields
-    for key in ['seq', 'user_name', 'user_id', 'gerrit_id', 'github_id',
-                'launchpad_id', 'companies', 'static', 'zanata_id']:
+    for key in ['seq', 'user_name', 'user_id', 'github_id', 'launchpad_id',
+                'companies', 'static', 'zanata_id']:
         value = next((v.get(key) for v in user_profiles if v.get(key)),
                      None)
         if value:
@@ -218,9 +237,12 @@ def merge_user_profiles(domains_index, user_profiles):
     for u in user_profiles:
         emails |= set(u.get('emails', []))
         core_in |= set(u.get('core', []))
-    merged_user['emails'] = list(emails)
+    merged_user['emails'] = sorted(list(emails))
     if core_in:
-        merged_user['core'] = list(core_in)
+        merged_user['core'] = sorted(list(core_in))
+    gerrit_ids = _merge_gerrit_ids(user_profiles)
+    if gerrit_ids:
+        merged_user['gerrit_ids'] = gerrit_ids
 
     # merge companies
     merged_companies = merged_user['companies']

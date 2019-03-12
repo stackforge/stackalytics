@@ -398,6 +398,7 @@ class TestRecordProcessor(testtools.TestCase):
         processed_review = list(record_processor_inst.process([
             {'record_type': 'review',
              'id': 'I1045730e47e9e6ad31fcdfbaefdad77e2f3b2c3e',
+             'gerrit_hostname': 'review.openstack.org',
              'subject': 'Fix AttributeError in Keypair._add_details()',
              'owner': {'name': 'John Doe',
                        'email': 'johndoe@ibm.com',
@@ -416,7 +417,8 @@ class TestRecordProcessor(testtools.TestCase):
         self.assertRecordsMatch(expected_review, processed_review)
         user = user_processor.load_user(
             record_processor_inst.runtime_storage_inst, user_id='john_doe')
-        self.assertEqual('John_Doe', user['gerrit_id'])
+        self.assertEqual('John_Doe',
+                         user['gerrit_ids']['review.openstack.org'][0])
 
     def test_process_review_without_name(self):
         record_processor_inst = self.make_record_processor()
@@ -424,6 +426,7 @@ class TestRecordProcessor(testtools.TestCase):
         records = list(record_processor_inst.process([
             {
                 'record_type': 'review',
+                'gerrit_hostname': 'review.openstack.org',
                 'module': 'sandbox',
                 "project": "openstack-dev/sandbox",
                 "branch": "master",
@@ -661,6 +664,7 @@ class TestRecordProcessor(testtools.TestCase):
              'date_created': 1234567890},
             {'record_type': 'review',
              'id': 'I1045730e47e9e6ad31fcdfbaefdad77e2f3b2c3e',
+             'gerrit_hostname': 'review.openstack.org',
              'subject': 'Fix AttributeError in Keypair._add_details()',
              'owner': {'name': 'John Doe',
                        'email': 'john_doe@gmail.com',
@@ -687,7 +691,7 @@ class TestRecordProcessor(testtools.TestCase):
         user = {'seq': 1,
                 'user_id': 'john_doe',
                 'launchpad_id': 'john_doe',
-                'gerrit_id': 'john_doe',
+                'gerrit_ids': {'review.openstack.org': ['john_doe']},
                 'user_name': 'John Doe',
                 'emails': ['john_doe@gmail.com'],
                 'companies': [{'company_name': '*independent', 'end_date': 0}]}
@@ -757,6 +761,7 @@ class TestRecordProcessor(testtools.TestCase):
         processed_records = list(record_processor_inst.process([
             {'record_type': 'review',
              'id': 'I1045730e47e9e6ad31fcdfbaefdad77e2f3b2c3e',
+             'gerrit_hostname': 'review.openstack.org',
              'subject': 'Fix AttributeError in Keypair._add_details()',
              'owner': {'name': 'John Doe',
                        'email': 'john_doe@gmail.com',
@@ -788,7 +793,7 @@ class TestRecordProcessor(testtools.TestCase):
         user = {'seq': 1,
                 'user_id': 'john_doe',
                 'launchpad_id': 'john_doe',
-                'gerrit_id': 'john_doe',
+                'gerrit_ids': {'review.openstack.org': ['john_doe']},
                 'user_name': 'John Doe',
                 'emails': ['john_doe@gmail.com'],
                 'companies': [{'company_name': '*independent', 'end_date': 0}]}
@@ -867,6 +872,7 @@ class TestRecordProcessor(testtools.TestCase):
              'date': 1234567890},
             {'record_type': 'review',
              'id': 'I1045730e47e9e6ad31fcdfbaefdad77e2f3b2c3e',
+             'gerrit_hostname': 'review.openstack.org',
              'subject': 'Fix AttributeError in Keypair._add_details()',
              'owner': {'name': 'John Doe',
                        'email': 'john_doe@gmail.com',
@@ -877,7 +883,7 @@ class TestRecordProcessor(testtools.TestCase):
 
         user = {'seq': 1,
                 'user_id': 'john_doe@gmail.com',
-                'gerrit_id': 'john_doe',
+                'gerrit_ids': {'review.openstack.org': ['john_doe']},
                 'user_name': 'John Doe',
                 'emails': ['john_doe@gmail.com'],
                 'companies': [{'company_name': '*independent', 'end_date': 0}]}
@@ -886,7 +892,7 @@ class TestRecordProcessor(testtools.TestCase):
             email='john_doe@gmail.com'))
         self.assertEqual(user, user_processor.load_user(
             record_processor_inst.runtime_storage_inst,
-            gerrit_id='john_doe'))
+            gerrit_tuple=('review.openstack.org', 'john_doe')))
 
     def test_process_email_then_review_gerrit_id_same_as_launchpad_id(self):
         # it is expected that the user profile will contain email, LP id and
@@ -905,6 +911,7 @@ class TestRecordProcessor(testtools.TestCase):
              'date': 1234567890},
             {'record_type': 'review',
              'id': 'I1045730e47e9e6ad31fcdfbaefdad77e2f3b2c3e',
+             'gerrit_hostname': 'review.openstack.org',
              'subject': 'Fix AttributeError in Keypair._add_details()',
              'owner': {'name': 'John Doe',
                        'email': 'john_doe@gmail.com',
@@ -916,7 +923,7 @@ class TestRecordProcessor(testtools.TestCase):
         user = {'seq': 1,
                 'user_id': 'john_doe',
                 'launchpad_id': 'john_doe',
-                'gerrit_id': 'john_doe',
+                'gerrit_ids': {'review.openstack.org': ['john_doe']},
                 'user_name': 'John Doe',
                 'emails': ['john_doe@gmail.com'],
                 'companies': [{'company_name': '*independent', 'end_date': 0}]}
@@ -928,7 +935,7 @@ class TestRecordProcessor(testtools.TestCase):
             user_id='john_doe'))
         self.assertEqual(user, user_processor.load_user(
             record_processor_inst.runtime_storage_inst,
-            gerrit_id='john_doe'))
+            gerrit_tuple=('review.openstack.org', 'john_doe')))
 
     def test_process_commit_then_review_with_different_email(self):
         record_processor_inst = self.make_record_processor(
@@ -946,6 +953,7 @@ class TestRecordProcessor(testtools.TestCase):
              'release_name': 'havana'},
             {'record_type': 'review',
              'id': 'I1045730e47e9e6ad31fcdfbaefdad77e2f3b2c3e',
+             'gerrit_hostname': 'review.openstack.org',
              'subject': 'Fix AttributeError in Keypair._add_details()',
              'owner': {'name': 'Bill Smith', 'email': 'bill@smith.to',
                        'username': 'bsmith'},
@@ -966,6 +974,7 @@ class TestRecordProcessor(testtools.TestCase):
         user = {'seq': 1,
                 'user_id': 'john_doe',
                 'launchpad_id': 'john_doe',
+                'gerrit_ids': {'review.openstack.org': ['john_doe']},
                 'user_name': 'John Doe',
                 'emails': ['john_doe@ibm.com', 'john_doe@gmail.com'],
                 'companies': [{'company_name': 'IBM', 'end_date': 0}]}
@@ -1002,6 +1011,7 @@ class TestRecordProcessor(testtools.TestCase):
              'date': 1234567890},
             {'record_type': 'review',
              'id': 'I1045730e47e9e6ad31fcdfbaefdad77e2f3b2c3e',
+             'gerrit_hostname': 'review.openstack.org',
              'subject': 'Fix AttributeError in Keypair._add_details()',
              'owner': {'name': 'John Doe',
                        'email': 'john_doe@ibm.com',
@@ -1015,7 +1025,7 @@ class TestRecordProcessor(testtools.TestCase):
         user = {'seq': 2,
                 'user_id': 'john_doe',
                 'launchpad_id': 'john_doe',
-                'gerrit_id': 'john_doe',
+                'gerrit_ids': {'review.openstack.org': ['john_doe']},
                 'user_name': 'John Doe',
                 'emails': ['john_doe@ibm.com'],
                 'companies': [{'company_name': 'IBM', 'end_date': 0}]}
@@ -1030,7 +1040,138 @@ class TestRecordProcessor(testtools.TestCase):
         self.assertEqual(user, user_processor.load_user(
             runtime_storage_inst, email='john_doe@ibm.com'))
         self.assertEqual(user, user_processor.load_user(
-            runtime_storage_inst, gerrit_id='john_doe'))
+            runtime_storage_inst,
+            gerrit_tuple=('review.openstack.org', 'john_doe')))
+
+        # all records should have the same user_id and company name
+        for record in runtime_storage_inst.get_all_records():
+            self.assertEqual('john_doe', record['user_id'],
+                             message='Record %s' % record['primary_key'])
+            self.assertEqual('IBM', record['company_name'],
+                             message='Record %s' % record['primary_key'])
+
+    def test_process_reviews_two_gerrits(self):
+        record_processor_inst = self.make_record_processor(
+            lp_user_name={
+                'john_doe': {'name': 'john_doe', 'display_name': 'John Doe'}
+            },
+            companies=[{'company_name': 'IBM', 'domains': ['ibm.com']}],
+        )
+        runtime_storage_inst = record_processor_inst.runtime_storage_inst
+
+        runtime_storage_inst.set_records(record_processor_inst.process([
+            {'record_type': 'review',
+             'id': 'I1045730e47e9e6ad31fcdfbaefdad77e2f3b2c3e',
+             'gerrit_hostname': 'review.openstack.org',
+             'subject': 'Fix AttributeError in Keypair._add_details()',
+             'owner': {'name': 'John Doe',
+                       'email': 'john_doe@ibm.com',
+                       'username': 'john_doe'},
+             'createdOn': 1379404951,
+             'module': 'nova', 'branch': 'master'},
+            {'record_type': 'review',
+             'id': 'I1045730e47e9e6ad31fcdfbaefdad77e2f3b2c3f',
+             'gerrit_hostname': 'review.gerrithub.io',
+             'subject': 'Fix AttributeError in Keypair._add_details()',
+             'owner': {'name': 'John Doe',
+                       'email': 'john_doe@ibm.com',
+                       'username': 'john_doe'},
+             'createdOn': 1379404951,
+             'module': 'cinder', 'branch': 'master'}
+        ]))
+
+        user = {'seq': 1,
+                'user_id': 'john_doe',
+                'launchpad_id': 'john_doe',
+                'gerrit_ids': {
+                    'review.openstack.org': ['john_doe'],
+                    'review.gerrithub.io': ['john_doe'],
+                },
+                'user_name': 'John Doe',
+                'emails': ['john_doe@ibm.com'],
+                'companies': [{'company_name': 'IBM', 'end_date': 0}]}
+        runtime_storage_inst = record_processor_inst.runtime_storage_inst
+        self.assertEqual(user, user_processor.load_user(
+            runtime_storage_inst, user_id='john_doe'))
+        self.assertEqual(user, user_processor.load_user(
+            runtime_storage_inst, email='john_doe@ibm.com'))
+        self.assertEqual(user, user_processor.load_user(
+            runtime_storage_inst,
+            gerrit_tuple=('review.openstack.org', 'john_doe')))
+        self.assertEqual(user, user_processor.load_user(
+            runtime_storage_inst,
+            gerrit_tuple=('review.gerrithub.io', 'john_doe')))
+
+        # all records should have the same user_id and company name
+        for record in runtime_storage_inst.get_all_records():
+            self.assertEqual('john_doe', record['user_id'],
+                             message='Record %s' % record['primary_key'])
+            self.assertEqual('IBM', record['company_name'],
+                             message='Record %s' % record['primary_key'])
+
+    def test_process_reviews_two_ids_in_one_gerrit(self):
+        record_processor_inst = self.make_record_processor(
+            lp_user_name={
+                'john_doe': {'name': 'john_doe', 'display_name': 'John Doe'}
+            },
+            companies=[{'company_name': 'IBM', 'domains': ['ibm.com']}],
+        )
+        runtime_storage_inst = record_processor_inst.runtime_storage_inst
+
+        runtime_storage_inst.set_records(record_processor_inst.process([
+            {'record_type': 'review',
+             'id': 'I1045730e47e9e6ad31fcdfbaefdad77e2f3b2c3e',
+             'gerrit_hostname': 'review.openstack.org',
+             'subject': 'Fix AttributeError in Keypair._add_details()',
+             'owner': {'name': 'John Doe',
+                       'email': 'john_doe@ibm.com',
+                       'username': 'john_doe'},
+             'createdOn': 1379404951,
+             'module': 'nova', 'branch': 'master'},
+            {'record_type': 'review',
+             'id': 'I1045730e47e9e6ad31fcdfbaefdad77e2f3b2c3f',
+             'gerrit_hostname': 'review.openstack.org',
+             'subject': 'Fix AttributeError in Keypair._add_details()',
+             'owner': {'name': 'John Doe',
+                       'email': 'john_doe@ibm.com',
+                       'username': 'johnathan_doe'},
+             'createdOn': 1379404951,
+             'module': 'nova', 'branch': 'master'},
+            {'record_type': 'review',
+             'id': 'I1045730e47e9e6ad31fcdfbaefdad77e2f3b2c3i',
+             'gerrit_hostname': 'review.gerrithub.io',
+             'subject': 'Fix AttributeError in Keypair._add_details()',
+             'owner': {'name': 'John Doe',
+                       'email': 'john_doe@ibm.com',
+                       'username': 'johnathan_doe'},
+             'createdOn': 1379404951,
+             'module': 'cinder', 'branch': 'master'}
+        ]))
+
+        user = {'seq': 1,
+                'user_id': 'john_doe',
+                'launchpad_id': 'john_doe',
+                'gerrit_ids': {
+                    'review.openstack.org': ['john_doe', 'johnathan_doe'],
+                    'review.gerrithub.io': ['johnathan_doe'],
+                },
+                'user_name': 'John Doe',
+                'emails': ['john_doe@ibm.com'],
+                'companies': [{'company_name': 'IBM', 'end_date': 0}]}
+        runtime_storage_inst = record_processor_inst.runtime_storage_inst
+        self.assertEqual(user, user_processor.load_user(
+            runtime_storage_inst, user_id='john_doe'))
+        self.assertEqual(user, user_processor.load_user(
+            runtime_storage_inst, email='john_doe@ibm.com'))
+        self.assertEqual(user, user_processor.load_user(
+            runtime_storage_inst,
+            gerrit_tuple=('review.openstack.org', 'john_doe')))
+        self.assertEqual(user, user_processor.load_user(
+            runtime_storage_inst,
+            gerrit_tuple=('review.openstack.org', 'johnathan_doe')))
+        self.assertEqual(user, user_processor.load_user(
+            runtime_storage_inst,
+            gerrit_tuple=('review.gerrithub.io', 'johnathan_doe')))
 
         # all records should have the same user_id and company name
         for record in runtime_storage_inst.get_all_records():
@@ -1053,6 +1194,7 @@ class TestRecordProcessor(testtools.TestCase):
         runtime_storage_inst.set_records(record_processor_inst.process([
             {'record_type': 'review',
              'id': 'I1045730e47e9e6ad31fcdfbaefdad77e2f3b2c3e',
+             'gerrit_hostname': 'review.openstack.org',
              'subject': 'Fix AttributeError in Keypair._add_details()',
              'owner': {'name': 'John Doe',
                        'email': 'john_doe@ibm.com',
@@ -1228,6 +1370,7 @@ class TestRecordProcessor(testtools.TestCase):
         runtime_storage_inst.set_records(record_processor_inst.process([
             {'record_type': 'review',
              'id': 'I1045730e47e9e6ad31fcdfbaefdad77e2f3b2c3e',
+             'gerrit_hostname': 'review.openstack.org',
              'subject': 'Fix AttributeError in Keypair._add_details()',
              'owner': {'name': 'John Doe',
                        'email': 'john_doe@ibm.com',
@@ -1328,6 +1471,7 @@ class TestRecordProcessor(testtools.TestCase):
              'release_name': 'havana'},
             {'record_type': 'review',
              'id': 'I104573',
+             'gerrit_hostname': 'review.openstack.org',
              'subject': 'Fix AttributeError in Keypair._add_details()',
              'owner': {'name': 'John Doe',
                        'email': 'john_doe@gmail.com',
@@ -1361,6 +1505,7 @@ class TestRecordProcessor(testtools.TestCase):
                  'release_name': 'havana'},
                 {'record_type': 'review',
                  'id': 'I104573',
+                 'gerrit_hostname': 'review.openstack.org',
                  'subject': 'Fix AttributeError in Keypair._add_details()',
                  'owner': {'name': 'John Doe',
                            'email': 'john_doe@gmail.com',
