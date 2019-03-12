@@ -138,8 +138,11 @@ def export_data(memcached_inst, fd):
                              user), fd)
             if user.get('launchpad_id'):
                 pickle.dump(('user:%s' % user['launchpad_id'], user), fd)
-            if user.get('gerrit_id'):
-                pickle.dump(('user:gerrit:%s' % user['gerrit_id'], user), fd)
+            for hostname, ids in user.get('gerrit_ids', {}).items():
+                for gerrit_id in ids:
+                    pickle.dump(('user:gerrit:%s:%s' % (hostname, gerrit_id),
+                                 user),
+                                fd)
             if user.get('member_id'):
                 pickle.dump(('user:member:%s' % user['member_id'], user), fd)
             for email in user.get('emails') or []:

@@ -121,6 +121,7 @@ def _process_repo_reviews(repo, runtime_storage_inst, record_processor_inst):
     rcs_inst.setup(key_filename=repo['key_filename'],
                    username=repo['ssh_username'],
                    gerrit_retry=CONF.gerrit_retry)
+    gerrit_hostname = rcs.get_socket_tuple_from_uri(repo['gerrit_uri'])[0]
 
     for branch in _get_repo_branches(repo):
         LOG.info('Processing reviews for repo: %s, branch: %s',
@@ -137,7 +138,11 @@ def _process_repo_reviews(repo, runtime_storage_inst, record_processor_inst):
             rcs_inst.log(repo, branch, last_retrieval_time, status='abandoned',
                          grab_comments=True), )
 
-        review_iterator_typed = _record_typer(review_iterator, 'review')
+        review_iterator_with_gerrit = _param_adder(
+            review_iterator, 'gerrit_hostname', gerrit_hostname
+        )
+        review_iterator_typed = _record_typer(review_iterator_with_gerrit,
+                                              'review')
         processed_review_iterator = record_processor_inst.process(
             review_iterator_typed)
 
@@ -151,9 +156,9 @@ def _process_repo_reviews(repo, runtime_storage_inst, record_processor_inst):
 def _process_repo_vcs(repo, runtime_storage_inst, record_processor_inst):
     vcs_inst = vcs.get_vcs(repo, CONF.sources_root)
     vcs_inst.fetch()
-    gerrit_hostname, _ = rcs.get_socket_tuple_from_uri(
+    gerrit_hostname = rcs.get_socket_tuple_from_uri(
         repo.get('gerrit_uri', CONF.review_uri)
-    )
+    )[0]
 
     for branch in _get_repo_branches(repo):
         LOG.info('Processing commits in repo: %s, branch: %s',
