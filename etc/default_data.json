@@ -531,6 +531,16 @@
             "emails": ["rama.rao@salesforce.com", "ramaraochavali@gmail.com"]
         },
         {
+            "companies": [
+                {
+                    "company_name": "AT&T",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Dan Crank",
+            "emails": ["dan.no@att.com", "dc6350@att.com", "dc6350@us.att.com", "dan.crank@att.com"]
+        },
+        {
             "launchpad_id": "0-doug",
             "companies": [
                 {
