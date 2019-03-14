@@ -30,6 +30,16 @@
             "user_name": "Grant Hoffman",
             "emails": ["grantleehoffman@gmail.com"]
         },
+        {   "launchpad_id": "mardim",
+            "companies": [
+                {
+                    "company_name": "Ericsson",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Dimitrios Markou",
+            "emails": ["dimitrios.markou@att.com", "dm844v@att.com"]
+        },
         {
             "companies": [
                 {
