@@ -2274,11 +2274,15 @@
                 },
                 {
                     "company_name": "Linux Academy",
+                    "end_date": "2019-Jan-31"
+                },
+                {
+                    "company_name": "O.A.T",
                     "end_date": null
                 }
             ],
             "user_name": "Amy Marrich",
-            "emails": ["amy@demarco.com", "amy@linuxacademy.com", "amy.marrich@rackspace.com"]
+            "emails": ["amy@demarco.com", "amy@taotesting.com", "amy@linuxacademy.com", "amy.marrich@rackspace.com"]
         },
         {
             "launchpad_id": "anand1712",
@@ -34559,6 +34563,11 @@
         {
             "domains": ["taobao.com"],
             "company_name": "Taobao"
+        },
+        {
+            "domains": ["taotesting.com"],
+            "company_name": "O.A.T.",
+            "aliases": ["Open Assessment Technologies"]
         },
         {
             "domains": ["tatacommunications.com"],
