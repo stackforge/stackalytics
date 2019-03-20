@@ -9562,6 +9562,28 @@
             "emails": ["gabriel@strikeawe.com"]
         },
         {
+            "launchpad_id": "gael01",
+            "companies": [
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Gael Rehault",
+            "emails": ["gael01@gmail.com"]
+        },
+        {
+            "launchpad_id": "gael__",
+            "companies": [
+                {
+                    "company_name": "Dell EMC",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Gael Rehault",
+            "emails": ["gael_rehault@dell.com"]
+        },
+        {
             "launchpad_id": "gagehugo",
             "companies": [
                 {
