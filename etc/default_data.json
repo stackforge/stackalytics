@@ -883,6 +883,17 @@
             "emails": ["tinysong1226@gmail.com", "songrongxiang@tenxcloud.com"]
         },
         {
+            "launchpad_id": "411299920-6",
+            "companies": [
+                {
+                    "company_name": "SZZT Electronics.",
+                    "end_date": null
+                }
+            ],
+            "user_name": "chzhang8",
+            "emails": ["411299920@qq.com", "zhangchi@szzt.com.cn"]
+        },
+        {
             "launchpad_id": "a-gorodnev",
             "companies": [
                 {
