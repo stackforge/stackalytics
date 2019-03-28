@@ -33583,9 +33583,9 @@
             "aliases": ["HCL Technologies"]
         },
         {
-            "domains": ["hds.com", "hitachi.com","hitachi.co.in"],
+            "domains": ["hds.com", "hitachi.com","hitachi.co.in","hitachivantara.com"],
             "company_name": "Hitachi",
-            "aliases": ["Hitachi Data Systems", "Hitachi India"]
+            "aliases": ["Hitachi Data Systems", "Hitachi India","Hitachi Vantara"]
         },
         {
             "domains": ["heroku.com"],
