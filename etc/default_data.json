@@ -20031,6 +20031,17 @@
             "emails": ["nfedotov@cisco.com", "nfedotov@mirantis.com"]
         },
         {
+            "launchpad_id": "ngohoa211",
+            "companies": [
+                {
+                    "company_name": "Viettel",
+                    "end_date": null
+                }
+            ],
+            "user_name": "hoa ngo",
+            "emails": ["ngohoa211@gmail.com","hoanq13@viettel.com.vn"]
+        },
+        {
             "launchpad_id": "nguyenat4",
             "companies": [
                 {
