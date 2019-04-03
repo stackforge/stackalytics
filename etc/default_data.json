@@ -1980,6 +1980,18 @@
             "emails": ["alexander.hughes@pm.me", "ah8742@att.com"]
         },
         {
+            "launchpad_id": "StaceyFletcher",
+            "github_id": "slfletch",
+            "companies": [
+                {
+                    "company_name": "Accenture",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Stacey Fletcher",
+            "emails": ["staceylynnfletcher@gmail.com", "sf5715@att.com"]
+        },
+        {
             "launchpad_id": "alexandra-settle",
             "companies": [
                 {
