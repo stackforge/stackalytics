@@ -23,9 +23,11 @@ class TestAPIStats(test_api.TestAPI):
                 {
                     'repos': [
                         {'module': 'nova', 'organization': 'openstack',
-                         'uri': 'https://git.openstack.org/openstack/nova.git'},
+                         'uri':
+                         'https://git.openstack.org/openstack/nova.git'},
                         {'module': 'glance', 'organization': 'openstack',
-                         'uri': 'https://git.openstack.org/openstack/glance.git'}
+                         'uri':
+                         'https://git.openstack.org/openstack/glance.git'}
                     ],
                     'releases': [{'release_name': 'prehistory',
                                   'end_date': 1234567890},
@@ -63,10 +65,12 @@ class TestAPIStats(test_api.TestAPI):
                     'repos': [
                         {'module': 'nova', 'project_type': 'openstack',
                          'organization': 'openstack',
-                         'uri': 'https://git.openstack.org/openstack/nova.git'},
+                         'uri':
+                         'https://git.openstack.org/openstack/nova.git'},
                         {'module': 'glance', 'project_type': 'openstack',
                          'organization': 'openstack',
-                         'uri': 'https://git.openstack.org/openstack/glance.git'}
+                         'uri':
+                         'https://git.openstack.org/openstack/glance.git'}
                     ],
                     'releases': [{'release_name': 'prehistory',
                                   'end_date': 1234567890},
@@ -119,10 +123,12 @@ class TestAPIStats(test_api.TestAPI):
                     'repos': [
                         {'module': 'nova', 'project_type': 'openstack',
                          'organization': 'openstack',
-                         'uri': 'https://git.openstack.org/openstack/nova.git'},
+                         'uri':
+                         'https://git.openstack.org/openstack/nova.git'},
                         {'module': 'glance', 'project_type': 'openstack',
                          'organization': 'openstack',
-                         'uri': 'https://git.openstack.org/openstack/glance.git'}
+                         'uri':
+                         'https://git.openstack.org/openstack/glance.git'}
                     ],
                     'releases': [{'release_name': 'prehistory',
                                   'end_date': 1234567890},

@@ -23,9 +23,11 @@ class TestAPIModules(test_api.TestAPI):
                 {
                     'repos': [
                         {'module': 'nova', 'organization': 'openstack',
-                         'uri': 'https://git.openstack.org/openstack/nova.git'},
+                         'uri':
+                         'https://git.openstack.org/openstack/nova.git'},
                         {'module': 'glance', 'organization': 'openstack',
-                         'uri': 'https://git.openstack.org/openstack/glance.git'}
+                         'uri':
+                         'https://git.openstack.org/openstack/glance.git'}
                     ],
                     'module_groups': {
                         'nova-group': {'id': 'nova-group',
@@ -78,7 +80,8 @@ class TestAPIModules(test_api.TestAPI):
                 {
                     'repos': [
                         {'module': 'nova', 'organization': 'openstack',
-                         'uri': 'https://git.openstack.org/openstack/nova.git'}],
+                         'uri':
+                         'https://git.openstack.org/openstack/nova.git'}],
                     'module_groups': {
                         'nova-group': {'id': 'nova-group',
                                        'module_group_name': 'nova-group',
@@ -105,7 +108,8 @@ class TestAPIModules(test_api.TestAPI):
                  'modules': [
                      {'module_name': 'nova',
                       'visible': True,
-                      'repo_uri': 'https://git.openstack.org/openstack/nova.git'}
+                      'repo_uri':
+                      'https://git.openstack.org/openstack/nova.git'}
                  ],
                  'name': 'Nova', 'tag': 'module'}, module)
 
@@ -116,7 +120,8 @@ class TestAPIModules(test_api.TestAPI):
                  'modules': [{
                      'module_name': 'nova',
                      'visible': True,
-                     'repo_uri': 'https://git.openstack.org/openstack/nova.git'},
+                     'repo_uri':
+                     'https://git.openstack.org/openstack/nova.git'},
                      {'module_name': 'nova-cli', 'visible': False},
                  ],
                  'name': 'Nova-group', 'tag': 'group'}, module)
