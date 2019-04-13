@@ -27212,6 +27212,10 @@
             "launchpad_id": "thainn2",
             "companies": [
                 {
+                    "company_name": "*independent",
+                    "end_date": "2018-Jan-31"
+                },
+                {
                     "company_name": "VINADATA",
                     "end_date": null
                 }
