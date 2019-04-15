@@ -36915,6 +36915,21 @@
             "uri": "https://github.com/kubeflow/example-seldon.git"
         },
         {
+            "module": "common@kubeflow",
+            "organization": "kubeflow",
+            "uri": "https://github.com/kubeflow/common.git"
+        },
+        {
+            "module": "metadata@kubeflow",
+            "organization": "kubeflow",
+            "uri": "https://github.com/kubeflow/metadata.git"
+        },
+        {
+            "module": "kfserving@kubeflow",
+            "organization": "kubeflow",
+            "uri": "https://github.com/kubeflow/kfserving.git"
+        },
+        {
             "module": "kubespray",
             "organization": "kubernetes-sigs",
             "uri": "https://github.com/kubernetes-sigs/kubespray.git"
