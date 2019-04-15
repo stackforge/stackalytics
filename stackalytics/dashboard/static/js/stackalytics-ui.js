@@ -118,7 +118,7 @@ function renderTableAndChart(url, container_id, table_id, chart_id, link_param, 
 
                 data = data["stats"];
 
-                if (data.length == 0) {
+                if ((data.length == 0) || (data.length == 1 && container_id == 'module_container')) {
                     $("#" + container_id).hide();
                     return;
                 }
