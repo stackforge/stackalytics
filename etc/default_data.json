@@ -29103,12 +29103,16 @@
             "launchpad_id": "waipengyip",
             "companies": [
                 {
-                    "company_name": "University of Melbourne",
+                    "company_name": "Australian Research Data Commons",
                     "end_date": null
+                },
+                {
+                    "company_name": "University of Melbourne",
+                    "end_date": "2018-Jun-30"
                 }
             ],
             "user_name": "Jake Yip",
-            "emails": ["waipengyip@yahoo.com", "waipengyip@gmail.com", "jake.yip@unimelb.edu.au"]
+            "emails": ["waipengyip@yahoo.com", "waipengyip@gmail.com", "jake.yip@unimelb.edu.au", "jake.yip@ardc.edu.au"]
         },
         {
             "launchpad_id": "walshh2",
@@ -32942,6 +32946,10 @@
         {
             "domains": ["aptomi.io"],
             "company_name": "Aptomi"
+        },
+        {
+            "domains": ["ardc.edu.au"],
+            "company_name": "Australian Research Data Commons"
         },
         {
             "domains": ["aricent.com"],
