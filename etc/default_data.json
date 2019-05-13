@@ -27542,6 +27542,17 @@
             "emails": ["tina.tang@emc.com"]
         },
         {
+            "github_id": "tizhou86",
+            "companies": [
+                {
+                    "company_name": "Baidu",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Ti Zhou",
+            "emails": ["zhouti@baidu.com","tizhou1986@gmail.com"]
+        },
+        {
             "launchpad_id": "tjohns",
             "companies": [
                 {
@@ -33028,6 +33039,11 @@
         {
             "domains": ["bacoosta.com"],
             "company_name": "Bacoosta IT Services"
+        },
+        {
+            "domains": ["baidu.com"],
+            "company_name": "Baidu",
+            "aliases": ["Baidu", "Baidu Cloud", "Baidu Inc", "百度云"]
         },
         {
             "domains": ["bbc.co.uk", "rd.bbc.co.uk"],
