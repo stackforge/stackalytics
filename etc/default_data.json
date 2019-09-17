@@ -13772,6 +13772,18 @@
             "emails": ["joe.keen@hp.com", "joe.keen@hpe.com"]
         },
         {
+          "launchpad_id": "generalfuzz",
+          "github_id": "generalfuzz",
+          "companies": [
+            {
+              "company_name": "G-Research",
+              "end_date": null
+            }
+          ],
+          "user_name": "James Kirsch",
+          "emails": ["generalfuzz@gmail.com", "g.research.oss@gmail.com"]
+        },
+        {
             "launchpad_id": "jlwhittyos",
             "companies": [
                 {
